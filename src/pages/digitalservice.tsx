@@ -9,6 +9,7 @@ import Navbar from "@/components/Navbar";
 import ServicesNeeds from "@/components/ServicesNeeds";
 import { NextPage } from "next";
 import Head from "next/head";
+import CloudOps from "@/components/CloudOps";
 
 const DigitalService: NextPage = () => {
     return (
@@ -32,6 +33,7 @@ const DigitalService: NextPage = () => {
                 needsDescription="Our digital services encompass a range of specialized areas, including Digital Consulting & Strategy, Business Applications,
                  Product Engineering, and DevOps & SecOps. Each service is tailored to address specific challenges and opportunities, ensuring that you receive
                   the support and guidance you need to achieve your business objectives. " />
+            <CloudOps />
             <Enterprise />
             <Innovation />
             <ContactForm />

@@ -194,56 +194,7 @@ export const servicesOptions = [
     { value: 'design', label: 'Design' }
 ];
 
-export const blogData = [
-    {
-        id: 1,
-        image: blogImageOne,
-        category: "Blog",
-        tag: "Artificial Intelligence",
-        title: "How Generative AI Can Play Its Part In Uplifting The Entire Data Management Lifecycle.",
-        link: "/blog-detail"
-    },
-    {
-        id: 2,
-        image: blogImageTwo,
-        category: "Blog",
-        tag: "Artificial Intelligence",
-        title: "How Generative AI Can Play Its Part In Uplifting The Entire Data Management Lifecycle.",
-        link: "/blog-detail"
-    },
-    {
-        id: 3,
-        image: blogImageOne,
-        category: "Blog",
-        tag: "Artificial Intelligence",
-        title: "How Generative AI Can Play Its Part In Uplifting The Entire Data Management Lifecycle.",
-        link: "/blog-detail"
-    },
-    {
-        id: 4,
-        image: blogImageTwo,
-        category: "Blog",
-        tag: "Artificial Intelligence",
-        title: "How Generative AI Can Play Its Part In Uplifting The Entire Data Management Lifecycle.",
-        link: "/blog-detail"
-    },
-    {
-        id: 5,
-        image: blogImageOne,
-        category: "Blog",
-        tag: "Artificial Intelligence",
-        title: "How Generative AI Can Play Its Part In Uplifting The Entire Data Management Lifecycle.",
-        link: "/blog-detail"
-    },
-    {
-        id: 6,
-        image: blogImageTwo,
-        category: "Blog",
-        tag: "Artificial Intelligence",
-        title: "How Generative AI Can Play Its Part In Uplifting The Entire Data Management Lifecycle.",
-        link: "/blog-detail"
-    },
-];
+
 export const slidesContent = [
     { title: 'Future-Driven Solutions', description: 'Merging Data and AI to Prepare Your Business For Tomorrow ' },
     { title: 'Empower Your Business, Transform Digitally', description: 'Smart and Powerful Solutions to Kickstart Your Growth ' },
@@ -350,31 +301,55 @@ export const featurestable: any = {
 
 };
 
-export const innovations = [
+export const blogData = [
     {
-        title: 'How Generative AI can play its part in uplifting the entire data management lifecycle.',
-        banner: AIOne,
+        id: 1,
+        image: blogImageOne,
+        category: "Blog",
+        tag: "Artificial Intelligence",
+        title: "How Generative AI Can Play Its Part In Uplifting The Entire Data Management Lifecycle.",
+        link: "/blog-detail"
     },
     {
-        title: 'How Generative AI can play its part in uplifting the entire data management lifecycle.',
-        banner: AITwo, 
+        id: 2,
+        image: blogImageTwo,
+        category: "Blog",
+        tag: "Artificial Intelligence",
+        title: "How Generative AI Can Play Its Part In Uplifting The Entire Data Management Lifecycle.",
+        link: "/blog-detail"
     },
     {
-        title: 'How Generative AI can play its part in uplifting the entire data management lifecycle.',
-        banner: AIThree,
+        id: 3,
+        image: blogImageOne,
+        category: "Blog",
+        tag: "Artificial Intelligence",
+        title: "How Generative AI Can Play Its Part In Uplifting The Entire Data Management Lifecycle.",
+        link: "/blog-detail"
     },
     {
-        title: 'How Generative AI can play its part in uplifting the entire data management lifecycle.',
-        banner: AIFour,
+        id: 4,
+        image: blogImageTwo,
+        category: "Blog",
+        tag: "Artificial Intelligence",
+        title: "How Generative AI Can Play Its Part In Uplifting The Entire Data Management Lifecycle.",
+        link: "/blog-detail"
     },
     {
-        title: 'How Generative AI can play its part in uplifting the entire data management lifecycle.',
-        banner: AIFive, 
+        id: 5,
+        image: blogImageOne,
+        category: "Blog",
+        tag: "Artificial Intelligence",
+        title: "How Generative AI Can Play Its Part In Uplifting The Entire Data Management Lifecycle.",
+        link: "/blog-detail"
     },
     {
-        title: 'How Generative AI can play its part in uplifting the entire data management lifecycle.',
-        banner: AISix,
-    }
+        id: 6,
+        image: blogImageTwo,
+        category: "Blog",
+        tag: "Artificial Intelligence",
+        title: "How Generative AI Can Play Its Part In Uplifting The Entire Data Management Lifecycle.",
+        link: "/blog-detail"
+    },
 ];
 
 export const Enterprises = [

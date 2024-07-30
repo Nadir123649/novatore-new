@@ -8,7 +8,8 @@ import { FaChevronRight } from "react-icons/fa";
 import { FaArrowRight } from "react-icons/fa6";
 import Link from 'next/link';
 import { Profile } from '../utils'
-import { innovations } from '@/constants/indesx';
+import { blogData } from '@/constants/indesx';
+import BlogsCard from './BlogsCard';
 
 interface ArrowProps {
   onClick?: React.MouseEventHandler<HTMLDivElement>;
@@ -81,19 +82,17 @@ const Innovation = () => {
           <h2 className=' font-bold text-[26px] md:text-[40px] max-w-[590px]'>Tech Expert Latest: Innovations In <span className='text-[#2776EA]'> Digital Enterprise</span></h2>
         </div>
         <Slider {...settings} className="innovation-slider mt-10">
-          {innovations.map((innovation, index) => (
-            <div
-              key={index}
-              className="innovation-box flex flex-col relative cursor-pointer h-[519px] max-w-[520px] rounded-[16px]  bg-[#F6F6F6] p-0  transition-all duration-300 hover:shadow-lg "
-            >
-              <Image src={innovation.banner} alt="artificial intelligence " className='w-full h-[370px] object-cover rounded-tl-[16px] rounded-br-none rounded-tr-[16px] rounded-bl-none p-0' />
-              <div className='px-[24px] py-[14px]  card-group'>
-                <h1 className='text-base md:text-[22px] font-medium  md:font-semibold pt-3'>{innovation.title}</h1>
-                <Link className=' text-underline  text-lg' href="">
-                  Read More
-                </Link>
-              </div>
-            </div>
+          {blogData.map(blog => (
+            <BlogsCard
+              key={blog.id}
+              id={blog.id}
+              image={blog.image}
+              category={blog.category}
+              tag={blog.tag}
+              title={blog.title}
+              link={blog.link}
+              type="card"
+            />
           ))}
         </Slider>
       </div>

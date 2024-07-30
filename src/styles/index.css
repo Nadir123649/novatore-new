@@ -213,6 +213,38 @@
   pointer-events: auto; 
 }
 
+/* parallax list css here  */
+.CloudOps-section ::-webkit-scrollbar{
+display: none !important;
+}
+
+
+.CloudOps-section li:nth-child(1)::before
+  { 
+    content: '';
+    border-radius: 50%;
+    height:14px;
+    width:14px;
+    background-color: #0755E9;
+    display: flex;
+    position: absolute;
+    left: -27px;
+    top: 59px;
+}
+
+.CloudOps-section li:nth-child(2)::before ,
+.CloudOps-section li:nth-child(3)::before  { 
+    content: '';
+    border-radius: 50%;
+    height:14px;
+    width:14px;
+    background-color: #0755E9;
+    display: flex;
+    position: absolute;
+    left: -27px;
+    top: 20px;
+}
+
 /* Responsiveness */
 @media only screen and (max-width: 1020px){
   .slick-track{

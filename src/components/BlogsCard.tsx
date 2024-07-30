@@ -3,17 +3,18 @@ import Link from 'next/link';
 import React from 'react';
 
 interface BlogsProps {
-    id: number;
+    id?: number;
     image: any;
     category: string;
     tag: string;
     title: string;
     link: string;
+    type?: string;
 }
 
-const BlogsCard: React.FC<BlogsProps> = ({ image, category, tag, title, link }) => {
+const BlogsCard: React.FC<BlogsProps> = ({ image, category, tag, title, link, type }) => {
     return (
-        <div className=" bg-white shadow-card rounded-[16px] overflow-hidden " >
+        <div className={type === "card" ? "bg-white shadow-card rounded-[16px] overflow-hidden mr-10" : "bg-white shadow-card rounded-[16px] overflow-hidden"}>
             <div className='relative'>
                 <Image src={image} className='w-full min-h-[400px] h-[400px] object-cover rounded-[16px 16px 0px 0px]' alt="Blog" width={400} height={200} />
                 <span className="text-center absolute right-[12px] top-[18px] bg-[#000000BA] text-white text-[18px] font-lato font-normal not-italic leading-normal capitalize px-2 py-2 rounded-[10px]">{tag}</span>
