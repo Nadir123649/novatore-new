@@ -3,30 +3,30 @@ import { FaArrowRightLong } from "react-icons/fa6";
 import { Container, Row, Col } from 'react-bootstrap';
 import React from 'react';
 
-const CloudOps = () => {
-  const ulRef = useRef(null);
+const CloudOps: React.FC = () => {
+  const ulRef = useRef<HTMLDivElement | null>(null);
 
   useEffect(() => {
     const handleScroll = () => {
       if (ulRef.current) {
-        const listItems = ulRef.current.querySelectorAll('li');
+        const listItems = ulRef.current.querySelectorAll<HTMLLIElement>('li');
         const scrollTop = ulRef.current.scrollTop;
         const clientHeight = ulRef.current.clientHeight;
         const itemHeight = listItems[0]?.clientHeight || 0;
         const topThreshold = 0.2 * clientHeight; 
-        listItems.forEach((item: { style: { opacity: number; }; }, index: number) => {
+        listItems.forEach((item, index) => {
           const itemOffset = index * itemHeight;
           const itemBottom = itemOffset + itemHeight;
           let opacity = 0.5; 
           if (itemBottom > scrollTop && itemOffset < scrollTop + topThreshold) {
             opacity = 1; 
           }
-          item.style.opacity = opacity;
+          item.style.opacity = String(opacity);
         });
       }
     };
 
-    const handleWheel = (event: { deltaY: any; preventDefault: () => void; }) => {
+    const handleWheel = (event: WheelEvent) => {
       if (ulRef.current) {
         const { scrollTop, scrollHeight, clientHeight } = ulRef.current;
         const delta = event.deltaY;
