@@ -1,4 +1,4 @@
-import { CovaBg, AngelflowBg, About, Airbolt, ANGELFLOW, AngelLogo, Assistant, blogImageOne, blogImageTwo, Buisness, Career, Catalyst, ChooseFour, ChooseOne, ChooseThree, ChooseTwo, Cova, COVA, CovaLogo, Developer, Industries, Insights, London, milestonIconOne, milestonIconThree, milestonIconTwo, milestonOne, milestonThree, milestonTwo, Protium, Services, Upsure } from "@/utils";
+import { AIOne, AITwo, AIThree, AIFour, AIFive, AISix, CovaBg, AngelflowBg, About, Airbolt, ANGELFLOW, AngelLogo, Assistant, blogImageOne, blogImageTwo, Buisness, Career, Catalyst, ChooseFour, ChooseOne, ChooseThree, ChooseTwo, Cova, COVA, CovaLogo, Developer, Industries, Insights, London, milestonIconOne, milestonIconThree, milestonIconTwo, milestonOne, milestonThree, milestonTwo, Protium, Services, Upsure } from "@/utils";
 import { IoMdMail } from "react-icons/io";
 import { FaPhoneAlt } from "react-icons/fa";
 import { ImLocation } from "react-icons/im";
@@ -10,10 +10,10 @@ import { url } from "inspector";
 
 
 export const services = [
-    { title: 'Digital Services', description: 'From Consulting To Product Engineering, We Provide The Best Digital Solutions.', banner: Services },
-    { title: 'Data', description: 'Expertise In Data Science To Drive Your Business Forward.', banner: Career },
-    { title: 'Cloud', description: 'Smoothen Your Operations With AWS, Azure, And GCP.', banner: Insights },
-    { title: 'Artificial Intelligence', description: 'Innovative AI Solutions, Generative Models, And Machine Learning.', banner: Industries }
+    { title: 'Digital Services', description: 'From Consulting To Product Engineering, We Provide The Best Digital Solutions.', banner: Services, backgroundimg: Career },
+    { title: 'Data', description: 'Expertise In Data Science To Drive Your Business Forward.', banner: Career, backgroundimg: Career },
+    { title: 'Cloud', description: 'Smoothen Your Operations With AWS, Azure, And GCP.', banner: Insights, backgroundimg: Career },
+    { title: 'Artificial Intelligence', description: 'Innovative AI Solutions, Generative Models, And Machine Learning.', banner: Industries, backgroundimg: Career }
 ];
 
 export const whyChooseLogo = [
@@ -25,15 +25,15 @@ export const whyChooseLogo = [
 
 export const contactDetails = [
     {
-        icon: <IoMdMail size={22}  />,
+        icon: <IoMdMail size={22} />,
         text: 'info@novatoresols.com',
     },
     {
-        icon: <FaPhoneAlt size={22}  />,
+        icon: <FaPhoneAlt size={22} />,
         text: '+12183001965',
     },
     {
-        icon: <ImLocation size={22}  />,
+        icon: <ImLocation size={22} />,
         text: 'US Office: 8 The Green STE B Dover, DE 19901',
     },
 ];
@@ -46,10 +46,10 @@ export const whyChooseUs = [
 
 export const menuitems = [
     { id: 1, title: "Services", img: Services, url: '/', description: "The Power of Data: How Analytics Can Transform Your Business., " },
-    { id: 2, title: "About", img: About,url: '/',  description: "The Ultimate Guide to Choosing the Right Cybersecurity Software" },
-    { id: 3, title: "Insights", img: Insights, url: '/',  description: "Virtual Tours and Beyond: The Tech Revolutionizing Real Estate" },
-    { id: 4, title: "Careers", img: Career, url: '/',  description: "Beyond the Code: Essential Soft Skills for Every Software Developer" },
-    { id: 5, title: "Industries", img: Industries, url: '/',  description: "The Power of Data: How Analytics Can Transform Your Business " }
+    { id: 2, title: "About", img: About, url: '/', description: "The Ultimate Guide to Choosing the Right Cybersecurity Software" },
+    { id: 3, title: "Insights", img: Insights, url: '/', description: "Virtual Tours and Beyond: The Tech Revolutionizing Real Estate" },
+    { id: 4, title: "Careers", img: Career, url: '/', description: "Beyond the Code: Essential Soft Skills for Every Software Developer" },
+    { id: 5, title: "Industries", img: Industries, url: '/', description: "The Power of Data: How Analytics Can Transform Your Business " }
 ];
 
 export const customSoftware = [
@@ -120,7 +120,7 @@ export const aboutServicesData = [
     { title: "Custom Software Development", description: "Creating tailored software solutions to meet specific business needs." },
 ]
 export const socialData = [
-    { icon: <TiSocialLinkedin size={20}  />, link: '/', title: 'Linkedin', },
+    { icon: <TiSocialLinkedin size={20} />, link: '/', title: 'Linkedin', },
     { icon: <FaFacebookF size={15} />, link: '/', title: 'Facebook' },
     { icon: <FaInstagram size={16} />, link: '/', title: 'Instagram' },
 ]
@@ -246,8 +246,8 @@ export const blogData = [
 ];
 export const slidesContent = [
     { title: 'Future-Driven Solutions', description: 'Merging Data and AI to Prepare Your Business For Tomorrow ' },
-    { title: 'Future-Driven Solutions', description: 'Merging Data and AI to Prepare Your Business For Tomorrow ' },
-    { title: 'Future-Driven Solutions', description: 'Merging Data and AI to Prepare Your Business For Tomorrow ' },
+    { title: 'Empower Your Business, Transform Digitally', description: 'Smart and Powerful Solutions to Kickstart Your Growth ' },
+    { title: 'Move Beyond the Ordinary', description: 'It’s time to innovate, rethink, and excel' },
 ];
 
 export const companiesdata = [
@@ -349,3 +349,36 @@ export const featurestable: any = {
     industries: [{ id: "Industries", heading: "", details: ["Real Estate", "Retail", "Social", "Education", "Sports"] }]
 
 };
+
+export const innovations = [
+    {
+        title: 'How Generative AI can play its part in uplifting the entire data management lifecycle.',
+        banner: AIOne,
+    },
+    {
+        title: 'How Generative AI can play its part in uplifting the entire data management lifecycle.',
+        banner: AITwo, 
+    },
+    {
+        title: 'How Generative AI can play its part in uplifting the entire data management lifecycle.',
+        banner: AIThree,
+    },
+    {
+        title: 'How Generative AI can play its part in uplifting the entire data management lifecycle.',
+        banner: AIFour,
+    },
+    {
+        title: 'How Generative AI can play its part in uplifting the entire data management lifecycle.',
+        banner: AIFive, 
+    },
+    {
+        title: 'How Generative AI can play its part in uplifting the entire data management lifecycle.',
+        banner: AISix,
+    }
+];
+
+export const Enterprises = [
+    { title: '100', percentage: "+", description: 'Digitally Transformed Enterprises' },
+    { title: '130', percentage: "+", description: 'Organizations Empowered Through Omnichannel Experiences' },
+    { title: '500', percentage: "+", description: ' Design-Driven Solutions Implemented' },
+];

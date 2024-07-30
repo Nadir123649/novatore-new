@@ -119,7 +119,8 @@ const Navbar = () => {
   }, [handleClickOutside, handleScroll]);
   return (
     <nav
-      className={`navigation-menu-container fixed inset-x-0 top-0 z-50 h-[100px] w-full flex items-center transition-transform duration-300 ${isScrolled ? "bg-imagr-black" : "bg-transparent"
+      className={`navigation-menu-container fixed inset-x-0 top-0 z-50 h-[100px] w-full flex items-center transition-transform duration-300
+         ${isScrolled ? "bg-imagr-black" : "bg-transparent"
         } ${isHeaderVisible ? "transform-none" : "-translate-y-full"}`}
     >
       <div className="container flex flex-row justify-between items-center sm:px-0 md:px-8 w-full ">
@@ -163,7 +164,7 @@ const Navbar = () => {
               <button
                 className="search-main rounded-2xl bg-custom-rgba py-[12px] px-[12px]"
                 onClick={handleSearchClick}
-                ref={searchRefDesktop} 
+                ref={searchRefDesktop}
               >
                 <Image
                   src="/images/search.svg"

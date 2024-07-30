@@ -89,7 +89,7 @@ const Services = () => {
           <h2 className="text-gray-900 font-semibold text-[26px] md:text-4xl ">
             What Can We Do For You?
           </h2>
-          <button className="border border-solid border-[#969696] rounded-[36px] py-[12px] px-4 text-[#969696] text-[18px]  mr-[120px] md:mr-[140px]">
+          <button className="border border-solid border-[#969696] rounded-[36px] py-[12px] px-4 text-[#969696] text-[18px]  mr-[120px] md:mr-[120px]">
             All Services
           </button>
         </div>
@@ -100,7 +100,7 @@ const Services = () => {
               key={index}
               className="services-box relative cursor-pointer min-h-[375px] md:min-h-[490px] max-w-[330px] rounded-[16px] border border-solid border-[#ECECEC] bg-[#F6F6F6] p-[24px] transition-all duration-300 hover:shadow-lg"
             >
-              <div className="heading-container relative overflow-hidden bg-[#1B232E] p-4 rounded-2xl text-white transition-all duration-300 ease-in-out">
+              <div className="heading-container relative overflow-hidden bg-[#1B232E] p-4 rounded-2xl text-white transition-all duration-300 ease-in-out" >
                 <h3 className="font-bold mb-2 text-xl md:text-2xl text-center transition-transform duration-300 ease-in-out">
                   {service.title}
                 </h3>

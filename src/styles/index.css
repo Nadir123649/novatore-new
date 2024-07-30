@@ -77,7 +77,6 @@
 /* cards hover effect  */
 .services-box:hover .heading-container {
   height: 200px; 
-  /* background-image: url('../../public/images/Careers.png');  */
   background-size: cover;
   background-position: center;
 }

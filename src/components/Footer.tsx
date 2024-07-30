@@ -29,15 +29,6 @@ const Footer = () => {
                   ))
                   }
                 </ul>
-                <h3 className="text-[#FFF] text-[18px] not-italic mb-4 mt-4 font-normal">Transformative Solutions</h3>
-                <ul className='footer-links-list list-none p-0 m-0 flex flex-col gap-[13px]'>
-                  {transformation.map((data, index) => (
-                    <li key={index} >
-                      <Link href={data.link} className='text-[#B5B5B5] text-[16px] font-normal not-italic'>{data.title}</Link>
-                    </li>
-                  ))
-                  }
-                </ul>
               </div>
             </Col>
             <Col lg={3} md={6} xs={12} className=' md:border-l border-[#FFFFFF14] '>

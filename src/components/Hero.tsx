@@ -12,9 +12,10 @@ const Hero = () => {
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
-    autoplay: false,
-    autoplaySpeed: 3000,
+    autoplay: true,
+    autoplaySpeed: 4000, 
     arrows: false,
+
   };
 
   return (
@@ -22,9 +23,9 @@ const Hero = () => {
       <video className="absolute top-0 left-0 w-full h-full  object-cover -z-10" autoPlay loop muted>
         <source src="/images/banner-video.mp4" type="video/mp4" />
       </video>
-      <Slider {...settings} className='hero-slider'>
+      <Slider {...settings} className='hero-slider'>  
         {slidesContent.map((data, index) => (
-          <div className="hero-screen relative w-full h-[50vh]  md:h-[100vh]" key={index}>
+          <div className="hero-screen relative w-full h-[50vh] md:h-[100vh]" key={index}>
             <div className="container">
               <div className="hero-banner-screen z-50 max-w-2xl relative flex flex-col justify-center  min-h-[50vh] md:min-h-[100vh] items-start">
                 <h1 className='not-italic font-bold uppercase text-[28px] md:text-[72px] text-white mb-0'>{data.title}</h1>

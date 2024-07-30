@@ -35,6 +35,13 @@ export { default as blogImageTwo } from "../../public/images/blog-image1.png"
 export { default as blogContentImage } from "../../public/images/blog-content.png"
 export {default as CovaBg} from "../../public/images/cova-hoverBg.svg"
 export {default as AngelflowBg} from "../../public/images/angelflow-hoverBg.svg"
+export { default as Needs_image_one } from "../../public/images/needs-img-one.png"
+export {default as AIOne} from "../../public/images/AI-one.svg"
+export {default as AITwo} from "../../public/images/AI-two.svg"
+export {default as AIThree} from "../../public/images/AI-three.svg"
+export {default as AIFour} from "../../public/images/AI-four.svg"
+export {default as AIFive} from "../../public/images/AI-five.svg"
+export {default as AISix} from "../../public/images/AI-six.svg"
 
 
 

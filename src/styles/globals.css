@@ -671,3 +671,7 @@ input:-webkit-autofill:active {
     background-size: cover;
     background-image: url("../../public/images/header-image-bg.png");
 }
+
+.needs-section {
+    background-image: url("../../public/images/needs-bg.png");
+}
