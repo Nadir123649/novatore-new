@@ -405,18 +405,17 @@ export const AiData = [
     {
         title: 'AI Consulting',
         description: 'We provide expert guidance to help you navigate the complexities of AI, ensuring you implement the right strategies and technologies to achieve your goals.',
-        icon: AiOne,
+        icon: ImageOne,
     },
     {
         title: 'Generative AI',
         description: 'Our generative AI solutions help you create new and innovative content, designs, and products, pushing the boundaries of what’s possible.',
-        icon: AiTwo,
+        icon: ImageTwo,
     },
     {
         title: 'Machine Learning',
         description: 'We develop and deploy machine learning models that analyze data, identify patterns, and make informed decisions, driving smarter business operations.',
-        icon: AiThree
-        ,
+        icon: ImageThree,
     },
 ];
 export const AwsData = [
