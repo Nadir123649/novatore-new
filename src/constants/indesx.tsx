@@ -5,8 +5,6 @@ import { ImLocation } from "react-icons/im";
 import { FaInstagram } from "react-icons/fa";
 import { FaFacebookF } from "react-icons/fa";
 import { TiSocialLinkedin } from "react-icons/ti";
-import { url } from "inspector";
-
 
 
 export const services = [
