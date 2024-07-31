@@ -8,6 +8,8 @@ import Navbar from "@/components/Navbar";
 import ServicesNeeds from "@/components/ServicesNeeds";
 import { NextPage } from "next";
 import Head from "next/head";
+import DataServicesSection from "@/components/DataServicesSection";
+import { AwsData } from "@/constants/indesx";
 
 const AWS: NextPage = () => {
     return (
@@ -33,6 +35,7 @@ const AWS: NextPage = () => {
                 From robust storage solutions to advanced networking capabilities, and insightful analytics,
                 we provide comprehensive support to ensure your business runs smoothly and efficiently. 
                 Explore our AWS services and discover how we can help you achieve your digital transformation goals. " />
+            <DataServicesSection heading="Our AWS" headingBlue="Services" data={AwsData} />
             <Enterprise />
             <Innovation />
             <ContactForm />

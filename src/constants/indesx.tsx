@@ -1,4 +1,4 @@
-import { AIOne, AITwo, AIThree, AIFour, AIFive, AISix, CovaBg, AngelflowBg, About, Airbolt, ANGELFLOW, AngelLogo, Assistant, blogImageOne, blogImageTwo, Buisness, Career, Catalyst, ChooseFour, ChooseOne, ChooseThree, ChooseTwo, Cova, COVA, CovaLogo, Developer, Industries, Insights, London, milestonIconOne, milestonIconThree, milestonIconTwo, milestonOne, milestonThree, milestonTwo, Protium, Services, Upsure } from "@/utils";
+import { AIOne, AITwo, AIThree, AIFour, AIFive, AISix, CovaBg, AngelflowBg, About, Airbolt, ANGELFLOW, AngelLogo, Assistant, blogImageOne, blogImageTwo, Buisness, Career, Catalyst, ChooseFour, ChooseOne, ChooseThree, ChooseTwo, Cova, COVA, CovaLogo, Developer, Industries, Insights, London, milestonIconOne, milestonIconThree, milestonIconTwo, milestonOne, milestonThree, milestonTwo, Protium, Services, Upsure, DataImageOne, DataImageTwo, DataImageThree, DataImageFour, CloudOne, CloudTwo, CloudThree, CloudFour, AiOne, AiTwo, AiThree, AwsOne, AwsTwo, AwsThree } from "@/utils";
 import { IoMdMail } from "react-icons/io";
 import { FaPhoneAlt } from "react-icons/fa";
 import { ImLocation } from "react-icons/im";
@@ -356,4 +356,86 @@ export const Enterprises = [
     { title: '100', percentage: "+", description: 'Digitally Transformed Enterprises' },
     { title: '130', percentage: "+", description: 'Organizations Empowered Through Omnichannel Experiences' },
     { title: '500', percentage: "+", description: ' Design-Driven Solutions Implemented' },
+];
+
+export const dataServices = [
+    {
+        title: 'Data Engineering',
+        description: 'Transform raw data into a structured and usable format, ready for analysis and reporting.',
+        icon: DataImageOne,
+    },
+    {
+        title: 'Data Management & Governance',
+        description: 'Ensure your data is accurate, secure, and compliant with industry standards.',
+        icon: DataImageTwo,
+    },
+    {
+        title: 'Analytics & Platform Implementation',
+        description: 'Implement robust analytics platforms that provide actionable insights and drive business growth.',
+        icon: DataImageThree,
+    },
+    {
+        title: 'Data Science',
+        description: 'Leverage advanced algorithms and machine learning techniques to uncover hidden patterns and predictive insights.',
+        icon: DataImageFour,
+    },
+];
+export const CloudData = [
+    {
+        title: 'Business Process Automation',
+        description: 'Streamline and automate your business processes to improve efficiency and reduce operational costs.',
+        icon: CloudOne,
+    },
+    {
+        title: 'CloudOps',
+        description: 'Maintain and optimize your cloud infrastructure with our comprehensive CloudOps services.',
+        icon: CloudTwo,
+    },
+    {
+        title: 'AWS, Azure & GCP',
+        description: 'Leverage the power of leading cloud platforms to enhance your business operations and scalability.',
+        icon: CloudThree,
+    },
+    {
+        title: 'Cloud Migration',
+        description: 'Seamlessly transition your existing infrastructure to the cloud with minimal disruption and maximum efficiency.',
+        icon: CloudFour,
+    },
+];
+
+export const AiData = [
+    {
+        title: 'AI Consulting',
+        description: 'We provide expert guidance to help you navigate the complexities of AI, ensuring you implement the right strategies and technologies to achieve your goals.',
+        icon: AiOne,
+    },
+    {
+        title: 'Generative AI',
+        description: 'Our generative AI solutions help you create new and innovative content, designs, and products, pushing the boundaries of what’s possible.',
+        icon: AiTwo,
+    },
+    {
+        title: 'Machine Learning',
+        description: 'We develop and deploy machine learning models that analyze data, identify patterns, and make informed decisions, driving smarter business operations.',
+        icon: AiThree
+        ,
+    },
+];
+export const AwsData = [
+    {
+        title: 'Storage Services',
+        description: 'Secure and scalable storage solutions tailored to meet your business needs.',
+        icon: AwsOne,
+    },
+    {
+        title: 'Networking Services',
+        description: 'Efficient networking services that enhance connectivity and performance.',
+        icon: AwsTwo,
+    },
+    {
+        title: 'Analytics Services',
+        description: 'Advanced analytics tools to turn your data into actionable insights.',
+        icon: AwsThree
+        ,
+    },
 ];

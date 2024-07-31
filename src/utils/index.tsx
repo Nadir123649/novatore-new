@@ -33,15 +33,45 @@ export { default as CareerBuilt } from "../../public/images/career-column-img.pn
 export { default as blogImageOne } from "../../public/images/BLOG-IMAGE.png"
 export { default as blogImageTwo } from "../../public/images/blog-image1.png"
 export { default as blogContentImage } from "../../public/images/blog-content.png"
-export {default as CovaBg} from "../../public/images/cova-hoverBg.svg"
-export {default as AngelflowBg} from "../../public/images/angelflow-hoverBg.svg"
+export { default as CovaBg } from "../../public/images/cova-hoverBg.svg"
+export { default as AngelflowBg } from "../../public/images/angelflow-hoverBg.svg"
 export { default as Needs_image_one } from "../../public/images/needs-img-one.png"
-export {default as AIOne} from "../../public/images/AI-one.svg"
-export {default as AITwo} from "../../public/images/AI-two.svg"
-export {default as AIThree} from "../../public/images/AI-three.svg"
-export {default as AIFour} from "../../public/images/AI-four.svg"
-export {default as AIFive} from "../../public/images/AI-five.svg"
-export {default as AISix} from "../../public/images/AI-six.svg"
+export { default as AIOne } from "../../public/images/AI-one.svg"
+export { default as AITwo } from "../../public/images/AI-two.svg"
+export { default as AIThree } from "../../public/images/AI-three.svg"
+export { default as AIFour } from "../../public/images/AI-four.svg"
+export { default as AIFive } from "../../public/images/AI-five.svg"
+export { default as AISix } from "../../public/images/AI-six.svg"
+export { default as DataImageOne } from "../../public/images/data-image-1.svg"
+export { default as DataImageTwo } from "../../public/images/data-image-2.svg"
+export { default as DataImageThree } from "../../public/images/data-image-3.svg"
+export { default as DataImageFour } from "../../public/images/data-image-4.svg"
+export { default as Drop } from "../../public/images/drop-card.svg"
+export { default as Bordered } from "../../public/images/bordered.svg"
+export { default as CloudOne } from "../../public/images/cloud-image-1.svg"
+export { default as CloudTwo } from "../../public/images/cloud-image-2.svg"
+export { default as CloudThree } from "../../public/images/cloud-image-3.svg"
+export { default as CloudFour } from "../../public/images/cloud-image-4.svg"
+export { default as AiOne } from "../../public/images/ai-image-1.svg"
+export { default as AiTwo } from "../../public/images/ai-image-2.svg"
+export { default as AiThree } from "../../public/images/ai-image-3.svg"
+export { default as AwsOne } from "../../public/images/aws-image-1.svg"
+export { default as AwsTwo } from "../../public/images/aws-image-2.svg"
+export { default as AwsThree } from "../../public/images/aws-image-3.svg"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

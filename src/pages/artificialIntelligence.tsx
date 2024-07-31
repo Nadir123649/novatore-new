@@ -8,6 +8,8 @@ import Navbar from "@/components/Navbar";
 import ServicesNeeds from "@/components/ServicesNeeds";
 import { NextPage } from "next";
 import Head from "next/head";
+import DataServicesSection from "@/components/DataServicesSection";
+import { AiData } from "@/constants/indesx";
 
 const ArtificialIntelligence: NextPage = () => {
     return (
@@ -31,6 +33,7 @@ const ArtificialIntelligence: NextPage = () => {
                 needsDescription="We pride ourselves on our expertise and dedication to providing customised AI solutions that meet the unique needs of each client.
                 Our team of experienced professionals works closely with you to understand your challenges and objectives, ensuring that our AI services not only meet but exceed your expectations.
                 With our robust and scalable AI offerings, you can stay ahead of the competition and drive your business towards a future of innovation and success. " />
+            <DataServicesSection heading="Our AI" headingBlue="Services" data={AiData} />
             <Enterprise />
             <Innovation />
             <ContactForm />

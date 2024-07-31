@@ -8,6 +8,8 @@ import Navbar from "@/components/Navbar";
 import ServicesNeeds from "@/components/ServicesNeeds";
 import { NextPage } from "next";
 import Head from "next/head";
+import DataServicesSection from "@/components/DataServicesSection";
+import { CloudData, } from "@/constants/indesx";
 
 const CloudServices: NextPage = () => {
     return (
@@ -32,6 +34,7 @@ const CloudServices: NextPage = () => {
                  We understand that every business is different, which is why we offer personalized solutions that address your specific challenges and goals. 
                  From cloud migration to ongoing CloudOps support, we are committed to providing you with the tools and expertise you need to succeed in the digital era.
                   Discover how our cloud services can revolutionize your business today." />
+            <DataServicesSection heading="Our Cloud" headingBlue="Services" data={CloudData} />
             <Enterprise />
             <Innovation />
             <ContactForm />

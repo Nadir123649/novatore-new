@@ -8,6 +8,8 @@ import Navbar from "@/components/Navbar";
 import ServicesNeeds from "@/components/ServicesNeeds";
 import { NextPage } from "next";
 import Head from "next/head";
+import DataServicesSection from "@/components/DataServicesSection";
+import { dataServices } from "@/constants/indesx";
 
 const DataEngineering: NextPage = () => {
     return (
@@ -34,6 +36,7 @@ const DataEngineering: NextPage = () => {
                  technologies and methodologies, we ensure that your data is processed, analyzed, and presented in a way that is easy to understand and actionable.
                  Our approach is holistic, covering everything from data collection and storage to advanced analytics and predictive modeling. We are committed to
                  helping you make data-driven decisions that lead to sustainable growth and success. " />
+            <DataServicesSection heading="Our Data" headingBlue="Services" data={dataServices} />
             <Enterprise />
             <Innovation />
             <ContactForm />
