@@ -22,7 +22,7 @@ const ServicesNeeds: FC<ServicesNeedsProps> = ({
             <Container>
                 <Row>
                     <Col lg={8} md={12} xs={12} className='bg-[#F6FAFF] rounded-[16px]'>
-                        <div className="needs-content pl-[40px] pt-[67px] pb-[50px] min-h-[612px] max-h-[612px] h-full">
+                        <div className="needs-content pl-[0px] md:pl-[40px] pt-[67px] pb-[50px] min-h-[612px] max-h-[612px] h-full">
                             <h2 className='text-black text-[40px] capitalize font-semibold max-w-[530px] tracking-[0.8px] w-full mb-[24px]'>
                                 {needsTitle} <span className='text-[#2776EA]'>{needsTitleBlue}</span>
                                 {needsMoreTitle ? <span> {needsMoreTitle}</span> : null}
@@ -33,7 +33,7 @@ const ServicesNeeds: FC<ServicesNeedsProps> = ({
                         </div>
                     </Col>
                     <Col lg={4} md={12} xs={12}>
-                        <div className="img-box relative left-[-100px] top-[42px] w-full max-w-[450px]">
+                        <div className="img-box static md:relative left-[-100px] top-[42px] w-full  max-w-full md:max-w-[450px]">
                             <Image
                                 src={NeedsImage}
                                 alt="needs-us"

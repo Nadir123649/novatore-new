@@ -435,3 +435,47 @@ export const AwsData = [
         icon: ImageThree,
     },
 ];
+
+export const sericesoffer = {
+    digitalservice: [
+        {
+            id: "digitalservice",
+            title: "CloudOps Consulting",
+            details: "Find out with our CloudOps services. At Novatore Solutions, we are dedicated to enhancing operational efficiency, deployment processes, and ensuring high availability through our advanced CloudOps solutions. ",
+            description: "We provide expert guidance on best practices, tools, and technologies, ensuring that your cloud strategy aligns with your business objectives.",
+        },
+        {
+            id: 2,
+            title: "CloudOps Implementation",
+            description: "Our team excels in deploying cloud operations frameworks that enhance performance, security, and scalability, tailored to your unique requirements.",
+        },
+        {
+            id: 3,
+            title: "CloudOps Managed Services",
+            description: "We offer continuous monitoring, maintenance, and optimization to ensure your cloud environment runs smoothly and efficiently.",
+        }
+    ],
+    cybersecurity: [
+
+        {
+            id: "cybersecurity",
+            title: "Governance, Risk & Compliance",
+            details: "Check out our services designed to safeguard your organisation and ensure operational excellence. We help you meet regulatory requirements effectively, ensuring that your data is protected",
+            description: "Ensure your organization meets regulatory requirements and mitigates risks effectively.",
+        },
+        {
+            id: 2,
+            title: "Security Services",
+            description: "Protect your data with our comprehensive security strategies and solutions.",
+        },
+        {
+            id: 3,
+            title: "Penetration Testing",
+            description: "Identify and fix vulnerabilities in your systems before they can be exploited.",
+        },
+
+    ]
+
+}
+
+

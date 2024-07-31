@@ -21,8 +21,8 @@ const ExpertServices: FC<ExpertServicesProps> = ({
         <section className='needs-section py-20 bg-center bg-no-repeat bg-cover'>
             <Container>
                 <Row>
-                    <Col lg={4} md={12} xs={12}>
-                        <div className="img-box relative right-[-100px] top-[42px] w-full max-w-[450px]">
+                    <Col lg={4} md={12} xs={12} className=''>
+                        <div className="img-box static md:relative right-[-100px] top-[42px] w-full max-w-full md:max-w-[450px] ">
                             <Image
                                 src={NeedsImage}
                                 alt="needs-us"
@@ -32,8 +32,8 @@ const ExpertServices: FC<ExpertServicesProps> = ({
                             />
                         </div>
                     </Col>
-                    <Col lg={8} md={12} xs={12} className='bg-[#F6FAFF] rounded-[16px]'>
-                        <div className="needs-content pl-[140px] pt-[87px] pb-[50px] min-h-[612px] max-h-[612px] h-full">
+                    <Col lg={8} md={12} xs={12} className='bg-[#F6FAFF] rounded-[16px] '>
+                        <div className="needs-content pl-[0px] md:pl-[140px] pt-[87px] pb-[50px] min-h-[612px] max-h-[612px] h-full">
                             <h2 className='text-black text-[40px]  capitalize font-semibold max-w-[550px] tracking-[0.8px] w-full mb-[24px]'>
                                 {needsTitle} <span className='text-[#2776EA]'>{needsTitleBlue}</span>
                                 {needsMoreTitle ? <span> {needsMoreTitle}</span> : null}
