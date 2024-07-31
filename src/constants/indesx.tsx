@@ -1,4 +1,4 @@
-import { AIOne, AITwo, AIThree, AIFour, AIFive, AISix, CovaBg, AngelflowBg, About, Airbolt, ANGELFLOW, AngelLogo, Assistant, blogImageOne, blogImageTwo, Buisness, Career, Catalyst, ChooseFour, ChooseOne, ChooseThree, ChooseTwo, Cova, COVA, CovaLogo, Developer, Industries, Insights, London, milestonIconOne, milestonIconThree, milestonIconTwo, milestonOne, milestonThree, milestonTwo, Protium, Services, Upsure, DataImageOne, DataImageTwo, DataImageThree, DataImageFour, CloudOne, CloudTwo, CloudThree, CloudFour, AiOne, AiTwo, AiThree, AwsOne, AwsTwo, AwsThree } from "@/utils";
+import { AIOne, AITwo, AIThree, AIFour, AIFive, AISix, CovaBg, AngelflowBg, About, Airbolt, ANGELFLOW, AngelLogo, Assistant, blogImageOne, blogImageTwo, Buisness, Career, Catalyst, ChooseFour, ChooseOne, ChooseThree, ChooseTwo, Cova, COVA, CovaLogo, Developer, Industries, Insights, London, milestonIconOne, milestonIconThree, milestonIconTwo, milestonOne, milestonThree, milestonTwo, Protium, Services, Upsure, DataImageOne, DataImageTwo, DataImageThree, DataImageFour, CloudOne, CloudTwo, CloudThree, CloudFour, AiOne, AiTwo, AiThree, AwsOne, AwsTwo, AwsThree, ImageOne, ImageTwo, ImageThree } from "@/utils";
 import { IoMdMail } from "react-icons/io";
 import { FaPhoneAlt } from "react-icons/fa";
 import { ImLocation } from "react-icons/im";
@@ -425,17 +425,16 @@ export const AwsData = [
     {
         title: 'Storage Services',
         description: 'Secure and scalable storage solutions tailored to meet your business needs.',
-        icon: AwsOne,
+        icon: ImageOne,
     },
     {
         title: 'Networking Services',
         description: 'Efficient networking services that enhance connectivity and performance.',
-        icon: AwsTwo,
+        icon: ImageTwo,
     },
     {
         title: 'Analytics Services',
         description: 'Advanced analytics tools to turn your data into actionable insights.',
-        icon: AwsThree
-        ,
+        icon: ImageThree,
     },
 ];
