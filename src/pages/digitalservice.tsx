@@ -10,6 +10,8 @@ import ServicesNeeds from "@/components/ServicesNeeds";
 import { NextPage } from "next";
 import Head from "next/head";
 import CloudOps from "@/components/CloudOps";
+import DiagramSlider from "@/components/DiagramSlider";
+import { DiagramOne } from "@/utils";
 
 const DigitalService: NextPage = () => {
     return (
@@ -34,6 +36,7 @@ const DigitalService: NextPage = () => {
                  Product Engineering, and DevOps & SecOps. Each service is tailored to address specific challenges and opportunities, ensuring that you receive
                   the support and guidance you need to achieve your business objectives. " />
             <CloudOps />
+            <DiagramSlider heading="A Superior" headingBlue="Digital Services" needsMoreTitle="Approach" image={DiagramOne} />
             <Enterprise />
             <Innovation />
             <ContactForm />

@@ -10,6 +10,8 @@ import { NextPage } from "next";
 import Head from "next/head";
 import DataServicesSection from "@/components/DataServicesSection";
 import { dataServices } from "@/constants/indesx";
+import DiagramSlider from "@/components/DiagramSlider";
+import { DiagramTwo } from "@/utils";
 
 const DataEngineering: NextPage = () => {
     return (
@@ -37,6 +39,7 @@ const DataEngineering: NextPage = () => {
                  Our approach is holistic, covering everything from data collection and storage to advanced analytics and predictive modeling. We are committed to
                  helping you make data-driven decisions that lead to sustainable growth and success. " />
             <DataServicesSection heading="Our Data" headingBlue="Services" data={dataServices} />
+            <DiagramSlider heading="Our Proven" headingBlue="Data Engineering" needsMoreTitle="Workflow" image={DiagramTwo} />
             <Enterprise />
             <Innovation />
             <ContactForm />

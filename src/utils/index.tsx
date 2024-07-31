@@ -58,6 +58,18 @@ export { default as ImageThree } from "../../public/images/filter-image-3.svg"
 export { default as AwsOne } from "../../public/images/aws-image-1.svg"
 export { default as AwsTwo } from "../../public/images/aws-image-2.svg"
 export { default as AwsThree } from "../../public/images/aws-image-3.svg"
+export { default as DiagramOne } from "../../public/images/diagram-1.png"
+export { default as DiagramTwo } from "../../public/images/diagram-2.png"
+export { default as DiagramThree } from "../../public/images/diagram-3.png"
+export { default as DiagramFour } from "../../public/images/diagram-4.png"
+export { default as DiagramFive } from "../../public/images/diagram-5.png"
+export { default as DiagramSix } from "../../public/images/diagram-6.png"
+
+
+
+
+
+
 
 
 

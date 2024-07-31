@@ -9,6 +9,8 @@ import ServicesNeeds from "@/components/ServicesNeeds";
 import { NextPage } from "next";
 import Head from "next/head";
 import CloudOps from "@/components/CloudOps";
+import DiagramSlider from "@/components/DiagramSlider";
+import { DiagramFive } from "@/utils";
 
 const CyberSecurity: NextPage = () => {
     return (
@@ -32,7 +34,8 @@ const CyberSecurity: NextPage = () => {
                 needsDescription="Our cybersecurity services include everything from governance, risk, and compliance to detailed penetration testing.
                  We understand the complexities of data privacy and work diligently to protect your sensitive information from potential breaches.
                  Our goal is to provide peace of mind by safeguarding your digital assets with robust and reliable security measures." />
-           <CloudOps/>
+            <CloudOps />
+            <DiagramSlider image={DiagramFive} />
             <Enterprise />
             <Innovation />
             <ContactForm />

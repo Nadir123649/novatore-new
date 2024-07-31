@@ -10,6 +10,8 @@ import { NextPage } from "next";
 import Head from "next/head";
 import DataServicesSection from "@/components/DataServicesSection";
 import { CloudData, } from "@/constants/indesx";
+import DiagramSlider from "@/components/DiagramSlider";
+import { DiagramThree } from "@/utils";
 
 const CloudServices: NextPage = () => {
     return (
@@ -35,6 +37,7 @@ const CloudServices: NextPage = () => {
                  From cloud migration to ongoing CloudOps support, we are committed to providing you with the tools and expertise you need to succeed in the digital era.
                   Discover how our cloud services can revolutionize your business today." />
             <DataServicesSection heading="Our Cloud" headingBlue="Services" data={CloudData} />
+            <DiagramSlider heading="A Strategic" headingBlue="Outlook on Cloud" needsMoreTitle="Services" image={DiagramThree} />
             <Enterprise />
             <Innovation />
             <ContactForm />
