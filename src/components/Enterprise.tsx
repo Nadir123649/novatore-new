@@ -7,7 +7,7 @@ const Enterprise = () => {
   return (
     <section className='choose-us-section py-20 bg-center bg-no-repeat bg-cover'>
       <Container>
-        <h2 className='text-[40px] md:text-[52px] not-italic font-medium text-white mb-12 text-center'>Reshaping Enterprises for the Digital Age</h2>
+        <h2 className='text-[30px] md:text-[52px] not-italic font-medium text-white mb-12 text-center'>Reshaping Enterprises for the Digital Age</h2>
         <Row>
           <Col lg={12} md={12} xs={12}>
             <Row>

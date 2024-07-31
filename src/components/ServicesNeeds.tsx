@@ -18,16 +18,16 @@ const ServicesNeeds: FC<ServicesNeedsProps> = ({
     needsMoreTitle
 }) => {
     return (
-        <section className='needs-section py-20 bg-center bg-no-repeat bg-cover'>
+        <section className='needs-section py-[10px] md:py-20 bg-center bg-no-repeat bg-cover'>
             <Container>
                 <Row>
                     <Col lg={8} md={12} xs={12} className='bg-[#F6FAFF] rounded-[16px]'>
-                        <div className="needs-content pl-[0px] md:pl-[40px] pt-[67px] pb-[50px] min-h-[612px] max-h-[612px] h-full">
-                            <h2 className='text-black text-[40px] capitalize font-semibold max-w-[530px] tracking-[0.8px] w-full mb-[24px]'>
+                        <div className="needs-content pl-[0px] md:pl-[40px] pt-[20px] md:pt-[67px]  pb-[20px] md:pb-[50px] min-h-[470px] md:min-h-[612px] max-h-[612px] h-full">
+                            <h2 className='text-black text-3xl md:text-[40px] capitalize font-semibold max-w-[530px] tracking-[0.8px] w-full mb-[24px]'>
                                 {needsTitle} <span className='text-[#2776EA]'>{needsTitleBlue}</span>
                                 {needsMoreTitle ? <span> {needsMoreTitle}</span> : null}
                             </h2>
-                            <p className='text-black font-lato text-[20px] not-italic font-normal leading-[30px] max-w-[522px] text-justify'>
+                            <p className='text-black font-lato text-base md:text-[20px] not-italic font-normal leading-[30px] max-w-[522px] text-justify'>
                                 {needsDescription}
                             </p>
                         </div>

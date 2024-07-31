@@ -65,7 +65,7 @@ const Innovation = () => {
         breakpoint: 480,
 
         settings: {
-          slidesToShow: 1.02,
+          slidesToShow:1,
           slidesToScroll: 1,
           centerMode: false,
         }
@@ -76,10 +76,10 @@ const Innovation = () => {
 
 
   return (
-    <section className='innovation-section py-20  '>
+    <section className='innovation-section py-[20px] md:py-20  '>
       <div className="container ">
-        <div className='flex justify-between items-center  pr-[140px]'>
-          <h2 className=' font-bold text-[26px] md:text-[40px] max-w-[590px]'>Tech Expert Latest: Innovations In <span className='text-[#2776EA]'> Digital Enterprise</span></h2>
+        <div className='flex justify-between items-center pr-[0px]  md:pr-[140px] pb-[40px] md:pb-[0px]'>
+          <h2 className=' font-bold text-[26px] md:text-[40px] max-w-full md:max-w-[590px] '>Tech Expert Latest: Innovations In <span className='text-[#2776EA]'> Digital Enterprise</span></h2>
         </div>
         <Slider {...settings} className="innovation-slider mt-10">
           {blogData.map(blog => (

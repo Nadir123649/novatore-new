@@ -61,6 +61,7 @@
   top: -84px;
 }
 
+
 .trending-section .slick-slider .prev {
   right: 72px;
   top: -84px;
@@ -365,8 +366,13 @@
   .contact-form {
     padding: 20px 0px;
   }
+  .innovation-section .next{
+    right: 126px !important;
+  }
 
-
+  .innovation-section .prev{
+    right: 182px !important;
+  }
   .Case-studies-section .slick-slider .next,
   .trending-section .slick-slider .next,
   .slick-slider .next {
@@ -377,6 +383,19 @@
   .trending-section .slick-slider .prev,
   .slick-slider .prev {
     right: 65px;
+  }
+  .needs-description {
+    order: 1;
+  }
+  .needs-banner{
+    order: 2;
+  }
+  .innovation-section h2,
+  .CloudOps-section h2{
+    text-align: center;
+  }
+  .innovation-slider .shadow-card{
+    margin-right: 0 !important;
   }
 
 }

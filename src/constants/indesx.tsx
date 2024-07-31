@@ -436,7 +436,7 @@ export const AwsData = [
     },
 ];
 
-export const sericesoffer = {
+export const servicesoffer = {
     digitalservice: [
         {
             id: "digitalservice",
