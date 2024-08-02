@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { Col, Container, Row } from 'react-bootstrap';
 import CountUp from 'react-countup';
 import { useInView } from 'react-intersection-observer';
@@ -12,9 +12,19 @@ interface EnterpriseData {
 
 const Enterprise: React.FC = () => {
   const { ref, inView } = useInView({
-    triggerOnce: true,
+    triggerOnce: false, 
     threshold: 0.3,
   });
+
+  const [isCounting, setIsCounting] = useState(false);
+
+  useEffect(() => {
+    if (inView) {
+      setIsCounting(true);
+    } else {
+      setIsCounting(false);
+    }
+  }, [inView]);
 
   return (
     <section ref={ref} className='choose-us-section py-20 bg-center bg-no-repeat bg-cover'>
@@ -36,7 +46,7 @@ const Enterprise: React.FC = () => {
                         } transition-transform duration-500 ease-in-out transform hover:scale-105`}
                     >
                       <h3 className='text-[56px] not-italic font-bold text-white mb-0'>
-                        {inView ? (
+                        {isCounting ? (
                           <CountUp
                             end={data.title}
                             duration={4}

@@ -19,17 +19,23 @@ const DiagramSlider: React.FC<DiagramSectionProps> = ({ heading, headingBlue, im
          const element = document.getElementById("diagram-section");
          if (element) {
              const rect = element.getBoundingClientRect();
-             setIsVisible(rect.top <= window.innerHeight * 0.75);
+             const elementTop = rect.top;
+             const elementBottom = rect.bottom;
+     
+             const isElementInView = elementTop <= window.innerHeight && elementBottom >= 0;
+     
+             setIsVisible(isElementInView);
          }
      };
- 
+     
      useEffect(() => {
          window.addEventListener("scroll", handleScroll);
+         handleScroll(); 
          return () => {
              window.removeEventListener("scroll", handleScroll);
          };
      }, []);
- 
+     
     return (
         <section id="diagram-section" className={`${isVisible ? "fadeIn" : "opacity-0 "
         } `} >

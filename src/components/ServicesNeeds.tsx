@@ -39,7 +39,7 @@ const ServicesNeeds: FC<ServicesNeedsProps> = ({
         <section id='servicesneed-section' className='needs-section py-[10px] md:py-20 bg-center bg-no-repeat bg-cover '>
             <Container>
                 <Row>
-                    <Col lg={8} md={12} xs={12}  className={`${isVisible ? "animate-slideRight" : "opacity-0 translate-x-full"
+                    <Col lg={8} md={12} xs={12} className={`${isVisible ? "animate-slideRight" : "opacity-0 translate-x-full"
                         } transition-transform duration-500 ease-out needs-banner bg-[#F6FAFF] rounded-[16px]`}>
                         <div className="needs-content pl-[0px] md:pl-[40px] pt-[20px] md:pt-[67px]  pb-[20px] md:pb-[50px] min-h-[470px] md:min-h-[612px] max-h-[612px] h-full">
                             <h2 className='text-black text-3xl md:text-[40px] capitalize font-semibold max-w-[530px] tracking-[0.8px] w-full mb-[24px]'>
@@ -51,18 +51,26 @@ const ServicesNeeds: FC<ServicesNeedsProps> = ({
                             </p>
                         </div>
                     </Col>
-                    <Col lg={4} md={12} xs={12} className={`${isVisible ? "animate-slideLeft" : "opacity-0 translate-x-full"
-                        } transition-transform duration-500 ease-out needs-description rounded-[16px]  bg-[#F6FAFF]`} >
-                        <div className="img-box static md:relative left-[-100px] top-[42px] w-full  max-w-full md:max-w-[450px]">
-                            <Image
-                                src={NeedsImage}
-                                alt="needs-us"
-                                className='rounded-[16px] min-h-[400px] md:min-h-[527px] max-h-[400px] md:max-h-[527px] h-full w-full'
-                                width={450}
-                                height={527}
-                            />
+                    <Col
+                        lg={4}
+                        md={12}
+                        xs={12}
+                        className={`${isVisible ? "animate-slideLeft" : "opacity-0 translate-x-full"
+                            } transition-transform duration-500 ease-out needs-description rounded-[16px] bg-[#F6FAFF]`}
+                    >
+                        <div className="img-box static md:relative left-[-100px] top-[42px] w-full max-w-full md:max-w-[450px]">
+                            <div className='overflow-hidden rounded-[16px]'>
+                                <Image
+                                    src={NeedsImage}
+                                    alt="needs-us"
+                                    className='min-h-[400px] md:min-h-[527px] max-h-[400px] md:max-h-[527px] h-full w-full transform transition ease-in-out duration-300 hover:scale-[1.2]'
+                                    width={450}
+                                    height={527}
+                                />
+                            </div>
                         </div>
                     </Col>
+
                 </Row>
             </Container>
         </section>

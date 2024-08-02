@@ -68,21 +68,28 @@ const CloudOps: React.FC = () => {
   const duplicatedDetails = [...detailsForCurrentRoute, ...detailsForCurrentRoute];
   // animation ON VIEW 
   const [isVisible, setIsVisible] = useState(false);
-  const handleScroll = () => {
-    const element = document.getElementById("CloudOps-section");
-    if (element) {
-        const rect = element.getBoundingClientRect();
-        setIsVisible(rect.top <= window.innerHeight * 0.75);
-    }
-};
 
-useEffect(() => {
-    window.addEventListener("scroll", handleScroll);
-    return () => {
-        window.removeEventListener("scroll", handleScroll);
-    };
-}, []);
-
+     const handleScroll = () => {
+         const element = document.getElementById("CloudOps-section");
+         if (element) {
+             const rect = element.getBoundingClientRect();
+             const elementTop = rect.top;
+             const elementBottom = rect.bottom;
+     
+             const isElementInView = elementTop <= window.innerHeight && elementBottom >= 0;
+     
+             setIsVisible(isElementInView);
+         }
+     };
+     
+     useEffect(() => {
+         window.addEventListener("scroll", handleScroll);
+         handleScroll(); 
+         return () => {
+             window.removeEventListener("scroll", handleScroll);
+         };
+     }, []);
+     
 
 
   return (
@@ -101,9 +108,9 @@ useEffect(() => {
             </h2>
             <Row>
               <Col lg={12} md={12} xs={12}>
-                <div className="grid grid-cols-12 gap-4 py-[20px] min-h-[100vh]">
-                  <div className="col-span-12 md:col-span-4">
-                    <div className="text-white bg-[#2776EA] rounded-2xl p-4 min-h-[45vh] md:min-h-[70vh] max-w-[360px] relative">
+                <div className="grid grid-cols-12 gap-4 py-[20px] min-h-[100vh] ">
+                  <div className="col-span-12 md:col-span-4 ">
+                    <div className="cloudops-card  text-white bg-[#2776EA] rounded-2xl p-4 min-h-[45vh] md:min-h-[80vh] max-w-[360px] relative">
                       {detailsForCurrentRoute.map((data, index) => (
                         <p key={index} className="text-xl md:text-2xl">
                           {data.details}

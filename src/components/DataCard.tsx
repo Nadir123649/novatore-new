@@ -10,7 +10,7 @@ interface DataCardProps {
 
 const DataCard: React.FC<DataCardProps> = ({ title, description, icon }) => {
     return (
-        <div className="relative bg-white shadow rounded-[16px] pt-[40px] pb-[10px] px-[24px] max-w-sm mx-auto overflow-hidden min-h-[295px] flex flex-col h-full hover:scale-105">
+        <div className="relative bg-white shadow rounded-[16px] pt-[40px] pb-[10px] px-[24px] max-w-sm mx-auto overflow-hidden min-h-[295px] flex flex-col h-full hover:scale-105 transition ease-in duration-1.5">
             <div className="absolute top-0 left-6 w-full h-3 bg-transparent">
                 <Image src={Bordered} alt="bordered" layout="fixed" />
             </div>
