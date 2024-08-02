@@ -1,4 +1,4 @@
-import { AIOne, AITwo, AIThree, AIFour, AIFive, AISix, CovaBg, AngelflowBg, About, Airbolt, ANGELFLOW, AngelLogo, Assistant, blogImageOne, blogImageTwo, Buisness, Career, Catalyst, ChooseFour, ChooseOne, ChooseThree, ChooseTwo, Cova, COVA, CovaLogo, Developer, Industries, Insights, London, Protium, Services, Upsure, DataImageOne, DataImageTwo, DataImageThree, DataImageFour, CloudOne, CloudTwo, CloudThree, CloudFour, AwsOne, AwsTwo, AwsThree, ImageOne, ImageTwo, ImageThree } from "@/utils";
+import { AIOne, AITwo, AIThree, AIFour, AIFive, AISix, CovaBg, AngelflowBg, About, Airbolt, ANGELFLOW, AngelLogo, Assistant, blogImageOne, blogImageTwo, Buisness, Career, Catalyst, ChooseFour, ChooseOne, ChooseThree, ChooseTwo, Cova, COVA, CovaLogo, Developer, Industries, Insights, London, Protium, Services, Upsure, DataImageOne, DataImageTwo, DataImageThree, DataImageFour, CloudOne, CloudTwo, CloudThree, CloudFour, AwsOne, AwsTwo, AwsThree, ImageOne, ImageTwo, ImageThree, CloudFive, CloudSix, DataImageFive, DataImageSix } from "@/utils";
 import { IoMdMail } from "react-icons/io";
 import { FaPhoneAlt } from "react-icons/fa";
 import { ImLocation } from "react-icons/im";
@@ -377,7 +377,18 @@ export const dataServices = [
         description: 'Leverage advanced algorithms and machine learning techniques to uncover hidden patterns and predictive insights.',
         icon: DataImageFour,
     },
+    {
+        title: 'Big Data Solutions',
+        description: 'We offer tailored Big Data Solutions to help organizations harness the power of large datasets.',
+        icon: DataImageFive,
+    },
+    {
+        title: 'Data Visualization',
+        description: 'Our Data Visualization services transform complex data into interactive and intuitive visual formats.',
+        icon: DataImageSix,
+    },
 ];
+
 export const CloudData = [
     {
         title: 'Business Process Automation',
@@ -398,6 +409,16 @@ export const CloudData = [
         title: 'Cloud Migration',
         description: 'Seamlessly transition your existing infrastructure to the cloud with minimal disruption and maximum efficiency.',
         icon: CloudFour,
+    },
+    {
+        title: 'Cloud Security Services',
+        description: 'Protecting your cloud infrastructure with tailored security solutions.',
+        icon: CloudFive,
+    },
+    {
+        title: 'Cloud Cost Optimization',
+        description: 'We help you save on cloud expenses with cost-saving strategies.',
+        icon: CloudSix,
     },
 ];
 
