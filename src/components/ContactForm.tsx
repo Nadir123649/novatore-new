@@ -11,8 +11,8 @@ const ContactForm = () => {
                     <Row>
                         <Col lg={4} md={12} xs={12}>
                             <div className="contact-form-content mt-[30px]">
-                                <h1 className='text-[#2D2D2D] font-bold not-italic mb-4 max-w-[290px]'>Let’s reach new <span className='text-[#2776EA]'>heights</span>!</h1>
-                                <p className='text-[#4C4C4C] font-lato not-italic text-[24px] font-normal max-w-[274px]'>
+                                <h1 className='text-[#2D2D2D] font-bold not-italic mb-4 max-w-full md:max-w-[290px] '>Let’s reach new <span className='text-[#2776EA]'>heights</span>!</h1>
+                                <p className='text-[#4C4C4C] font-lato not-italic text-[24px] font-normal max-w-full md:max-w-[274px] '>
                                     Book a call today and see
                                     where we can take you.
                                 </p>

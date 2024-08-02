@@ -16,6 +16,7 @@ import { DiagramTwo } from "@/utils";
 const DataEngineering: NextPage = () => {
     return (
         <>
+        <div className="overflow-x-hidden">
             <Head>
                 <title>Novatore Sols</title>
                 <meta
@@ -44,6 +45,7 @@ const DataEngineering: NextPage = () => {
             <Innovation />
             <ContactForm />
             <Footer />
+            </div>
         </>
     );
 };

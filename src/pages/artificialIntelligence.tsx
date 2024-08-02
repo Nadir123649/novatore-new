@@ -16,6 +16,7 @@ import { DiagramFour } from "@/utils";
 const ArtificialIntelligence: NextPage = () => {
     return (
         <>
+        <div className="overflow-x-hidden">
             <Head>
                 <title>Novatore Sols</title>
                 <meta
@@ -41,6 +42,7 @@ const ArtificialIntelligence: NextPage = () => {
             <Innovation />
             <ContactForm />
             <Footer />
+            </div>
         </>
     );
 };

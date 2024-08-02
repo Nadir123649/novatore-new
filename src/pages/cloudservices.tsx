@@ -16,6 +16,7 @@ import { DiagramThree } from "@/utils";
 const CloudServices: NextPage = () => {
     return (
         <>
+        <div className="overflow-x-hidden">
             <Head>
                 <title>Novatore Sols</title>
                 <meta
@@ -42,6 +43,7 @@ const CloudServices: NextPage = () => {
             <Innovation />
             <ContactForm />
             <Footer />
+            </div>
         </>
     );
 };

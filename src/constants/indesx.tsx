@@ -351,9 +351,9 @@ export const blogData = [
 ];
 
 export const Enterprises = [
-    { title: '100', percentage: "+", description: 'Digitally Transformed Enterprises' },
-    { title: '130', percentage: "+", description: 'Organizations Empowered Through Omnichannel Experiences' },
-    { title: '500', percentage: "+", description: ' Design-Driven Solutions Implemented' },
+    { title: 100, percentage: "+", description: 'Digitally Transformed Enterprises' },
+    { title: 130, percentage: "+", description: 'Organizations Empowered Through Omnichannel Experiences' },
+    { title: 500, percentage: "+", description: ' Design-Driven Solutions Implemented' },
 ];
 
 export const dataServices = [

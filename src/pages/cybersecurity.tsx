@@ -13,8 +13,10 @@ import DiagramSlider from "@/components/DiagramSlider";
 import { DiagramFive } from "@/utils";
 
 const CyberSecurity: NextPage = () => {
+    
     return (
-        <>
+        < >
+        <div className="overflow-x-hidden">
             <Head>
                 <title>Novatore Sols</title>
                 <meta
@@ -40,6 +42,7 @@ const CyberSecurity: NextPage = () => {
             <Innovation />
             <ContactForm />
             <Footer />
+            </div>
         </>
     );
 };

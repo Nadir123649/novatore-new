@@ -10,6 +10,7 @@ import Link from 'next/link';
 import { Profile } from '../utils'
 import { blogData } from '@/constants/indesx';
 import BlogsCard from './BlogsCard';
+import { useState , useEffect } from 'react';
 
 interface ArrowProps {
   onClick?: React.MouseEventHandler<HTMLDivElement>;
@@ -73,10 +74,27 @@ const Innovation = () => {
     ]
   };
 
+ // animation state on view 
+ const [isVisible, setIsVisible] = useState(false);
 
+ const handleScroll = () => {
+     const element = document.getElementById("innovation-section");
+     if (element) {
+         const rect = element.getBoundingClientRect();
+         setIsVisible(rect.top <= window.innerHeight * 0.75);
+     }
+ };
+
+ useEffect(() => {
+     window.addEventListener("scroll", handleScroll);
+     return () => {
+         window.removeEventListener("scroll", handleScroll);
+     };
+ }, []);
 
   return (
-    <section className='innovation-section py-[20px] md:py-20  '>
+    <section id='innovation-section' className={`${isVisible ? "fadeIn" : "opacity-0 "
+    } py-[20px] md:py-20 innovation-section  `}>
       <div className="container ">
         <div className='flex justify-between items-center pr-[0px]  md:pr-[140px] pb-[40px] md:pb-[0px]'>
           <h2 className=' font-bold text-[26px] md:text-[40px] max-w-full md:max-w-[590px] '>Tech Expert Latest: Innovations In <span className='text-[#2776EA]'> Digital Enterprise</span></h2>

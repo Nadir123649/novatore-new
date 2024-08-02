@@ -16,6 +16,7 @@ import { DiagramOne } from "@/utils";
 const DigitalService: NextPage = () => {
     return (
         <>
+          <div className="overflow-x-hidden">
             <Head>
                 <title>Novatore Sols</title>
                 <meta
@@ -41,6 +42,7 @@ const DigitalService: NextPage = () => {
             <Innovation />
             <ContactForm />
             <Footer />
+            </div>
         </>
     );
 };

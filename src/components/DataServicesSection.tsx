@@ -1,6 +1,7 @@
 import React from 'react';
 import { Col, Container, Row } from 'react-bootstrap';
 import DataCard from './DataCard';
+import { useState , useEffect } from 'react';
 
 interface DataServicesSectionProps {
     heading: string;
@@ -13,8 +14,26 @@ interface DataServicesSectionProps {
 }
 
 const DataServicesSection: React.FC<DataServicesSectionProps> = ({ heading, headingBlue, data }) => {
+    // animation state on view 
+ const [isVisible, setIsVisible] = useState(false);
+
+ const handleScroll = () => {
+     const element = document.getElementById("dataservice-section");
+     if (element) {
+         const rect = element.getBoundingClientRect();
+         setIsVisible(rect.top <= window.innerHeight * 0.75);
+     }
+ };
+
+ useEffect(() => {
+     window.addEventListener("scroll", handleScroll);
+     return () => {
+         window.removeEventListener("scroll", handleScroll);
+     };
+ }, []);
     return (
-        <section className="pb-20 pt-10">
+        <section id="dataservice-section"   className={`${isVisible ? "fadeIn" : "opacity-0 "
+        } pb-20 pt-10 `}>
             <h2 className='text-[40px] font-bold not-italic leading-normal capitalize text-center mb-[60px] text-black'>
                 {heading} <span className='text-[#2776EA]'> {headingBlue}</span>
             </h2>

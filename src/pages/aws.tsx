@@ -16,6 +16,7 @@ import { DiagramSix } from "@/utils";
 const AWS: NextPage = () => {
     return (
         <>
+        <div className="overflow-x-hidden">
             <Head>
                 <title>Novatore Sols</title>
                 <meta
@@ -43,6 +44,7 @@ const AWS: NextPage = () => {
             <Innovation />
             <ContactForm />
             <Footer />
+            </div>
         </>
     );
 };
