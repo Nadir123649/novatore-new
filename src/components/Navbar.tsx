@@ -142,7 +142,7 @@ const Navbar = () => {
                 } hidden`}
             />
           </Link>
-          <ul className="nav-menu mb-0 pl-0 hidden md:flex flex-row gap-4 ml-8">
+          <ul className="nav-menu mb-0 pl-0 hidden md:flex flex-row gap-4 ml-8  ease-in-out duration-300 ">
             {["Services", "Industries", "Insights", "About", "Careers"].map(
               (menu, index) => (
                 <li

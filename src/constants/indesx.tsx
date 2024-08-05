@@ -284,36 +284,113 @@ export const studies = [
     }
 ];
 
-
 export const listingstable: any = {
     services: [
-        { id: "custom software development", link: '/', heading: "Custom Software Development", details: ["Web applications development", "Mobile app development", "UI/UX design"] },
-        { id: "IT services", link: '/', heading: "IT Services", details: ["Enterprise Mobility ", "Digital transformation", "Staff augmentation"] },
-        { id: "digital services", link: '/digitalservice', heading: "Digital Services", details: ["Digital Consulting & Strategy", "Digital Business Applications", "Product Engineering"] }
+      {
+        id: "custom software development",
+        link: '/',
+        heading: "Custom Software Development",
+        details: [
+          { text: "Web applications development", link: '/' },
+          { text: "Mobile app development", link: '/' },
+          { text: "UI/UX design", link: '/' }
+        ]
+      },
+      {
+        id: "IT services",
+        link: '/',
+        heading: "IT Services",
+        details: [
+          { text: "Enterprise Mobility", link: '/' },
+          { text: "Digital Transformation", link: '/' },
+          { text: "Staff Augmentation", link: '/' }
+        ]
+      },
+      {
+        id: "digital services",
+        link: '/digitalservice',
+        heading: "Digital Services",
+        details: [
+          { text: "Digital Consulting & Strategy", link: '/' },
+          { text: "Digital Business Applications", link: '/' },
+          { text: "Product Engineering", link: '/' }
+        ]
+      }
     ],
     insights: [
-        { id: "Blogs", link: "/blogs", heading: "Blogs", details: ["Latest Trends ", "Expert Opinions", "Case Studies"] },
-        { id: "Whitepapers", links: "/", heading: "Whitepapers", details: ["Industry Reports", "Research Studies", "Technicl guides"] }
+      {
+        id: "Blogs",
+        link: "/blogs",
+        heading: "Blogs",
+        details: [
+          { text: "Latest Trends", link: '/' },
+          { text: "Expert Opinions", link: '/' },
+          { text: "Case Studies", link: '/' }
+        ]
+      },
+      {
+        id: "Whitepapers",
+        link: "/",
+        heading: "Whitepapers",
+        details: [
+          { text: "Industry Reports", link: '/' },
+          { text: "Research Studies", link: '/' },
+          { text: "Technical Guides", link: '/' }
+        ]
+      }
     ],
     about: [
-        { id: "About Us", link: "/about", heading: "About Us", details: ["Our Story", "Company History", "Mission and Vision", "Partners and Alliances"] }
+      {
+        id: "About Us",
+        link: "/about",
+        heading: "About Us",
+        details: [
+          { text: "Our Story", link: '/' },
+          { text: "Company History", link: '/' },
+          { text: "Mission and Vision", link: '/' },
+          { text: "Partners and Alliances", link: '/' }
+        ]
+      }
     ],
-    careers: [{ id: "Careers", link: "/careers", heading: "Careers", details: ["Job Opnenings", "Life at Novatore", "Internship"] }],
-    industries: [{ id: "Industries", link: "/", heading: "Industries", details: ["Crypto", "Entertainment", "Gaming", "Healthcare", "Insurance"] }]
-
-};
-
+    careers: [
+      {
+        id: "Careers",
+        link: "/careers",
+        heading: "Careers",
+        details: [
+          { text: "Job Openings", link: '/' },
+          { text: "Life at Novatore", link: '/' },
+          { text: "Internship", link: '/' }
+        ]
+      }
+    ],
+    industries: [
+      {
+        id: "Industries",
+        link: "/",
+        heading: "Industries",
+        details: [
+          { text: "Crypto", link: '/' },
+          { text: "Entertainment", link: '/' },
+          { text: "Gaming", link: '/' },
+          { text: "Healthcare", link: '/' },
+          { text: "Insurance", link: '/' }
+        ]
+      }
+    ]
+  };
+  
 export const featurestable: any = {
     services: [
-        { id: "transformative solutions", link: "/", heading: "Transformative Solutions", details: ["Business Process Automation", "Testing and QA", "System Support",] },
-        { id: "Amazon Web Services", link: "/aws", heading: "Amazon Web Services", details: ["Storage services", "Networking services", "Analytics services"] },
-        { id: "Data", heading: "Data", link: "/dataengineering", details: ["Data Engineering ", "Data Management & Governance", "Analytics & Platform Implementation"] }
+        { id: "transformative solutions", link:"/", heading: "Transformative Solutions", details: [ { text: "Business Process Automation", link: '/' },{ text: "Testing and QA", link: '/' } ,{ text: "System Support", link: '/' } ] },
+        { id: "Amazon Web Services", link:"/aws", heading: "Amazon Web Services", details: [  { text: "Storage services", link: '/' },{ text: "Networking services", link: '/' } ,{ text: "Analytics services", link: '/' }] },
+        { id: "Data", heading: "Data", link:"/dataengineering", details: [{ text: "Data Engineering", link: '/' },{ text: "Data Management & Governance", link: '/' } ,{ text: "Analytics & Platform Implementation", link: '/' }]}
     ],
     insights: [
-        { id: "News & Events ", link: "/", heading: "News & Events", details: ["Company News ", "Industry Events", "Press Releases"] },
+        { id: "News & Events ", link:"/", heading: "News & Events", details: [{ text: "Company News", link: '/' },{ text: "Industry Events", link: '/' } ,{ text: "Press Releases", link: '/' } ] },
 
     ],
-    industries: [{ id: "Industries", link: "/", heading: "", details: ["Real Estate", "Retail", "Social", "Education", "Sports"] }]
+    industries: [{ id: "Industries", link:"/", heading: "", details: [{ text: "Real Estate", link: '/' },{ text: "Retail", link: '/' } ,{ text: "Social", link: '/' },{ text: "Education", link: '/' },{ text: "Sports", link: '/' } ] }]
 
 };
 
@@ -520,21 +597,21 @@ export const servicesoffer = {
 
 export const data = [
     {
-        id: 1,
-        heading: 'Cloud',
-        link: "/cloudservices",
-        items: ['CloudOps', 'AWS, Azure & GCP', 'Cloud Migration'],
+      id: 1,
+      heading: 'Cloud',
+      link:"/cloudservices",
+      items: [ { text: "CloudOps", link: '/' }, { text: "AWS, Azure & GCP", link: '/' } , { text: "Cloud Migration", link: '/' },],
     },
     {
-        id: 2,
-        heading: 'Artificial Intelligence',
-        link: "/artificialIntelligence",
-        items: ['AI Consulting', 'Generative AI', 'Machine Learning'],
+      id: 2,
+      heading: 'Artificial Intelligence',
+      link:"/artificialIntelligence",
+      items: [ { text: "AI Consulting", link: '/' }, { text: "Generative AI", link: '/' } , { text: "Machine Learning", link: '/' },],
     },
     {
-        id: 3,
-        heading: 'Cyber Security ',
-        link: "/cybersecurity",
-        items: ['Governance, Risk & Compliance, Data Privacy', 'Security Services', 'Penetration Testing'],
+      id: 3,
+      heading: 'Cyber Security ',
+      link:"/cybersecurity",
+      items: [ { text: "Governance, Risk & Compliance, Data Privacy", link: '/' }, { text: "Security Services", link: '/' } , { text: "Penetration Testing", link: '/' },],
     },
 ];

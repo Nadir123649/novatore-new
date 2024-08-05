@@ -23,7 +23,7 @@ const MegaMenu: React.FC<MegaMenuProps> = ({ activeMenu }) => {
       <div className="grid grid-cols-12 gap-4 sm:px-0 md:px-40">
         {/* section first  */}
         <div className="px-4 md:px-4 sm:py-0 md:py-14 col-span-12 md:col-span-4 ">
-          {filteredListings.map((listing: { id: React.Key | null | undefined; heading: string | number | bigint | boolean | React.ReactElement<any, string | React.JSXElementConstructor<any>> | Iterable<React.ReactNode> | React.ReactPortal | Promise<React.AwaitedReactNode> | null | undefined;link:string; details: any[]; }) => (
+          {filteredListings.map((listing: { id: React.Key | null | undefined; heading: string | number | bigint | boolean | React.ReactElement<any, string | React.JSXElementConstructor<any>> | Iterable<React.ReactNode> | React.ReactPortal | Promise<React.AwaitedReactNode> | null | undefined;link:string | null | undefined; details: { text: string; link: string }[]; }) => (
             <div key={listing.id} className="d-flex flex-col">
               <Link href={listing.link}>
               <h1 className="font-semibold text-lg text-[#2776EA] text-[18px] pt-2">
@@ -37,7 +37,10 @@ const MegaMenu: React.FC<MegaMenuProps> = ({ activeMenu }) => {
                     key={index}
                     className="pt-1 text-[#4F4F4F] cursor-pointer"
                   >
-                    {detail}
+                  <Link href={detail.link} className="text-[#4F4F4F]">
+                   {detail.text} 
+                  </Link>
+                    
                   </li>
                 ))}
               </ul>
@@ -46,7 +49,7 @@ const MegaMenu: React.FC<MegaMenuProps> = ({ activeMenu }) => {
         </div>
         {/* section second */}
         <div className="px-4 md:px-16 border-l-0  md:border-l-2 sm:my-0 md:my-14  col-span-12 md:col-span-4">
-          {filteredFeatures.map((feature: { id: React.Key | null | undefined; heading: string | number | bigint | boolean | React.ReactElement<any, string | React.JSXElementConstructor<any>> | Iterable<React.ReactNode> | React.ReactPortal | Promise<React.AwaitedReactNode> | null | undefined; link: string; details: any[]; }) => (
+          {filteredFeatures.map((feature: { id: React.Key | null | undefined; heading: string | number | bigint | boolean | React.ReactElement<any, string | React.JSXElementConstructor<any>> | Iterable<React.ReactNode> | React.ReactPortal | Promise<React.AwaitedReactNode> | null | undefined;link:string | null | undefined;  details: any[]; }) => (
             <div key={feature.id} className="d-flex flex-col">
               <Link href={feature.link}>
               <h1 className="font-semibold text-[#2776EA] text-lg pt-2">
@@ -60,7 +63,11 @@ const MegaMenu: React.FC<MegaMenuProps> = ({ activeMenu }) => {
                     key={index}
                     className="pt-1 text-[#4F4F4F] cursor-pointer"
                   >
-                    {detail}
+                    {/* <Link href="/" className="text-[#4F4F4F]">   {detail}</Link> */}
+                    <Link href={detail.link} className="text-[#4F4F4F]">
+                    {detail.text} 
+                    </Link>
+                 
                   </li>
                 ))}
               </ul>
@@ -83,7 +90,11 @@ const MegaMenu: React.FC<MegaMenuProps> = ({ activeMenu }) => {
                      key={index}
                      className="pt-1 text-[#4F4F4F] cursor-pointer"
                    >
-                     {item}
+                    {/* <Link href="/" className="text-[#4F4F4F]"> {item}</Link> */}
+                    <Link href={item.link} className="text-[#4F4F4F]">
+                    {item.text} 
+                    </Link>
+                   
                    </li>
                  ))}
                </ul>
