@@ -1,31 +1,19 @@
-import ContactForm from "@/components/ContactForm";
 import ExpertServices from "@/components/ExpertServices";
 import Enterprise from "@/components/Enterprise";
-import Footer from "@/components/Footer";
 import HeroBanner from "@/components/HeroBanner";
 import Innovation from "@/components/Innovation";
-import Navbar from "@/components/Navbar";
 import ServicesNeeds from "@/components/ServicesNeeds";
 import { NextPage } from "next";
-import Head from "next/head";
 import CloudOps from "@/components/CloudOps";
 import DiagramSlider from "@/components/DiagramSlider";
 import { DiagramFive } from "@/utils";
+import Layout from "@/components/Layout";
 
 const CyberSecurity: NextPage = () => {
 
     return (
-        < >
+        <Layout title="Novatore Sols - Home" description="Welcome to Novatore Sols, setting new standards in technology with unmatchable code.">
             <div className="overflow-x-hidden">
-                <Head>
-                    <title>Novatore Sols</title>
-                    <meta
-                        name="Novatore Sols"
-                        content="Setting new standards in technology with unmatchable code."
-                    />
-                    <link rel="icon" href="/favicon.ico" />
-                </Head>
-                <Navbar />
                 <HeroBanner bannerHeading="Cyber Security" previewImage="/images/cyber-banner.png" />
                 <ServicesNeeds needsTitle="Ensuring Your" needsTitleBlue="Digital Safety" NeedsImage="/images/needs-image-nine.png"
                     needsDescription="Protecting your data and ensuring compliance with regulatory standards is more important than ever. At Novatore Solutions,
@@ -40,10 +28,8 @@ const CyberSecurity: NextPage = () => {
                 <DiagramSlider heading="Comprehensive Cybersecurity Strategy:" headingBlue="Safeguarding Every Layer" image={DiagramFive} />
                 <Enterprise />
                 <Innovation />
-                <ContactForm />
-                <Footer />
             </div>
-        </>
+        </Layout>
     );
 };
 

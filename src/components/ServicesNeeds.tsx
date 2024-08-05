@@ -17,7 +17,7 @@ const ServicesNeeds: FC<ServicesNeedsProps> = ({
     NeedsImage,
     needsMoreTitle
 }) => {
-    // animation state on view 
+
     const [isVisible, setIsVisible] = useState(false);
 
     const handleScroll = () => {
@@ -70,7 +70,6 @@ const ServicesNeeds: FC<ServicesNeedsProps> = ({
                             </div>
                         </div>
                     </Col>
-
                 </Row>
             </Container>
         </section>

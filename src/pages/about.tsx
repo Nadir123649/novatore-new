@@ -8,24 +8,17 @@ import HeroBanner from '@/components/HeroBanner';
 import AboutNovatore from '@/components/AboutNovatore';
 import AboutServices from '@/components/AboutServices';
 import OurMilestones from '@/components/OurMilestones';
+import Layout from '@/components/Layout';
 
 const About: NextPage = () => {
 
     return (
-        <>
-            <Head>
-                <title>Novatore Sols</title>
-                <meta name="Novatore Sols" content="Setting new standards in technology with unmatchable code." />
-                <link rel="icon" href="/favicon.ico" />
-            </Head>
-            <Navbar />
+        <Layout title="Novatore Sols - Home" description="Welcome to Novatore Sols, setting new standards in technology with unmatchable code.">
             <HeroBanner bannerHeading="About Us" previewImage="/images/about-hero-bg.png" />
             <AboutNovatore />
             <AboutServices />
             <OurMilestones />
-            <ContactForm />
-            <Footer />
-        </>
+        </Layout>
     );
 };
 

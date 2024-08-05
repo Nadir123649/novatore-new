@@ -7,11 +7,28 @@ import { FaFacebookF } from "react-icons/fa";
 import { TiSocialLinkedin } from "react-icons/ti";
 
 
+
 export const services = [
-    { title: 'Digital Services', description: 'From Consulting To Product Engineering, We Provide The Best Digital Solutions.', banner: Services, backgroundimg: Career },
-    { title: 'Data', description: 'Expertise In Data Science To Drive Your Business Forward.', banner: Career, backgroundimg: Career },
-    { title: 'Cloud', description: 'Smoothen Your Operations With AWS, Azure, And GCP.', banner: Insights, backgroundimg: Career },
-    { title: 'Artificial Intelligence', description: 'Innovative AI Solutions, Generative Models, And Machine Learning.', banner: Industries, backgroundimg: Career }
+    {
+        title: 'Digital Services',
+        description: 'From Consulting To Product Engineering, We Provide The Best Digital Solutions.',
+        backgroundimg: "/images/artifical-banner.png",
+    },
+    {
+        title: 'Data',
+        description: 'Expertise In Data Science To Drive Your Business Forward.',
+        backgroundimg: "/images/careers-bg.png",
+    },
+    {
+        title: 'Cloud',
+        description: 'Smoothen Your Operations With AWS, Azure, And GCP.',
+        backgroundimg: "/images/cloud-banner.png",
+    },
+    {
+        title: 'Artificial Intelligence',
+        description: 'Innovative AI Solutions, Generative Models, And Machine Learning.',
+        backgroundimg: "/images/needs-image-eleven.png",
+    },
 ];
 
 export const whyChooseLogo = [
@@ -36,10 +53,10 @@ export const contactDetails = [
     },
 ];
 export const whyChooseUs = [
-    { title: '98', percentage: "%", description: 'Client satisfaction' },
-    { title: '300', percentage: "+", description: 'Successful projects' },
-    { title: '11', percentage: "+", description: 'Years in IT services' },
-    { title: '40', percentage: "+", description: 'Team members' }
+    { title: 98, percentage: "%", description: 'Client satisfaction' },
+    { title: 300, percentage: "+", description: 'Successful projects' },
+    { title: 11, percentage: "+", description: 'Years in IT services' },
+    { title: 40, percentage: "+", description: 'Team members' }
 ];
 
 export const menuitems = [

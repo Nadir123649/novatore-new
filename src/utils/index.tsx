@@ -68,6 +68,9 @@ export { default as DiagramThree } from "../../public/images/diagram-3.png"
 export { default as DiagramFour } from "../../public/images/diagram-4.png"
 export { default as DiagramFive } from "../../public/images/diagram-5.png"
 export { default as DiagramSix } from "../../public/images/diagram-6.png"
+export {default as NovatoreLogo} from "../../public/images/Novatore-white.png"
+export {default as Novatorewhite} from "../../public/images/Novatore-Logo.svg"
+
 
 
 

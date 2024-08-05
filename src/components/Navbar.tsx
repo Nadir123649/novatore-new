@@ -7,6 +7,7 @@ import { IoMenu, IoCloseOutline } from "react-icons/io5";
 import { MdKeyboardArrowRight, MdKeyboardArrowLeft } from "react-icons/md";
 import { RiMenu3Fill } from "react-icons/ri";
 import { Button } from "react-bootstrap";
+import { NovatoreLogo, Novatorewhite } from "@/utils";
 const Navbar = () => {
   const [activeMenu, setActiveMenu] = useState<string | null>(null);
   const [clickedMenu, setClickedMenu] = useState<string | null>(null);
@@ -124,10 +125,11 @@ const Navbar = () => {
         } ${isHeaderVisible ? "transform-none" : "-translate-y-full"}`}
     >
       <div className="container flex flex-row justify-between items-center sm:px-0 md:px-8 w-full ">
-        <div className="flex items-center flex-grow">
-          <Link href="/" className="logo">
+        <div className="flex items-center flex-grow">  
+          <Link href="/" className="logo d-flex gap-2 group duration-300 ease-in  ">
             <Image src="/images/logo.svg" alt="logo" width={43} height={43} />
-          </Link>
+            <Image src={Novatorewhite} alt="logo"    className="hidden group-hover:block transition-opacity duration-500 ease-in-out  group-hover:opacity-100 logo-novatore"/>
+          </Link> 
           <ul className="nav-menu mb-0 pl-0 hidden md:flex flex-row gap-4 ml-8">
             {["Services", "Industries", "Insights", "About", "Careers"].map(
               (menu, index) => (

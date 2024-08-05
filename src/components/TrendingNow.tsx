@@ -9,6 +9,8 @@ import { FaArrowRight } from "react-icons/fa6";
 import Link from 'next/link';
 import { Profile } from '../utils'
 import { trendings } from '@/constants/indesx';
+import { useState, useEffect } from 'react';
+import { Container } from 'react-bootstrap';
 
 interface ArrowProps {
   onClick?: React.MouseEventHandler<HTMLDivElement>;
@@ -16,16 +18,20 @@ interface ArrowProps {
 
 const NextArrow: React.FC<ArrowProps> = ({ onClick }) => {
   return (
-    <div onClick={onClick} className="arrow next">
-      <span className="text-[#969696] text-lg" ><FaChevronRight /></span>
+    <div className='group'>
+      <div onClick={onClick} className="arrow next group-hover:border-transparent group-hover:bg-[#2776EA]">
+        <span className="text-[#969696] text-lg group-hover:text-white" ><FaChevronRight /></span>
+      </div>
     </div>
   );
 };
 
 const PrevArrow: React.FC<ArrowProps> = ({ onClick }) => {
   return (
-    <div onClick={onClick} className="arrow prev">
-      <span className="text-[#969696] text-lg" ><FaChevronLeft /></span>
+    <div className='group'>
+      <div onClick={onClick} className="arrow prev group-hover:border-transparent group-hover:bg-[#2776EA]">
+        <span className="text-[#969696] text-lg group-hover:text-white" ><FaChevronLeft /></span>
+      </div>
     </div>
   );
 };
@@ -68,11 +74,28 @@ const TrendingNow = () => {
     ]
   };
 
+  const [isVisible, setIsVisible] = useState(false);
+
+  const handleScroll = () => {
+    const element = document.getElementById("trending-slider-section");
+    if (element) {
+      const rect = element.getBoundingClientRect();
+      setIsVisible(rect.top <= window.innerHeight * 0.75);
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
 
 
   return (
-    <section className='trending-section py-20 bg-center bg-no-repeat bg-cover '>
-      <div className="container ">
+    <section id='trending-slider-section' className={`${isVisible ? "fadeIn" : "opacity-0 "
+      } trending-section py-20 bg-center bg-no-repeat bg-cover `}>
+      <Container>
         <div className='flex justify-between items-center mb-4 pr-[140px]'>
           <h2 className='text-[#FFFFFF] font-semibold text-[26px] md:text-4xl'>Trending Now</h2>
         </div>
@@ -105,7 +128,7 @@ const TrendingNow = () => {
             </div>
           ))}
         </Slider>
-      </div>
+      </Container>
     </section>
   )
 }

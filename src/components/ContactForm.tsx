@@ -1,11 +1,31 @@
 import { contactDetails } from '@/constants/indesx';
 import React from 'react';
 import { Col, Container, Form, Row } from 'react-bootstrap';
+import { useState, useEffect } from 'react';
 
 
 const ContactForm = () => {
+    // animation state on view 
+const [isVisible, setIsVisible] = useState(false);
+
+const handleScroll = () => {
+    const element = document.getElementById("contact-us-form");
+    if (element) {
+        const rect = element.getBoundingClientRect();
+        setIsVisible(rect.top <= window.innerHeight * 0.75);
+    }
+};
+
+useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+        window.removeEventListener("scroll", handleScroll);
+    };
+}, []);
+
     return (
-        <section className='contact-form-section py-10 md:py-20 bg-center bg-no-repeat bg-cover  '>
+        <section id='contact-us-form' className={`${isVisible ? "fadeIn" : "opacity-0 "
+        } contact-form-section py-10 md:py-20 bg-center bg-no-repeat bg-cover`}>
             <div className='layer-form bg-center bg-no-repeat mx-5 bg-cover rounded-[16px] sm:pb-[140px] md:py-[60px]'>
                 <Container>
                     <Row>

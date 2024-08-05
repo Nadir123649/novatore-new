@@ -6,6 +6,7 @@ import Image from 'next/image';
 import { FaChevronLeft } from "react-icons/fa";
 import { FaChevronRight } from "react-icons/fa";
 import { studies } from '@/constants/indesx';
+import { useState, useEffect } from 'react';
 
 
 interface ArrowProps {
@@ -14,16 +15,20 @@ interface ArrowProps {
 
 const NextArrow: React.FC<ArrowProps> = ({ onClick }) => {
   return (
-    <div onClick={onClick} className="arrow next">
-      <span className="text-[#969696] text-lg"><FaChevronRight /></span>
+    <div className='group'>
+    <div onClick={onClick} className="arrow next group-hover:bg-[#2776EA] group-hover:border-transparent">
+      <span className="text-[#969696] text-lg group-hover:text-white "><FaChevronRight /></span>
+    </div>
     </div>
   );
 };
 
 const PrevArrow: React.FC<ArrowProps> = ({ onClick }) => {
   return (
-    <div onClick={onClick} className="arrow prev">
-      <span className="text-[#969696] text-lg" ><FaChevronLeft /></span>
+    <div className='group'>
+    <div onClick={onClick} className="arrow prev group-hover:bg-[#2776EA] group-hover:border-transparent">
+      <span className="text-[#969696] text-lg group-hover:text-white " ><FaChevronLeft /></span>
+    </div>
     </div>
   );
 };
@@ -72,10 +77,28 @@ const CaseStudies = () => {
     ]
   };
 
+    // animation state on view 
+    const [isVisible, setIsVisible] = useState(false);
+
+    const handleScroll = () => {
+        const element = document.getElementById("caseStudy-section");
+        if (element) {
+            const rect = element.getBoundingClientRect();
+            setIsVisible(rect.top <= window.innerHeight * 0.75);
+        }
+    };
+
+    useEffect(() => {
+        window.addEventListener("scroll", handleScroll);
+        return () => {
+            window.removeEventListener("scroll", handleScroll);
+        };
+    }, []);
 
 
   return (
-    <section className='Case-studies-section py-20 bg-center bg-no-repeat bg-cover '>
+    <section id='caseStudy-section' className={`${isVisible ? "fadeIn" : "opacity-0 "
+    } Case-studies-section py-20 bg-center bg-no-repeat bg-cover `}>
       <div className="container ">
         <div className='flex justify-between items-center mb-4 pr-[140px] '>
           <h2 className=' font-semibold text-[26px] md:text-4xl '>CASE STUDIES</h2>
