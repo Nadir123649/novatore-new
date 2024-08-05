@@ -8,6 +8,10 @@ const config: Config = {
   ],
   theme: {
     extend: {
+       animation: {
+        'slide-in': 'slideInFromLeft 0.5s ease-out forwards',
+        'slide-out': 'slideOutToLeft 0.5s ease-out forwards',
+      },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":

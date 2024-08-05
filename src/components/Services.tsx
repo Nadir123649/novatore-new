@@ -35,7 +35,7 @@ const PrevArrow: React.FC<ArrowProps> = ({ onClick }) => {
       </div>
     </div>
   );
-};
+};      
 
 const Services = () => {
   const [isVisible, setIsVisible] = useState(false);

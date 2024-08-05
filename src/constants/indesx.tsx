@@ -5,6 +5,7 @@ import { ImLocation } from "react-icons/im";
 import { FaInstagram } from "react-icons/fa";
 import { FaFacebookF } from "react-icons/fa";
 import { TiSocialLinkedin } from "react-icons/ti";
+import { link } from "fs";
 
 
 
@@ -60,7 +61,7 @@ export const whyChooseUs = [
 ];
 
 export const menuitems = [
-    { id: 1, title: "Services", img: Services, url: '/', description: "The Power of Data: How Analytics Can Transform Your Business., " },
+    { id: 1, title: "Services", img: Services, url: '/', description: "The Power of Data: How Analytics Can Transform Your Business.", heading: "Services" },
     { id: 2, title: "About", img: About, url: '/', description: "The Ultimate Guide to Choosing the Right Cybersecurity Software" },
     { id: 3, title: "Insights", img: Insights, url: '/', description: "Virtual Tours and Beyond: The Tech Revolutionizing Real Estate" },
     { id: 4, title: "Careers", img: Career, url: '/', description: "Beyond the Code: Essential Soft Skills for Every Software Developer" },
@@ -286,33 +287,33 @@ export const studies = [
 
 export const listingstable: any = {
     services: [
-        { id: "custom software development", heading: "Custom Software Development", details: ["Web applications development", "Mobile app development", "UI/UX design"] },
-        { id: "IT services", heading: "IT Services", details: ["Enterprise Mobility ", "Digital transformation", "Staff augmentation"] },
-        { id: "digital services", heading: "Digital Services", details: ["Digital Consulting & Strategy", "Digital Business Applications", "Product Engineering"] }
+        { id: "custom software development", link: '/', heading: "Custom Software Development", details: ["Web applications development", "Mobile app development", "UI/UX design"] },
+        { id: "IT services", link: '/', heading: "IT Services", details: ["Enterprise Mobility ", "Digital transformation", "Staff augmentation"] },
+        { id: "digital services", link: '/digitalservice', heading: "Digital Services", details: ["Digital Consulting & Strategy", "Digital Business Applications", "Product Engineering"] }
     ],
     insights: [
-        { id: "Blogs", heading: "Blogs", details: ["Latest Trends ", "Expert Opinions", "Case Studies"] },
-        { id: "Whitepapers", heading: "Whitepapers", details: ["Industry Reports", "Research Studies", "Technicl guides"] }
+        { id: "Blogs", link: "/blogs", heading: "Blogs", details: ["Latest Trends ", "Expert Opinions", "Case Studies"] },
+        { id: "Whitepapers", links: "/", heading: "Whitepapers", details: ["Industry Reports", "Research Studies", "Technicl guides"] }
     ],
     about: [
         { id: "About Us", link: "/about", heading: "About Us", details: ["Our Story", "Company History", "Mission and Vision", "Partners and Alliances"] }
     ],
-    careers: [{ id: "Careers", heading: "Careers", details: ["Job Opnenings", "Life at Novatore", "Internship"] }],
-    industries: [{ id: "Industries", heading: "Industries", details: ["Crypto", "Entertainment", "Gaming", "Healthcare", "Insurance"] }]
+    careers: [{ id: "Careers", link: "/careers", heading: "Careers", details: ["Job Opnenings", "Life at Novatore", "Internship"] }],
+    industries: [{ id: "Industries", link: "/", heading: "Industries", details: ["Crypto", "Entertainment", "Gaming", "Healthcare", "Insurance"] }]
 
 };
 
 export const featurestable: any = {
     services: [
-        { id: "transformative solutions", heading: "Transformative Solutions", details: ["Business Process Automation", "Testing and QA", "System Support"] },
-        { id: "Amazon Web Services", heading: "Amazon Web Services", details: ["Storage services", "Networking services", "Analytics services"] },
-        { id: "Data", heading: "Data", details: ["Data Engineering ", "Data Management & Governance", "Analytics & Platform Implementation"] }
+        { id: "transformative solutions", link: "/", heading: "Transformative Solutions", details: ["Business Process Automation", "Testing and QA", "System Support",] },
+        { id: "Amazon Web Services", link: "/aws", heading: "Amazon Web Services", details: ["Storage services", "Networking services", "Analytics services"] },
+        { id: "Data", heading: "Data", link: "/dataengineering", details: ["Data Engineering ", "Data Management & Governance", "Analytics & Platform Implementation"] }
     ],
     insights: [
-        { id: "News & Events ", heading: "News & Events", details: ["Company News ", "Industry Events", "Press Releases"] },
+        { id: "News & Events ", link: "/", heading: "News & Events", details: ["Company News ", "Industry Events", "Press Releases"] },
 
     ],
-    industries: [{ id: "Industries", heading: "", details: ["Real Estate", "Retail", "Social", "Education", "Sports"] }]
+    industries: [{ id: "Industries", link: "/", heading: "", details: ["Real Estate", "Retail", "Social", "Education", "Sports"] }]
 
 };
 
@@ -517,3 +518,23 @@ export const servicesoffer = {
 }
 
 
+export const data = [
+    {
+        id: 1,
+        heading: 'Cloud',
+        link: "/cloudservices",
+        items: ['CloudOps', 'AWS, Azure & GCP', 'Cloud Migration'],
+    },
+    {
+        id: 2,
+        heading: 'Artificial Intelligence',
+        link: "/artificialIntelligence",
+        items: ['AI Consulting', 'Generative AI', 'Machine Learning'],
+    },
+    {
+        id: 3,
+        heading: 'Cyber Security ',
+        link: "/cybersecurity",
+        items: ['Governance, Risk & Compliance, Data Privacy', 'Security Services', 'Penetration Testing'],
+    },
+];

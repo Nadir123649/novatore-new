@@ -131,9 +131,7 @@
   height: 100%;
   min-height: 50vh;
 }
-.logo-novatore{
-  opacity: 0 ;
-}
+
 /* client logos slider animation */
 
 @keyframes scroll {
@@ -442,3 +440,32 @@
 .fadeIn {
   animation: fadeIn 1.5s ease-out forwards;
 }
+
+
+/* animation for logo  */
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-10%);
+    opacity: 0;
+    visibility: visible;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+@keyframes slideOutToLeft {
+  0% {
+    transform: translateX(0);
+    opacity: 1;
+    visibility: visible;
+  }
+  100% {
+    transform: translateX(-10%);
+    opacity: 0;
+    visibility: visible;
+  }
+}
+

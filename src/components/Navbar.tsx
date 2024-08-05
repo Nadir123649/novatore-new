@@ -118,6 +118,8 @@ const Navbar = () => {
       window.removeEventListener("scroll", handleScroll);
     };
   }, [handleClickOutside, handleScroll]);
+
+  const [isHovered, setIsHovered] = useState(false);
   return (
     <nav
       className={`navigation-menu-container fixed inset-x-0 top-0 z-50 h-[100px] w-full flex items-center transition-transform duration-300
@@ -125,11 +127,21 @@ const Navbar = () => {
         } ${isHeaderVisible ? "transform-none" : "-translate-y-full"}`}
     >
       <div className="container flex flex-row justify-between items-center sm:px-0 md:px-8 w-full ">
-        <div className="flex items-center flex-grow">  
-          <Link href="/" className="logo d-flex gap-2 group duration-300 ease-in  ">
+        <div className="flex items-center flex-grow">
+          <Link
+            href="/"
+            className="logo d-flex gap-2 group duration-300 ease-in"
+            onMouseEnter={() => setIsHovered(true)}
+            onMouseLeave={() => setIsHovered(false)}
+          >
             <Image src="/images/logo.svg" alt="logo" width={43} height={43} />
-            <Image src={Novatorewhite} alt="logo"    className="hidden group-hover:block transition-opacity duration-500 ease-in-out  group-hover:opacity-100 logo-novatore"/>
-          </Link> 
+            <Image
+              src={Novatorewhite}
+              alt="logo"
+              className={`${isHovered ? 'group-hover:block  animate-slide-in ' : ' animate-slide-out'
+                } hidden`}
+            />
+          </Link>
           <ul className="nav-menu mb-0 pl-0 hidden md:flex flex-row gap-4 ml-8">
             {["Services", "Industries", "Insights", "About", "Careers"].map(
               (menu, index) => (
