@@ -1,4 +1,4 @@
-import { AIOne, AITwo, AIThree, AIFour, AIFive, AISix, CovaBg, AngelflowBg, About, Airbolt, ANGELFLOW, AngelLogo, Assistant, blogImageOne, blogImageTwo, Buisness, Career, Catalyst, ChooseFour, ChooseOne, ChooseThree, ChooseTwo, Cova, COVA, CovaLogo, Developer, Industries, Insights, London, Protium, Services, Upsure, DataImageOne, DataImageTwo, DataImageThree, DataImageFour, CloudOne, CloudTwo, CloudThree, CloudFour, AwsOne, AwsTwo, AwsThree, ImageOne, ImageTwo, ImageThree, CloudFive, CloudSix, DataImageFive, DataImageSix } from "@/utils";
+import { AIOne, AITwo, AIThree, AIFour, AIFive, AISix, CovaBg, AngelflowBg, About, Airbolt, ANGELFLOW, AngelLogo, Assistant, blogImageOne, blogImageTwo, Buisness, Career, Catalyst, ChooseFour, ChooseOne, ChooseThree, ChooseTwo, Cova, COVA, CovaLogo, Developer, Industries, Insights, London, Protium, Services, Upsure, DataImageOne, DataImageTwo, DataImageThree, DataImageFour, CloudOne, CloudTwo, CloudThree, CloudFour, AwsOne, AwsTwo, AwsThree, ImageOne, ImageTwo, ImageThree, CloudFive, CloudSix, DataImageFive, DataImageSix, CLOUD, Amazon,DATA, artificialIntelligence,Cybersecurity,DigitalService } from "@/utils";
 import { IoMdMail } from "react-icons/io";
 import { FaPhoneAlt } from "react-icons/fa";
 import { ImLocation } from "react-icons/im";
@@ -13,22 +13,32 @@ export const services = [
     {
         title: 'Digital Services',
         description: 'From Consulting To Product Engineering, We Provide The Best Digital Solutions.',
-        backgroundimg: "/images/artifical-banner.png",
+        backgroundimg: "/images/digitalservice.svg",
     },
     {
         title: 'Data',
         description: 'Expertise In Data Science To Drive Your Business Forward.',
-        backgroundimg: "/images/careers-bg.png",
+        backgroundimg: "/images/data.svg",
     },
     {
         title: 'Cloud',
         description: 'Smoothen Your Operations With AWS, Azure, And GCP.',
-        backgroundimg: "/images/cloud-banner.png",
+        backgroundimg: "/images/cloud.svg",
     },
     {
         title: 'Artificial Intelligence',
         description: 'Innovative AI Solutions, Generative Models, And Machine Learning.',
-        backgroundimg: "/images/needs-image-eleven.png",
+        backgroundimg: "/images/artificialIntelligence.svg",
+    },
+    {
+        title: 'Amazon ',
+        description: 'Complete solutions including storage, networking, and analytics services.',
+        backgroundimg: "/images/aws.svg",
+    },
+    {
+        title: 'Cyber Security',
+        description: 'Protect your business with governance, data privacy and penetration testing.',
+        backgroundimg: "/images/Cybersecurity.svg",
     },
 ];
 
@@ -125,7 +135,8 @@ export const siteMapData = [
     { link: '/', title: 'Site Map' },
     { link: '/', title: 'Press Kit' },
     { link: '/', title: 'Privacy Policy' },
-    { link: '/', title: 'Copyright © NovatoreSols2024' },
+    { link: '/', title: 'Copyright ' },
+    { link: '/', title: '© NovatoreSols2024' },
     { link: '/', title: 'All Rights Reserved.' },
 ]
 export const aboutServicesData = [
@@ -136,9 +147,9 @@ export const aboutServicesData = [
     { title: "Custom Software Development", description: "Creating tailored software solutions to meet specific business needs." },
 ]
 export const socialData = [
-    { icon: <TiSocialLinkedin size={20} />, link: '/', title: 'Linkedin', },
-    { icon: <FaFacebookF size={15} />, link: '/', title: 'Facebook' },
-    { icon: <FaInstagram size={16} />, link: '/', title: 'Instagram' },
+    { icon: <TiSocialLinkedin size={20} />, link: 'https://www.linkedin.com/company/novatore-solutions/mycompany/verification/', title: 'Linkedin', },
+    { icon: <FaFacebookF size={15} />, link: 'https://www.facebook.com/NovatoreSols/', title: 'Facebook' },
+    { icon: <FaInstagram size={16} />, link: 'https://www.instagram.com/novatore_solutions/?locale=de-DE', title: 'Instagram' },
 ]
 export const milestones = [
     {
@@ -384,7 +395,7 @@ export const featurestable: any = {
     services: [
         { id: "transformative solutions", link:"/", heading: "Transformative Solutions", details: [ { text: "Business Process Automation", link: '/' },{ text: "Testing and QA", link: '/' } ,{ text: "System Support", link: '/' } ] },
         { id: "Amazon Web Services", link:"/aws", heading: "Amazon Web Services", details: [  { text: "Storage services", link: '/' },{ text: "Networking services", link: '/' } ,{ text: "Analytics services", link: '/' }] },
-        { id: "Data", heading: "Data", link:"/dataengineering", details: [{ text: "Data Engineering", link: '/' },{ text: "Data Management & Governance", link: '/' } ,{ text: "Analytics & Platform Implementation", link: '/' }]}
+        { id: "Data", heading: "Data", link:"/", details: [{ text: "Data Engineering", link: '/dataengineering' },{ text: "Data Management & Governance", link: '/' } ,{ text: "Analytics & Platform Implementation", link: '/' }]}
     ],
     insights: [
         { id: "News & Events ", link:"/", heading: "News & Events", details: [{ text: "Company News", link: '/' },{ text: "Industry Events", link: '/' } ,{ text: "Press Releases", link: '/' } ] },

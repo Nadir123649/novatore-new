@@ -71,6 +71,13 @@ export { default as DiagramSix } from "../../public/images/diagram-6.png"
 export {default as NovatoreLogo} from "../../public/images/Novatore-white.png"
 export {default as Novatorewhite} from "../../public/images/Novatore-Logo.svg"
 
+export {default as Amazon} from "../../public/images/aws.svg"
+export {default as CLOUD} from "../../public/images/cloud.svg"
+export {default as DATA} from "../../public/images/data.svg"
+export {default as artificialIntelligence} from "../../public/images/artificialIntelligence.svg"
+export {default as Cybersecurity} from "../../public/images/cyberSecurity.svg"
+export {default as DigitalService} from "../../public/images/digitalService.svg"
+
 
 
 

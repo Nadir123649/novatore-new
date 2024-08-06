@@ -41,12 +41,12 @@ const SearchMenu = ({ mobileView = false }) => {
               : `col-span-4 px-16 my-10 ${index > 0 ? "border-l-2" : ""}`
               }`}
           >
-            <h1 className="font-semibold text-[#2776EA] text-lg pt-2">
+            <h1 className="font-semibold text-[#2776EA] text-lg pt-2 text-left">
               {feature.title}
             </h1>
-            <ul className="list-none px-0">
+            <ul className="list-none px-0 text-left">
               {feature.details.map((detail, detailIndex) => (
-                <li key={detailIndex} className="pt-1 text-[#4F4F4F] cursor-pointer">
+                <li key={detailIndex} className="pt-1 text-[#4F4F4F] cursor-pointer ">
                   {detail}
                 </li>
               ))}

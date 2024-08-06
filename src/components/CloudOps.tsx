@@ -96,15 +96,15 @@ const CloudOps: React.FC = () => {
     <section id="CloudOps-section" className={`${isVisible ? "fadeIn" : "opacity-0 "
     } CloudOps-section py-[10px] md:py-20  `}>
       <Container>
-        <h2 className="text-[32px] md:text-[52px] not-italic font-semibold md:font-bold mb-[0px] md:mb-12 text-center pb-[20px] md:pb-[40px]">
+        {/* <h2 className="text-[32px] md:text-[52px] not-italic font-semibold md:font-bold mb-[0px] md:mb-12 text-center pb-[20px] md:pb-[40px]">
           Explore the Power of <span className="text-[#2776EA]">CloudOps</span>{" "}
           for Superior Software Performance
-        </h2>
+        </h2> */}
         <Row>
           <Col lg={12} md={12} xs={12}>
             <h2 className="font-semibold md:font-bold text-[30px]  md:text-[40px] pb-[20px]">
-              Have a Look at What{" "}
-              <span className="text-[#2776EA]">we offer?</span>
+              What DO{" "}
+              <span className="text-[#2776EA]">We Offer?</span>
             </h2>
             <Row>
               <Col lg={12} md={12} xs={12}>

@@ -23,7 +23,7 @@ const MegaMenu: React.FC<MegaMenuProps> = ({ activeMenu }) => {
       <div className="grid grid-cols-12 gap-4 sm:px-0 md:px-40">
         {/* section first  */}
         <div className="px-4 md:px-4 sm:py-0 md:py-14 col-span-12 md:col-span-4 ">
-          {filteredListings.map((listing: { id: React.Key | null | undefined; heading: any | number | bigint | boolean | React.ReactElement<any, any | React.JSXElementConstructor<any>> | Iterable<React.ReactNode> | React.ReactPortal | Promise<React.AwaitedReactNode> | null | undefined; link: any | null | undefined; details: { text: string; link: any }[]; }) => (
+          {filteredListings.map((listing: { id: React.Key | null | undefined; heading: any | number | bigint | boolean | React.ReactElement<any, any | React.JSXElementConstructor<any>> | Iterable<React.ReactNode> | React.ReactPortal | Promise<React.AwaitedReactNode> | null | undefined; link: any | null | undefined; details: { text: string; link: string }[]; }) => (
             <div key={listing.id} className="d-flex flex-col">
               <Link href={listing.link} className="font-semibold text-lg text-[#2776EA] text-[18px] pt-2">
                 {listing.heading}
@@ -38,6 +38,7 @@ const MegaMenu: React.FC<MegaMenuProps> = ({ activeMenu }) => {
                     <Link href={detail.link} className="text-[#4F4F4F]">
                       {detail.text}
                     </Link>
+
                   </li>
                 ))}
               </ul>
@@ -51,18 +52,15 @@ const MegaMenu: React.FC<MegaMenuProps> = ({ activeMenu }) => {
               <Link href={feature.link} className="font-semibold text-[#2776EA] text-lg pt-2">
                 {feature.heading}
               </Link>
-
               <ul className="list-none px-0">
                 {feature.details.map((detail, index) => (
                   <li
                     key={index}
                     className="pt-1 text-[#4F4F4F] cursor-pointer"
                   >
-                    {/* <Link href="/" className="text-[#4F4F4F]">   {detail}</Link> */}
                     <Link href={detail.link} className="text-[#4F4F4F]">
                       {detail.text}
                     </Link>
-
                   </li>
                 ))}
               </ul>
@@ -109,12 +107,8 @@ const MegaMenu: React.FC<MegaMenuProps> = ({ activeMenu }) => {
                   className="py-3 w-[300px] md:w-full"
                 />
                 <p className="max-w-[280px]">{item.description}</p>
-                <a
-                  href={item.url}
-                  className="text-blue-500 underline font-medium"
-                >
-                  Learn More
-                </a>
+                <Link   href={item.url}
+                  className="text-blue-500 underline font-medium"> Learn More</Link>
               </div>
             ))}
           </div>

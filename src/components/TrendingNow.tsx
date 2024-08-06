@@ -113,10 +113,10 @@ const TrendingNow = () => {
                   <p className='text-[#6A6A6A] text-sm m-0 '>{trending.user}</p>
                 </div>
                 <h1 className='text-[22.4px] font-extrabold pt-3'>{trending.title}</h1>
-                <p className=" text-[#6A6A6A] max-w-[269px] h-[60px]">
+                <p className=" text-[#6A6A6A] max-w-[269px] h-[70px]">
                   {trending.description}
                 </p>
-                <div className='mx-auto pt-2'>
+                <div className='mx-auto pt-2 mt-auto'>
                   <Link className='d-flex items-center gap-2 justify-center text-[#31333E] font-bold text-center ' href="">
                     Read More
                     <div className='bg-[#2776EA] w-[16px] h-[16px] rounded-full d-flex justify-center items-center mt-1 text-white text-[10px]'>
