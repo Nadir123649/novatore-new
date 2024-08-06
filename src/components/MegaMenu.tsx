@@ -23,24 +23,22 @@ const MegaMenu: React.FC<MegaMenuProps> = ({ activeMenu }) => {
       <div className="grid grid-cols-12 gap-4 sm:px-0 md:px-40">
         {/* section first  */}
         <div className="px-4 md:px-4 sm:py-0 md:py-14 col-span-12 md:col-span-4 ">
-          {filteredListings.map((listing: { id: React.Key | null | undefined; heading: string | number | bigint | boolean | React.ReactElement<any, string | React.JSXElementConstructor<any>> | Iterable<React.ReactNode> | React.ReactPortal | Promise<React.AwaitedReactNode> | null | undefined;link:string | null | undefined; details: { text: string; link: string }[]; }) => (
+          {filteredListings.map((listing: { id: React.Key | null | undefined; heading: any | number | bigint | boolean | React.ReactElement<any, any | React.JSXElementConstructor<any>> | Iterable<React.ReactNode> | React.ReactPortal | Promise<React.AwaitedReactNode> | null | undefined; link: any | null | undefined; details: { text: string; link: string }[]; }) => (
             <div key={listing.id} className="d-flex flex-col">
-              <Link href={listing.link}>
-              <h1 className="font-semibold text-lg text-[#2776EA] text-[18px] pt-2">
+              <Link href={listing.link} className="font-semibold text-lg text-[#2776EA] text-[18px] pt-2">
                 {listing.heading}
-              </h1>
               </Link>
-             
+
               <ul className="list-none px-0">
                 {listing.details.map((detail, index) => (
                   <li
                     key={index}
                     className="pt-1 text-[#4F4F4F] cursor-pointer"
                   >
-                  <Link href={detail.link} className="text-[#4F4F4F]">
-                   {detail.text} 
-                  </Link>
-                    
+                    <Link href={detail.link} className="text-[#4F4F4F]">
+                      {detail.text}
+                    </Link>
+
                   </li>
                 ))}
               </ul>
@@ -49,14 +47,12 @@ const MegaMenu: React.FC<MegaMenuProps> = ({ activeMenu }) => {
         </div>
         {/* section second */}
         <div className="px-4 md:px-16 border-l-0  md:border-l-2 sm:my-0 md:my-14  col-span-12 md:col-span-4">
-          {filteredFeatures.map((feature: { id: React.Key | null | undefined; heading: string | number | bigint | boolean | React.ReactElement<any, string | React.JSXElementConstructor<any>> | Iterable<React.ReactNode> | React.ReactPortal | Promise<React.AwaitedReactNode> | null | undefined;link:string | null | undefined;  details: any[]; }) => (
+          {filteredFeatures.map((feature: { id: React.Key | null | undefined; heading: string | number | bigint | boolean | React.ReactElement<any, string | React.JSXElementConstructor<any>> | Iterable<React.ReactNode> | React.ReactPortal | Promise<React.AwaitedReactNode> | null | undefined; link: any | null | undefined; details: any[]; }) => (
             <div key={feature.id} className="d-flex flex-col">
-              <Link href={feature.link}>
-              <h1 className="font-semibold text-[#2776EA] text-lg pt-2">
+              <Link href={feature.link} className="font-semibold text-[#2776EA] text-lg pt-2">
                 {feature.heading}
-              </h1>
               </Link>
-              
+
               <ul className="list-none px-0">
                 {feature.details.map((detail, index) => (
                   <li
@@ -65,9 +61,9 @@ const MegaMenu: React.FC<MegaMenuProps> = ({ activeMenu }) => {
                   >
                     {/* <Link href="/" className="text-[#4F4F4F]">   {detail}</Link> */}
                     <Link href={detail.link} className="text-[#4F4F4F]">
-                    {detail.text} 
+                      {detail.text}
                     </Link>
-                 
+
                   </li>
                 ))}
               </ul>
@@ -76,37 +72,37 @@ const MegaMenu: React.FC<MegaMenuProps> = ({ activeMenu }) => {
         </div>
         {/* section third  */}
         {isThirdSectionHidden ? (
-           <div className="px-4 md:px-16 border-l-0  md:border-l-2 sm:my-0 md:my-14  col-span-12 md:col-span-4">
-           {data.map((list) => (
-             <div key={list.id} className="d-flex flex-col">
-              <Link href={list.link}>
-               <h1 className="font-semibold text-[#2776EA] text-lg pt-2">
-                 {list.heading}
-               </h1>
-               </Link>
-               <ul className="list-none px-0">
-                 {list.items.map((item, index) => (
-                   <li
-                     key={index}
-                     className="pt-1 text-[#4F4F4F] cursor-pointer"
-                   >
-                    {/* <Link href="/" className="text-[#4F4F4F]"> {item}</Link> */}
-                    <Link href={item.link} className="text-[#4F4F4F]">
-                    {item.text} 
-                    </Link>
-                   
-                   </li>
-                 ))}
-               </ul>
-             </div>
-           ))}
-         </div> 
+          <div className="px-4 md:px-16 border-l-0  md:border-l-2 sm:my-0 md:my-14  col-span-12 md:col-span-4">
+            {data.map((list) => (
+              <div key={list.id} className="d-flex flex-col">
+                <Link href={list.link}>
+                  <h1 className="font-semibold text-[#2776EA] text-lg pt-2">
+                    {list.heading}
+                  </h1>
+                </Link>
+                <ul className="list-none px-0">
+                  {list.items.map((item, index) => (
+                    <li
+                      key={index}
+                      className="pt-1 text-[#4F4F4F] cursor-pointer"
+                    >
+                      {/* <Link href="/" className="text-[#4F4F4F]"> {item}</Link> */}
+                      <Link href={item.link} className="text-[#4F4F4F]">
+                        {item.text}
+                      </Link>
+
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            ))}
+          </div>
         ) : (
           <div className="px-4 py-2 md:py-14 bg-[#F3F3F3] sm:w-full h-full col-span-12 md:col-span-4">
             {filteredMenuItems.map((item) => (
               <div key={item.id} className="py-3 d-flex flex-col">
                 <Link href="/">
-                <h1 className="font-semibold text-[22px]">{item.title}</h1>
+                  <h1 className="font-semibold text-[22px]">{item.title}</h1>
                 </Link>
                 <Image
                   src={item.img}
