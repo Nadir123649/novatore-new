@@ -13,32 +13,32 @@ export const services = [
     {
         title: 'Digital Services',
         description: 'From Consulting To Product Engineering, We Provide The Best Digital Solutions.',
-        backgroundimg: "/images/digitalservice.svg",
+        backgroundimg: "/images/DigitalService.png",
     },
     {
         title: 'Data',
         description: 'Expertise In Data Science To Drive Your Business Forward.',
-        backgroundimg: "/images/data.svg",
+        backgroundimg: "/images/data.png",
     },
     {
         title: 'Cloud',
         description: 'Smoothen Your Operations With AWS, Azure, And GCP.',
-        backgroundimg: "/images/cloud.svg",
+        backgroundimg: "/images/cloudService.png",
     },
     {
         title: 'Artificial Intelligence',
         description: 'Innovative AI Solutions, Generative Models, And Machine Learning.',
-        backgroundimg: "/images/artificialIntelligence.svg",
+        backgroundimg: "/images/AI.png",
     },
     {
         title: 'Amazon ',
         description: 'Complete solutions including storage, networking, and analytics services.',
-        backgroundimg: "/images/aws.svg",
+        backgroundimg: "/images/amazonService.png",
     },
     {
         title: 'Cyber Security',
         description: 'Protect your business with governance, data privacy and penetration testing.',
-        backgroundimg: "/images/Cybersecurity.svg",
+        backgroundimg: "/images/cyberSecurity.png",
     },
 ];
 

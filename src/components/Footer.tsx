@@ -81,7 +81,7 @@ const Footer = () => {
                 <ul className='footer-links-list list-none p-0 m-0 flex flex-col gap-[13px]'>
                   {aboutData.map((data, index) => (
                     <li key={index} >
-                      <Link href={data.link} className='text-[#B5B5B5] text-[16px] font-normal not-italic'>{data.title}</Link>
+                      <Link href={data.link} className='text-[#B5B5B5] text-[16px] font-normal not-italic' >{data.title}</Link>
                     </li>
                   ))
                   }
@@ -103,7 +103,7 @@ const Footer = () => {
                 <ul className='footer-links-list list-none p-0 m-0 flex flex-col gap-[18px]'>
                   {socialData.map((data, index) => (
                     <li key={index} >
-                      <Link href={data.link} className='text-[#B5B5B5] text-[16px] font-normal not-italic flex flex-row gap-[16px] items-center '>
+                      <Link href={data.link} className='text-[#B5B5B5] text-[16px] font-normal not-italic flex flex-row gap-[16px] items-center ' rel="noopener noreferrer" target="_blank">
                         <span className=' rounded-[50px] border border-solid border-[#717171] w-[30px] h-[30px] flex justify-center items-center'>
                           {data.icon}
                         </span>

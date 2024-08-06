@@ -87,7 +87,6 @@ const MegaMenu: React.FC<MegaMenuProps> = ({ activeMenu }) => {
                       <Link href={item.link} className="text-[#4F4F4F]">
                         {item.text}
                       </Link>
-
                     </li>
                   ))}
                 </ul>
@@ -107,7 +106,7 @@ const MegaMenu: React.FC<MegaMenuProps> = ({ activeMenu }) => {
                   className="py-3 w-[300px] md:w-full"
                 />
                 <p className="max-w-[280px]">{item.description}</p>
-                <Link   href={item.url}
+                <Link href={item.url}
                   className="text-blue-500 underline font-medium"> Learn More</Link>
               </div>
             ))}
