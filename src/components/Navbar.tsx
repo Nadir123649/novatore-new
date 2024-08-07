@@ -8,6 +8,7 @@ import { MdKeyboardArrowRight, MdKeyboardArrowLeft } from "react-icons/md";
 import { RiMenu3Fill } from "react-icons/ri";
 import { Button } from "react-bootstrap";
 import { NovatoreLogo, Novatorewhite } from "@/utils";
+
 const Navbar = () => {
   const [activeMenu, setActiveMenu] = useState<string | null>(null);
   const [clickedMenu, setClickedMenu] = useState<string | null>(null);
@@ -25,12 +26,6 @@ const Navbar = () => {
   const handleMouseEnter = (menu: string) => {
     setActiveMenu(menu.toLowerCase());
     setSearchMenuOpen(false);
-  };
-
-  const handleMouseLeave = () => {
-    if (!clickedMenu) {
-      setActiveMenu(null);
-    }
   };
 
   const handleClick = (menu: string) => {
@@ -81,6 +76,9 @@ const Navbar = () => {
     const currentScrollY = window.scrollY;
     if (currentScrollY > lastScrollY) {
       setIsHeaderVisible(false);
+      setActiveMenu(null); // Close the mega menu when scrolling down
+      setClickedMenu(null);
+      setSearchMenuOpen(false);
     } else {
       setIsHeaderVisible(true);
     }
@@ -90,9 +88,6 @@ const Navbar = () => {
     } else {
       setIsScrolled(false);
     }
-    setActiveMenu(null);
-    setClickedMenu(null);
-    setSearchMenuOpen(false);
   }, [lastScrollY]);
 
   const handleMegaMenuBackClick = () => {
@@ -153,7 +148,6 @@ const Navbar = () => {
                     } hover:text-[#2776EA]`}
                   onClick={() => handleClick(menu)}
                   onMouseEnter={() => handleMouseEnter(menu)}
-                  onMouseLeave={handleMouseLeave}
                 >
                   <Link
                     href="/"
@@ -189,9 +183,9 @@ const Navbar = () => {
               </button>
             </li>
             <li>
-              <button className="bg-[#2776EA] py-[12px] rounded-2xl transition-all duration-300 px-6 text-lg not-italic font-normal text-[#fff] hover:bg-transparent border-[1px] border-[transparent] hover:border-[#fff]">
+              <a href="#contact-us-form" className="bg-[#2776EA] py-[12px] rounded-2xl transition-all duration-300 px-6 text-lg not-italic font-normal text-[#fff] hover:bg-transparent border-[1px] border-[transparent] hover:border-[#fff]">
                 Schedule a Call
-              </button>
+              </a>
             </li>
           </ul>
         </div>
@@ -200,22 +194,12 @@ const Navbar = () => {
         ref={menuRef}
         className={`absolute top-[95px] left-[0] w-full mega-menu-container ${activeMenu ? "active" : ""
           }`}
-        onMouseLeave={handleMouseLeave}
       >
         {activeMenu && <MegaMenu activeMenu={activeMenu} />}
       </div>
-      {/* <div
-        className={`search-menu-container ${
-          searchMenuOpen ? "active" : ""
-        } md:flex hidden`}
-        ref={searchRefDesktop}
-      >
-        {searchMenuOpen && <SearchMenu />}
-      </div> */}
       <button
         className={`search-menu-container ${searchMenuOpen ? "active" : ""
           } md:flex hidden`}
-        // onClick={handleSearchClick}
         ref={searchRefDesktop} // Use ref for button
       >
         {searchMenuOpen && <SearchMenu />}
@@ -326,4 +310,5 @@ const Navbar = () => {
     </nav>
   );
 };
+
 export default Navbar;

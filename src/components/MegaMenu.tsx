@@ -2,8 +2,6 @@ import React from "react";
 import Image from "next/image";
 import { useRouter } from "next/navigation";
 import { featurestable, listingstable, menuitems, data } from "@/constants/indesx";
-import { IoCloseOutline } from "react-icons/io5";
-import { MdKeyboardArrowLeft } from "react-icons/md";
 import Link from "next/link";
 
 
@@ -12,7 +10,7 @@ interface MegaMenuProps {
 }
 const MegaMenu: React.FC<MegaMenuProps> = ({ activeMenu }) => {
   const router = useRouter();
-  const handleNavigation = (url: string) => {
+  const handleNavigation = (url: any) => {
     router.push(url);
   };
 

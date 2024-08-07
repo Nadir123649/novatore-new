@@ -101,7 +101,7 @@ const Innovation = () => {
     } py-[20px] md:py-20 innovation-section  `}>
       <div className="container ">
         <div className='flex justify-between items-center pr-[0px]  md:pr-[140px] pb-[40px] md:pb-[0px]'>
-          <h2 className=' font-bold text-[26px] md:text-[40px] max-w-full md:max-w-[590px] '>Tech Expert Latest: Innovations In <span className='text-[#2776EA]'> Digital Enterprise</span></h2>
+          <h2 className=' font-bold text-[26px] md:text-[40px] max-w-full md:max-w-[580px] '>Tech Expert Latest: Innovations In <span className='text-[#2776EA] '> Digital Enterprise</span></h2>
         </div>
         <Slider {...settings} className="innovation-slider mt-10">
           {blogData.map(blog => (

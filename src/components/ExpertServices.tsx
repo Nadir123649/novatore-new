@@ -3,8 +3,8 @@ import Image from 'next/image';
 import { Col, Container, Row } from 'react-bootstrap';
 import { useState, useEffect } from 'react';
 interface ExpertServicesProps {
-    needsTitle: string;
-    needsTitleBlue: string;
+    needsTitle?: string;
+    needsTitleBlue?: string;
     needsDescription: string;
     NeedsImage: string;
     needsMoreTitle?: string;
@@ -18,7 +18,6 @@ const ExpertServices: FC<ExpertServicesProps> = ({
     needsMoreTitle
 }) => {
 
-    // animation state on view 
     const [isVisible, setIsVisible] = useState(false);
 
     const handleScroll = () => {
@@ -60,8 +59,8 @@ const ExpertServices: FC<ExpertServicesProps> = ({
                     </Col>
                     <Col lg={8} md={12} xs={12} className={`${isVisible ? "animate-slideLeft" : "opacity-0 translate-x-full"
                         } transition-transform duration-500 ease-out needs-description rounded-[16px]  bg-[#F6FAFF]`} >
-                        <div className="needs-content pl-[0px] md:pl-[140px] pt-[20px] md:pt-[87px] pb-[20px] md:pb-[50px] min-h-[410px] md:min-h-[612px] max-h-[612px] h-full">
-                            <h2 className='text-black text-3xl md:text-[40px] capitalize font-semibold max-w-[550px] tracking-[0.8px] w-full mb-[24px]'>
+                        <div className="needs-content pl-[0px] md:pl-[140px] pt-[20px] md:pt-[87px] pb-[20px] md:pb-[50px] min-h-[410px] md:min-h-[612px] max-h-[612px] h-full flex flex-col justify-center">
+                            <h2 className='text-black text-3xl md:text-[40px] capitalize font-semibold max-w-[550px] tracking-[0.8px] w-full mb-[24px] leading-none'>
                                 {needsTitle} <span className='text-[#2776EA]'>{needsTitleBlue}</span>
                                 {needsMoreTitle ? <span> {needsMoreTitle}</span> : null}
                             </h2>

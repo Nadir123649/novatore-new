@@ -2,8 +2,12 @@ import { aboutData, careersData, customSoftware, eventsData, insightsData, itSer
 import Link from 'next/link'
 import React from 'react'
 import { Col, Container, Row } from 'react-bootstrap'
-
+import { useRouter } from 'next/navigation'
 const Footer = () => {
+  const router = useRouter();
+  const handleNavigation = (url: string) => {
+    router.push(url);
+  };
   return (
     <footer className='footer-section sm:pt-0 md:pt-20 bg-center bg-no-repeat bg-cover'>
       <Container>
@@ -15,7 +19,7 @@ const Footer = () => {
                 <ul className='footer-links-list list-none p-0 m-0 flex flex-col  md:gap-[13px]'>
                   {customSoftware.map((data, index) => (
                     <li key={index} >
-                      <Link href={data.link} className='text-[#B5B5B5] text-[16px] font-normal not-italic'>{data.title}</Link>
+                      <a  onClick={() => handleNavigation(data.link)}  className='text-[#B5B5B5] text-[16px] font-normal not-italic'>{data.title}</a>
                     </li>
                   ))
                   }
@@ -24,7 +28,7 @@ const Footer = () => {
                 <ul className='footer-links-list list-none p-0 m-0 flex flex-col gap-[13px]'>
                   {itServices.map((data, index) => (
                     <li key={index} >
-                      <Link href={data.link} className='text-[#B5B5B5] text-[16px] font-normal not-italic'>{data.title}</Link>
+                      <a onClick={() => handleNavigation(data.link)} className='text-[#B5B5B5] text-[16px] font-normal not-italic'>{data.title}</a>
                     </li>
                   ))
                   }
@@ -37,7 +41,7 @@ const Footer = () => {
                 <ul className='footer-links-list list-none p-0 m-0 flex flex-col gap-[13px]'>
                   {realEstate.map((data, index) => (
                     <li key={index} >
-                      <Link href={data.link} className='text-[#B5B5B5] text-[16px] font-normal not-italic'>{data.title}</Link>
+                      <a onClick={() => handleNavigation(data.link)} className='text-[#B5B5B5] text-[16px] font-normal not-italic'>{data.title}</a>
                     </li>
                   ))
                   }
@@ -50,7 +54,7 @@ const Footer = () => {
                 <ul className='footer-links-list list-none p-0 m-0 flex flex-col gap-[13px]'>
                   {whitepapers.map((data, index) => (
                     <li key={index} >
-                      <Link href={data.link} className='text-[#B5B5B5] text-[16px] font-normal not-italic'>{data.title}</Link>
+                      <a onClick={() => handleNavigation(data.link)} className='text-[#B5B5B5] text-[16px] font-normal not-italic'>{data.title}</a>
                     </li>
                   ))
                   }
@@ -59,7 +63,7 @@ const Footer = () => {
                 <ul className='footer-links-list list-none p-0 m-0 flex flex-col gap-[13px]'>
                   {insightsData.map((data, index) => (
                     <li key={index} >
-                      <Link href={data.link} className='text-[#B5B5B5] text-[16px] font-normal not-italic'>{data.title}</Link>
+                      <a onClick={() => handleNavigation(data.link)} className='text-[#B5B5B5] text-[16px] font-normal not-italic'>{data.title}</a>
                     </li>
                   ))
                   }
@@ -72,7 +76,7 @@ const Footer = () => {
                 <ul className='footer-links-list list-none p-0 m-0 flex flex-col gap-[13px]'>
                   {eventsData.map((data, index) => (
                     <li key={index} >
-                      <Link href={data.link} className='text-[#B5B5B5] text-[16px] font-normal not-italic'>{data.title}</Link>
+                      <a onClick={() => handleNavigation(data.link)} className='text-[#B5B5B5] text-[16px] font-normal not-italic'>{data.title}</a>
                     </li>
                   ))
                   }
@@ -81,7 +85,7 @@ const Footer = () => {
                 <ul className='footer-links-list list-none p-0 m-0 flex flex-col gap-[13px]'>
                   {aboutData.map((data, index) => (
                     <li key={index} >
-                      <Link href={data.link} className='text-[#B5B5B5] text-[16px] font-normal not-italic' >{data.title}</Link>
+                      <a onClick={() => handleNavigation(data.link)} className='text-[#B5B5B5] text-[16px] font-normal not-italic' >{data.title}</a>
                     </li>
                   ))
                   }
@@ -94,7 +98,7 @@ const Footer = () => {
                 <ul className='footer-links-list list-none p-0 m-0 flex flex-col gap-[13px]'>
                   {careersData.map((data, index) => (
                     <li key={index} >
-                      <Link href={data.link} className='text-[#B5B5B5] text-[16px] font-normal not-italic'>{data.title}</Link>
+                      <a onClick={() => handleNavigation(data.link)} className='text-[#B5B5B5] text-[16px] font-normal not-italic'>{data.title}</a>
                     </li>
                   ))
                   }
@@ -122,7 +126,7 @@ const Footer = () => {
             <ul className='footer-links-list list-none p-0 m-0 flex flex-col  md:flex-row justify-between gap-[13px]'>
               {siteMapData.map((data, index) => (
                 <li key={index} >
-                  <Link href={data.link} className='text-[#B5B5B5] text-[16px] font-normal not-italic'>{data.title}</Link>
+                  <a onClick={() => handleNavigation(data.link)} className='text-[#B5B5B5] text-[16px] font-normal not-italic'>{data.title}</a>
                 </li>
               ))
               }

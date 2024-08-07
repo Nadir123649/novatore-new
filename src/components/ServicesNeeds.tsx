@@ -4,7 +4,7 @@ import { Col, Container, Row } from 'react-bootstrap';
 import { useState, useEffect } from 'react';
 interface ServicesNeedsProps {
     needsTitle: string;
-    needsTitleBlue: string;
+    needsTitleBlue?: string;
     needsDescription: string;
     NeedsImage: string;
     needsMoreTitle?: string;
@@ -40,9 +40,9 @@ const ServicesNeeds: FC<ServicesNeedsProps> = ({
             <Container>
                 <Row>
                     <Col lg={8} md={12} xs={12} className={`${isVisible ? "animate-slideRight" : "opacity-0 translate-x-full"
-                        } transition-transform duration-500 ease-out needs-banner bg-[#F6FAFF] rounded-[16px]`}>
-                        <div className="needs-content pl-[0px] md:pl-[40px] pt-[20px] md:pt-[67px]  pb-[20px] md:pb-[50px] min-h-[470px] md:min-h-[612px] max-h-[612px] h-full">
-                            <h2 className='text-black text-3xl md:text-[40px] capitalize font-semibold max-w-[530px] tracking-[0.8px] w-full mb-[24px]'>
+                        } transition-transform duration-500 ease-out needs-banner bg-[#F6FAFF] rounded-[16px] flex flex-col justify-center`}>
+                        <div className="needs-content pl-[0px] md:pl-[40px] pt-[20px] md:pt-[67px]  pb-[20px] md:pb-[50px] min-h-[470px] md:min-h-[612px] max-h-[612px] h-full flex flex-col justify-center">
+                            <h2 className='text-black text-3xl md:text-[40px] capitalize font-semibold max-w-[530px] tracking-[0.8px] w-full mb-[24px] leading-none'>
                                 {needsTitle} <span className='text-[#2776EA]'>{needsTitleBlue}</span>
                                 {needsMoreTitle ? <span> {needsMoreTitle}</span> : null}
                             </h2>
@@ -56,7 +56,7 @@ const ServicesNeeds: FC<ServicesNeedsProps> = ({
                         md={12}
                         xs={12}
                         className={`${isVisible ? "animate-slideLeft" : "opacity-0 translate-x-full"
-                            } transition-transform duration-500 ease-out needs-description rounded-[16px] bg-[#F6FAFF]`}
+                            } transition-transform duration-500 ease-out needs-description rounded-[16px] `}
                     >
                         <div className="img-box static md:relative left-[-100px] top-[42px] w-full max-w-full md:max-w-[450px]">
                             <div className='overflow-hidden rounded-[16px]'>

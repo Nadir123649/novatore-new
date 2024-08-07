@@ -5,7 +5,7 @@ import { useState , useEffect } from 'react';
 
 interface DataServicesSectionProps {
     heading: string;
-    headingBlue: string;
+    headingBlue?: string;
     data: {
         title: string;
         description: string;

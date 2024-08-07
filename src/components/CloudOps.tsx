@@ -9,7 +9,7 @@ const CloudOps: React.FC = () => {
   const ulRef = useRef<HTMLDivElement | null>(null);
   const router = useRouter();
   const [activeIndex, setActiveIndex] = useState(1);
-  const { digitalservice, cybersecurity } = servicesoffer;
+  const { digitalservice, cybersecurity, digitalstrategy, digitalbusiness, productengineering,machinelearning, storageservices,generativeAI, mobiledevelopment, testing,staffaugmentation, buisnessautomation,azure, cloudmigration, cloudops,  digitaltransformation } = servicesoffer;
 
   useEffect(() => {
     const handleScroll = () => {
@@ -20,89 +20,93 @@ const CloudOps: React.FC = () => {
         const itemHeight = listItems[0]?.clientHeight || 0;
 
         // Calculate which item is in the center of the view
-        const middleIndex = Math.floor((scrollTop + clientHeight / 3 ) / itemHeight);
+        const middleIndex = Math.floor((scrollTop + clientHeight / 3) / itemHeight);
         setActiveIndex(middleIndex);
-
-        if (scrollTop + clientHeight >= ulRef.current.scrollHeight - 1) {
-          ulRef.current.scrollTop = 0;
-        }
-      }
-    };
-
-    const handleWheel = (event: WheelEvent) => {
-      if (ulRef.current) {
-        const { scrollTop, scrollHeight, clientHeight } = ulRef.current;
-        const delta = event.deltaY;
-
-        if (
-          (delta < 0 && scrollTop === 0) ||
-          (delta > 0 && scrollTop + clientHeight >= scrollHeight)
-        ) {
-          event.preventDefault();
-        }
       }
     };
 
     const ulElement = ulRef.current;
     ulElement?.addEventListener("scroll", handleScroll);
-    ulElement?.addEventListener("wheel", handleWheel);
 
     return () => {
       ulElement?.removeEventListener("scroll", handleScroll);
-      ulElement?.removeEventListener("wheel", handleWheel);
     };
   }, []);
 
-  // Data mapping according to current route 
   const getDetailsForCurrentRoute = () => {
     const { pathname } = router;
-    if (pathname.includes("digitalservice")) {
+    if (pathname.includes("digital-service")) {
       return digitalservice;
-    } else if (pathname.includes("cybersecurity")) {
+    } else if (pathname.includes("cyber-security")) {
       return cybersecurity;
+    } else if (pathname.includes("digital-strategy")) {
+      return digitalstrategy;
+    } else if (pathname.includes("digital-business")) {
+      return digitalbusiness;
+    } else if (pathname.includes("mobile-app-development")) {
+      return mobiledevelopment;
+    } else if (pathname.includes("testing-and-qa")) {
+      return testing;
+    } else if (pathname.includes("business-process-automation")) {
+      return buisnessautomation;
+    } else if (pathname.includes("azure-and-gcp")) {
+      return azure;
+    } else if (pathname.includes("cloud-migration")) {
+      return cloudmigration;
+    } else if (pathname.includes("cloud-ops")) {
+      return cloudops;
+    } else if (pathname.includes("digital-transformation")) {
+      return digitaltransformation;
+    } else if (pathname.includes("staff-augmentation")) {
+      return staffaugmentation;
+    } else if (pathname.includes("storage-services")) {
+      return storageservices;
+    } else if (pathname.includes("generative-ai")) {
+      return generativeAI;
+    } else if (pathname.includes("machine-learning")) {
+      return machinelearning;
+    } else if (pathname.includes("product-engineering")) {
+      return productengineering;
     }
     return [];
   };
 
   const detailsForCurrentRoute = getDetailsForCurrentRoute();
-  const duplicatedDetails = [...detailsForCurrentRoute, ...detailsForCurrentRoute];
-  // animation ON VIEW 
+  // Duplicate the details to demonstrate the scrollable list
+  // const duplicatedDetails = [...detailsForCurrentRoute, ...detailsForCurrentRoute];
+
   const [isVisible, setIsVisible] = useState(false);
 
-     const handleScroll = () => {
-         const element = document.getElementById("CloudOps-section");
-         if (element) {
-             const rect = element.getBoundingClientRect();
-             const elementTop = rect.top;
-             const elementBottom = rect.bottom;
-     
-             const isElementInView = elementTop <= window.innerHeight && elementBottom >= 0;
-     
-             setIsVisible(isElementInView);
-         }
-     };
-     
-     useEffect(() => {
-         window.addEventListener("scroll", handleScroll);
-         handleScroll(); 
-         return () => {
-             window.removeEventListener("scroll", handleScroll);
-         };
-     }, []);
-     
+  const handleVisibility = () => {
+    const element = document.getElementById("CloudOps-section");
+    if (element) {
+      const rect = element.getBoundingClientRect();
+      const elementTop = rect.top;
+      const elementBottom = rect.bottom;
 
+      const isElementInView = elementTop <= window.innerHeight && elementBottom >= 0;
+
+      setIsVisible(isElementInView);
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleVisibility);
+    handleVisibility();
+    return () => {
+      window.removeEventListener("scroll", handleVisibility);
+    };
+  }, []);
 
   return (
-    <section id="CloudOps-section" className={`${isVisible ? "fadeIn" : "opacity-0 "
-    } CloudOps-section py-[10px] md:py-20  `}>
+    <section
+      id="CloudOps-section"
+      className={`${isVisible ? "fadeIn" : "opacity-0"} CloudOps-section py-[10px] md:py-20`}
+    >
       <Container>
-        {/* <h2 className="text-[32px] md:text-[52px] not-italic font-semibold md:font-bold mb-[0px] md:mb-12 text-center pb-[20px] md:pb-[40px]">
-          Explore the Power of <span className="text-[#2776EA]">CloudOps</span>{" "}
-          for Superior Software Performance
-        </h2> */}
         <Row>
           <Col lg={12} md={12} xs={12}>
-            <h2 className="font-semibold md:font-bold text-[30px]  md:text-[40px] pb-[20px]">
+            <h2 className="font-semibold md:font-bold text-[30px] md:text-[40px] pb-[20px]">
               What DO{" "}
               <span className="text-[#2776EA]">We Offer?</span>
             </h2>
@@ -110,7 +114,7 @@ const CloudOps: React.FC = () => {
               <Col lg={12} md={12} xs={12}>
                 <div className="grid grid-cols-12 gap-4 py-[20px] min-h-[100vh] ">
                   <div className="col-span-12 md:col-span-4 ">
-                    <div className="cloudops-card  text-white bg-[#2776EA] rounded-2xl p-4 min-h-[45vh] md:min-h-[80vh] max-w-[360px] relative">
+                    <div className="cloudops-card text-white bg-[#2776EA] rounded-2xl p-4 min-h-[45vh] md:min-h-[80vh] max-w-[360px] relative">
                       {detailsForCurrentRoute.map((data, index) => (
                         <p key={index} className="text-xl md:text-2xl">
                           {data.details}
@@ -121,18 +125,16 @@ const CloudOps: React.FC = () => {
                       </div>
                     </div>
                   </div>
-                  <div className="col-span-12  md:col-span-8">
+                  <div className="col-span-12 md:col-span-8">
                     <div
                       className="overflow-y-scroll h-[440px] md:h-[700px] parallax-section relative"
                       ref={ulRef}
                     >
-                      <ul className="pr-[40px] flex flex-col gap-10">
-                        {duplicatedDetails.map((data, index) => (
+                      <ul className="pr-[40px] flex flex-col gap-16">
+                        {detailsForCurrentRoute.map((data, index) => (
                           <li
                             key={index}
-                            className={`relative h-[160px] md:h-[200px] px-[20px] py-10 transition-all duration-300 ${index === activeIndex
-                                ? "opacity-100 scale-110"
-                                : "opacity-50 scale-100"
+                            className={`relative h-[160px] md:h-[200px] px-[20px] py-10 transition-all duration-300 ${index === activeIndex ? "opacity-100 scale-110" : "opacity-50 scale-100"
                               }`}
                           >
                             <div className="d-flex items-center gap-3">
@@ -142,6 +144,13 @@ const CloudOps: React.FC = () => {
                               </h1>
                             </div>
                             <p className="text-15px pl-9">{data.description}</p>
+                            <p className="pl-9">{data.keyheading}</p>
+                            <ul className="d-flex flex-col pl-20">
+                              {data.keyfeatures.map((feature, featureIndex) => (
+                                <li key={featureIndex}>{feature.paragraph}</li>
+                              ))}
+                            </ul>
+
                           </li>
                         ))}
                       </ul>
