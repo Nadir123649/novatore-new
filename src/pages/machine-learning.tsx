@@ -16,7 +16,7 @@ const MachineLearning: NextPage = () => {
                     needsDescription="In the rapidly evolving world of technology, our advanced Machine Learning services stand at the forefront, offering innovative solutions tailored to meet the dynamic needs of various industries. From developing sophisticated quantum algorithms that process data at unparalleled speeds to creating robust neural network models for deep learning, our services are designed to drive transformative results. Our deep learning solutions deliver high accuracy and scalability, ensuring your business stays ahead of the competition. " />
                 <ExpertServices needsTitle="Pioneering Transparent and " needsTitleBlue=" Real-Time AI Technologies" NeedsImage="/images/machine-left-bg.png"
                     needsDescription="Trust and transparency are at the heart of our Machine Learning services, with Explainable AI (XAI) ensuring compliance and fostering confidence in AI-driven decisions. Our solutions offer enhanced real-time capabilities through edge computing, reducing latency and enabling local data processing for improved performance. We bring autonomous driving to life with state-of-the-art object detection, path planning, and real-time sensor data processing, ensuring safety and efficiency on the road. " />
-                <CloudOps />
+                <CloudOps needsTitle="Our Machine Learning " needsTitleBlue="Services" />
                 <Enterprise />
                 <Innovation />
             </div>

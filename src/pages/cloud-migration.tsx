@@ -15,7 +15,7 @@ const CloudMigration: NextPage = () => {
                     needsDescription="Transitioning your business to the cloud can be a complex process, but with our expertise and comprehensive solutions, 
                     we ensure a smooth and successful migration, enabling you to reap the full benefits of cloud computing. 
                     Explore our range of services designed to meet all your cloud migration needs." />
-                <CloudOps />
+               <CloudOps needsTitle="What" needsTitleBlue="We Offer" />
                 <Enterprise />
                 <Innovation />
             </div>

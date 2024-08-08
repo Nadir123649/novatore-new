@@ -4,8 +4,6 @@ import Innovation from "@/components/Innovation";
 import ServicesNeeds from "@/components/ServicesNeeds";
 import { NextPage } from "next";
 import Layout from "@/components/Layout";
-import DataServicesSection from "@/components/DataServicesSection";
-import { processAutomationData } from "@/constants/indesx";
 import ExpertServices from "@/components/ExpertServices";
 import CloudOps from "@/components/CloudOps";
 
@@ -19,7 +17,7 @@ const StaffAugmentation: NextPage = () => {
                 <ExpertServices needsTitleBlue="Unmatched Expertise" needsMoreTitle="in Tech Talent Augmentation" NeedsImage="/images/transformation-left.png"
                     needsDescription="We specialize in Tech Talent Augmentation that empowers your business to adapt to the ever-changing demands of the tech industry. Our seasoned professionals bring a wealth of knowledge and experience to your projects, ensuring that you have the right skills at your fingertips.
                       Our Flexible Software Staffing approach ensures that you can scale your workforce according to your project's specific needs. Whether you need to expand your team for a short-term project or require ongoing support, we offer customizable solutions that fit your timeline and budget." />
-                <CloudOps />
+                <CloudOps needsTitle="Our" needsTitleBlue="Services" />
                 <Enterprise />
                 <Innovation />
             </div>

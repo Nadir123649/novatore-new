@@ -247,6 +247,12 @@
   width: 14px;
   background-color: #0755E9;
 }
+.CloudOps-section .sub-bullet{
+  border-radius: 50%;
+  height: 8px;
+  width: 8px;
+  background-color: rgb(81, 81, 81);
+}
 
 
 /* Responsiveness */

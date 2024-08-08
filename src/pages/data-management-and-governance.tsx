@@ -7,7 +7,7 @@ import Layout from "@/components/Layout";
 import ExpertServices from "@/components/ExpertServices";
 import CloudOps from "@/components/CloudOps";
 import DataServicesSection from "@/components/DataServicesSection";
-import { ProductEngineeringData, ServicesDataLocal } from "@/constants/indesx";
+import { ServicesDataLocal } from "@/constants/indesx";
 
 const DataManagementAndGovernance: NextPage = () => {
     return (

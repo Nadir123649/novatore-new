@@ -7,7 +7,7 @@ import Layout from '@/components/Layout';
 const Careers: NextPage = () => {
 
     return (
-        <Layout title="Novatore Sols - Home" description="Welcome to Novatore Sols, setting new standards in technology with unmatchable code.">
+        <Layout title="Novatore Sols - Careers" description="Welcome to Novatore Sols, setting new standards in technology with unmatchable code.">
             <HeroBanner bannerHeading="Careers" previewImage="/images/careers-bg.png" />
             <CareersColumn />
             <WhyChooseUs />

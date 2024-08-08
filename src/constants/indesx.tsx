@@ -1,4 +1,4 @@
-import { AIOne, AITwo, AIThree, AIFour, AIFive, AISix, CovaBg, AngelflowBg, About, Airbolt, ANGELFLOW, AngelLogo, Assistant, blogImageOne, blogImageTwo, Buisness, Career, Catalyst, ChooseFour, ChooseOne, ChooseThree, ChooseTwo, Cova, COVA, CovaLogo, Developer, Industries, Insights, London, Protium, Services, Upsure, DataImageOne, DataImageTwo, DataImageThree, DataImageFour, CloudOne, CloudTwo, CloudThree, CloudFour, AwsOne, AwsTwo, AwsThree, ImageOne, ImageTwo, ImageThree, CloudFive, CloudSix, DataImageFive, DataImageSix, CLOUD, Amazon, DATA, artificialIntelligence, Cybersecurity, DigitalService, AutomationOne, AutomationThree, AutomationFour, AutomationFive, AutomationSix, AutomationTwo, RemoteIT, ConsultingService, CloudService, HelpDesk, NetworkSecurity, SystemSupport, MigrationOne, MigrationTwo, MigrationThree, ProductFour, ProductThree, ProductTwo, ProductOne, ProductFive, ProductSix, ServicesSix, ServicesFive, ServicesFour, ServicesThree, ServicesTwo, ServicesOne } from "@/utils";
+import { AIOne, AITwo, AIThree, AIFour, AIFive, AISix, CovaBg, AngelflowBg, About, ComplianceAI, ApplicationCompliance, RedTeaming, webAppSecurity, SecurityAudits, NetworkSecurityTesting, GovernanceFramework, Dataprivacy, RiskManagement, Airbolt, ANGELFLOW, AngelLogo, Assistant, blogImageOne, blogImageTwo, Buisness, Career, Catalyst, ChooseFour, ChooseOne, ChooseThree, ChooseTwo, Cova, COVA, CovaLogo, Developer, Industries, Insights, London, Protium, Services, Upsure, DataImageOne, DataImageTwo, DataImageThree, DataImageFour, CloudOne, CloudTwo, CloudThree, CloudFour, AwsOne, AwsTwo, AwsThree, ImageOne, ImageTwo, ImageThree, CloudFive, CloudSix, DataImageFive, DataImageSix, CLOUD, Amazon, DATA, artificialIntelligence, Cybersecurity, DigitalService, AutomationOne, AutomationThree, AutomationFour, AutomationFive, AutomationSix, AutomationTwo, RemoteIT, ConsultingService, CloudService, HelpDesk, NetworkSecurity, SystemSupport, MigrationOne, MigrationTwo, MigrationThree, ProductFour, ProductThree, ProductTwo, ProductOne, ProductFive, ProductSix, ServicesSix, ServicesFive, ServicesFour, ServicesThree, ServicesTwo, ServicesOne, Vulnerability, CustomAnalyticsSix, CustomAnalyticsFive, CustomAnalyticsFour, CustomAnalyticsThree, CustomAnalyticsTwo, CustomAnalyticsOne, TransformThree, TransformTwo, TransformOne, TreeThree, TreeTwo, TreeOne, WebThree, WebTwo, WebOne, AutomationImageOne, AutomationImageTwo, AutomationImageThree } from "@/utils";
 import { IoMdMail } from "react-icons/io";
 import { FaPhoneAlt } from "react-icons/fa";
 import { ImLocation } from "react-icons/im";
@@ -298,22 +298,22 @@ export const listingstable: any = {
     services: [
         {
             id: "custom software development",
-            link: '/',
+            link: '/custom-software-development',
             heading: "Custom Software Development",
             details: [
-                { text: "Web applications development", link: '/' },
-                { text: "Mobile app development", link: '/' },
-                { text: "UI/UX design", link: '/' }
+                { text: "Web applications development", link: '/web-app-development' },
+                { text: "Mobile app development", link: '/mobile-app-development' },
+                { text: "UI/UX design", link: '/ui-ux-design' }
             ]
         },
         {
             id: "IT services",
-            link: '/',
+            link: '/it-services',
             heading: "IT Services",
             details: [
-                { text: "Enterprise Mobility", link: '/' },
-                { text: "Digital Transformation", link: '/' },
-                { text: "Staff Augmentation", link: '/' }
+                { text: "Enterprise Mobility", link: '/enterprise-mobility' },
+                { text: "Digital Transformation", link: '/digital-transformation' },
+                { text: "Staff Augmentation", link: '/staff-augmentation' }
             ]
         },
         {
@@ -321,8 +321,8 @@ export const listingstable: any = {
             link: '/digital-service',
             heading: "Digital Services",
             details: [
-                { text: "Digital Consulting & Strategy", link: '/' },
-                { text: "Digital Business Applications", link: '/' },
+                { text: "Digital Consulting & Strategy", link: '/digital-strategy' },
+                { text: "Digital Business Applications", link: '/digital-business' },
                 { text: "Product Engineering", link: '/product-engineering' }
             ]
         }
@@ -392,9 +392,9 @@ export const listingstable: any = {
 
 export const featurestable: any = {
     services: [
-        { id: "transformative solutions", link: "/", heading: "Transformative Solutions", details: [{ text: "Business Process Automation", link: '/business-process-automation' }, { text: "Testing and QA", link: '/testing-and-qa' }, { text: "System Support", link: '/system-support' }] },
-        { id: "Amazon Web Services", link: "/amazon-web-services", heading: "Amazon Web Services", details: [{ text: "Storage services", link: '/storage-services' }, { text: "Networking services", link: '/' }, { text: "Analytics services", link: '/' }] },
-        { id: "Data", heading: "Data", link: "/data", details: [{ text: "Data Engineering", link: '/data-engineering' }, { text: "Data Management & Governance", link: '/data-management-and-governance' }, { text: "Analytics & Platform Implementation", link: '/' }] }
+        { id: "transformative solutions", link: "/transformative-solutions", heading: "Transformative Solutions", details: [{ text: "Business Process Automation", link: '/business-process-automation' }, { text: "Testing and QA", link: '/testing-and-qa' }, { text: "System Support", link: '/system-support' }] },
+        { id: "Amazon Web Services", link: "/amazon-web-services", heading: "Amazon Web Services", details: [{ text: "Storage services", link: '/storage-services' }, { text: "Networking services", link: '/networking-services' }, { text: "Analytics services", link: '/analytics-services' }] },
+        { id: "Data", heading: "Data", link: "/data", details: [{ text: "Data Engineering", link: '/data-engineering' }, { text: "Data Management & Governance", link: '/data-management-and-governance' }, { text: "Analytics & Platform Implementation", link: '/analytics-and-platform-implementation' }] }
     ],
     insights: [
         { id: "News & Events ", link: "/", heading: "News & Events", details: [{ text: "Company News", link: '/' }, { text: "Industry Events", link: '/' }, { text: "Press Releases", link: '/' }] },
@@ -526,6 +526,39 @@ export const processAutomationData = [
     },
 ];
 
+export const processAnalyticsData = [
+    {
+        title: 'Analytics Platform Implementation Services',
+        description: 'We offer end-to-end analytics platform implementation services, from initial consultation to final deployment. ',
+        icon: CustomAnalyticsOne,
+    },
+    {
+        title: 'Analytics Consulting Services',
+        description: 'We provide strategic guidance on selecting the right analytics tools, developing implementation plans, and optimizing your data processes.',
+        icon: CustomAnalyticsTwo,
+    },
+    {
+        title: 'Analytics Platform Solutions',
+        description: 'Our solutions enhance data accessibility, improve reporting capabilities, and support advanced analytics functions.',
+        icon: CustomAnalyticsThree,
+    },
+    {
+        title: 'Data Analytics Platform Providers',
+        description: 'Whether you need a cloud-based solution or an on-premises setup, we have the expertise to implement the best-fit platform for your needs.',
+        icon: CustomAnalyticsFour,
+    },
+    {
+        title: 'Analytics Implementation Experts',
+        description: 'We ensure that your analytics platform is implemented efficiently, with minimal disruption to your operations.',
+        icon: CustomAnalyticsFive,
+    },
+    {
+        title: 'Custom Analytics Dashboard Development',
+        description: 'We create tailored dashboards that provide real-time insights and visualization, enabling you to make data-driven decisions quickly and effectively.',
+        icon: CustomAnalyticsSix,
+    },
+];
+
 export const CloudData = [
     {
         title: 'Business Process Automation',
@@ -545,17 +578,19 @@ export const CloudData = [
     {
         title: 'Cloud Migration',
         description: 'Seamlessly transition your existing infrastructure to the cloud with minimal disruption and maximum efficiency.',
-        icon: CloudFour,
+
+        icon: CloudSix,
     },
     {
         title: 'Cloud Security Services',
         description: 'Protecting your cloud infrastructure with tailored security solutions.',
-        icon: CloudFive,
+
+        icon: CloudFour,
     },
     {
         title: 'Cloud Cost Optimization',
         description: 'We help you save on cloud expenses with cost-saving strategies.',
-        icon: CloudSix,
+        icon: CloudFive,
     },
 ];
 export const AwsAutomationData = [
@@ -573,6 +608,24 @@ export const AwsAutomationData = [
         title: 'AWS Cloud Migration ',
         description: 'Migrating to AWS offers significant benefits, including cost savings and improved agility. Our cloud migration services simplify the process of moving your applications and data to AWS. ',
         icon: MigrationThree,
+    },
+];
+
+export const WebAutomationData = [
+    {
+        title: 'Expertise and Experience',
+        description: 'Our team comprises experienced developers who stay updated with the latest trends and technologies in web development.',
+        icon: AutomationImageOne,
+    },
+    {
+        title: 'Client-Centric Approach',
+        description: 'We work closely with you throughout the development process to ensure your vision is realized.',
+        icon: AutomationImageTwo,
+    },
+    {
+        title: 'Comprehensive Support ',
+        description: 'Migrating to AWS offers significant benefits, including cost savings and improved agility. Our cloud migration services simplify the process of moving your applications and data to AWS. ',
+        icon: AutomationImageThree,
     },
 ];
 
@@ -644,6 +697,61 @@ export const ProductEngineeringData = [
         icon: ProductSix,
     },
 ];
+
+export const ProductTransformationData = [
+    {
+        title: 'Business Process Automation (BPA)',
+        description: 'Utilize robotic process automation (RPA) to minimize human errors and ensure precision in every task.',
+        icon: TransformOne,
+    },
+    {
+        title: 'Testing and Quality Assurance (QA)',
+        description: 'Identify bottlenecks and optimize your software for superior performance.',
+        icon: TransformTwo,
+    },
+    {
+        title: 'System Support',
+        description: "Whether your infrastructure is cloud-based or on-premise, we've got you covered.",
+        icon: TransformThree,
+    },
+];
+export const ProductServicesData = [
+    {
+        title: 'Enterprise Mobility Solutions',
+        description: 'Enable seamless access to business resources anytime, anywhere, and on any device',
+        icon: TreeOne,
+    },
+    {
+        title: 'Digital Transformation Services',
+        description: 'Transform your business with innovative technologies and streamlined processes.',
+        icon: TreeTwo,
+    },
+    {
+        title: 'Staff Augmentation',
+        description: "Enhance your team's capabilities with our skilled IT professionals.",
+        icon: TreeThree,
+    },
+];
+
+export const ProductWebData = [
+    {
+        title: 'Web Application Development',
+        description: 'Build robust and scalable web applications that cater to your business needs using the latest technologies.',
+        icon: WebOne,
+    },
+    {
+        title: 'Mobile App Development',
+        description: 'Create intuitive and engaging mobile apps for both iOS and Android platforms that enhance user engagement and brand loyalty.',
+        icon: WebTwo,
+    },
+    {
+        title: 'UI/UX Design',
+        description: "Deliver exceptional user experiences through intuitive and aesthetically pleasing interfaces that captivate your audience.",
+        icon: WebThree,
+    },
+];
+
+
 export const ServicesDataLocal = [
     {
         title: 'Data Management Services',
@@ -676,7 +784,82 @@ export const ServicesDataLocal = [
         icon: ServicesSix,
     },
 ];
+export const GovernanceDataPrivacy = [
+    {
+        title: 'AI Governance Frameworks',
+        description: 'Our AI governance frameworks are designed to establish robust guidelines and standards that ensure the ethical and responsible use of AI technologies. ',
+        icon: GovernanceFramework,
+        listItems: [
+            'Transparent & Explainable AI Systems',
+            'Ethical AI Practices',
+            'Comprehensive AI Policy Development',
+        ]
+    },
+    {
+        title: 'AI Risk Management',
+        description: 'We provide detailed risk assessments and develop strategies to mitigate potential threats, ensuring your AI systems are resilient and reliable.',
+        icon: RiskManagement,
+        listItems: [
+            'AI Risk Management Frameworks',
+            'Predictive Risk Analytics',
+            'Continuous Monitoring and Reporting',
+        ]
+    },
+    {
+        title: 'Compliance in AI',
+        description: 'With evolving regulations like the GDPR and the upcoming EU AI Act, staying compliant is more challenging than ever. ',
+        icon: Dataprivacy,
+        listItems: [
+            'GDPR and AI Compliance',
+            'Regulatory Compliance Audits',
+            'AI Compliance Standards Development',
+        ]
+    },
+    {
+        title: 'Data Privacy Regulations',
+        description: 'We help you implement robust data privacy practices that safeguard sensitive information and ensure compliance with global data protection regulations.',
+        icon: ComplianceAI,
+        listItems: [
+            'Data Security in AI',
+            'Privacy Impact Assessments',
+            'Compliance with Data Privacy Regulations',
+        ]
+    },
 
+];
+export const PenetrationTestingData = [
+    {
+        title: 'Vulnerability Assessment',
+        description: 'Our thorough vulnerability assessments pinpoint weaknesses in your network, applications, and systems, providing a detailed analysis and prioritizing remediation efforts.',
+        icon: Vulnerability,
+    },
+    {
+        title: 'Network Security Testing',
+        description: 'We conduct extensive network security tests to uncover potential vulnerabilities and ensure robust protection against unauthorized access and cyber threats.',
+        icon: NetworkSecurityTesting,
+    },
+    {
+        title: 'Web Application Security',
+        description: 'Our experts perform rigorous web application penetration tests to identify security flaws, ensuring your web applications are secure against attacks',
+        icon: webAppSecurity,
+    },
+    {
+        title: 'Security Audits',
+        description: 'We provide detailed security audits to evaluate your organizations adherence to security policies and compliance with industry standards.',
+        icon: SecurityAudits,
+    },
+    {
+        title: 'Red Teaming',
+        description: 'Our red teaming exercises simulate advanced persistent threats, providing an in-depth assessment of your security posture and response capabilities.',
+        icon: RedTeaming,
+    },
+    {
+        title: 'Application Security Compliance',
+        description: 'We guide you through the entire process of compliance—from initial assessment to final verification, to ensure that your applications exceed the regulatory standards.',
+        icon: ApplicationCompliance,
+    },
+
+];
 export const servicesoffer = {
     digitalservice: [
         {
@@ -972,7 +1155,7 @@ export const servicesoffer = {
         },
 
     ],
-    azure:[   {
+    azure: [{
         id: "azure",
         title: "Microsoft Azure Services",
         details: "We offer modern solutions utilizing Microsoft Azure and (GCP) to meet diverse business needs, ensuring that you harness the full potential of these powerful cloud platforms.",
@@ -994,7 +1177,7 @@ export const servicesoffer = {
         keyheading: "Ensuring optimal use of GCP involves",
         keyfeatures: [{ paragraph: "Cost Optimization" }, { paragraph: "Security" }, { paragraph: "Automation" }]
     },],
-    cloudmigration:[{
+    cloudmigration: [{
         id: "cloudmigration",
         title: "Cloud Computing Services ",
         details: "We provide seamless cloud migration and computing solutions, helping businesses transition effortlessly to the cloud. With our expertise and partnerships with top cloud providers like AWS, Azure, and Google Cloud, we deliver services tailored to your unique business needs.",
@@ -1065,327 +1248,702 @@ export const servicesoffer = {
         keyheading: "",
         keyfeatures: [{ paragraph: "" }]
     },
-],
-cloudops:[  
-     {  id: "cloudops",
-    title: "CloudOps Consulting ",
-    details: "Find out with our CloudOps services. At Novatore Solutions, we are dedicated to enhancing operational efficiency, deployment processes, and ensuring high availability through our advanced CloudOps solutions. ",
-    description: "We provide expert guidance on best practices, tools, and technologies, ensuring that your cloud strategy aligns with your business objectives.",
-    keyheading: "",
-    keyfeatures: [{ paragraph: "" }]
-},
-{
-    id: 2,
-    title: " CloudOps Implementation",
-    description: "Our team excels in deploying cloud operations frameworks that enhance performance, security, and scalability, tailored to your unique requirements.",
-    keyheading: "",
-    keyfeatures: [{ paragraph: "" }]
-},
-{
-    id: 3,
-    title: " CloudOps Managed Services",
-    description: "We offer continuous monitoring, maintenance, and optimization to ensure your cloud environment runs smoothly and efficiently.",
-    keyheading: "",
-    keyfeatures: [{ paragraph: "" }]
-},
-],
-digitaltransformation:[  
-    {  id: "digitaltransformation",
-   title: "Digital Transformation Solutions ",
-   details: "We offer a full suite of services designed to meet the needs of modern businesses looking to transform their operations and stay ahead of the curve.  ",
-   description: "Customized approaches that address your specific business challenges and opportunities.",
-   keyheading: "",
-   keyfeatures: [{ paragraph: "" }]
-},
-{
-   id: 2,
-   title: " IT Modernization Services",
-   description: "Upgrade your IT infrastructure for enhanced performance and security.",
-   keyheading: "",
-   keyfeatures: [{ paragraph: "" }]
-},
-{
-   id: 3,
-   title: " Cloud Migration Strategies",
-   description: "Expert guidance to move your operations to a scalable, flexible cloud environment.",
-   keyheading: "",
-   keyfeatures: [{ paragraph: "" }]
-},
-{
-    id: 4,
-    title: " Data Analytics and Insights",
-    description: "Leverage data to gain actionable insights and improve decision-making..",
-    keyheading: "",
-    keyfeatures: [{ paragraph: "" }]
- },
- {
-    id: 5,
-    title: " Enterprise Software Development",
-    description: "Develop software tailored to your unique business requirements.",
-    keyheading: "",
-    keyfeatures: [{ paragraph: "" }]
- },
- {
-    id: 6,
-    title: " Tech-Driven Business Growth",
-    description: "Harness technology to drive innovation and business expansion.",
-    keyheading: "",
-    keyfeatures: [{ paragraph: "" }]
- },
-],
-staffaugmentation:[  
-    {  id: "staffaugmentation",
-   title: "IT Staff Augmentation Services ",
-   details: "We offer IT staff augmentation services to help you quickly integrate top-tier tech talent and scale your workforce with agility and precision.",
-   description: "Quickly integrate skilled developers, engineers, and IT specialists into your projects to boost productivity and innovation.",
-   keyheading: "",
-   keyfeatures: [{ paragraph: "" }]
-},
-{
-   id: 2,
-   title: " Software Development Team Augmentation",
-   description: "Build a powerhouse development team. Strengthen your software development capabilities with our talented engineers and developers.",
-   keyheading: "",
-   keyfeatures: [{ paragraph: "" }]
-},
-{
-   id: 3,
-   title: " Tech Talent Augmentation",
-   description: "Access the best tech talent. Leverage our extensive network of IT professionals to find the perfect match for your technical requirements.",
-   keyheading: "",
-   keyfeatures: [{ paragraph: "" }]
-},
-{
-    id: 4,
-    title: " IT Workforce Expansion",
-    description: "Seamlessly expand your IT workforce with qualified professionals who integrate smoothly into your existing structure.",
-    keyheading: "",
-    keyfeatures: [{ paragraph: "" }]
- },
- {
-    id: 5,
-    title: " Technology Staff Augmentation",
-    description: "Augment your team with specialists who are proficient in the latest technologies and industry trends.",
-    keyheading: "",
-    keyfeatures: [{ paragraph: "" }]
- },
- {
-    id: 6,
-    title: " Agile IT Team Scaling",
-    description: "Our agile staffing solutions enable you to rapidly respond to market changes and business challenges.",
-    keyheading: "",
-    keyfeatures: [{ paragraph: "" }]
- },
-],
-storageservices:[  
-    {  id: "storageservices",
-   title: "Cloud Storage Solutions ",
-   details: "Our storage services are designed to meet the diverse needs of modern businesses, providing flexibility, security, and performance. ",
-   description: "Experience seamless data access and collaboration with our state-of-the-art cloud storage solutions.",
-   keyheading: "",
-   keyfeatures: [{ paragraph: "" }]
-},
-{
-   id: 2,
-   title: " Data Backup Services",
-   description: "Safeguard your critical business information with reliable and automated data backup solutions.",
-   keyheading: "",
-   keyfeatures: [{ paragraph: "" }]
-},
-{
-   id: 3,
-   title: " IT Storage Solutions",
-   description: "Tailored IT storage solutions that ensure your data is always available, protected, and easy to manage.",
-   keyheading: "",
-   keyfeatures: [{ paragraph: "" }]
-},
-{
-    id: 4,
-    title: " Scalable Storage Solutions",
-    description: "Adapt to changing business needs with scalable storage solutions that grow with your enterprise.",
-    keyheading: "",
-    keyfeatures: [{ paragraph: "" }]
- },
- {
-    id: 5,
-    title: " Storage Management Software",
-    description: "Streamline operations with our intuitive storage management software, simplifying data oversight.",
-    keyheading: "",
-    keyfeatures: [{ paragraph: "" }]
- },
- {
-    id: 6,
-    title: " Storage as a Service (StaaS)",
-    description: "Enjoy hassle-free data management with our comprehensive Storage as a Service offering.",
-    keyheading: "",
-    keyfeatures: [{ paragraph: "" }]
- },
-],
-generativeAI:[  
-    {  id: "generativeAI",
-   title: "Text-to-Image AI",
-   details: "Discover how our Generative AI services can transform your business landscape and enhance creativity. From text-to-image creation to AI governance, our solutions will empower your enterprise. ",
-   description: "Create stunning visuals with our Text-to-Image AI services. Whether you need marketing materials, product visuals, or custom graphics, our AI can generate high-quality images from textual descriptions, saving time and resources.",
-   keyheading: "",
-   keyfeatures: [{ paragraph: "" }]
-},
-{
-   id: 2,
-   title: "Multimodal AI",
-   description: "Experience seamless integration of multiple data types with our Multimodal AI solutions. By combining text, images, audio, and video, our AI models provide a holistic approach to data analysis and content generation.",
-   keyheading: "",
-   keyfeatures: [{ paragraph: "" }]
-},
-{
-   id: 3,
-   title: " AI Governance",
-   description: "Ensure your AI systems operate ethically and securely with our AI Governance services. We help you implement frameworks that prioritize transparency, accountability, and compliance with regulatory standards.",
-   keyheading: "",
-   keyfeatures: [{ paragraph: "" }]
-},
-{
-    id: 4,
-    title: "Generative Design",
-    description: "Innovate faster with Generative Design. Our AI-driven design tools assist in creating efficient, sustainable, and aesthetically pleasing designs for products, architecture, and more.",
-    keyheading: "",
-    keyfeatures: [{ paragraph: "" }]
- },
- {
-    id: 5,
-    title: "AI Music Generation",
-    description: "Transform your audio content with AI Music Generation. Our AI can compose original music, remix tracks, and even generate soundscapes tailored to your needs.",
-    keyheading: "",
-    keyfeatures: [{ paragraph: "" }]
- },
- {
-    id: 6,
-    title: " Synthetic Data",
-    description: "Enhance your machine learning models with Synthetic Data. Generate high-quality, anonymized data to train AI systems without compromising on privacy or data security.",
-    keyheading: "",
-    keyfeatures: [{ paragraph: "" }]
- },
- {
-    id: 7,
-    title: " Speech Synthesis AI",
-    description: "Improve communication and accessibility with Speech Synthesis AI. Our AI can generate lifelike speech from text, supporting multiple languages and accents.",
-    keyheading: "",
-    keyfeatures: [{ paragraph: "" }]
- },
- {
-    id: 8,
-    title: "Conversational AI ",
-    description: "Elevate customer interactions with Conversational AI. Deploy intelligent chatbots and virtual assistants that understand and respond to user queries in real-time.",
-    keyheading: "",
-    keyfeatures: [{ paragraph: "" }]
- },
- {
-    id: 9,
-    title: " AI-Generated Content ",
-    description: "Automate content creation with AI-Generated Content. From blog posts to social media updates, our AI can produce engaging and relevant content tailored to your audience.",
-    keyheading: "",
-    keyfeatures: [{ paragraph: "" }]
- },
+    ],
+    cloudops: [
+        {
+            id: "cloudops",
+            title: "CloudOps Consulting ",
+            details: "Find out with our CloudOps services. At Novatore Solutions, we are dedicated to enhancing operational efficiency, deployment processes, and ensuring high availability through our advanced CloudOps solutions. ",
+            description: "We provide expert guidance on best practices, tools, and technologies, ensuring that your cloud strategy aligns with your business objectives.",
+            keyheading: "",
+            keyfeatures: [{ paragraph: "" }]
+        },
+        {
+            id: 2,
+            title: " CloudOps Implementation",
+            description: "Our team excels in deploying cloud operations frameworks that enhance performance, security, and scalability, tailored to your unique requirements.",
+            keyheading: "",
+            keyfeatures: [{ paragraph: "" }]
+        },
+        {
+            id: 3,
+            title: " CloudOps Managed Services",
+            description: "We offer continuous monitoring, maintenance, and optimization to ensure your cloud environment runs smoothly and efficiently.",
+            keyheading: "",
+            keyfeatures: [{ paragraph: "" }]
+        },
+    ],
+    digitaltransformation: [
+        {
+            id: "digitaltransformation",
+            title: "Digital Transformation Solutions ",
+            details: "We offer a full suite of services designed to meet the needs of modern businesses looking to transform their operations and stay ahead of the curve.  ",
+            description: "Customized approaches that address your specific business challenges and opportunities.",
+            keyheading: "",
+            keyfeatures: [{ paragraph: "" }]
+        },
+        {
+            id: 2,
+            title: " IT Modernization Services",
+            description: "Upgrade your IT infrastructure for enhanced performance and security.",
+            keyheading: "",
+            keyfeatures: [{ paragraph: "" }]
+        },
+        {
+            id: 3,
+            title: " Cloud Migration Strategies",
+            description: "Expert guidance to move your operations to a scalable, flexible cloud environment.",
+            keyheading: "",
+            keyfeatures: [{ paragraph: "" }]
+        },
+        {
+            id: 4,
+            title: " Data Analytics and Insights",
+            description: "Leverage data to gain actionable insights and improve decision-making..",
+            keyheading: "",
+            keyfeatures: [{ paragraph: "" }]
+        },
+        {
+            id: 5,
+            title: " Enterprise Software Development",
+            description: "Develop software tailored to your unique business requirements.",
+            keyheading: "",
+            keyfeatures: [{ paragraph: "" }]
+        },
+        {
+            id: 6,
+            title: " Tech-Driven Business Growth",
+            description: "Harness technology to drive innovation and business expansion.",
+            keyheading: "",
+            keyfeatures: [{ paragraph: "" }]
+        },
+    ],
+    staffaugmentation: [
+        {
+            id: "staffaugmentation",
+            title: "IT Staff Augmentation Services ",
+            details: "We offer IT staff augmentation services to help you quickly integrate top-tier tech talent and scale your workforce with agility and precision.",
+            description: "Quickly integrate skilled developers, engineers, and IT specialists into your projects to boost productivity and innovation.",
+            keyheading: "",
+            keyfeatures: [{ paragraph: "" }]
+        },
+        {
+            id: 2,
+            title: " Software Development Team Augmentation",
+            description: "Build a powerhouse development team. Strengthen your software development capabilities with our talented engineers and developers.",
+            keyheading: "",
+            keyfeatures: [{ paragraph: "" }]
+        },
+        {
+            id: 3,
+            title: " Tech Talent Augmentation",
+            description: "Access the best tech talent. Leverage our extensive network of IT professionals to find the perfect match for your technical requirements.",
+            keyheading: "",
+            keyfeatures: [{ paragraph: "" }]
+        },
+        {
+            id: 4,
+            title: " IT Workforce Expansion",
+            description: "Seamlessly expand your IT workforce with qualified professionals who integrate smoothly into your existing structure.",
+            keyheading: "",
+            keyfeatures: [{ paragraph: "" }]
+        },
+        {
+            id: 5,
+            title: " Technology Staff Augmentation",
+            description: "Augment your team with specialists who are proficient in the latest technologies and industry trends.",
+            keyheading: "",
+            keyfeatures: [{ paragraph: "" }]
+        },
+        {
+            id: 6,
+            title: " Agile IT Team Scaling",
+            description: "Our agile staffing solutions enable you to rapidly respond to market changes and business challenges.",
+            keyheading: "",
+            keyfeatures: [{ paragraph: "" }]
+        },
+    ],
+    storageservices: [
+        {
+            id: "storageservices",
+            title: "Cloud Storage Solutions ",
+            details: "Our storage services are designed to meet the diverse needs of modern businesses, providing flexibility, security, and performance. ",
+            description: "Experience seamless data access and collaboration with our state-of-the-art cloud storage solutions.",
+            keyheading: "",
+            keyfeatures: [{ paragraph: "" }]
+        },
+        {
+            id: 2,
+            title: " Data Backup Services",
+            description: "Safeguard your critical business information with reliable and automated data backup solutions.",
+            keyheading: "",
+            keyfeatures: [{ paragraph: "" }]
+        },
+        {
+            id: 3,
+            title: " IT Storage Solutions",
+            description: "Tailored IT storage solutions that ensure your data is always available, protected, and easy to manage.",
+            keyheading: "",
+            keyfeatures: [{ paragraph: "" }]
+        },
+        {
+            id: 4,
+            title: " Scalable Storage Solutions",
+            description: "Adapt to changing business needs with scalable storage solutions that grow with your enterprise.",
+            keyheading: "",
+            keyfeatures: [{ paragraph: "" }]
+        },
+        {
+            id: 5,
+            title: " Storage Management Software",
+            description: "Streamline operations with our intuitive storage management software, simplifying data oversight.",
+            keyheading: "",
+            keyfeatures: [{ paragraph: "" }]
+        },
+        {
+            id: 6,
+            title: " Storage as a Service (StaaS)",
+            description: "Enjoy hassle-free data management with our comprehensive Storage as a Service offering.",
+            keyheading: "",
+            keyfeatures: [{ paragraph: "" }]
+        },
+    ],
+    generativeAI: [
+        {
+            id: "generativeAI",
+            title: "Text-to-Image AI",
+            details: "Discover how our Generative AI services can transform your business landscape and enhance creativity. From text-to-image creation to AI governance, our solutions will empower your enterprise. ",
+            description: "Create stunning visuals with our Text-to-Image AI services. Whether you need marketing materials, product visuals, or custom graphics, our AI can generate high-quality images from textual descriptions, saving time and resources.",
+            keyheading: "",
+            keyfeatures: [{ paragraph: "" }]
+        },
+        {
+            id: 2,
+            title: "Multimodal AI",
+            description: "Experience seamless integration of multiple data types with our Multimodal AI solutions. By combining text, images, audio, and video, our AI models provide a holistic approach to data analysis and content generation.",
+            keyheading: "",
+            keyfeatures: [{ paragraph: "" }]
+        },
+        {
+            id: 3,
+            title: " AI Governance",
+            description: "Ensure your AI systems operate ethically and securely with our AI Governance services. We help you implement frameworks that prioritize transparency, accountability, and compliance with regulatory standards.",
+            keyheading: "",
+            keyfeatures: [{ paragraph: "" }]
+        },
+        {
+            id: 4,
+            title: "Generative Design",
+            description: "Innovate faster with Generative Design. Our AI-driven design tools assist in creating efficient, sustainable, and aesthetically pleasing designs for products, architecture, and more.",
+            keyheading: "",
+            keyfeatures: [{ paragraph: "" }]
+        },
+        {
+            id: 5,
+            title: "AI Music Generation",
+            description: "Transform your audio content with AI Music Generation. Our AI can compose original music, remix tracks, and even generate soundscapes tailored to your needs.",
+            keyheading: "",
+            keyfeatures: [{ paragraph: "" }]
+        },
+        {
+            id: 6,
+            title: " Synthetic Data",
+            description: "Enhance your machine learning models with Synthetic Data. Generate high-quality, anonymized data to train AI systems without compromising on privacy or data security.",
+            keyheading: "",
+            keyfeatures: [{ paragraph: "" }]
+        },
+        {
+            id: 7,
+            title: " Speech Synthesis AI",
+            description: "Improve communication and accessibility with Speech Synthesis AI. Our AI can generate lifelike speech from text, supporting multiple languages and accents.",
+            keyheading: "",
+            keyfeatures: [{ paragraph: "" }]
+        },
+        {
+            id: 8,
+            title: "Conversational AI ",
+            description: "Elevate customer interactions with Conversational AI. Deploy intelligent chatbots and virtual assistants that understand and respond to user queries in real-time.",
+            keyheading: "",
+            keyfeatures: [{ paragraph: "" }]
+        },
+        {
+            id: 9,
+            title: " AI-Generated Content ",
+            description: "Automate content creation with AI-Generated Content. From blog posts to social media updates, our AI can produce engaging and relevant content tailored to your audience.",
+            keyheading: "",
+            keyfeatures: [{ paragraph: "" }]
+        },
 
-],
-machinelearning:[
-    {
-        id: "machinelearning",
-        title: "  Quantum Machine Learning (Quantum ML)",
-        details:"Explore the future of technology with our comprehensive machine learning services, designed to elevate your business capabilities, our solutions leverage the latest advancements in AI.",
-        description:"",
-        keyheading: "",
-        keyfeatures: [{ paragraph: "Quantum algorithm development" }, { paragraph: "High-speed data processing" }, { paragraph: "Advanced pattern recognition" }]
-     },
-     {
-        id: "2",
-        title: " Deep Learning",
-        description:"",
-        keyheading: "",
-        keyfeatures: [{ paragraph: " Neural network models" }, { paragraph: " High accuracy in data interpretation" }, { paragraph: "Scalable solutions for large datasets" }]
-     },
-     {
-        id: "3",
-        title: "  Explainable AI (XAI)",
-        description:"",
-        keyheading: "",
-        keyfeatures: [{ paragraph: "Transparent AI models" }, { paragraph: "Enhanced trust and reliability" }, { paragraph: "Regulatory compliance" }]
-     },
-     {
-        id: "4",
-        title: " Edge Computing",
-        description:"",
-        keyheading: "",
-        keyfeatures: [{ paragraph: "Local data processing" }, { paragraph: "Reduced latency" }, { paragraph: "Enhanced real-time capabilities" }]
-     },
-     {
-        id: "5",
-        title: " Autonomous Driving",
-        description:"",
-        keyheading: "",
-        keyfeatures:[{ paragraph: "Object detection and classification" }, { paragraph: "Path planning and navigation" }, { paragraph: " Real-time sensor data processing" }]
-     },
-     {
-        id: "6",
-        title: " Computer Vision",
-        description:"",
-        keyheading: "",
-        keyfeatures:[{ paragraph: "Image and video analysis" }, { paragraph: "Automated visual inspection" }, { paragraph: "Real-time monitoring" }]
-     },
-     {
-        id: "7",
-        title: " Generative Adversarial Networks (GANs)",
-        description:"",
-        keyheading: "",
-        keyfeatures: [{ paragraph: "Realistic content generation" }, { paragraph: "Data augmentation" }, { paragraph: "Enhanced creative capabilities" }]
-     },
-     {
-        id: "8",
-        title: " Natural Language Processing (NLP)",
-        description:"",
-        keyheading: "",
-        keyfeatures:[{ paragraph: "Text and speech analysis" }, { paragraph: "Sentiment detection" }, { paragraph: "Multilingual support" }]
-     },
-     {
-        id: "9",
-        title: " Predictive Analytics",
-        description:"",
-        keyheading: "",
-        keyfeatures: [{ paragraph: "Trend analysis" }, { paragraph: "Forecasting models" }, { paragraph: "Data-driven decision making" }]
-     },
-],
-productengineering:[
-    {
-        id: "productengineering",
-        title: "  Custom Enterprise Products",
-        description:"From AI platforms and IoT ecosystems to labor management portals, we develop custom products that tackle business challenges and drive growth.",
-        details:"Our experts are dedicated to guiding enterprises through the complexities of software development, ensuring your products use the latest technologies like AI, IoT, and blockchain.",
-        keyheading: "",
-        keyfeatures: [{ paragraph: "" }]
-     },
-     {
-        id: "2",
-        title: " Custom Mobile Products",
-        description:"Our designers and developers craft memorable mobile experiences that keep users invested and achieve your business objectives.",
-        keyheading: "",
-        keyfeatures: [{ paragraph: "" }] },
-     {
-        id: "3",
-        title: " Progressive Technology Solutions",
-        description:"Embrace the future with our expertise in the latest technologies. We offer solutions in:",
-        keyheading: "",
-        keyfeatures: [{ paragraph: "Internet of Things (IoT)" }, { paragraph: "Augmented & Virtual Reality (AR/VR)" }, { paragraph: "Machine Learning & Artificial Intelligence (ML/AI)" }, { paragraph: "Distributed Ledger Technology & Blockchain" },{ paragraph: "Geolocation Technologies" },]
-     },
-]
+    ],
+    machinelearning: [
+        {
+            id: "machinelearning",
+            title: "  Quantum Machine Learning (Quantum ML)",
+            details: "Explore the future of technology with our comprehensive machine learning services, designed to elevate your business capabilities, our solutions leverage the latest advancements in AI.",
+            description: "",
+            keyheading: "",
+            keyfeatures: [{ paragraph: "Quantum algorithm development" }, { paragraph: "High-speed data processing" }, { paragraph: "Advanced pattern recognition" }]
+        },
+        {
+            id: "2",
+            title: " Deep Learning",
+            description: "",
+            keyheading: "",
+            keyfeatures: [{ paragraph: " Neural network models" }, { paragraph: " High accuracy in data interpretation" }, { paragraph: "Scalable solutions for large datasets" }]
+        },
+        {
+            id: "3",
+            title: "  Explainable AI (XAI)",
+            description: "",
+            keyheading: "",
+            keyfeatures: [{ paragraph: "Transparent AI models" }, { paragraph: "Enhanced trust and reliability" }, { paragraph: "Regulatory compliance" }]
+        },
+        {
+            id: "4",
+            title: " Edge Computing",
+            description: "",
+            keyheading: "",
+            keyfeatures: [{ paragraph: "Local data processing" }, { paragraph: "Reduced latency" }, { paragraph: "Enhanced real-time capabilities" }]
+        },
+        {
+            id: "5",
+            title: " Autonomous Driving",
+            description: "",
+            keyheading: "",
+            keyfeatures: [{ paragraph: "Object detection and classification" }, { paragraph: "Path planning and navigation" }, { paragraph: " Real-time sensor data processing" }]
+        },
+        {
+            id: "6",
+            title: " Computer Vision",
+            description: "",
+            keyheading: "",
+            keyfeatures: [{ paragraph: "Image and video analysis" }, { paragraph: "Automated visual inspection" }, { paragraph: "Real-time monitoring" }]
+        },
+        {
+            id: "7",
+            title: " Generative Adversarial Networks (GANs)",
+            description: "",
+            keyheading: "",
+            keyfeatures: [{ paragraph: "Realistic content generation" }, { paragraph: "Data augmentation" }, { paragraph: "Enhanced creative capabilities" }]
+        },
+        {
+            id: "8",
+            title: " Natural Language Processing (NLP)",
+            description: "",
+            keyheading: "",
+            keyfeatures: [{ paragraph: "Text and speech analysis" }, { paragraph: "Sentiment detection" }, { paragraph: "Multilingual support" }]
+        },
+        {
+            id: "9",
+            title: " Predictive Analytics",
+            description: "",
+            keyheading: "",
+            keyfeatures: [{ paragraph: "Trend analysis" }, { paragraph: "Forecasting models" }, { paragraph: "Data-driven decision making" }]
+        },
+    ],
+    productengineering: [
+        {
+            id: "productengineering",
+            title: "  Custom Enterprise Products",
+            description: "From AI platforms and IoT ecosystems to labor management portals, we develop custom products that tackle business challenges and drive growth.",
+            details: "Our experts are dedicated to guiding enterprises through the complexities of software development, ensuring your products use the latest technologies like AI, IoT, and blockchain.",
+            keyheading: "",
+            keyfeatures: [{ paragraph: "" }]
+        },
+        {
+            id: "2",
+            title: " Custom Mobile Products",
+            description: "Our designers and developers craft memorable mobile experiences that keep users invested and achieve your business objectives.",
+            keyheading: "",
+            keyfeatures: [{ paragraph: "" }]
+        },
+        {
+            id: "3",
+            title: " Progressive Technology Solutions",
+            description: "Embrace the future with our expertise in the latest technologies. We offer solutions in:",
+            keyheading: "",
+            keyfeatures: [{ paragraph: "Internet of Things (IoT)" }, { paragraph: "Augmented & Virtual Reality (AR/VR)" }, { paragraph: "Machine Learning & Artificial Intelligence (ML/AI)" }, { paragraph: "Distributed Ledger Technology & Blockchain" }, { paragraph: "Geolocation Technologies" },]
+        },
+    ],
+    dataengineering: [
+        {
+            id: "dataengineering",
+            title: "  Data Processing Speed",
+            description: "Automated, real-time processing",
+            details: "Discover how our advanced data engineering solutions can revolutionize your business by transforming raw data into actionable insights. With a focus on scalability, security, and efficiency, our expert team is dedicated to enhancing your data capabilities.",
+            keyheading: "",
+            keyfeatures: [{ paragraph: "" }]
+        },
+        {
+            id: "2",
+            title: " Cost Efficiency",
+            description: "Lower costs through automation and optimization",
+            keyheading: "",
+            keyfeatures: [{ paragraph: "" }]
+        },
+        {
+            id: "3",
+            title: " Data Integration",
+            description: "Seamless, unified data integration",
+            keyheading: "",
+            keyfeatures: [{ paragraph: "" }]
+        },
+        {
+            id: "4",
+            title: " Security and Compliance",
+            description: "Advanced security protocols and compliance",
+            keyheading: "",
+            keyfeatures: [{ paragraph: "" }]
+        },
+        {
+            id: "5",
+            title: " Scalability",
+            description: "Highly scalable data architecture",
+            keyheading: "",
+            keyfeatures: [{ paragraph: "" }]
+        },
+        {
+            id: "6",
+            title: " Data Quality",
+            description: "Enhanced data quality through validation",
+            keyheading: "",
+            keyfeatures: [{ paragraph: "" }]
+        },
+        {
+            id: "7",
+            title: " Collaboration",
+            description: "Improved collaboration with DataOps practices",
+            keyheading: "",
+            keyfeatures: [{ paragraph: "" }]
+        },
+        {
+            id: "8",
+            title: " Infrastructure",
+            description: "Flexible, cloud-based infrastructure",
+            keyheading: "",
+            keyfeatures: [{ paragraph: "" }]
+        },
+    ],
+    securityservices: [
+        {
+            id: "securityservices",
+            title: "  Cybersecurity Solutions",
+            description: "Utilizing advanced threat intelligence and real-time monitoring, we ensure your network is secure against the latest cyber threats.",
+            details: "Explore our comprehensive suite of IT security services, designed to protect your digital assets from ever-evolving cyber threats. Our expert solutions provide robust protection for your network, data, and cloud environments.",
+            keyheading: "",
+            keyfeatures: [{ paragraph: "" }]
+        },
+        {
+            id: "2",
+            title: " Network Security Services",
+            description: "By deploying state-of-the-art intrusion detection and prevention systems (IDS/IPS), we can detect and neutralize threats before they can cause harm.",
+            keyheading: "",
+            keyfeatures: [{ paragraph: "" }]
+        },
+        {
+            id: "3",
+            title: " Managed IT Security",
+            description: "With our Managed IT Security services, you can focus on your core business while we handle your security needs. ",
+            keyheading: "",
+            keyfeatures: [{ paragraph: "" }]
+        },
+        {
+            id: "4",
+            title: " Endpoint Security",
+            description: "Our Endpoint Security solutions protect all your devices, from desktops to mobile devices, against malware, ransomware, and other threats. ",
+            keyheading: "",
+            keyfeatures: [{ paragraph: "" }]
+        },
+        {
+            id: "5",
+            title: "Cloud Security Services",
+            description: "Our Cloud Security Services protect your cloud-based assets with comprehensive security strategies. ",
+            keyheading: "",
+            keyfeatures: [{ paragraph: "" }]
+        },
+        {
+            id: "6",
+            title: " IT Security Consulting",
+            description: "Our IT Security Consulting services provide expert guidance to enhance your security posture. We conduct thorough security audits, risk assessments, and compliance checks.",
+            keyheading: "",
+            keyfeatures: [{ paragraph: "" }]
+        },
+        {
+            id: "7",
+            title: "Security Information and Event Management (SIEM)",
+            description: "By collecting and analyzing data from across your IT environment, we provide actionable insights to detect and respond to security incidents promptly. ",
+            keyheading: "",
+            keyfeatures: [{ paragraph: "" }]
+        },
+        {
+            id: "8",
+            title: " Threat Detection and Response",
+            description: "Utilizing advanced analytics and AI-driven tools, we detect anomalous activities and respond to incidents in real-time. ",
+            keyheading: "",
+            keyfeatures: [{ paragraph: "" }]
+        },
+        {
+            id: "9",
+            title: "Identity and Access Management (IAM)",
+            description: "We implement robust authentication and authorization mechanisms to protect your business from unauthorized access and insider threats.",
+            keyheading: "",
+            keyfeatures: [{ paragraph: "" }]
+        },
+    ],
+    penetrationtesting: [
+        {
+            id: "penetrationtesting",
+            title: "  Expertise and Experience",
+            description: "With a team of seasoned professionals, we bring extensive knowledge and experience in conducting thorough penetration tests that meet the highest industry standards.",
+            details: "Introducing the essential field of penetration testing, our team of seasoned ethical hackers uses state-of-the-art techniques to mimic real-world cyberattacks. This approach ensures your organization's systems are well-protected.",
+            keyheading: "",
+            keyfeatures: [{ paragraph: "" }]
+        },
+        {
+            id: "2",
+            title: " Tools and Techniques",
+            description: "We leverage the latest tools and methodologies, such as Metasploit, Burp Suite, and Wireshark, to deliver comprehensive and effective penetration testing services.",
+            keyheading: "",
+            keyfeatures: [{ paragraph: "" }]
+        },
+        {
+            id: "3",
+            title: "Tailored Testing Approach",
+            description: "Our services are customized to meet your specific needs, whether it's network security, web application security, or compliance testing, ensuring a targeted and efficient approach.",
+            keyheading: "",
+            keyfeatures: [{ paragraph: "" }]
+        },
+        {
+            id: "4",
+            title: " Actionable Insights",
+            description: "We provide detailed reports with actionable insights and recommendations to help you address vulnerabilities and strengthen your security posture.",
+            keyheading: "",
+            keyfeatures: [{ paragraph: "" }]
+        },
+
+
+    ],
+    UIUXDesign: [
+        {
+            id: "UIUXDesign",
+            title: "  UI/UX Design Services:",
+            description: "Crafting visually stunning and highly functional designs that captivate and convert users.",
+            details: "Let us help you create software that isn't just functional but also delightful to use. Learn how our UI/UX design expertise can elevate your software product and ensure it stands out in the competitive tech marketplace.",
+            keyheading: "",
+            keyfeatures: [{ paragraph: "" }]
+        },
+        {
+            id: "2",
+            title: " User Interface Design",
+            description: "Focused on creating interactive and visually appealing interfaces that enhance user interaction.",
+            keyheading: "",
+            keyfeatures: [{ paragraph: "" }]
+        },
+        {
+            id: "3",
+            title: "Custom UI/UX Solutions",
+            description: "Tailored design solutions that meet specific business needs, ensuring relevance and effectiveness",
+            keyheading: "",
+            keyfeatures: [{ paragraph: "" }]
+        },
+        {
+            id: "4",
+            title: " Mobile App Design",
+            description: "Designing mobile interfaces that provide seamless and engaging experiences on smartphones and tablets.",
+            keyheading: "",
+            keyfeatures: [{ paragraph: "" }]
+        },
+    ],
+    enterprisemobility: [
+        {
+            id: "enterprisemobility",
+            title: "  Enterprise Mobility Management (EMM)",
+            description: "Centralize control over all mobile devices and applications.",
+            details: "At Novatore Solutions, we provide enterprise mobility solutions that enhance productivity and empower your workforce to thrive in the digital age.",
+            keyheading: "",
+            keyfeatures: [{ paragraph: "" }]
+        },
+        {
+            id: "2",
+            title: " Mobile Device Management (MDM)",
+            description: "Securely deploy and manage mobile devices across your organization.",
+            keyheading: "",
+            keyfeatures: [{ paragraph: "" }]
+        },
+        {
+            id: "3",
+            title: "Cloud-Based Mobility Solutions",
+            description: "Access critical applications and data from anywhere with cloud integration.",
+            keyheading: "",
+            keyfeatures: [{ paragraph: "" }]
+        },
+        {
+            id: "4",
+            title: " Mobile Application Management (MAM)",
+            description: "Efficiently manage and secure mobile apps within your enterprise.",
+            keyheading: "",
+            keyfeatures: [{ paragraph: "" }]
+        },
+        {
+            id: "5",
+            title: "BYOD (Bring Your Own Device) Policies",
+            description: "Integrate personal devices securely into your business environment.",
+            keyheading: "",
+            keyfeatures: [{ paragraph: "" }]
+        },
+    ],
+    networkingservices: [
+        {
+            id: "networkingservices",
+            title: "  IT Network Services",
+            description: "Tailored network services designed to meet the specific needs of your company.",
+            details: "We understand the unique needs of software companies and offer customized services to optimize your network infrastructure, ensuring your business remains at the forefront of technology.",
+            keyheading: "",
+            keyfeatures: [{ paragraph: "" }]
+        },
+        {
+            id: "2",
+            title: " Network Security",
+            description: "Protect your valuable data with our advanced security protocols.",
+            keyheading: "",
+            keyfeatures: [{ paragraph: "" }]
+        },
+        {
+            id: "3",
+            title: "Cloud Networking",
+            description: "Leverage the power of cloud technology to enhance your network capabilities.",
+            keyheading: "",
+            keyfeatures: [{ paragraph: "" }]
+        },
+        {
+            id: "4",
+            title: "Network Infrastructure",
+            description: "Build a strong foundation with our expert network infrastructure services.",
+            keyheading: "",
+            keyfeatures: [{ paragraph: "" }]
+        },
+        {
+            id: "5",
+            title: "Managed IT Services",
+            description: "Let us handle your IT needs while you focus on growing your business.",
+            keyheading: "",
+            keyfeatures: [{ paragraph: "" }]
+        },
+        {
+            id: "6",
+            title: "IT Consulting",
+            description: "Expert advice to help you make informed IT decisions.",
+            keyheading: "",
+            keyfeatures: [{ paragraph: "" }]
+        },
+    ],
+    analyticsservices: [
+        {
+            id: "analyticsservices",
+            title: "  Data Analytics Services",
+            description: "Our comprehensive data analytics services offer end-to-end solutions to collect, process, and analyze your data efficiently.",
+            details: "We help you transform raw data into meaningful business intelligence and access up-to-the-minute data for timely decision-making. Our data engineering solutions ensure your data is accurate and optimized for growth.",
+            keyheading: "",
+            keyfeatures: [{ paragraph: "" }]
+        },
+        {
+            id: "2",
+            title: " Predictive Analytics Tools",
+            description: "Utilize our predictive analytics tools to anticipate market trends and customer behavior, enabling proactive decision-making.",
+            keyheading: "",
+            keyfeatures: [{ paragraph: "" }]
+        },
+        {
+            id: "3",
+            title: "IT Analytics Solutions",
+            description: "Optimize IT operations with our specialized analytics solutions that identify inefficiencies and enhance performance.",
+            keyheading: "",
+            keyfeatures: [{ paragraph: "" }]
+        },
+        {
+            id: "4",
+            title: "Cloud-Based Analytics",
+            description: "Access your analytics tools anytime, anywhere with our secure cloud-based solutions that offer flexibility and scalability.",
+            keyheading: "",
+            keyfeatures: [{ paragraph: "" }]
+        },
+        {
+            id: "5",
+            title: "Real-Time Data Processing",
+            description: "Get real-time insights with our robust processing solutions that ensure you are always ahead of the competition.",
+            keyheading: "",
+            keyfeatures: [{ paragraph: "" }]
+        },
+        {
+            id: "6",
+            title: "Custom Analytics Software",
+            description: "Tailor-made analytics software solutions designed to fit your unique business requirements and objectives.",
+            keyheading: "",
+            keyfeatures: [{ paragraph: "" }]
+        },
+    ],
+    webappdevelopment: [
+        {
+            id: "webappdevelopment",
+            title: " Custom Web Application Development",
+            description: "We develop custom web applications tailored to your business requirements. ",
+            details: "Explore our wide range of services, from custom web application development to progressive web apps, each designed to meet specific business needs with a focus on performance optimization and security best practices.",
+            keyheading: "Key Features:",
+            keyfeatures: [{ paragraph: "Tailored solutions for unique business needs" }, { paragraph: "Responsive design for seamless user experience" }, { paragraph: "Integration with third-party services" }]
+        },
+        {
+            id: "2",
+            title: " Front-end Web Development",
+            description: "Our front-end development services focus on creating visually appealing and highly interactive user interfaces.",
+            keyheading: "Technologies We Use:",
+            keyfeatures: [{ paragraph: "HTML5, CSS3, JavaScript" }, { paragraph: "React, Angular, Vue.js" }, { paragraph: "Bootstrap, Materialize" }]
+        },
+        {
+            id: "3",
+            title: "Back-end Web Development",
+            description: "We use the latest technologies and frameworks to build the backbone of your web applications.",
+            keyheading: "Technologies We Use:",
+            keyfeatures: [{ paragraph: "Node.js, Python, Ruby on Rails" }, { paragraph: "Express.js, Django, Flask" }, { paragraph: "SQL, NoSQL databases" }]
+        },
+        {
+            id: "4",
+            title: "Full-stack Web Development",
+            description: "We offer full-stack development services, combining both front-end and back-end development to deliver comprehensive web applications. ",
+            keyheading: "Key Capabilities:",
+            keyfeatures: [{ paragraph: "End-to-end development" }, { paragraph: "Cross-functional team collaboration" }, { paragraph: "Agile development methodology" }]
+        },
+        {
+            id: "5",
+            title: "Web App Performance Optimization",
+            description: "Performance is critical for the success of any web application. Our optimization services ensure your web app loads quickly, runs smoothly, and provides an excellent user experience.",
+            keyheading: "Optimization Techniques:",
+            keyfeatures: [{ paragraph: "Code minification and compression" }, { paragraph: "Caching strategies" }, { paragraph: "Load balancing and CDN integration" }]
+        },
+        {
+            id: "6",
+            title: "Web App Security Best Practices",
+            description: "Security is a top priority in our web development process. We implement best practices to protect your web applications from vulnerabilities and ensure data integrity.",
+            keyheading: "Security Measures:",
+            keyfeatures: [{ paragraph: "SSL/TLS encryption" }, { paragraph: "Regular security audits" }, { paragraph: "Secure authentication and authorization" }]
+        },
+        {
+            id: "7",
+            title: "Progressive Web Apps (PWA)",
+            description: "We develop progressive web apps that combine the best of web and mobile applications. PWAs offer a native app-like experience with the advantages of web technology.",
+            keyheading: "Benefits of PWAs:",
+            keyfeatures: [{ paragraph: "Offline functionality" }, { paragraph: "Push notifications" }, { paragraph: " Faster loading times" }]
+        },
+    ],
 }
-
 
 export const data = [
     {
         id: 1,
-        heading: 'Cloud',
-        link: "/cloud-services",
-        items: [{ text: "CloudOps", link: '/cloud-ops' }, { text: "AWS", link: '/aws' }, { text: "Azure & GCP", link: '/azure-and-gcp' }, { text: "Cloud Migration", link: '/cloud-migration' },],
+        heading: 'Cyber Security ',
+        link: "/cyber-security",
+        items: [{ text: "Governance, Risk & Compliance, Data Privacy", link: '/' }, { text: "Security Services", link: '/' }, { text: "Penetration Testing", link: '/' },],
     },
+
     {
         id: 2,
         heading: 'Artificial Intelligence',
@@ -1394,8 +1952,9 @@ export const data = [
     },
     {
         id: 3,
-        heading: 'Cyber Security ',
-        link: "/cyber-security",
-        items: [{ text: "Governance, Risk & Compliance, Data Privacy", link: '/' }, { text: "Security Services", link: '/' }, { text: "Penetration Testing", link: '/' },],
+        heading: 'Cloud',
+        link: "/cloud-services",
+        items: [{ text: "CloudOps", link: '/cloud-ops' }, { text: "AWS", link: '/aws' }, { text: "Azure & GCP", link: '/azure-and-gcp' }, { text: "Cloud Migration", link: '/cloud-migration' },],
     },
+
 ];

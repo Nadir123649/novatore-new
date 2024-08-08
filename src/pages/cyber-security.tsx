@@ -12,7 +12,7 @@ import Layout from "@/components/Layout";
 const CyberSecurity: NextPage = () => {
 
     return (
-        <Layout title="Novatore Sols - Home" description="Welcome to Novatore Sols, setting new standards in technology with unmatchable code.">
+        <Layout title="Novatore Sols - Cyber Security" description="Welcome to Novatore Sols, setting new standards in technology with unmatchable code.">
             <div className="overflow-x-hidden">
                 <HeroBanner bannerHeading="Cyber Security" previewImage="/images/cyber-banner.png" />
                 <ServicesNeeds needsTitle="Ensuring Your" needsTitleBlue="Digital Safety" NeedsImage="/images/needs-image-nine.png"
@@ -24,7 +24,7 @@ const CyberSecurity: NextPage = () => {
                     needsDescription="Our cybersecurity services include everything from governance, risk, and compliance to detailed penetration testing.
                  We understand the complexities of data privacy and work diligently to protect your sensitive information from potential breaches.
                  Our goal is to provide peace of mind by safeguarding your digital assets with robust and reliable security measures." />
-                <CloudOps />
+                 <CloudOps needsTitle="What DO" needsTitleBlue="We Offer"/>
                 <DiagramSlider heading="Comprehensive Cybersecurity Strategy:" headingBlue="Safeguarding Every Layer" image={DiagramFive} />
                 <Enterprise />
                 <Innovation />

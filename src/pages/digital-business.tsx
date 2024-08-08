@@ -9,7 +9,7 @@ import Layout from "@/components/Layout";
 
 const DigitalBusiness: NextPage = () => {
     return (
-        <Layout title="Novatore Sols - Home" description="Welcome to Novatore Sols, setting new standards in technology with unmatchable code.">
+        <Layout title="Novatore Sols - Digital Business" description="Welcome to Novatore Sols, setting new standards in technology with unmatchable code.">
             <div className="overflow-x-hidden">
                 <HeroBanner bannerHeading="Business Applications for Modern Enterprises" previewImage="/images/bussinees-banner.png" />
                 <ServicesNeeds needsTitle="Change Your Business with Scalable, Cloud-Based" needsTitleBlue="Solutions" NeedsImage="/images/needs-image-finalest.png"
@@ -20,7 +20,7 @@ const DigitalBusiness: NextPage = () => {
                     needsDescription="Now you can experience efficiency like never before with our fully integrated business applications that unify all key functional areas of your enterprise.
                      From Customer Relationship Management (CRM) systems that boost profitability and customer loyalty to Enterprise.
                     Resource Planning (ERP) systems that synchronize finance, HR, and inventory management, our solutions provide an uninterrupted flow of information across your organization. " />
-                <CloudOps />
+                <CloudOps needsTitle="What DO" needsTitleBlue="We Offer" />
                 <Enterprise />
                 <Innovation />
             </div>

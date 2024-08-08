@@ -19,7 +19,7 @@ const BusinessProcessAutomation: NextPage = () => {
                      business process automation solutions and best practices. Whether you need to automate ordinary operations or complicated procedures, our skilled team offers end-to-end business
                       process automation services that are tailored to your specific requirements." />
                 <DataServicesSection heading="Our Business Process Automation " headingBlue="Services" data={processAutomationData} />
-                <CloudOps />
+                <CloudOps needsTitle="The Automations That Every" needsTitleBlue="Tech Business Needs"/>
                 <Enterprise />
                 <Innovation />
             </div>

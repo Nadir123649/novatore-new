@@ -1,13 +1,9 @@
-import ContactForm from "@/components/ContactForm";
 import ExpertServices from "@/components/ExpertServices";
 import Enterprise from "@/components/Enterprise";
-import Footer from "@/components/Footer";
 import HeroBanner from "@/components/HeroBanner";
 import Innovation from "@/components/Innovation";
-import Navbar from "@/components/Navbar";
 import ServicesNeeds from "@/components/ServicesNeeds";
 import { NextPage } from "next";
-import Head from "next/head";
 import DataServicesSection from "@/components/DataServicesSection";
 import { AiData } from "@/constants/indesx";
 import DiagramSlider from "@/components/DiagramSlider";
@@ -16,7 +12,7 @@ import Layout from "@/components/Layout";
 
 const ArtificialIntelligence: NextPage = () => {
     return (
-        <Layout title="Novatore Sols - Home" description="Welcome to Novatore Sols, setting new standards in technology with unmatchable code.">
+        <Layout title="Novatore Sols - Artificial Intelligence" description="Welcome to Novatore Sols, setting new standards in technology with unmatchable code.">
             <div className="overflow-x-hidden">
                 <HeroBanner bannerHeading="Artificial Intelligence" previewImage="/images/artifical-banner.png" />
                 <ServicesNeeds needsTitle="The Real Power of " needsTitleBlue="Artificial Intelligence" NeedsImage="/images/needs-image-seven.png"

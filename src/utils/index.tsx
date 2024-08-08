@@ -103,6 +103,47 @@ export { default as ServicesThree } from "../../public/images/services-image-3.s
 export { default as ServicesFour } from "../../public/images/services-image-4.svg"
 export { default as ServicesFive } from "../../public/images/services-image-5.svg"
 export { default as ServicesSix } from "../../public/images/services-image-6.svg"
+export { default as CustomAnalyticsOne } from "../../public/images/custom-image-1.svg"
+export { default as CustomAnalyticsTwo } from "../../public/images/custom-image-2.svg"
+export { default as CustomAnalyticsThree } from "../../public/images/custom-image-3.svg"
+export { default as CustomAnalyticsFour } from "../../public/images/custom-image-4.svg"
+export { default as CustomAnalyticsFive } from "../../public/images/custom-image-5.svg"
+export { default as CustomAnalyticsSix } from "../../public/images/custom-image-6.svg"
+export { default as DiagramTransformation } from "../../public/images/transformation-image-1.png"
+export { default as DiagramServices } from "../../public/images/it-services-image-1.png"
+export { default as TransformOne } from "../../public/images/transform-image-1.svg"
+export { default as TransformTwo } from "../../public/images/transform-image-2.svg"
+export { default as TransformThree } from "../../public/images/transform-image-3.svg"
+export { default as TreeOne } from "../../public/images/tree-image-1.svg"
+export { default as TreeTwo } from "../../public/images/tree-image-2.svg"
+export { default as TreeThree } from "../../public/images/tree-image-3.svg"
+export { default as GovernanceFramework } from "../../public/images/ai-governance.svg"
+export { default as RiskManagement } from "../../public/images/risk-management.svg"
+export { default as Dataprivacy } from "../../public/images/data-privacy.svg"
+export { default as ComplianceAI} from "../../public/images/compliance-ai.svg"
+export { default as Vulnerability} from "../../public/images/vulnerability.svg"
+export { default as NetworkSecurityTesting} from "../../public/images/networksecurity-testing.svg"
+export { default as SecurityAudits} from "../../public/images/security-audits.svg"
+export { default as webAppSecurity} from "../../public/images/webapp-security.svg"
+export { default as RedTeaming} from "../../public/images/red-teaming.svg"
+export { default as ApplicationCompliance} from "../../public/images/applicationsecurity-compliance.svg"
+export { default as WebOne } from "../../public/images/web-image-1.svg"
+export { default as WebTwo } from "../../public/images/web-image-2.svg"
+export { default as WebThree } from "../../public/images/web-image-3.svg"
+export { default as DiagramCustomServices } from "../../public/images/custom-diagram.png"
+export { default as AutomationImageOne } from "../../public/images/automation-icon-image-1.svg"
+export { default as AutomationImageTwo } from "../../public/images/automation-icon-image-2.svg"
+export { default as AutomationImageThree } from "../../public/images/automation-icon-image-3.svg"
+
+
+
+
+
+
+
+
+
+
 
 
 

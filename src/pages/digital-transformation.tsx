@@ -18,7 +18,7 @@ const DigitalTransformation: NextPage = () => {
                     needsDescription="Staying ahead of the competition requires more than just adopting new technologies. It requires a comprehensive digital transformation strategy tailored to your unique business needs. We specialize in providing Digital Transformation Solutions that drive innovation, enhance efficiency, and fuel growth. Our team of experts is dedicated to helping you navigate the complexities of technology to achieve long-term success." />
                 <ExpertServices needsTitle="Partner with" needsTitleBlue="Novatore Solutions" needsMoreTitle="for Digital Success" NeedsImage="/images/transformation-left.png"
                     needsDescription=" We understand that every business is unique. That's why we offer personalized solutions that align with your specific goals and challenges. Our IT Modernization Services ensure that your technology infrastructure is optimized for performance, security, and scalability. With our proven Cloud Migration Strategies, we help you seamlessly transition to the cloud, unlocking new possibilities for your business. Trust us to be your partner in transforming your business with cutting-edge technology." />
-                <CloudOps />
+                <CloudOps needsTitle="Our DIgital Transformation" needsTitleBlue="Services" />
                 <Enterprise />
                 <Innovation />
             </div>

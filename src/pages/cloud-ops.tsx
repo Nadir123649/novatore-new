@@ -5,8 +5,6 @@ import ServicesNeeds from "@/components/ServicesNeeds";
 import { NextPage } from "next";
 import CloudOps from "@/components/CloudOps";
 import Layout from "@/components/Layout";
-import DataServicesSection from "@/components/DataServicesSection";
-import { processAutomationData } from "@/constants/indesx";
 import ExpertServices from "@/components/ExpertServices";
 
 const CloudOpsPage: NextPage = () => {
@@ -22,7 +20,7 @@ const CloudOpsPage: NextPage = () => {
                     needsDescription="Novatore Solutions offers a comprehensive suite of CloudOps services designed to align with your unique business goals. Our CloudOps consulting provides
                      expert guidance on best practices and cutting-edge tools, ensuring that your cloud strategy is robust and effective.
                      With our CloudOps implementation services, we deploy frameworks that prioritize performance, security, and scalability, all tailored to meet your specific needs." />
-                <CloudOps />
+               <CloudOps needsTitle="Have a Look at What " needsTitleBlue="We Offer" />
                 <Enterprise />
                 <Innovation />
             </div>
