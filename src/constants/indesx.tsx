@@ -2035,7 +2035,7 @@ export const data = [
         id: 1,
         heading: 'Cyber Security ',
         link: "/cyber-security",
-        items: [{ text: "Governance, Risk & Compliance, Data Privacy", link: '/' }, { text: "Security Services", link: '/' }, { text: "Penetration Testing", link: '/' },],
+        items: [{ text: "Governance, Risk & Compliance, Data Privacy", link: '/governance-and-dataprivacy' }, { text: "Security Services", link: '/' }, { text: "Penetration Testing", link: '/' },],
     },
 
     {

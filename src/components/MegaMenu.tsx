@@ -69,7 +69,7 @@ const MegaMenu: React.FC<MegaMenuProps> = ({ activeMenu }) => {
               </ul>
             </div>
           ))}
-        </div>  
+        </div>
         {/* section third  */}
         {isThirdSectionHidden ? (
           <div className="px-4 md:px-16 border-l-0  md:border-l-2 sm:my-0 md:my-14  col-span-12 md:col-span-4">
