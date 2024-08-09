@@ -123,7 +123,7 @@ const Navbar = () => {
       <div className="container flex flex-row justify-between items-center sm:px-0 md:px-8 w-full ">
         <div className="flex items-center flex-grow">
           <Link
-            href=""
+            href="/"
             className="logo d-flex gap-2 group duration-300 ease-in"
             onMouseEnter={() => setIsHovered(true)}
             onMouseLeave={() => setIsHovered(false)}

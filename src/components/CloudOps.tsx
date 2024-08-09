@@ -175,12 +175,21 @@ const CloudOps: FC<CloudOpsProps> = ({
                             </div>
                             <p className="text-15px pl-9">{data.description}</p>
                             <p className="pl-9">{data.keyheading}</p>
-                            <ul className="d-flex flex-col pl-20 list-disc">
-                              {data.keyfeatures.map((feature, featureIndex) => (
-                                <li key={featureIndex} className="">
-                                  {feature.paragraph}
-                                </li>
-                              ))}
+                            <ul
+                              className={`d-flex flex-col pl-20 ${data.keyfeatures.some(
+                                (feature) => feature.paragraph.length > 0
+                              )
+                                ? "list-disc"
+                                : "list-none"
+                                }`}
+                            >
+                              {data.keyfeatures.map(
+                                (feature, featureIndex) => (
+                                  <li key={featureIndex} className="">
+                                    {feature.paragraph}
+                                  </li>
+                                )
+                              )}
                             </ul>
                           </li>
                         ))}

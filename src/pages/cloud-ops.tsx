@@ -20,7 +20,8 @@ const CloudOpsPage: NextPage = () => {
                     needsDescription="Novatore Solutions offers a comprehensive suite of CloudOps services designed to align with your unique business goals. Our CloudOps consulting provides
                      expert guidance on best practices and cutting-edge tools, ensuring that your cloud strategy is robust and effective.
                      With our CloudOps implementation services, we deploy frameworks that prioritize performance, security, and scalability, all tailored to meet your specific needs." />
-               <CloudOps needsTitle="Have a Look at What " needsTitleBlue="We Offer" />
+                <h2 className="mx-auto text-center font-bold text-[48px] max-w-[800px]">Explore The Power Of <span className="text-[#2776ea] ">CloudOps</span>  For Superior Software Performance</h2>
+                <CloudOps needsTitle="Have a Look at What " needsTitleBlue="We Offer" />
                 <Enterprise />
                 <Innovation />
             </div>

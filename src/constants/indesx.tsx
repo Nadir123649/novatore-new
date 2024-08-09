@@ -78,18 +78,16 @@ export const menuitems = [
 ];
 
 export const customSoftware = [
-    { link: '/', title: 'Web Application Development' },
-    { link: '/', title: 'Mobile App Development' },
-    { link: '/', title: 'UI/UX Design' }
+    { link: '/web-app-development', title: 'Web Application Development' },
+    { link: '/mobile-app-development', title: 'Mobile App Development' },
+    { link: '/ui-ux-design', title: 'UI/UX Design' }
 ]
 export const itServices = [
-    { link: '/', title: 'Enterprise Mobility' },
-    { link: '/', title: 'Digital Transformation' },
-    { link: '/', title: 'Staff Augmentation' }
+    { link: '/enterprise-mobility', title: 'Enterprise Mobility' },
+    { link: '/digital-transformation', title: 'Digital Transformation' },
+    { link: '/staff-augmentation', title: 'Staff Augmentation' }
 ]
-export const transformation = [
-    { link: '/', title: 'Business Process Automation' },
-]
+
 export const realEstate = [
     { link: '/', title: 'Crypto' },
     { link: '/', title: 'Entertainment' },

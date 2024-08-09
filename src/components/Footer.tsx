@@ -1,4 +1,4 @@
-import { aboutData, careersData, customSoftware, eventsData, insightsData, itServices, realEstate, siteMapData, socialData, transformation, whitepapers } from '@/constants/indesx'
+import { aboutData, careersData, customSoftware, eventsData, insightsData, itServices, realEstate, siteMapData, socialData, whitepapers } from '@/constants/indesx'
 import Link from 'next/link'
 import React from 'react'
 import { Col, Container, Row } from 'react-bootstrap'
@@ -19,7 +19,7 @@ const Footer = () => {
                 <ul className='footer-links-list list-none p-0 m-0 flex flex-col  md:gap-[13px]'>
                   {customSoftware.map((data, index) => (
                     <li key={index} >
-                      <a  onClick={() => handleNavigation(data.link)}  className='text-[#B5B5B5] text-[16px] font-normal not-italic'>{data.title}</a>
+                      <a onClick={() => handleNavigation(data.link)} className='text-[#B5B5B5] text-[16px] font-normal not-italic'>{data.title}</a>
                     </li>
                   ))
                   }
