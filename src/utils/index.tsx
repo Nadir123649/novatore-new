@@ -120,13 +120,13 @@ export { default as TreeThree } from "../../public/images/tree-image-3.svg"
 export { default as GovernanceFramework } from "../../public/images/compliance-image-2.svg"
 export { default as RiskManagement } from "../../public/images/risk-management.svg"
 export { default as Dataprivacy } from "../../public/images/data-privacy.svg"
-export { default as ComplianceAI} from "../../public/images/compliance-image-1.svg"
-export { default as Vulnerability} from "../../public/images/vulnerability.svg"
-export { default as NetworkSecurityTesting} from "../../public/images/networksecurity-testing.svg"
-export { default as SecurityAudits} from "../../public/images/security-audits.svg"
-export { default as webAppSecurity} from "../../public/images/webapp-security.svg"
-export { default as RedTeaming} from "../../public/images/red-teaming.svg"
-export { default as ApplicationCompliance} from "../../public/images/applicationsecurity-compliance.svg"
+export { default as ComplianceAI } from "../../public/images/compliance-image-1.svg"
+export { default as Vulnerability } from "../../public/images/vulnerability.svg"
+export { default as NetworkSecurityTesting } from "../../public/images/networksecurity-testing.svg"
+export { default as SecurityAudits } from "../../public/images/security-audits.svg"
+export { default as webAppSecurity } from "../../public/images/webapp-security.svg"
+export { default as RedTeaming } from "../../public/images/red-teaming.svg"
+export { default as ApplicationCompliance } from "../../public/images/applicationsecurity-compliance.svg"
 export { default as WebOne } from "../../public/images/web-image-1.svg"
 export { default as WebTwo } from "../../public/images/web-image-2.svg"
 export { default as WebThree } from "../../public/images/web-image-3.svg"
@@ -134,10 +134,35 @@ export { default as DiagramCustomServices } from "../../public/images/custom-dia
 export { default as AutomationImageOne } from "../../public/images/automation-icon-image-1.svg"
 export { default as AutomationImageTwo } from "../../public/images/automation-icon-image-2.svg"
 export { default as AutomationImageThree } from "../../public/images/automation-icon-image-3.svg"
+export { default as ConsultingOne } from "../../public/images/consulting-image-1.svg"
+export { default as ConsultingTwo } from "../../public/images/consulting-image-2.svg"
+export { default as ConsultingThree } from "../../public/images/consulting-image-3.svg"
+export { default as ConsultingFour } from "../../public/images/consulting-image-4.svg"
+export { default as ConsultingFive } from "../../public/images/consulting-image-5.svg"
+export { default as ConsultingSix } from "../../public/images/consulting-image-6.svg"
+export { default as PresentOne } from "../../public/images/present-image-1.svg"
+export { default as PresentTwo } from "../../public/images/present-image-2.svg"
+export { default as PresentThree } from "../../public/images/present-image-3.svg"
+export { default as PresentFour } from "../../public/images/present-image-4.svg"
+export { default as PresentFive } from "../../public/images/present-image-5.svg"
+export { default as PresentSix } from "../../public/images/present-image-6.svg"
 
 
 
 
+
+
+
+
+export { default as CloudServiceicon } from "../../public/images/cloud-service-icon.svg"
+export { default as dataautomation } from "../../public/images/data-icon.svg"
+export { default as AIDiagram } from "../../public/images/Ai-diagram.png"
+
+export { default as AWSDiagram } from "../../public/images/AWS-diagram.png"
+export { default as AnalyticsIcon } from "../../public/images/analyticsservice-icon.svg"
+export { default as NetworkingIcon } from "../../public/images/networkingservice-icon.svg"
+export { default as StorageIcon } from "../../public/images/storageservice-icon.svg"
+export { default as ComprehensiveIcon } from "../../public/images/comprehensive-icon.svg"
 
 
 

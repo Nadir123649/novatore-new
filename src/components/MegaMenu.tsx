@@ -69,7 +69,7 @@ const MegaMenu: React.FC<MegaMenuProps> = ({ activeMenu }) => {
               </ul>
             </div>
           ))}
-        </div>
+        </div>  
         {/* section third  */}
         {isThirdSectionHidden ? (
           <div className="px-4 md:px-16 border-l-0  md:border-l-2 sm:my-0 md:my-14  col-span-12 md:col-span-4">
@@ -80,11 +80,11 @@ const MegaMenu: React.FC<MegaMenuProps> = ({ activeMenu }) => {
                     {list.heading}
                   </h1>
                 </a>
-                <ul className="list-none px-0">
+                <ul className="list-none px-0 ">
                   {list.items.map((item, index) => (
                     <li
                       key={index}
-                      className="pt-1 text-[#4F4F4F] cursor-pointer"
+                      className=" text-[#4F4F4F] cursor-pointer"
                     >
 
                       <a onClick={() => handleNavigation(item.link)} className="text-[#4F4F4F]">

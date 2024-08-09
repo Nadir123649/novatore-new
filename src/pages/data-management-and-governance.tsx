@@ -18,7 +18,6 @@ const DataManagementAndGovernance: NextPage = () => {
                     needsDescription="In today's data-driven world, effective data management and governance are critical for business success. At Novatore Solutions, we offer extensive data management and governance services to help you use the power of your data. " />
                 <ExpertServices needsTitle="Strategic Data Governance for" needsTitleBlue=" Enhanced " needsMoreTitle=" Compliance and Integrity" NeedsImage="/images/managment-left-image.png"
                     needsDescription="By implementing best practices and a solid governance framework, we make sure that your data is secure, accurate, and easily accessible. Our advanced tools and strategies manage the entire data lifecycle, from acquisition to disposal, ensuring compliance with industry standards and regulations. " />
-                <CloudOps />
                 <DataServicesSection heading="Our " headingBlue="Services" data={ServicesDataLocal} />
                 <Enterprise />
                 <Innovation />

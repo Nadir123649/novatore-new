@@ -7,7 +7,7 @@ import { NextPage } from "next";
 import DataServicesSection from "@/components/DataServicesSection";
 import { AwsData } from "@/constants/indesx";
 import DiagramSlider from "@/components/DiagramSlider";
-import { DiagramSix } from "@/utils";
+import { AWSDiagram } from "@/utils";
 import Layout from "@/components/Layout";
 
 const AWS: NextPage = () => {
@@ -27,7 +27,7 @@ const AWS: NextPage = () => {
                we provide comprehensive support to ensure your business runs smoothly and efficiently. 
                Explore our AWS services and discover how we can help you achieve your digital transformation goals. " />
                 <DataServicesSection heading="Our AWS" headingBlue="Services" data={AwsData} />
-                <DiagramSlider heading="Overview of Key AWS Solutions for Enhanced " headingBlue="System Performance" image={DiagramSix} />
+                <DiagramSlider heading="Overview of Key AWS Solutions for Enhanced " headingBlue="System Performance" image={AWSDiagram} />
                 <Enterprise />
                 <Innovation />
             </div>

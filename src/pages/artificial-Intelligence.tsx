@@ -7,7 +7,7 @@ import { NextPage } from "next";
 import DataServicesSection from "@/components/DataServicesSection";
 import { AiData } from "@/constants/indesx";
 import DiagramSlider from "@/components/DiagramSlider";
-import { DiagramFour } from "@/utils";
+import { AIDiagram } from "@/utils";
 import Layout from "@/components/Layout";
 
 const ArtificialIntelligence: NextPage = () => {
@@ -24,7 +24,7 @@ const ArtificialIntelligence: NextPage = () => {
                 Our team of experienced professionals works closely with you to understand your challenges and objectives, ensuring that our AI services not only meet but exceed your expectations.
                 With our robust and scalable AI offerings, you can stay ahead of the competition and drive your business towards a future of innovation and success. " />
                 <DataServicesSection heading="Our AI" headingBlue="Services" data={AiData} />
-                <DiagramSlider heading="AI-Driven Solutions for" headingBlue="Modern Challenges" image={DiagramFour} />
+                <DiagramSlider heading="AI-Driven Solutions for" headingBlue="Modern Challenges" image={AIDiagram} />
                 <Enterprise />
                 <Innovation />
             </div>

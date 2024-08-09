@@ -55,7 +55,7 @@ const DataServicesSection: React.FC<DataServicesSectionProps> = ({ heading, head
                         ) : (
                             data.map((item, index) => (
                                 <Col lg={4} md={6} xs={12} key={index} className="mb-4">
-                                    <DataCard title={item.title} description={item.description} icon={item.icon} />
+                                    <DataCard title={item.title} description={item.description} icon={item.icon} listItems={item.listItems} />
                                 </Col>
                             ))
                         )

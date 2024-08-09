@@ -3,7 +3,7 @@ import Image from 'next/image';
 import { Col, Container, Row } from 'react-bootstrap';
 import { useState, useEffect } from 'react';
 interface ServicesNeedsProps {
-    needsTitle: string;
+    needsTitle?: string;
     needsTitleBlue?: string;
     needsDescription: string;
     NeedsImage: string;

@@ -5,7 +5,6 @@ import ServicesNeeds from "@/components/ServicesNeeds";
 import { NextPage } from "next";
 import Layout from "@/components/Layout";
 import DataServicesSection from "@/components/DataServicesSection";
-import { processAutomationData } from "@/constants/indesx";
 import ExpertServices from "@/components/ExpertServices";
 import CloudOps from "@/components/CloudOps";
 

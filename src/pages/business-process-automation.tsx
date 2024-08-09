@@ -6,7 +6,7 @@ import { NextPage } from "next";
 import CloudOps from "@/components/CloudOps";
 import Layout from "@/components/Layout";
 import DataServicesSection from "@/components/DataServicesSection";
-import { processAutomationData } from "@/constants/indesx";
+import {  processBusinessData,  } from "@/constants/indesx";
 
 const BusinessProcessAutomation: NextPage = () => {
     return (
@@ -18,7 +18,7 @@ const BusinessProcessAutomation: NextPage = () => {
                     to accelerate processes, increase efficiency, and result in significant cost savings. We improve the speed and dependability of your operations by utilizing advanced
                      business process automation solutions and best practices. Whether you need to automate ordinary operations or complicated procedures, our skilled team offers end-to-end business
                       process automation services that are tailored to your specific requirements." />
-                <DataServicesSection heading="Our Business Process Automation " headingBlue="Services" data={processAutomationData} />
+                <DataServicesSection heading="Our Business Process Automation " headingBlue="Services" data={processBusinessData} />
                 <CloudOps needsTitle="The Automations That Every" needsTitleBlue="Tech Business Needs"/>
                 <Enterprise />
                 <Innovation />

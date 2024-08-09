@@ -78,7 +78,7 @@ const CloudOps: FC<CloudOpsProps> = ({
 
   const detailsForCurrentRoute = getDetailsForCurrentRoute();
 
- 
+
   const duplicatedDetails = [
     ...detailsForCurrentRoute,
     ...detailsForCurrentRoute.slice(0, 2)
@@ -93,7 +93,7 @@ const CloudOps: FC<CloudOpsProps> = ({
         const itemHeight = listItems[0]?.clientHeight || 0;
         const scrollTopAdjusted = scrollTop + clientHeight / 2;
         const middleIndex = Math.floor(scrollTopAdjusted / itemHeight);
-        setActiveIndex(middleIndex % duplicatedDetails.length-1); 
+        setActiveIndex(middleIndex % duplicatedDetails.length - 1);
       }
     };
 
@@ -175,9 +175,9 @@ const CloudOps: FC<CloudOpsProps> = ({
                             </div>
                             <p className="text-15px pl-9">{data.description}</p>
                             <p className="pl-9">{data.keyheading}</p>
-                            <ul className="d-flex flex-col pl-20">
+                            <ul className="d-flex flex-col pl-20 list-disc">
                               {data.keyfeatures.map((feature, featureIndex) => (
-                                <li key={featureIndex} className="d-flex items-center gap-3">
+                                <li key={featureIndex} className="">
                                   {feature.paragraph}
                                 </li>
                               ))}

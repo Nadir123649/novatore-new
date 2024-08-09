@@ -16,7 +16,7 @@ const NetworkingServices: NextPage = () => {
                     needsDescription="Efficient and secure networking is the backbone of any successful business. We offer state-of-the-art networking solutions designed to enhance your business's connectivity and productivity. Our team of experts delivers tailored IT network services, ensuring robust network security and seamless management to keep your operations running smoothly." />
                 <ExpertServices needsTitle="Why Choose " needsTitleBlue=" Novatore Solutions" needsMoreTitle=" for Networking Services?" NeedsImage="/images/networking-image-left.png"
                     needsDescription="Our dedication to providing top-notch IT services makes us a leader in the industry. With years of experience and a focus on innovation, we empower businesses with reliable and scalable network solutions. We understand the unique needs of software companies and offer customized services to optimize your network infrastructure, ensuring your business remains at the forefront of technology." />
-              <CloudOps needsTitle="Comprehensive Networking Services " needsTitleBlue="We Offer" />
+                <CloudOps needsTitle="Comprehensive Networking Services " needsTitleBlue="We Offer" />
                 <Enterprise />
                 <Innovation />
             </div>

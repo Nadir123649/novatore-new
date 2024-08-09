@@ -1,4 +1,4 @@
-import { AIOne, AITwo, AIThree, AIFour, AIFive, AISix, CovaBg, AngelflowBg, About, ComplianceAI, ApplicationCompliance, RedTeaming, webAppSecurity, SecurityAudits, NetworkSecurityTesting, GovernanceFramework, Dataprivacy, RiskManagement, Airbolt, ANGELFLOW, AngelLogo, Assistant, blogImageOne, blogImageTwo, Buisness, Career, Catalyst, ChooseFour, ChooseOne, ChooseThree, ChooseTwo, Cova, COVA, CovaLogo, Developer, Industries, Insights, London, Protium, Services, Upsure, DataImageOne, DataImageTwo, DataImageThree, DataImageFour, CloudOne, CloudTwo, CloudThree, CloudFour, AwsOne, AwsTwo, AwsThree, ImageOne, ImageTwo, ImageThree, CloudFive, CloudSix, DataImageFive, DataImageSix, CLOUD, Amazon, DATA, artificialIntelligence, Cybersecurity, DigitalService, AutomationOne, AutomationThree, AutomationFour, AutomationFive, AutomationSix, AutomationTwo, RemoteIT, ConsultingService, CloudService, HelpDesk, NetworkSecurity, SystemSupport, MigrationOne, MigrationTwo, MigrationThree, ProductFour, ProductThree, ProductTwo, ProductOne, ProductFive, ProductSix, ServicesSix, ServicesFive, ServicesFour, ServicesThree, ServicesTwo, ServicesOne, Vulnerability, CustomAnalyticsSix, CustomAnalyticsFive, CustomAnalyticsFour, CustomAnalyticsThree, CustomAnalyticsTwo, CustomAnalyticsOne, TransformThree, TransformTwo, TransformOne, TreeThree, TreeTwo, TreeOne, WebThree, WebTwo, WebOne, AutomationImageOne, AutomationImageTwo, AutomationImageThree } from "@/utils";
+import { AIOne, AITwo, AIThree, AIFour, AIFive, AISix, ComprehensiveIcon, StorageIcon, NetworkingIcon, AnalyticsIcon, CovaBg, dataautomation, AngelflowBg, CloudServiceicon, About, ComplianceAI, ApplicationCompliance, RedTeaming, webAppSecurity, SecurityAudits, NetworkSecurityTesting, GovernanceFramework, Dataprivacy, RiskManagement, Airbolt, ANGELFLOW, AngelLogo, Assistant, blogImageOne, blogImageTwo, Buisness, Career, Catalyst, ChooseFour, ChooseOne, ChooseThree, ChooseTwo, Cova, COVA, CovaLogo, Developer, Industries, Insights, London, Protium, Services, Upsure, DataImageOne, DataImageTwo, DataImageThree, DataImageFour, CloudOne, CloudTwo, CloudThree, CloudFour, AwsOne, AwsTwo, AwsThree, ImageOne, ImageTwo, ImageThree, CloudFive, CloudSix, DataImageFive, DataImageSix, CLOUD, Amazon, DATA, artificialIntelligence, Cybersecurity, DigitalService, AutomationOne, AutomationThree, AutomationFour, AutomationFive, AutomationSix, AutomationTwo, RemoteIT, ConsultingService, CloudService, HelpDesk, NetworkSecurity, SystemSupport, MigrationOne, MigrationTwo, MigrationThree, ProductFour, ProductThree, ProductTwo, ProductOne, ProductFive, ProductSix, ServicesSix, ServicesFive, ServicesFour, ServicesThree, ServicesTwo, ServicesOne, Vulnerability, CustomAnalyticsSix, CustomAnalyticsFive, CustomAnalyticsFour, CustomAnalyticsThree, CustomAnalyticsTwo, CustomAnalyticsOne, TransformThree, TransformTwo, TransformOne, TreeThree, TreeTwo, TreeOne, WebThree, WebTwo, WebOne, AutomationImageOne, AutomationImageTwo, AutomationImageThree, PresentOne, PresentTwo, PresentThree, PresentFour, PresentFive, PresentSix, ConsultingOne, ConsultingTwo, ConsultingThree, ConsultingFour, ConsultingFive, ConsultingSix } from "@/utils";
 import { IoMdMail } from "react-icons/io";
 import { FaPhoneAlt } from "react-icons/fa";
 import { ImLocation } from "react-icons/im";
@@ -475,7 +475,7 @@ export const dataServices = [
     {
         title: 'Analytics & Platform Implementation',
         description: 'Implement robust analytics platforms that provide actionable insights and drive business growth.',
-        icon: DataImageThree,
+        icon: dataautomation,
     },
     {
         title: 'Data Science',
@@ -526,6 +526,40 @@ export const processAutomationData = [
     },
 ];
 
+export const processBusinessData = [
+    {
+        title: 'Business Process Automation Consulting',
+        description: 'Our consulting services are designed to help you identify areas for automation and develop a strategic roadmap.',
+        icon: PresentOne,
+    },
+    {
+        title: 'Custom Business Process Automation Solutions',
+        description: 'We provide tailored business process automation solutions that meet your specific needs.',
+        icon: PresentTwo,
+    },
+    {
+        title: 'Business Process Automation Software',
+        description: 'Our expert team develops and deploys advanced business process automation software that integrates with your existing systems. ',
+        icon: PresentThree,
+    },
+    {
+        title: 'Workflow Automation',
+        description: 'Automate your business processes with our comprehensive business process automation workflow solutions. ',
+        icon: PresentFour,
+    },
+    {
+        title: 'Robotic Process Automation (RPA)',
+        description: 'RPA allows you to automate routine and complex tasks, reducing manual effort and enabling your workforce to focus on more strategic activities.',
+        icon: PresentFive,
+    },
+    {
+        title: 'AI-Driven Decision Automation',
+        description: 'This solution enhances accuracy, reduces bias, and speeds up operational processes, empowering your business to stay ahead in competitive environments.',
+        icon: PresentSix,
+    },
+];
+
+
 export const processAnalyticsData = [
     {
         title: 'Analytics Platform Implementation Services',
@@ -563,7 +597,7 @@ export const CloudData = [
     {
         title: 'Business Process Automation',
         description: 'Streamline and automate your business processes to improve efficiency and reduce operational costs.',
-        icon: CloudOne,
+        icon: CloudServiceicon,
     },
     {
         title: 'CloudOps',
@@ -625,7 +659,7 @@ export const WebAutomationData = [
     {
         title: 'Comprehensive Support ',
         description: 'Migrating to AWS offers significant benefits, including cost savings and improved agility. Our cloud migration services simplify the process of moving your applications and data to AWS. ',
-        icon: AutomationImageThree,
+        icon: ComprehensiveIcon,
     },
 ];
 
@@ -651,17 +685,17 @@ export const AwsData = [
     {
         title: 'Storage Services',
         description: 'Secure and scalable storage solutions tailored to meet your business needs.',
-        icon: ImageOne,
+        icon: StorageIcon,
     },
     {
         title: 'Networking Services',
         description: 'Efficient networking services that enhance connectivity and performance.',
-        icon: ImageTwo,
+        icon: NetworkingIcon,
     },
     {
         title: 'Analytics Services',
         description: 'Advanced analytics tools to turn your data into actionable insights.',
-        icon: ImageThree,
+        icon: AnalyticsIcon,
     },
 ];
 
@@ -695,6 +729,68 @@ export const ProductEngineeringData = [
         title: 'Deployment and Maintenance',
         description: 'Following rigorous testing and quality assurance, we transition to the deployment phase, where your product goes live.',
         icon: ProductSix,
+    },
+];
+export const ConsultingData = [
+    {
+        title: 'AI Strategy Development',
+        description: 'Our strategic approach guarantees a seamless AI adoption that maximizes ROI.',
+        icon: ConsultingOne,
+        listItems: [
+            'Customized AI roadmap',
+            'Value realisation strategies',
+            'Risk management and compliance',
+        ]
+    },
+    {
+        title: 'Machine Learning Consulting',
+        description: 'Whether it’s automating manual processes or developing intelligent applications, our solutions.',
+        icon: ConsultingTwo,
+        listItems: [
+            'Algorithm development',
+            'Data modelling and analysis',
+            'Custom machine learning solutions',
+        ]
+    },
+    {
+        title: 'Data Analytics and Business Intelligence',
+        description: 'Harness the power of data with our advanced analytics and business intelligence services.',
+        icon: ConsultingThree,
+        listItems: [
+            'Data visualization',
+            'Advanced analytics',
+            'Real-time data processing',
+        ]
+    },
+    {
+        title: 'Natural Language Processing (NLP)',
+        description: 'Unlock the potential of your data with NLP solutions that interpret and analyze human language. ',
+        icon: ConsultingFour,
+        listItems: [
+            'Text analysis and mining',
+            'Sentiment analysis',
+            'Chatbot development',
+        ]
+    },
+    {
+        title: 'Predictive Analytics',
+        description: 'Stay ahead of the curve with predictive analytics that forecast trends and behaviours. ',
+        icon: ConsultingFive,
+        listItems: [
+            'Demand forecasting',
+            'Customer behavior analysis',
+            'Risk management',
+        ]
+    },
+    {
+        title: 'AI Integration and Automation Solutions',
+        description: 'Our AI integration services ensure that your AI solutions are scalable, secure, and aligned with your business objectives.',
+        icon: ConsultingSix,
+        listItems: [
+            'AI-powered automation',
+            'System integration',
+            'Workflow optimization',
+        ]
     },
 ];
 
