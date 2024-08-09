@@ -146,23 +146,14 @@ export { default as PresentThree } from "../../public/images/present-image-3.svg
 export { default as PresentFour } from "../../public/images/present-image-4.svg"
 export { default as PresentFive } from "../../public/images/present-image-5.svg"
 export { default as PresentSix } from "../../public/images/present-image-6.svg"
-
-
-
-
-
-
-
-
 export { default as CloudServiceicon } from "../../public/images/cloud-service-icon.svg"
 export { default as dataautomation } from "../../public/images/data-icon.svg"
 export { default as AIDiagram } from "../../public/images/Ai-diagram.png"
-
 export { default as AWSDiagram } from "../../public/images/AWS-diagram.png"
 export { default as AnalyticsIcon } from "../../public/images/analyticsservice-icon.svg"
 export { default as NetworkingIcon } from "../../public/images/networkingservice-icon.svg"
 export { default as StorageIcon } from "../../public/images/storageservice-icon.svg"
-export { default as ComprehensiveIcon } from "../../public/images/comprehensive-icon.svg"
+export { default as ComprehensiveIcon } from "../../public/images/comprehensive-icon-1.svg"
 
 
 

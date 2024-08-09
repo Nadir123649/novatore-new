@@ -3,11 +3,10 @@ import Image from "next/image";
 import Link from "next/link";
 import MegaMenu from "./MegaMenu";
 import SearchMenu from "./SearchMenu";
-import { IoMenu, IoCloseOutline } from "react-icons/io5";
+import { IoCloseOutline } from "react-icons/io5";
 import { MdKeyboardArrowRight, MdKeyboardArrowLeft } from "react-icons/md";
 import { RiMenu3Fill } from "react-icons/ri";
-import { Button } from "react-bootstrap";
-import { NovatoreLogo, Novatorewhite } from "@/utils";
+import { Novatorewhite } from "@/utils";
 
 const Navbar = () => {
   const [activeMenu, setActiveMenu] = useState<string | null>(null);
@@ -124,7 +123,7 @@ const Navbar = () => {
       <div className="container flex flex-row justify-between items-center sm:px-0 md:px-8 w-full ">
         <div className="flex items-center flex-grow">
           <Link
-            href="/"
+            href=""
             className="logo d-flex gap-2 group duration-300 ease-in"
             onMouseEnter={() => setIsHovered(true)}
             onMouseLeave={() => setIsHovered(false)}
@@ -150,7 +149,7 @@ const Navbar = () => {
                   onMouseEnter={() => handleMouseEnter(menu)}
                 >
                   <Link
-                    href="/"
+                    href=""
                     className="nav-link text-[#fff] active:text-[#2776EA]"
                   >
                     {menu}
@@ -250,7 +249,7 @@ const Navbar = () => {
                     onClick={() => setMobileMegaMenuOpen(menu.toLowerCase())}
                   >
                     <Link
-                      href="/"
+                      href=""
                       className="nav-link d-flex justify-between text-[30px]"
                     >
                       {menu}

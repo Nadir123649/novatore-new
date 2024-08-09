@@ -2044,7 +2044,7 @@ export const data = [
         id: 2,
         heading: 'Artificial Intelligence',
         link: "/artificial-Intelligence",
-        items: [{ text: "AI Consulting", link: '/' }, { text: "Generative AI", link: '/generative-ai' }, { text: "Machine Learning", link: '/machine-learning' },],
+        items: [{ text: "AI Consulting", link: '/ai-consulting' }, { text: "Generative AI", link: '/generative-ai' }, { text: "Machine Learning", link: '/machine-learning' },],
     },
     {
         id: 3,
