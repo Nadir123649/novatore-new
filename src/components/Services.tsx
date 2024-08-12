@@ -9,6 +9,7 @@ import { FaChevronRight } from "react-icons/fa";
 import { services } from "@/constants/indesx";
 import { useEffect, useState } from "react";
 import { Container } from "react-bootstrap";
+import { Link } from "react-router-dom";
 interface ArrowProps {
   onClick?: React.MouseEventHandler<HTMLDivElement>;
 }
@@ -35,7 +36,7 @@ const PrevArrow: React.FC<ArrowProps> = ({ onClick }) => {
       </div>
     </div>
   );
-};      
+};
 
 const Services = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -120,30 +121,35 @@ const Services = () => {
         </div>
         <Slider {...settings} className="services-slider">
           {services.map((service, index) => (
+
             <div
               key={index}
-              className="services-box relative cursor-pointer min-h-[375px] md:min-h-[490px] max-w-[330px] rounded-[16px] border border-solid border-[#ECECEC] bg-[#F6F6F6] p-[24px] transition-all duration-300 hover:shadow-lg"
+              className="services-box   relative cursor-pointer min-h-[375px] md:min-h-[490px] max-w-[330px] rounded-[16px] border border-solid border-[#ECECEC] bg-[#F6F6F6] p-[24px] transition-all duration-300 hover:shadow-lg"
               onMouseEnter={() => setHoverIndex(index)}
               onMouseLeave={() => setHoverIndex(null)}
+
             >
-              <div className={`heading-container relative overflow-hidden bg-[#1B232E] p-4 rounded-2xl text-white transition-all duration-300 ease-in-out`}
-                style={{
-                  height: hoverIndex === index ? "200px" : "initial",
-                  backgroundImage: hoverIndex === index ? `url(${service.backgroundimg})` : "none",
-                  backgroundSize: hoverIndex === index ? "cover" : "initial",
-                  backgroundPosition: hoverIndex === index ? "center" : "initial",
-                }}>
-                <h3 className="font-bold mb-2 text-xl md:text-2xl text-center transition-transform duration-300 ease-in-out ">
-                  {service.title}
-                </h3>
-              </div>
-              <p className="my-4 transition-transform duration-300 ease-in-out text-[22px] md:text-[28px] font-medium">
-                {service.description}
-              </p>
-              <div className="text-[60px] absolute bottom-[20px] right-[20px] arrow-upright">
-                <GoArrowUpRight />
-              </div>
+              <a href={service.link} className="text-black">
+                <div className={`heading-container relative overflow-hidden bg-[#1B232E] p-4 rounded-2xl text-white transition-all duration-300 ease-in-out`}
+                  style={{
+                    height: hoverIndex === index ? "200px" : "initial",
+                    backgroundImage: hoverIndex === index ? `url(${service.backgroundimg})` : "none",
+                    backgroundSize: hoverIndex === index ? "cover" : "initial",
+                    backgroundPosition: hoverIndex === index ? "center" : "initial",
+                  }}>
+                  <h3 className="font-bold mb-2 text-xl md:text-2xl text-center transition-transform duration-300 ease-in-out ">
+                    {service.title}
+                  </h3>
+                </div>
+                <p className="my-4 transition-transform duration-300 ease-in-out text-[22px] md:text-[28px] font-medium">
+                  {service.description}
+                </p>
+                <div className="text-[60px] absolute bottom-[20px] right-[20px] arrow-upright">
+                  <GoArrowUpRight />
+                </div>
+              </a>
             </div>
+
           ))}
         </Slider>
       </Container>
