@@ -20,7 +20,7 @@ const ProductEngineering: NextPage = () => {
                     needsDescription="Whether you're looking to develop enterprise software, mobile applications, or integrate the latest technologies like AI, IoT, or blockchain, our expert team is here to guide you through every step of the process. Let us help you navigate the complexities of software development and achieve your business goals. " />
                 <CloudOps needsTitle="What Product Engineering Services Do" needsTitleBlue="We Offer" />
                 <DataServicesSection heading="Our Proven Product Engineering " headingBlue=" Process" data={ProductEngineeringData} />
-                <p className="text-center text-[#110229] font-medium text-[22px] max-w-[620px] mx-auto pb-16">Take the first step towards impactful software solutions with Novatore Solutions. Lets discuss how we can transform your ideas into reality. <span className="text-[#2776ea] font-semibold">Talk to Us Today!</span> </p>
+                <p className="text-center text-[#110229] font-medium text-[22px] max-w-[694px] mx-auto pb-16">Take the first step towards impactful software solutions with Novatore Solutions. Lets discuss how we can transform your ideas into reality. <span className="text-[#2776ea] font-semibold">Talk to Us Today!</span> </p>
                 <Enterprise />
                 <Innovation />
             </div>

@@ -24,7 +24,7 @@ const CyberSecurity: NextPage = () => {
                     needsDescription="Our cybersecurity services include everything from governance, risk, and compliance to detailed penetration testing.
                  We understand the complexities of data privacy and work diligently to protect your sensitive information from potential breaches.
                  Our goal is to provide peace of mind by safeguarding your digital assets with robust and reliable security measures." />
-                 <CloudOps needsTitle="What DO" needsTitleBlue="We Offer"/>
+                <CloudOps needsTitle="What DO" needsTitleBlue="We Offer?" />
                 <DiagramSlider heading="Comprehensive Cybersecurity Strategy:" headingBlue="Safeguarding Every Layer" image={DiagramFive} />
                 <Enterprise />
                 <Innovation />

@@ -137,8 +137,9 @@ const CloudOps: FC<CloudOpsProps> = ({
           <Col lg={12} md={12} xs={12}>
             <h2 className="font-semibold md:font-bold text-[30px] md:text-[40px] pb-[20px]">
               {needsTitle} {" "}
+
               <span className="text-[#2776EA]">{needsTitleBlue}</span>
-              {needsMoreTitle}
+              {needsMoreTitle ? <span> {needsMoreTitle}</span> : null}
             </h2>
             <Row>
               <Col lg={12} md={12} xs={12}>
