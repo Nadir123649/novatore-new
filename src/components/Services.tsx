@@ -9,7 +9,7 @@ import { FaChevronRight } from "react-icons/fa";
 import { services } from "@/constants/indesx";
 import { useEffect, useState } from "react";
 import { Container } from "react-bootstrap";
-import { Link } from "react-router-dom";
+
 interface ArrowProps {
   onClick?: React.MouseEventHandler<HTMLDivElement>;
 }
