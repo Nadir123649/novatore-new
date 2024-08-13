@@ -30,7 +30,7 @@
   align-items: center;
   width: 45px;
   height: 45px;
-  border: 1px solid #969696;
+  /* border: 1px solid #969696; */
   border-radius: 50%;
   position: absolute;
   cursor: pointer;
