@@ -165,13 +165,6 @@
   align-items: center;
 }
 
-
-/* case study carousel css here */
-.study-container {
-  position: relative;
-  width: 50%;
-}
-
 .image {
   display: block;
   width: 100%;

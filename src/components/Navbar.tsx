@@ -121,7 +121,7 @@ const Navbar = () => {
          ${isScrolled ? "bg-imagr-black" : "bg-transparent"
         } ${isHeaderVisible ? "transform-none" : "-translate-y-full"}`}
     >
-      <div className="container flex flex-row justify-between items-center sm:px-0 md:p-0 w-full ">
+      <div className="container flex flex-row justify-between items-center sm:px-0 md:px-0 p-0 w-full ">
         <div className="flex items-center flex-grow">
           <Link
             href="/"
@@ -146,7 +146,7 @@ const Navbar = () => {
                   className={`nav-item text-lg   ${activeMenu === menu.toLowerCase()
                     ? "text-[#2776EA] font-bold  ease-in-out duration-300"
                     : "text-[#FFF]"
-                    } hover:text-[#2776EA] hover:font-bold  hover:ease-in-out duration-300 `}
+                    } hover:text-[#2776EA] hover:font-normal  hover:ease-in-out duration-300 `}
                   onClick={() => handleClick(menu)}
                   onMouseEnter={() => handleMouseEnter(menu)}
                 >

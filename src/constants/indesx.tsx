@@ -12,28 +12,28 @@ export const services = [
     {
         id: 1,
         title: 'Digital Services',
-        description: 'From Consulting To Product Engineering, We Provide The Best Digital Solutions.',
+        description: 'From consulting to product enngineering, we provide the best digital solutions.',
         backgroundimg: "/images/DigitalService.png",
         link: "/digital-service"
     },
     {
         id: 2,
         title: 'Data',
-        description: 'Expertise In Data Science To Drive Your Business Forward.',
+        description: 'Expertise in data science to drive your business forward.',
         backgroundimg: "/images/data.png",
         link: "/data"
     },
     {
         id: 3,
         title: 'Cloud',
-        description: 'Smoothen Your Operations With AWS, Azure, And GCP.',
+        description: 'Smoothen your operations with AWS, Azure, and GCP.',
         backgroundimg: "/images/cloudService.png",
         link: "/cloud-services"
     },
     {
         id: 4,
         title: 'Artificial Intelligence',
-        description: 'Innovative AI Solutions, Generative Models, And Machine Learning.',
+        description: 'Innovative AI solutions, generative models, and machine learning.',
         backgroundimg: "/images/AI.png",
         link: "/artificial-Intelligence"
     },
@@ -283,6 +283,7 @@ export const searchitems = [
 
 export const studies = [
     {
+        id: 1,
         logo: AngelLogo,
         banner: ANGELFLOW,
         backgroundimg: AngelflowBg,
@@ -291,6 +292,7 @@ export const studies = [
     },
 
     {
+        id: 2,
         logo: CovaLogo,
         banner: COVA,
         backgroundimg: CovaBg,
@@ -299,6 +301,7 @@ export const studies = [
     },
 
     {
+        id: 3,
         logo: AngelLogo,
         banner: ANGELFLOW,
         backgroundimg: AngelflowBg,
@@ -307,6 +310,7 @@ export const studies = [
     },
 
     {
+        id: 4,
         logo: CovaLogo,
         banner: COVA,
         backgroundimg: CovaBg,
