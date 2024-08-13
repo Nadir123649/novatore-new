@@ -155,7 +155,7 @@ export { default as NetworkingIcon } from "../../public/images/networkingservice
 export { default as StorageIcon } from "../../public/images/storageservice-icon.svg"
 export { default as ComprehensiveIcon } from "../../public/images/comprehensive-icon-1.svg"
 export { default as NovatoreText } from "../../public/images/Novatore-text-logo.svg"
-
+export { default as NovatoreIcon } from "../../public/images/NovatoreIcon-Logo.svg"
 
 
 

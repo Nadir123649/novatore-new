@@ -6,7 +6,7 @@ import SearchMenu from "./SearchMenu";
 import { IoCloseOutline } from "react-icons/io5";
 import { MdKeyboardArrowRight, MdKeyboardArrowLeft } from "react-icons/md";
 import { RiMenu3Fill } from "react-icons/ri";
-import { Novatorewhite, NovatoreText } from "@/utils";
+import { Novatorewhite, NovatoreIcon, NovatoreText } from "@/utils";
 import { BsSearch } from "react-icons/bs";
 
 const Navbar = () => {
@@ -121,7 +121,7 @@ const Navbar = () => {
          ${isScrolled ? "bg-imagr-black" : "bg-transparent"
         } ${isHeaderVisible ? "transform-none" : "-translate-y-full"}`}
     >
-      <div className="container flex flex-row justify-between items-center sm:px-0 md:px-8 w-full ">
+      <div className="container flex flex-row justify-between items-center sm:px-0 md:p-0 w-full ">
         <div className="flex items-center flex-grow">
           <Link
             href="/"
@@ -129,9 +129,9 @@ const Navbar = () => {
             onMouseEnter={() => setIsHovered(true)}
             onMouseLeave={() => setIsHovered(false)}
           >
-            <Image src="/images/logo.svg" alt="logo" width={45} height={45} />
+            {/* <Image src="/images/logo.svg" alt="logo" width={45} height={45} /> */}
+            <Image src={NovatoreIcon} alt="logo" width={45} height={45} />
             <Image
-              // src={Novatorewhite}
               src={NovatoreText}
               alt="logo"
               className={`${isHovered ? 'group-hover:block  animate-slide-in ' : ' animate-slide-out'
@@ -144,9 +144,9 @@ const Navbar = () => {
                 <li
                   key={index}
                   className={`nav-item text-lg   ${activeMenu === menu.toLowerCase()
-                    ? "text-[#2776EA] font-medium  ease-in-out duration-300"
+                    ? "text-[#2776EA] font-bold  ease-in-out duration-300"
                     : "text-[#FFF]"
-                    } hover:text-[#2776EA] hover:font-medium  hover:ease-in-out duration-300 `}
+                    } hover:text-[#2776EA] hover:font-bold  hover:ease-in-out duration-300 `}
                   onClick={() => handleClick(menu)}
                   onMouseEnter={() => handleMouseEnter(menu)}
                 >

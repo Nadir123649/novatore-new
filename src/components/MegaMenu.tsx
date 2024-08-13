@@ -88,7 +88,7 @@ const MegaMenu: React.FC<MegaMenuProps> = ({ activeMenu }) => {
                       {list.heading}
                     </h1>
                   </a>
-                  <ul className="list-none px-0 ">
+                  <ul className="list-none px-0">
                     {list.items.map((item, index) => (
                       <li
                         key={index}

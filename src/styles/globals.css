@@ -675,4 +675,7 @@ input:-webkit-autofill:active {
 .needs-section {
     background-image: url("../../public/images/needs-bg.png");
 }
+.megamenu-card ul li a:hover{
+    text-decoration: underline !important;
+}
 

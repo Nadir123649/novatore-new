@@ -10,42 +10,49 @@ import ProductEngineering from '../pages/product-engineering';
 
 export const services = [
     {
+        id: 1,
         title: 'Digital Services',
         description: 'From Consulting To Product Engineering, We Provide The Best Digital Solutions.',
         backgroundimg: "/images/DigitalService.png",
         link: "/digital-service"
     },
     {
+        id: 2,
         title: 'Data',
         description: 'Expertise In Data Science To Drive Your Business Forward.',
         backgroundimg: "/images/data.png",
         link: "/data"
     },
     {
+        id: 3,
         title: 'Cloud',
         description: 'Smoothen Your Operations With AWS, Azure, And GCP.',
         backgroundimg: "/images/cloudService.png",
         link: "/cloud-services"
     },
     {
+        id: 4,
         title: 'Artificial Intelligence',
         description: 'Innovative AI Solutions, Generative Models, And Machine Learning.',
         backgroundimg: "/images/AI.png",
         link: "/artificial-Intelligence"
     },
     {
-        title: 'Amazon ',
+        id: 5,
+        title: 'Amazon',
         description: 'Complete solutions including storage, networking, and analytics services.',
         backgroundimg: "/images/amazonService.png",
         link: "/amazon-web-services"
     },
     {
+        id: 6,
         title: 'Cyber Security',
-        description: 'Protect your business with governance, data privacy and penetration testing.',
+        description: 'Protect your business with governance, data privacy, and penetration testing.',
         backgroundimg: "/images/cyberSecurity.png",
         link: "/cyber-security"
     },
 ];
+
 
 export const whyChooseLogo = [
     { img: ChooseOne, alt: "ChooseOne" },
