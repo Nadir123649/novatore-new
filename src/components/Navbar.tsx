@@ -138,15 +138,15 @@ const Navbar = () => {
                 } hidden pl-2`}
             />
           </Link>
-          <ul className="nav-menu mb-0 pl-0 hidden md:flex flex-row gap-4 ml-8  ease-in-out duration-300 ">
+          <ul className="nav-menu mb-0 pl-0 hidden md:flex flex-row gap-4 ml-8 ease-in-out duration-300 ">
             {["Services", "Industries", "Insights", "About", "Careers"].map(
               (menu, index) => (
                 <li
                   key={index}
                   className={`nav-item text-lg   ${activeMenu === menu.toLowerCase()
-                    ? "text-[#2776EA] "
+                    ? "text-[#2776EA] font-medium  ease-in-out duration-300"
                     : "text-[#FFF]"
-                    } hover:text-[#2776EA] `}
+                    } hover:text-[#2776EA] hover:font-medium  hover:ease-in-out duration-300 `}
                   onClick={() => handleClick(menu)}
                   onMouseEnter={() => handleMouseEnter(menu)}
                 >
@@ -171,7 +171,7 @@ const Navbar = () => {
           <ul className="search-menu mb-0 pl-0 hidden md:flex flex-row gap-4 items-center">
             <li>
               <button
-                className="search-main rounded-2xl bg-custom-rgba hover:bg-[#2776EA] py-[12px] px-[12px] "
+                className="search-main rounded-2xl transition-all ease-in-out duration-300 bg-custom-rgba hover:bg-[#2776EA] py-[13px] px-[13px] focus:bg-[#2776EA]"
                 onClick={handleSearchClick}
                 ref={searchRefDesktop}
               >
@@ -181,8 +181,6 @@ const Navbar = () => {
                   width={24}
                   height={24}
                 />
-                {/* <BsSearch /> */}
-
               </button>
             </li>
             <li>
