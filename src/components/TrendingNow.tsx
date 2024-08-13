@@ -10,7 +10,8 @@ import Link from 'next/link';
 import { Profile } from '../utils'
 import { trendings } from '@/constants/indesx';
 import { useState, useEffect } from 'react';
-import { Container } from 'react-bootstrap';
+import { Col, Container } from 'react-bootstrap';
+import TrendingBlogsCards from './TrendingBlogsCards';
 
 interface ArrowProps {
   onClick?: React.MouseEventHandler<HTMLDivElement>;
@@ -100,32 +101,18 @@ const TrendingNow = () => {
           <h2 className='text-[#FFFFFF] font-semibold text-[26px] md:text-4xl'>Trending Now</h2>
         </div>
         <Slider {...settings} className="trending-slider mt-10">
-          {trendings.map((trending, index) => (
-            <div
-              key={index}
-              className="services-box flex flex-col relative cursor-pointer h-[550px] max-w-[390px] rounded-[16px]  bg-[#F6F6F6] p-0  transition-all duration-300 hover:shadow-lg "
-            >
-              <Image src={trending.banner} alt="service" className='w-full h-[280px] object-cover rounded-tl-[16px] rounded-br-none rounded-tr-[16px] rounded-bl-none p-0' />
-              <div className='px-[24px] py-[20px]  card-group'>
-                <div className='d-flex gap-3 items-center'>
-                  <div className='bg-[#2776EA] rounded-2xl text-white px-3 py-2 min-w-[140px] text-xs text-center'>{trending.date} </div>
-                  <Image src={Profile} alt="profile " width={16} height={16} />
-                  <p className='text-[#6A6A6A] text-sm m-0 '>{trending.user}</p>
-                </div>
-                <h1 className='text-[22.4px] font-extrabold pt-3'>{trending.title}</h1>
-                <p className=" text-[#6A6A6A] max-w-[269px] h-[70px]">
-                  {trending.description}
-                </p>
-                <div className='mx-auto pt-2 mt-auto'>
-                  <Link className='d-flex items-center gap-2 justify-center text-[#31333E] font-bold text-center ' href="">
-                    Read More
-                    <div className='bg-[#2776EA] w-[16px] h-[16px] rounded-full d-flex justify-center items-center mt-1 text-white text-[10px]'>
-                      <FaArrowRight />
-                    </div>
-                  </Link>
-                </div>
-              </div>
-            </div>
+          {trendings.map(trending => (
+            <Col key={trending.id} lg={6} md={6} xs={12}>
+              <TrendingBlogsCards
+                id={trending.id}
+                title={trending.title}
+                description={trending.description}
+                banner={trending.banner}
+                date={trending.date}
+                user={trending.user}
+                link={trending.link}
+              />
+            </Col>
           ))}
         </Slider>
       </Container>

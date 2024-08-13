@@ -1,4 +1,4 @@
-import { AIOne, AITwo, AIThree, AIFour, AIFive, AISix, ComprehensiveIcon, StorageIcon, NetworkingIcon, AnalyticsIcon, CovaBg, dataautomation, AngelflowBg, CloudServiceicon, About, ComplianceAI, ApplicationCompliance, RedTeaming, webAppSecurity, SecurityAudits, NetworkSecurityTesting, GovernanceFramework, Dataprivacy, RiskManagement, Airbolt, ANGELFLOW, AngelLogo, Assistant, blogImageOne, blogImageTwo, Buisness, Career, Catalyst, ChooseFour, ChooseOne, ChooseThree, ChooseTwo, Cova, COVA, CovaLogo, Developer, Industries, Insights, London, Protium, Services, Upsure, DataImageOne, DataImageTwo, DataImageThree, DataImageFour, CloudOne, CloudTwo, CloudThree, CloudFour, AwsOne, AwsTwo, AwsThree, ImageOne, ImageTwo, ImageThree, CloudFive, CloudSix, DataImageFive, DataImageSix, CLOUD, Amazon, DATA, artificialIntelligence, Cybersecurity, DigitalService, AutomationOne, AutomationThree, AutomationFour, AutomationFive, AutomationSix, AutomationTwo, RemoteIT, ConsultingService, CloudService, HelpDesk, NetworkSecurity, SystemSupport, MigrationOne, MigrationTwo, MigrationThree, ProductFour, ProductThree, ProductTwo, ProductOne, ProductFive, ProductSix, ServicesSix, ServicesFive, ServicesFour, ServicesThree, ServicesTwo, ServicesOne, Vulnerability, CustomAnalyticsSix, CustomAnalyticsFive, CustomAnalyticsFour, CustomAnalyticsThree, CustomAnalyticsTwo, CustomAnalyticsOne, TransformThree, TransformTwo, TransformOne, TreeThree, TreeTwo, TreeOne, WebThree, WebTwo, WebOne, AutomationImageOne, AutomationImageTwo, AutomationImageThree, PresentOne, PresentTwo, PresentThree, PresentFour, PresentFive, PresentSix, ConsultingOne, ConsultingTwo, ConsultingThree, ConsultingFour, ConsultingFive, ConsultingSix } from "@/utils";
+import { AIOne, AITwo, AIThree, AIFour, AIFive, AISix, ComprehensiveIcon, StorageIcon, NetworkingIcon, AnalyticsIcon, CovaBg, dataautomation, AngelflowBg, CloudServiceicon, About, ComplianceAI, ApplicationCompliance, RedTeaming, webAppSecurity, SecurityAudits, NetworkSecurityTesting, GovernanceFramework, Dataprivacy, RiskManagement, Airbolt, ANGELFLOW, AngelLogo, Assistant, blogImageOne, blogImageTwo, Buisness, Career, Catalyst, ChooseFour, ChooseOne, ChooseThree, ChooseTwo, Cova, COVA, CovaLogo, Developer, Industries, Insights, London, Protium, Services, Upsure, DataImageOne, DataImageTwo, DataImageThree, DataImageFour, CloudOne, CloudTwo, CloudThree, CloudFour, AwsOne, AwsTwo, AwsThree, ImageOne, ImageTwo, ImageThree, CloudFive, CloudSix, DataImageFive, DataImageSix, CLOUD, Amazon, DATA, artificialIntelligence, Cybersecurity, DigitalService, AutomationOne, AutomationThree, AutomationFour, AutomationFive, AutomationSix, AutomationTwo, RemoteIT, ConsultingService, CloudService, HelpDesk, NetworkSecurity, SystemSupport, MigrationOne, MigrationTwo, MigrationThree, ProductFour, ProductThree, ProductTwo, ProductOne, ProductFive, ProductSix, ServicesSix, ServicesFive, ServicesFour, ServicesThree, ServicesTwo, ServicesOne, Vulnerability, CustomAnalyticsSix, CustomAnalyticsFive, CustomAnalyticsFour, CustomAnalyticsThree, CustomAnalyticsTwo, CustomAnalyticsOne, TransformThree, TransformTwo, TransformOne, TreeThree, TreeTwo, TreeOne, WebThree, WebTwo, WebOne, AutomationImageOne, AutomationImageTwo, AutomationImageThree, PresentOne, PresentTwo, PresentThree, PresentFour, PresentFive, PresentSix, ConsultingOne, ConsultingTwo, ConsultingThree, ConsultingFour, ConsultingFive, ConsultingSix, BlogBannerThree, BlogBannerTwo, BlogBannerOne, BlogBannerFour } from "@/utils";
 import { IoMdMail } from "react-icons/io";
 import { FaPhoneAlt } from "react-icons/fa";
 import { ImLocation } from "react-icons/im";
@@ -180,35 +180,43 @@ export const milestones = [
 ];
 export const trendings = [
     {
+        id: 1,
         title: 'Virtual Assistants And How They Change Customer Service',
-        banner: Assistant,
+        banner: BlogBannerOne,
         date: 'JANUARY 12, 2022',
-        user: ' By JOHN DOE',
-        description: 'Explore how virtual assistants are transforming customer service'
+        user: 'By JOHN DOE',
+        description: 'Explore how virtual assistants are transforming customer service',
+        link: '/blog/virtual-assistants'
     },
     {
+        id: 2,
         title: 'PropTech. Is This the Future of Real Estate?',
-        banner: Developer,
+        banner: BlogBannerTwo,
         date: 'MARCH 12, 2025',
-        user: 'BY RIDA',
-        description: 'Dive into the world of PropTech and discover how technology is reshaping the real estate industry.'
+        user: 'By RIDA',
+        description: 'Dive into the world of PropTech and discover how technology is reshaping the real estate industry.',
+        link: '/blog/proptech-future'
     },
-
     {
-        title: '10 Ways to achieve your business goal',
-        banner: Buisness,
+        id: 3,
+        title: '10 Ways to Achieve Your Business Goal',
+        banner: BlogBannerThree,
         date: 'APRIL 19, 2024',
-        user: 'BY JESSICA',
-        description: 'Duis aute irure dolor lipsum simply free text the local markets'
+        user: 'By JESSICA',
+        description: 'Duis aute irure dolor lipsum simply free text the local markets',
+        link: '/blog/business-goals'
     },
     {
+        id: 4,
         title: 'Artificial Intelligence',
-        banner: Assistant,
+        banner: BlogBannerFour,
         date: 'JANUARY 13, 2022',
-        user: 'BY RIDA',
-        description: 'Innovative AI Solutions, Generative Models, And Machine Learning.'
+        user: 'By RIDA',
+        description: 'Innovative AI Solutions, Generative Models, And Machine Learning.',
+        link: '/blog/artificial-intelligence'
     }
 ];
+
 
 export const sortOptions = [
     { value: 'date', label: 'Date' },

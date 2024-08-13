@@ -7,7 +7,7 @@ import { FaChevronLeft } from "react-icons/fa";
 import { FaChevronRight } from "react-icons/fa";
 import { services } from "@/constants/indesx";
 import { useEffect, useState } from "react";
-import { Col, Container } from "react-bootstrap";
+import { Col, Container, Row } from "react-bootstrap";
 import ServicesCard from "./ServicesCards";
 interface ArrowProps {
   onClick?: React.MouseEventHandler<HTMLDivElement>;
@@ -44,7 +44,7 @@ const Services = () => {
     dots: false,
     infinite: false,
     speed: 500,
-    slidesToShow: 3.4,
+    slidesToShow: 3.3,
     slidesToScroll: 1,
     centerMode: false,
     nextArrow: <NextArrow />,
@@ -118,17 +118,17 @@ const Services = () => {
           </button>
         </div>
         <Slider {...settings} className="services-slider">
-          {services.map(service => (
-            <Col key={service.id} lg={6} md={6} xs={12}>
-              <ServicesCard
-                id={service.id}
-                title={service.title}
-                description={service.description}
-                backgroundimg={service.backgroundimg}
-                link={service.link}
-              />
-            </Col>
-          ))}
+            {services.map(service => (
+              <Col key={service.id} lg={6} md={6} xs={12}>
+                <ServicesCard
+                  id={service.id}
+                  title={service.title}
+                  description={service.description}
+                  backgroundimg={service.backgroundimg}
+                  link={service.link}
+                />
+              </Col>
+            ))}
         </Slider>
       </Container>
     </section >

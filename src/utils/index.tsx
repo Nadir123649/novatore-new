@@ -156,6 +156,13 @@ export { default as StorageIcon } from "../../public/images/storageservice-icon.
 export { default as ComprehensiveIcon } from "../../public/images/comprehensive-icon-1.svg"
 export { default as NovatoreText } from "../../public/images/Novatore-text-logo.svg"
 export { default as NovatoreIcon } from "../../public/images/NovatoreIcon-Logo.svg"
+export { default as BlogBannerOne } from "../../public/images/blogbanner-image-1.png"
+export { default as BlogBannerTwo } from "../../public/images/blogbanner-image-2.png"
+export { default as BlogBannerThree } from "../../public/images/blogbanner-image-3.png"
+export { default as BlogBannerFour } from "../../public/images/blogbanner-image-1.png"
+
+
+
 
 
 
