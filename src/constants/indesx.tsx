@@ -227,7 +227,9 @@ export const servicesOptions = [
 
 export const slidesContent = [
     { title: 'Future-Driven Solutions', description: 'Merging Data and AI to Prepare Your Business For Tomorrow ' },
-    { title: 'Empower Your Business, Transform Digitally', description: 'Smart and Powerful Solutions to Kickstart Your Growth ' },
+    {
+        title: 'Empower Your Business, Transform Digitally', description: 'Smart and Powerful Solutions to Kickstart Your Growth', className: 'hero-banner-screen z-50 max-w-4xl relative flex flex-col justify-center  min-h-[50vh] md:min-h-[100vh] items-start'
+    },
     { title: 'Move Beyond the Ordinary', description: 'It’s time to innovate, rethink, and excel' },
 ];
 
