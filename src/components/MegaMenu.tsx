@@ -28,20 +28,20 @@ const MegaMenu: React.FC<MegaMenuProps> = ({ activeMenu }) => {
       <Container>
         <div className="grid grid-cols-12 gap-4">
           {/* section first  */}
-          <div className="px-4 md:px-4 sm:py-0 md:py-14 col-span-12 md:col-span-4 ">
+          <div className=" sm:py-0 md:py-6 col-span-12 md:col-span-4 ">
             {filteredListings.map((listing: { id: React.Key | null | undefined; heading: any | number | bigint | boolean | React.ReactElement<any, any | React.JSXElementConstructor<any>> | Iterable<React.ReactNode> | React.ReactPortal | Promise<React.AwaitedReactNode> | null | undefined; link: any | null | undefined; details: { text: string; link: string }[]; }) => (
               <div key={listing.id} className="d-flex flex-col">
-                <a onClick={() => handleNavigation(listing.link)} className="font-semibold text-lg text-[#2776EA] text-[18px] pt-2">
-                  {listing.heading}
+                <a onClick={() => handleNavigation(listing.link)} >
+                  <h1 className="font-semibold text-lg text-[#2776EA] text-[18px] pt-2">{listing.heading}</h1>
                 </a>
 
                 <ul className="list-none px-0">
                   {listing.details.map((detail, index) => (
                     <li
                       key={index}
-                      className="pt-1 text-[#4F4F4F] cursor-pointer"
+                      className="pt-1 text-[#4F4F4F] cursor-pointer hover:text-[#2776EA]"
                     >
-                      <a onClick={() => handleNavigation(detail.link)} className="text-[#4F4F4F]">
+                      <a onClick={() => handleNavigation(detail.link)} className="text-[#4F4F4F] hover:text-[#2776EA]">
                         {detail.text}
                       </a>
                     </li>
@@ -51,19 +51,28 @@ const MegaMenu: React.FC<MegaMenuProps> = ({ activeMenu }) => {
             ))}
           </div>
           {/* section second */}
-          <div className="px-4 md:px-16 border-l-0  md:border-l-2 sm:my-0 md:my-14  col-span-12 md:col-span-4">
+          <div className="  pl-4  sm:my-0 md:my-6 col-span-12 md:col-span-4">
             {filteredFeatures.map((feature: { id: React.Key | null | undefined; heading: string | number | bigint | boolean | React.ReactElement<any, string | React.JSXElementConstructor<any>> | Iterable<React.ReactNode> | React.ReactPortal | Promise<React.AwaitedReactNode> | null | undefined; link: any | null | undefined; details: any[]; }) => (
               <div key={feature.id} className="d-flex flex-col">
-                <a onClick={() => handleNavigation(feature.link)} className="font-semibold text-[#2776EA] text-lg pt-2">
-                  {feature.heading}
+                {/* <a onClick={() => handleNavigation(feature.link)} >
+                  <h1 className="font-semibold text-lg text-[#2776EA]  pt-2">{feature.heading}</h1>
+                </a> */}
+                <a onClick={() => handleNavigation(feature.link)}>
+                  {feature.heading ? (
+                    <h1 className="font-semibold text-lg text-[#2776EA] pt-2">
+                      {feature.heading}
+                    </h1>
+                  ) : (
+                    <div className="pt-3">&nbsp;</div>
+                  )}
                 </a>
                 <ul className="list-none px-0">
                   {feature.details.map((detail, index) => (
                     <li
                       key={index}
-                      className="pt-1 text-[#4F4F4F] cursor-pointer"
+                      className="pt-1 text-[#4F4F4F] cursor-pointer hover:text-[#2776EA]"
                     >
-                      <a onClick={() => handleNavigation(detail.link)} className="text-[#4F4F4F]">
+                      <a onClick={() => handleNavigation(detail.link)} className="text-[#4F4F4F] hover:text-[#2776EA]">
                         {detail.text}
                       </a>
                     </li>
@@ -74,11 +83,11 @@ const MegaMenu: React.FC<MegaMenuProps> = ({ activeMenu }) => {
           </div>
           {/* section third  */}
           {isThirdSectionHidden ? (
-            <div className="px-4 md:px-16 border-l-0  md:border-l-2 sm:my-0 md:my-14  col-span-12 md:col-span-4">
+            <div className=" pl-4  sm:my-0 md:my-6  col-span-12 md:col-span-4">
               {data.map((list) => (
                 <div key={list.id} className="d-flex flex-col">
                   <a onClick={() => handleNavigation(list.link)} >
-                    <h1 className="font-semibold text-[#2776EA] text-lg pt-2">
+                    <h1 className="font-semibold text-lg text-[#2776EA]  pt-[14px]">
                       {list.heading}
                     </h1>
                   </a>
@@ -86,10 +95,10 @@ const MegaMenu: React.FC<MegaMenuProps> = ({ activeMenu }) => {
                     {list.items.map((item, index) => (
                       <li
                         key={index}
-                        className=" text-[#4F4F4F] cursor-pointer"
+                        className=" text-[#4F4F4F] cursor-pointer hover:text-[#2776EA]"
                       >
 
-                        <a onClick={() => handleNavigation(item.link)} className="text-[#4F4F4F]">
+                        <a onClick={() => handleNavigation(item.link)} className="text-[#4F4F4F] hover:text-[#2776EA]">
                           {item.text}
                         </a>
                       </li>
@@ -99,7 +108,7 @@ const MegaMenu: React.FC<MegaMenuProps> = ({ activeMenu }) => {
               ))}
             </div>
           ) : (
-            <div className="px-4 py-2 md:py-14 bg-[#F3F3F3] sm:w-full h-full col-span-12 md:col-span-4">
+            <div className=" py-2 md:py-5 pl-4 bg-[#F3F3F3] sm:w-full h-full col-span-12 md:col-span-4">
               {filteredMenuItems.map((item) => (
                 <div key={item.id} className="py-3 d-flex flex-col">
                   <Link href="/">

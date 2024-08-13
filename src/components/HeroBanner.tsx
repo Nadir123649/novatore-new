@@ -20,6 +20,11 @@ const HeroBanner: React.FC<HeroBannerProps> = ({ previewImage, bannerHeading }) 
                     <h2 className='text-[38px]  md:text-[56px] not-italic font-semibold text-white capitalize'>{bannerHeading}</h2>
                 </div>
             </Container>
+            <div className="hero-contact fixed right-10 bottom-10 cursor-pointer z-50">
+                <a href="#contact-us-form">
+                    <Image src="/images/lets-chat-icon.png" alt="hero-dots" width={66} height={66} />
+                </a>
+            </div>
         </section>
     );
 }

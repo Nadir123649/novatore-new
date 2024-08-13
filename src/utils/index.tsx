@@ -154,8 +154,7 @@ export { default as AnalyticsIcon } from "../../public/images/analyticsservice-i
 export { default as NetworkingIcon } from "../../public/images/networkingservice-icon.svg"
 export { default as StorageIcon } from "../../public/images/storageservice-icon.svg"
 export { default as ComprehensiveIcon } from "../../public/images/comprehensive-icon-1.svg"
-
-
+export { default as NovatoreText } from "../../public/images/Novatore-text-logo.svg"
 
 
 

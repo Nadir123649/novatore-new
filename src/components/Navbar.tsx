@@ -6,7 +6,8 @@ import SearchMenu from "./SearchMenu";
 import { IoCloseOutline } from "react-icons/io5";
 import { MdKeyboardArrowRight, MdKeyboardArrowLeft } from "react-icons/md";
 import { RiMenu3Fill } from "react-icons/ri";
-import { Novatorewhite } from "@/utils";
+import { Novatorewhite, NovatoreText } from "@/utils";
+import { BsSearch } from "react-icons/bs";
 
 const Navbar = () => {
   const [activeMenu, setActiveMenu] = useState<string | null>(null);
@@ -128,12 +129,13 @@ const Navbar = () => {
             onMouseEnter={() => setIsHovered(true)}
             onMouseLeave={() => setIsHovered(false)}
           >
-            <Image src="/images/logo.svg" alt="logo" width={43} height={43} />
+            <Image src="/images/logo.svg" alt="logo" width={45} height={45} />
             <Image
-              src={Novatorewhite}
+              // src={Novatorewhite}
+              src={NovatoreText}
               alt="logo"
               className={`${isHovered ? 'group-hover:block  animate-slide-in ' : ' animate-slide-out'
-                } hidden`}
+                } hidden pl-2`}
             />
           </Link>
           <ul className="nav-menu mb-0 pl-0 hidden md:flex flex-row gap-4 ml-8  ease-in-out duration-300 ">
@@ -141,10 +143,10 @@ const Navbar = () => {
               (menu, index) => (
                 <li
                   key={index}
-                  className={`nav-item text-lg not-italic font-normal ${activeMenu === menu.toLowerCase()
+                  className={`nav-item text-lg   ${activeMenu === menu.toLowerCase()
                     ? "text-[#2776EA] "
                     : "text-[#FFF]"
-                    } hover:text-[#2776EA]`}
+                    } hover:text-[#2776EA] `}
                   onClick={() => handleClick(menu)}
                   onMouseEnter={() => handleMouseEnter(menu)}
                 >
@@ -169,7 +171,7 @@ const Navbar = () => {
           <ul className="search-menu mb-0 pl-0 hidden md:flex flex-row gap-4 items-center">
             <li>
               <button
-                className="search-main rounded-2xl bg-custom-rgba py-[12px] px-[12px]"
+                className="search-main rounded-2xl bg-custom-rgba hover:bg-[#2776EA] py-[12px] px-[12px] "
                 onClick={handleSearchClick}
                 ref={searchRefDesktop}
               >
@@ -179,6 +181,8 @@ const Navbar = () => {
                   width={24}
                   height={24}
                 />
+                {/* <BsSearch /> */}
+
               </button>
             </li>
             <li>
