@@ -14,7 +14,7 @@ interface WhyChooseUsData {
 const WhyChooseUs: React.FC = () => {
   const { ref, inView } = useInView({
     triggerOnce: false,
-    threshold: 0.3,
+    threshold: 0.1,
   });
 
   const [isCounting, setIsCounting] = useState(false);
@@ -72,7 +72,7 @@ const WhyChooseUs: React.FC = () => {
                         {isCounting ? (
                           <CountUp
                             end={data.title}
-                            duration={4}
+                            duration={3}
                             easingFn={(t, b, c, d) => c * (t /= d) * t + b}
                           />
                         ) : (
