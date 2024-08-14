@@ -52,7 +52,7 @@ const CaseStudies = () => {
   const [isLastSlideVisible, setIsLastSlideVisible] = useState(false);
 
   const totalSlides = studies.length;
-  const slidesToShow = 2.08;
+  const slidesToShow = 2.35;
 
   const settings = {
     dots: false,
