@@ -26,7 +26,7 @@ const ServicesCard: React.FC<ServicesProps> = ({ backgroundimg, title, descripti
                         backgroundSize: hoverIndex === id ? "cover" : "initial",
                         backgroundPosition: hoverIndex === id ? "center" : "initial",
                     }}>
-                    <h3 className="font-bold mb-2 text-xl  text-center transition-transform duration-300 ease-in-out">
+                    <h3 className="font-bold mb-0 text-xl  text-center transition-transform duration-300 ease-in-out">
                         {title}
                     </h3>
                 </div>
