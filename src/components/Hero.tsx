@@ -3,6 +3,7 @@ import Slider from 'react-slick';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { slidesContent } from '@/constants/indesx';
+import { Tooltip, OverlayTrigger } from 'react-bootstrap';
 import Image from 'next/image';
 
 const Hero = () => {
@@ -46,9 +47,18 @@ const Hero = () => {
         ))}
       </Slider>
       <div className="hero-contact fixed right-10 bottom-10 cursor-pointer z-50">
-        <a href="#contact-us-form">
-          <Image src="/images/lets-chat-icon.png" alt="hero-dots" width={66} height={66} />
-        </a>
+        <OverlayTrigger
+          placement="top"
+          overlay={
+            <Tooltip id="tooltip-top">
+              Lets talk
+            </Tooltip>
+          }
+        >
+          <a href="#contact-us-form">
+            <Image src="/images/lets-chat-icon.png" alt="hero-dots" width={66} height={66} />
+          </a>
+        </OverlayTrigger>
       </div>
     </div>
   )

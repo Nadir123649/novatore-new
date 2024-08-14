@@ -21,8 +21,11 @@ const HeroBanner: React.FC<HeroBannerProps> = ({ previewImage, bannerHeading }) 
                 </div>
             </Container>
             <div className="hero-contact fixed right-10 bottom-10 cursor-pointer z-50">
-                <a href="#contact-us-form">
+                <a href="#contact-us-form" className="relative group">
                     <Image src="/images/lets-chat-icon.png" alt="hero-dots" width={66} height={66} />
+                    <div className="absolute -top-12 left-1/2 transform -translate-x-1/2 bg-gray-800 text-white text-sm px-2 py-1 rounded-md opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-opacity duration-300">
+                        Lets talk
+                    </div>
                 </a>
             </div>
         </section>

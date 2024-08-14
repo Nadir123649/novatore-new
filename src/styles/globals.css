@@ -321,3 +321,7 @@ input:-webkit-autofill:active {
 .megamenu-card ul li a:hover {
     text-decoration: underline !important;
 }
+
+.footer-section ul li a:hover {
+    text-decoration: underline !important;
+}

@@ -2,12 +2,8 @@ import React from 'react';
 import Slider from 'react-slick';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import Image from 'next/image';
 import { FaChevronLeft } from "react-icons/fa";
 import { FaChevronRight } from "react-icons/fa";
-import { FaArrowRight } from "react-icons/fa6";
-import Link from 'next/link';
-import { Profile } from '../utils'
 import { trendings } from '@/constants/indesx';
 import { useState, useEffect } from 'react';
 import { Col, Container } from 'react-bootstrap';
@@ -20,15 +16,16 @@ interface ArrowProps {
 
 const NextArrow: React.FC<ArrowProps> = ({ onClick, isDisabled }) => {
   return (
-
-    <div
-      onClick={onClick}
-      className={`arrow next flex justify-center items-center border-2 rounded-full p-2 cursor-pointer ${isDisabled
-        ? "text-[#dfd8d8] border-[#dfd8d8] cursor-not-allowed"
-        : "text-[#969696] border-[#969696]"
-        }`}
-    >
-      <FaChevronRight className="text-lg" />
+    <div className="group">
+      <div
+        onClick={onClick}
+        className={`arrow next flex justify-center items-center border-2 rounded-full p-2 cursor-pointer  ${isDisabled
+          ? "text-[#dfd8d8] border-[#dfd8d8] hover:bg-[#2776ea] hover:text-[#dfd8d8]  hover:border-transparent  "
+          : "text-[#969696] border-[#969696]"
+          }`}
+      >
+        <FaChevronRight className="text-lg" />
+      </div>
     </div>
 
   );
@@ -36,17 +33,17 @@ const NextArrow: React.FC<ArrowProps> = ({ onClick, isDisabled }) => {
 
 const PrevArrow: React.FC<ArrowProps> = ({ onClick, isDisabled }) => {
   return (
-
-    <div
-      onClick={onClick}
-      className={`arrow prev flex justify-center items-center border-2 rounded-full p-2 cursor-pointer ${isDisabled
-        ? "text-[#dfd8d8] border-[#dfd8d8] cursor-not-allowed"
-        : "text-[#969696] border-[#969696]"
-        }`}
-    >
-      <FaChevronLeft className="text-lg" />
+    <div className="group">
+      <div
+        onClick={onClick}
+        className={`arrow prev flex justify-center items-center border-2 rounded-full p-2 cursor-pointer   ${isDisabled
+          ? "text-[#dfd8d8] border-[#dfd8d8] hover:bg-[#2776ea] hover:text-[#dfd8d8]  hover:border-transparent "
+          : "text-[#969696] border-[#969696]"
+          }`}
+      >
+        <FaChevronLeft className="text-lg" />
+      </div>
     </div>
-
   );
 };
 
@@ -74,7 +71,7 @@ const TrendingNow = () => {
   const [isLastSlideVisible, setIsLastSlideVisible] = useState(false);
 
   const totalSlides = trendings.length;
-  const slidesToShow = 3;
+  const slidesToShow = 2.9;
 
   const settings = {
     dots: false,
@@ -139,13 +136,13 @@ const TrendingNow = () => {
   return (
     <section id='trending-slider-section' className={`${isVisible ? "fadeIn" : "opacity-0 "
       } trending-section py-20 bg-center bg-no-repeat bg-cover `}>
-      <Container>
+      <Container className='trending-container p-0'>
         <div className='flex justify-between items-center mb-4 pr-[140px]'>
           <h2 className='text-[#FFFFFF] font-semibold text-[26px] md:text-4xl'>Trending Now</h2>
         </div>
         <Slider {...settings} className="trending-slider mt-10">
           {trendings.map(trending => (
-            <Col key={trending.id} lg={6} md={6} xs={12}>
+            <Col key={trending.id} lg={12} md={6} xs={12} >
               <TrendingBlogsCards
                 id={trending.id}
                 title={trending.title}

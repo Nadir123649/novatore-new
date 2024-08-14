@@ -18,8 +18,13 @@ const Footer = () => {
                 <h3 className="text-[#FFF] text-[18px] not-italic mb-4 font-normal">Custom Software Development</h3>
                 <ul className='footer-links-list list-none p-0 m-0 flex flex-col  md:gap-[13px]'>
                   {customSoftware.map((data, index) => (
-                    <li key={index} >
-                      <a onClick={() => handleNavigation(data.link)} className='text-[#B5B5B5] text-[16px] font-normal not-italic'>{data.title}</a>
+                    <li key={index}>
+                      <a
+                        onClick={() => handleNavigation(data.link)}
+                        className='text-[#B5B5B5] text-[16px] font-normal not-italic transition-colors duration-300 hover:text-[#2776EA]'
+                      >
+                        {data.title}
+                      </a>
                     </li>
                   ))
                   }
@@ -28,7 +33,7 @@ const Footer = () => {
                 <ul className='footer-links-list list-none p-0 m-0 flex flex-col gap-[13px]'>
                   {itServices.map((data, index) => (
                     <li key={index} >
-                      <a onClick={() => handleNavigation(data.link)} className='text-[#B5B5B5] text-[16px] font-normal not-italic'>{data.title}</a>
+                      <a onClick={() => handleNavigation(data.link)} className='text-[#B5B5B5] text-[16px] font-normal not-italic transition-colors duration-300 hover:text-[#2776EA]'>{data.title}</a>
                     </li>
                   ))
                   }
@@ -41,7 +46,7 @@ const Footer = () => {
                 <ul className='footer-links-list list-none p-0 m-0 flex flex-col gap-[13px]'>
                   {realEstate.map((data, index) => (
                     <li key={index} >
-                      <a onClick={() => handleNavigation(data.link)} className='text-[#B5B5B5] text-[16px] font-normal not-italic'>{data.title}</a>
+                      <a onClick={() => handleNavigation(data.link)} className='text-[#B5B5B5] text-[16px] font-normal not-italic transition-colors duration-300 hover:text-[#2776EA]'>{data.title}</a>
                     </li>
                   ))
                   }
@@ -54,7 +59,7 @@ const Footer = () => {
                 <ul className='footer-links-list list-none p-0 m-0 flex flex-col gap-[13px]'>
                   {whitepapers.map((data, index) => (
                     <li key={index} >
-                      <a onClick={() => handleNavigation(data.link)} className='text-[#B5B5B5] text-[16px] font-normal not-italic'>{data.title}</a>
+                      <a onClick={() => handleNavigation(data.link)} className='text-[#B5B5B5] text-[16px] font-normal not-italic transition-colors duration-300 hover:text-[#2776EA]'>{data.title}</a>
                     </li>
                   ))
                   }
@@ -63,7 +68,7 @@ const Footer = () => {
                 <ul className='footer-links-list list-none p-0 m-0 flex flex-col gap-[13px]'>
                   {insightsData.map((data, index) => (
                     <li key={index} >
-                      <a onClick={() => handleNavigation(data.link)} className='text-[#B5B5B5] text-[16px] font-normal not-italic'>{data.title}</a>
+                      <a onClick={() => handleNavigation(data.link)} className='text-[#B5B5B5] text-[16px] font-normal not-italic transition-colors duration-300 hover:text-[#2776EA]'>{data.title}</a>
                     </li>
                   ))
                   }
@@ -76,7 +81,7 @@ const Footer = () => {
                 <ul className='footer-links-list list-none p-0 m-0 flex flex-col gap-[13px]'>
                   {eventsData.map((data, index) => (
                     <li key={index} >
-                      <a onClick={() => handleNavigation(data.link)} className='text-[#B5B5B5] text-[16px] font-normal not-italic'>{data.title}</a>
+                      <a onClick={() => handleNavigation(data.link)} className='text-[#B5B5B5] text-[16px] font-normal not-italic transition-colors duration-300 hover:text-[#2776EA]'>{data.title}</a>
                     </li>
                   ))
                   }
@@ -85,7 +90,7 @@ const Footer = () => {
                 <ul className='footer-links-list list-none p-0 m-0 flex flex-col gap-[13px]'>
                   {aboutData.map((data, index) => (
                     <li key={index} >
-                      <a onClick={() => handleNavigation(data.link)} className='text-[#B5B5B5] text-[16px] font-normal not-italic' >{data.title}</a>
+                      <a onClick={() => handleNavigation(data.link)} className='text-[#B5B5B5] text-[16px] font-normal not-italic transition-colors duration-300 hover:text-[#2776EA]' >{data.title}</a>
                     </li>
                   ))
                   }
@@ -98,7 +103,7 @@ const Footer = () => {
                 <ul className='footer-links-list list-none p-0 m-0 flex flex-col gap-[13px]'>
                   {careersData.map((data, index) => (
                     <li key={index} >
-                      <a onClick={() => handleNavigation(data.link)} className='text-[#B5B5B5] text-[16px] font-normal not-italic'>{data.title}</a>
+                      <a onClick={() => handleNavigation(data.link)} className='text-[#B5B5B5] text-[16px] font-normal not-italic transition-colors duration-300 hover:text-[#2776EA]'>{data.title}</a>
                     </li>
                   ))
                   }
@@ -107,7 +112,7 @@ const Footer = () => {
                 <ul className='footer-links-list list-none p-0 m-0 flex flex-col gap-[18px]'>
                   {socialData.map((data, index) => (
                     <li key={index} >
-                      <Link href={data.link} className='text-[#B5B5B5] text-[16px] font-normal not-italic flex flex-row gap-[16px] items-center ' rel="noopener noreferrer" target="_blank">
+                      <Link href={data.link} className='text-[#B5B5B5] text-[16px] font-normal not-italic flex flex-row gap-[16px] items-center transition-colors duration-300 hover:text-[#2776EA] ' rel="noopener noreferrer" target="_blank">
                         <span className=' rounded-[50px] border border-solid border-[#717171] w-[30px] h-[30px] flex justify-center items-center'>
                           {data.icon}
                         </span>
@@ -126,7 +131,7 @@ const Footer = () => {
             <ul className='footer-links-list list-none p-0 m-0 flex flex-col  md:flex-row justify-between gap-[13px]'>
               {siteMapData.map((data, index) => (
                 <li key={index} >
-                  <a onClick={() => handleNavigation(data.link)} className='text-[#B5B5B5] text-[16px] font-normal not-italic'>{data.title}</a>
+                  <a onClick={() => handleNavigation(data.link)} className='text-[#B5B5B5] text-[16px] font-normal not-italic transition-colors duration-300 hover:text-[#2776EA] hover:underline'>{data.title}</a>
                 </li>
               ))
               }
