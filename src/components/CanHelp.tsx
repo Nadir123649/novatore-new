@@ -9,7 +9,7 @@ const CanHelp = () => {
                     How can we
                     <span className='text-[#2776EA]'> help you</span>?
                 </h1>
-                <p className='text-[22px] font-lato not-italic leading-normal text-[#3F3F3F] font-light mb-[40px]'>Are you ready to push boundaries and explore new frontiers of innovation?</p>
+                <p className='text-[22px] not-italic leading-normal text-[#3F3F3F] font-light mb-[40px]'>Are you ready to push boundaries and explore new frontiers of innovation?</p>
                 <button className='bg-[#2776EA] rounded-[16px] py-[16px] px-[24px] text-white max-w-[225px] w-full text-[18px] '>Let’s work together</button>
             </Container>
         </section>

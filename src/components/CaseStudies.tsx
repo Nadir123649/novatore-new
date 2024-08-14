@@ -19,14 +19,15 @@ const NextArrow: React.FC<ArrowProps> = ({ onClick, isDisabled }) => {
     <div className="group">
       <div
         onClick={onClick}
-        className={`arrow next flex justify-center items-center border-2 rounded-full p-2 cursor-pointer ${isDisabled
-          ? "text-[#dfd8d8] border-[#dfd8d8] cursor-not-allowed"
+        className={`arrow next flex justify-center items-center border-2 rounded-full p-2 cursor-pointer hover:bg-[#2776ea] hover:text-white hover:border-[#00000000] ${isDisabled
+          ? "text-[#dfd8d8] border-[#dfd8d8] hover:bg-[#ffffff] hover:text-[#dfd8d8]  hover:border-[#dfd8d8]  "
           : "text-[#969696] border-[#969696]"
           }`}
       >
         <FaChevronRight className="text-lg" />
       </div>
     </div>
+
   );
 };
 
@@ -35,8 +36,8 @@ const PrevArrow: React.FC<ArrowProps> = ({ onClick, isDisabled }) => {
     <div className="group">
       <div
         onClick={onClick}
-        className={`arrow prev flex justify-center items-center border-2 rounded-full p-2 cursor-pointer ${isDisabled
-          ? "text-[#dfd8d8] border-[#dfd8d8] cursor-not-allowed"
+        className={`arrow prev flex justify-center items-center border-2 rounded-full p-2 cursor-pointer  hover:bg-[#2776ea] hover:text-white hover:border-[#00000000] ${isDisabled
+          ? "text-[#dfd8d8] border-[#dfd8d8] hover:bg-[#ffffff] hover:text-[#dfd8d8]  hover:border-[#dfd8d8]"
           : "text-[#969696] border-[#969696]"
           }`}
       >
@@ -45,7 +46,6 @@ const PrevArrow: React.FC<ArrowProps> = ({ onClick, isDisabled }) => {
     </div>
   );
 };
-
 
 const CaseStudies = () => {
   const [currentSlide, setCurrentSlide] = useState(0);

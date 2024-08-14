@@ -15,7 +15,7 @@ const MilestoneCard: React.FC<MilestoneCardProps> = ({ title, description, icon 
                 <Image src={icon} alt={title} width={65} height={65} />
             </div>
             <h3 className="text-[26px] not-italic  leading-normal font-semibold mb-2">{title}</h3>
-            <p className="text-[18px] font-lato font-normal leading-normal text-black max-w-[236px] mx-auto">{description}</p>
+            <p className="text-[18px] font-normal leading-normal text-black max-w-[236px] mx-auto">{description}</p>
         </div>
     );
 }

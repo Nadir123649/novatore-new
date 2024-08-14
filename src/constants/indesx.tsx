@@ -409,7 +409,9 @@ export const listingstable: any = {
                 { text: "Entertainment", link: '/' },
                 { text: "Gaming", link: '/' },
                 { text: "Healthcare", link: '/' },
-                { text: "Insurance", link: '/' }
+                { text: "Insurance", link: '/' },
+                { text: "Real Estate", link: '/' }, { text: "Retail", link: '/' }, { text: "Social", link: '/' }, { text: "Education", link: '/' }, { text: "Sports", link: '/' }
+
             ]
         }
     ]
@@ -425,7 +427,7 @@ export const featurestable: any = {
         { id: "News & Events ", link: "/", heading: "News & Events", details: [{ text: "Company News", link: '/' }, { text: "Industry Events", link: '/' }, { text: "Press Releases", link: '/' }] },
 
     ],
-    industries: [{ id: "Industries", link: "/", heading: "", details: [{ text: "Real Estate", link: '/' }, { text: "Retail", link: '/' }, { text: "Social", link: '/' }, { text: "Education", link: '/' }, { text: "Sports", link: '/' }] }]
+    // industries: [{ id: "Industries", link: "/", heading: "", details: [{ text: "Real Estate", link: '/' }, { text: "Retail", link: '/' }, { text: "Social", link: '/' }, { text: "Education", link: '/' }, { text: "Sports", link: '/' }] }]
 
 };
 

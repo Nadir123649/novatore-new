@@ -55,7 +55,7 @@ const WhyChooseUs: React.FC = () => {
         <Row>
           <Col lg={6} md={6} xs={12} className='flex flex-col justify-center'>
             <h2 className='text-[26px] md:text-5xl not-italic font-medium text-white mb-12'>Why Choose Us?</h2>
-            <p className='font-lato text-[17px] font-normal text-white max-w-[459px]'>
+            <p className='text-[17px] font-normal text-white max-w-[459px]'>
               We understand that choosing the right partner can make all the difference in achieving your goals. Our team, technology, and industry best practices deliver solutions that not only meet but exceed your expectations.
             </p>
             <button className='bg-[#2776EA] border-1 border-transparent hover:border-[#FFFFFF] rounded-[16px] py-[14px] px-[24px] text-[18px] text-white font-normal sm:mt-0 md:mt-8 cursor-pointer max-w-[152px] min-h-[54px] transition-all duration-300 hover:bg-transparent'>

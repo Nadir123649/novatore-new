@@ -15,15 +15,16 @@ interface ArrowProps {
 
 const NextArrow: React.FC<ArrowProps> = ({ onClick, isDisabled }) => {
   return (
-
-    <div
-      onClick={onClick}
-      className={`arrow next flex justify-center items-center border-2 rounded-full p-2 cursor-pointer ${isDisabled
-        ? "text-[#dfd8d8] border-[#dfd8d8] cursor-not-allowed"
-        : "text-[#969696] border-[#969696]"
-        }`}
-    >
-      <FaChevronRight className="text-lg" />
+    <div className="group">
+      <div
+        onClick={onClick}
+        className={`arrow next flex justify-center items-center border-2 rounded-full p-2 cursor-pointer hover:bg-[#2776ea] hover:text-white hover:border-[#00000000] ${isDisabled
+          ? "text-[#dfd8d8] border-[#dfd8d8] hover:bg-[#ecf1f4] hover:text-[#dfd8d8]  hover:border-[#dfd8d8]  "
+          : "text-[#969696] border-[#969696]"
+          }`}
+      >
+        <FaChevronRight className="text-lg" />
+      </div>
     </div>
 
   );
@@ -31,17 +32,17 @@ const NextArrow: React.FC<ArrowProps> = ({ onClick, isDisabled }) => {
 
 const PrevArrow: React.FC<ArrowProps> = ({ onClick, isDisabled }) => {
   return (
-
-    <div
-      onClick={onClick}
-      className={`arrow prev flex justify-center items-center border-2 rounded-full p-2 cursor-pointer ${isDisabled
-        ? "text-[#dfd8d8] border-[#dfd8d8] cursor-not-allowed"
-        : "text-[#969696] border-[#969696]"
-        }`}
-    >
-      <FaChevronLeft className="text-lg" />
+    <div className="group">
+      <div
+        onClick={onClick}
+        className={`arrow prev flex justify-center items-center border-2 rounded-full p-2 cursor-pointer  hover:bg-[#2776ea] hover:text-white hover:border-[#00000000] ${isDisabled
+          ? "text-[#dfd8d8] border-[#dfd8d8] hover:bg-[#ecf1f4] hover:text-[#dfd8d8]  hover:border-[#dfd8d8]"
+          : "text-[#969696] border-[#969696]"
+          }`}
+      >
+        <FaChevronLeft className="text-lg" />
+      </div>
     </div>
-
   );
 };
 
@@ -120,9 +121,9 @@ const Services = () => {
           <h2 className="text-gray-900 font-semibold text-[26px] md:text-4xl">
             What Can We Do For You?
           </h2>
-          <button className="border-1 border-[#969696] rounded-[36px] py-[12px] px-4 text-[#969696] text-[18px] mr-[120px] md:mr-[120px]">
+          {/* <button className="border-1 border-[#969696] rounded-[36px] py-[12px] px-4 text-[#969696] text-[18px] mr-[120px] md:mr-[120px]">
             All Services
-          </button>
+          </button> */}
         </div>
         <Slider {...settings} className="services-slider">
           {services.map((service) => (

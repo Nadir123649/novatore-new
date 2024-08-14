@@ -64,7 +64,7 @@ const ExpertServices: FC<ExpertServicesProps> = ({
                                 {needsTitle} <span className='text-[#2776EA]'>{needsTitleBlue}</span>
                                 {needsMoreTitle ? <span> {needsMoreTitle}</span> : null}
                             </h2>
-                            <p className='text-black font-lato text-base md:text-[20px] not-italic font-normal leading-6 md:leading-[30px] max-w-[622px] text-left md:text-justify'>
+                            <p className='text-black text-base md:text-[20px] not-italic font-normal leading-6 md:leading-[30px] max-w-[622px] text-left md:text-justify'>
                                 {needsDescription}
                             </p>
                         </div>

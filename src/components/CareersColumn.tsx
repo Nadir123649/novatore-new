@@ -13,7 +13,7 @@ const CareersColumn = () => {
                         <h2 className='text-[#1B232E] text-[42px] not-italic font-bold leading-normal mb-[18px] capitalize'>
                             We are from <span className='text-[#2776EA]'>the people</span>
                         </h2>
-                        <p className='text-black font-lato text-[20px] not-italic font-normal leading-[30px]'>
+                        <p className='text-black text-[20px] not-italic font-normal leading-[30px]'>
                             We are a team of 6500+ people – with a purpose to
                             thrive in our value-driven culture and make a real and lasting difference
                             to the organization and their careers.

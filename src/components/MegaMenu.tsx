@@ -32,7 +32,7 @@ const MegaMenu: React.FC<MegaMenuProps> = ({ activeMenu }) => {
             {filteredListings.map((listing: { id: React.Key | null | undefined; heading: any | number | bigint | boolean | React.ReactElement<any, any | React.JSXElementConstructor<any>> | Iterable<React.ReactNode> | React.ReactPortal | Promise<React.AwaitedReactNode> | null | undefined; link: any | null | undefined; details: { text: string; link: string }[]; }) => (
               <div key={listing.id} className="d-flex flex-col">
                 <a onClick={() => handleNavigation(listing.link)} >
-                  <h1 className="font-semibold text-lg text-[#2776EA] text-[18px] pt-2">{listing.heading}</h1>
+                  <h1 className="font-semibold text-lg text-[#2776EA] text-[18px] pt-2 hover:text-[#0a58ca]">{listing.heading}</h1>
                 </a>
 
                 <ul className="list-none px-0">
@@ -56,7 +56,7 @@ const MegaMenu: React.FC<MegaMenuProps> = ({ activeMenu }) => {
               <div key={feature.id} className="d-flex flex-col">
                 <a onClick={() => handleNavigation(feature.link)}>
                   {feature.heading ? (
-                    <h1 className="font-semibold text-lg text-[#2776EA] pt-2">
+                    <h1 className="font-semibold text-lg text-[#2776EA] pt-2 hover:text-[#0a58ca]">
                       {feature.heading}
                     </h1>
                   ) : (
@@ -84,7 +84,7 @@ const MegaMenu: React.FC<MegaMenuProps> = ({ activeMenu }) => {
               {data.map((list) => (
                 <div key={list.id} className="d-flex flex-col">
                   <a onClick={() => handleNavigation(list.link)} >
-                    <h1 className="font-semibold text-lg text-[#2776EA]  pt-[14px]">
+                    <h1 className="font-semibold text-lg text-[#2776EA]  pt-[14px] hover:text-[#0a58ca]">
                       {list.heading}
                     </h1>
                   </a>
@@ -109,7 +109,7 @@ const MegaMenu: React.FC<MegaMenuProps> = ({ activeMenu }) => {
               {filteredMenuItems.map((item) => (
                 <div key={item.id} className="py-3 d-flex flex-col">
                   <Link href="/">
-                    <h1 className="font-semibold text-[22px]">{item.title}</h1>
+                    <h1 className="font-semibold text-[22px] text-[#2776EA] hover:text-[#0a58ca] ">{item.title}</h1>
                   </Link>
                   <Image
                     src={item.img}
@@ -118,7 +118,7 @@ const MegaMenu: React.FC<MegaMenuProps> = ({ activeMenu }) => {
                   />
                   <p className="max-w-[280px]">{item.description}</p>
                   <a onClick={() => handleNavigation(item.url)}
-                    className="text-blue-500 underline font-medium"> Learn More</a>
+                    className="text-[#2776EA] underline font-medium "> <p className=" hover:underline hover:text-[#0a58ca] m-0 p-0">Learn More</p></a>
                 </div>
               ))}
             </div>
