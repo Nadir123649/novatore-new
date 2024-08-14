@@ -129,7 +129,6 @@ const Navbar = () => {
             onMouseEnter={() => setIsHovered(true)}
             onMouseLeave={() => setIsHovered(false)}
           >
-            {/* <Image src="/images/logo.svg" alt="logo" width={45} height={45} /> */}
             <Image src={NovatoreIcon} alt="logo" width={45} height={45} />
             <Image
               src={NovatoreText}
@@ -138,15 +137,15 @@ const Navbar = () => {
                 } hidden pl-2`}
             />
           </Link>
-          <ul className="nav-menu mb-0 pl-0 hidden md:flex flex-row gap-4 ml-8 ease-in-out  ">
+          <ul className="nav-menu mb-0 pl-0 hidden md:flex flex-row ml-8 gap-4 ease-in-out  ">
             {["Services", "Industries", "Insights", "About", "Careers"].map(
               (menu, index) => (
                 <li
                   key={index}
-                  className={`nav-item text-lg font-bold  ${activeMenu === menu.toLowerCase()
-                    ? "text-[#2776EA] font-bold  ease-in-out duration-300"
+                  className={`nav-item text-lg font-normal w-90px  ${activeMenu === menu.toLowerCase()
+                    ? "text-[#2776EA] font-normal"
                     : "text-[#FFF] font-normal"
-                    } hover:text-[#2776EA] hover:font-bold  hover:ease-in-out `}
+                    } hover:text-[#2776EA] hover:font-noraml`}
                   onClick={() => handleClick(menu)}
                   onMouseEnter={() => handleMouseEnter(menu)}
                 >
