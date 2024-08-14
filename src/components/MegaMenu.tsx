@@ -25,7 +25,7 @@ const MegaMenu: React.FC<MegaMenuProps> = ({ activeMenu }) => {
 
   return (
     <div className="relative megamenu-card ease-in-out duration-300">
-      <Container className=" bg-white sm:rounded-none md:rounded-2xl ease-in-out duration-300  h-[480px] md:h-auto sm:border:none p-0">
+      <Container className=" bg-white sm:rounded-none md:rounded-2xl ease-in-out duration-300  h-[480px] md:h-auto sm:border:none ">
         <div className="grid grid-cols-12 gap-4">
           {/* section first  */}
           <div className="pl-4 sm:py-0 md:py-3 col-span-12 md:col-span-4 ">

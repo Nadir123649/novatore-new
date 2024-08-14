@@ -201,7 +201,7 @@ const Navbar = () => {
       <button
         className={`search-menu-container ${searchMenuOpen ? "active" : ""
           } md:flex hidden`}
-        ref={searchRefDesktop} // Use ref for button
+        ref={searchRefDesktop}
       >
         {searchMenuOpen && <SearchMenu />}
       </button>
