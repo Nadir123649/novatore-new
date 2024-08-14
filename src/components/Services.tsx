@@ -89,7 +89,7 @@ const Services = () => {
           slidesToScroll: 1,
           infinite: true,
           dots: true,
-        },
+        }, 
       },
       {
         breakpoint: 600,

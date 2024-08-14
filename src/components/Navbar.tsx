@@ -117,7 +117,7 @@ const Navbar = () => {
   const [isHovered, setIsHovered] = useState(false);
   return (
     <nav
-      className={`navigation-menu-container fixed inset-x-0 top-0 z-50 h-[100px] w-full flex items-center transition-transform duration-300
+      className={`navigation-menu-container fixed inset-x-0 top-0 z-50 h-[80px] w-full flex items-center transition-transform duration-300
          ${isScrolled ? "bg-imagr-black" : "bg-transparent"
         } ${isHeaderVisible ? "transform-none" : "-translate-y-full"}`}
     >
@@ -193,7 +193,7 @@ const Navbar = () => {
       </div>
       <div
         ref={menuRef}
-        className={`absolute top-[95px] left-[0] right-0 w-[86%] mx-auto mega-menu-container  ${activeMenu ? "active" : ""
+        className={`absolute top-[95px] left-[0] right-0 container  mega-menu-container  ${activeMenu ? "active" : ""
           }`}
       >
         {activeMenu && <MegaMenu activeMenu={activeMenu} />}
