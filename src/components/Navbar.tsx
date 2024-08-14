@@ -138,21 +138,21 @@ const Navbar = () => {
                 } hidden pl-2`}
             />
           </Link>
-          <ul className="nav-menu mb-0 pl-0 hidden md:flex flex-row gap-4 ml-8 ease-in-out  ">
+          <ul className="nav-menu mb-0 pl-0 hidden md:flex flex-row gap-4 ml-8">
             {["Services", "Industries", "Insights", "About", "Careers"].map(
               (menu, index) => (
                 <li
                   key={index}
                   className={`nav-item text-lg font-bold  ${activeMenu === menu.toLowerCase()
-                    ? "text-[#2776EA] font-bold  ease-in-out duration-300"
-                    : "text-[#FFF] font-normal"
-                    } hover:text-[#2776EA] hover:font-bold  hover:ease-in-out `}
+                    ? "text-[#2776EA] font-[570]"
+                    : "text-[#FFF]  font-[400]"
+                    } hover:text-[#2776EA] hover:font-[570]`}
                   onClick={() => handleClick(menu)}
                   onMouseEnter={() => handleMouseEnter(menu)}
                 >
                   <Link
                     href=""
-                    className="nav-link text-[#fff] active:text-[#2776EA]"
+                    className="nav-link text-[#fff] active:text-[#2776EA] "
                   >
                     {menu}
                   </Link>
