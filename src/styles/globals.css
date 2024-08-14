@@ -331,5 +331,5 @@ input:-webkit-autofill:active {
 .custom-checkbox input[type="checkbox"]:focus {
     outline: none;
     box-shadow: none;
-    border: none;
+    border: 1px solid #B7B7B7;
   }
