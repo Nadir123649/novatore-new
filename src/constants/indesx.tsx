@@ -13,42 +13,42 @@ export const services = [
         id: 1,
         title: 'Digital Services',
         description: 'From consulting to product enngineering, we provide the best digital solutions.',
-        backgroundimg: "/images/DigitalService.png",
+        backgroundimg: "/images/digital-services-new.png",
         link: "/digital-service"
     },
     {
         id: 2,
         title: 'Data',
         description: 'Expertise in data science to drive your business forward.',
-        backgroundimg: "/images/data.png",
+        backgroundimg: "/images/Data-new.png",
         link: "/data"
     },
     {
         id: 3,
         title: 'Cloud',
         description: 'Smoothen your operations with AWS, Azure, and GCP.',
-        backgroundimg: "/images/cloudService.png",
+        backgroundimg: "/images/Cloud-new.png",
         link: "/cloud-services"
     },
     {
         id: 4,
         title: 'Artificial Intelligence',
         description: 'Innovative AI solutions, generative models, and machine learning.',
-        backgroundimg: "/images/AI.png",
+        backgroundimg: "/images/Artificial-intelligence-new.png",
         link: "/artificial-Intelligence"
     },
     {
         id: 5,
         title: 'Amazon',
         description: 'Complete solutions including storage, networking, and analytics services.',
-        backgroundimg: "/images/amazonService.png",
+        backgroundimg: "/images/Amazon-web-services-new.png",
         link: "/amazon-web-services"
     },
     {
         id: 6,
         title: 'Cyber Security',
         description: 'Protect your business with governance, data privacy, and penetration testing.',
-        backgroundimg: "/images/cyberSecurity.png",
+        backgroundimg: "/images/Cyber-security-new.png",
         link: "/cyber-security"
     },
 ];
