@@ -143,7 +143,7 @@ const Navbar = () => {
               (menu, index) => (
                 <li
                   key={index}
-                  className={`nav-item text-lg font-bold  ${activeMenu === menu.toLowerCase()
+                  className={`nav-item text-lg font-[400]  ${activeMenu === menu.toLowerCase()
                     ? "text-[#2776EA] font-[570]"
                     : "text-[#FFF]  font-[400]"
                     } hover:text-[#2776EA] hover:font-[570]`}
