@@ -181,7 +181,7 @@ export const milestones = [
 export const trendings = [
     {
         id: 1,
-        title: 'Virtual Assistants And How They Change Customer Service',
+        title: 'Virtual Assistants And How Customer Service',
         banner: BlogBannerOne,
         date: 'JANUARY 12, 2022',
         user: 'By JOHN DOE',

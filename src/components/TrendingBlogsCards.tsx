@@ -17,8 +17,8 @@ interface TrendingBlogsProps {
 const TrendingBlogsCards: React.FC<TrendingBlogsProps> = ({ banner, title, description, user, link, date }) => {
     return (
         <div className="services-box flex mr-10 flex-col relative cursor-pointer h-[550px] max-w-[390px]  w-full rounded-[16px] bg-[#F6F6F6] p-0 transition-all duration-300 hover:shadow-lg">
-            <Image src={banner} alt="service" className="w-full h-[280px] object-cover rounded-tl-[16px] rounded-tr-[16px] p-0" />
-            <div className="px-[24px] py-[20px] card-group">
+            <Image src={banner} alt="service" className="w-full h-[260px] object-cover rounded-tl-[16px] rounded-tr-[16px] p-0" />
+            <div className="px-[24px] py-[16px] card-group">
                 <div className="d-flex gap-3 items-center">
                     <div className="bg-[#2776EA] rounded-2xl text-white px-3 py-2 min-w-[140px] text-xs text-center">{date}</div>
                     <Image src={Profile} alt="profile" width={16} height={16} />

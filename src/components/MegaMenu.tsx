@@ -84,7 +84,7 @@ const MegaMenu: React.FC<MegaMenuProps> = ({ activeMenu }) => {
               {data.map((list) => (
                 <div key={list.id} className="d-flex flex-col">
                   <a onClick={() => handleNavigation(list.link)} >
-                    <h1 className="font-semibold text-lg text-[#2776EA]  pt-[14px] hover:text-[#0a58ca]">
+                    <h1 className="font-semibold text-lg text-[#2776EA]  pt-[9px] hover:text-[#0a58ca]">
                       {list.heading}
                     </h1>
                   </a>
@@ -92,7 +92,7 @@ const MegaMenu: React.FC<MegaMenuProps> = ({ activeMenu }) => {
                     {list.items.map((item, index) => (
                       <li
                         key={index}
-                        className=" text-[#4F4F4F] cursor-pointer hover:text-[#2776EA]"
+                        className=" pt-1 text-[#4F4F4F] cursor-pointer hover:text-[#2776EA]"
                       >
 
                         <a onClick={() => handleNavigation(item.link)} className="text-[#4F4F4F] hover:text-[#2776EA]">
