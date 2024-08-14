@@ -193,7 +193,7 @@ const Navbar = () => {
       </div>
       <div
         ref={menuRef}
-        className={`absolute top-[95px] left-[0] right-0 container  mega-menu-container  ${activeMenu ? "active" : ""
+        className={`absolute top-[95px] left-[0] right-0 container  mega-menu-container p-0  ${activeMenu ? "active" : ""
           }`}
       >
         {activeMenu && <MegaMenu activeMenu={activeMenu} />}
