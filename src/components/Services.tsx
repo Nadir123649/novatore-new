@@ -67,7 +67,7 @@ const Services = () => {
       setCurrentSlide(current);
       // Check if the last slide is fully visible
       if (current >= totalSlides - slidesToShow) {
-      setIsLastSlideVisible(true);
+        setIsLastSlideVisible(true);
       } else {
         setIsLastSlideVisible(false);
       }
