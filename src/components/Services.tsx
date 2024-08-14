@@ -12,47 +12,45 @@ interface ArrowProps {
   onClick?: React.MouseEventHandler<HTMLDivElement>;
   isDisabled?: boolean;
 }
+
 const NextArrow: React.FC<ArrowProps> = ({ onClick, isDisabled }) => {
   return (
-    <div className="group">
-      <div
-        onClick={onClick}
-        className={`arrow next flex justify-center items-center border-2 rounded-full p-2 cursor-pointer ${isDisabled
-          ? "text-[#dfd8d8] border-[#dfd8d8]"
-          : "text-[#969696] border-[#969696]"
-          }`}
-      >
-        <FaChevronRight className="text-lg" />
-      </div>
+
+    <div
+      onClick={onClick}
+      className={`arrow next flex justify-center items-center border-2 rounded-full p-2 cursor-pointer ${isDisabled
+        ? "text-[#dfd8d8] border-[#dfd8d8] cursor-not-allowed"
+        : "text-[#969696] border-[#969696]"
+        }`}
+    >
+      <FaChevronRight className="text-lg" />
     </div>
+
   );
 };
 
 const PrevArrow: React.FC<ArrowProps> = ({ onClick, isDisabled }) => {
   return (
-    <div className="group">
-      <div
-        onClick={onClick}
-        className={`arrow prev flex justify-center items-center border-2 rounded-full p-2 cursor-pointer ${isDisabled
-          ? "text-[#dfd8d8] border-[#dfd8d8]"
-          : "text-[#969696] border-[#969696]"
-          }`}
-      >
-        <FaChevronLeft className="text-lg" />
-      </div>
+
+    <div
+      onClick={onClick}
+      className={`arrow prev flex justify-center items-center border-2 rounded-full p-2 cursor-pointer ${isDisabled
+        ? "text-[#dfd8d8] border-[#dfd8d8] cursor-not-allowed"
+        : "text-[#969696] border-[#969696]"
+        }`}
+    >
+      <FaChevronLeft className="text-lg" />
     </div>
+
   );
 };
 
 const Services = () => {
-  const [isVisible, setIsVisible] = useState(false);
   const [currentSlide, setCurrentSlide] = useState(0);
+  const [isLastSlideVisible, setIsLastSlideVisible] = useState(false);
 
   const totalSlides = services.length;
   const slidesToShow = 3.3;
-
-  // Calculate the last index where the next arrow should be disabled
-  const lastIndex = totalSlides - Math.ceil(slidesToShow);
 
   const settings = {
     dots: false,
@@ -61,9 +59,17 @@ const Services = () => {
     slidesToShow: slidesToShow,
     slidesToScroll: 1,
     centerMode: false,
-    nextArrow: <NextArrow isDisabled={currentSlide >= lastIndex} />,
+    nextArrow: <NextArrow isDisabled={isLastSlideVisible} />,
     prevArrow: <PrevArrow isDisabled={currentSlide === 0} />,
-    afterChange: (current: number) => setCurrentSlide(current),
+    afterChange: (current: number) => {
+      setCurrentSlide(current);
+      // Check if the last slide is fully visible
+      if (current >= totalSlides - slidesToShow) {
+        setIsLastSlideVisible(true);
+      } else {
+        setIsLastSlideVisible(false);
+      }
+    },
     responsive: [
       {
         breakpoint: 1024,
@@ -104,26 +110,10 @@ const Services = () => {
     ],
   };
 
-  const handleScroll = () => {
-    const element = document.getElementById("service-slider-section");
-    if (element) {
-      const rect = element.getBoundingClientRect();
-      setIsVisible(rect.top <= window.innerHeight * 0.75);
-    }
-  };
-
-  useEffect(() => {
-    window.addEventListener("scroll", handleScroll);
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
-
   return (
     <section
       id="service-slider-section"
-      className={`${isVisible ? "fadeIn" : "opacity-0"
-        } services-section py-20 bg-center bg-no-repeat bg-cover`}
+      className="services-section py-20 bg-center bg-no-repeat bg-cover"
     >
       <Container>
         <div className="flex flex-col md:flex-row justify-between items-start md:items-center mb-4">

@@ -15,66 +15,44 @@ import TrendingBlogsCards from './TrendingBlogsCards';
 
 interface ArrowProps {
   onClick?: React.MouseEventHandler<HTMLDivElement>;
+  isDisabled?: boolean;
 }
 
-const NextArrow: React.FC<ArrowProps> = ({ onClick }) => {
+const NextArrow: React.FC<ArrowProps> = ({ onClick, isDisabled }) => {
   return (
-    <div className='group'>
-      <div onClick={onClick} className="arrow next group-hover:border-transparent group-hover:bg-[#2776EA]">
-        <span className="text-[#969696] text-lg group-hover:text-white" ><FaChevronRight /></span>
-      </div>
+
+    <div
+      onClick={onClick}
+      className={`arrow next flex justify-center items-center border-2 rounded-full p-2 cursor-pointer ${isDisabled
+        ? "text-[#dfd8d8] border-[#dfd8d8] cursor-not-allowed"
+        : "text-[#969696] border-[#969696]"
+        }`}
+    >
+      <FaChevronRight className="text-lg" />
     </div>
+
   );
 };
 
-const PrevArrow: React.FC<ArrowProps> = ({ onClick }) => {
+const PrevArrow: React.FC<ArrowProps> = ({ onClick, isDisabled }) => {
   return (
-    <div className='group'>
-      <div onClick={onClick} className="arrow prev group-hover:border-transparent group-hover:bg-[#2776EA]">
-        <span className="text-[#969696] text-lg group-hover:text-white" ><FaChevronLeft /></span>
-      </div>
+
+    <div
+      onClick={onClick}
+      className={`arrow prev flex justify-center items-center border-2 rounded-full p-2 cursor-pointer ${isDisabled
+        ? "text-[#dfd8d8] border-[#dfd8d8] cursor-not-allowed"
+        : "text-[#969696] border-[#969696]"
+        }`}
+    >
+      <FaChevronLeft className="text-lg" />
     </div>
+
   );
 };
 
 
 
 const TrendingNow = () => {
-  const settings = {
-    dots: false,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 2.97,
-    slidesToScroll: 1,
-    nextArrow: <NextArrow />,
-    prevArrow: <PrevArrow />,
-    responsive: [
-      {
-        breakpoint: 1024,
-        settings: {
-          slidesToShow: 3,
-          slidesToScroll: 1,
-          infinite: true,
-          dots: true
-        }
-      },
-      {
-        breakpoint: 600,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 1
-        }
-      },
-      {
-        breakpoint: 480,
-        settings: {
-          slidesToShow: 1.02,
-          slidesToScroll: 1
-        }
-      }
-    ]
-  };
-
   const [isVisible, setIsVisible] = useState(false);
 
   const handleScroll = () => {
@@ -91,6 +69,71 @@ const TrendingNow = () => {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
+
+  const [currentSlide, setCurrentSlide] = useState(0);
+  const [isLastSlideVisible, setIsLastSlideVisible] = useState(false);
+
+  const totalSlides = trendings.length;
+  const slidesToShow = 3;
+
+  const settings = {
+    dots: false,
+    infinite: false,
+    speed: 500,
+    slidesToShow: slidesToShow,
+    slidesToScroll: 1,
+    centerMode: false,
+    prevArrow: <PrevArrow isDisabled={isLastSlideVisible} />,
+    nextArrow: <NextArrow isDisabled={currentSlide === 0} />,
+    afterChange: (current: number) => {
+      setCurrentSlide(current);
+      // Check if the last slide is fully visible
+      if (current >= totalSlides - slidesToShow) {
+        setIsLastSlideVisible(true);
+      } else {
+        setIsLastSlideVisible(false);
+      }
+    },
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          centerMode: false,
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: true,
+        },
+      },
+      {
+        breakpoint: 750,
+        settings: {
+          centerMode: true,
+          slidesToShow: 1.2,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: true,
+        },
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          centerMode: false,
+        },
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          centerMode: false,
+        },
+      },
+    ],
+  };
+
 
 
   return (
