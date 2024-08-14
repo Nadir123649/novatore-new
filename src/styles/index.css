@@ -24,6 +24,7 @@ body {
   background-image: url(../../public/images/menu-bg-left.png), url(../../public/images/menu-bg-right.png);
   background-repeat: no-repeat, no-repeat;
   background-position: left center, right center;
+  border-radius: 16px;
 }
 
 /* mega menu animations */

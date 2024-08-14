@@ -6,26 +6,26 @@ import { useState, useEffect } from 'react';
 
 const ContactForm = () => {
     // animation state on view 
-const [isVisible, setIsVisible] = useState(false);
+    const [isVisible, setIsVisible] = useState(false);
 
-const handleScroll = () => {
-    const element = document.getElementById("contact-us-form");
-    if (element) {
-        const rect = element.getBoundingClientRect();
-        setIsVisible(rect.top <= window.innerHeight * 0.75);
-    }
-};
-
-useEffect(() => {
-    window.addEventListener("scroll", handleScroll);
-    return () => {
-        window.removeEventListener("scroll", handleScroll);
+    const handleScroll = () => {
+        const element = document.getElementById("contact-us-form");
+        if (element) {
+            const rect = element.getBoundingClientRect();
+            setIsVisible(rect.top <= window.innerHeight * 0.75);
+        }
     };
-}, []);
+
+    useEffect(() => {
+        window.addEventListener("scroll", handleScroll);
+        return () => {
+            window.removeEventListener("scroll", handleScroll);
+        };
+    }, []);
 
     return (
         <section id='contact-us-form' className={`${isVisible ? "fadeIn" : "opacity-0 "
-        } contact-form-section py-10 md:py-20 bg-center bg-no-repeat bg-cover`}>
+            } contact-form-section py-10 md:py-20 bg-center bg-no-repeat bg-cover`}>
             <div className='layer-form bg-center bg-no-repeat mx-5 bg-cover rounded-[16px] sm:pb-[140px] md:py-[60px]'>
                 <Container>
                     <Row>
@@ -112,12 +112,12 @@ useEffect(() => {
                                             <Form.Check
                                                 type="checkbox"
                                                 label="Check here to subscribe for updates."
-                                                className="my-2 text-[#645555] text-[18px] font-medium not-italic"
+                                                className="my-2 text-[#645555] text-[18px] font-medium not-italic custom-checkbox"
                                             />
                                         </Form.Group>
                                     </Col>
                                     <Col lg={12} md={12} xs={12} className='flex justify-end'>
-                                        <button className='btn-submit text-white text-[18px] font-normal not-italic bg-[#2776EA] rounded-[16px] py-[12px] md:py-[16px]  px-[14px] md:px-[24px]  max-w-[180px] w-full'>
+                                        <button className='btn-submit text-white text-[18px] font-normal not-italic bg-[#2776EA] rounded-[16px] py-[12px] md:py-[16px]  px-[14px] md:px-[24px]  max-w-[180px] w-full border border-solid border-[#B7B7B7]'>
                                             Submit
                                         </button>
                                     </Col>

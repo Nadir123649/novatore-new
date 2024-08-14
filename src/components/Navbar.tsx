@@ -303,7 +303,7 @@ const Navbar = () => {
             <IoCloseOutline />
           </button>
         </div>
-        <div className="p-4">
+        <div className="p-0">
           <SearchMenu mobileView={true} />
         </div>
       </div>
