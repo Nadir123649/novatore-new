@@ -26,6 +26,9 @@ body {
   background-position: left center, right center;
   border-radius: 16px;
 }
+.navbar-menu-card{
+  border-radius: 16px !important;
+}
 
 /* mega menu animations */
 .mega-menu-container {
