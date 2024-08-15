@@ -35,7 +35,6 @@ const TechStack: React.FC<BlogsProps> = ({ image, category, tag, title, link, ty
                 <Image src={awstile} alt="techstack" />
                 <Image src={azuretile} alt="techstack" />
                 <Image src={phptile} alt="techstack" />
-
             </div>
         </div>
 
