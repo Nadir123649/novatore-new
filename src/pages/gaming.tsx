@@ -1,0 +1,27 @@
+import Enterprise from "@/components/Enterprise";
+import HeroBanner from "@/components/HeroBanner";
+import Innovation from "@/components/Innovation";
+import ServicesNeeds from "@/components/ServicesNeeds";
+import { NextPage } from "next";
+import CloudOps from "@/components/CloudOps";
+import Layout from "@/components/Layout";
+import DataServicesSection from "@/components/DataServicesSection";
+import { GamingData } from "@/constants/indesx";
+
+const Gaming: NextPage = () => {
+    return (
+        <Layout title="Novatore Sols - Gaming" description="Welcome to Novatore Sols, setting new standards in technology with unmatchable code.">
+            <div className="overflow-x-hidden">
+                <HeroBanner bannerHeading="Novatore Solutions in Gaming" needsMoreTitle={true} previewImage="/images/gaming-banner.png" />
+                <ServicesNeeds needsTitle="Over " needsTitleBlue="10 Years" needsMoreTitle="of Expertise in Game Development" NeedsImage="/images/gaming-image-right.png"
+                    needsDescription="With over 10 years of dedicated experience in the gaming industry, we have successfully delivered over 50 projects, making us a leader in gaming technology solutions. Our expertise spans the full spectrum of gaming services, including game development, e-commerce platforms for gaming assets, and multiplayer solutions. We are committed to providing exceptional services that empower businesses to thrive in the fast-evolving gaming market." />
+                <CloudOps needsTitle="Why " needsTitleBlue=" Partner " needsMoreTitle=" with Us?" />
+                <DataServicesSection heading="Our " headingBlue="Gaming" needsMoreTitle=" Software Services" data={GamingData} />
+                <Enterprise />
+                <Innovation className="innovation-bg text-white" />
+            </div>
+        </Layout>
+    );
+};
+
+export default Gaming;

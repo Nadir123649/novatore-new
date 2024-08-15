@@ -10,7 +10,7 @@ interface DataServicesSectionProps {
     type?: any;
     data: {
         title: string;
-        description: string;
+        description?: string;
         icon: string;
         listItems?: string[];
     }[];

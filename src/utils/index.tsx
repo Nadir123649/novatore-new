@@ -160,6 +160,39 @@ export { default as BlogBannerOne } from "../../public/images/blogbanner-image-1
 export { default as BlogBannerTwo } from "../../public/images/blogbanner-image-2.png"
 export { default as BlogBannerThree } from "../../public/images/blogbanner-image-3.png"
 export { default as BlogBannerFour } from "../../public/images/blogbanner-image-1.png"
+export { default as CryptoOne } from "../../public/images/crypto-image-1.svg"
+export { default as CryptoTwo } from "../../public/images/crypto-image-2.svg"
+export { default as CryptoThree } from "../../public/images/crypto-image-3.svg"
+export { default as CryptoFour } from "../../public/images/crypto-image-4.svg"
+export { default as CryptoFive } from "../../public/images/crypto-image-5.svg"
+export { default as CryptoSix } from "../../public/images/crypto-image-6.svg"
+export { default as GamingOne } from "../../public/images/gaming-image-1.svg"
+export { default as GamingTwo } from "../../public/images/gaming-image-2.svg"
+export { default as GamingThree } from "../../public/images/gaming-image-3.svg"
+export { default as HealthCareOne } from "../../public/images/health-image-1.svg"
+export { default as HealthCareTwo } from "../../public/images/health-image-2.svg"
+export { default as HealthCareThree } from "../../public/images/health-image-3.svg"
+export { default as InsuranceOne } from "../../public/images/insurance-image-1.svg"
+export { default as InsuranceTwo } from "../../public/images/insurance-image-2.svg"
+export { default as InsuranceThree } from "../../public/images/insurance-image-3.svg"
+export { default as RealEstateOne } from "../../public/images/estate-image-1.svg"
+export { default as RealEstateTwo } from "../../public/images/estate-image-2.svg"
+export { default as RealEstateThree } from "../../public/images/estate-image-3.svg"
+export { default as RealEstateFour } from "../../public/images/estate-image-4.svg"
+export { default as RealEstateFive } from "../../public/images/estate-image-5.svg"
+export { default as RealEstateSix } from "../../public/images/estate-image-6.svg"
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

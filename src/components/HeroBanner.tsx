@@ -5,19 +5,25 @@ import { Container, Row } from 'react-bootstrap';
 interface HeroBannerProps {
     previewImage?: string;
     bannerHeading: string;
+    needsMoreTitle?: boolean;
 }
 
-const HeroBanner: React.FC<HeroBannerProps> = ({ previewImage, bannerHeading }) => {
+const HeroBanner: React.FC<HeroBannerProps> = ({ previewImage, bannerHeading, needsMoreTitle }) => {
     return (
         <section
-            className="hero-banner min-h-[50vh] md:min-h-[80vh] bg-cover bg-center bg-no-repeat"
+            className="hero-banner min-h-[50vh] md:min-h-[60vh] bg-cover bg-center bg-no-repeat"
             style={{
                 backgroundImage: `url(${previewImage ? previewImage : ""})`,
             }}
         >
-            <Container className=' min-h-[50vh] md:min-h-[80vh] flex items-center md:items-end  flex-row justify-start'>
-                <div className="content mb-[0px] md:mb-[80px]">
+            <Container className=' min-h-[50vh] md:min-h-[60vh] flex items-center md:items-end  flex-row justify-start'>
+                <div className="content mb-[0px] md:mb-[50px]">
                     <h2 className='text-[38px]  md:text-[56px] not-italic font-semibold text-white capitalize'>{bannerHeading}</h2>
+                    {needsMoreTitle ?
+                        <a href="#contact-us-form" className='learn-btn bg-none rounded-[16px] border-1 border-[#FFFFFF] hover:border-transparent  py-[14px] px-[24px] mt-[26px] transition-all duration-300 hover:bg-[#2776EA]  text-white'>
+                            Get In Touch
+                        </a> : null
+                    }
                 </div>
             </Container>
             <div className="hero-contact fixed right-10 bottom-10 cursor-pointer z-50">

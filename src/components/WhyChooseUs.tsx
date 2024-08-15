@@ -28,29 +28,10 @@ const WhyChooseUs: React.FC = () => {
   }, [inView]);
 
 
-  // animation state on view 
-  const [isVisible, setIsVisible] = useState(false);
-
-  const handleScroll = () => {
-    const element = document.getElementById("choose-us-slider");
-    if (element) {
-      const rect = element.getBoundingClientRect();
-      setIsVisible(rect.top <= window.innerHeight * 0.75);
-    }
-  };
-
-  useEffect(() => {
-    window.addEventListener("scroll", handleScroll);
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
-
 
 
   return (
-    <section id='choose-us-slider' ref={ref} className={`${isVisible ? "fadeIn" : "opacity-0 "
-      } choose-us-section py-20 bg-center bg-no-repeat bg-cover `}>
+    <section id='choose-us-slider' ref={ref} className="choose-us-section py-20 bg-center bg-no-repeat bg-cover"  >
       <Container>
         <Row>
           <Col lg={6} md={6} xs={12} className='flex flex-col justify-center'>

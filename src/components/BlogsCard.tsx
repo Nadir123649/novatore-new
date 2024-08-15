@@ -21,7 +21,7 @@ const BlogsCard: React.FC<BlogsProps> = ({ image, category, tag, title, link, ty
                 <span className="absolute bottom-[12px] left-[18px]  bg-[#000000BA] text-white text-[18px]  font-normal not-italic leading-normal capitalize px-2 py-2 rounded-[10px]">{category}</span>
             </div>
             <div className="px-6 pb-4 pt-[12px]">
-                <h3 className=" font-semibold text-[22px] leading-normal not-italic capitalize mb-2">{title}</h3>
+                <h3 className=" font-semibold text-[22px] leading-normal not-italic capitalize mb-2 text-black">{title}</h3>
                 <Link className="text-[#2776EA] underline text-[18px] not-italic font-normal leading-normal capitalize text-underline" href={link}>Read More</Link>
             </div>
         </div>

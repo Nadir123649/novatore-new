@@ -2,41 +2,36 @@ import React from 'react';
 import Slider from 'react-slick';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import Image from 'next/image';
-import { FaChevronLeft } from "react-icons/fa";
-import { FaChevronRight } from "react-icons/fa";
-import { FaArrowRight } from "react-icons/fa6";
-import Link from 'next/link';
-import { Profile } from '../utils'
-import { blogData } from '@/constants/indesx';
+import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 import BlogsCard from './BlogsCard';
-import { useState , useEffect } from 'react';
+import { blogData } from '@/constants/indesx'; // Make sure this path is correct
+import { useState, useEffect } from 'react';
 
 interface ArrowProps {
   onClick?: React.MouseEventHandler<HTMLDivElement>;
 }
 
-const NextArrow: React.FC<ArrowProps> = ({ onClick }) => {
-  return (
-    <div className='group'>
+interface InnovationProps {
+  className?: string;
+}
+
+const NextArrow: React.FC<ArrowProps> = ({ onClick }) => (
+  <div className='group'>
     <div onClick={onClick} className="arrow next group-hover:bg-[#2776EA] group-hover:border-transparent">
-      <span className="text-[#969696] text-lg group-hover:text-white" ><FaChevronRight /></span>
+      <span className="text-[#969696] text-lg group-hover:text-white"><FaChevronRight /></span>
     </div>
-    </div>
-  );
-};
+  </div>
+);
 
-const PrevArrow: React.FC<ArrowProps> = ({ onClick }) => {
-  return (
-    <div className='group'>
+const PrevArrow: React.FC<ArrowProps> = ({ onClick }) => (
+  <div className='group'>
     <div onClick={onClick} className="arrow prev group-hover:bg-[#2776EA] group-hover:border-transparent">
-      <span className="text-[#969696] text-lg group-hover:text-white" ><FaChevronLeft /></span>
+      <span className="text-[#969696] text-lg group-hover:text-white"><FaChevronLeft /></span>
     </div>
-    </div>
-  );
-};
+  </div>
+);
 
-const Innovation = () => {
+const Innovation: React.FC<InnovationProps> = ({ className }) => {
   const settings = {
     dots: false,
     infinite: true,
@@ -50,13 +45,12 @@ const Innovation = () => {
       {
         breakpoint: 1024,
         settings: {
-
           slidesToShow: 2.07,
           slidesToScroll: 1,
           infinite: true,
           centerMode: true,
-          dots: true
-        }
+          dots: true,
+        },
       },
       {
         breakpoint: 600,
@@ -64,47 +58,49 @@ const Innovation = () => {
           slidesToShow: 2,
           slidesToScroll: 1,
           centerMode: false,
-        }
+        },
       },
       {
         breakpoint: 480,
-
         settings: {
-          slidesToShow:1,
+          slidesToShow: 1,
           slidesToScroll: 1,
           centerMode: false,
-        }
-      }
-    ]
+        },
+      },
+    ],
   };
 
- // animation state on view 
- const [isVisible, setIsVisible] = useState(false);
+  const [isVisible, setIsVisible] = useState(false);
 
- const handleScroll = () => {
-     const element = document.getElementById("innovation-section");
-     if (element) {
-         const rect = element.getBoundingClientRect();
-         setIsVisible(rect.top <= window.innerHeight * 0.75);
-     }
- };
+  const handleScroll = () => {
+    const element = document.getElementById("innovation-section");
+    if (element) {
+      const rect = element.getBoundingClientRect();
+      setIsVisible(rect.top <= window.innerHeight * 0.75);
+    }
+  };
 
- useEffect(() => {
-     window.addEventListener("scroll", handleScroll);
-     return () => {
-         window.removeEventListener("scroll", handleScroll);
-     };
- }, []);
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
 
   return (
-    <section id='innovation-section' className={`${isVisible ? "fadeIn" : "opacity-0 "
-    } py-[20px] md:py-20 innovation-section  `}>
-      <div className="container ">
-        <div className='flex justify-between items-center pr-[0px]  md:pr-[140px] pb-[40px] md:pb-[0px]'>
-          <h2 className=' font-bold text-[26px] md:text-[40px] max-w-full md:max-w-[580px] '>Tech Expert Latest: Innovations In <span className='text-[#2776EA] '> Digital Enterprise</span></h2>
+    <section
+      id="innovation-section"
+      className={`${className} ${isVisible ? 'fadeIn' : 'opacity-0'} py-[20px] md:py-20 innovation-section`}
+    >
+      <div className="container">
+        <div className="flex justify-between items-center pr-[0px] md:pr-[140px] pb-[40px] md:pb-[0px]">
+          <h2 className="font-bold text-[26px] md:text-[40px] max-w-full md:max-w-[580px]">
+            Tech Expert Latest: Innovations In <span className="text-[#2776EA]">Digital Enterprise</span>
+          </h2>
         </div>
         <Slider {...settings} className="innovation-slider mt-10">
-          {blogData.map(blog => (
+          {blogData.map((blog) => (
             <BlogsCard
               key={blog.id}
               id={blog.id}
@@ -119,7 +115,7 @@ const Innovation = () => {
         </Slider>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default Innovation
+export default Innovation;

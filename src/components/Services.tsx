@@ -122,11 +122,8 @@ const Services = () => {
           <h2 className="text-gray-900 font-semibold text-[26px] md:text-4xl">
             What Can We Do For You?
           </h2>
-          {/* <button className="border-1 border-[#969696] rounded-[36px] py-[12px] px-4 text-[#969696] text-[18px] mr-[120px] md:mr-[120px]">
-            All Services
-          </button> */}
         </div>
-        <Slider {...settings} className="services-slider  ">
+        <Slider {...settings} className="services-slider">
           {services.map((service) => (
             <Col key={service.id} lg={6} md={6} xs={12} className="py-4">
               <ServicesCard

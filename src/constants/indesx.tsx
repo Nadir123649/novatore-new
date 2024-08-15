@@ -1,4 +1,4 @@
-import { AIOne, AITwo, AIThree, AIFour, AIFive, AISix, ComprehensiveIcon, StorageIcon, NetworkingIcon, AnalyticsIcon, CovaBg, dataautomation, AngelflowBg, CloudServiceicon, About, ComplianceAI, ApplicationCompliance, RedTeaming, webAppSecurity, SecurityAudits, NetworkSecurityTesting, GovernanceFramework, Dataprivacy, RiskManagement, Airbolt, ANGELFLOW, AngelLogo, Assistant, blogImageOne, blogImageTwo, Buisness, Career, Catalyst, ChooseFour, ChooseOne, ChooseThree, ChooseTwo, Cova, COVA, CovaLogo, Developer, Industries, Insights, London, Protium, Services, Upsure, DataImageOne, DataImageTwo, DataImageThree, DataImageFour, CloudOne, CloudTwo, CloudThree, CloudFour, AwsOne, AwsTwo, AwsThree, ImageOne, ImageTwo, ImageThree, CloudFive, CloudSix, DataImageFive, DataImageSix, CLOUD, Amazon, DATA, artificialIntelligence, Cybersecurity, DigitalService, AutomationOne, AutomationThree, AutomationFour, AutomationFive, AutomationSix, AutomationTwo, RemoteIT, ConsultingService, CloudService, HelpDesk, NetworkSecurity, SystemSupport, MigrationOne, MigrationTwo, MigrationThree, ProductFour, ProductThree, ProductTwo, ProductOne, ProductFive, ProductSix, ServicesSix, ServicesFive, ServicesFour, ServicesThree, ServicesTwo, ServicesOne, Vulnerability, CustomAnalyticsSix, CustomAnalyticsFive, CustomAnalyticsFour, CustomAnalyticsThree, CustomAnalyticsTwo, CustomAnalyticsOne, TransformThree, TransformTwo, TransformOne, TreeThree, TreeTwo, TreeOne, WebThree, WebTwo, WebOne, AutomationImageOne, AutomationImageTwo, AutomationImageThree, PresentOne, PresentTwo, PresentThree, PresentFour, PresentFive, PresentSix, ConsultingOne, ConsultingTwo, ConsultingThree, ConsultingFour, ConsultingFive, ConsultingSix, BlogBannerThree, BlogBannerTwo, BlogBannerOne, BlogBannerFour } from "@/utils";
+import { AIOne, AITwo, AIThree, AIFour, AIFive, AISix, ComprehensiveIcon, StorageIcon, NetworkingIcon, AnalyticsIcon, CovaBg, dataautomation, AngelflowBg, CloudServiceicon, About, ComplianceAI, ApplicationCompliance, RedTeaming, webAppSecurity, SecurityAudits, NetworkSecurityTesting, GovernanceFramework, Dataprivacy, RiskManagement, Airbolt, ANGELFLOW, AngelLogo, Assistant, blogImageOne, blogImageTwo, Buisness, Career, Catalyst, ChooseFour, ChooseOne, ChooseThree, ChooseTwo, Cova, COVA, CovaLogo, Developer, Industries, Insights, London, Protium, Services, Upsure, DataImageOne, DataImageTwo, DataImageThree, DataImageFour, CloudOne, CloudTwo, CloudThree, CloudFour, AwsOne, AwsTwo, AwsThree, ImageOne, ImageTwo, ImageThree, CloudFive, CloudSix, DataImageFive, DataImageSix, CLOUD, Amazon, DATA, artificialIntelligence, Cybersecurity, DigitalService, AutomationOne, AutomationThree, AutomationFour, AutomationFive, AutomationSix, AutomationTwo, RemoteIT, ConsultingService, CloudService, HelpDesk, NetworkSecurity, SystemSupport, MigrationOne, MigrationTwo, MigrationThree, ProductFour, ProductThree, ProductTwo, ProductOne, ProductFive, ProductSix, ServicesSix, ServicesFive, ServicesFour, ServicesThree, ServicesTwo, ServicesOne, Vulnerability, CustomAnalyticsSix, CustomAnalyticsFive, CustomAnalyticsFour, CustomAnalyticsThree, CustomAnalyticsTwo, CustomAnalyticsOne, TransformThree, TransformTwo, TransformOne, TreeThree, TreeTwo, TreeOne, WebThree, WebTwo, WebOne, AutomationImageOne, AutomationImageTwo, AutomationImageThree, PresentOne, PresentTwo, PresentThree, PresentFour, PresentFive, PresentSix, ConsultingOne, ConsultingTwo, ConsultingThree, ConsultingFour, ConsultingFive, ConsultingSix, BlogBannerThree, BlogBannerTwo, BlogBannerOne, BlogBannerFour, CryptoOne, CryptoTwo, CryptoFive, CryptoFour, CryptoThree, CryptoSix, GamingOne, GamingTwo, GamingThree, HealthCareOne, HealthCareTwo, HealthCareThree, InsuranceOne, InsuranceTwo, InsuranceThree, RealEstateOne, RealEstateTwo, RealEstateThree, RealEstateFour, RealEstateFive, RealEstateSix } from "@/utils";
 import { IoMdMail } from "react-icons/io";
 import { FaPhoneAlt } from "react-icons/fa";
 import { ImLocation } from "react-icons/im";
@@ -645,7 +645,6 @@ export const CloudData = [
     {
         title: 'Cloud Security Services',
         description: 'Protecting your cloud infrastructure with tailored security solutions.',
-
         icon: CloudFour,
     },
     {
@@ -653,6 +652,149 @@ export const CloudData = [
         description: 'We help you save on cloud expenses with cost-saving strategies.',
         icon: CloudFive,
     },
+];
+export const CryptoData = [
+    {
+        title: 'Blockchain Technology Integration',
+        icon: CryptoOne,
+    },
+    {
+        title: 'NFT Marketplace Development',
+        icon: CryptoTwo,
+    },
+    {
+        title: 'Crypto Wallet Development',
+        icon: CryptoThree,
+    },
+    {
+        title: 'DeFi Applications',
+        icon: CryptoFour,
+    },
+    {
+        title: 'Cryptocurrency News Platforms',
+        icon: CryptoFive,
+    },
+    {
+        title: 'Crypto Trading Platforms',
+        icon: CryptoSix,
+    },
+];
+export const GamingData = [
+    {
+        title: 'Custom Game Development',
+        icon: GamingOne,
+        listItems: [
+            'Game creation for PC, console, and mobile platforms.',
+            'Multiplayer game design and development.',
+        ]
+    },
+    {
+        title: 'E-commerce Platform Solutions',
+        icon: GamingTwo,
+        listItems: [
+            'Online marketplaces for gaming assets and services. ',
+            'Secure payment integration and cryptocurrency support.',
+        ]
+    },
+    {
+        title: 'Virtual and Augmented Reality Solutions',
+        icon: GamingThree,
+        listItems: [
+            'Immersive gaming experiences using VR and AR technologies.',
+            'Cross-platform compatibility and integration.',
+        ]
+    },
+
+];
+export const HealthCareData = [
+    {
+        title: 'Telemedicine Solutions',
+        icon: HealthCareOne,
+        listItems: [
+            'Virtual Consultation Platforms ',
+            'Remote Patient Monitoring',
+        ]
+    },
+    {
+        title: 'Patient Management Systems',
+        icon: HealthCareTwo,
+        listItems: [
+            'EHR and EMR Development ',
+            'Patient Engagement Tools',
+        ]
+    },
+    {
+        title: 'Health Information Systems',
+        icon: HealthCareThree,
+        listItems: [
+            'Data Analytics and Business Intelligence',
+            'Clinical Decision Support Systems',
+        ]
+    },
+
+];
+export const InsuranceData = [
+    {
+        title: 'Policy Management Systems',
+        icon: InsuranceOne,
+        listItems: [
+            'Automated Policy Handling',
+            'Claims Processing Solutions',
+        ]
+    },
+    {
+        title: 'AI and Analytics Platforms',
+        icon: InsuranceTwo,
+        listItems: [
+            'Predictive Analytics for Risk Management',
+            'Customer Behavior Analysis',
+        ]
+    },
+    {
+        title: 'Customer Engagement Solutions',
+        icon: InsuranceThree,
+        listItems: [
+            'Digital Insurance Portals',
+            'Chatbots and Virtual Assistants',
+        ]
+    },
+
+];
+export const RealEstateData = [
+    {
+        title: 'Custom Real Estate Software Development',
+        description: 'We create bespoke software solutions designed to meet the unique requirements of real estate businesses, from pro ',
+        icon:  RealEstateOne,      
+    },
+    {
+        title: 'Property Management Systems',
+        description: 'Our property management solutions help real estate firms manage their portfolios efficiently, with features like tenant tracking, lease management, and maintenance scheduling.',
+        icon: RealEstateTwo,
+    },
+    {
+        title: 'Real Estate Portal Development',
+        description: 'We build feature-rich real estate portals that facilitate seamless property search and transactions, equipped with advanced search filters, listing management, and user-friendly interfaces.',
+        icon: RealEstateThree,
+    },
+
+    {
+        title: 'Mobile App Development',
+        description: 'Our mobile applications provide on-the-go access to property listings, market trends, and client interactions, enhancing the experience for both agents and clients.',
+        icon: RealEstateFour,
+    },
+
+    {
+        title: 'AI and Machine Learning Integration',
+        description: 'We integrate AI and machine learning technologies to offer intelligent property recommendations, market analysis, and personalized user experiences. ',
+        icon: RealEstateFive,
+    },
+
+    {
+        title: 'Customer Engagement Solutions',
+        description: 'Digital Insurance Portals Chatbots and Virtual Assistants',
+        icon: RealEstateSix,
+    },
+
 ];
 export const AwsAutomationData = [
     {

@@ -4,7 +4,7 @@ import { Bordered, Drop } from '@/utils';
 
 interface DataCardProps {
     title: string;
-    description: string;
+    description?: string;
     icon: any;
     type?: any;
     listItems?: string[];

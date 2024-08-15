@@ -29,7 +29,7 @@ const ServicesCard: React.FC<ServicesProps> = ({ backgroundimg, title, descripti
                         backgroundPosition: 'center',
                     }}
                 >
-                    <div className='heading-container-layer flex justify-center items-center bg-[rgba(0,_0,_0,_0.35)] group-hover:bg-[rgba(0,_0,_0,_0.2)]  duration-300 ease-in-out'>
+                    <div className='heading-container-layer flex justify-center items-end pb-[20px] bg-[rgba(0,_0,_0,_0.35)] group-hover:bg-[rgba(0,_0,_0,_0.2)]  duration-300 ease-in-out'>
                         <h3 className="font-bold mb-0 text-[26px] group-hover:text-[#F9D00D] text-center transition-transform duration-300 ease-in-out">
                             {title}
                         </h3>

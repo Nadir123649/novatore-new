@@ -92,6 +92,11 @@ body {
 
 }
 
+.innovation-bg {
+  background-image: url(../../public/images/trending-bg.svg) !important;
+  background-color: #000000D4 !important;
+}
+
 .trending-section {
   background-image: url(../../public/images/trending-bg.svg) !important;
   background-color: #000000D4 !important;
@@ -107,9 +112,7 @@ body {
 }
 
 .slick-dots li {
-
   margin: 0 0px !important;
-
 }
 
 .slick-dots li button {
