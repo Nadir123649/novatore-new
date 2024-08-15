@@ -405,12 +405,12 @@ export const listingstable: any = {
             link: "/",
             heading: "Industries",
             details: [
-                { text: "Crypto", link: '/' },
-                { text: "Entertainment", link: '/' },
-                { text: "Gaming", link: '/' },
-                { text: "Healthcare", link: '/' },
-                { text: "Insurance", link: '/' },
-                { text: "Real Estate", link: '/' }, { text: "Retail", link: '/' }, { text: "Social", link: '/' }, { text: "Education", link: '/' }, { text: "Sports", link: '/' }
+                { text: "Crypto", link: '/crypto-currency' },
+                { text: "Entertainment", link: '/entertainment' },
+                { text: "Gaming", link: '/gaming' },
+                { text: "Healthcare", link: '/healthcare' },
+                { text: "Insurance", link: '/insurance' },
+                { text: "Real Estate", link: '/real-estate' }, { text: "Retail", link: '/retail' }, { text: "Social", link: '/social' }, { text: "Education", link: '/' }, { text: "Sports", link: '/' }
 
             ]
         }
@@ -764,7 +764,7 @@ export const RealEstateData = [
     {
         title: 'Custom Real Estate Software Development',
         description: 'We create bespoke software solutions designed to meet the unique requirements of real estate businesses, from pro ',
-        icon:  RealEstateOne,      
+        icon: RealEstateOne,
     },
     {
         title: 'Property Management Systems',
@@ -2347,7 +2347,7 @@ export const servicesoffer = {
             keyfeatures: [{ paragraph: "" }]
         },
     ],
-    realstate: [
+    realestate: [
         {
             id: "realstate",
             title: "Proven Track Record",
@@ -2411,7 +2411,7 @@ export const servicesoffer = {
         },
 
     ],
-    innovativesoftware: [
+    social: [
         {
             id: "innovativesoftware",
             title: "Proven Expertise in Social Solutions",

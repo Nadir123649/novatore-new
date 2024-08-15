@@ -24,6 +24,9 @@ const CloudOps: FC<CloudOpsProps> = ({
   const getDetailsForCurrentRoute = () => {
     const { pathname } = router;
     const {
+      social,
+      insurance,
+      realestate,
       retail,
       healthcare,
       gaming,
@@ -113,6 +116,12 @@ const CloudOps: FC<CloudOpsProps> = ({
       return healthcare;
     } else if (pathname.includes("retail")) {
       return retail;
+    } else if (pathname.includes("insurance")) {
+      return insurance;
+    } else if (pathname.includes("real-estate")) {
+      return realestate;
+    } else if (pathname.includes("social")) {
+      return social;
     }
     return [];
   };
