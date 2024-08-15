@@ -101,17 +101,6 @@ body {
   background-image: url(../../public/images/services-bg.png) !important;
 }
 
-/* cards hover effect  */
-.services-box:hover .heading-container {
-  height: 200px;
-  background-size: cover;
-  background-position: center;
-}
-
-.services-box:hover .heading-container h3 {
-  color: #F9D00D;
-  transform: translateY(130px);
-}
 
 .services-box:hover .arrow-upright {
   color: #2776EA

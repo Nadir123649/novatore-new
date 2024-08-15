@@ -9,24 +9,23 @@ interface ServicesProps {
     backgroundimg?: string;
 }
 
-const ServicesCard: React.FC<ServicesProps> = ({ backgroundimg, title, description, link, id }) => {
-
-    const [hoverIndex, setHoverIndex] = useState<number | null>(null);
+const ServicesCard: React.FC<ServicesProps> = ({ backgroundimg, title, description, link }) => {
 
     return (
-        <div className=" services-box relative mr-10 ml-2 cursor-pointer min-h-[375px] md:min-h-[490px] max-w-[330px] rounded-[16px] border border-solid border-[#ECECEC] bg-[#F6F6F6] p-[24px] transition-all duration-300 hover:shadow  hover:transform hover:scale-105"
-            onMouseEnter={() => setHoverIndex(id)}
-            onMouseLeave={() => setHoverIndex(null)}
+        <div
+            className="services-box relative mr-10 ml-2 cursor-pointer min-h-[375px] md:min-h-[490px] max-w-[330px] rounded-[16px] border border-solid border-[#ECECEC] bg-[#F6F6F6] p-[24px] transition-shadow duration-300 hover:shadow"
         >
-            <a href={link} className="text-black">
-                <div className={`heading-container relative overflow-hidden bg-[#1B232E] p-3 rounded-2xl text-white transition-all duration-300 ease-in-out`}
+            <a href={link} className="text-black no-underline">
+                <div
+                    className={`heading-container relative overflow-hidden p-3 rounded-2xl flex justify-center items-center text-white transition-all duration-300 ease-in-out`}
                     style={{
-                        height: hoverIndex === id ? "200px" : "initial",
-                        backgroundImage: hoverIndex === id ? `url(${backgroundimg})` : "none",
-                        backgroundSize: hoverIndex === id ? "cover" : "initial",
-                        backgroundPosition: hoverIndex === id ? "center" : "initial",
-                    }}>
-                    <h3 className="font-bold mb-0 text-xl  text-center transition-transform duration-300 ease-in-out">
+                        height: '200px',
+                        backgroundImage: `url(${backgroundimg})`,
+                        backgroundSize: 'cover',
+                        backgroundPosition: 'center',
+                    }}
+                >
+                    <h3 className="font-bold mb-0 text-[26px] text-center transition-transform duration-300 ease-in-out">
                         {title}
                     </h3>
                 </div>
