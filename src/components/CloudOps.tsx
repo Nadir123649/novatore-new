@@ -24,6 +24,11 @@ const CloudOps: FC<CloudOpsProps> = ({
   const getDetailsForCurrentRoute = () => {
     const { pathname } = router;
     const {
+      retail,
+      healthcare,
+      gaming,
+      entertainment,
+      cryptocurrency,
       digitalservice,
       cybersecurity,
       digitalstrategy,
@@ -98,6 +103,16 @@ const CloudOps: FC<CloudOpsProps> = ({
       return analyticsservices;
     } else if (pathname.includes("web-app-development")) {
       return webappdevelopment;
+    } else if (pathname.includes("crypto-currency")) {
+      return cryptocurrency;
+    } else if (pathname.includes("entertainment")) {
+      return entertainment;
+    } else if (pathname.includes("gaming")) {
+      return gaming;
+    } else if (pathname.includes("healthcare")) {
+      return healthcare;
+    } else if (pathname.includes("retail")) {
+      return retail;
     }
     return [];
   };

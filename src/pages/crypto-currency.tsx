@@ -16,7 +16,7 @@ const Cryptocurrency: NextPage = () => {
                 <ServicesNeeds needsTitle="A " needsTitleBlue="Decade of Success" needsMoreTitle="in Delivering Crypto Projects" NeedsImage="/images/crypto-image-right.png"
                     needsDescription="With 12 years of dedicated experience in the cryptocurrency industry, we have successfully delivered over 75 projects, making us a leader in blockchain technology solutions. Our expertise spans the full spectrum of crypto services, including NFT marketplaces, DeFi applications, and cryptocurrency trading platforms. We are committed to providing exceptional services that empower businesses to thrive in the fast-evolving digital currency market." />
                 <CloudOps needsTitle="Why " needsTitleBlue=" Partner " needsMoreTitle=" with Us?" />
-                <DataServicesSection heading="Our " headingBlue="Cryptocurrency" needsMoreTitle=" Software Services" data={CryptoData} />
+                <DataServicesSection heading="Our " headingBlue="Cryptocurrency" needsMoreTitle=" Software Services" data={CryptoData} cardMinHeight="150px" />
                 <Enterprise />
                 <Innovation className="innovation-bg text-white" />
             </div>

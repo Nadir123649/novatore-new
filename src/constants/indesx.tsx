@@ -2199,6 +2199,243 @@ export const servicesoffer = {
             keyfeatures: [{ paragraph: "Offline functionality" }, { paragraph: "Push notifications" }, { paragraph: " Faster loading times" }]
         },
     ],
+    cryptocurrency: [
+        {
+            id: "cryptocurrency",
+            title: " Extensive Experience",
+            description: "With more than a decade in the industry, our team understands the intricacies of blockchain technology ",
+            details: "Partner with us to discover our extensive experience and technical proficiency in blockchain technology.",
+            keyheading: "",
+            keyfeatures: [{ paragraph: "" }]
+        },
+        {
+            id: "2",
+            title: " Successful Projects",
+            description: "Over 75 projects delivered worldwide, from startups to established enterprises.",
+            keyheading: "",
+            keyfeatures: [{ paragraph: "" }]
+        },
+        {
+            id: "3",
+            title: "Technical Proficiency",
+            description: "Expertise in technologies such as Ethereum blockchain, React, Vue, and JavaScript.",
+            keyheading: "",
+            keyfeatures: [{ paragraph: "" }]
+        },
+        {
+            id: "4",
+            title: " Client-Focused Approach",
+            description: "Solutions designed to meet the specific needs and objectives of your business.",
+            keyheading: "",
+            keyfeatures: [{ paragraph: "" }]
+        },
+    ],
+    entertainment: [
+        {
+            id: "entertainment",
+            title: " Expertise",
+            description: "Our team comprises industry veterans with deep knowledge of the entertainment sector and cutting-edge technologies.",
+            details: "We specialize in developing personalized and interactive experiences that retain audiences in a competitive market.",
+            keyheading: "",
+            keyfeatures: [{ paragraph: "" }]
+        },
+        {
+            id: "2",
+            title: " Customization",
+            description: "We tailor our solutions to meet the unique needs and goals of each client, ensuring maximum impact and ROI.",
+            keyheading: "",
+            keyfeatures: [{ paragraph: "" }]
+        },
+        {
+            id: "3",
+            title: "Innovation",
+            description: "We stay ahead of industry trends, continuously innovating to provide our clients with the latest and most effective solutions.",
+            keyheading: "",
+            keyfeatures: [{ paragraph: "" }]
+        },
+    ],
+    gaming: [
+        {
+            id: "gaming",
+            title: "Extensive Experience",
+            description: "With more than a decade in the industry, our team understands the intricacies of game development and platform integration.",
+            details: "Our deep expertise in technologies such as Unity, Unreal Engine, React, NextJS, and NodeJS ensures that we provide you with the best possible tools to bring your vision to life.",
+            keyheading: "",
+            keyfeatures: [{ paragraph: "" }]
+        },
+        {
+            id: "2",
+            title: "Successful Projects",
+            description: " Over 50 projects delivered worldwide, from startups to established enterprises.",
+            keyheading: "",
+            keyfeatures: [{ paragraph: "" }]
+        },
+        {
+            id: "3",
+            title: "Technical Proficiency",
+            description: "Expertise in technologies such as Unity, Unreal Engine, React, NextJS, and NodeJS.",
+            keyheading: "",
+            keyfeatures: [{ paragraph: "" }]
+        },
+        {
+            id: "3",
+            title: "Client-Focused Approach",
+            description: "Solutions designed to meet the specific needs and objectives of your business.",
+            keyheading: "",
+            keyfeatures: [{ paragraph: "" }]
+        },
+    ],
+    healthcare: [
+        {
+            id: "healthcare",
+            title: "Extensive Experience",
+            description: "With more than a decade in the industry, our team understands the intricacies of game development and platform integration.",
+            details: "Partner with us to harness our extensive experience and technical proficiency in healthcare technology. With over a decade in the industry, we have a deep understanding of the complexities and regulatory requirements.",
+            keyheading: "",
+            keyfeatures: [{ paragraph: "" }]
+        },
+        {
+            id: "2",
+            title: "Successful Projects",
+            description: " Over 50 projects delivered worldwide, from startups to established enterprises.",
+            keyheading: "",
+            keyfeatures: [{ paragraph: "" }]
+        },
+        {
+            id: "3",
+            title: "Technical Proficiency",
+            description: "Expertise in technologies such as Unity, Unreal Engine, React, NextJS, and NodeJS.",
+            keyheading: "",
+            keyfeatures: [{ paragraph: "" }]
+        },
+        {
+            id: "3",
+            title: "Client-Focused Approach",
+            description: "Solutions designed to meet the specific needs and objectives of your business.",
+            keyheading: "",
+            keyfeatures: [{ paragraph: "" }]
+        },
+    ],
+    insurance: [
+        {
+            id: "insurance",
+            title: "Extensive Experience",
+            description: "With more than a decade in the industry, our team understands the intricacies of game development and platform integration.",
+            details: "Partner with us to harness our extensive experience and technical proficiency in healthcare technology. With over a decade in the industry, we have a deep understanding of the complexities and regulatory requirements.",
+            keyheading: "",
+            keyfeatures: [{ paragraph: "" }]
+        },
+        {
+            id: "2",
+            title: "Successful Projects",
+            description: " Over 50 projects delivered worldwide, from startups to established enterprises.",
+            keyheading: "",
+            keyfeatures: [{ paragraph: "" }]
+        },
+        {
+            id: "3",
+            title: "Technical Proficiency",
+            description: "Expertise in technologies such as Unity, Unreal Engine, React, NextJS, and NodeJS.",
+            keyheading: "",
+            keyfeatures: [{ paragraph: "" }]
+        },
+        {
+            id: "3",
+            title: "Client-Focused Approach",
+            description: "Solutions designed to meet the specific needs and objectives of your business.",
+            keyheading: "",
+            keyfeatures: [{ paragraph: "" }]
+        },
+    ],
+    realstate: [
+        {
+            id: "realstate",
+            title: "Proven Track Record",
+            description: "With numerous successful projects, our track record speaks for itself in delivering high-quality real estate software solutions.",
+            details: "Our client-centric approach ensures that we focus on understanding your business objectives, crafting solutions that drive real value and success. Let’s work together to transform your ideas into reality.",
+            keyheading: "",
+            keyfeatures: [{ paragraph: "" }]
+        },
+        {
+            id: "2",
+            title: "Client-Centric Approach",
+            description: " We focus on understanding your business needs and tailoring our solutions to provide maximum value.",
+            keyheading: "",
+            keyfeatures: [{ paragraph: "" }]
+        },
+        {
+            id: "3",
+            title: "Innovative Solutions",
+            description: "We leverage the latest technologies and industry trends to create innovative solutions that keep you ahead of the competition.",
+            keyheading: "",
+            keyfeatures: [{ paragraph: "" }]
+        },
+
+    ],
+    retail: [
+        {
+            id: "innovativetechnology",
+            title: "Advanced E-Commerce Platforms",
+            description: "We design and develop e-commerce websites that offer smooth and intuitive shopping experiences, featuring robust product catalogs, secure payment systems, and efficient order management.",
+            details: "Our capabilities also extend to building robust systems and data-driven insights and analytics to optimize your operations and drive growth. Let’s collaborate to create innovative solutions that will set your business apart.",
+            keyheading: "",
+            keyfeatures: [{ paragraph: "" }]
+        },
+        {
+            id: "2",
+            title: "Integrated Omnichannel Solutions",
+            description: " Our omnichannel solutions ensure that retailers can provide a unified and consistent customer experience across digital and physical channels.",
+            keyheading: "",
+            keyfeatures: [{ paragraph: "" }]
+        },
+        {
+            id: "3",
+            title: "Comprehensive CRM Systems",
+            description: "We create powerful customer relationship management systems that help businesses build stronger relationships with their customers, manage sales processes, and gain valuable insights from data analytics.",
+            keyheading: "",
+            keyfeatures: [{ paragraph: "" }]
+        },
+        {
+            id: "4",
+            title: "Innovative Mobile Applications",
+            description: " Our expertise in mobile app development allows us to create apps that drive customer engagement, offering personalized experiences and easy access to products and promotions.",
+            keyheading: "",
+            keyfeatures: [{ paragraph: "" }]
+        },
+        {
+            id: "5",
+            title: "Data-Driven Insights and Analytics",
+            description: "By utilizing data analytics, we help retailers make informed decisions, optimize their operations, and enhance overall business performance.",
+            keyheading: "",
+            keyfeatures: [{ paragraph: "" }]
+        },
+
+    ],
+    innovativesoftware: [
+        {
+            id: "innovativesoftware",
+            title: "Proven Expertise in Social Solutions",
+            description: "Our extensive experience in the social sector allows us to deliver solutions that resonate with users and drive engagement.",
+            details: "Partner with us to innovate and elevate your business by leveraging the latest technologies, to drive engagement and deliver unmatched results.",
+            keyheading: "",
+            keyfeatures: [{ paragraph: "" }]
+        },
+        {
+            id: "2",
+            title: "Tailored Solutions for Unique Needs",
+            description: " We customize our software solutions to meet the specific requirements of your social enterprise, ensuring optimal performance and satisfaction.",
+            keyheading: "",
+            keyfeatures: [{ paragraph: "" }]
+        },
+        {
+            id: "3",
+            title: "Innovative and User-Centric Approach",
+            description: "We focus on creating innovative solutions that prioritize user experience, leveraging the latest technologies and design trends.",
+            keyheading: "",
+            keyfeatures: [{ paragraph: "" }]
+        },
+
+    ],
 }
 
 export const data = [

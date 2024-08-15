@@ -8,12 +8,12 @@ const SearchMenu = ({ mobileView = false }) => {
   return (
     <Container className="p-0">
       <div
-        className={`${mobileView ? "p-4" : "card searchmenu-card ease-in-out duration-300 rounded-3xl w-full"
+        className={`${mobileView ? "p-4" : "card searchmenu-card ease-in-out duration-300 cursor-text rounded-3xl w-full"
           }`}
       >
 
         <div className={`${mobileView ? "px-0 pb-2" : "px-24 py-[32px]"}`}>
-          <div className="relative overflow-hidden flex rounded-2xl">
+          <div className="relative overflow-hidden flex rounded-2xl cursor-text">
             <button className="absolute top-[20px] left-[16px]">
               <Image
                 src="/images/search-black.svg"
@@ -33,7 +33,7 @@ const SearchMenu = ({ mobileView = false }) => {
         </div>
 
         <div
-          className={`${mobileView ? "flex flex-col gap-4" : "grid grid-cols-12 gap-4 px-14 pb-4"
+          className={`${mobileView ? "flex flex-col gap-4" : "grid grid-cols-12 gap-4 px-28 pb-4"
             }`}
         >
           {searchitems.map((feature, index) => (

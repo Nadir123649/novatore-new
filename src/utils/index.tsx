@@ -181,11 +181,21 @@ export { default as RealEstateThree } from "../../public/images/estate-image-3.s
 export { default as RealEstateFour } from "../../public/images/estate-image-4.svg"
 export { default as RealEstateFive } from "../../public/images/estate-image-5.svg"
 export { default as RealEstateSix } from "../../public/images/estate-image-6.svg"
-
-
-
-
-
+export { default as reacttile } from "../../public/images/react.svg"
+export { default as angulaartile } from "../../public/images/angular.svg"
+export { default as vuejstile } from "../../public/images/vuejs.svg"
+export { default as nodetile } from "../../public/images/nodejs.svg"
+export { default as pythontile } from "../../public/images/python.svg"
+export { default as jstile } from "../../public/images/js-tile.svg"
+export { default as swifttile } from "../../public/images/swift.svg"
+export { default as fluttertile } from "../../public/images/flutter.svg"
+export { default as googlecloudtile } from "../../public/images/google-cloud.svg"
+export { default as mongodbtile } from "../../public/images/mongodb.svg"
+export { default as postgresstile } from "../../public/images/postgress.svg"
+export { default as awstile } from "../../public/images/aws-tile.svg"
+export { default as azuretile } from "../../public/images/azure.svg"
+export { default as mysqltile } from "../../public/images/mysql.svg"
+export { default as phptile } from "../../public/images/php.svg"
 
 
 
