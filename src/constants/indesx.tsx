@@ -41,7 +41,7 @@ export const services = [
         id: 5,
         title: 'Amazon',
         description: 'Complete solutions including storage, networking, and analytics services.',
-        backgroundimg: "/images/Amazon-web-services-new.png",
+        backgroundimg: "/images/Amazon-new.png",
         link: "/amazon-web-services"
     },
     {

@@ -325,11 +325,13 @@ input:-webkit-autofill:active {
 .footer-section ul li a:hover {
     text-decoration: underline !important;
 }
+
 .searchmenu-card ul li a:hover {
     text-decoration: underline !important;
 }
+
 .custom-checkbox input[type="checkbox"]:focus {
     outline: none;
     box-shadow: none;
     border: 1px solid #B7B7B7;
-  }
+}

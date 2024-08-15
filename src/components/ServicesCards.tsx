@@ -14,7 +14,7 @@ const ServicesCard: React.FC<ServicesProps> = ({ backgroundimg, title, descripti
     const [hoverIndex, setHoverIndex] = useState<number | null>(null);
 
     return (
-        <div className="services-box relative mr-10 cursor-pointer min-h-[375px] md:min-h-[490px] max-w-[330px] rounded-[16px] border border-solid border-[#ECECEC] bg-[#F6F6F6] p-[24px] transition-all duration-300 hover:shadow-lg"
+        <div className=" services-box relative mr-10 ml-2 cursor-pointer min-h-[375px] md:min-h-[490px] max-w-[330px] rounded-[16px] border border-solid border-[#ECECEC] bg-[#F6F6F6] p-[24px] transition-all duration-300 hover:shadow  hover:transform hover:scale-[1]"
             onMouseEnter={() => setHoverIndex(id)}
             onMouseLeave={() => setHoverIndex(null)}
         >

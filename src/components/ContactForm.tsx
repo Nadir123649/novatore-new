@@ -112,7 +112,7 @@ const ContactForm = () => {
                                             <Form.Check
                                                 type="checkbox"
                                                 label="Check here to subscribe for updates."
-                                                className="my-2 text-[#645555] text-[18px] font-medium not-italic custom-checkbox"
+                                                className="my-2 text-[#645555] text-[18px] font-medium not-italic custom-checkbox "
                                             />
                                         </Form.Group>
                                     </Col>

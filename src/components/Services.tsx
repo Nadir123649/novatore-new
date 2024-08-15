@@ -126,9 +126,9 @@ const Services = () => {
             All Services
           </button> */}
         </div>
-        <Slider {...settings} className="services-slider">
+        <Slider {...settings} className="services-slider  ">
           {services.map((service) => (
-            <Col key={service.id} lg={6} md={6} xs={12}>
+            <Col key={service.id} lg={6} md={6} xs={12} className="py-4">
               <ServicesCard
                 id={service.id}
                 title={service.title}

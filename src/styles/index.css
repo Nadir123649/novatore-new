@@ -152,6 +152,26 @@ body {
   min-height: 50vh;
 }
 
+/* Contact form checkbox  */
+.form-check-input[type=checkbox] {
+  border-color: #dee2e6 !important;
+}
+
+.custom-checkbox input[type="checkbox"]:focus {
+  border-color: #dee2e6 !important;
+}
+
+.form-check-input {
+  --bs-form-check-bg: white !important;
+  --bs-form-check-border-color: #dee2e6 !important;
+}
+
+.trending-section .slick-track {
+  width: 6000px !important;
+}
+
+
+
 /* client logos slider animation */
 
 @keyframes scroll {
@@ -272,12 +292,22 @@ body {
   margin-right: 20px !important;
 }
 
-/* .slick-track {
-  display: flex !important;
-  gap: 10px !important;
-} */
+
 
 /* Responsiveness */
+@media only screen and (max-width: 1400px) {
+
+  .trending-section .slick-slide {
+    margin-right: 12px !important;
+    width: 370px !important;
+  }
+
+  /* .trending-section .slick-track {
+    display: flex !important;
+    gap: 10px !important;
+  } */
+}
+
 @media only screen and (max-width: 1020px) {
   .slick-track {
     display: flex !important;
