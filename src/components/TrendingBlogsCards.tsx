@@ -24,7 +24,7 @@ const TrendingBlogsCards: React.FC<TrendingBlogsProps> = ({ banner, title, descr
                     <Image src={Profile} alt="profile" width={16} height={16} />
                     <p className="text-[#6A6A6A] text-sm m-0">{user}</p>
                 </div>
-                <h1 className="text-[22.4px] font-extrabold pt-3">{title}</h1>
+                <h1 className="text-[22.4px] font-extrabold pt-3">{title}</h1> 
                 <p className="text-[#6A6A6A]  w-full h-[70px] mb-0 pr-2">
                     {description}
                 </p>
