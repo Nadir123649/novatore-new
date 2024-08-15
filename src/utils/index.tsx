@@ -183,7 +183,7 @@ export { default as RealEstateFive } from "../../public/images/estate-image-5.sv
 export { default as RealEstateSix } from "../../public/images/estate-image-6.svg"
 export { default as reacttile } from "../../public/images/react.svg"
 export { default as angulaartile } from "../../public/images/angular.svg"
-export { default as vuejstile } from "../../public/images/vuejs.svg"
+export { default as vuejstile } from "../../public/images/icon-view.svg"
 export { default as nodetile } from "../../public/images/nodejs.svg"
 export { default as pythontile } from "../../public/images/python.svg"
 export { default as jstile } from "../../public/images/js-tile.svg"
