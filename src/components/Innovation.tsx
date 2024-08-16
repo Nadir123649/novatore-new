@@ -7,55 +7,101 @@ import BlogsCard from './BlogsCard';
 import { blogData } from '@/constants/indesx'; // Make sure this path is correct
 import { useState, useEffect } from 'react';
 
-interface ArrowProps {
-  onClick?: React.MouseEventHandler<HTMLDivElement>;
-}
+
 
 interface InnovationProps {
   className?: string;
 }
 
-const NextArrow: React.FC<ArrowProps> = ({ onClick }) => (
-  <div className='group'>
-    <div onClick={onClick} className="arrow next group-hover:bg-[#2776EA] group-hover:border-transparent">
-      <span className="text-[#969696] text-lg group-hover:text-white"><FaChevronRight /></span>
-    </div>
-  </div>
-);
+interface ArrowProps {
+  onClick?: React.MouseEventHandler<HTMLDivElement>;
+  isDisabled?: boolean;
+}
 
-const PrevArrow: React.FC<ArrowProps> = ({ onClick }) => (
-  <div className='group'>
-    <div onClick={onClick} className="arrow prev group-hover:bg-[#2776EA] group-hover:border-transparent">
-      <span className="text-[#969696] text-lg group-hover:text-white"><FaChevronLeft /></span>
+const NextArrow: React.FC<ArrowProps> = ({ onClick, isDisabled }) => {
+  return (
+    <div className="group">
+      <div
+        onClick={!isDisabled ? onClick : undefined}
+        className={`arrow next flex justify-center items-center border-2 rounded-full p-2 cursor-pointer ${isDisabled
+          ? "text-[#969696] border-[#969696] hover:bg-transparent hover:text-[#969696] hover:border-[#969696]"
+          : "text-[#dfd8d8] border-[#dfd8d8]  hover:bg-[#2776ea] hover:text-white hover:border-[#00000000]"
+          }`}
+      >
+        <FaChevronRight className="text-lg" />
+      </div>
     </div>
-  </div>
-);
+  );
+};
+
+
+const PrevArrow: React.FC<ArrowProps> = ({ onClick, isDisabled }) => {
+  return (
+    <div className="group">
+      <div
+        onClick={!isDisabled ? onClick : undefined}
+        className={`arrow prev flex justify-center items-center border-2 rounded-full p-2 cursor-pointer ${isDisabled
+          ? " text-[#969696] border-[#969696] hover:bg-transparent hover:text-[#969696] hover:border-[#969696]"
+          : " text-[#dfd8d8] border-[#dfd8d8]  hover:bg-[#2776ea] hover:text-white hover:border-[#00000000]"
+          }`}
+      >
+        <FaChevronLeft className="text-lg" />
+      </div>
+    </div>
+  );
+};
+
 
 const Innovation: React.FC<InnovationProps> = ({ className }) => {
+  const [currentSlide, setCurrentSlide] = useState(0);
+  const [isLastSlideVisible, setIsLastSlideVisible] = useState(false);
+
+  const totalSlides = blogData.length;
+  const slidesToShow = 2.3;
+
   const settings = {
     dots: false,
-    infinite: true,
+    infinite: false,
     speed: 500,
-    slidesToShow: 2.07,
+    slidesToShow: slidesToShow,
     slidesToScroll: 1,
-    centerMode: true,
-    nextArrow: <NextArrow />,
-    prevArrow: <PrevArrow />,
+    centerMode: false,
+    nextArrow: <NextArrow isDisabled={isLastSlideVisible} />,
+    prevArrow: <PrevArrow isDisabled={currentSlide === 0} />,
+    afterChange: (current: number) => {
+      setCurrentSlide(current);
+      // Check if the last slide is fully visible
+      if (current >= totalSlides - slidesToShow) {
+        setIsLastSlideVisible(true);
+      } else {
+        setIsLastSlideVisible(false);
+      }
+    },
     responsive: [
       {
         breakpoint: 1024,
         settings: {
-          slidesToShow: 2.07,
+          centerMode: false,
+          slidesToShow: 2,
           slidesToScroll: 1,
           infinite: true,
+          dots: true,
+        },
+      },
+      {
+        breakpoint: 750,
+        settings: {
           centerMode: true,
+          slidesToShow: 1.2,
+          slidesToScroll: 1,
+          infinite: true,
           dots: true,
         },
       },
       {
         breakpoint: 600,
         settings: {
-          slidesToShow: 2,
+          slidesToShow: 1,
           slidesToScroll: 1,
           centerMode: false,
         },

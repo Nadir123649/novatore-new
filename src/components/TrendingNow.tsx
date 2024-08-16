@@ -16,7 +16,7 @@ interface ArrowProps {
 
 const NextArrow: React.FC<ArrowProps> = ({ onClick, isDisabled }) => {
   return (
-    <div className="group">
+    <div className="group arrow-group">
       <div
         onClick={onClick}
         className={`arrow next flex justify-center items-center border-2 rounded-full p-2 cursor-pointer  ${isDisabled
@@ -33,7 +33,7 @@ const NextArrow: React.FC<ArrowProps> = ({ onClick, isDisabled }) => {
 
 const PrevArrow: React.FC<ArrowProps> = ({ onClick, isDisabled }) => {
   return (
-    <div className="group">
+    <div className="group arrow-group">
       <div
         onClick={onClick}
         className={`arrow prev flex justify-center items-center border-2 rounded-full p-2 cursor-pointer   ${isDisabled
@@ -137,7 +137,7 @@ const TrendingNow = () => {
     <section id='trending-slider-section' className={`${isVisible ? "fadeIn" : "opacity-0 "
       } trending-section py-20 bg-center bg-no-repeat bg-cover `}>
       <Container className='trending-container p-0'>
-        <div className='flex justify-between items-center mb-4 pr-[140px]'>
+        <div className='flex justify-between items-center mb-4 pr-[140px] mobile-carousel'>
           <h2 className='text-[#FFFFFF] font-semibold text-[26px] md:text-4xl'>Trending Now</h2>
         </div>
         <Slider {...settings} className="trending-slider mt-10">

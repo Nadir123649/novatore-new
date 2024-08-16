@@ -1,14 +1,33 @@
 import Image from 'next/image';
 import React from 'react';
 import { Container, Row } from 'react-bootstrap';
-
+import { useState, useEffect } from 'react';
 interface HeroBannerProps {
     previewImage?: string;
     bannerHeading: string;
     needsMoreTitle?: boolean;
+    pagetitle?: string;
 }
 
-const HeroBanner: React.FC<HeroBannerProps> = ({ previewImage, bannerHeading, needsMoreTitle }) => {
+const HeroBanner: React.FC<HeroBannerProps> = ({ previewImage, bannerHeading, needsMoreTitle, pagetitle }) => {
+
+    const [isVisible, setIsVisible] = useState(false);
+
+    const handleScroll = () => {
+        const element = document.getElementById("needs-section");
+        if (element) {
+            const rect = element.getBoundingClientRect();
+            setIsVisible(rect.top <= window.innerHeight * 0.75);
+        }
+    };
+
+    useEffect(() => {
+        window.addEventListener("scroll", handleScroll);
+        return () => {
+            window.removeEventListener("scroll", handleScroll);
+        };
+    }, []);
+
     return (
         <section
             className="hero-banner min-h-[50vh] md:min-h-[60vh] bg-cover bg-center bg-no-repeat"
@@ -16,8 +35,9 @@ const HeroBanner: React.FC<HeroBannerProps> = ({ previewImage, bannerHeading, ne
                 backgroundImage: `url(${previewImage ? previewImage : ""})`,
             }}
         >
-            <Container className=' min-h-[50vh] md:min-h-[60vh] flex items-center md:items-end  flex-row justify-start'>
+            <Container className=' min-h-[50vh] md:min-h-[60vh] flex items-center md:items-end  flex-row justify-start animate-slideRight'>
                 <div className="content mb-[0px] md:mb-[50px]">
+                    <p className='text-white'>{pagetitle}</p>
                     <h2 className='text-[38px]  md:text-[56px] not-italic font-semibold text-white capitalize'>{bannerHeading}</h2>
                     {needsMoreTitle ?
                         <a href="#contact-us-form" className='learn-btn bg-none rounded-[16px] border-1 border-[#FFFFFF] hover:border-transparent  py-[14px] px-[24px] mt-[26px] transition-all duration-300 hover:bg-[#2776EA]  text-white'>

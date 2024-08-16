@@ -121,7 +121,7 @@ const Navbar = () => {
          ${isScrolled ? "bg-imagr-black" : "bg-transparent"
         } ${isHeaderVisible ? "transform-none" : "-translate-y-full"}`}
     >
-      <div className="container flex flex-row justify-between items-center sm:px-0 md:px-0 p-0 w-full ">
+      <div className="container flex flex-row justify-between items-center md:px-0 p-0 w-full nav-bar ">
         <div className="flex items-center flex-grow">
           <Link
             href="/"
@@ -162,7 +162,7 @@ const Navbar = () => {
         </div>
         <div className="flex items-center gap-4">
           <button
-            className="block md:hidden text-white focus:outline-none text-[30px]"
+            className="block md:hidden text-white focus:outline-none text-[30px] "
             onClick={handleMobileMenuToggle}
           >
             <RiMenu3Fill />

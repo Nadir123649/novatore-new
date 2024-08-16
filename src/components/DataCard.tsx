@@ -22,7 +22,7 @@ const DataCard: React.FC<DataCardProps> = ({ title, description, icon, type, lis
             </div>
             <div className="flex flex-col items-start mb-1 gap-[22px]">
                 <Image src={icon} alt="icon" className='w-full max-w-[80px] max-h-[60px] min-h-[60px]' />
-                <h3 className="text-[22px] font-semibold leading-[24px] text-[#110229] h-[40px] flex justify-center flex-col pr-[50px]">{title}</h3>
+                <h3 className="text-[22px] font-medium leading-[24px] text-[#110229] h-[40px] flex justify-center flex-col pr-[50px]">{title}</h3>
             </div>
             <div className={value ? value : "absolute top-[16px] right-[140px] mt-2 mr-3 text-blue-200"}>
                 <Image src={Drop} alt="close" layout="fixed" />

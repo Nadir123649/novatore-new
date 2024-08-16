@@ -109,7 +109,7 @@ const Footer = () => {
                   }
                 </ul>
                 <h3 className="text-[#FFF] text-[18px] not-italic mb-4 font-normal mt-5">About</h3>
-                <ul className='footer-links-list list-none p-0 m-0 flex flex-col gap-[18px]'>
+                <ul className='footer-links-list list-none p-0 m-0 flex flex-col gap-[18px] social-footer'>
                   {socialData.map((data, index) => (
                     <li key={index} >
                       <Link href={data.link} className='text-[#B5B5B5] text-[16px] font-normal not-italic flex flex-row gap-[16px] items-center transition-colors duration-300 hover:text-[#2776EA] ' rel="noopener noreferrer" target="_blank">
@@ -126,7 +126,7 @@ const Footer = () => {
             </Col>
           </Row>
         </div>
-        <div className="footer-two border-t border-solid border-[#3D3D3D]">
+        <div className="footer-two border-t border-solid border-[#3D3D3D] ">
           <div className="inner-footer py-[24px]">
             <ul className='footer-links-list list-none p-0 m-0 flex flex-col  md:flex-row justify-between gap-[13px]'>
               {siteMapData.map((data, index) => (

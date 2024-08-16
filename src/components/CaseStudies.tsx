@@ -16,7 +16,7 @@ interface ArrowProps {
 
 const NextArrow: React.FC<ArrowProps> = ({ onClick, isDisabled }) => {
   return (
-    <div className="group">
+    <div className="group arrow-group">
       <div
         onClick={!isDisabled ? onClick : undefined}
         className={`arrow next flex justify-center items-center border-2 rounded-full p-2 cursor-pointer ${isDisabled
@@ -33,7 +33,7 @@ const NextArrow: React.FC<ArrowProps> = ({ onClick, isDisabled }) => {
 
 const PrevArrow: React.FC<ArrowProps> = ({ onClick, isDisabled }) => {
   return (
-    <div className="group">
+    <div className="group arrow-group">
       <div
         onClick={!isDisabled ? onClick : undefined}
         className={`arrow prev flex justify-center items-center border-2 rounded-full p-2 cursor-pointer ${isDisabled
@@ -136,7 +136,7 @@ const CaseStudies = () => {
     <section id='caseStudy-section' className={`${isVisible ? "fadeIn" : "opacity-0 "
       } Case-studies-section py-20 bg-center bg-no-repeat bg-cover `}>
       <div className="container ">
-        <div className='flex justify-between items-center mb-4 pr-[140px] '>
+        <div className='flex justify-between items-center mb-4 pr-[140px] mobile-carousel'>
           <h2 className=' font-semibold text-[26px] md:text-4xl '>CASE STUDIES</h2>
         </div>
         <Slider {...settings} className="Case-study-slider mt-10">

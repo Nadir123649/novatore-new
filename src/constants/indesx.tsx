@@ -791,7 +791,7 @@ export const RealEstateData = [
 
     {
         title: 'Customer Engagement Solutions',
-        description: 'Digital Insurance Portals Chatbots and Virtual Assistants',
+        description: 'We offer tailored CRM systems, personalized communication tools, and AI-driven insights that help real estate professionals build stronger relationships with their clients.',
         icon: RealEstateSix,
     },
 

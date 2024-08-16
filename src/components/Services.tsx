@@ -15,7 +15,7 @@ interface ArrowProps {
 
 const NextArrow: React.FC<ArrowProps> = ({ onClick, isDisabled }) => {
   return (
-    <div className="group">
+    <div className="group arrow-group">
       <div
         onClick={!isDisabled ? onClick : undefined}
         className={`arrow next flex justify-center items-center border-2 rounded-full p-2 cursor-pointer ${isDisabled
@@ -32,7 +32,7 @@ const NextArrow: React.FC<ArrowProps> = ({ onClick, isDisabled }) => {
 
 const PrevArrow: React.FC<ArrowProps> = ({ onClick, isDisabled }) => {
   return (
-    <div className="group">
+    <div className="group arrow-group">
       <div
         onClick={!isDisabled ? onClick : undefined}
         className={`arrow prev flex justify-center items-center border-2 rounded-full p-2 cursor-pointer ${isDisabled
@@ -104,6 +104,7 @@ const Services = () => {
       {
         breakpoint: 480,
         settings: {
+          infinite: false,
           slidesToShow: 1,
           slidesToScroll: 1,
           centerMode: false,
@@ -118,7 +119,7 @@ const Services = () => {
       className="services-section py-20 bg-center bg-no-repeat bg-cover"
     >
       <Container>
-        <div className="flex flex-col md:flex-row justify-between items-start md:items-center mb-4">
+        <div className="flex flex-col md:flex-row justify-between items-start md:items-center mb-4 mobile-carousel">
           <h2 className="text-gray-900 font-semibold text-[26px] md:text-4xl">
             What Can We Do For You?
           </h2>

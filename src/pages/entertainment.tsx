@@ -10,7 +10,7 @@ const Entertainment: NextPage = () => {
     return (
         <Layout title="Novatore Sols - Entertainment" description="Welcome to Novatore Sols, setting new standards in technology with unmatchable code.">
             <div className="overflow-x-hidden">
-                <HeroBanner bannerHeading="Your Partner in Entertainment Innovation" needsMoreTitle={true} previewImage="/images/entertainment-banner.png" />
+                <HeroBanner bannerHeading="Your Partner in Entertainment Innovation" needsMoreTitle={true} previewImage="/images/entertainment-banner.png" pagetitle="Entertainment" />
                 <ServicesNeeds needsTitleBlue="Advanced Solutions" needsMoreTitle=" to Meet Evolving Consumer Demands in Entertainment" NeedsImage="/images/entertainment-image-right.png"
                     needsDescription="The entertainment industry is driven by innovation and evolving consumer demands. From streaming services and gaming to live events and AR/VR experiences, technology plays a crucial role in creating engaging and immersive content. Our mission is to empower entertainment companies with advanced solutions to captivate audiences and stay ahead of the curve." />
                 <CloudOps needsTitle="Why Choose " needsTitleBlue=" Us?" />

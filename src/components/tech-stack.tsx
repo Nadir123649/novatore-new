@@ -3,22 +3,18 @@ import Link from 'next/link';
 import React from 'react';
 import { angulaartile, awstile, azuretile, fluttertile, googlecloudtile, jstile, mongodbtile, mysqltile, nodetile, phptile, postgresstile, pythontile, reacttile, swifttile, vuejstile } from "../utils/index";
 import { Container } from 'postcss';
-// interface BlogsProps {
-//     id?: number;
-//     image: any;
-//     category: string;
-//     tag: string;
-//     title: string;
-//     link: string;
-//     type?: string;
-// }
+interface TechProps {
 
-const TechStack = () => {
+    title: string;
+
+}
+
+const TechStack: React.FC<TechProps> = ({ title }) => {
     return (
 
         <div className='container'>
 
-            <h1 className='text-center text-[#313232] text-[40px] font-bold capitalize not-italic leading-[55px] max-w-[590px] mx-auto mb-[40px]'>Technology Stack</h1>
+            <h1 className='text-center text-[#313232] text-[40px] font-bold capitalize not-italic leading-[55px] max-w-[590px] mx-auto mb-[40px]'>{title}</h1>
             <div className='flex flex-wrap  justify-center mb-[40px] '>
                 <Image src={reacttile} alt="techstack" />
                 <Image src={angulaartile} alt="techstack" />

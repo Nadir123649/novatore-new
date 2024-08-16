@@ -21,10 +21,13 @@ const TrendingBlogsCards: React.FC<TrendingBlogsProps> = ({ banner, title, descr
             <div className="px-[24px] py-[20px] card-group">
                 <div className="d-flex gap-3 items-center">
                     <div className="bg-[#2776EA] rounded-2xl text-white px-3 py-2 min-w-[140px] text-xs text-center">{date}</div>
-                    <Image src={Profile} alt="profile" width={16} height={16} />
-                    <p className="text-[#6A6A6A] text-sm m-0">{user}</p>
+                    <div className='flex gap-2'>
+                        <Image src={Profile} alt="profile" width={16} height={16} />
+                        <p className="text-[#6A6A6A] text-sm m-0">{user}</p>
+                    </div>
+
                 </div>
-                <h1 className="text-[22.4px] font-extrabold pt-3">{title}</h1> 
+                <h1 className="text-[22.4px] font-extrabold pt-3">{title}</h1>
                 <p className="text-[#6A6A6A]  w-full h-[70px] mb-0 pr-2">
                     {description}
                 </p>
