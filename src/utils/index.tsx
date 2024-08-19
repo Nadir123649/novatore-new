@@ -197,6 +197,12 @@ export { default as azuretile } from "../../public/images/azure.svg"
 export { default as mysqltile } from "../../public/images/mysql.svg"
 export { default as phptile } from "../../public/images/php.svg"
 
+export { default as caseone } from "../../public/images/case-one.png"
+export { default as casetwo } from "../../public/images/case-two.png"
+export { default as casethree } from "../../public/images/case-three.png"
+export { default as casefour } from "../../public/images/case-four.png"
+
+
 
 
 

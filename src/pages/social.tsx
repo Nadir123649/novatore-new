@@ -9,6 +9,7 @@ import DataServicesSection from "@/components/DataServicesSection";
 import { GamingData } from "@/constants/indesx";
 import TechStack from "@/components/tech-stack";
 
+
 const Social: NextPage = () => {
     return (
         <Layout title="Novatore Sols - Social" description="Welcome to Novatore Sols, setting new standards in technology with unmatchable code.">

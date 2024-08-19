@@ -174,7 +174,25 @@ body {
   width: 6000px !important;
 }
 
+/* Css for Case Studies hover boxes  */
 
+.slider-case-item {
+  flex-grow: 1;
+  height: 600px;
+  width: 100px !important;
+  transition: flex-grow 500ms cubic-bezier(0.25, 0.1, 0.25, 1), transform 500ms cubic-bezier(0.25, 0.1, 0.25, 1);
+  border-radius: 8px;
+  transform: scale(1);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.slider-case-item.active,
+.slider-case-item:hover {
+  flex-grow: 4.3;
+  transform: scale(1);
+}
 
 /* client logos slider animation */
 
@@ -322,6 +340,11 @@ body {
 @media only screen and (max-width: 700px) {
   .nav-bar {
     padding: 20px !important;
+  }
+
+  .navbar-menu-card {
+    padding: 0;
+    border: none;
   }
 
   .footer-top,

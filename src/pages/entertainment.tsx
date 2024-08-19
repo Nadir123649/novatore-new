@@ -5,6 +5,7 @@ import ServicesNeeds from "@/components/ServicesNeeds";
 import { NextPage } from "next";
 import CloudOps from "@/components/CloudOps";
 import Layout from "@/components/Layout";
+import CaseStudiesSlider from "@/components/CaseStudiesSlider";
 
 const Entertainment: NextPage = () => {
     return (
@@ -15,6 +16,7 @@ const Entertainment: NextPage = () => {
                     needsDescription="The entertainment industry is driven by innovation and evolving consumer demands. From streaming services and gaming to live events and AR/VR experiences, technology plays a crucial role in creating engaging and immersive content. Our mission is to empower entertainment companies with advanced solutions to captivate audiences and stay ahead of the curve." />
                 <CloudOps needsTitle="Why Choose " needsTitleBlue=" Us?" />
                 <Enterprise />
+                <CaseStudiesSlider heading="Case" blueheading="Studies" />
                 <Innovation className="innovation-bg text-white" />
             </div>
         </Layout>
