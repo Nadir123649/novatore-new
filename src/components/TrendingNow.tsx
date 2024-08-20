@@ -18,27 +18,27 @@ const NextArrow: React.FC<ArrowProps> = ({ onClick, isDisabled }) => {
   return (
     <div className="group arrow-group">
       <div
-        onClick={onClick}
-        className={`arrow next flex justify-center items-center border-2 rounded-full p-2 cursor-pointer  ${isDisabled
-          ? "text-[#dfd8d8] border-[#dfd8d8] hover:bg-[#2776ea] hover:text-[#dfd8d8]  hover:border-transparent  "
-          : "text-[#969696] border-[#969696]"
+        onClick={!isDisabled ? onClick : undefined}
+        className={`arrow next flex justify-center items-center border-2 rounded-full p-2 cursor-pointer ${isDisabled
+          ? "text-[#969696] border-[#969696] hover:text-[#969696] hover:bg-transparent hover:border-[#969696]"
+          : "text-[#dfd8d8] border-[#dfd8d8]  hover:bg-[#2776ea] hover:text-[#FFFFFF] hover:border-[#00000000]"
           }`}
       >
         <FaChevronRight className="text-lg" />
       </div>
     </div>
-
   );
 };
+
 
 const PrevArrow: React.FC<ArrowProps> = ({ onClick, isDisabled }) => {
   return (
     <div className="group arrow-group">
       <div
-        onClick={onClick}
-        className={`arrow prev flex justify-center items-center border-2 rounded-full p-2 cursor-pointer   ${isDisabled
-          ? "text-[#dfd8d8] border-[#dfd8d8] hover:bg-[#2776ea] hover:text-[#dfd8d8]  hover:border-transparent "
-          : "text-[#969696] border-[#969696]"
+        onClick={!isDisabled ? onClick : undefined}
+        className={`arrow prev flex justify-center items-center border-2 rounded-full p-2 cursor-pointer ${isDisabled
+          ? "text-[#969696] border-[#969696] hover:bg-transparent hover:text-[#969696] hover:border-[#969696]"
+          : "text-[#dfd8d8] border-[#dfd8d8]  hover:bg-[#2776ea] hover:text-white hover:border-[#00000000]"
           }`}
       >
         <FaChevronLeft className="text-lg" />
@@ -46,6 +46,7 @@ const PrevArrow: React.FC<ArrowProps> = ({ onClick, isDisabled }) => {
     </div>
   );
 };
+
 
 
 
@@ -71,7 +72,7 @@ const TrendingNow = () => {
   const [isLastSlideVisible, setIsLastSlideVisible] = useState(false);
 
   const totalSlides = trendings.length;
-  const slidesToShow = 2.9;
+  const slidesToShow = 3;
 
   const settings = {
     dots: false,
@@ -80,8 +81,8 @@ const TrendingNow = () => {
     slidesToShow: slidesToShow,
     slidesToScroll: 1,
     centerMode: false,
-    prevArrow: <PrevArrow isDisabled={isLastSlideVisible} />,
-    nextArrow: <NextArrow isDisabled={currentSlide === 0} />,
+    nextArrow: <NextArrow isDisabled={isLastSlideVisible} />,
+    prevArrow: <PrevArrow isDisabled={currentSlide === 0} />,
     afterChange: (current: number) => {
       setCurrentSlide(current);
       // Check if the last slide is fully visible
@@ -123,6 +124,7 @@ const TrendingNow = () => {
       {
         breakpoint: 480,
         settings: {
+          infinite: false,
           slidesToShow: 1,
           slidesToScroll: 1,
           centerMode: false,
