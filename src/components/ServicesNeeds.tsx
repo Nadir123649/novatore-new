@@ -40,7 +40,7 @@ const ServicesNeeds: FC<ServicesNeedsProps> = ({
             <Container>
                 <Row>
                     <Col lg={8} md={12} xs={12} className={`${isVisible ? "animate-slideRight" : "opacity-0 translate-x-full"
-                        } transition-transform duration-500 ease-out needs-banner bg-[#F6FAFF] rounded-[16px] flex flex-col justify-center`}>
+                        } transition-transform duration-500 ease-out needs-banner bg-[#F6FAFF] rounded-[16px] flex flex-col justify-center shadow-sm`}>
                         <div className="needs-content pl-[0px] md:pl-[40px] pt-[20px] md:pt-[67px]  pb-[20px] md:pb-[50px] min-h-[470px] md:min-h-[612px] max-h-[612px] h-full flex flex-col justify-center">
                             <h2 className='text-black text-3xl md:text-[40px] capitalize font-semibold max-w-[580px] tracking-[0.8px] w-full mb-[24px] leading-tight'>
                                 {needsTitle} <span className='text-[#2776EA]'>{needsTitleBlue}</span>
@@ -56,14 +56,14 @@ const ServicesNeeds: FC<ServicesNeedsProps> = ({
                         md={12}
                         xs={12}
                         className={`${isVisible ? "animate-slideLeft" : "opacity-0 translate-x-full"
-                            } transition-transform duration-500 ease-out needs-description rounded-[16px] `}
+                            } transition-transform duration-500 ease-out needs-description rounded-[16px]   `}
                     >
                         <div className="img-box static md:relative left-[-100px] top-[42px] w-full max-w-full md:max-w-[450px]">
                             <div className='overflow-hidden rounded-[16px]'>
                                 <Image
                                     src={NeedsImage}
                                     alt="needs-us"
-                                    className='min-h-[400px] md:min-h-[527px] max-h-[400px] md:max-h-[527px] h-full w-full transform transition ease-in-out duration-300 hover:scale-[1.2]'
+                                    className='min-h-[400px] md:min-h-[527px] max-h-[400px] md:max-h-[527px] h-full w-full transform transition ease-in-out hover:scale-[1.2]'
                                     width={450}
                                     height={527}
                                 />

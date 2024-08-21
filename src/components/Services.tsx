@@ -22,6 +22,7 @@ const NextArrow: React.FC<ArrowProps> = ({ onClick, isDisabled }) => {
           ? "text-[#dfd8d8] border-[#dfd8d8] hover:text-[#dfd8d8] hover:bg-[#ecf1f4] hover:border-[#dfd8d8]"
           : "text-[#969696] border-[#969696] hover:bg-[#2776ea] hover:text-[#FFFFFF] hover:border-[#00000000]"
           }`}
+        style={{ cursor: isDisabled ? 'default' : 'pointer' }}
       >
         <FaChevronRight className="text-lg" />
       </div>
@@ -39,6 +40,7 @@ const PrevArrow: React.FC<ArrowProps> = ({ onClick, isDisabled }) => {
           ? "text-[#dfd8d8] border-[#dfd8d8] hover:bg-[#ecf1f4] hover:text-[#dfd8d8] hover:border-[#dfd8d8]"
           : "text-[#969696] border-[#969696] hover:bg-[#2776ea] hover:text-white hover:border-[#00000000]"
           }`}
+        style={{ cursor: isDisabled ? 'default' : 'pointer' }}
       >
         <FaChevronLeft className="text-lg" />
       </div>

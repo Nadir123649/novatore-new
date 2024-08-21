@@ -50,7 +50,7 @@ const ExpertServices: FC<ExpertServicesProps> = ({
                                 <Image
                                     src={NeedsImage}
                                     alt="needs-us"
-                                    className='min-h-[400px] md:min-h-[527px] max-h-[400px] md:max-h-[527px] h-full w-full transform transition ease-in-out duration-300 hover:scale-105'
+                                    className='min-h-[400px] md:min-h-[527px] max-h-[400px] md:max-h-[527px] h-full w-full transform transition ease-in-out hover:scale-[1.2]'
                                     width={450}
                                     height={527}
                                 />
@@ -58,7 +58,7 @@ const ExpertServices: FC<ExpertServicesProps> = ({
                         </div>
                     </Col>
                     <Col lg={8} md={12} xs={12} className={`${isVisible ? "animate-slideLeft" : "opacity-0 translate-x-full"
-                        } transition-transform duration-500 ease-out needs-description rounded-[16px]  bg-[#F6FAFF]`} >
+                        } transition-transform duration-500 ease-out needs-description rounded-[16px]  bg-[#F6FAFF] shadow-sm`} >
                         <div className="needs-content pl-[0px] md:pl-[140px] pt-[20px] md:pt-[87px] pb-[20px] md:pb-[50px] min-h-[410px] md:min-h-[612px] max-h-[612px] h-full flex flex-col justify-center">
                             <h2 className='text-black text-3xl md:text-[40px] capitalize font-semibold max-w-[550px] tracking-[0.8px] w-full mb-[24px] leading-tight'>
                                 {needsTitle} <span className='text-[#2776EA]'>{needsTitleBlue}</span>

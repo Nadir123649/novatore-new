@@ -23,10 +23,11 @@ const NextArrow: React.FC<ArrowProps> = ({ onClick, isDisabled }) => {
     <div className="group">
       <div
         onClick={!isDisabled ? onClick : undefined}
-        className={`arrow next flex justify-center items-center border-2 rounded-full p-2 cursor-pointer ${isDisabled
-          ? " text-[#dfd8d8] border-[#dfd8d8] hover:bg-transparent hover:text-[#dfd8d8] hover:border-[#dfd8d8]"
-          : "text-[#969696] border-[#969696] group-hover:bg-[#2776ea] group-hover:text-white group-hover:border-[#00000000]"
+        className={`arrow next flex justify-center items-center border-2 rounded-full p-2 ${isDisabled
+          ? " text-[#dfd8d8] border-[#dfd8d8] hover:bg-transparent hover:text-[#dfd8d8] hover:border-[#dfd8d8] cursor-none"
+          : "text-[#969696] border-[#969696] group-hover:bg-[#2776ea] group-hover:text-white group-hover:border-[#00000000] cursor-pointer"
           }`}
+        style={{ cursor: isDisabled ? 'default' : 'pointer' }}
       >
         <FaChevronRight className="text-lg" />
       </div>
@@ -34,22 +35,23 @@ const NextArrow: React.FC<ArrowProps> = ({ onClick, isDisabled }) => {
   );
 };
 
-
 const PrevArrow: React.FC<ArrowProps> = ({ onClick, isDisabled }) => {
   return (
     <div className="group">
       <div
         onClick={!isDisabled ? onClick : undefined}
-        className={`arrow prev flex justify-center items-center border-2 rounded-full p-2 cursor-pointer ${isDisabled
-          ? " text-[#dfd8d8] border-[#dfd8d8] hover:bg-transparent hover:text-[#dfd8d8] hover:border-[#dfd8d8]"
-          : " text-[#969696] border-[#969696] group-hover:bg-[#2776ea] group-hover:text-white group-hover:border-[#00000000]"
+        className={`arrow prev flex justify-center items-center border-2 rounded-full p-2 ${isDisabled
+          ? " text-[#dfd8d8] border-[#dfd8d8] hover:bg-transparent hover:text-[#dfd8d8] hover:border-[#dfd8d8] cursor-none"
+          : " text-[#969696] border-[#969696] group-hover:bg-[#2776ea] group-hover:text-white group-hover:border-[#00000000] cursor-pointer "
           }`}
+        style={{ cursor: isDisabled ? 'default' : 'pointer' }}
       >
         <FaChevronLeft className="text-lg" />
       </div>
     </div>
   );
 };
+
 
 
 const Innovation: React.FC<InnovationProps> = ({ className }) => {

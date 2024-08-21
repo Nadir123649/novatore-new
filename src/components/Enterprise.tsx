@@ -12,7 +12,7 @@ interface EnterpriseData {
 
 const Enterprise: React.FC = () => {
   const { ref, inView } = useInView({
-    triggerOnce: false, 
+    triggerOnce: false,
     threshold: 0.3,
   });
 
@@ -43,7 +43,7 @@ const Enterprise: React.FC = () => {
                       className={`col-span-4 card-text text-center flex flex-col px-[20px] my-[0px] md:my-[100px] ${index !== Enterprises.length - 1
                         ? 'border-r-2 border-solid border-[#8E8C8C]'
                         : ''
-                        } transition-transform duration-500 ease-in-out transform hover:scale-105`}
+                        } transition-transform duration-500 ease-in-out transform `}
                     >
                       <h3 className='text-[56px] not-italic font-bold text-white mb-0'>
                         {isCounting ? (
