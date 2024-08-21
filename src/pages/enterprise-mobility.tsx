@@ -11,7 +11,7 @@ const EnterpriseMobility: NextPage = () => {
     return (
         <Layout title="Novatore Sols - Enterprise Mobility" description="Welcome to Novatore Sols, setting new standards in technology with unmatchable code.">
             <div className="overflow-x-hidden">
-                <HeroBanner bannerHeading="Enterprise Mobility" previewImage="/images/enterprize-banner.png" />
+                <HeroBanner bannerHeading="Seamless Enterprise Mobility Solutions For You" previewImage="/images/enterprize-banner.png" />
                 <ServicesNeeds needsTitle="Transform Your Business with Our " needsTitleBlue=" Enterprise Mobility" needsMoreTitle="Solutions" NeedsImage="/images/enterprize-image-right.png"
                     needsDescription="Having a strong enterprise mobility strategy is essential for tech businesses and startups seeking to thrive. Our enterprise mobility solutions empower your organization by integrating technology into every facet of your operations. Enhance productivity, streamline workflows, and secure your mobile environment with our tailored services. Leverage this technology to support remote work, improve communication, and ensure seamless access to critical data across all devices. Stay ahead of the competition by transforming your business processes and maximizing operational efficiency." />
                 <ExpertServices needsTitle="Your Business Needs the  " needsTitleBlue=" Best Enterprise" needsMoreTitle=" Mobility Management (EMM)" NeedsImage="/images/enterprize-image-left.png"

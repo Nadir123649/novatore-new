@@ -11,7 +11,7 @@ const NetworkingServices: NextPage = () => {
     return (
         <Layout title="Novatore Sols - Networking Services" description="Welcome to Novatore Sols, setting new standards in technology with unmatchable code.">
             <div className="overflow-x-hidden">
-                <HeroBanner bannerHeading="Networking Services" previewImage="/images/networking-banner.png" />
+                <HeroBanner bannerHeading="Networking Redefined: Connecting Your Business to Success" previewImage="/images/networking-banner.png" />
                 <ServicesNeeds needsTitle="Solutions for Your " needsTitleBlue=" IT Needs" NeedsImage="/images/networking-image-right.png"
                     needsDescription="Efficient and secure networking is the backbone of any successful business. We offer state-of-the-art networking solutions designed to enhance your business's connectivity and productivity. Our team of experts delivers tailored IT network services, ensuring robust network security and seamless management to keep your operations running smoothly." />
                 <ExpertServices needsTitle="Why Choose " needsTitleBlue=" Novatore Solutions" needsMoreTitle=" for Networking Services?" NeedsImage="/images/networking-image-left.png"

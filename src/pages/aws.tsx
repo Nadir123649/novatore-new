@@ -11,7 +11,7 @@ const AWS: NextPage = () => {
     return (
         <Layout title="Novatore Sols - AWS" description="Welcome to Novatore Sols, setting new standards in technology with unmatchable code.">
             <div className="overflow-x-hidden">
-                <HeroBanner bannerHeading="AWS" previewImage="/images/aws-banner-bg.png" />
+                <HeroBanner bannerHeading="AWS Innovation Hub: Transforming Ideas into Reality" previewImage="/images/aws-banner-bg.png" />
                 <ServicesNeeds needsTitle="Harness the Power of AWS with Our" needsTitleBlue="Expert Services" NeedsImage="/images/aws-image-right.png"
                     needsDescription="Our offerings include AWS architecture design, cloud migration, managed services, and consulting, all grounded in AWS best practices.
                      Whether you're exploring the benefits of AWS or seeking expert guidance on AWS implementation, our team of certified professionals is here to guide you every 

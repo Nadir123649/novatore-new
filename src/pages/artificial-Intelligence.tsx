@@ -14,7 +14,7 @@ const ArtificialIntelligence: NextPage = () => {
     return (
         <Layout title="Novatore Sols - Artificial Intelligence" description="Welcome to Novatore Sols, setting new standards in technology with unmatchable code.">
             <div className="overflow-x-hidden">
-                <HeroBanner bannerHeading="Artificial Intelligence" previewImage="/images/artifical-banner.png" />
+                <HeroBanner bannerHeading="Access Our High-Quality AI Services" previewImage="/images/artifical-banner.png" />
                 <ServicesNeeds needsTitle="The Real Power of " needsTitleBlue="Artificial Intelligence" NeedsImage="/images/needs-image-seven.png"
                     needsDescription="In the fast-evolving digital landscape, Artificial Intelligence (AI) stands as a beacon of innovation, transforming industries
                  and driving new levels of efficiency and intelligence. Our software company is at the forefront of this revolution, offering a suite of AI services

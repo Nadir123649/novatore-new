@@ -12,7 +12,7 @@ const DigitalTransformation: NextPage = () => {
     return (
         <Layout title="Novatore Sols - Digital Transformation" description="Welcome to Novatore Sols, setting new standards in technology with unmatchable code.">
             <div className="overflow-x-hidden">
-                <HeroBanner bannerHeading="DigitalTransformation" previewImage="/images/digital-transformation-banner.png" />
+                <HeroBanner bannerHeading="Empowering Your Journey With Our Digital Transformation" previewImage="/images/digital-transformation-banner.png" />
                 <ServicesNeeds needsTitle="Empower Your Business with" needsTitleBlue="Expert Solutions" NeedsImage="/images/transformation-righht.png"
                     needsDescription="Staying ahead of the competition requires more than just adopting new technologies. It requires a comprehensive digital transformation strategy tailored to your unique business needs. We specialize in providing Digital Transformation Solutions that drive innovation, enhance efficiency, and fuel growth. Our team of experts is dedicated to helping you navigate the complexities of technology to achieve long-term success." />
                 <ExpertServices needsTitle="Partner with" needsTitleBlue="Novatore Solutions" needsMoreTitle="for Digital Success" NeedsImage="/images/transformation-left.png"

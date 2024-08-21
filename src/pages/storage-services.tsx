@@ -11,7 +11,7 @@ const StorageServices: NextPage = () => {
     return (
         <Layout title="Novatore Sols - Storage Services" description="Welcome to Novatore Sols, setting new standards in technology with unmatchable code.">
             <div className="overflow-x-hidden">
-                <HeroBanner bannerHeading="Storage services" previewImage="/images/storage-banner.png" />
+                <HeroBanner bannerHeading="Storage Services for Uninterrupted Business Growth" previewImage="/images/storage-banner.png" />
                 <ServicesNeeds needsTitle="Unlock the Power of " needsTitleBlue="Data Management" NeedsImage="/images/storage-image-right.png"
                     needsDescription="In the digital age, data is the backbone of every business. Our IT Storage Solutions provide the reliability, security, and scalability your enterprise needs to thrive. With our advanced storage technology, you can safeguard your data, streamline operations, and focus on what truly matters—growing your business. Our team of experts delivers tailored solutions designed to meet the unique demands of your organization, ensuring seamless integration and exceptional performance." />
                 <ExpertServices needsTitle="Empowering Your Business with" needsTitleBlue="Innovative Storage" NeedsImage="/images/storage-img-left.png"

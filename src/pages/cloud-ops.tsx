@@ -11,7 +11,7 @@ const CloudOpsPage: NextPage = () => {
     return (
         <Layout title="Novatore Sols - CloudOps" description="Welcome to Novatore Sols, setting new standards in technology with unmatchable code.">
             <div className="overflow-x-hidden">
-                <HeroBanner bannerHeading="CloudOps" previewImage="/images/cloud-ops-banner.png" />
+                <HeroBanner bannerHeading="Achieve Operational Excellence with Professional CloudOps" previewImage="/images/cloud-ops-banner.png" />
                 <ServicesNeeds needsTitle="Unlock Exceptional Software Performance with" needsTitleBlue="CloudOps" NeedsImage="/images/cloud-image-right.png"
                     needsDescription="In the ever-evolving digital landscape, achieving top-tier software performance is crucial for businesses seeking competitive advantage. 
                     CloudOps, a blend of cloud computing and IT operations, is designed to optimize and streamline your software applications, ensuring they run efficiently and reliably.

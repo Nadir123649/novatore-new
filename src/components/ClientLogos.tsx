@@ -7,7 +7,7 @@ const ClientLogos = () => {
   return (
     <section className='bg-[#F1F1F1]'>
       <div className='container'>
-        <div className=' h-[130px] md:h-[180px] flex justify-center items-center overflow-hidden'>
+        <div className=' h-[120px] md:h-[120px] flex justify-center items-center overflow-hidden'>
           <div className='slider'>
             <div className='slide-track'>
               {companiesdata.map((company, index) => (

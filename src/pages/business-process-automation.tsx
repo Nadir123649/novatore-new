@@ -12,7 +12,7 @@ const BusinessProcessAutomation: NextPage = () => {
     return (
         <Layout title="Novatore Sols - Business Process Automation" description="Welcome to Novatore Sols, setting new standards in technology with unmatchable code.">
             <div className="overflow-x-hidden">
-                <HeroBanner bannerHeading="Business Process Automation" previewImage="/images/process-automation.png" />
+                <HeroBanner bannerHeading="Cost-Effective Business Process Automation" previewImage="/images/process-automation.png" />
                 <ServicesNeeds needsTitle="Implement Process Automation to" needsTitleBlue="Transform" needsMoreTitle="Your Business" NeedsImage="/images/transformation-image.png"
                     needsDescription="Experience the future of efficiency with Novatore Solution’s forefront business process automation (BPA) solutions. Our services are intended 
                     to accelerate processes, increase efficiency, and result in significant cost savings. We improve the speed and dependability of your operations by utilizing advanced

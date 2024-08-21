@@ -13,7 +13,7 @@ const ProductEngineering: NextPage = () => {
     return (
         <Layout title="Novatore Sols - Product Engineering" description="Welcome to Novatore Sols, setting new standards in technology with unmatchable code.">
             <div className="overflow-x-hidden">
-                <HeroBanner bannerHeading="Product Engineering" previewImage="/images/product-banner.png" />
+                <HeroBanner bannerHeading="Crafting Tomorrow’s Innovations with Precision Product Engineering" previewImage="/images/product-banner.png" />
                 <ServicesNeeds needsTitle="Uplift Your Enterprise with Advanced " needsTitleBlue=" Product Engineering" NeedsImage="/images/product-image-right.png"
                     needsDescription="At Novatore Solutions, we specialize in delivering modern software product engineering (SPE) services that change ideas into robust, scalable products. Our approach takes care of every stage of the software lifecycle—from designing and developing to testing, deploying, and maintaining software solutions. " />
                 <ExpertServices needsTitle="Unlock Innovation with " needsTitleBlue=" Tailored Software " NeedsImage="/images/product-image-left.png"

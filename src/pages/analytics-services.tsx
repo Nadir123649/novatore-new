@@ -11,7 +11,7 @@ const AnalyticsServices: NextPage = () => {
     return (
         <Layout title="Novatore Sols - Analytics Services " description="Welcome to Novatore Sols, setting new standards in technology with unmatchable code.">
             <div className="overflow-x-hidden">
-                <HeroBanner bannerHeading="Analytics Services" previewImage="/images/analytics-services-banner-bg.png " />
+                <HeroBanner bannerHeading="Unlocking the Power of Analytics for Smarter Decisions" previewImage="/images/analytics-services-banner-bg.png " />
                 <ServicesNeeds needsTitle="Advanced Analytics Services for " needsTitleBlue=" Software Businesses" NeedsImage="/images/analitical-image-right.png"
                     needsDescription="In the present digital landscape, data is more valuable than ever. Our cAnalytics Services empower software companies to make informed decisions, optimize performance, and drive growth. From predictive analytics to real-time data processing, our solutions are designed to transform your data into actionable insights. Let us help you harness the power of data with our comprehensive suite of analytics tools." />
                 <ExpertServices needsTitle="Why Choose Our Analytics " needsTitleBlue=" Services?" needsMoreTitle=" " NeedsImage="/images/analitical-image-left.png"

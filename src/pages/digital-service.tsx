@@ -13,7 +13,7 @@ const DigitalService: NextPage = () => {
     return (
         <Layout title="Novatore Sols - Digital Services" description="Welcome to Novatore Sols, setting new standards in technology with unmatchable code.">
             <div className="overflow-x-hidden">
-                <HeroBanner bannerHeading="Digital Services" previewImage="/images/digital-service.png" />
+                <HeroBanner bannerHeading="Our Digital Services to Enhance Your Online Presence" previewImage="/images/digital-service.png" />
                 <ServicesNeeds needsTitle="Best-Suited" needsTitleBlue="Digital Services" needsMoreTitle="For Your Needs" NeedsImage="/images/bestsuited-digitalservice.png"
                     needsDescription="At Novatore Solutions, we are dedicated to empowering businesses through innovative digital solutions. Our suite of digital services 
             is designed to streamline operations, enhance customer experiences, and drive growth. With a team of experienced professionals and a commitment to excellence,
