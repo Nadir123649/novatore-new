@@ -72,7 +72,7 @@ const TrendingNow = () => {
   const [isLastSlideVisible, setIsLastSlideVisible] = useState(false);
 
   const totalSlides = trendings.length;
-  const slidesToShow = 3;
+  const slidesToShow = 2.9;
 
   const settings = {
     dots: false,

@@ -24,8 +24,8 @@ const NextArrow: React.FC<ArrowProps> = ({ onClick, isDisabled }) => {
       <div
         onClick={!isDisabled ? onClick : undefined}
         className={`arrow next flex justify-center items-center border-2 rounded-full p-2 cursor-pointer ${isDisabled
-          ? "text-[#969696] border-[#969696] hover:bg-transparent hover:text-[#969696] hover:border-[#969696]"
-          : "text-[#dfd8d8] border-[#dfd8d8]  hover:bg-[#2776ea] hover:text-white hover:border-[#00000000]"
+          ? " text-[#dfd8d8] border-[#dfd8d8] hover:bg-transparent hover:text-[#dfd8d8] hover:border-[#dfd8d8]"
+          : "text-[#969696] border-[#969696] group-hover:bg-[#2776ea] group-hover:text-white group-hover:border-[#00000000]"
           }`}
       >
         <FaChevronRight className="text-lg" />
@@ -41,8 +41,8 @@ const PrevArrow: React.FC<ArrowProps> = ({ onClick, isDisabled }) => {
       <div
         onClick={!isDisabled ? onClick : undefined}
         className={`arrow prev flex justify-center items-center border-2 rounded-full p-2 cursor-pointer ${isDisabled
-          ? " text-[#969696] border-[#969696] hover:bg-transparent hover:text-[#969696] hover:border-[#969696]"
-          : " text-[#dfd8d8] border-[#dfd8d8]  hover:bg-[#2776ea] hover:text-white hover:border-[#00000000]"
+          ? " text-[#dfd8d8] border-[#dfd8d8] hover:bg-transparent hover:text-[#dfd8d8] hover:border-[#dfd8d8]"
+          : " text-[#969696] border-[#969696] group-hover:bg-[#2776ea] group-hover:text-white group-hover:border-[#00000000]"
           }`}
       >
         <FaChevronLeft className="text-lg" />
