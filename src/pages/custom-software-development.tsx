@@ -14,7 +14,7 @@ const CustomSoftwareDevelopment: NextPage = () => {
     return (
         <Layout title="Novatore Sols - Custom Software Development" description="Welcome to Novatore Sols, setting new standards in technology with unmatchable code.">
             <div className="overflow-x-hidden">
-                <HeroBanner bannerHeading="Explore Our Expertise in Custom Software Development" pagetitle="Services" needsMoreTitle="Get in Touch" previewImage="/images/custom-software-banner.png" />
+                <HeroBanner bannerHeading="Explore Our Expertise in Custom Software Development" pagetitle="Services" needsMoreTitle={true} previewImage="/images/custom-software-banner.png" />
                 <ServicesNeeds needsTitle="Innovative Software Development for " needsTitleBlue="  Modern Businesses" NeedsImage="/images/Custom-software-development.png"
                     needsDescription="Businesses require innovative and adaptable software solutions to stay competitive. Our custom software development services offer tailored solutions that align with your unique business needs, helping you achieve your goals with efficiency and precision. By using advanced technologies and industry best practices, we ensure that your digital transformation journey is seamless and impactful." />
                 <ExpertServices needsTitle="Our " needsTitleBlue="Expertise" needsMoreTitle=" in Web and Mobile Application Development" NeedsImage="/images/Expertise-applications.png"
