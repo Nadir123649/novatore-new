@@ -498,18 +498,18 @@ export const dataServices = [
         icon: DataImageOne,
     },
     {
-        title: 'Data Management & Governance',
+        title: 'Data Management',
         description: 'Ensure your data is accurate, secure, and compliant with industry standards.',
         icon: DataImageTwo,
     },
     {
-        title: 'Analytics & Platform Implementation',
+        title: 'Analytics & Platform',
         description: 'Implement robust analytics platforms that provide actionable insights and drive business growth.',
         icon: dataautomation,
     },
     {
         title: 'Data Science',
-        description: 'Leverage advanced algorithms and machine learning techniques to uncover hidden patterns and predictive insights.',
+        description: 'Leverage advanced algorithms and machine learning techniques to uncover hidden patterns.',
         icon: DataImageFour,
     },
     {
@@ -519,24 +519,24 @@ export const dataServices = [
     },
     {
         title: 'Data Visualization',
-        description: 'Our Data Visualization services transform complex data into interactive and intuitive visual formats.',
+        description: 'Our Data Visualization services transform complex data into interactive and visual formats.',
         icon: DataImageSix,
     },
 ];
 export const processAutomationData = [
     {
         title: 'IT System Support',
-        description: 'Keep your systems running smoothly with proactive monitoring and maintenance to prevent downtime and enhance performance.',
+        description: 'Keep your systems running smoothly with proactive monitoring and maintenance to prevent downtime.',
         icon: SystemSupport,
     },
     {
         title: 'Network Security Solutions',
-        description: 'Protect your business from cyber threats with cutting-edge security measures and proactive threat management.',
+        description: 'Protect your business from cyber threats with cutting-edge security measures.',
         icon: NetworkSecurity,
     },
     {
         title: 'IT Help Desk Services',
-        description: 'Immediate assistance for your team with any IT-related issues, ensuring quick resolutions and minimal downtime.',
+        description: 'Immediate assistance for your team with any IT-related issues, ensuring quick resolutions.',
         icon: HelpDesk,
     },
     {
@@ -546,12 +546,12 @@ export const processAutomationData = [
     },
     {
         title: 'Remote IT Support',
-        description: 'Access our expert technicians from anywhere, ensuring your business receives the support it needs without delay.',
+        description: 'Access our expert technicians from anywhere, ensuring your business receives the support it needs.',
         icon: RemoteIT,
     },
     {
-        title: 'Technology Consulting Services',
-        description: 'Leverage our industry expertise to align your technology strategy with your business goals for maximum impact.',
+        title: 'Technology Consulting',
+        description: 'Leverage our industry expertise to align your technology strategy with your business goals.',
         icon: ConsultingService,
     },
 ];
@@ -559,7 +559,7 @@ export const processAutomationData = [
 export const processBusinessData = [
     {
         title: 'Business Process Automation Consulting',
-        description: 'Our consulting services are designed to help you identify areas for automation and develop a strategic roadmap.',
+        description: 'Our consulting services are designed to help you identify areas for automation and develop a roadmap.',
         icon: PresentOne,
     },
     {
@@ -569,22 +569,22 @@ export const processBusinessData = [
     },
     {
         title: 'Business Process Automation Software',
-        description: 'Our expert team develops and deploys advanced business process automation software that integrates with your existing systems. ',
+        description: 'Our expert team develops advanced business process automation software. ',
         icon: PresentThree,
     },
     {
-        title: 'Workflow Automation',
-        description: 'Automate your business processes with our comprehensive business process automation workflow solutions. ',
+        title: 'Workflow Process Automation Software',
+        description: 'Automate your business processes with our comprehensive business process automation solutions.  ',
         icon: PresentFour,
     },
     {
         title: 'Robotic Process Automation (RPA)',
-        description: 'RPA allows you to automate routine and complex tasks, reducing manual effort and enabling your workforce to focus on more strategic activities.',
+        description: 'RPA allows you to automate routine and complex tasks, enabling your workforce to focus on more activities.',
         icon: PresentFive,
     },
     {
         title: 'AI-Driven Decision Automation',
-        description: 'This solution enhances accuracy, reduces bias, and speeds up operational processes, empowering your business to stay ahead in competitive environments.',
+        description: 'This solution enhances accuracy, empowering your business to stay ahead in competitive environments.',
         icon: PresentSix,
     },
 ];
@@ -802,17 +802,17 @@ export const RealEstateData = [
 export const AwsAutomationData = [
     {
         title: 'AWS Consulting Services ',
-        description: 'Our consultants offer deep insights into AWS tools and technologies and we tailor solutions to your business needs, ensuring optimal architecture and cost efficiency.',
+        description: 'Our consultants offer deep insights into AWS tools and technologies and we tailor solutions to your needs.',
         icon: MigrationOne,
     },
     {
         title: 'AWS Implementation Services ',
-        description: 'From initial setup to full-scale deployment, our team excels in designing and deploying AWS solutions that enhance performance.',
+        description: 'From initial setup to full-scale deployment, our team excels in designing AWS solutions.',
         icon: MigrationTwo,
     },
     {
         title: 'AWS Cloud Migration ',
-        description: 'Migrating to AWS offers significant benefits, including cost savings and improved agility. Our cloud migration services simplify the process of moving your applications and data to AWS. ',
+        description: 'Migrating to AWS offers significant benefits, including cost savings and improved agility.  ',
         icon: MigrationThree,
     },
 ];
@@ -839,24 +839,24 @@ export const WebAutomationData = [
 export const AiData = [
     {
         title: 'AI Consulting',
-        description: 'We provide expert guidance to help you navigate the complexities of AI, ensuring you implement the right strategies and technologies to achieve your goals.',
+        description: 'We provide expert guidance to help you navigate the complexities of AI, implementing the right strategies.',
         icon: ImageOne,
     },
     {
         title: 'Generative AI',
-        description: 'Our generative AI solutions help you create new and innovative content, designs, and products, pushing the boundaries of what’s possible.',
+        description: 'Our generative AI solutions help you create new and innovative content, designs, and products.',
         icon: ImageTwo,
     },
     {
         title: 'Machine Learning',
-        description: 'We develop and deploy machine learning models that analyze data, identify patterns, and make informed decisions, driving smarter business operations.',
+        description: 'We develop and deploy machine learning models that analyze data, and make decisions.',
         icon: ImageThree,
     },
 ];
 export const AwsData = [
     {
         title: 'Storage Services',
-        description: 'Secure and scalable storage solutions tailored to meet your business needs.',
+        description: 'Secure and scalable storage solutions tailored to meet your business needs and help you to elevate.',
         icon: StorageIcon,
     },
     {
@@ -866,7 +866,7 @@ export const AwsData = [
     },
     {
         title: 'Analytics Services',
-        description: 'Advanced analytics tools to turn your data into actionable insights.',
+        description: 'Advanced analytics tools to turn your data into actionable insights, driving efficiency.',
         icon: AnalyticsIcon,
     },
 ];
@@ -874,39 +874,39 @@ export const AwsData = [
 export const ProductEngineeringData = [
     {
         title: 'Kick-Off',
-        description: 'We start by translating your requirements into detailed technical documentation. Our team of experts assembles to create initial prototypes, ensuring your vision is brought to life from the outset.',
+        description: 'We start by translating your requirements into detailed technical documentation.',
         icon: ProductOne,
     },
     {
         title: 'Development',
-        description: 'Our developers work diligently on your product. Upon completion, we facilitate User Acceptance Testing (UAT) to ensure the product meets all your specifications.',
+        description: 'We facilitate User Acceptance Testing to ensure the product meets all your specifications.',
         icon: ProductTwo,
     },
     {
         title: 'Quality Assurance',
-        description: 'Post-release, we provide continuous server monitoring, assign QA experts for bug fixing, and offer comprehensive customer support to maintain your product’s excellence.',
+        description: 'We provide continuous server monitoring, and offer comprehensive customer support.',
         icon: ProductThree,
     },
     {
         title: 'Next Steps',
-        description: 'Modern software demands regular updates to stay relevant. We offer scalable support for ongoing updates, ensuring your product evolves with market trends and customer needs.',
+        description: 'Modern software demands regular updates to stay relevant. We offer scalable support for updates.',
         icon: ProductFour,
     },
     {
         title: 'Integration and Testing',
-        description: 'Our team performs meticulous integration testing to ensure different modules interact seamlessly, maintaining system integrity and performance. ',
+        description: 'Our team performs integration testing to ensure different modules interact seamlessly. ',
         icon: ProductFive,
     },
     {
         title: 'Deployment and Maintenance',
-        description: 'Following rigorous testing and quality assurance, we transition to the deployment phase, where your product goes live.',
+        description: 'Following rigorous testing and quality assurance, we transition to the deployment phase.',
         icon: ProductSix,
     },
 ];
 export const ConsultingData = [
     {
         title: 'AI Strategy Development',
-        description: 'Our strategic approach guarantees a seamless AI adoption that maximizes ROI.',
+        description: 'Our strategic approach guarantees a seamless AI adoption that maximizes ROI and efficiency.',
         icon: ConsultingOne,
         listItems: [
             'Customized AI roadmap',
@@ -925,7 +925,7 @@ export const ConsultingData = [
         ]
     },
     {
-        title: 'Data Analytics and Business Intelligence',
+        title: 'Data Analytics Intelligence',
         description: 'Harness the power of data with our advanced analytics and business intelligence services.',
         icon: ConsultingThree,
         listItems: [
@@ -935,7 +935,7 @@ export const ConsultingData = [
         ]
     },
     {
-        title: 'Natural Language Processing (NLP)',
+        title: 'Natural Language Processing',
         description: 'Unlock the potential of your data with NLP solutions that interpret and analyze human language. ',
         icon: ConsultingFour,
         listItems: [
@@ -955,7 +955,7 @@ export const ConsultingData = [
         ]
     },
     {
-        title: 'AI Integration and Automation Solutions',
+        title: 'AI Integration and Automation',
         description: 'Our AI integration services ensure that your AI solutions are scalable, secure, and aligned with your business objectives.',
         icon: ConsultingSix,
         listItems: [
@@ -968,12 +968,12 @@ export const ConsultingData = [
 
 export const ProductTransformationData = [
     {
-        title: 'Business Process Automation (BPA)',
+        title: 'Business Process Automation',
         description: 'Utilize robotic process automation (RPA) to minimize human errors and ensure precision in every task.',
         icon: TransformOne,
     },
     {
-        title: 'Testing and Quality Assurance (QA)',
+        title: 'Testing and Quality Assurance',
         description: 'Identify bottlenecks and optimize your software for superior performance.',
         icon: TransformTwo,
     },
@@ -990,7 +990,7 @@ export const ProductServicesData = [
         icon: TreeOne,
     },
     {
-        title: 'Digital Transformation Services',
+        title: 'Digital Transformation ',
         description: 'Transform your business with innovative technologies and streamlined processes.',
         icon: TreeTwo,
     },
@@ -1023,32 +1023,32 @@ export const ProductWebData = [
 export const ServicesDataLocal = [
     {
         title: 'Data Management Services',
-        description: 'Our data management solutions focus on organizing, storing, and maintaining your data to ensure it is reliable and available when needed. ',
+        description: 'Our data management solutions focus on organizing, storing, and maintaining your data. ',
         icon: ServicesOne,
     },
     {
         title: 'Data Governance Consulting',
-        description: 'Our experts work with you to define data governance principles and policies that align with your business objectives, ensuring data integrity.',
+        description: 'Our experts work with you to define data governance principles and policies that align with your business.',
         icon: ServicesTwo,
     },
     {
-        title: 'Data Governance Framework Implementation',
-        description: 'Implement a strong data governance framework that outlines the processes, and responsibilities for managing your data.',
+        title: 'Data Governance Framework',
+        description: 'Implement a strong data governance framework that outlines the processes, and responsibilities.',
         icon: ServicesThree,
     },
     {
         title: 'Data Management Strategies',
-        description: 'Our strategies include data collection, storage, processing, and analysis, ensuring optimal data utilization and management.',
+        description: 'Our strategies include data collection, storage, processing, and analysis.',
         icon: ServicesFour,
     },
     {
         title: 'Data Governance Policies',
-        description: 'Create and enforce data governance policies that define how data is handled, stored, and protected within your organization. ',
+        description: 'Create and enforce data governance policies that define how data is handled, stored, and protected. ',
         icon: ServicesFive,
     },
     {
-        title: 'Data Management Lifecycle Management',
-        description: 'Manage the entire data lifecycle from creation to disposal with our expert services. We ensure that your data is properly managed at every stage.',
+        title: 'Data Management Lifecycle',
+        description: 'Manage the entire data lifecycle from creation to disposal with our expert services.s',
         icon: ServicesSix,
     },
 ];
@@ -1085,7 +1085,7 @@ export const GovernanceDataPrivacy = [
     },
     {
         title: 'Data Privacy Regulations',
-        description: 'We help you implement robust data privacy practices that safeguard sensitive information and ensure compliance with global data protection regulations.',
+        description: 'We help you implement robust data privacy practices that safeguard sensitive information and ensure compliance with global data regulations.',
         icon: ComplianceAI,
         listItems: [
             'Data Security in AI',
@@ -1098,32 +1098,32 @@ export const GovernanceDataPrivacy = [
 export const PenetrationTestingData = [
     {
         title: 'Vulnerability Assessment',
-        description: 'Our thorough vulnerability assessments pinpoint weaknesses in your network, applications, and systems, providing a detailed analysis and prioritizing remediation efforts.',
+        description: 'Our vulnerability assessments pinpoint weaknesses in your network, applications, and systems.',
         icon: Vulnerability,
     },
     {
         title: 'Network Security Testing',
-        description: 'We conduct extensive network security tests to uncover potential vulnerabilities and ensure robust protection against unauthorized access and cyber threats.',
+        description: 'We conduct extensive network security tests to uncover potential vulnerabilities.',
         icon: NetworkSecurityTesting,
     },
     {
         title: 'Web Application Security',
-        description: 'Our experts perform rigorous web application penetration tests to identify security flaws, ensuring your web applications are secure against attacks',
+        description: 'Our experts perform rigorous web application penetration tests to identify security flaws.',
         icon: webAppSecurity,
     },
     {
         title: 'Security Audits',
-        description: 'We provide detailed security audits to evaluate your organizations adherence to security policies and compliance with industry standards.',
+        description: 'We provide detailed security audits to evaluate your organization adherence to security policies.',
         icon: SecurityAudits,
     },
     {
         title: 'Red Teaming',
-        description: 'Our red teaming exercises simulate advanced persistent threats, providing an in-depth assessment of your security posture and response capabilities.',
+        description: 'Our red teaming exercises simulate advanced persistent threats, providing an in-depth assessment. ',
         icon: RedTeaming,
     },
     {
-        title: 'Application Security Compliance',
-        description: 'We guide you through the entire process of compliance—from initial assessment to final verification, to ensure that your applications exceed the regulatory standards.',
+        title: 'Application Security',
+        description: 'We guide you through the entire process of compliance—from initial assessment to final verification.',
         icon: ApplicationCompliance,
     },
 

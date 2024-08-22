@@ -21,7 +21,7 @@ const AWS: NextPage = () => {
                Our dedicated team of AWS-certified experts ensures that your business can seamlessly integrate cloud solutions, offering a competitive
                edge in today’s fast-paced market." />
 
-                <ExpertServices needsTitleBlue="AWS Services: " needsMoreTitle="Changing Your Digital" NeedsImage="/images/amazon-left.png"
+                <ExpertServices needsTitle="AWS Services:Changing Your " needsTitleBlue="Digital Landscape" NeedsImage="/images/amazon-left.png"
                     needsDescription="With AWS, we offer a suite of services designed to meet the diverse needs of our clients.
                From robust storage solutions to advanced networking capabilities, and insightful analytics,
                we provide comprehensive support to ensure your business runs smoothly and efficiently. 

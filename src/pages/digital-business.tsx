@@ -12,7 +12,7 @@ const DigitalBusiness: NextPage = () => {
         <Layout title="Novatore Sols - Digital Business" description="Welcome to Novatore Sols, setting new standards in technology with unmatchable code.">
             <div className="overflow-x-hidden">
                 <HeroBanner bannerHeading="Business Applications for Modern Enterprises" pagetitle="Services" needsMoreTitle="Get in Touch" previewImage="/images/bussinees-banner.png" maxwidth="1100px" />
-                <ServicesNeeds  needsTitleBlue="Scalable, Cloud-Based " needsMoreTitle="Solutions" NeedsImage="/images/needs-image-finalest.png"
+                <ServicesNeeds needsTitleBlue="Scalable, Cloud-Based " needsMoreTitle="Solutions" NeedsImage="/images/needs-image-finalest.png"
                     needsDescription="In today's fast-paced digital world, where technological advancements and market trends shift rapidly, businesses face the ongoing challenge of adapting to constant change and meeting increasingly sophisticated customer expectations. Our deep expertise in digital innovation, coupled with a commitment to understanding each client's unique needs, allows us to craft tailored solutions that satisfy our clients." />
                 <ExpertServices needsTitle="Smooth Integration for Unmatched" needsTitleBlue="Efficiency" NeedsImage="/images/needs-image-final-one.png"
                     needsDescription="Now you can experience efficiency like never before with our fully integrated business applications that unify all key functional areas of your enterprise.
