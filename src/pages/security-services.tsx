@@ -11,7 +11,7 @@ const SecurityServices: NextPage = () => {
     return (
         <Layout title="Novatore Sols - Security Services" description="Welcome to Novatore Sols, setting new standards in technology with unmatchable code.">
             <div className="overflow-x-hidden">
-                <HeroBanner bannerHeading="Protecting Your Digital Frontier: Comprehensive IT Security Services" pagetitle="Services" needsMoreTitle="Get in Touch" previewImage="/images/securityservice-banner.png" />
+                <HeroBanner bannerHeading="Protecting Your Digital Frontier: Comprehensive IT Security Services" pagetitle="Services" needsMoreTitle="Get in Touch" previewImage="/images/securityservice-banner.png" maxwidth="1100px" />
                 <ServicesNeeds needsTitle="Safeguard Your Business with" needsTitleBlue="Our Cybersecurity Solutions" needsMoreTitle="" NeedsImage="/images/cybeersecurity-solutions.png"
                     needsDescription="In an era where cyber threats are constantly evolving, securing your digital assets has never been more critical. Our comprehensive IT Security Services offer a robust shield to protect your business from the ever-present dangers lurking in the digital landscape. By leveraging advanced threat intelligence and real-time monitoring, our cybersecurity solutions ensure your network remains impervious to the latest cyber threats." />
                 <ExpertServices needsTitle="Comprehensive Data and Endpoint Security for " needsTitleBlue="Modern Enterprises" needsMoreTitle="" NeedsImage="/images/Modern-Enterprises.png"

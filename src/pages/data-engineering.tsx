@@ -15,7 +15,7 @@ const DataEngineering: NextPage = () => {
     return (
         <Layout title="Novatore Sols - Data Engineering" description="Welcome to Novatore Sols, setting new standards in technology with unmatchable code.">
             <div className="overflow-x-hidden">
-                <HeroBanner bannerHeading="Comprehensive Data Engineering Tools" pagetitle="Services" needsMoreTitle="Get in Touch" previewImage="/images/data-banner-bg.png" />
+                <HeroBanner bannerHeading="Comprehensive Data Engineering Tools" pagetitle="Services" needsMoreTitle="Get in Touch" previewImage="/images/data-banner-bg.png" maxwidth="1200px" />
                 <ServicesNeeds needsTitle="Revamp Your Data with" needsTitleBlue="Advanced Engineering" needsMoreTitle="Solutions" NeedsImage="/images/data-engineering-right.png"
                     needsDescription="Our team of experienced data engineers is dedicated to delivering high-quality solutions. We offer data engineering services designed to empower businesses by harnessing the full potential of their data. Our expertise encompasses building robust and reliable data pipelines, implementing scalable and flexible data architectures, and ensuring seamless data integration across a wide range of platforms and systems." />
                 <ExpertServices needsTitle="What Can " needsTitleBlue=" Expert Data Engineering " needsMoreTitle="Do for Your Business?" NeedsImage="/images/data-engineering-left.png"

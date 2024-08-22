@@ -12,7 +12,7 @@ const SystemSupport: NextPage = () => {
     return (
         <Layout title="Novatore Sols - System Support" description="Welcome to Novatore Sols, setting new standards in technology with unmatchable code.">
             <div className="overflow-x-hidden">
-                <HeroBanner bannerHeading="Expert System Support to Ensure Seamless IT Performance" pagetitle="Services" needsMoreTitle="Get in Touch" previewImage="/images/system-support-banner.png" />
+                <HeroBanner bannerHeading="Expert System Support to Ensure Seamless IT Performance" pagetitle="Services" needsMoreTitle="Get in Touch" previewImage="/images/system-support-banner.png" maxwidth="1100px" />
                 <ServicesNeeds needsTitle="IT System Support Services for" needsTitleBlue="Software Businesses" NeedsImage="/images/software-business.png"
                     needsDescription="Leading tech businesses rely heavily on technology to maintain operations and drive growth. We understand the critical role that reliable IT system support plays in ensuring the success of software businesses. As a leading software solutions provider, we offer a comprehensive range of IT support services tailored to meet the unique needs of our clients." />
                 <ExpertServices needsTitle="Discover the Difference of Our" needsTitleBlue="  IT Infrastructure Support" NeedsImage="/images/IT-Infrastructure.png"

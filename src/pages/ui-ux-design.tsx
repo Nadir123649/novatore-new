@@ -11,7 +11,7 @@ const UiUxDesign: NextPage = () => {
     return (
         <Layout title="Novatore Sols - UI/UX Design" description="Welcome to Novatore Sols, setting new standards in technology with unmatchable code.">
             <div className="overflow-x-hidden">
-                <HeroBanner bannerHeading="Driving Excellence in UI/UX and Branding Services" pagetitle="Services" needsMoreTitle="Get in Touch" previewImage="/images/ui-ux-banner.png" />
+                <HeroBanner bannerHeading="Driving Excellence in UI/UX and Branding Services" pagetitle="Services" needsMoreTitle="Get in Touch" previewImage="/images/ui-ux-banner.png" maxwidth="1100px" />
                 <ServicesNeeds needsTitle="Elevate Your Digital Experience with Our " needsTitleBlue=" UI/UX Design Services" NeedsImage="/images/ux-image-right.png"
                     needsDescription="In a digital-first world, the success of your software hinges on the user experience it delivers. Our UI/UX design services combine aesthetic appeal with functional excellence, every touchpoint meets the high expectations. At Novatore, we understand that exceptional UI/UX design is not just about looking good — it's about creating user interfaces that are intuitive, engaging, and efficient." />
                 <ExpertServices needsTitle="Why Choose Us for Your " needsTitleBlue=" UI/UX Needs?" NeedsImage="/images/ui-ux-banner-left.png"

@@ -13,7 +13,7 @@ const GovernanceAndDataPrivacy: NextPage = () => {
     return (
         <Layout title="Novatore Sols - Governance, Risk & Compliance, and Data Privacy" description="Welcome to Novatore Sols, setting new standards in technology with unmatchable code.">
             <div className="overflow-x-hidden">
-                <HeroBanner bannerHeading="Governance, Risk & Compliance, and Data Privacy" pagetitle="Services" needsMoreTitle="Get in Touch" previewImage="/images/governence-banner-bg.png" />
+                <HeroBanner bannerHeading="Governance, Risk & Compliance, and Data Privacy" pagetitle="Services" needsMoreTitle="Get in Touch" previewImage="/images/governence-banner-bg.png" maxwidth="1000px" />
                 <ServicesNeeds needsTitle="Welcome to Your " needsTitleBlue=" AI Assurance Partner" NeedsImage="/images/assurance-partner.png"
                     needsDescription="We understand the multifaceted complexities and challenges that come with integrating artificial intelligence into your business operations. As a trusted partner, we offer a comprehensive suite of services in Governance, Risk & Compliance, and Data Privacy to guide you through this transformation. Our approach ensures that your AI systems are ethically designed, secure, and fully compliant." />
                 <DataServicesSection heading="Our " headingBlue="Services" type="single" data={GovernanceDataPrivacy} />

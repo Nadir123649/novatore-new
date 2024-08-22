@@ -11,7 +11,7 @@ const AiConsulting: NextPage = () => {
     return (
         <Layout title="Novatore Sols -  Ai Consulting" description="Welcome to Novatore Sols, setting new standards in technology with unmatchable code.">
             <div className="overflow-x-hidden">
-                <HeroBanner bannerHeading="Transform Your Business with AI Consulting Services" pagetitle="Services" needsMoreTitle="Get in Touch" previewImage="/images/consulting-banner-bg.png" />
+                <HeroBanner bannerHeading="Transform Your Business with AI Consulting Services" pagetitle="Services" needsMoreTitle="Get in Touch" previewImage="/images/consulting-banner-bg.png" maxwidth="1100px" />
                 <ServicesNeeds needsTitleBlue="Introduction" NeedsImage="/images/consulting-image-right.png"
                     needsDescription="We seamlessly integrate strategy, cutting-edge technology, and forward-thinking innovation to empower your business to excel in the rapidly evolving era of artificial intelligence. Our comprehensive AI Consulting services are meticulously crafted to meet the unique needs of your organization, ensuring that you stay ahead of the competition. Our team of experts is dedicated to elevating your business operations." />
                 <DataServicesSection heading="Our AI Consulting " headingBlue=" Services" data={ConsultingData} />
