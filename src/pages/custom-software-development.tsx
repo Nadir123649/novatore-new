@@ -22,7 +22,7 @@ const CustomSoftwareDevelopment: NextPage = () => {
                 <DataServicesSection heading="Explore Our Comprehensive " headingBlue="Services" data={ProductWebData} />
                 <DiagramSlider heading="A Superior " headingBlue="Software Development" needsMoreTitle="Approach" image={DiagramCustomServices} />
                 <Enterprise />
-                <Innovation />
+                <Innovation />  
             </div>
         </Layout>
     );

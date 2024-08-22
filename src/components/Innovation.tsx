@@ -147,9 +147,10 @@ const Innovation: React.FC<InnovationProps> = ({ className }) => {
     >
       <div className="container">
         <div className="flex justify-between items-center pr-[0px] md:pr-[140px] pb-[40px] md:pb-[0px]">
-          <h2 className="font-bold text-[26px] md:text-[40px] max-w-full md:max-w-[645px]">
-            Tech Expert Latest: Innovations In <span className="text-[#2776EA]">Digital Enterprise</span>
-          </h2>
+          <div className='flex flex-col w-full -mb-5'>
+            <h2 className='font-bold text-[26px] md:text-[40px]'>Tech Expert Latest:</h2>
+            <h2 className='font-bold text-[26px] md:text-[40px]'>Innovations In <span className="text-[#2776EA]">Digital Enterprise</span></h2>
+          </div>
         </div>
         <Slider {...settings} className="innovation-slider mt-10">
           {blogData.map((blog) => (
