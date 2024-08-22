@@ -58,7 +58,7 @@ const ContactForm = () => {
                                             <Form.Label className='text-[#645555] text-[18px] font-medium not-italic'>How We Can Help You?</Form.Label>
                                             <input
                                                 type="text"
-                                                className='form-input rounded-[16px] border border-solid border-[#B7B7B7] bg-[#FFFFFF59] p-[14px] text-[18px] not-italic font-normal'
+                                                className='form-input rounded-[16px] border border-solid border-[#B7B7B7] bg-white  text-black p-[14px] text-[18px] not-italic font-normal'
                                                 placeholder="How we can help?"
                                             />
                                         </Form.Group>
@@ -68,7 +68,7 @@ const ContactForm = () => {
                                             <Form.Label className='text-[#645555] text-[18px] font-medium not-italic'>First Name</Form.Label>
                                             <input
                                                 type="text"
-                                                className='form-input rounded-[16px] border border-solid border-[#B7B7B7] bg-[#FFFFFF59] p-[14px] text-[18px] not-italic font-normal'
+                                                className='form-input rounded-[16px] border border-solid border-[#B7B7B7] bg-white  text-black p-[14px] text-[18px] not-italic font-normal'
                                                 placeholder="Enter First name"
                                             />
                                         </Form.Group>
@@ -78,7 +78,7 @@ const ContactForm = () => {
                                             <Form.Label className='text-[#645555] text-[18px] font-medium not-italic'>Last Name</Form.Label>
                                             <input
                                                 type="text"
-                                                className='form-input rounded-[16px] border border-solid border-[#B7B7B7] bg-[#FFFFFF59] p-[14px] text-[18px] not-italic font-normal'
+                                                className='form-input rounded-[16px] border border-solid bg-white  text-black border-[#B7B7B7] p-[14px] text-[18px] not-italic font-normal'
                                                 placeholder="Enter Last name"
                                             />
                                         </Form.Group>
@@ -88,7 +88,7 @@ const ContactForm = () => {
                                             <Form.Label className='text-[#645555] text-[18px] font-medium not-italic'>Country</Form.Label>
                                             <input
                                                 type="text"
-                                                className='form-input rounded-[16px] border border-solid border-[#B7B7B7] bg-[#FFFFFF59] p-[14px] text-[18px] not-italic font-normal'
+                                                className='form-input rounded-[16px] border border-solid border-[#B7B7B7] bg-white  text-black p-[14px] text-[18px] not-italic font-normal'
                                                 placeholder="Enter Country name"
                                             />
                                         </Form.Group>
@@ -98,7 +98,7 @@ const ContactForm = () => {
                                             <Form.Label className='text-[#645555] text-[18px] font-medium not-italic'>Phone Number</Form.Label>
                                             <input
                                                 type="text"
-                                                className='form-input rounded-[16px] border border-solid border-[#B7B7B7] bg-[#FFFFFF59] p-[14px] text-[18px] not-italic font-normal'
+                                                className='form-input rounded-[16px] border border-solid border-[#B7B7B7] bg-white  text-black p-[14px] text-[18px] not-italic font-normal'
                                                 placeholder="Enter Phone number here"
                                             />
                                         </Form.Group>
@@ -106,7 +106,7 @@ const ContactForm = () => {
                                     <Col lg={12} md={12} xs={12}>
                                         <Form.Group className='flex flex-col gap-1'>
                                             <Form.Label className='form-input text-[#645555] text-[18px] font-medium not-italic'>Message</Form.Label>
-                                            <textarea name="" id="" className='form-input rounded-[16px] border border-solid border-[#B7B7B7] bg-[#FFFFFF59] p-[14px] min-h-[140px] text-[18px] not-italic font-normal '
+                                            <textarea name="" id="" className='form-input rounded-[16px] border border-solid border-[#B7B7B7] bg-white  text-black p-[14px] min-h-[140px] text-[18px] not-italic font-normal '
                                                 placeholder='Message'></textarea>
                                         </Form.Group>
                                     </Col>

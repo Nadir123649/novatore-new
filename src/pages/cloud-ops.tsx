@@ -11,7 +11,7 @@ const CloudOpsPage: NextPage = () => {
     return (
         <Layout title="Novatore Sols - CloudOps" description="Welcome to Novatore Sols, setting new standards in technology with unmatchable code.">
             <div className="overflow-x-hidden">
-                <HeroBanner bannerHeading="Achieve Operational Excellence with Professional CloudOps" pagetitle="Services" needsMoreTitle="Get in Touch" previewImage="/images/cloud-ops-banner.png" maxwidth="1100px" />
+                <HeroBanner bannerHeading="Achieve Operational Excellence with Professional CloudOps" pagetitle="Services" needsMoreTitle="Get in Touch" previewImage="/images/cloud-ops-banner.png" maxwidth="1000px" />
                 <ServicesNeeds needsTitle=" Exceptional Software Performance with" needsTitleBlue="CloudOps" NeedsImage="/images/cloud-image-right.png"
                     needsDescription="In the ever-evolving digital landscape, achieving top-tier software performance is crucial for businesses seeking competitive advantage. CloudOps, a blend of cloud computing and IT operations, is designed to optimize and streamline your software applications, ensuring they run efficiently and reliably. Our CloudOps services empower businesses by enhancing operational efficiency, improving deployment processes, and guaranteeing high availability." />
                 <ExpertServices needsTitle="CloudOps Services Tailored to " needsTitleBlue=" Your Needs"  NeedsImage="/images/cloud-image-left.png"

@@ -130,7 +130,7 @@ const CloudOps: FC<CloudOpsProps> = ({
 
   const duplicatedDetails = [
     ...detailsForCurrentRoute,
-    ...detailsForCurrentRoute.slice(0, 1),
+    ...detailsForCurrentRoute.slice(0, 2 ),
   ];
 
   useEffect(() => {
@@ -190,10 +190,10 @@ const CloudOps: FC<CloudOpsProps> = ({
             </h2>
             <Row>
               <Col lg={12} md={12} xs={12}>
-                <div className="grid grid-cols-12 gap-4 py-[20px] min-h-[100vh]">
+                <div className="grid grid-cols-12 gap-4 py-[20px]">
                   {/* Left Column */}
                   <div className="col-span-12 md:col-span-4">
-                    <div className="cloudops-card text-white bg-[#2776EA] rounded-2xl p-4 min-h-auto md:min-h-auto  sticky top-0">
+                    <div className="cloudops-card text-white bg-[#2776EA] rounded-2xl p-4 min-h-auto md:min-h-auto h-full  sticky top-0">
                       <TransitionGroup>
                         {detailsForCurrentRoute.map((data, index) => (
                           <CSSTransition
@@ -213,16 +213,16 @@ const CloudOps: FC<CloudOpsProps> = ({
                   {/* Right Column */}
                   <div className="col-span-12 md:col-span-8">
                     <div
-                      className="overflow-y-scroll parallax-section relative h-[440px] md:min-h-[80vh]"
+                      className="overflow-y-scroll parallax-section relative h-[440px] md:min-h-auto"
                       ref={ulRef}
                     >
-                      <ul className="pr-[40px] flex flex-col gap-16">
+                      <ul className="pr-[40px] flex flex-col gap-4">
                         {duplicatedDetails.map((data, index) => (
                           <li
                             key={index}
-                            className={`relative h-[160px] md:h-[260px] px-[20px] py-10 transition-transform duration-500 ease-in-out ${index === activeIndex
-                              ? "opacity-100 scale-110"
-                              : "opacity-50 scale-100"
+                            className={`relative h-[100px] md:h-[170px] px-[20px] py-2 transition-transform duration-500 ease-in-out ${index === activeIndex
+                              ? "opacity-100 scale-100"
+                              : "opacity-40 scale-100"
                               }`}
                           >
                             <div className="d-flex items-center gap-3">

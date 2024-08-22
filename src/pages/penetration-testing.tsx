@@ -12,7 +12,7 @@ const PenetrationTesting: NextPage = () => {
     return (
         <Layout title="Novatore Sols - Penetration Testing" description="Welcome to Novatore Sols, setting new standards in technology with unmatchable code.">
             <div className="overflow-x-hidden">
-                <HeroBanner bannerHeading="Expert Penetration Testing for Robust Security" pagetitle="Services" needsMoreTitle="Get in Touch" previewImage="/images/penetration-testing-banner.png" />
+                <HeroBanner bannerHeading="Expert Penetration Testing for Robust Security" pagetitle="Services" needsMoreTitle="Get in Touch" previewImage="/images/penetration-testing-banner.png"  maxwidth="800px"/>
                 <ServicesNeeds needsTitle="Expert " needsTitleBlue="Penetration Testing" NeedsImage="/images/penetration-testing.png"
                     needsDescription="In today's rapidly evolving digital landscape, safeguarding your organisation from cyber threats is more crucial than ever. Our penetration testing services provide a comprehensive approach to identifying and mitigating potential vulnerabilities. Our team of seasoned ethical hackers employs cutting-edge techniques to simulate real-world attacks, helping to ensure your systems are resilient against breaches. By proactively uncovering weaknesses, we enable your organization to strengthen its security posture." />
                 <DataServicesSection heading="Our Penetration Testing " headingBlue=" Solutions" data={PenetrationTestingData} />

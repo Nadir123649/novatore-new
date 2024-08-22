@@ -14,7 +14,7 @@ const Data: NextPage = () => {
     return (
         <Layout title="Novatore Sols - Data" description="Welcome to Novatore Sols, setting new standards in technology with unmatchable code.">
             <div className="overflow-x-hidden">
-                <HeroBanner bannerHeading="Our Innovative Approach Towards Data Engineering " pagetitle="Services" needsMoreTitle="Get in Touch" previewImage="/images/data-engenering.png" maxwidth="1100px" />
+                <HeroBanner bannerHeading="Our Innovative Approach Towards Data Engineering " pagetitle="Services" needsMoreTitle="Get in Touch" previewImage="/images/data-engenering.png" maxwidth="900px" />
                 <ServicesNeeds needsTitle="Unlock the" needsTitleBlue="Power of Your Data" NeedsImage="/images/data-right.png"
                     needsDescription="We believe data is the cornerstone of informed decision-making and innovation. We understand that having accurate 
                 and actionable data is crucial for maintaining a competitive edge. Our team of experts works tirelessly to ensure that your

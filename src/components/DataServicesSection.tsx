@@ -52,7 +52,7 @@ const DataServicesSection: React.FC<DataServicesSectionProps> = ({ heading, head
                     {
                         type === "single" ? (
                             data.map((item, index) => (
-                                <Col lg={6} md={6} xs={12} key={index} className="mb-4">
+                                <Col lg={6} md={6} xs={12} key={index} className="mb-5">
                                     <DataCard title={item.title} description={item.description} icon={item.icon} listItems={item.listItems}
                                         type="relative bg-white shadow rounded-[16px] pt-[40px] pb-[10px] px-[24px]  max-w-2xl mx-auto overflow-hidden flex flex-col h-full hover:scale-105 transition ease-in duration-1.5"
                                         value="absolute top-[16px] right-[400px] mt-2 mr-3 text-blue-200"
@@ -62,7 +62,7 @@ const DataServicesSection: React.FC<DataServicesSectionProps> = ({ heading, head
                             ))
                         ) : (
                             data.map((item, index) => (
-                                <Col lg={4} md={6} xs={12} key={index} className="mb-4">
+                                <Col lg={4} md={6} xs={12} key={index} className="mb-5">
                                     <DataCard title={item.title} description={item.description} icon={item.icon} listItems={item.listItems} minHeight={cardMinHeight} />
                                 </Col>
                             ))

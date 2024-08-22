@@ -592,33 +592,33 @@ export const processBusinessData = [
 
 export const processAnalyticsData = [
     {
-        title: 'Analytics Platform Implementation Services',
-        description: 'We offer end-to-end analytics platform implementation services, from initial consultation to final deployment. ',
+        title: 'Analytics Platform Services',
+        description: 'We offer end-to-end analytics platform implementation services, from consultation to deployment.  ',
         icon: CustomAnalyticsOne,
     },
     {
         title: 'Analytics Consulting Services',
-        description: 'We provide strategic guidance on selecting the right analytics tools, developing implementation plans, and optimizing your data processes.',
+        description: 'We provide strategic guidance on selecting the right analytics tools, and optimizing your data processes.',
         icon: CustomAnalyticsTwo,
     },
     {
         title: 'Analytics Platform Solutions',
-        description: 'Our solutions enhance data accessibility, improve reporting capabilities, and support advanced analytics functions.',
+        description: 'Our solutions enhance data accessibility, and support advanced analytics functions.',
         icon: CustomAnalyticsThree,
     },
     {
         title: 'Data Analytics Platform Providers',
-        description: 'Whether you need a cloud-based solution or an on-premises setup, we have the expertise to implement the best-fit platform for your needs.',
+        description: 'Whether you need a cloud-based solution or an on-premises setup, we have the expertise.',
         icon: CustomAnalyticsFour,
     },
     {
         title: 'Analytics Implementation Experts',
-        description: 'We ensure that your analytics platform is implemented efficiently, with minimal disruption to your operations.',
+        description: 'We ensure that your analytics platform is implemented efficiently, with minimal disruption.',
         icon: CustomAnalyticsFive,
     },
     {
         title: 'Custom Analytics Dashboard Development',
-        description: 'We create tailored dashboards that provide real-time insights and visualization, enabling you to make data-driven decisions quickly and effectively.',
+        description: 'We create tailored dashboards that provide real-time insights and visualization.',
         icon: CustomAnalyticsSix,
     },
 ];
@@ -986,17 +986,17 @@ export const ProductTransformationData = [
 export const ProductServicesData = [
     {
         title: 'Enterprise Mobility Solutions',
-        description: 'Enable seamless access to business resources anytime, anywhere, and on any device',
+        description: 'Enable seamless access to business resources anytime, anywhere, and on any device.',
         icon: TreeOne,
     },
     {
         title: 'Digital Transformation ',
-        description: 'Transform your business with innovative technologies and streamlined processes.',
+        description: 'Revolutionize your business with cutting-edge technologies and optimized processes.',
         icon: TreeTwo,
     },
     {
         title: 'Staff Augmentation',
-        description: "Enhance your team's capabilities with our skilled IT professionals.",
+        description: "Enhance your team's capabilities with our skilled IT professionals and high-quality expertise.",
         icon: TreeThree,
     },
 ];
@@ -1428,22 +1428,22 @@ export const servicesoffer = {
         title: "Microsoft Azure Services",
         details: "We provide solutions that leverage the full capabilities of Microsoft Azure and Google Cloud Platform (GCP) to meet the diverse and evolving needs of your business. Our team of experts ensures that you not only harness the power of these robust cloud platforms but also maximize their potential to drive innovation, scalability, and efficiency across your operations.",
         description: "Microsoft Azure is a dynamic cloud computing platform and service provided by Microsoft. It offers a wide range of services, including computing, analytics, storage, and networking. ",
-        keyheading: "Azure provides a comprehensive array of services, including:",
-        keyfeatures: [{ paragraph: "Azure Virtual Machines" }, { paragraph: "Azure Blob Storage" }, { paragraph: "Azure Kubernetes Service (AKS)" }, { paragraph: "Azure Cognitive Services" }]
+        keyheading: "",
+        keyfeatures: [{ paragraph: "" }]
     },
     {
         id: 2,
         title: "Azure Architecture",
         description: "Azure architecture is designed to provide a resilient, secure, and scalable environment for cloud applications. Key components include:",
         keyheading: "",
-        keyfeatures: [{ paragraph: "Resource Groups: Logical containers for managing and organizing resources." }, { paragraph: "Virtual Networks: Isolated networks for securely connecting resources." }, { paragraph: "Azure Service Fabric: Microservices platform for building scalable and reliable applications." }]
+        keyfeatures: [{ paragraph: "" }]
     },
     {
         id: 3,
         title: "Google Cloud Platform (GCP) Services",
         description: "Google Cloud Platform (GCP) is a suite of cloud computing services provided by Google. Known for its high performance and cost-effective pricing, GCP is designed to support the deployment of modern, cloud-native applications.",
-        keyheading: "Ensuring optimal use of GCP involves",
-        keyfeatures: [{ paragraph: "Cost Optimization" }, { paragraph: "Security" }, { paragraph: "Automation" }]
+        keyheading: "",
+        keyfeatures: [{ paragraph: "" }]
     },],
     cloudmigration: [{
         id: "cloudmigration",
@@ -1830,7 +1830,7 @@ export const servicesoffer = {
             title: " Progressive Technology Solutions",
             description: "Embrace the future with our expertise in the latest technologies. We offer solutions in:",
             keyheading: "",
-            keyfeatures: [{ paragraph: "Internet of Things (IoT)" }, { paragraph: "Augmented & Virtual Reality (AR/VR)" }, { paragraph: "Machine Learning & Artificial Intelligence (ML/AI)" }, { paragraph: "Distributed Ledger Technology & Blockchain" }, { paragraph: "Geolocation Technologies" },]
+            keyfeatures: [{ paragraph: "" },]
         },
     ],
     dataengineering: [
