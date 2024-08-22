@@ -196,11 +196,16 @@ export { default as awstile } from "../../public/images/aws-tile.svg"
 export { default as azuretile } from "../../public/images/azure.svg"
 export { default as mysqltile } from "../../public/images/mysql.svg"
 export { default as phptile } from "../../public/images/php.svg"
-
 export { default as caseone } from "../../public/images/case-one.png"
 export { default as casetwo } from "../../public/images/case-two.png"
 export { default as casethree } from "../../public/images/case-three.png"
 export { default as casefour } from "../../public/images/case-four.png"
+export { default as IconWeb1 } from "../../public/images/icon-web-2.svg"
+export { default as IconWeb2 } from "../../public/images/icon-web-1.svg"
+export { default as IconWeb3 } from "../../public/images/icon-web-3.svg"
+export { default as IconWeb4 } from "../../public/images/icon-web-4.svg"
+
+
 
 
 

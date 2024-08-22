@@ -31,7 +31,7 @@ const WhyChooseUs: React.FC = () => {
 
 
   return (
-    <section id='choose-us-slider' ref={ref} className="choose-us-section py-20 bg-center bg-no-repeat bg-cover"  >
+    <section id='choose-us-slider' ref={ref} className="why-use-section py-20 bg-center bg-no-repeat bg-cover"  >
       <Container>
         <Row>
           <Col lg={6} md={6} xs={12} className='flex flex-col justify-center'>

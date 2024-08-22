@@ -229,6 +229,10 @@ button {
     background-image: url("../../public/images/choose-us-bg.png");
 }
 
+.why-use-section {
+    background-image: url("../../public/images/why-use-bg.png");
+}
+
 .contact-form-section {
     background-image: url("../../public/images/contact-form-bg.png");
 }
