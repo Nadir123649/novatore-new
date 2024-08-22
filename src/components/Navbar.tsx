@@ -7,7 +7,6 @@ import { IoCloseOutline } from "react-icons/io5";
 import { MdKeyboardArrowRight, MdKeyboardArrowLeft } from "react-icons/md";
 import { RiMenu3Fill } from "react-icons/ri";
 import { Novatorewhite, NovatoreIcon, NovatoreText } from "@/utils";
-import { BsSearch } from "react-icons/bs";
 
 const Navbar = () => {
   const [activeMenu, setActiveMenu] = useState<string | null>(null);
@@ -83,7 +82,7 @@ const Navbar = () => {
       setIsHeaderVisible(true);
     }
     setLastScrollY(currentScrollY);
-    if (currentScrollY > 600) {
+    if (currentScrollY > 400) {
       setIsScrolled(true);
     } else {
       setIsScrolled(false);
