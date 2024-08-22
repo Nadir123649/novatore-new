@@ -5,7 +5,7 @@ import { useState, useEffect } from 'react';
 interface HeroBannerProps {
     previewImage?: string;
     bannerHeading: string;
-    needsMoreTitle?: boolean;
+    needsMoreTitle?: any;
     pagetitle?: string;
 }
 
@@ -30,12 +30,12 @@ const HeroBanner: React.FC<HeroBannerProps> = ({ previewImage, bannerHeading, ne
 
     return (
         <section
-            className="hero-banner min-h-[50vh] md:min-h-[60vh] bg-cover bg-center bg-no-repeat"
+            className="hero-banner min-h-[50vh] md:min-h-[70vh] bg-cover bg-center bg-no-repeat"
             style={{
                 backgroundImage: `url(${previewImage ? previewImage : ""})`,
             }}
         >
-            <Container className=' min-h-[50vh] md:min-h-[60vh] flex items-center md:items-end  flex-row justify-start animate-slideRight'>
+            <Container className=' min-h-[50vh] md:min-h-[70vh] flex items-center md:items-end  flex-row justify-start animate-slideRight'>
                 <div className="content mb-[0px] md:mb-[50px]">
 
                     <p className='text-white'>{pagetitle}</p>

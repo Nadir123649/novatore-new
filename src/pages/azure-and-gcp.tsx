@@ -10,7 +10,7 @@ const AzureAndGcp: NextPage = () => {
     return (
         <Layout title="Novatore Sols - Azure & GCP" description="Welcome to Novatore Sols, setting new standards in technology with unmatchable code.">
             <div className="overflow-x-hidden">
-                <HeroBanner bannerHeading="Azure & GCP: Powering the Future of Cloud Computing" previewImage="/images/azure-banner-bg.png" />
+                <HeroBanner bannerHeading="Azure & GCP: Powering the Future of Cloud Computing" pagetitle="Services" needsMoreTitle="Get in Touch" previewImage="/images/azure-banner-bg.png" />
                 <ServicesNeeds needsTitle="Optimize Your Cloud Strategy with Microsoft Azure and GCP" needsTitleBlue="Services" NeedsImage="/images/azure-right-image.png"
                     needsDescription="In the ever-evolving landscape of cloud computing, choosing the right provider is crucial for maximizing efficiency, scalability, and cost-effectiveness.
                      Our software company offers comprehensive services utilizing two leading cloud platforms: Microsoft Azure and Google Cloud Platform (GCP). Both platforms provide robust solutions

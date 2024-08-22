@@ -130,7 +130,7 @@ export { default as ApplicationCompliance } from "../../public/images/applicatio
 export { default as WebOne } from "../../public/images/web-image-1.svg"
 export { default as WebTwo } from "../../public/images/web-image-2.svg"
 export { default as WebThree } from "../../public/images/web-image-3.svg"
-export { default as DiagramCustomServices } from "../../public/images/custom-diagram.png"
+export { default as DiagramCustomServices } from "../../public/images/custom-softwre-development-diagram.png"
 export { default as AutomationImageOne } from "../../public/images/automation-icon-image-1.svg"
 export { default as AutomationImageTwo } from "../../public/images/automation-icon-image-2.svg"
 export { default as AutomationImageThree } from "../../public/images/automation-icon-image-3.svg"

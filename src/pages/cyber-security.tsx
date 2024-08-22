@@ -14,7 +14,7 @@ const CyberSecurity: NextPage = () => {
     return (
         <Layout title="Novatore Sols - Cyber Security" description="Welcome to Novatore Sols, setting new standards in technology with unmatchable code.">
             <div className="overflow-x-hidden">
-                <HeroBanner bannerHeading="Prevent, Detect, Respond: Total Cybersecurity" previewImage="/images/cyber-banner.png" />
+                <HeroBanner bannerHeading="Prevent, Detect, Respond: Total Cybersecurity" pagetitle="Services" needsMoreTitle="Get in Touch" previewImage="/images/cyber-banner.png" />
                 <ServicesNeeds needsTitle="Ensuring Your" needsTitleBlue="Digital Safety" NeedsImage="/images/needs-image-nine.png"
                     needsDescription="Protecting your data and ensuring compliance with regulatory standards is more important than ever. At Novatore Solutions,
                  we offer you cybersecurity solutions that keep your information safe from threats while ensuring your organisation adheres to all relevant laws and regulations.

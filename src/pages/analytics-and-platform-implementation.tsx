@@ -12,7 +12,7 @@ const AnalyticsImplementation: NextPage = () => {
     return (
         <Layout title="Novatore Sols - Analytics & Platform Implementation" description="Welcome to Novatore Sols, setting new standards in technology with unmatchable code.">
             <div className="overflow-x-hidden">
-                <HeroBanner bannerHeading="Analytics & Platform Implementation" previewImage="/images/analytics-banner-bg.png" />
+                <HeroBanner bannerHeading="Analytics & Platform Implementation" pagetitle="Services" needsMoreTitle="Get in Touch" previewImage="/images/analytics-banner-bg.png" />
                 <ServicesNeeds needsTitle="Unlock Business Insights with " needsTitleBlue=" Advanced Analytics" NeedsImage="/images/analytics-bg-right.png"
                     needsDescription="At Novatore Solutions, we specialize in analytics and platform implementation services that transform raw data into actionable insights. By integrating analytics tools  we help businesses enhance decision-making and drive growth. Our expertise in analytics platform architecture and integration ensures that your data systems are connected." />
                 <ExpertServices needsTitle="Transform Data into " needsTitleBlue=" Strategic Assets" NeedsImage="/images/analytics-bg-left.png"

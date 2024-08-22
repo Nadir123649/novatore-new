@@ -14,7 +14,7 @@ const CloudServices: NextPage = () => {
     return (
         <Layout title="Novatore Sols - Cloud Services" description="Welcome to Novatore Sols, setting new standards in technology with unmatchable code.">
             <div className="overflow-x-hidden">
-                <HeroBanner bannerHeading="Efficient Cloud Services to Uplift Your Infrastructure" previewImage="/images/cloud-banner.png" />
+                <HeroBanner bannerHeading="Efficient Cloud Services to Uplift Your Infrastructure" pagetitle="Services" needsMoreTitle="Get in Touch" previewImage="/images/cloud-banner.png" />
                 <ServicesNeeds needsTitle="Discover the Power of" needsTitleBlue="Cloud Ops" NeedsImage="/images/needs-image-five.png"
                     needsDescription="Businesses need agile and scalable solutions to stay ahead in today’s world. Our cloud services are designed to help you
               navigate the complexities of the modern digital landscape with ease. Whether you are looking to migrate your infrastructure to the cloud,

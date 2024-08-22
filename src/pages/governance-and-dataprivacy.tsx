@@ -13,7 +13,7 @@ const GovernanceAndDataPrivacy: NextPage = () => {
     return (
         <Layout title="Novatore Sols - Governance, Risk & Compliance, and Data Privacy" description="Welcome to Novatore Sols, setting new standards in technology with unmatchable code.">
             <div className="overflow-x-hidden">
-                <HeroBanner bannerHeading="Governance, Risk & Compliance, and Data Privacy" previewImage="/images/governence-banner-bg.png" />
+                <HeroBanner bannerHeading="Governance, Risk & Compliance, and Data Privacy" pagetitle="Services" needsMoreTitle="Get in Touch" previewImage="/images/governence-banner-bg.png" />
                 <ServicesNeeds needsTitle="Welcome to Your " needsTitleBlue=" AI Assurance Partner" NeedsImage="/images/assurance-partner.png"
                     needsDescription="In today's data-driven world, effective data management and governance are critical for business success. At Novatore Solutions, we offer extensive data management and governance services to help you use the power of your data. " />
                 <DataServicesSection heading="Our " headingBlue="Services" type="single" data={GovernanceDataPrivacy} />

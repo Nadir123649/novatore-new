@@ -234,7 +234,7 @@ button {
 }
 
 .layer-form {
-    background-image: url("../../public/images/bg-layer.png");
+    background-image: url("../../public/images/Contactus-gradient-bg.png");
 }
 
 textarea {
@@ -335,4 +335,3 @@ input:-webkit-autofill:active {
     box-shadow: none;
     border: 1px solid #B7B7B7;
 }
-

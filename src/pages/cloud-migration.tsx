@@ -10,12 +10,12 @@ const CloudMigration: NextPage = () => {
     return (
         <Layout title="Novatore Sols - Cloud Migration" description="Welcome to Novatore Sols, setting new standards in technology with unmatchable code.">
             <div className="overflow-x-hidden">
-                <HeroBanner bannerHeading="Cloud Migration" previewImage="/images/cloud-migration-bg.png" />
+                <HeroBanner bannerHeading="Cloud Migration" pagetitle="Services" needsMoreTitle="Get in Touch" previewImage="/images/cloud-migration-bg.png" />
                 <ServicesNeeds needsTitle="Cloud Ops" needsTitleBlue="Services" NeedsImage="/images/migration-image-right.png"
                     needsDescription="Transitioning your business to the cloud can be a complex process, but with our expertise and comprehensive solutions, 
                     we ensure a smooth and successful migration, enabling you to reap the full benefits of cloud computing. 
                     Explore our range of services designed to meet all your cloud migration needs." />
-               <CloudOps needsTitle="What" needsTitleBlue="We Offer" />
+                <CloudOps needsTitle="What" needsTitleBlue="We Offer" />
                 <Enterprise />
                 <Innovation />
             </div>

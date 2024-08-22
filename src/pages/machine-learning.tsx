@@ -11,7 +11,7 @@ const MachineLearning: NextPage = () => {
     return (
         <Layout title="Novatore Sols - Machine Learning " description="Welcome to Novatore Sols, setting new standards in technology with unmatchable code.">
             <div className="overflow-x-hidden">
-                <HeroBanner bannerHeading="Unleash Your Potential With Our Machine Learning Tools" previewImage="/images/machine-learning-banner.png" />
+                <HeroBanner bannerHeading="Unleash Your Potential With Our Machine Learning Tools" pagetitle="Services" needsMoreTitle="Get in Touch" previewImage="/images/machine-learning-banner.png" />
                 <ServicesNeeds needsTitle="Step Into the Future with Our " needsTitleBlue=" Machine Learning Solutions" NeedsImage="/images/machine-right-bg.png"
                     needsDescription="In the rapidly evolving world of technology, our advanced Machine Learning services stand at the forefront, offering innovative solutions tailored to meet the dynamic needs of various industries. From developing sophisticated quantum algorithms that process data at unparalleled speeds to creating robust neural network models for deep learning, our services are designed to drive transformative results. Our deep learning solutions deliver high accuracy and scalability, ensuring your business stays ahead of the competition. " />
                 <ExpertServices needsTitle="Pioneering Transparent and " needsTitleBlue=" Real-Time AI Technologies" NeedsImage="/images/machine-left-bg.png"
