@@ -325,6 +325,14 @@ body {
   }
 }
 
+/* @media only screen and (max-width: 900px) {
+  .service-imgbox {
+    width: 560px !important;
+    max-width: 560px !important;
+  }
+} */
+
+
 /* @media only screen and (max-width: 1680px) {
   .img-box {
     background-color: red !important;

@@ -13,7 +13,7 @@ const WebApp: NextPage = () => {
         <Layout title="Novatore Sols - Web Application Development" description="Welcome to Novatore Sols, setting new standards in technology with unmatchable code.">
             <div className="overflow-x-hidden">
                 <HeroBanner bannerHeading="Advanced Web App Development Solutions" pagetitle="Services" needsMoreTitle="Get in Touch" previewImage="/images/web-app-banner.png" />
-                <ServicesNeeds needsTitle="Introduction " NeedsImage="/images/web-app-right.png"
+                <ServicesNeeds needsTitle="Introduction " NeedsImage="/images/web-app-dev-right.png"
                     needsDescription="Our team of skilled developers uses the best web development tools and the latest web app frameworks to deliver high-performance, secure, and scalable web applications. " />
                 <CloudOps needsTitle="Our " needsTitleBlue="Services" />
                 <DataServicesSection heading="Why Choose " headingBlue="Us?" data={WebAutomationData} />

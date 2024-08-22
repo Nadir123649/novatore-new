@@ -15,11 +15,11 @@ const CloudServices: NextPage = () => {
         <Layout title="Novatore Sols - Cloud Services" description="Welcome to Novatore Sols, setting new standards in technology with unmatchable code.">
             <div className="overflow-x-hidden">
                 <HeroBanner bannerHeading="Efficient Cloud Services to Uplift Your Infrastructure" pagetitle="Services" needsMoreTitle="Get in Touch" previewImage="/images/cloud-banner.png" />
-                <ServicesNeeds needsTitle="Discover the Power of" needsTitleBlue="Cloud Ops" NeedsImage="/images/needs-image-five.png"
+                <ServicesNeeds needsTitle="Discover the Power of" needsTitleBlue="Cloud Ops" NeedsImage="/images/cloud-service-right.png"
                     needsDescription="Businesses need agile and scalable solutions to stay ahead in today’s world. Our cloud services are designed to help you
               navigate the complexities of the modern digital landscape with ease. Whether you are looking to migrate your infrastructure to the cloud,
               streamline your business processes, or optimize your operations, our cloud solutions are here to support you every step of the way. " />
-                <ExpertServices needsTitle="Take Your Productivity to the" needsTitleBlue=" Next Level" NeedsImage="/images/needs-image-six.png"
+                <ExpertServices needsTitle="Take Your Productivity to the" needsTitleBlue=" Next Level" NeedsImage="/images/cloud-service-left.png"
                     needsDescription="Our team of cloud experts is dedicated to helping you transform your business operations and achieve greater efficiency.
                We understand that every business is different, which is why we offer personalized solutions that address your specific challenges and goals. 
                From cloud migration to ongoing CloudOps support, we are committed to providing you with the tools and expertise you need to succeed in the digital era.
