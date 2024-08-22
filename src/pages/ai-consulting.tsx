@@ -13,7 +13,7 @@ const AiConsulting: NextPage = () => {
             <div className="overflow-x-hidden">
                 <HeroBanner bannerHeading="Transform Your Business with AI Consulting Services" pagetitle="Services" needsMoreTitle="Get in Touch" previewImage="/images/consulting-banner-bg.png" />
                 <ServicesNeeds needsTitleBlue="Introduction" NeedsImage="/images/consulting-image-right.png"
-                    needsDescription="We blend strategy, technology, and innovation to help your business thrive in the era of artificial intelligence with our AI Consulting services. Our full set of services, including AI Strategy Development, Machine Learning Consulting, and Predictive Analytics, is designed to elevate your business operations and decision-making processes. " />
+                    needsDescription="We seamlessly integrate strategy, cutting-edge technology, and forward-thinking innovation to empower your business to excel in the rapidly evolving era of artificial intelligence. Our comprehensive AI Consulting services are meticulously crafted to meet the unique needs of your organization, ensuring that you stay ahead of the competition. Our team of experts is dedicated to elevating your business operations." />
                 <DataServicesSection heading="Our AI Consulting " headingBlue=" Services" data={ConsultingData} />
                 <Enterprise />
                 <Innovation />

@@ -13,9 +13,9 @@ const DigitalStrategy: NextPage = () => {
             <div className="overflow-x-hidden">
                 <HeroBanner bannerHeading="Optimized Digital Strategy and Consultation" pagetitle="Services" needsMoreTitle="Get in Touch" previewImage="/images/digitalstrategy-banner.png" />
                 <ServicesNeeds needsTitle="Turning Your Vision Into" needsTitleBlue="Reality" needsMoreTitle="" NeedsImage="/images/strategy-right.png"
-                    needsDescription="In today's fast-paced digital world, where change is constant and customer expectations are ever-rising, we help our clients master this dynamic environment. Our expertise in digital innovation enables businesses to stay ahead of the curve." />
+                    needsDescription="Enterprise Mobility Management (EMM) empowers organizations to efficiently oversee, control, and manage all mobile devices, applications, and data from a single, centralized platform. Our EMM solutions offer a robust suite of tools designed to enhance visibility, monitor device usage, and ensure regulatory compliance. By streamlining the management of your mobile assets, we help you maintain a secure environment." />
                 <ExpertServices needsTitle="Digital Strategies" needsTitleBlue=" Ready For The Future" NeedsImage="/images/strategy-left.png"
-                    needsDescription="Drawing on our extensive digital experience, we develop adaptable strategies that uncover new growth opportunities. Our personalized digital consulting services are engineered to produce ground-breaking results, empowering clients to transform their operations and achieve unparalleled success." />
+                    needsDescription="Our personalized digital consulting services are not just about meeting immediate needs; they are engineered to deliver groundbreaking and sustainable results that drive long-term success. By aligning cutting-edge technologies with our clients' unique goals, we empower them to transform their operations, enhance their competitive edge, and achieve unparalleled success in an ever-evolving digital landscape." />
                 <CloudOps needsTitle="What DO" needsTitleBlue="We Offer" />
                 <Enterprise />
                 <Innovation />

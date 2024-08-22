@@ -16,10 +16,10 @@ const DataEngineering: NextPage = () => {
         <Layout title="Novatore Sols - Data Engineering" description="Welcome to Novatore Sols, setting new standards in technology with unmatchable code.">
             <div className="overflow-x-hidden">
                 <HeroBanner bannerHeading="Comprehensive Data Engineering Tools" pagetitle="Services" needsMoreTitle="Get in Touch" previewImage="/images/data-banner-bg.png" />
-                <ServicesNeeds needsTitle="Revamp Your Data with" needsTitleBlue="Advanced Engineering" needsMoreTitle="Solutions" NeedsImage="/images/data-platform-right.png"
-                    needsDescription="We offer data engineering services that enable businesses to use the full potential of their data. Our expertise lies in building strong data pipelines, implementing scalable data architectures, and smooth data integration across various platforms. Trust our team of skilled data engineers to deliver high-quality, cost-effective solutions that drive your business forward." />
-                <ExpertServices needsTitle="What Can " needsTitleBlue=" Expert Data Engineering " needsMoreTitle="Do for Your Business?" NeedsImage="/images/data-platform-left.png"
-                    needsDescription="From data architecture design and cloud migration to data analytics and visualization, we cover all aspects of data management to help you unlock valuable insights. Our team uses industry-leading tools and methodologies to ensure your data is accurate, secure, and easily accessible. " />
+                <ServicesNeeds needsTitle="Revamp Your Data with" needsTitleBlue="Advanced Engineering" needsMoreTitle="Solutions" NeedsImage="/images/data-engineering-right.png"
+                    needsDescription="Our team of experienced data engineers is dedicated to delivering high-quality solutions. We offer data engineering services designed to empower businesses by harnessing the full potential of their data. Our expertise encompasses building robust and reliable data pipelines, implementing scalable and flexible data architectures, and ensuring seamless data integration across a wide range of platforms and systems." />
+                <ExpertServices needsTitle="What Can " needsTitleBlue=" Expert Data Engineering " needsMoreTitle="Do for Your Business?" NeedsImage="/images/data-engineering-left.png"
+                    needsDescription="From comprehensive data architecture design and seamless cloud migration to advanced data analytics, reporting, and dynamic visualization, we cover every facet of data management to empower your organization with actionable insights. Our dedicated team of experts leverages industry-leading tools, and best practices to ensure your data is not only accurate and secure but also optimized for performance. " />
                 <CloudOps needsTitle="How We Drive" needsTitleBlue="Business Efficiency" />
                 <Enterprise />
                 <Innovation />

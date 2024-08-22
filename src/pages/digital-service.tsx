@@ -19,9 +19,7 @@ const DigitalService: NextPage = () => {
             is designed to streamline operations, enhance customer experiences, and drive growth. With a team of experienced professionals and a commitment to excellence,
              we offer services that cater to the unique needs of each client. " />
                 <ExpertServices needsTitle="Expert Guidance for Your" needsTitleBlue="Digital Journey" NeedsImage="/images/digital-service-left.png"
-                    needsDescription="Our digital services encompass a range of specialized areas, including Digital Consulting & Strategy, Business Applications,
-             Product Engineering, and DevOps & SecOps. Each service is tailored to address specific challenges and opportunities, ensuring that you receive
-              the support and guidance you need to achieve your business objectives. " />
+                    needsDescription="Our comprehensive digital services portfolio is designed to empower your business at every stage of its digital transformation journey. We offer a broad spectrum of specialized services, including Digital Consulting & Strategy, where we work closely to develop a roadmap that aligns with your long-term business goals and market dynamics. Our Business Applications services include designing, developing, and implementing software solutions. " />
                 <CloudOps needsTitle="What DO" needsTitleBlue="We Offer" />
                 <DiagramSlider heading="A Superior" headingBlue="Digital Services" needsMoreTitle="Approach" image={DiagramOne} />
                 <Enterprise />

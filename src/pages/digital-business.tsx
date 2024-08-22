@@ -13,9 +13,7 @@ const DigitalBusiness: NextPage = () => {
             <div className="overflow-x-hidden">
                 <HeroBanner bannerHeading="Business Applications for Modern Enterprises" pagetitle="Services" needsMoreTitle="Get in Touch" previewImage="/images/bussinees-banner.png" />
                 <ServicesNeeds needsTitle="Change Your Business with Scalable, Cloud-Based" needsTitleBlue="Solutions" NeedsImage="/images/needs-image-finalest.png"
-                    needsDescription="In today's fast-paced digital world, where change is constant and customer expectations are ever-rising, 
-                    we help our clients master this dynamic environment. 
-                    Our expertise in digital innovation enables businesses to stay ahead of the curve." />
+                    needsDescription="In today's fast-paced digital world, where technological advancements and market trends shift rapidly, businesses face the ongoing challenge of adapting to constant change and meeting increasingly sophisticated customer expectations. Our deep expertise in digital innovation, coupled with a commitment to understanding each client's unique needs, allows us to craft tailored solutions that satisfy our clients." />
                 <ExpertServices needsTitle="Smooth Integration for Unmatched" needsTitleBlue="Efficiency" NeedsImage="/images/needs-image-final-one.png"
                     needsDescription="Now you can experience efficiency like never before with our fully integrated business applications that unify all key functional areas of your enterprise.
                      From Customer Relationship Management (CRM) systems that boost profitability and customer loyalty to Enterprise.

@@ -16,9 +16,7 @@ const ArtificialIntelligence: NextPage = () => {
             <div className="overflow-x-hidden">
                 <HeroBanner bannerHeading="Access Our High-Quality AI Services" pagetitle="Services" needsMoreTitle="Get in Touch" previewImage="/images/artifical-banner.png" />
                 <ServicesNeeds needsTitle="The Real Power of " needsTitleBlue="Artificial Intelligence" NeedsImage="/images/ai-right.png"
-                    needsDescription="In the fast-evolving digital landscape, Artificial Intelligence (AI) stands as a beacon of innovation, transforming industries
-                 and driving new levels of efficiency and intelligence. Our software company is at the forefront of this revolution, offering a suite of AI services
-                  designed to empower businesses to use the full potential of this technology. " />
+                    needsDescription="In the fast-evolving digital landscape, Artificial Intelligence (AI) stands as a beacon of innovation, transforming industries and driving new levels of efficiency, intelligence, and creativity. As businesses across the globe grapple with the challenges of staying competitive in a rapidly changing environment, AI emerges as a crucial enabler of strategic growth, operational excellence, and personalized customer experiences. " />
                 <ExpertServices needsTitle="Customised " needsTitleBlue="AI Solutions" needsMoreTitle="for Your Business" NeedsImage="/images/ai-left.png"
                     needsDescription="We pride ourselves on our expertise and dedication to providing customised AI solutions that meet the unique needs of each client.
                 Our team of experienced professionals works closely with you to understand your challenges and objectives, ensuring that our AI services not only meet but exceed your expectations.

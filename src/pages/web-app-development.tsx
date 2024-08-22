@@ -14,7 +14,7 @@ const WebApp: NextPage = () => {
             <div className="overflow-x-hidden">
                 <HeroBanner bannerHeading="Advanced Web App Development Solutions" pagetitle="Services" needsMoreTitle="Get in Touch" previewImage="/images/web-app-banner.png" />
                 <ServicesNeeds needsTitle="Introduction " NeedsImage="/images/web-app-dev-right.png"
-                    needsDescription="Our team of skilled developers uses the best web development tools and the latest web app frameworks to deliver high-performance, secure, and scalable web applications. " />
+                    needsDescription="Our team of highly skilled developers utilizes cutting-edge web development tools and the most advanced web application frameworks available to craft high-performance, secure, and scalable web applications. We ensure that every project is designed and built to meet the highest industry standards. Whether you need a robust e-commerce platform or a content management system, we have the expertise." />
                 <CloudOps needsTitle="Our " needsTitleBlue="Services" />
                 <DataServicesSection heading="Why Choose " headingBlue="Us?" data={WebAutomationData} />
                 <Enterprise />

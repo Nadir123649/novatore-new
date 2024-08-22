@@ -20,9 +20,7 @@ const CyberSecurity: NextPage = () => {
                  we offer you cybersecurity solutions that keep your information safe from threats while ensuring your organisation adheres to all relevant laws and regulations.
                   Our team of experts is dedicated to delivering tailored services that meet your specific needs, whether it's securing your network or performing thorough risk assessments. " />
                 <ExpertServices needsTitle="Comprehensive" needsTitleBlue="Cybersecurity Solutions" NeedsImage="/images/cyber-security-left.png"
-                    needsDescription="Our cybersecurity services include everything from governance, risk, and compliance to detailed penetration testing.
-                 We understand the complexities of data privacy and work diligently to protect your sensitive information from potential breaches.
-                 Our goal is to provide peace of mind by safeguarding your digital assets with robust and reliable security measures." />
+                    needsDescription="Our comprehensive cybersecurity services cover every aspect of protecting your digital environment, ensuring that your business remains secure in an increasingly complex landscape. From governance, risk management, and compliance to in-depth penetration testing and vulnerability assessments, we provide tailored solutions to meet your unique security needs. We are committed to delivering robust and reliable security measures." />
                 <CloudOps needsTitle="What DO" needsTitleBlue="We Offer?" />
                 <DiagramSlider heading="Comprehensive Cybersecurity Strategy:" headingBlue="Safeguarding Every Layer" image={DiagramFive} />
                 <Enterprise />

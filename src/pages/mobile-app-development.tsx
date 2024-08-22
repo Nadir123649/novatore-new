@@ -12,9 +12,7 @@ const MobileAppDevelopment: NextPage = () => {
             <div className="overflow-x-hidden">
                 <HeroBanner bannerHeading="Maximizing Efficiency With Our Mobile App Development" pagetitle="Services" needsMoreTitle="Get in Touch" previewImage="/images/mobile-banner.png" />
                 <ServicesNeeds needsTitle="Introduction" NeedsImage="/images/mobile-introduction.png"
-                    needsDescription="As one of the best mobile app development companies, we offer comprehensive mobile app development services tailored
-                     to meet your business needs. Our team of experts uses advanced technologies and best practices to deliver high-quality mobile applications
-                      that drive business growth." />
+                    needsDescription="As a leading mobile app development company, we pride ourselves on offering a wide range of comprehensive mobile app development services designed to meet the unique needs of your business. Whether you're a startup looking to make a mark in the mobile space or an established enterprise, our team of seasoned professionals is here to help you succeed." />
                 <CloudOps needsTitle="Our" needsTitleBlue="Services" />
                 <Enterprise />
                 <Innovation />

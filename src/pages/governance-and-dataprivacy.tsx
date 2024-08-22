@@ -15,7 +15,7 @@ const GovernanceAndDataPrivacy: NextPage = () => {
             <div className="overflow-x-hidden">
                 <HeroBanner bannerHeading="Governance, Risk & Compliance, and Data Privacy" pagetitle="Services" needsMoreTitle="Get in Touch" previewImage="/images/governence-banner-bg.png" />
                 <ServicesNeeds needsTitle="Welcome to Your " needsTitleBlue=" AI Assurance Partner" NeedsImage="/images/assurance-partner.png"
-                    needsDescription="In today's data-driven world, effective data management and governance are critical for business success. At Novatore Solutions, we offer extensive data management and governance services to help you use the power of your data. " />
+                    needsDescription="We understand the multifaceted complexities and challenges that come with integrating artificial intelligence into your business operations. As a trusted partner, we offer a comprehensive suite of services in Governance, Risk & Compliance, and Data Privacy to guide you through this transformation. Our approach ensures that your AI systems are ethically designed, secure, and fully compliant." />
                 <DataServicesSection heading="Our " headingBlue="Services" type="single" data={GovernanceDataPrivacy} />
                 <Enterprise />
                 <Innovation />
