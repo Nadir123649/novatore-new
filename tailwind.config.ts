@@ -8,7 +8,7 @@ const config: Config = {
   ],
   theme: {
     extend: {
-       animation: {
+      animation: {
         'slide-in': 'slideInFromLeft 0.5s ease-out forwards',
         'slide-out': 'slideOutToLeft 0.5s ease-out forwards',
       },
@@ -25,8 +25,7 @@ const config: Config = {
         "2xl": "1536px",
       },
       fontFamily: {
-        gellix: ["Gellix", "sans-serif"],
-        lato: ["Lato", "sans-serif"],
+        poppins: ["Poppins", "sans-serif"],
       },
       backgroundColor: {
         "custom-rgba": "rgba(255, 255, 255, 0.09)",
