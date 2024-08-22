@@ -12,9 +12,9 @@ const CloudOpsPage: NextPage = () => {
         <Layout title="Novatore Sols - CloudOps" description="Welcome to Novatore Sols, setting new standards in technology with unmatchable code.">
             <div className="overflow-x-hidden">
                 <HeroBanner bannerHeading="Achieve Operational Excellence with Professional CloudOps" pagetitle="Services" needsMoreTitle="Get in Touch" previewImage="/images/cloud-ops-banner.png" maxwidth="1100px" />
-                <ServicesNeeds needsTitle="Unlock Exceptional Software Performance with" needsTitleBlue="CloudOps" NeedsImage="/images/cloud-image-right.png"
+                <ServicesNeeds needsTitle=" Exceptional Software Performance with" needsTitleBlue="CloudOps" NeedsImage="/images/cloud-image-right.png"
                     needsDescription="In the ever-evolving digital landscape, achieving top-tier software performance is crucial for businesses seeking competitive advantage. CloudOps, a blend of cloud computing and IT operations, is designed to optimize and streamline your software applications, ensuring they run efficiently and reliably. Our CloudOps services empower businesses by enhancing operational efficiency, improving deployment processes, and guaranteeing high availability." />
-                <ExpertServices needsTitle="Comprehensive" needsTitleBlue=" CloudOps Services" needsMoreTitle="Tailored to Your Needs" NeedsImage="/images/cloud-image-left.png"
+                <ExpertServices needsTitle="CloudOps Services Tailored to " needsTitleBlue=" Your Needs"  NeedsImage="/images/cloud-image-left.png"
                     needsDescription="Novatore Solutions offers a comprehensive suite of CloudOps services designed to align with your unique business goals. Our CloudOps consulting provides expert guidance on best practices and cutting-edge tools, ensuring that your cloud strategy is robust and effective. With our CloudOps implementation services, we deploy frameworks that prioritize performance, security, and scalability." />
                 <h2 className="mx-auto text-center font-bold text-[48px] max-w-[800px]">Explore The Power Of <span className="text-[#2776ea] ">CloudOps</span>  For Superior Software Performance</h2>
                 <CloudOps needsTitle="Have a Look at What " needsTitleBlue="We Offer?" />

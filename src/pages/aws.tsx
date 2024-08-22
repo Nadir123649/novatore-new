@@ -12,7 +12,7 @@ const AWS: NextPage = () => {
         <Layout title="Novatore Sols - AWS" description="Welcome to Novatore Sols, setting new standards in technology with unmatchable code.">
             <div className="overflow-x-hidden">
                 <HeroBanner bannerHeading="AWS Innovation Hub: Transforming Ideas into Reality" pagetitle="Services" needsMoreTitle="Get in Touch" previewImage="/images/aws-banner-bg.png" maxwidth="1100px" />
-                <ServicesNeeds needsTitle="Harness the Power of AWS with Our" needsTitleBlue="Expert Services" NeedsImage="/images/aws-image-right.png"
+                <ServicesNeeds needsTitle="The Power of AWS with Our" needsTitleBlue="Expert Services" NeedsImage="/images/aws-image-right.png"
                     needsDescription="Our AWS services encompass a wide range of solutions tailored to meet the specific needs of your business. We specialize in AWS architecture design, ensuring that your cloud infrastructure is built with scalability, security, and efficiency in mind. Our cloud migration services are designed to seamlessly transition your existing workloads to AWS, minimizing downtime and ensuring a secure transfer." />
                 <DataServicesSection heading="Our AWS" headingBlue="Services" data={AwsAutomationData} />
                 <Enterprise />

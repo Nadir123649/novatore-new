@@ -820,17 +820,17 @@ export const AwsAutomationData = [
 export const WebAutomationData = [
     {
         title: 'Expertise and Experience',
-        description: 'Our team comprises experienced developers who stay updated with the latest trends and technologies in web development.',
+        description: 'Our team comprises experienced developers who stay updated with the latest trends.',
         icon: AutomationImageOne,
     },
     {
         title: 'Client-Centric Approach',
-        description: 'We work closely with you throughout the development process to ensure your vision is realized.',
+        description: 'We work closely with you throughout the development process to ensure your vision is realized.' ,
         icon: AutomationImageTwo,
     },
     {
         title: 'Comprehensive Support ',
-        description: 'Migrating to AWS offers significant benefits, including cost savings and improved agility. Our cloud migration services simplify the process of moving your applications and data to AWS. ',
+        description: 'From initial consultation to post-launch support, we provide services to ensure your success. ',
         icon: ComprehensiveIcon,
     },
 ];

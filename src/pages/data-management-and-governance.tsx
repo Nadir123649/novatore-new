@@ -14,9 +14,9 @@ const DataManagementAndGovernance: NextPage = () => {
         <Layout title="Novatore Sols - Data Management & Governance" description="Welcome to Novatore Sols, setting new standards in technology with unmatchable code.">
             <div className="overflow-x-hidden">
                 <HeroBanner bannerHeading="Your Partner in Data Management & Governance" pagetitle="Services" needsMoreTitle="Get in Touch" previewImage="/images/data-managment-banner.png" maxwidth="1000px" />
-                <ServicesNeeds needsTitle="Master Your Data with Expert " needsTitleBlue=" Management and Governance" NeedsImage="/images/managment-right-image.png"
+                <ServicesNeeds needsTitle="Expert" needsTitleBlue=" Management & Governance" NeedsImage="/images/managment-right-image.png"
                     needsDescription="In today's rapidly evolving, data-driven world, the importance of effective data management and governance cannot be overstated. Businesses that harness the full potential of their data gain a significant competitive advantage, and ensuring compliance with regulatory requirements. At Novatore Solutions, we recognize the transformative power of well-managed data and offer a comprehensive suite of data management and governance services." />
-                <ExpertServices needsTitle="Strategic Data Governance for" needsTitleBlue=" Enhanced " needsMoreTitle=" Compliance and Integrity" NeedsImage="/images/managment-left-image.png"
+                <ExpertServices needsTitle=" Data Governance for Enhanced" needsTitleBlue=" Compliance and Integrity" NeedsImage="/images/managment-left-image.png"
                     needsDescription="By implementing industry-leading best practices and a robust governance framework, we ensure that your data remains secure, accurate, and readily accessible at all times. Our comprehensive approach covers every aspect of data management, employing advanced tools and innovative strategies to oversee the entire data lifecycle. From initial data acquisition and integration to eventual disposal, we meticulously manage each phase." />
                 <DataServicesSection heading="Our " headingBlue="Services" data={ServicesDataLocal} />
                 <Enterprise />

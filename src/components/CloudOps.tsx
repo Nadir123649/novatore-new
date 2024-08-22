@@ -193,7 +193,7 @@ const CloudOps: FC<CloudOpsProps> = ({
                 <div className="grid grid-cols-12 gap-4 py-[20px] min-h-[100vh]">
                   {/* Left Column */}
                   <div className="col-span-12 md:col-span-4">
-                    <div className="cloudops-card text-white bg-[#2776EA] rounded-2xl p-4 min-h-auto md:min-h-auto max-w-[360px] sticky top-0">
+                    <div className="cloudops-card text-white bg-[#2776EA] rounded-2xl p-4 min-h-auto md:min-h-auto  sticky top-0">
                       <TransitionGroup>
                         {detailsForCurrentRoute.map((data, index) => (
                           <CSSTransition
@@ -201,7 +201,7 @@ const CloudOps: FC<CloudOpsProps> = ({
                             timeout={500}
                             classNames="fade"
                           >
-                            <p className="text-xl md:text-2xl pb-[1px]">{data.details}</p>
+                            <p className="text-xl text-justify md:text-[18px] pb-[1px]">{data.details}</p>
                           </CSSTransition>
                         ))}
                       </TransitionGroup>
