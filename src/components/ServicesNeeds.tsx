@@ -68,11 +68,11 @@ const ServicesNeeds: FC<ServicesNeedsProps> = ({
                         className={`${isVisible ? "animate-slideLeft" : "opacity-0 translate-x-full"} transition-transform duration-500 ease-out needs-description rounded-[16px] relative`}
                     >
                         <div className="img-box static md:absolute right-[0px] top-[50px] z-30 service-imgbox max-w-[560px] min-w-[560px] w-full min-h-[453px]">
-                            <div className='overflow-hidden rounded-[16px] max-w-[560px] w-full min-h-[453px]'>
+                            <div className='overflow-hidden rounded-[16px] max-w-[560px] w-full min-h-[453px] h-[453px]'>
                                 <Image
                                     src={NeedsImage}
                                     alt="needs-us"
-                                    className='w-full transform transition max-w-[560px] object-cover min-h-[453px] ease-in-out hover:scale-[1.2]  rounded-[16px]'
+                                    className='w-full transform transition max-w-[560px] object-cover min-h-[453px] h-[453px] ease-in-out hover:scale-[1.2]  rounded-[16px]'
                                     width={560}
                                     height={453}
                                 />
