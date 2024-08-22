@@ -5,14 +5,17 @@ import { useState, useEffect } from 'react';
 
 
 const ContactForm = () => {
-    // animation state on view 
     const [isVisible, setIsVisible] = useState(false);
+    const [hasAnimated, setHasAnimated] = useState(false);
 
     const handleScroll = () => {
         const element = document.getElementById("contact-us-form");
-        if (element) {
+        if (element && !hasAnimated) {
             const rect = element.getBoundingClientRect();
-            setIsVisible(rect.top <= window.innerHeight * 0.75);
+            if (rect.top <= window.innerHeight * 0.75) {
+                setIsVisible(true);
+                setHasAnimated(true);
+            }
         }
     };
 
@@ -21,7 +24,7 @@ const ContactForm = () => {
         return () => {
             window.removeEventListener("scroll", handleScroll);
         };
-    }, []);
+    }, [hasAnimated]);
 
     return (
         <section id='contact-us-form' className={`${isVisible ? "fadeIn" : "opacity-0 "

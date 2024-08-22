@@ -120,12 +120,16 @@ const Innovation: React.FC<InnovationProps> = ({ className }) => {
   };
 
   const [isVisible, setIsVisible] = useState(false);
+  const [hasAnimated, setHasAnimated] = useState(false);
 
   const handleScroll = () => {
     const element = document.getElementById("innovation-section");
-    if (element) {
+    if (element && !hasAnimated) {
       const rect = element.getBoundingClientRect();
-      setIsVisible(rect.top <= window.innerHeight * 0.75);
+      if (rect.top <= window.innerHeight * 0.75) {
+        setIsVisible(true);
+        setHasAnimated(true);
+      }
     }
   };
 
@@ -134,7 +138,7 @@ const Innovation: React.FC<InnovationProps> = ({ className }) => {
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
-  }, []);
+  }, [hasAnimated]);
 
   return (
     <section

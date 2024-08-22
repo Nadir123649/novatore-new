@@ -12,29 +12,28 @@ interface DiagramSectionProps {
 }
 
 const DiagramSlider: React.FC<DiagramSectionProps> = ({ heading, headingBlue, image, needsMoreTitle }) => {
-    // animation state on view 
+
+    // animation state on view
     const [isVisible, setIsVisible] = useState(false);
+    const [hasAnimated, setHasAnimated] = useState(false);
 
     const handleScroll = () => {
         const element = document.getElementById("diagram-section");
-        if (element) {
+        if (element && !hasAnimated) {
             const rect = element.getBoundingClientRect();
-            const elementTop = rect.top;
-            const elementBottom = rect.bottom;
-
-            const isElementInView = elementTop <= window.innerHeight && elementBottom >= 0;
-
-            setIsVisible(isElementInView);
+            if (rect.top <= window.innerHeight * 0.75) {
+                setIsVisible(true);
+                setHasAnimated(true);
+            }
         }
     };
 
     useEffect(() => {
         window.addEventListener("scroll", handleScroll);
-        handleScroll();
         return () => {
             window.removeEventListener("scroll", handleScroll);
         };
-    }, []);
+    }, [hasAnimated]);
 
     return (
         <section id="diagram-section" className={`${isVisible ? "fadeIn" : "opacity-0 "

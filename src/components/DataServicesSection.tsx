@@ -18,13 +18,19 @@ interface DataServicesSectionProps {
 }
 
 const DataServicesSection: React.FC<DataServicesSectionProps> = ({ heading, headingBlue, data, needsMoreTitle, type, cardMinHeight }) => {
+
+
     const [isVisible, setIsVisible] = useState(false);
+    const [hasAnimated, setHasAnimated] = useState(false);
 
     const handleScroll = () => {
         const element = document.getElementById("dataservice-section");
-        if (element) {
+        if (element && !hasAnimated) {
             const rect = element.getBoundingClientRect();
-            setIsVisible(rect.top <= window.innerHeight * 0.75);
+            if (rect.top <= window.innerHeight * 0.75) {
+                setIsVisible(true);
+                setHasAnimated(true);
+            }
         }
     };
 
@@ -33,7 +39,7 @@ const DataServicesSection: React.FC<DataServicesSectionProps> = ({ heading, head
         return () => {
             window.removeEventListener("scroll", handleScroll);
         };
-    }, []);
+    }, [hasAnimated]);
 
     return (
         <section id="dataservice-section" className={`${isVisible ? "fadeIn" : "opacity-0"} pb-20 pt-10`}>

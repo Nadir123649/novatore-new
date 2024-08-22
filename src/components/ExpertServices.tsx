@@ -24,12 +24,16 @@ const ExpertServices: FC<ExpertServicesProps> = ({
 }) => {
 
     const [isVisible, setIsVisible] = useState(false);
+    const [hasAnimated, setHasAnimated] = useState(false);
 
     const handleScroll = () => {
         const element = document.getElementById("needs-section");
-        if (element) {
+        if (element && !hasAnimated) {
             const rect = element.getBoundingClientRect();
-            setIsVisible(rect.top <= window.innerHeight * 0.75);
+            if (rect.top <= window.innerHeight * 0.75) {
+                setIsVisible(true);
+                setHasAnimated(true);
+            }
         }
     };
 
@@ -38,7 +42,7 @@ const ExpertServices: FC<ExpertServicesProps> = ({
         return () => {
             window.removeEventListener("scroll", handleScroll);
         };
-    }, []);
+    }, [hasAnimated]);
 
     return (
         <section className='needs-section py-[10px] md:py-20 bg-center bg-no-repeat bg-cover ' id='needs-section'>

@@ -19,12 +19,16 @@ const ServicesNeeds: FC<ServicesNeedsProps> = ({
 }) => {
 
     const [isVisible, setIsVisible] = useState(false);
+    const [hasAnimated, setHasAnimated] = useState(false);
 
     const handleScroll = () => {
         const element = document.getElementById("servicesneed-section");
-        if (element) {
+        if (element && !hasAnimated) {
             const rect = element.getBoundingClientRect();
-            setIsVisible(rect.top <= window.innerHeight * 0.75);
+            if (rect.top <= window.innerHeight * 0.75) {
+                setIsVisible(true);
+                setHasAnimated(true);
+            }
         }
     };
 
@@ -33,7 +37,9 @@ const ServicesNeeds: FC<ServicesNeedsProps> = ({
         return () => {
             window.removeEventListener("scroll", handleScroll);
         };
-    }, []);
+    }, [hasAnimated]);
+
+
 
     return (
         <section id='servicesneed-section' className='needs-section py-[10px] md:py-20 bg-center bg-no-repeat bg-cover'>
