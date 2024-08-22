@@ -314,6 +314,9 @@ body {
   margin-right: 20px !important;
 }
 
+.innovation-slider .slick-slide {
+  width: 535px !important;
+}
 
 
 /* Responsiveness */

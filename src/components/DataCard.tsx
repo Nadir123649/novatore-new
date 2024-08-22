@@ -15,7 +15,7 @@ interface DataCardProps {
 
 const DataCard: React.FC<DataCardProps> = ({ title, description, icon, type, listItems, value, className, minHeight }) => {
     return (
-        <div className={type ? type : "relative bg-white shadow border-1 border-[#ECECEC] rounded-[16px] pt-[40px] pb-[10px] px-[24px] max-w-sm mx-auto overflow-hidden flex flex-col h-full hover:scale-105 transition ease-in duration-1.5"}
+        <div className={type ? type : "relative bg-white shadow rounded-[16px] pt-[40px] pb-[10px] px-[24px] border-1 border-solid border-[#A8CAFC] max-w-sm mx-auto overflow-hidden flex flex-col h-full hover:scale-105 transition ease-in duration-1.5"}
             style={{ minHeight: minHeight || "295px" }}>
             <div className="absolute top-0 left-6 w-full h-3 bg-transparent">
                 <Image src={Bordered} alt="bordered" layout="fixed" />

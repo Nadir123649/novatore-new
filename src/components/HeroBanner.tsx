@@ -38,7 +38,7 @@ const HeroBanner: React.FC<HeroBannerProps> = ({ previewImage, bannerHeading, ne
             <Container className=' min-h-[50vh] md:min-h-[70vh] flex items-center md:items-end  flex-row justify-start animate-slideRight'>
                 <div className="content mb-[0px] md:mb-[50px]">
 
-                    <p className='text-white'>{pagetitle}</p>
+                    <p className='text-white text-[20px]'>{pagetitle}</p>
                     <h2 className='text-[38px]  md:text-[56px] max-w-[872px] not-italic font-semibold text-white capitalize'>{bannerHeading}</h2>
                     {needsMoreTitle ?
                         <a href="#contact-us-form" className='learn-btn bg-none rounded-[16px] border-1 border-[#FFFFFF] hover:border-transparent  py-[14px] px-[24px] mt-[26px] transition-all duration-300 hover:bg-[#2776EA]  text-white'>
