@@ -23,6 +23,10 @@ const MegaMenu: React.FC<MegaMenuProps> = ({ activeMenu }) => {
     router.push(url);
   };
 
+  // Function to check if the link is active (highlights the active link) - ADDED
+  const isLinkActive = (url: string) => {
+    return router.pathname === url;
+  };
   const filteredMenuItems = menuitems.filter(
     (data) => data.title.toLowerCase() === activeMenu.toLowerCase()
   );
@@ -41,8 +45,11 @@ const MegaMenu: React.FC<MegaMenuProps> = ({ activeMenu }) => {
           <div className="pl-4 sm:py-0 md:py-3 col-span-12 md:col-span-4 ">
             {filteredListings.map((listing: { id: React.Key | null | undefined; heading: any | number | bigint | boolean | React.ReactElement<any, any | React.JSXElementConstructor<any>> | Iterable<React.ReactNode> | React.ReactPortal | Promise<React.AwaitedReactNode> | null | undefined; link: any | null | undefined; details: { text: string; link: string }[]; }) => (
               <div key={listing.id} className="d-flex flex-col">
-                <a onClick={() => handleNavigation(listing.link)}  >
-                  <h1 className="font-semibold text-lg text-[#2776EA] text-[18px] pt-2 hover:text-[#0a58ca]">{listing.heading}</h1>
+                <a
+                  onClick={() => handleNavigation(listing.link)}
+                  className={` pt-2 hover:text-[#0a58ca] ${isLinkActive(listing.link) ? "text-[#2776EA]" : "text-[#2776EA]"}`}
+                >
+                  <h1 className="font-semibold text-lg text-[18px]">{listing.heading}</h1>
                 </a>
 
                 <ul className="list-none px-0">
@@ -51,7 +58,10 @@ const MegaMenu: React.FC<MegaMenuProps> = ({ activeMenu }) => {
                       key={index}
                       className="pt-1 text-[#4F4F4F] cursor-pointer hover:text-[#2776EA] "
                     >
-                      <a onClick={() => handleNavigation(detail.link)} className="text-[#4F4F4F] hover:text-[#2776EA] hover:underline">
+                      <a
+                        onClick={() => handleNavigation(detail.link)}
+                        className={`${isLinkActive(detail.link) ? "text-[#2776EA]" : "text-[#4F4F4F]"} hover:text-[#2776EA] hover:underline`}
+                      >
                         {detail.text}
                       </a>
                     </li>
@@ -64,9 +74,13 @@ const MegaMenu: React.FC<MegaMenuProps> = ({ activeMenu }) => {
           <div className="pl-4 sm:my-0 md:my-3 col-span-12 md:col-span-4">
             {filteredFeatures.map((feature: { id: React.Key | null | undefined; heading: string | number | bigint | boolean | React.ReactElement<any, string | React.JSXElementConstructor<any>> | Iterable<React.ReactNode> | React.ReactPortal | Promise<React.AwaitedReactNode> | null | undefined; link: any | null | undefined; details: any[]; }) => (
               <div key={feature.id} className="d-flex flex-col">
-                <a onClick={() => handleNavigation(feature.link)}>
+                <a
+                  onClick={() => handleNavigation(feature.link)}
+
+                  className={`font-semibold text-lg pt-2 hover:text-[#0a58ca] ${isLinkActive(feature.link) ? "text-[#2776EA]" : "text-[#2776EA]"}`}
+                >
                   {feature.heading ? (
-                    <h1 className="font-semibold text-lg text-[#2776EA] pt-2 hover:text-[#0a58ca]">
+                    <h1 className="font-semibold text-lg ">
                       {feature.heading}
                     </h1>
                   ) : (
@@ -79,7 +93,11 @@ const MegaMenu: React.FC<MegaMenuProps> = ({ activeMenu }) => {
                       key={index}
                       className="pt-1 text-[#4F4F4F] cursor-pointer hover:text-[#2776EA]"
                     >
-                      <a onClick={() => handleNavigation(detail.link)} className="text-[#4F4F4F] hover:text-[#2776EA]">
+                      <a
+                        onClick={() => handleNavigation(detail.link)}
+
+                        className={`${isLinkActive(detail.link) ? "text-[#2776EA]" : "text-[#4F4F4F]"} hover:text-[#2776EA]`}
+                      >
                         {detail.text}
                       </a>
                     </li>
@@ -93,10 +111,12 @@ const MegaMenu: React.FC<MegaMenuProps> = ({ activeMenu }) => {
             <div className="pl-4 sm:my-0 md:my-3 col-span-12 md:col-span-4">
               {data.map((list) => (
                 <div key={list.id} className="d-flex flex-col">
-                  <a onClick={() => handleNavigation(list.link)} >
-                    <h1 className="font-semibold text-lg text-[#2776EA]  pt-[9px] hover:text-[#0a58ca]">
-                      {list.heading}
-                    </h1>
+                  <a
+                    onClick={() => handleNavigation(list.link)}
+
+                    className={`font-semibold text-lg pt-[9px] hover:text-[#0a58ca] ${isLinkActive(list.link) ? "text-[#2776EA]" : "text-[#2776EA]"}`}
+                  >
+                    {list.heading}
                   </a>
                   <ul className="list-none px-0">
                     {list.items.map((item, index) => (
@@ -105,7 +125,11 @@ const MegaMenu: React.FC<MegaMenuProps> = ({ activeMenu }) => {
                         className=" pt-1 text-[#4F4F4F] cursor-pointer hover:text-[#2776EA]"
                       >
 
-                        <a onClick={() => handleNavigation(item.link)} className="text-[#4F4F4F] hover:text-[#2776EA]">
+                        <a
+                          onClick={() => handleNavigation(item.link)}
+
+                          className={`${isLinkActive(item.link) ? "text-[#2776EA]" : "text-[#4F4F4F]"} hover:text-[#2776EA]`}
+                        >
                           {item.text}
                         </a>
                       </li>
@@ -119,7 +143,9 @@ const MegaMenu: React.FC<MegaMenuProps> = ({ activeMenu }) => {
               {filteredMenuItems.map((item) => (
                 <div key={item.id} className="py-3 d-flex flex-col">
                   <Link href="/">
-                    <h1 className="font-semibold text-[22px] text-[#2776EA] hover:text-[#0a58ca] ">{item.title}</h1>
+                    <h1 className={`font-semibold text-[22px] hover:text-[#0a58ca] ${isLinkActive(item.url) ? "text-[#2776EA]" : "text-[#2776EA]"}`}>
+                      {item.title}
+                    </h1>
                   </Link>
                   <Image
                     src={item.img}

@@ -28,7 +28,7 @@ const ContactForm = () => {
 
     return (
         <section id='contact-us-form' className={`${isVisible ? "fadeIn" : "opacity-0 "
-            } contact-form-section py-10 md:py-20 bg-center bg-no-repeat bg-cover`}>
+            } contact-form-section pb-10 md:pb-20 bg-center bg-no-repeat bg-cover`}>
             <div className='layer-form bg-center bg-no-repeat mx-5 bg-cover rounded-[16px] sm:pb-[140px] md:py-[60px]'>
                 <Container>
                     <Row>

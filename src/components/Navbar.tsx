@@ -169,7 +169,7 @@ const Navbar = () => {
           <ul className="search-menu mb-0 pl-0 hidden md:flex flex-row gap-4 items-center">
             <li>
               <button
-                className="search-main rounded-2xl transition-all ease-in-out duration-300 bg-custom-rgba hover:bg-[#2776EA] py-[13px] px-[13px] "
+                className="search-main rounded-2xl transition-all ease-in-out duration-300 bg-[#2776ea] hover:bg-transperent py-[13px] px-[13px] hover:bg-transparent border-[1px] border-[transparent] hover:border-[#fff]"
                 onClick={handleSearchClick}
                 ref={searchRefDesktop}
               >
