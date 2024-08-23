@@ -908,61 +908,32 @@ export const ConsultingData = [
         title: 'AI Strategy Development',
         description: 'Our strategic approach guarantees a seamless AI adoption that maximizes ROI and efficiency.',
         icon: ConsultingOne,
-        listItems: [
-            'Customized AI roadmap',
-            'Value realisation strategies',
-            'Risk management and compliance',
-        ]
     },
     {
         title: 'Machine Learning Consulting',
         description: 'Whether it’s automating manual processes or developing intelligent applications, our solutions.',
         icon: ConsultingTwo,
-        listItems: [
-            'Algorithm development',
-            'Data modelling and analysis',
-            'Custom machine learning solutions',
-        ]
     },
     {
         title: 'Data Analytics Intelligence',
         description: 'Harness the power of data with our advanced analytics and business intelligence services.',
         icon: ConsultingThree,
-        listItems: [
-            'Data visualization',
-            'Advanced analytics',
-            'Real-time data processing',
-        ]
     },
     {
         title: 'Natural Language Processing',
         description: 'Unlock the potential of your data with NLP solutions that interpret and analyze human language. ',
         icon: ConsultingFour,
-        listItems: [
-            'Text analysis and mining',
-            'Sentiment analysis',
-            'Chatbot development',
-        ]
+
     },
     {
         title: 'Predictive Analytics',
         description: 'Stay ahead of the curve with predictive analytics that forecast trends and behaviours. ',
         icon: ConsultingFive,
-        listItems: [
-            'Demand forecasting',
-            'Customer behavior analysis',
-            'Risk management',
-        ]
     },
     {
         title: 'AI Integration and Automation',
         description: 'Our AI integration services ensure that your AI solutions are scalable, secure, and aligned with your business objectives.',
         icon: ConsultingSix,
-        listItems: [
-            'AI-powered automation',
-            'System integration',
-            'Workflow optimization',
-        ]
     },
 ];
 
@@ -1055,43 +1026,25 @@ export const ServicesDataLocal = [
 export const GovernanceDataPrivacy = [
     {
         title: 'AI Governance Frameworks',
-        description: 'Our AI governance frameworks are designed to establish robust guidelines and standards that ensure the ethical and responsible use of AI technologies. ',
+        description: 'Our AI governance frameworks ensure ethical and responsible AI use with robust guidelines and standards. ',
         icon: GovernanceFramework,
-        listItems: [
-            'Transparent & Explainable AI Systems',
-            'Ethical AI Practices',
-            'Comprehensive AI Policy Development',
-        ]
     },
     {
         title: 'AI Risk Management',
-        description: 'We provide detailed risk assessments and develop strategies to mitigate potential threats, ensuring your AI systems are resilient and reliable.',
+        description: 'We offer in-depth risk assessments and strategies to mitigate threats, ensuring resilient and reliable AI systems.',
         icon: RiskManagement,
-        listItems: [
-            'AI Risk Management Frameworks',
-            'Predictive Risk Analytics',
-            'Continuous Monitoring and Reporting',
-        ]
+       
     },
     {
         title: 'Compliance in AI',
-        description: 'With evolving regulations like the GDPR and the upcoming EU AI Act, staying compliant is more challenging than ever. ',
+        description: 'With evolving regulations like GDPR and the upcoming EU AI Act, compliance is increasingly challenging. ',
         icon: Dataprivacy,
-        listItems: [
-            'GDPR and AI Compliance',
-            'Regulatory Compliance Audits',
-            'AI Compliance Standards Development',
-        ]
+       
     },
     {
         title: 'Data Privacy Regulations',
-        description: 'We help you implement robust data privacy practices that safeguard sensitive information and ensure compliance with global data regulations.',
+        description: 'We help implement strong data privacy practices to safeguard sensitive information and ensure global compliance.',
         icon: ComplianceAI,
-        listItems: [
-            'Data Security in AI',
-            'Privacy Impact Assessments',
-            'Compliance with Data Privacy Regulations',
-        ]
     },
 
 ];
