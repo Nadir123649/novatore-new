@@ -12,18 +12,17 @@ interface MegaMenuProps {
 }
 const MegaMenu: React.FC<MegaMenuProps> = ({ activeMenu }) => {
   const router = useRouter();
-  // const handleRefreshAndNavigate = (url: string) => {
-  //   router.push(url).then(() => {
-  //     router.reload();
-  //   });
-  // };
-  // onClick={() => handleRefreshAndNavigate
 
   const handleNavigation = (url: string) => {
-    router.push(url);
+    if (router.pathname === url) {
+      window.location.reload();
+    } else {
+      router.push(url);
+    }
   };
 
-  // Function to check if the link is active (highlights the active link) - ADDED
+
+
   const isLinkActive = (url: string) => {
     return router.pathname === url;
   };

@@ -14,7 +14,7 @@ const AWS: NextPage = () => {
     return (
         <Layout title="Novatore Sols - Amazon Web Services" description="Welcome to Novatore Sols, setting new standards in technology with unmatchable code.">
             <div className="overflow-x-hidden">
-                <HeroBanner bannerHeading="Flexible Network Architecture With Our AWS" pagetitle="Services" needsMoreTitle="Get in Touch" previewImage="/images/aws-banner.png" maxwidth="800px"  />
+                <HeroBanner bannerHeading="Flexible Network Architecture With Our AWS" pagetitle="Amazon Web Services" needsMoreTitle="Get in Touch" previewImage="/images/aws-banner.png" maxwidth="800px" />
                 <ServicesNeeds needsTitle="Transforming Businesses With " needsTitleBlue="AWS" NeedsImage="/images/amazon-right.png"
                     needsDescription="Amazon Web Services (AWS) stands as a powerhouse, enabling businesses to leverage scalable and reliable cloud solutions.
                At our software company, we use the full potential of AWS to drive innovation, enhance productivity, and streamline operations.

@@ -14,7 +14,7 @@ const CustomSoftwareDevelopment: NextPage = () => {
     return (
         <Layout title="Novatore Sols - Custom Software Development" description="Welcome to Novatore Sols, setting new standards in technology with unmatchable code.">
             <div className="overflow-x-hidden">
-                <HeroBanner bannerHeading="Explore Our Expertise in Custom Software Development" pagetitle="Services" needsMoreTitle="Get in Touch" previewImage="/images/custom-software-banner.png" maxwidth="1100px" />
+                <HeroBanner bannerHeading="Explore Our Expertise in Custom Software Development" pagetitle="Custom Software Development" needsMoreTitle="Get in Touch" previewImage="/images/custom-software-banner.png" maxwidth="1100px" />
                 <ServicesNeeds needsTitleBlue="Software Development" needsMoreTitle="for Modern Businesses" NeedsImage="/images/custom-development-image.png"
                     needsDescription="Businesses require innovative and adaptable software solutions to stay competitive. Our custom software development services offer tailored solutions that align with your unique business needs, helping you achieve your goals with efficiency and precision. By using advanced technologies and industry best practices, we ensure that your digital transformation journey is seamless and impactful." />
                 <ExpertServices needsTitle="Our Expertise in  " needsTitleBlue="Web" spantitle="&" needsMoreTitleblue="Mobile" needsMoreTitle=" Application Development" NeedsImage="/images/expertise-applications-image.png"
@@ -22,7 +22,7 @@ const CustomSoftwareDevelopment: NextPage = () => {
                 <DataServicesSection heading="Explore Our Comprehensive " headingBlue="Services" data={ProductWebData} />
                 <DiagramSlider heading="A Superior " headingBlue="Software Development" needsMoreTitle="Approach" image={DiagramCustomServices} />
                 <Enterprise />
-                <Innovation />  
+                <Innovation />
             </div>
         </Layout>
     );
