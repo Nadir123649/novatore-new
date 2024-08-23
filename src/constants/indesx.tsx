@@ -825,7 +825,7 @@ export const WebAutomationData = [
     },
     {
         title: 'Client-Centric Approach',
-        description: 'We work closely with you throughout the development process to ensure your vision is realized.' ,
+        description: 'We work closely with you throughout the development process to ensure your vision is realized.',
         icon: AutomationImageTwo,
     },
     {
@@ -1134,7 +1134,7 @@ export const servicesoffer = {
             id: "digitalservice",
             title: "Digital Consulting & Strategy",
             details: "Explore our comprehensive suite of business applications designed to elevate your productivity and streamline your operations. From software solutions to tailored product development and engineering services, we provide the tools you need to transform your ideas into reality. Our approach ensures that each solution is crafted with efficiency and your unique business goals in mind. ",
-            description: "We provide strategic insights and tailored consulting to help you navigate the digital landscape and achieve your business goals.",
+            description: "We provide strategic insights and tailored consulting to help you navigate the digital landscape.",
             keyheading: "",
             keyfeatures: [{ paragraph: "" }]
         },
@@ -1155,7 +1155,7 @@ export const servicesoffer = {
         {
             id: 4,
             title: "DevOps & SecOps",
-            description: "Optimize your development and security operations with our comprehensive DevOps and SecOps services, ensuring seamless and secure deployments.",
+            description: "Optimize your development and security operations with our comprehensive DevOps and SecOps services.",
             keyheading: "",
             keyfeatures: [{ paragraph: "" }]
         }
@@ -1213,7 +1213,7 @@ export const servicesoffer = {
         {
             id: 4,
             title: "Simplifying Success for You and Your Customers",
-            description: "Our integrated engineering approach fosters business resilience and high-performance results, creating flawless experiences across all touchpoints and building businesses with a customer-first focus.",
+            description: "Our integrated engineering approach fosters business resilience and high-performance results, creating flawless experiences.",
             keyheading: "",
             keyfeatures: [{ paragraph: "" }]
         },
@@ -1230,14 +1230,14 @@ export const servicesoffer = {
         },
         {
             id: 2,
-            title: "Customer Relationship Management (CRM) Systems",
+            title: "CRM Systems",
             description: "Consolidate your data and customize without code to manage interactions, track sales, and streamline marketing effortlessly.",
             keyheading: "",
             keyfeatures: [{ paragraph: "" }]
         },
         {
             id: 3,
-            title: "Enterprise Resource Planning (ERP) Systems",
+            title: "ERP Systems",
             description: "Integrate finance, HR, inventory, and supply chain into one platform, reducing costs and enhancing efficiency.",
             keyheading: "",
             keyfeatures: [{ paragraph: "" }]
@@ -1251,7 +1251,7 @@ export const servicesoffer = {
         },
         {
             id: 5,
-            title: "Human Resource Management Systems (HRMS)",
+            title: " HRM Systems ",
             description: "From recruitment to payroll, automate HR processes and gain real-time insights to improve job satisfaction and effectiveness. ",
             keyheading: "",
             keyfeatures: [{ paragraph: "" }]
@@ -1265,14 +1265,14 @@ export const servicesoffer = {
         },
         {
             id: 7,
-            title: "Accounting and Financial Management Software",
+            title: "Financial Management Software",
             description: " Automate bookkeeping, generate detailed reports, and make strategic financial decisions with ease.",
             keyheading: "",
             keyfeatures: [{ paragraph: "" }]
         },
         {
             id: 8,
-            title: "Business Intelligence (BI) and Analytics Tools",
+            title: "Business Intelligence (BI) & Analytics",
             description: " Visualize data, uncover trends, and drive growth with data-driven decisions.",
             keyheading: "",
             keyfeatures: [{ paragraph: "" }]
@@ -1286,7 +1286,7 @@ export const servicesoffer = {
         },
         {
             id: 10,
-            title: "Supply Chain Management (SCM) Systems",
+            title: "SCM Systems",
             description: " Optimize procurement, production, and distribution for faster, more efficient delivery to your customers.",
             keyheading: "",
             keyfeatures: [{ paragraph: "" }]
@@ -1307,7 +1307,7 @@ export const servicesoffer = {
         },
         {
             id: 13,
-            title: "Customer Support and Helpdesk Software",
+            title: "Customer Support Software",
             description: " Look out for inquiries, track tickets, and resolve issues efficiently, improving customer satisfaction and loyalty.",
             keyheading: "",
             keyfeatures: [{ paragraph: "" }]
@@ -1326,30 +1326,30 @@ export const servicesoffer = {
             id: "mobiledevelopment",
             title: "Custom Mobile App Development",
             details: "Innovate and Grow with Our Cross-Platform Expertise. Elevate your digital presence by leveraging our extensive mobile app development capabilities, tailored to deliver seamless, engaging, and user-friendly experiences across all platforms, including iOS, Android, and beyond. Our team of experts is dedicated to crafting robust, scalable solutions that meet the unique needs of your business.",
-            description: "",
-            keyheading: "Key Features:",
-            keyfeatures: [{ paragraph: "Tailored app solutions" }, { paragraph: "User-friendly interfaces" }, { paragraph: "Seamless integration with existing systems" }]
+            description: "We offer customized app solutions with intuitive interfaces and smooth integration into your current systems.",
+            keyheading: "",
+            keyfeatures: [{ paragraph: "" }]
         },
         {
             id: 2,
-            title: "iOS and Android App Development",
-            description: "Our expertise spans across both iOS and Android platforms, utilizing the best mobile app development tools to create robust and scalable applications.  Technologies We Use:Swift, Kotlin,React Native, Flutter ,Xcode, Android Studio",
-            keyheading: "Technologies We Use:",
-            keyfeatures: [{ paragraph: "Swift, Kotlin" }, { paragraph: "React Native, Flutter" }, { paragraph: "Xcode, Android Studio" }]
+            title: "iOS & Android App Development",
+            description: "Our expertise spans across both iOS and Android platforms, utilizing the best mobile app development tools.",
+            keyheading: "",
+            keyfeatures: [{ paragraph: "" }]
         },
         {
             id: 3,
             title: "Cross-Platform App Development",
-            description: "Maximize your reach with our cross-platform app development services. We use mobile app development platforms like React Native and Flutter to ensure your app performs seamlessly across all devices.",
-            keyheading: "Benefits:",
-            keyfeatures: [{ paragraph: "Cost-effective development" }, { paragraph: "Consistent user experience" }, { paragraph: "Faster time-to-market" }]
+            description: "We use mobile app development platforms like React Native and Flutter to ensure your app performs seamlessly.",
+            keyheading: "",
+            keyfeatures: [{ paragraph: "" }]
         },
         {
             id: 4,
             title: "Mobile App Development Outsourcing",
-            description: "Looking to expand your capabilities? Our mobile app development outsourcing services provide you with the expertise and resources needed to bring your project to life.",
-            keyheading: "Advantages:",
-            keyfeatures: [{ paragraph: "Access to skilled developers" }, { paragraph: "Flexible engagement models" }, { paragraph: "Cost-effective solutions" }]
+            description: "Our mobile app development outsourcing services provide you with the expertise and resources you need.",
+            keyheading: "",
+            keyfeatures: [{ paragraph: "" }]
         }
     ],
     testing: [
@@ -1401,23 +1401,24 @@ export const servicesoffer = {
     buisnessautomation: [
         {
             id: "businessautomation",
-            title: "The Benefits of Business Process Automation",
+            title: "Benefits of Business Process Automation",
             details: "Our services are tailored to meet the unique needs of your organization, ensuring that you achieve maximum efficiency while maintaining high standards of quality. Whether you're looking to automate repetitive tasks, integrate advanced technologies, or optimize your entire business process, Novatore Solutions has the expertise to drive innovation and deliver measurable results that propel your business forward.",
-            description: "",
+            description: "Our services are designed to boost efficiency, reduce costs, improve accuracy, and ensure scalability.",
             keyheading: "",
-            keyfeatures: [{ paragraph: "Increased Efficiency" }, { paragraph: "Cost Savings" }, { paragraph: "Enhanced Accuracy" }, { paragraph: "Scalability" }]
+            keyfeatures: [{ paragraph: "" }]
+
         },
         {
             id: 2,
-            title: "Tools and TechniquesKey Considerations for Business Process Automation",
-            description: "When implementing BPA, it's crucial to consider factors such as the complexity of the processes, integration with existing systems, and the potential for scalability. Our team ensures that all key considerations for business process automation are addressed to deliver optimal results.",
+            title: "Tools and Techniques ",
+            description: "Our team ensures that all key considerations for business process automation are addressed to deliver optimal results.",
             keyheading: "",
             keyfeatures: [{ paragraph: "" }]
         },
         {
             id: 3,
             title: "Challenges in Business Process Automation",
-            description: "While BPA offers numerous benefits, challenges such as system integration, employee adaptation, and process complexity can arise. We provide support and solutions to overcome these challenges in business process automation, ensuring a seamless transition.",
+            description: "We provide support and solutions to overcome challenges in business process automation, ensuring a seamless transition.",
             keyheading: "",
             keyfeatures: [{ paragraph: "" }]
         },
@@ -1427,21 +1428,21 @@ export const servicesoffer = {
         id: "azure",
         title: "Microsoft Azure Services",
         details: "We provide solutions that leverage the full capabilities of Microsoft Azure and Google Cloud Platform (GCP) to meet the diverse and evolving needs of your business. Our team of experts ensures that you not only harness the power of these robust cloud platforms but also maximize their potential to drive innovation, scalability, and efficiency across your operations.",
-        description: "Microsoft Azure is a dynamic cloud computing platform and service provided by Microsoft. It offers a wide range of services, including computing, analytics, storage, and networking. ",
+        description: "Microsoft Azure is a cloud computing platform and service provided by Microsoft, offering computing and networking. ",
         keyheading: "",
         keyfeatures: [{ paragraph: "" }]
     },
     {
         id: 2,
         title: "Azure Architecture",
-        description: "Azure architecture is designed to provide a resilient, secure, and scalable environment for cloud applications. Key components include:",
+        description: "Azure architecture is designed to provide a resilient, secure, and scalable environment for cloud applications. ",
         keyheading: "",
         keyfeatures: [{ paragraph: "" }]
     },
     {
         id: 3,
         title: "Google Cloud Platform (GCP) Services",
-        description: "Google Cloud Platform (GCP) is a suite of cloud computing services provided by Google. Known for its high performance and cost-effective pricing, GCP is designed to support the deployment of modern, cloud-native applications.",
+        description: "Known for its high performance, GCP is designed to support the deployment of cloud-native applications.",
         keyheading: "",
         keyfeatures: [{ paragraph: "" }]
     },],
@@ -1529,7 +1530,7 @@ export const servicesoffer = {
         {
             id: 2,
             title: " CloudOps Implementation",
-            description: "Our team excels in deploying cloud operations frameworks that enhance performance, security, and scalability, tailored to your unique requirements.",
+            description: "Our team excels in deploying cloud operations frameworks that enhance performance, security, and scalability.",
             keyheading: "",
             keyfeatures: [{ paragraph: "" }]
         },
@@ -1566,8 +1567,8 @@ export const servicesoffer = {
         },
         {
             id: 4,
-            title: " Data Analytics and Insights",
-            description: "Leverage data to gain actionable insights and improve decision-making..",
+            title: " Data Analytics & Insights",
+            description: "Leverage data to gain actionable insights and improve decision-making.",
             keyheading: "",
             keyfeatures: [{ paragraph: "" }]
         },
@@ -1597,7 +1598,7 @@ export const servicesoffer = {
         },
         {
             id: 2,
-            title: " Software Development Team Augmentation",
+            title: " Development Team Augmentation",
             description: "Build a powerhouse development team. Strengthen your software development capabilities with our talented engineers and developers.",
             keyheading: "",
             keyfeatures: [{ paragraph: "" }]
@@ -1681,63 +1682,63 @@ export const servicesoffer = {
             id: "generativeAI",
             title: "Text-to-Image AI",
             details: "Whether you're looking to revolutionize content creation or drive innovation, our comprehensive solutions are designed to elevate your enterprise to new heights. From advanced text-to-image generation that brings your ideas to life, to robust AI governance that ensures ethical and efficient AI deployment, we provide the tools and expertise you need to stay ahead in today's digital landscape.",
-            description: "Create stunning visuals with our Text-to-Image AI services. Whether you need marketing materials, product visuals, or custom graphics, our AI can generate high-quality images from textual descriptions, saving time and resources.",
+            description: "Create stunning visuals with our Text-to-Image AI services. ",
             keyheading: "",
             keyfeatures: [{ paragraph: "" }]
         },
         {
             id: 2,
             title: "Multimodal AI",
-            description: "Experience seamless integration of multiple data types with our Multimodal AI solutions. By combining text, images, audio, and video, our AI models provide a holistic approach to data analysis and content generation.",
+            description: "Experience seamless integration of multiple data types with our Multimodal AI solutions. ",
             keyheading: "",
             keyfeatures: [{ paragraph: "" }]
         },
         {
             id: 3,
             title: " AI Governance",
-            description: "Ensure your AI systems operate ethically and securely with our AI Governance services. We help you implement frameworks that prioritize transparency, accountability, and compliance with regulatory standards.",
+            description: "Ensure your AI systems operate ethically and securely with our AI Governance services. ",
             keyheading: "",
             keyfeatures: [{ paragraph: "" }]
         },
         {
             id: 4,
             title: "Generative Design",
-            description: "Innovate faster with Generative Design. Our AI-driven design tools assist in creating efficient, sustainable, and aesthetically pleasing designs for products, architecture, and more.",
+            description: "Innovate faster with Generative Design. ",
             keyheading: "",
             keyfeatures: [{ paragraph: "" }]
         },
         {
             id: 5,
             title: "AI Music Generation",
-            description: "Transform your audio content with AI Music Generation. Our AI can compose original music, remix tracks, and even generate soundscapes tailored to your needs.",
+            description: "Transform your audio content with AI Music Generation. ",
             keyheading: "",
             keyfeatures: [{ paragraph: "" }]
         },
         {
             id: 6,
             title: " Synthetic Data",
-            description: "Enhance your machine learning models with Synthetic Data. Generate high-quality, anonymized data to train AI systems without compromising on privacy or data security.",
+            description: "Enhance your machine learning models with Synthetic Data. ",
             keyheading: "",
             keyfeatures: [{ paragraph: "" }]
         },
         {
             id: 7,
             title: " Speech Synthesis AI",
-            description: "Improve communication and accessibility with Speech Synthesis AI. Our AI can generate lifelike speech from text, supporting multiple languages and accents.",
+            description: "Improve communication and accessibility with Speech Synthesis AI. ",
             keyheading: "",
             keyfeatures: [{ paragraph: "" }]
         },
         {
             id: 8,
             title: "Conversational AI ",
-            description: "Elevate customer interactions with Conversational AI. Deploy intelligent chatbots and virtual assistants that understand and respond to user queries in real-time.",
+            description: "Elevate customer interactions with Conversational AI. ",
             keyheading: "",
             keyfeatures: [{ paragraph: "" }]
         },
         {
             id: 9,
             title: " AI-Generated Content ",
-            description: "Automate content creation with AI-Generated Content. From blog posts to social media updates, our AI can produce engaging and relevant content tailored to your audience.",
+            description: "Automate content creation with AI-Generated Content. ",
             keyheading: "",
             keyfeatures: [{ paragraph: "" }]
         },
@@ -1746,67 +1747,67 @@ export const servicesoffer = {
     machinelearning: [
         {
             id: "machinelearning",
-            title: "  Quantum Machine Learning (Quantum ML)",
+            title: "  Quantum Machine Learning",
             details: "Dive into the future of technology with our cutting-edge machine learning services, meticulously crafted to transform and elevate your business capabilities. Our innovative solutions harness the power of the latest advancements in artificial intelligence, enabling you to unlock new opportunities, optimize operations, and stay ahead in a rapidly evolving digital landscape. Embrace the future with confidence.",
-            description: "",
+            description: "We specialize in creating  solutions that leverage quantum algorithms and high-speed data processing.",
             keyheading: "",
-            keyfeatures: [{ paragraph: "Quantum algorithm development" }, { paragraph: "High-speed data processing" }, { paragraph: "Advanced pattern recognition" }]
+            keyfeatures: [{ paragraph: "" }]
         },
         {
             id: "2",
             title: " Deep Learning",
-            description: "",
+            description: "We provide advanced neural network models that ensure high accuracy in data interpretation and offer scalable solutions.",
             keyheading: "",
-            keyfeatures: [{ paragraph: " Neural network models" }, { paragraph: " High accuracy in data interpretation" }, { paragraph: "Scalable solutions for large datasets" }]
+            keyfeatures: [{ paragraph: "" }]
         },
         {
             id: "3",
             title: "  Explainable AI (XAI)",
-            description: "",
+            description: "Our company provides services that ensure transparent AI models and foster enhanced trust and reliability.",
             keyheading: "",
-            keyfeatures: [{ paragraph: "Transparent AI models" }, { paragraph: "Enhanced trust and reliability" }, { paragraph: "Regulatory compliance" }]
+            keyfeatures: [{ paragraph: "" }]
         },
         {
             id: "4",
             title: " Edge Computing",
-            description: "",
+            description: "We offer services that optimize data processing locally, significantly reduce latency, and enhance real-time performance.",
             keyheading: "",
-            keyfeatures: [{ paragraph: "Local data processing" }, { paragraph: "Reduced latency" }, { paragraph: "Enhanced real-time capabilities" }]
+            keyfeatures: [{ paragraph: "" }]
         },
         {
             id: "5",
             title: " Autonomous Driving",
-            description: "",
+            description: "We offer advanced solutions in intelligent systems, including the ability to detect and classify objects, and plan optimal paths.",
             keyheading: "",
-            keyfeatures: [{ paragraph: "Object detection and classification" }, { paragraph: "Path planning and navigation" }, { paragraph: " Real-time sensor data processing" }]
+            keyfeatures: [{ paragraph: "" }]
         },
         {
             id: "6",
             title: " Computer Vision",
-            description: "",
+            description: "We provide advanced solutions for analyzing and inspecting visual content, with capabilities for automated inspection.",
             keyheading: "",
-            keyfeatures: [{ paragraph: "Image and video analysis" }, { paragraph: "Automated visual inspection" }, { paragraph: "Real-time monitoring" }]
+            keyfeatures: [{ paragraph: "" }]
         },
         {
             id: "7",
             title: " Generative Adversarial Networks (GANs)",
-            description: "",
+            description: "We offer advanced services that elevate content quality and enrich data-driven insights.",
             keyheading: "",
-            keyfeatures: [{ paragraph: "Realistic content generation" }, { paragraph: "Data augmentation" }, { paragraph: "Enhanced creative capabilities" }]
+            keyfeatures: [{ paragraph: "" }]
         },
         {
             id: "8",
             title: " Natural Language Processing (NLP)",
-            description: "",
+            description: "We provide advanced solutions for analyzing text and speech, detecting sentiment, and supporting multiple languages.",
             keyheading: "",
-            keyfeatures: [{ paragraph: "Text and speech analysis" }, { paragraph: "Sentiment detection" }, { paragraph: "Multilingual support" }]
+            keyfeatures: [{ paragraph: "" }]
         },
         {
             id: "9",
             title: " Predictive Analytics",
-            description: "",
+            description: "We offer comprehensive services that help businesses gain valuable insights through trend analysis.",
             keyheading: "",
-            keyfeatures: [{ paragraph: "Trend analysis" }, { paragraph: "Forecasting models" }, { paragraph: "Data-driven decision making" }]
+            keyfeatures: [{ paragraph: "" }]
         },
     ],
     productengineering: [
@@ -1828,7 +1829,7 @@ export const servicesoffer = {
         {
             id: "3",
             title: " Progressive Technology Solutions",
-            description: "Embrace the future with our expertise in the latest technologies. We offer solutions in:",
+            description: "We provide cutting-edge technology solutions, including IoT, AR/VR, ML/AI, blockchain, and geolocation services.",
             keyheading: "",
             keyfeatures: [{ paragraph: "" },]
         },
@@ -1932,20 +1933,20 @@ export const servicesoffer = {
         {
             id: "6",
             title: " IT Security Consulting",
-            description: "Our IT Security Consulting services provide expert guidance to enhance your security posture. We conduct thorough security audits, risk assessments, and compliance checks.",
+            description: "Our IT Security Consulting services provide expert guidance to enhance your security posture. ",
             keyheading: "",
             keyfeatures: [{ paragraph: "" }]
         },
         {
             id: "7",
-            title: "Security Information and Event Management (SIEM)",
+            title: "SIEM",
             description: "By collecting and analyzing data from across your IT environment, we provide actionable insights to detect and respond to security incidents promptly. ",
             keyheading: "",
             keyfeatures: [{ paragraph: "" }]
         },
         {
             id: "8",
-            title: " Threat Detection and Response",
+            title: " Threat Detection & Response",
             description: "Utilizing advanced analytics and AI-driven tools, we detect anomalous activities and respond to incidents in real-time. ",
             keyheading: "",
             keyfeatures: [{ paragraph: "" }]
@@ -1961,8 +1962,8 @@ export const servicesoffer = {
     penetrationtesting: [
         {
             id: "penetrationtesting",
-            title: "  Expertise and Experience",
-            description: "With a team of seasoned professionals, we bring extensive knowledge and experience in conducting thorough penetration tests that meet the highest industry standards.",
+            title: "  Expertise & Experience",
+            description: "We bring extensive knowledge and experience in conducting thorough penetration tests that meet the industry standards.",
             details: "Introducing the essential and increasingly critical field of penetration testing, where our team of seasoned ethical hackers employs a comprehensive range of state-of-the-art techniques to simulate real-world cyberattacks. By meticulously assessing your organization's digital infrastructure, we identify potential vulnerabilities that could be exploited by malicious actors. This proactive approach safeguards your systems and enhances your security.",
             keyheading: "",
             keyfeatures: [{ paragraph: "" }]
@@ -1970,14 +1971,14 @@ export const servicesoffer = {
         {
             id: "2",
             title: " Tools and Techniques",
-            description: "We leverage the latest tools and methodologies, such as Metasploit, Burp Suite, and Wireshark, to deliver comprehensive and effective penetration testing services.",
+            description: "We leverage the latest tools and methodologies, such as Metasploit, Burp Suite, and Wireshark, to deliver penetration testing services.",
             keyheading: "",
             keyfeatures: [{ paragraph: "" }]
         },
         {
             id: "3",
             title: "Tailored Testing Approach",
-            description: "Our services are customized to meet your specific needs, whether it's network security, web application security, or compliance testing, ensuring a targeted and efficient approach.",
+            description: "Our services are customized to meet your specific needs, whether it's network security or compliance testing, ensuring a targeted approach.",
             keyheading: "",
             keyfeatures: [{ paragraph: "" }]
         },
@@ -2154,52 +2155,52 @@ export const servicesoffer = {
         {
             id: "webappdevelopment",
             title: " Custom Web Application Development",
-            description: "We develop custom web applications tailored to your business requirements. ",
+            description: "We provide customized digital solutions that cater to specific business requirements, ensuring responsive design. ",
             details: "Discover our suite of services, ranging from custom web application development to progressive web apps, each meticulously crafted to address your unique business requirements. We prioritize performance optimization, ensuring your applications run smoothly and efficiently, while adhering to the highest security best practices to safeguard your digital assets and provide peace of mind.",
-            keyheading: "Key Features:",
-            keyfeatures: [{ paragraph: "Tailored solutions for unique business needs" }, { paragraph: "Responsive design for seamless user experience" }, { paragraph: "Integration with third-party services" }]
+            keyheading: "",
+            keyfeatures: [{ paragraph: "" }]
         },
         {
             id: "2",
             title: " Front-end Web Development",
-            description: "Our front-end development services focus on creating visually appealing and highly interactive user interfaces.",
-            keyheading: "Technologies We Use:",
-            keyfeatures: [{ paragraph: "HTML5, CSS3, JavaScript" }, { paragraph: "React, Angular, Vue.js" }, { paragraph: "Bootstrap, Materialize" }]
+            description: "We specialize in leveraging modern web technologies and frameworks to create responsive and dynamic user interfaces.",
+            keyheading: "",
+            keyfeatures: [{ paragraph: "" }]
         },
         {
             id: "3",
             title: "Back-end Web Development",
-            description: "We use the latest technologies and frameworks to build the backbone of your web applications.",
-            keyheading: "Technologies We Use:",
-            keyfeatures: [{ paragraph: "Node.js, Python, Ruby on Rails" }, { paragraph: "Express.js, Django, Flask" }, { paragraph: "SQL, NoSQL databases" }]
+            description: "We use a diverse range of technologies to deliver efficient and scalable solutions",
+            keyheading: "",
+            keyfeatures: [{ paragraph: "" }]
         },
         {
             id: "4",
             title: "Full-stack Web Development",
-            description: "We offer full-stack development services, combining both front-end and back-end development to deliver comprehensive web applications. ",
-            keyheading: "Key Capabilities:",
-            keyfeatures: [{ paragraph: "End-to-end development" }, { paragraph: "Cross-functional team collaboration" }, { paragraph: "Agile development methodology" }]
+            description: "We provide comprehensive development services that integrate seamless collaboration across cross-functional teams. ",
+            keyheading: "",
+            keyfeatures: [{ paragraph: "" }]
         },
         {
             id: "5",
             title: "Web App Performance Optimization",
-            description: "Performance is critical for the success of any web application. Our optimization services ensure your web app loads quickly, runs smoothly, and provides an excellent user experience.",
-            keyheading: "Optimization Techniques:",
-            keyfeatures: [{ paragraph: "Code minification and compression" }, { paragraph: "Caching strategies" }, { paragraph: "Load balancing and CDN integration" }]
+            description: "Our optimization services ensure your web app loads quickly, runs smoothly, and provides an excellent user experience.",
+            keyheading: "",
+            keyfeatures: [{ paragraph: "" }]
         },
         {
             id: "6",
             title: "Web App Security Best Practices",
-            description: "Security is a top priority in our web development process. We implement best practices to protect your web applications from vulnerabilities and ensure data integrity.",
-            keyheading: "Security Measures:",
-            keyfeatures: [{ paragraph: "SSL/TLS encryption" }, { paragraph: "Regular security audits" }, { paragraph: "Secure authentication and authorization" }]
+            description: "We implement best practices to protect your web applications from vulnerabilities and ensure data integrity.",
+            keyheading: "",
+            keyfeatures: [{ paragraph: "" }]
         },
         {
             id: "7",
             title: "Progressive Web Apps (PWA)",
-            description: "We develop progressive web apps that combine the best of web and mobile applications. PWAs offer a native app-like experience with the advantages of web technology.",
-            keyheading: "Benefits of PWAs:",
-            keyfeatures: [{ paragraph: "Offline functionality" }, { paragraph: "Push notifications" }, { paragraph: " Faster loading times" }]
+            description: "We develop progressive web apps that combine the best of web and mobile applications. ",
+            keyheading: "",
+            keyfeatures: [{ paragraph: "" }]
         },
     ],
     cryptocurrency: [

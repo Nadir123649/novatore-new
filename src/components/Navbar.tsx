@@ -174,7 +174,7 @@ const Navbar = () => {
                 ref={searchRefDesktop}
               >
                 <Image
-                  src="/images/search.svg"
+                  src="/images/search-icon-new.svg"
                   alt="search"
                   width={24}
                   height={24}
