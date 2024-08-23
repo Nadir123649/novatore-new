@@ -13,7 +13,7 @@ const DataManagementAndGovernance: NextPage = () => {
     return (
         <Layout title="Novatore Sols - Data Management & Governance" description="Welcome to Novatore Sols, setting new standards in technology with unmatchable code.">
             <div className="overflow-x-hidden">
-                <HeroBanner bannerHeading="Your Partner in Data Management & Governance" pagetitle="Services" needsMoreTitle="Get in Touch" previewImage="/images/data-managment-banner.png" maxwidth="1000px" />
+                <HeroBanner bannerHeading="Your Partner in Data Management & Governance" pagetitle="Data" needsMoreTitle="Get in Touch" previewImage="/images/data-managment-banner.png" maxwidth="1000px" />
                 <ServicesNeeds needsTitle="Expert" needsTitleBlue=" Management & Governance" NeedsImage="/images/managment-right-image.png"
                     needsDescription="In today's rapidly evolving, data-driven world, the importance of effective data management and governance cannot be overstated. Businesses that harness the full potential of their data gain a significant competitive advantage, and ensuring compliance with regulatory requirements. At Novatore Solutions, we recognize the transformative power of well-managed data and offer a comprehensive suite of data management and governance services." />
                 <ExpertServices needsTitle=" Data Governance for Enhanced" needsTitleBlue=" Compliance and Integrity" NeedsImage="/images/managment-left-image.png"

@@ -11,7 +11,7 @@ const TestingAndQa: NextPage = () => {
     return (
         <Layout title="Novatore Sols - Testing and QA" description="Welcome to Novatore Sols, setting new standards in technology with unmatchable code.">
             <div className="overflow-x-hidden">
-                <HeroBanner bannerHeading="Reliable QA Services to Elevate Your Software Quality" pagetitle="Services" needsMoreTitle="Get in Touch" previewImage="/images/testing-banner.png" maxwidth="1000px" />
+                <HeroBanner bannerHeading="Reliable QA Services to Elevate Your Software Quality" pagetitle="Transformative Solutions" needsMoreTitle="Get in Touch" previewImage="/images/testing-banner.png" maxwidth="1000px" />
                 <ServicesNeeds needsTitle="Excellent and Reliable " needsTitleBlue=" Software Testing Services" NeedsImage="/images/testing-bg.png"
                     needsDescription="In today's fast-paced digital world, delivering flawless software is critical to staying ahead of the competition. 
                     At Novatore Solutions, we offer top-tier Software Testing Services and Quality Assurance Solutions to ensure your software products are robust, 

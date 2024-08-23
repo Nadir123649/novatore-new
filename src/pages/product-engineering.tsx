@@ -13,7 +13,7 @@ const ProductEngineering: NextPage = () => {
     return (
         <Layout title="Novatore Sols - Product Engineering" description="Welcome to Novatore Sols, setting new standards in technology with unmatchable code.">
             <div className="overflow-x-hidden">
-                <HeroBanner bannerHeading="Crafting Tomorrow’s Innovations with Precision Product Engineering" pagetitle="Services" needsMoreTitle="Get in Touch" previewImage="/images/product-banner.png" maxwidth="1000px" />
+                <HeroBanner bannerHeading="Crafting Tomorrow’s Innovations with Precision Product Engineering" pagetitle="Digital Services" needsMoreTitle="Get in Touch" previewImage="/images/product-banner.png" maxwidth="1000px" />
                 <ServicesNeeds needsTitle="Advanced " needsTitleBlue=" Product Engineering" NeedsImage="/images/product-image-right.png"
                     needsDescription="Our expert team is dedicated to guiding you through every phase of the software development lifecycle, ensuring that each stage is meticulously executed to meet your specific needs and exceed your expectations. We begin with in-depth consultation and design, where our creative and technical teams collaborate to craft a solution that aligns perfectly with your vision." />
                 <ExpertServices needsTitle="Unlock Innovation with " needsTitleBlue=" Tailored Software " NeedsImage="/images/product-image-left.png"

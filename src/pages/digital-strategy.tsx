@@ -11,7 +11,7 @@ const DigitalStrategy: NextPage = () => {
     return (
         <Layout title="Novatore Sols - Digital Strategy and Consultation" description="Welcome to Novatore Sols, setting new standards in technology with unmatchable code.">
             <div className="overflow-x-hidden">
-                <HeroBanner bannerHeading="Optimized Digital Strategy & Consultation" pagetitle="Services" needsMoreTitle="Get in Touch" previewImage="/images/digitalstrategy-banner.png" maxwidth="700px"  />
+                <HeroBanner bannerHeading="Optimized Digital Strategy & Consultation" pagetitle="Digital Services" needsMoreTitle="Get in Touch" previewImage="/images/digitalstrategy-banner.png" maxwidth="700px"  />
                 <ServicesNeeds needsTitle="Turning Your Vision Into" needsTitleBlue="Reality" needsMoreTitle="" NeedsImage="/images/strategy-right.png"
                     needsDescription="Enterprise Mobility Management (EMM) empowers organizations to efficiently oversee, control, and manage all mobile devices, applications, and data from a single, centralized platform. Our EMM solutions offer a robust suite of tools designed to enhance visibility, monitor device usage, and ensure regulatory compliance. By streamlining the management of your mobile assets, we help you maintain a secure environment." />
                 <ExpertServices needsTitle="Digital Strategies" needsTitleBlue=" Ready For The Future" NeedsImage="/images/strategy-left.png"
