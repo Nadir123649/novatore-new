@@ -2,6 +2,32 @@ import { contactDetails } from '@/constants/indesx';
 import React from 'react';
 import { Col, Container, Form, Row } from 'react-bootstrap';
 import { useState, useEffect } from 'react';
+import { z } from 'zod';
+import { zodResolver } from '@hookform/resolvers/zod';
+import { useForm } from 'react-hook-form';
+
+interface IFormInputs {
+    help: string;
+    fullName: string;
+    email: string;
+    country: string;
+    phone: string;
+    message?: string;
+    subscribe?: boolean;
+}
+
+const schema = z.object({
+    help: z.string().nonempty({ message: "Please specify how we can help you." }),
+    fullName: z.string().min(5, { message: "Full name must be at least 2 characters long." }),
+    email: z.string().email({ message: "Please enter a valid email address." }),
+    country: z.string().nonempty({ message: "Please enter your country." }),
+    phone: z.string()
+        .regex(/^[\d\s\+\-\(\)]*$/, { message: "Phone number can only contain digits, spaces, '+', '-', '(', and ')'." })
+        .max(14, { message: "Phone number cannot exceed 13 characters." })
+        .min(7, { message: "Phone number must be at least 7 characters long." }),
+    message: z.string().optional(),
+    subscribe: z.boolean().optional(),
+});
 
 
 const ContactForm = () => {
@@ -26,11 +52,20 @@ const ContactForm = () => {
         };
     }, [hasAnimated]);
 
+
+
+    const { register, handleSubmit, formState: { errors } } = useForm<IFormInputs>({
+        resolver: zodResolver(schema)
+    });
+
+    const onSubmit = (data: any) => {
+        console.log(data);
+    };
     return (
         <section className={`${isVisible ? "fadeIn" : "opacity-0 "
             } contact-form-section pb-10 md:pb-20 pt-20 bg-center bg-no-repeat bg-cover`}>
-            <div className='layer-form bg-center bg-no-repeat mx-5 bg-cover rounded-[16px] sm:pb-[140px] md:py-[70px]' id='contact-us-form'>
-                <Container >
+            <div className='layer-form bg-center bg-no-repeat mx-5 bg-cover rounded-[16px] sm:pb-[140px] md:py-[60px]'>
+                <Container id='contact-us-form'>
                     <Row>
                         <Col lg={4} md={12} xs={12}>
                             <div className="contact-form-content mt-[30px]">
@@ -51,36 +86,42 @@ const ContactForm = () => {
                             </div>
                         </Col>
                         <Col lg={8} md={12} xs={12}>
-                            <Form className='contact-form sm:pt-10 md:pt-0'>
+                            <Form className='contact-form sm:pt-10 md:pt-0' onSubmit={handleSubmit(onSubmit)}>
                                 <Row className='gap-y-4'>
                                     <Col lg={12} md={12} xs={12}>
                                         <Form.Group className='flex flex-col gap-1'>
                                             <Form.Label className='text-[#645555] text-[18px] font-medium not-italic'>How We Can Help You?</Form.Label>
                                             <input
                                                 type="text"
+                                                {...register('help')}
                                                 className='form-input rounded-[16px] border border-solid border-[#B7B7B7] bg-white  text-black p-[14px] text-[18px] not-italic font-normal'
-                                                placeholder="How we can help?"
+                                                placeholder="Web Development"
                                             />
+                                            {errors.help && <p className='text-[#FF9494]'>{errors.help.message}</p>}
                                         </Form.Group>
                                     </Col>
                                     <Col lg={6} md={12} xs={12}>
                                         <Form.Group className='flex flex-col gap-1'>
-                                            <Form.Label className='text-[#645555] text-[18px] font-medium not-italic'>First Name</Form.Label>
+                                            <Form.Label className='text-[#645555] text-[18px] font-medium not-italic'>Full Name</Form.Label>
                                             <input
                                                 type="text"
+                                                {...register('fullName')}
                                                 className='form-input rounded-[16px] border border-solid border-[#B7B7B7] bg-white  text-black p-[14px] text-[18px] not-italic font-normal'
-                                                placeholder="Enter First name"
+                                                placeholder="Alexa David"
                                             />
+                                            {errors.fullName && <p className='text-[#FF9494]'>{errors.fullName.message}</p>}
                                         </Form.Group>
                                     </Col>
                                     <Col lg={6} md={12} xs={12}>
                                         <Form.Group className='flex flex-col gap-1'>
-                                            <Form.Label className='text-[#645555] text-[18px] font-medium not-italic'>Last Name</Form.Label>
+                                            <Form.Label className='text-[#645555] text-[18px] font-medium not-italic'>Email Address</Form.Label>
                                             <input
                                                 type="text"
+                                                {...register('email')}
                                                 className='form-input rounded-[16px] border border-solid bg-white  text-black border-[#B7B7B7] p-[14px] text-[18px] not-italic font-normal'
-                                                placeholder="Enter Last name"
+                                                placeholder="Alexadavid@email.com"
                                             />
+                                            {errors.email && <p className='text-[#FF9494]'>{errors.email.message}</p>}
                                         </Form.Group>
                                     </Col>
                                     <Col lg={6} md={12} xs={12}>
@@ -88,25 +129,41 @@ const ContactForm = () => {
                                             <Form.Label className='text-[#645555] text-[18px] font-medium not-italic'>Country</Form.Label>
                                             <input
                                                 type="text"
+                                                {...register('country')}
                                                 className='form-input rounded-[16px] border border-solid border-[#B7B7B7] bg-white  text-black p-[14px] text-[18px] not-italic font-normal'
-                                                placeholder="Enter Country name"
+                                                placeholder="United States"
+
                                             />
+                                            {errors.country && <p className='text-[#FF9494]'>{errors.country.message}</p>}
                                         </Form.Group>
                                     </Col>
                                     <Col lg={6} md={12} xs={12}>
                                         <Form.Group className='flex flex-col gap-1'>
-                                            <Form.Label className='text-[#645555] text-[18px] font-medium not-italic'>Phone Number</Form.Label>
+                                            <Form.Label className='text-[#645555] text-[18px] font-medium not-italic'>Phone Number <sup className='text-[#FF9494]'>*</sup></Form.Label>
                                             <input
                                                 type="text"
+                                                {...register('phone')}
                                                 className='form-input rounded-[16px] border border-solid border-[#B7B7B7] bg-white  text-black p-[14px] text-[18px] not-italic font-normal'
-                                                placeholder="Enter Phone number here"
+                                                placeholder="+00 111 2222222"
+                                                onKeyPress={(e) => {
+
+                                                    const allowedKeys = /^[0-9\+\-\(\)\s]*$/;
+                                                    if (!allowedKeys.test(e.key)) {
+                                                        e.preventDefault();
+                                                    }
+                                                }}
+                                                maxLength={14}
                                             />
+                                            {errors.phone && <p className='text-[#FF9494]'>{errors.phone.message}</p>}
                                         </Form.Group>
                                     </Col>
                                     <Col lg={12} md={12} xs={12}>
                                         <Form.Group className='flex flex-col gap-1'>
                                             <Form.Label className='form-input text-[#645555] text-[18px] font-medium not-italic'>Message</Form.Label>
-                                            <textarea name="" id="" className='form-input rounded-[16px] border border-solid border-[#B7B7B7] bg-white  text-black p-[14px] min-h-[140px] text-[18px] not-italic font-normal '
+                                            <textarea
+                                                id=""
+                                                {...register('message')}
+                                                className='form-input rounded-[16px] border border-solid border-[#B7B7B7] bg-white  text-black p-[14px] min-h-[140px] text-[18px] not-italic font-normal '
                                                 placeholder='Message'></textarea>
                                         </Form.Group>
                                     </Col>
@@ -114,6 +171,7 @@ const ContactForm = () => {
                                         <Form.Group controlId="subscribe" className='flex flex-col gap-1'>
                                             <Form.Check
                                                 type="checkbox"
+                                                {...register('subscribe')}
                                                 label="Check here to subscribe for updates."
                                                 className="my-2 text-[#645555] text-[18px] font-medium not-italic custom-checkbox "
                                             />
