@@ -5,6 +5,8 @@ import { useState, useEffect } from 'react';
 import { z } from 'zod';
 import { zodResolver } from '@hookform/resolvers/zod';
 import { useForm } from 'react-hook-form';
+import axios from 'axios';
+import Image from 'next/image';
 
 interface IFormInputs {
     help: string;
@@ -15,12 +17,25 @@ interface IFormInputs {
     message?: string;
     subscribe?: boolean;
 }
-
+interface Country {
+    name: string;
+    flag: string;
+    code: string;
+}
 const schema = z.object({
-    help: z.string().nonempty({ message: "Please specify how we can help you." }),
-    fullName: z.string().min(5, { message: "Full name must be at least 2 characters long." }),
-    email: z.string().email({ message: "Please enter a valid email address." }),
-    country: z.string().nonempty({ message: "Please enter your country." }),
+    // help: z.string().nonempty({ message: "Please specify how we can help you." }),
+    help: z.string().optional(),
+    fullName: z.string()
+        .nonempty({ message: "Full name is required." })
+        .regex(/^[a-zA-Z\s'-]*$/, { message: "Full Name can only contain letters, spaces, hyphens, and apostrophes." })
+        .min(2, { message: "Full name must be at least 2 characters long." })
+        .max(50, { message: "Full name cannot exceed 50 characters." }),
+
+    email: z.string()
+        .nonempty({ message: "Email is required." })
+        .email({ message: "Please enter a valid email address." }),
+
+    country: z.string().nonempty({ message: "Please Select a country" }),
     phone: z.string()
         .regex(/^[\d\s\+\-\(\)]*$/, { message: "Phone number can only contain digits, spaces, '+', '-', '(', and ')'." })
         .max(14, { message: "Phone number cannot exceed 13 characters." })
@@ -33,6 +48,27 @@ const schema = z.object({
 const ContactForm = () => {
     const [isVisible, setIsVisible] = useState(false);
     const [hasAnimated, setHasAnimated] = useState(false);
+
+    const [countries, setCountries] = useState<Country[]>([]);
+    const [selectedCountry, setSelectedCountry] = useState<Country | null>(null);
+
+    useEffect(() => {
+        const fetchCountries = async () => {
+            try {
+                const response = await axios.get('https://restcountries.com/v3.1/all');
+                const countryData = response.data.map((country: any) => ({
+                    name: country.name.common,
+                    flag: country.flags.svg,
+                    code: country.idd.root + (country.idd.suffixes ? country.idd.suffixes[0] : ''),
+                }));
+                setCountries(countryData);
+            } catch (error) {
+                console.error('Error fetching country data:', error);
+            }
+        };
+        fetchCountries();
+    }, []);
+
 
     const handleScroll = () => {
         const element = document.getElementById("contact-us-form");
@@ -54,18 +90,27 @@ const ContactForm = () => {
 
 
 
-    const { register, handleSubmit, formState: { errors } } = useForm<IFormInputs>({
-        resolver: zodResolver(schema)
+    const { register, handleSubmit, setValue, formState: { errors } } = useForm<IFormInputs>({
+        resolver: zodResolver(schema),
     });
 
-    const onSubmit = (data: any) => {
+    const handleCountryChange = (event: React.ChangeEvent<HTMLSelectElement>) => {
+        const country = countries.find(c => c.name === event.target.value);
+        if (country) {
+            setSelectedCountry(country);
+            setValue('phone', country.code);
+        }
+    };
+
+    const onSubmit = (data: IFormInputs) => {
         console.log(data);
     };
+
     return (
-        <section className={`${isVisible ? "fadeIn" : "opacity-0 "
-            } contact-form-section pb-10 md:pb-20 pt-20 bg-center bg-no-repeat bg-cover`}>
+        <section id='contact-us-form' className={`${isVisible ? "fadeIn" : "opacity-0 "
+            } contact-form-section pb-10 md:pb-20 bg-center bg-no-repeat bg-cover`}>
             <div className='layer-form bg-center bg-no-repeat mx-5 bg-cover rounded-[16px] sm:pb-[140px] md:py-[60px]'>
-                <Container id='contact-us-form'>
+                <Container>
                     <Row>
                         <Col lg={4} md={12} xs={12}>
                             <div className="contact-form-content mt-[30px]">
@@ -108,6 +153,7 @@ const ContactForm = () => {
                                                 {...register('fullName')}
                                                 className='form-input rounded-[16px] border border-solid border-[#B7B7B7] bg-white  text-black p-[14px] text-[18px] not-italic font-normal'
                                                 placeholder="Alexa David"
+                                                maxLength={50}
                                             />
                                             {errors.fullName && <p className='text-[#FF9494]'>{errors.fullName.message}</p>}
                                         </Form.Group>
@@ -124,27 +170,35 @@ const ContactForm = () => {
                                             {errors.email && <p className='text-[#FF9494]'>{errors.email.message}</p>}
                                         </Form.Group>
                                     </Col>
-                                    <Col lg={6} md={12} xs={12}>
-                                        <Form.Group className='flex flex-col gap-1'>
-                                            <Form.Label className='text-[#645555] text-[18px] font-medium not-italic'>Country</Form.Label>
-                                            <input
-                                                type="text"
-                                                {...register('country')}
-                                                className='form-input rounded-[16px] border border-solid border-[#B7B7B7] bg-white  text-black p-[14px] text-[18px] not-italic font-normal'
-                                                placeholder="United States"
 
-                                            />
-                                            {errors.country && <p className='text-[#FF9494]'>{errors.country.message}</p>}
+                                    <Col lg={6} md={12} xs={12}>
+                                        <Form.Group className="flex flex-col gap-1">
+                                            <Form.Label className="text-[#645555] text-[18px] font-medium not-italic">Country</Form.Label>
+                                            <select
+                                                {...register('country')}
+                                                className="form-input rounded-[16px] border border-solid border-[#B7B7B7] bg-white  text-black p-[14px] text-[18px] not-italic font-normal"
+                                                onChange={handleCountryChange}
+                                            >
+                                                <option value="">Select your country</option>
+                                                {countries.map((country, index) => (
+                                                    <option key={index} value={country.name}>
+                                                        {country.name}
+                                                    </option>
+                                                ))}
+                                            </select>
+                                            {errors.country && <p className="text-[#FF9494]">{errors.country.message}</p>}
                                         </Form.Group>
                                     </Col>
+
                                     <Col lg={6} md={12} xs={12}>
-                                        <Form.Group className='flex flex-col gap-1'>
-                                            <Form.Label className='text-[#645555] text-[18px] font-medium not-italic'>Phone Number <sup className='text-[#FF9494]'>*</sup></Form.Label>
+                                        <Form.Group className="flex flex-col gap-1">
+                                            <Form.Label className="text-[#645555] text-[18px] font-medium not-italic">Phone Number</Form.Label>
                                             <input
                                                 type="text"
                                                 {...register('phone')}
-                                                className='form-input rounded-[16px] border border-solid border-[#B7B7B7] bg-white  text-black p-[14px] text-[18px] not-italic font-normal'
+                                                className="form-input rounded-[16px] border border-solid border-[#B7B7B7] bg-white  text-black p-[14px] text-[18px] not-italic font-normal"
                                                 placeholder="+00 111 2222222"
+                                                maxLength={14}
                                                 onKeyPress={(e) => {
 
                                                     const allowedKeys = /^[0-9\+\-\(\)\s]*$/;
@@ -152,11 +206,14 @@ const ContactForm = () => {
                                                         e.preventDefault();
                                                     }
                                                 }}
-                                                maxLength={14}
+
                                             />
-                                            {errors.phone && <p className='text-[#FF9494]'>{errors.phone.message}</p>}
+                                            {errors.phone && <p className="text-[#FF9494]">{errors.phone.message}</p>}
                                         </Form.Group>
                                     </Col>
+
+
+
                                     <Col lg={12} md={12} xs={12}>
                                         <Form.Group className='flex flex-col gap-1'>
                                             <Form.Label className='form-input text-[#645555] text-[18px] font-medium not-italic'>Message</Form.Label>

@@ -24,6 +24,7 @@ const MegaMenu: React.FC<MegaMenuProps> = ({ activeMenu }) => {
 
 
   const isLinkActive = (url: string) => {
+    if (router.pathname === "/") return false;
     return router.pathname === url;
   };
   const filteredMenuItems = menuitems.filter(
@@ -107,15 +108,15 @@ const MegaMenu: React.FC<MegaMenuProps> = ({ activeMenu }) => {
           </div>
           {/* section third  */}
           {isThirdSectionHidden ? (
-            <div className="pl-4 sm:my-0 md:my-3 col-span-12 md:col-span-4">
+            <div className="pl-4 sm:my-0 md:my-3 col-span-12 md:col-span-4 ">
               {data.map((list) => (
                 <div key={list.id} className="d-flex flex-col">
                   <a
                     onClick={() => handleNavigation(list.link)}
 
                     className={`font-semibold text-lg pt-[9px] hover:text-[#0a58ca] ${isLinkActive(list.link) ? "text-[#2776EA]" : "text-[#2776EA]"}`}
-                  >
-                    {list.heading}
+                  > <h1 className="font-semibold text-lg ">{list.heading}</h1>
+
                   </a>
                   <ul className="list-none px-0">
                     {list.items.map((item, index) => (
