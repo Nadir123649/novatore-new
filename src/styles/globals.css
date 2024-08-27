@@ -353,7 +353,7 @@ input:-webkit-autofill:active {
     background: url(../../public/images/chevron-select.svg);
     background-repeat: no-repeat;
     background-size: 14px;
-    background-position: 95% 10px;
+    background-position: 100% 14px;
 }
 
 
@@ -368,7 +368,7 @@ input:-webkit-autofill:active {
 }
 
 .css-1dimb5e-singleValue {
-    padding-left: 40px;
+    padding-left: 10px;
 }
 
 .css-1u9des2-indicatorSeparator {
@@ -388,6 +388,11 @@ input:-webkit-autofill:active {
     outline: none !important;
     padding: 12px 14px !important;
     box-shadow: none !important;
+}
+
+.css-b62m3t-container {
+    width: 400px !important;
+
 }
 
 .css-hlgwow {

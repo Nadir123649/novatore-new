@@ -20,6 +20,8 @@ interface IFormInputs {
     phone: string;
     message?: string;
     subscribe?: boolean;
+
+
 }
 interface Country {
     name: string;
@@ -142,6 +144,19 @@ const ContactForm = () => {
             fontSize: '18px',
         }),
     };
+    const handlePhoneChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+        const value = e.target.value;
+        if (selectedCountry) {
+            if (value.startsWith(selectedCountry.code)) {
+                setValue('phone', value);
+            } else {
+                setValue('phone', selectedCountry.code);
+            }
+        } else {
+            setValue('phone', value);
+        }
+    };
+
 
     return (
         <section className={`${isVisible ? "fadeIn" : "opacity-0 "
@@ -219,7 +234,7 @@ const ContactForm = () => {
                                                 onChange={handleCountryChange}
                                                 styles={customStyles}
                                                 placeholder="Select a country"
-                                                className='form-input custom-select-country'
+                                                className=' custom-select-country '
 
 
                                             />
@@ -250,13 +265,14 @@ const ContactForm = () => {
                                                         e.preventDefault();
                                                     }
                                                 }}
+
+                                                onChange={handlePhoneChange}
+
                                             />
 
                                             {errors.phone && <p className="text-[#FF9494]">{errors.phone.message}</p>}
                                         </Form.Group>
                                     </Col>
-
-
 
                                     <Col lg={12} md={12} xs={12}>
                                         <Form.Group className='flex flex-col gap-1'>
