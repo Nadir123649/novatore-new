@@ -318,6 +318,15 @@ body {
   width: 535px !important;
 }
 
+.custom-select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background: url(../../public/images/chevron-select.svg);
+  background-repeat: no-repeat;
+  background-size: 14px;
+  background-position: 96% 23px;
+}
 
 /* Responsiveness */
 @media only screen and (max-width: 1400px) {
@@ -327,22 +336,6 @@ body {
     width: 370px !important;
   }
 }
-
-/* @media only screen and (max-width: 900px) {
-  .service-imgbox {
-    width: 560px !important;
-    max-width: 560px !important;
-  }
-} */
-
-
-/* @media only screen and (max-width: 1680px) {
-  .img-box {
-    background-color: red !important;
-
-  }
-} */
-
 
 @media only screen and (max-width: 1020px) {
   .slick-track {
@@ -527,9 +520,7 @@ body {
     justify-content: center;
   }
 
-  /* .trending-section .slick-slide {
-    width: 340px !important;
-  } */
+
 }
 
 @media only screen and (max-width: 500px) {

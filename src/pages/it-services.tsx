@@ -14,7 +14,7 @@ const ItServices: NextPage = () => {
     return (
         <Layout title="Novatore Sols - IT Services" description="Welcome to Novatore Sols, setting new standards in technology with unmatchable code.">
             <div className="overflow-x-hidden">
-                <HeroBanner bannerHeading="An Insight into Novatore's IT Services" pagetitle="IT Services" needsMoreTitle="Get in Touch" previewImage="/images/It-banner.png" maxwidth="780px" />
+                <HeroBanner bannerHeading="Novatore's IT Expertise At Your Service" pagetitle="IT Services" needsMoreTitle="Get in Touch" previewImage="/images/It-banner.png" maxwidth="780px" />
                 <ServicesNeeds needsTitle="Uplift Your Business with" needsTitleBlue=" Advanced" needsMoreTitle="IT Services" NeedsImage="/images/it-service-right.png"
                     needsDescription="In an increasingly mobile world, ensuring your team has access to vital business resources from any location is crucial. Our IT services are designed to empower your business with the tools and expertise needed to stay ahead of the competition. From enhancing mobility to transforming digital strategies, we deliver tailored solutions that align with your business goals and ensure sustained growth." />
                 <ExpertServices needsTitle="You Need The Best " needsTitleBlue=" Enterprise Mobility " needsMoreTitle="Management" NeedsImage="/images/it-service-left.png"

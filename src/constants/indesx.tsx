@@ -243,11 +243,11 @@ export const servicesOptions = [
 
 
 export const slidesContent = [
-    { title: 'Future-Driven Solutions', description: 'Merging Data and AI to Prepare Your Business For Tomorrow ' },
+    { title: 'Future-Driven Solutions', description: 'Merging Data and AI to Prepare Your Business For Tomorrow ', link: "/data" },
     {
-        title: 'Empower Your Business, Transform Digitally', description: 'Smart and Powerful Solutions to Kickstart Your Growth', className: 'hero-banner-screen z-50 max-w-4xl relative flex flex-col justify-center  min-h-[50vh] md:min-h-[100vh] items-start'
+        title: 'Empower Your Business, Transform Digitally', description: 'Smart and Powerful Solutions to Kickstart Your Growth', link: "/transformative-solutions", className: 'hero-banner-screen z-50 max-w-4xl relative flex flex-col justify-center  min-h-[50vh] md:min-h-[100vh] items-start'
     },
-    { title: 'Move Beyond the Ordinary', description: 'It’s time to innovate, rethink, and excel' },
+    { title: 'Move Beyond the Ordinary', description: 'It’s time to innovate, rethink, and excel', link: "/artificial-Intelligence" },
 ];
 
 export const companiesdata = [
@@ -499,7 +499,7 @@ export const dataServices = [
     },
     {
         title: 'Data Management',
-        description: 'Ensure your data is accurate, secure, and compliant with industry standards.',
+        description: 'Ensure your data is accurate, secure, and compliant with the highest industry standards. ',
         icon: DataImageTwo,
     },
     {
@@ -647,12 +647,12 @@ export const CloudData = [
     },
     {
         title: 'Cloud Security Services',
-        description: 'Protecting your cloud infrastructure with tailored security solutions.',
+        description: 'Protecting your cloud infrastructure with tailored security solutions, protecting your business.',
         icon: CloudFour,
     },
     {
         title: 'Cloud Cost Optimization',
-        description: 'We help you save on cloud expenses with cost-saving strategies.',
+        description: 'We help you save on cloud expenses with cost-saving strategies, helping your operateions runs smoothly.',
         icon: CloudFive,
     },
 ];
@@ -945,12 +945,12 @@ export const ProductTransformationData = [
     },
     {
         title: 'Testing and Quality Assurance',
-        description: 'Identify bottlenecks and optimize your software for superior performance.',
+        description: 'Identify bottlenecks and optimize your software for superior performance in the digital landscape.',
         icon: TransformTwo,
     },
     {
         title: 'System Support',
-        description: "Whether your infrastructure is cloud-based or on-premise, we've got you covered.",
+        description: "Whether your infrastructure is cloud-based or on-premise, we've got you covered. Let us take care of your support needs.",
         icon: TransformThree,
     },
 ];
@@ -1033,13 +1033,13 @@ export const GovernanceDataPrivacy = [
         title: 'AI Risk Management',
         description: 'We offer in-depth risk assessments and strategies to mitigate threats, ensuring resilient and reliable AI systems.',
         icon: RiskManagement,
-       
+
     },
     {
         title: 'Compliance in AI',
         description: 'With evolving regulations like GDPR and the upcoming EU AI Act, compliance is increasingly challenging. ',
         icon: Dataprivacy,
-       
+
     },
     {
         title: 'Data Privacy Regulations',

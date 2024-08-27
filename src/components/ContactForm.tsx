@@ -7,6 +7,9 @@ import { zodResolver } from '@hookform/resolvers/zod';
 import { useForm } from 'react-hook-form';
 import axios from 'axios';
 import Image from 'next/image';
+import ReactFlagsSelect from "react-flags-select";
+import PhoneInput from 'react-phone-input-2'
+import 'react-phone-input-2/lib/style.css'
 
 interface IFormInputs {
     help: string;
@@ -23,7 +26,7 @@ interface Country {
     code: string;
 }
 const schema = z.object({
-    // help: z.string().nonempty({ message: "Please specify how we can help you." }),
+
     help: z.string().optional(),
     fullName: z.string()
         .nonempty({ message: "Full name is required." })
@@ -35,7 +38,8 @@ const schema = z.object({
         .nonempty({ message: "Email is required." })
         .email({ message: "Please enter a valid email address." }),
 
-    country: z.string().nonempty({ message: "Please Select a country" }),
+    country: z.string()
+        .nonempty({ message: "Please Select a country" }),
     phone: z.string()
         .regex(/^[\d\s\+\-\(\)]*$/, { message: "Phone number can only contain digits, spaces, '+', '-', '(', and ')'." })
         .max(14, { message: "Phone number cannot exceed 13 characters." })
@@ -51,23 +55,7 @@ const ContactForm = () => {
 
     const [countries, setCountries] = useState<Country[]>([]);
     const [selectedCountry, setSelectedCountry] = useState<Country | null>(null);
-
-    useEffect(() => {
-        const fetchCountries = async () => {
-            try {
-                const response = await axios.get('https://restcountries.com/v3.1/all');
-                const countryData = response.data.map((country: any) => ({
-                    name: country.name.common,
-                    flag: country.flags.svg,
-                    code: country.idd.root + (country.idd.suffixes ? country.idd.suffixes[0] : ''),
-                }));
-                setCountries(countryData);
-            } catch (error) {
-                console.error('Error fetching country data:', error);
-            }
-        };
-        fetchCountries();
-    }, []);
+    const [selected, setSelected] = useState("US");
 
 
     const handleScroll = () => {
@@ -88,7 +76,33 @@ const ContactForm = () => {
         };
     }, [hasAnimated]);
 
+    useEffect(() => {
+        const fetchCountries = async () => {
+            try {
+                const response = await axios.get('https://restcountries.com/v3.1/all');
+                const countryData = response.data.map((country: any) => ({
+                    name: country.name.common,
+                    flag: country.flags.svg,
+                    code: country.idd.root + (country.idd.suffixes ? country.idd.suffixes[0] : ''),
+                }));
+                setCountries(countryData);
 
+                const defaultCountry = countryData.find(c => c.name === "United States");
+                if (defaultCountry) {
+                    setSelectedCountry(defaultCountry);
+                    setValue('country', defaultCountry.name);
+                    setValue('phone', defaultCountry.code);
+                } else if (countryData.length > 0) {
+                    setSelectedCountry(countryData[0]);
+                    setValue('country', countryData[0].name);
+                    setValue('phone', countryData[0].code);
+                }
+            } catch (error) {
+                console.error('Error fetching country data:', error);
+            }
+        };
+        fetchCountries();
+    }, []);
 
     const { register, handleSubmit, setValue, formState: { errors } } = useForm<IFormInputs>({
         resolver: zodResolver(schema),
@@ -102,8 +116,18 @@ const ContactForm = () => {
         }
     };
 
-    const onSubmit = (data: IFormInputs) => {
-        console.log(data);
+    const onSubmit = async (data: IFormInputs) => {
+        try {
+            const response = await fetch("/api/email", {
+                method: "POST",
+                headers: { "Content-type": "application/json" },
+                cache: "no-cache",
+                body: JSON.stringify(data)
+            })
+            await response.json();
+        } catch (err) {
+            console.log(err, 'error')
+        }
     };
 
     return (
@@ -135,7 +159,9 @@ const ContactForm = () => {
                                 <Row className='gap-y-4'>
                                     <Col lg={12} md={12} xs={12}>
                                         <Form.Group className='flex flex-col gap-1'>
-                                            <Form.Label className='text-[#645555] text-[18px] font-medium not-italic'>How We Can Help You?</Form.Label>
+                                            <Form.Label className='text-[#645555] text-[18px] font-medium not-italic'>
+                                                How We Can Help You?
+                                            </Form.Label>
                                             <input
                                                 type="text"
                                                 {...register('help')}
@@ -172,20 +198,30 @@ const ContactForm = () => {
                                     </Col>
 
                                     <Col lg={6} md={12} xs={12}>
-                                        <Form.Group className="flex flex-col gap-1">
+                                        <Form.Group className="flex flex-col gap-1  ">
                                             <Form.Label className="text-[#645555] text-[18px] font-medium not-italic">Country</Form.Label>
                                             <select
                                                 {...register('country')}
-                                                className="form-input rounded-[16px] border border-solid border-[#B7B7B7] bg-white  text-black p-[14px] text-[18px] not-italic font-normal"
+                                                className="pl-[60px]  relative form-input rounded-[16px] border border-solid border-[#B7B7B7] bg-white cursor-pointer  text-black p-[14px] text-[18px] not-italic font-normal custom-select"
                                                 onChange={handleCountryChange}
                                             >
-                                                <option value="">Select your country</option>
+
                                                 {countries.map((country, index) => (
+
                                                     <option key={index} value={country.name}>
+
                                                         {country.name}
                                                     </option>
                                                 ))}
                                             </select>
+                                            {selectedCountry && (
+                                                <div className="mt-2 flex items-center gap-2 relative bottom-[60px] left-[20px] w-[35px]  h-[40px] border-r border-[#A3A3A3] ">
+                                                    <Image src={selectedCountry.flag} alt="flag" width={26} height={26} />
+
+                                                </div>
+                                            )}
+
+
                                             {errors.country && <p className="text-[#FF9494]">{errors.country.message}</p>}
                                         </Form.Group>
                                     </Col>
@@ -206,8 +242,8 @@ const ContactForm = () => {
                                                         e.preventDefault();
                                                     }
                                                 }}
-
                                             />
+
                                             {errors.phone && <p className="text-[#FF9494]">{errors.phone.message}</p>}
                                         </Form.Group>
                                     </Col>
@@ -230,12 +266,12 @@ const ContactForm = () => {
                                                 type="checkbox"
                                                 {...register('subscribe')}
                                                 label="Check here to subscribe for updates."
-                                                className="my-2 text-[#645555] text-[18px] font-medium not-italic custom-checkbox "
+                                                className="my-2 text-[#645555] text-[18px] font-medium not-italic custom-checkbox"
                                             />
                                         </Form.Group>
                                     </Col>
                                     <Col lg={12} md={12} xs={12} className='flex justify-end'>
-                                        <button className='btn-submit text-white text-[18px] font-normal not-italic bg-[#2776EA] rounded-[16px] py-[12px] md:py-[16px]  px-[14px] md:px-[24px]  max-w-[180px] w-full border border-solid border-[#B7B7B7]'>
+                                        <button className='btn-submit text-white text-[18px] font-normal not-italic bg-[#2776EA] rounded-[16px] py-[12px] md:py-[16px] px-[14px] md:px-[24px] max-w-[180px] w-full border border-solid border-[#B7B7B7]' type='submit'>
                                             Submit
                                         </button>
                                     </Col>
