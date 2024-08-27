@@ -80,14 +80,14 @@ const ContactForm = () => {
         const fetchCountries = async () => {
             try {
                 const response = await axios.get('https://restcountries.com/v3.1/all');
-                const countryData = response.data.map((country: any) => ({
+                const countryData: Country[] = response.data.map((country: any) => ({
                     name: country.name.common,
                     flag: country.flags.svg,
                     code: country.idd.root + (country.idd.suffixes ? country.idd.suffixes[0] : ''),
                 }));
                 setCountries(countryData);
 
-                const defaultCountry = countryData.find(c => c.name === "United States");
+                const defaultCountry = countryData.find((c: Country) => c.name === "United States");
                 if (defaultCountry) {
                     setSelectedCountry(defaultCountry);
                     setValue('country', defaultCountry.name);
