@@ -7,6 +7,7 @@ import CloudOps from "@/components/CloudOps";
 import Layout from "@/components/Layout";
 import DataServicesSection from "@/components/DataServicesSection";
 import { InsuranceData, RealEstateData } from "@/constants/indesx";
+import CaseStudiesSlider from "@/components/CaseStudiesSlider";
 
 const RealEstate: NextPage = () => {
     return (
@@ -18,6 +19,7 @@ const RealEstate: NextPage = () => {
                 <CloudOps needsTitle="Why " needsTitleBlue=" Choose " needsMoreTitle=" Us?" />
                 <DataServicesSection heading="Our " headingBlue="Real Estate" needsMoreTitle=" Software Services" data={RealEstateData} />
                 <Enterprise />
+                <CaseStudiesSlider heading="Case" blueheading="Studies" />
                 <Innovation className="innovation-bg text-white" />
             </div>
         </Layout>

@@ -13,9 +13,20 @@ interface MegaMenuProps {
 const MegaMenu: React.FC<MegaMenuProps> = ({ activeMenu }) => {
   const router = useRouter();
 
+  // const handleNavigation = (url: string) => {
+  //   if (router.pathname === url) {
+
+  //     window.location.reload();
+  //   } else {
+  //     router.push(url);
+  //   }
+  // };
   const handleNavigation = (url: string) => {
     if (router.pathname === url) {
-      window.location.reload();
+      const uniqueUrl = `${url}?reload=${new Date().getTime()}`;
+      router.push(uniqueUrl).then(() => {
+        window.location.href = uniqueUrl;
+      });
     } else {
       router.push(url);
     }
@@ -56,11 +67,11 @@ const MegaMenu: React.FC<MegaMenuProps> = ({ activeMenu }) => {
                   {listing.details.map((detail, index) => (
                     <li
                       key={index}
-                      className="pt-1 text-[#4F4F4F] cursor-pointer hover:text-[#2776EA] "
+                      className="pt-1 text-[#4F4F4F] hover:text-[#2776EA] "
                     >
                       <a
                         onClick={() => handleNavigation(detail.link)}
-                        className={`${isLinkActive(detail.link) ? "text-[#2776EA]" : "text-[#4F4F4F]"} hover:text-[#2776EA] hover:underline`}
+                        className={`${isLinkActive(detail.link) ? "text-[#2776EA]" : "text-[#4F4F4F]"} hover:text-[#2776EA] hover:underline  cursor-pointer`}
                       >
                         {detail.text}
                       </a>
@@ -91,12 +102,12 @@ const MegaMenu: React.FC<MegaMenuProps> = ({ activeMenu }) => {
                   {feature.details.map((detail, index) => (
                     <li
                       key={index}
-                      className="pt-1 text-[#4F4F4F] cursor-pointer hover:text-[#2776EA]"
+                      className="pt-1 text-[#4F4F4F]  hover:text-[#2776EA]"
                     >
                       <a
                         onClick={() => handleNavigation(detail.link)}
 
-                        className={`${isLinkActive(detail.link) ? "text-[#2776EA]" : "text-[#4F4F4F]"} hover:text-[#2776EA]`}
+                        className={`${isLinkActive(detail.link) ? "text-[#2776EA]" : "text-[#4F4F4F]"} hover:text-[#2776EA] cursor-pointer`}
                       >
                         {detail.text}
                       </a>
@@ -115,20 +126,20 @@ const MegaMenu: React.FC<MegaMenuProps> = ({ activeMenu }) => {
                     onClick={() => handleNavigation(list.link)}
 
                     className={`font-semibold text-lg pt-[9px] hover:text-[#0a58ca] ${isLinkActive(list.link) ? "text-[#2776EA]" : "text-[#2776EA]"}`}
-                  > <h1 className="font-semibold text-lg ">{list.heading}</h1>
+                  > <h1 className="font-semibold text-lg  ">{list.heading}</h1>
 
                   </a>
                   <ul className="list-none px-0">
                     {list.items.map((item, index) => (
                       <li
                         key={index}
-                        className=" pt-1 text-[#4F4F4F] cursor-pointer hover:text-[#2776EA]"
+                        className=" pt-1 text-[#4F4F4F]  hover:text-[#2776EA]"
                       >
 
                         <a
                           onClick={() => handleNavigation(item.link)}
 
-                          className={`${isLinkActive(item.link) ? "text-[#2776EA]" : "text-[#4F4F4F]"} hover:text-[#2776EA]`}
+                          className={`${isLinkActive(item.link) ? "text-[#2776EA]" : "text-[#4F4F4F]"} hover:text-[#2776EA] cursor-pointer`}
                         >
                           {item.text}
                         </a>

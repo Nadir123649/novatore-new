@@ -730,7 +730,7 @@ export const HealthCareData = [
         title: 'Health Information Systems',
         icon: HealthCareThree,
         listItems: [
-            'Data Analytics and Business Intelligence',
+            'Data Analytics & Business Intelligence',
             'Clinical Decision Support Systems',
         ]
     },

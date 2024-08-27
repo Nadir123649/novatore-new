@@ -6,6 +6,7 @@ import { NextPage } from "next";
 import CloudOps from "@/components/CloudOps";
 import Layout from "@/components/Layout";
 import TechStack from "@/components/tech-stack";
+import CaseStudiesSlider from "@/components/CaseStudiesSlider";
 
 const Retail: NextPage = () => {
     return (
@@ -17,6 +18,7 @@ const Retail: NextPage = () => {
                 <CloudOps needsTitle="Key " needsTitleBlue=" Capabilities " needsMoreTitle=" " />
                 <TechStack title="Technology Stack" />
                 <Enterprise />
+                <CaseStudiesSlider heading="Case" blueheading="Studies" />
                 <Innovation className="innovation-bg text-white" />
             </div>
         </Layout>

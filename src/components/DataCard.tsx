@@ -22,7 +22,7 @@ const DataCard: React.FC<DataCardProps> = ({ title, description, icon, type, lis
             </div>
             <div className="flex flex-col items-start mb-1 gap-[22px]">
                 <Image src={icon} alt="icon" className='w-full max-w-[80px] max-h-[60px] min-h-[60px]' />
-                <h3 className="text-[21px] mt-[10px] font-medium leading-[24px] text-[#110229] flex justify-start flex-col pr-[10px]">{title}</h3>
+                <h3 className="text-[21px] mt-[10px] font-medium leading-[24px] text-[#110229] flex justify-start flex-col pr-[10px] h-[50px]">{title}</h3>
             </div>
             <div className={value ? value : "absolute top-[16px] right-[140px] mt-2 mr-3 text-blue-200"}>
                 <Image src={Drop} alt="close" layout="fixed" />
@@ -33,9 +33,9 @@ const DataCard: React.FC<DataCardProps> = ({ title, description, icon, type, lis
                 </p>
             )}
             {listItems && (
-                <ul className="mt-4 list-disc pl-5">
+                <ul className="mt-2 list-disc pl-5 ">
                     {listItems.map((item, index) => (
-                        <li key={index} className="text-[#2776EA] text-[16px] leading-[20px] font-normal mb-2">
+                        <li key={index} className="text-[#2776EA] text-[16px] leading-[20px] font-normal mb-2 ">
                             <span className='text-[#5D5D5D]'>
                                 {item}
                             </span>

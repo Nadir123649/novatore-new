@@ -310,6 +310,8 @@ body {
   background-color: rgb(81, 81, 81);
 }
 
+
+
 .services-box {
   margin-right: 20px !important;
 }
@@ -318,15 +320,7 @@ body {
   width: 535px !important;
 }
 
-.custom-select {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  background: url(../../public/images/chevron-select.svg);
-  background-repeat: no-repeat;
-  background-size: 14px;
-  background-position: 96% 23px;
-}
+
 
 /* Responsiveness */
 @media only screen and (max-width: 1400px) {

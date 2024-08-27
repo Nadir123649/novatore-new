@@ -10,6 +10,7 @@ import Image from 'next/image';
 import ReactFlagsSelect from "react-flags-select";
 import PhoneInput from 'react-phone-input-2'
 import 'react-phone-input-2/lib/style.css'
+import Select from 'react-select';
 
 interface IFormInputs {
     help: string;
@@ -50,6 +51,8 @@ const schema = z.object({
 
 
 const ContactForm = () => {
+
+
     const [isVisible, setIsVisible] = useState(false);
     const [hasAnimated, setHasAnimated] = useState(false);
 
@@ -80,19 +83,15 @@ const ContactForm = () => {
         const fetchCountries = async () => {
             try {
                 const response = await axios.get('https://restcountries.com/v3.1/all');
-                const countryData: Country[] = response.data.map((country: any) => ({
+                const countryData = response.data.map((country: any) => ({
                     name: country.name.common,
                     flag: country.flags.svg,
                     code: country.idd.root + (country.idd.suffixes ? country.idd.suffixes[0] : ''),
                 }));
                 setCountries(countryData);
 
-                const defaultCountry = countryData.find((c: Country) => c.name === "United States");
-                if (defaultCountry) {
-                    setSelectedCountry(defaultCountry);
-                    setValue('country', defaultCountry.name);
-                    setValue('phone', defaultCountry.code);
-                } else if (countryData.length > 0) {
+                // const defaultCountry = countryData.find((c: { name: string; }) => c.name === "United States");
+                if (countryData.length > 0) {
                     setSelectedCountry(countryData[0]);
                     setValue('country', countryData[0].name);
                     setValue('phone', countryData[0].code);
@@ -108,8 +107,9 @@ const ContactForm = () => {
         resolver: zodResolver(schema),
     });
 
-    const handleCountryChange = (event: React.ChangeEvent<HTMLSelectElement>) => {
-        const country = countries.find(c => c.name === event.target.value);
+
+    const handleCountryChange = (selectedOption: any) => {
+        const country = countries.find(c => c.name === selectedOption?.value);
         if (country) {
             setSelectedCountry(country);
             setValue('phone', country.code);
@@ -129,13 +129,26 @@ const ContactForm = () => {
             console.log(err, 'error')
         }
     };
+    const customStyles = {
+        control: (provided: any) => ({
+            ...provided,
+            width: '400px',
+            borderRadius: '16px',
+            borderColor: '#B7B7B7',
+            padding: '14px',
+        }),
+        option: (provided: any) => ({
+            ...provided,
+            fontSize: '18px',
+        }),
+    };
 
     return (
-        <section id='contact-us-form' className={`${isVisible ? "fadeIn" : "opacity-0 "
-            } contact-form-section pb-10 md:pb-20 bg-center bg-no-repeat bg-cover`}>
-            <div className='layer-form bg-center bg-no-repeat mx-5 bg-cover rounded-[16px] sm:pb-[140px] md:py-[60px]'>
-                <Container>
-                    <Row>
+        <section className={`${isVisible ? "fadeIn" : "opacity-0 "
+            } contact-form-section pb-10 md:pb-20 bg-center bg-no-repeat bg-cover `}>
+            <div id='contact-us-form' className='layer-form bg-center bg-no-repeat mx-5 bg-cover rounded-[16px] sm:pb-[140px] md:py-[60px]'>
+                <Container  >
+                    <Row >
                         <Col lg={4} md={12} xs={12}>
                             <div className="contact-form-content mt-[30px]">
                                 <h1 className='text-[#2D2D2D] font-bold not-italic mb-4 max-w-full md:max-w-[290px] '>Let’s reach new <span className='text-[#2776EA]'>heights</span>!</h1>
@@ -197,40 +210,35 @@ const ContactForm = () => {
                                         </Form.Group>
                                     </Col>
 
-                                    <Col lg={6} md={12} xs={12}>
-                                        <Form.Group className="flex flex-col gap-1  ">
-                                            <Form.Label className="text-[#645555] text-[18px] font-medium not-italic">Country</Form.Label>
-                                            <select
+                                    <Col lg={6} md={12} xs={12} className='h-[100px]'>
+                                        <Form.Group className="flex flex-col gap-1">
+                                            <Form.Label className="text-[#645555] text-[18px] font-medium not-italic relative">Country</Form.Label>
+                                            <Select
+                                                options={countries.map(country => ({ value: country.name, label: country.name }))}
                                                 {...register('country')}
-                                                className="pl-[60px]  relative form-input rounded-[16px] border border-solid border-[#B7B7B7] bg-white cursor-pointer  text-black p-[14px] text-[18px] not-italic font-normal custom-select"
                                                 onChange={handleCountryChange}
-                                            >
+                                                styles={customStyles}
+                                                placeholder="Select a country"
+                                                className='form-input custom-select-country'
 
-                                                {countries.map((country, index) => (
 
-                                                    <option key={index} value={country.name}>
+                                            />
 
-                                                        {country.name}
-                                                    </option>
-                                                ))}
-                                            </select>
                                             {selectedCountry && (
-                                                <div className="mt-2 flex items-center gap-2 relative bottom-[60px] left-[20px] w-[35px]  h-[40px] border-r border-[#A3A3A3] ">
-                                                    <Image src={selectedCountry.flag} alt="flag" width={26} height={26} />
-
+                                                <div className="mt-2 flex items-center gap-2 w-[34px] h-[30px] border-r border-[#A3A3A3] relative  bottom-[55px] left-[10px] ">
+                                                    <Image src={selectedCountry.flag} alt="flag" width={28} height={28} className='h-[20px] w-[20pxpx]' />
                                                 </div>
                                             )}
-
-
                                             {errors.country && <p className="text-[#FF9494]">{errors.country.message}</p>}
                                         </Form.Group>
                                     </Col>
 
-                                    <Col lg={6} md={12} xs={12}>
+
+                                    <Col lg={6} md={12} xs={12} className='h-[110px]'>
                                         <Form.Group className="flex flex-col gap-1">
                                             <Form.Label className="text-[#645555] text-[18px] font-medium not-italic">Phone Number</Form.Label>
                                             <input
-                                                type="text"
+                                                type="tel"
                                                 {...register('phone')}
                                                 className="form-input rounded-[16px] border border-solid border-[#B7B7B7] bg-white  text-black p-[14px] text-[18px] not-italic font-normal"
                                                 placeholder="+00 111 2222222"

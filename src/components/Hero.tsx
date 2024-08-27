@@ -53,7 +53,7 @@ const Hero = () => {
           placement="top"
           overlay={
             <Tooltip id="tooltip-top">
-              Lets talk
+              Contact US
             </Tooltip>
           }
         >

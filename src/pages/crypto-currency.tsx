@@ -7,6 +7,7 @@ import CloudOps from "@/components/CloudOps";
 import Layout from "@/components/Layout";
 import DataServicesSection from "@/components/DataServicesSection";
 import { CryptoData } from "@/constants/indesx";
+import CaseStudiesSlider from "@/components/CaseStudiesSlider";
 
 const Cryptocurrency: NextPage = () => {
     return (
@@ -18,6 +19,8 @@ const Cryptocurrency: NextPage = () => {
                 <CloudOps needsTitle="Why " needsTitleBlue=" Partner " needsMoreTitle=" with Us?" />
                 <DataServicesSection heading="Our " headingBlue="Cryptocurrency" needsMoreTitle=" Software Services" data={CryptoData} cardMinHeight="150px" />
                 <Enterprise />
+
+                <CaseStudiesSlider heading="Case" blueheading="Studies" />
                 <Innovation className="innovation-bg text-white" />
             </div>
         </Layout>
