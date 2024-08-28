@@ -10,8 +10,9 @@ import Link from 'next/link';
 
 interface activeprops {
   activeLink?: string;
-  setActiveLink?: (activeLink: string) => void;
+  setActiveLink?: (activeLink: any) => void;
 }
+
 
 const Hero: React.FC<activeprops> = ({ setActiveLink }) => {
 
