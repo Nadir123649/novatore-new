@@ -115,10 +115,9 @@ const ContactForm = () => {
         const country = countries.find(c => c.name === selectedOption?.value);
         if (country) {
             setSelectedCountry(country);
-            setValue('country-code-style', country.code);
+            setValue('phone', country.code); 
         }
     };
-
 
     const onSubmit = async (data: IFormInputs) => {
         try {
