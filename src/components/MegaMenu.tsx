@@ -9,7 +9,7 @@ import { useRouter } from 'next/router';
 
 interface MegaMenuProps {
   activeMenu: string;
-  activeLink: string;
+  activeLink?: any;
 }
 const MegaMenu: React.FC<MegaMenuProps> = ({ activeMenu, activeLink }) => {
   const router = useRouter();
