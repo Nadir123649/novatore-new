@@ -15,7 +15,7 @@ const Social: NextPage = () => {
     return (
         <Layout title="Novatore Sols - Social" description="Welcome to Novatore Sols, setting new standards in technology with unmatchable code.">
             <div className="overflow-x-hidden">
-                <HeroBanner bannerHeading="Transforming Social Experiences with Innovative Software " needsMoreTitle={true} previewImage="/images/social-banner.png" pagetitle="Social" />
+                <HeroBanner bannerHeading="Transforming Social Experiences with Innovative Software " needsMoreTitle={true} previewImage="/images/social-banner.png" pagetitle="Social" maxwidth="1100px" />
                 <ServicesNeeds needsTitle=" " needsTitleBlue="Overview" needsMoreTitle="" NeedsImage="/images/social-card.png"
                     needsDescription="With over 6 years of expertise in the social sector, our team has successfully delivered 25+ projects that redefine how people connect and interact online. We specialize in developing engaging and user-friendly platforms that enhance social interactions, foster communities, and streamline event planning. Our solutions are designed to meet the unique needs of social enterprises, from community-driven platforms to comprehensive event management systems." />
                 <CloudOps needsTitle="Why" needsTitleBlue=" Choose " needsMoreTitle=" Us?" />

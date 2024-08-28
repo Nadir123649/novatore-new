@@ -18,12 +18,14 @@ const CaseStudyCards: React.FC<CaseStudyProps> = ({ banner, backgroundimg, descr
                 <div className="text d-flex flex-col w-full text-2xl gap-4 pr-5 pl-5">
                     <Image src={logo} alt="service" />
                     <p className=' text-xl '>{description}</p>
+
                     <button
-                        className="bg-white rounded-lg px-4 py-2 max-w-[180px] w-full font-semibold shadow-md transition-all duration-300 ease-in-out transform hover:bg-blue-500 hover:text-white hover:shadow-lg hover:scale-105"
+                        className="bg-white rounded-lg px-4 py-2 leading-6 text-[20px] max-w-[180px] w-full font-semibold shadow-md transition-all duration-300 ease-in-out transform hover:bg-blue-500 hover:text-white hover:shadow-lg hover:scale-105 will-change-transform"
                         style={{ color: color }}
                     >
                         Read more
                     </button>
+
                 </div>
             </div>
         </div>

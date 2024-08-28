@@ -7,7 +7,13 @@ import { Tooltip, OverlayTrigger } from 'react-bootstrap';
 import Image from 'next/image';
 import Link from 'next/link';
 
-const Hero = () => {
+
+interface activeprops {
+  activeLink: string;
+  setActiveLink: (activeLink: string) => void;
+}
+
+const Hero: React.FC<activeprops> = ({ setActiveLink }) => {
 
   const settings = {
     dots: true,
@@ -39,9 +45,11 @@ const Hero = () => {
                   {data.title}
                 </h1>
                 <p className='text-lg my-4 text-white'>{data.description}</p>
-                <Link href={data.link}> <button className='learn-btn bg-none rounded-[16px] border-1 border-[#FFFFFF] hover:border-transparent  py-[12px] px-[24px] transition-all duration-300 hover:bg-[#2776EA]  text-white'>
-                  Learn More
-                </button></Link>
+                <Link href={data.link}>
+                  <button onClick={() => setActiveLink(data.link)} className='learn-btn bg-none rounded-[16px] border-1 border-[#FFFFFF] hover:border-transparent  py-[12px] px-[24px] transition-all duration-300 hover:bg-[#2776EA]  text-white'>
+                    Learn More
+                  </button>
+                </Link>
 
               </div>
             </div>

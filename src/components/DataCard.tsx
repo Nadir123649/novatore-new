@@ -35,7 +35,7 @@ const DataCard: React.FC<DataCardProps> = ({ title, description, icon, type, lis
             {listItems && (
                 <ul className="mt-2 list-disc pl-5 ">
                     {listItems.map((item, index) => (
-                        <li key={index} className="text-[#2776EA] text-[16px] leading-[20px] font-normal mb-2 ">
+                        <li key={index} className="text-[#2776EA] text-[16px] leading-[30px] font-normal  ">
                             <span className='text-[#5D5D5D]'>
                                 {item}
                             </span>

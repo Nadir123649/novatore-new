@@ -6,12 +6,14 @@ import Services from "@/components/Services";
 import TrendingNow from "@/components/TrendingNow";
 import WhyChooseUs from "@/components/WhyChooseUs";
 import { NextPage } from "next";
+import { useState } from "react";
 
 const Home: NextPage = () => {
+  const [activeLink, setActiveLink] = useState('');
   return (
     <>
       <Layout title="Novatore Sols - Home" description="Welcome to Novatore Sols, setting new standards in technology with unmatchable code.">
-        <Hero />
+        <Hero setActiveLink={setActiveLink} />
         <Services />
         <WhyChooseUs />
         <CaseStudies />

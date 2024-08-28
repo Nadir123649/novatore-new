@@ -17,8 +17,9 @@ interface IFormInputs {
     fullName: string;
     email: string;
     country: string;
-    phone: string;
+    contact: string;
     message?: string;
+    phone?: string;
     subscribe?: boolean;
 
 
@@ -43,7 +44,7 @@ const schema = z.object({
 
     country: z.string()
         .nonempty({ message: "Please Select a country" }),
-    phone: z.string()
+    contact: z.string()
         .regex(/^[\d\s\+\-\(\)]*$/, { message: "Phone number can only contain digits, spaces, '+', '-', '(', and ')'." })
         .max(14, { message: "Phone number cannot exceed 13 characters." })
         .min(7, { message: "Phone number must be at least 7 characters long." }),
@@ -60,7 +61,7 @@ const ContactForm = () => {
 
     const [countries, setCountries] = useState<Country[]>([]);
     const [selectedCountry, setSelectedCountry] = useState<Country | null>(null);
-    const [selected, setSelected] = useState("US");
+    const [selected, setSelected] = useState("");
 
 
     const handleScroll = () => {
@@ -114,9 +115,10 @@ const ContactForm = () => {
         const country = countries.find(c => c.name === selectedOption?.value);
         if (country) {
             setSelectedCountry(country);
-            setValue('phone', country.code);
+            setValue('country-code-style', country.code);
         }
     };
+
 
     const onSubmit = async (data: IFormInputs) => {
         try {
@@ -234,15 +236,14 @@ const ContactForm = () => {
                                                 onChange={handleCountryChange}
                                                 styles={customStyles}
                                                 placeholder="Select a country"
-                                                className=' custom-select-country '
-
-
+                                                className=' custom-select-country  '
                                             />
 
                                             {selectedCountry && (
-                                                <div className="mt-2 flex items-center gap-2 w-[34px] h-[30px] border-r border-[#A3A3A3] relative  bottom-[55px] left-[10px] ">
-                                                    <Image src={selectedCountry.flag} alt="flag" width={28} height={28} className='h-[20px] w-[20pxpx]' />
+                                                <div className=" mt-2 flex items-center gap-2 w-[34px] h-[30px] border-r border-[#A3A3A3] relative  bottom-[54px] left-[10px] ">
+                                                    <Image src={selectedCountry.flag} alt="flag" width={28} height={28} className='h-[20px] w-[30px] bg-[#ff0000]' style={{ width: "30px", height: "20px" }} />
                                                 </div>
+
                                             )}
                                             {errors.country && <p className="text-[#FF9494]">{errors.country.message}</p>}
                                         </Form.Group>
@@ -252,27 +253,39 @@ const ContactForm = () => {
                                     <Col lg={6} md={12} xs={12} className='h-[110px]'>
                                         <Form.Group className="flex flex-col gap-1">
                                             <Form.Label className="text-[#645555] text-[18px] font-medium not-italic">Phone Number</Form.Label>
-                                            <input
-                                                type="tel"
-                                                {...register('phone')}
-                                                className="form-input rounded-[16px] border border-solid border-[#B7B7B7] bg-white  text-black p-[14px] text-[18px] not-italic font-normal"
-                                                placeholder="+00 111 2222222"
-                                                maxLength={14}
-                                                onKeyPress={(e) => {
 
-                                                    const allowedKeys = /^[0-9\+\-\(\)\s]*$/;
-                                                    if (!allowedKeys.test(e.key)) {
-                                                        e.preventDefault();
-                                                    }
-                                                }}
+                                            <div className="phone-container bg-white form-input rounded-[16px] border border-solid border-[#B7B7B7]   text-black p-[14px] text-[18px] not-italic font-normal"
+                                            >
+                                                <input
+                                                    type="tel"
+                                                    id="countryCode"
+                                                    value={selectedCountry?.code || ''}
+                                                    readOnly
+                                                    className="country-code-style"
+                                                />
+                                                <input
+                                                    type="tel"
+                                                    {...register('contact')}
+                                                    id="phoneNumber"
+                                                    placeholder="111 2222222"
+                                                    className="phone-number-style"
+                                                    maxLength={14}
+                                                    onKeyPress={(e) => {
 
-                                                onChange={handlePhoneChange}
+                                                        const allowedKeys = /^[0-9\+\-\(\)\s]*$/;
+                                                        if (!allowedKeys.test(e.key)) {
+                                                            e.preventDefault();
+                                                        }
+                                                    }}
+                                                />
+                                            </div>
 
-                                            />
 
-                                            {errors.phone && <p className="text-[#FF9494]">{errors.phone.message}</p>}
+                                            {errors.contact && <p className="text-[#FF9494]">{errors.contact.message}</p>}
                                         </Form.Group>
                                     </Col>
+
+
 
                                     <Col lg={12} md={12} xs={12}>
                                         <Form.Group className='flex flex-col gap-1'>

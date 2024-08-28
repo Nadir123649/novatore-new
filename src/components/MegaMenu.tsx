@@ -9,18 +9,11 @@ import { useRouter } from 'next/router';
 
 interface MegaMenuProps {
   activeMenu: string;
+  activeLink: string;
 }
-const MegaMenu: React.FC<MegaMenuProps> = ({ activeMenu }) => {
+const MegaMenu: React.FC<MegaMenuProps> = ({ activeMenu, activeLink }) => {
   const router = useRouter();
 
-  // const handleNavigation = (url: string) => {
-  //   if (router.pathname === url) {
-
-  //     window.location.reload();
-  //   } else {
-  //     router.push(url);
-  //   }
-  // };
   const handleNavigation = (url: string) => {
     if (router.pathname === url) {
       const uniqueUrl = `${url}?reload=${new Date().getTime()}`;
@@ -58,9 +51,9 @@ const MegaMenu: React.FC<MegaMenuProps> = ({ activeMenu }) => {
               <div key={listing.id} className="d-flex flex-col">
                 <a
                   onClick={() => handleNavigation(listing.link)}
-                  className={` pt-2 hover:text-[#0a58ca] ${isLinkActive(listing.link) ? "text-[#2776EA]" : "text-[#2776EA]"}`}
+                  className={`pt-2 hover:text-[#0a58ca] cursor-default ${isLinkActive(listing.link) || listing.link === activeLink ? "text-[#FF0000]" : "text-[#2776EA]"}`}
                 >
-                  <h1 className="font-semibold text-lg text-[18px]">{listing.heading}</h1>
+                  <h1 className="font-semibold text-lg text-[18px] inline cursor-pointer">{listing.heading}</h1>
                 </a>
 
                 <ul className="list-none px-0">
@@ -87,11 +80,10 @@ const MegaMenu: React.FC<MegaMenuProps> = ({ activeMenu }) => {
               <div key={feature.id} className="d-flex flex-col">
                 <a
                   onClick={() => handleNavigation(feature.link)}
-
-                  className={`font-semibold text-lg pt-2 hover:text-[#0a58ca] ${isLinkActive(feature.link) ? "text-[#2776EA]" : "text-[#2776EA]"}`}
+                  className={`font-semibold text-lg pt-2 hover:text-[#0a58ca] cursor-default ${isLinkActive(feature.link) || feature.link === activeLink ? "text-[#FF0000]" : "text-[#2776EA]"}`}
                 >
                   {feature.heading ? (
-                    <h1 className="font-semibold text-lg ">
+                    <h1 className="font-semibold text-lg  inline cursor-pointer">
                       {feature.heading}
                     </h1>
                   ) : (
@@ -124,9 +116,9 @@ const MegaMenu: React.FC<MegaMenuProps> = ({ activeMenu }) => {
                 <div key={list.id} className="d-flex flex-col">
                   <a
                     onClick={() => handleNavigation(list.link)}
-
-                    className={`font-semibold text-lg pt-[9px] hover:text-[#0a58ca] ${isLinkActive(list.link) ? "text-[#2776EA]" : "text-[#2776EA]"}`}
-                  > <h1 className="font-semibold text-lg  ">{list.heading}</h1>
+                    className={`font-semibold text-lg pt-[9px] hover:text-[#0a58ca] cursor-default ${isLinkActive(list.link) || list.link === activeLink ? "text-[#FF0000]" : "text-[#2776EA]"}`}
+                  >
+                    <h1 className="font-semibold text-lg inline cursor-pointer ">{list.heading}</h1>
 
                   </a>
                   <ul className="list-none px-0">

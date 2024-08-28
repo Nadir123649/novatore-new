@@ -14,7 +14,7 @@ export const services = [
     {
         id: 1,
         title: 'Digital Services',
-        description: 'From consulting to product enngineering, we provide the best digital solutions.',
+        description: 'From consulting to product engineering, we provide the best digital solutions.',
         backgroundimg: "/images/digital-services-new.png",
         link: "/digital-service"
     },
@@ -670,7 +670,7 @@ export const CryptoData = [
         icon: CryptoThree,
     },
     {
-        title: 'DeFi Applications',
+        title: 'Defi Applications',
         icon: CryptoFour,
     },
     {

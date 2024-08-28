@@ -353,7 +353,7 @@ input:-webkit-autofill:active {
     background: url(../../public/images/chevron-select.svg);
     background-repeat: no-repeat;
     background-size: 14px;
-    background-position: 100% 14px;
+    background-position: 100% 10px;
 }
 
 
@@ -364,11 +364,13 @@ input:-webkit-autofill:active {
 
 .css-hlgwow {
     padding: 0px 4px 0px 35px !important;
+    /* border-color: #2776EA !important; */
 
 }
 
 .css-1dimb5e-singleValue {
     padding-left: 10px;
+
 }
 
 .css-1u9des2-indicatorSeparator {
@@ -377,22 +379,51 @@ input:-webkit-autofill:active {
 
 .css-19bb58m {
     outline: none;
+}
+
+.css-u8c8n3-control {
+    width: 417px !important;
+}
+
+.css-whxiyk-control:hover,
+.css-u8c8n3-control:hover,
+.css-u8c8n3-control:hover {
+    border: 1px solid #dee2e6 !important;
+    outline: #dee2e6 !important;
+}
+
+.css-whxiyk-control,
+.css-u8c8n3-control {
+    cursor: pointer !important;
+    height: 55px !important;
+    min-height: 55px !important;
+    border-color: #dee2e6 !important;
+}
+
+.css-whxiyk-control {
+    width: 417px !important;
+}
+
+.css-hlgwow {
+    height: 24px;
+}
+
+.css-19bb58m {
+    padding-top: 0px !important;
+    padding-bottom: 2px !important;
+    margin: 0 !important;
 
 }
 
-
 .css-u8c8n3-control {
-    /* border: none !important; */
-    border: 1px solid #B7B7B7 !important;
-    /* border-color: #B7B7B7 !important; */
+    border: 1px solid #dee2e6 !important;
     outline: none !important;
     padding: 12px 14px !important;
     box-shadow: none !important;
 }
 
 .css-b62m3t-container {
-    width: 400px !important;
-
+    width: 417px !important;
 }
 
 .css-hlgwow {
@@ -408,5 +439,27 @@ input:-webkit-autofill:active {
 }
 
 .css-whxiyk-control:hover {
-    border-color: #B7B7B7 !important;
+    border-color: #dee2e6 !important;
+}
+
+
+
+.phone-container {
+    display: flex;
+    align-items: center;
+}
+
+.country-code-style {
+    border-right: 1px solid #A3A3A3;
+    padding-right: 5px;
+    width: 60px;
+    background-color: transparent !important;
+    outline: none !important;
+}
+
+.phone-number-style {
+    padding-left: 10px;
+    background-color: transparent !important;
+    outline: none !important;
+
 }

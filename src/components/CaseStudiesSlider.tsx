@@ -26,7 +26,10 @@ const CaseStudiesSlider: React.FC<StudySliderProps> = ({ heading, blueheading })
                                 onMouseEnter={() => setActiveIndex(index)}
                                 onMouseLeave={() => setActiveIndex(0)}
                             >
-                                <div className={` ${activeIndex === index ? 'block' : 'hidden'} relative top-[270px] left-[30px] max-w-[500px]`}>
+                                <div
+                                    className={`transition-opacity duration-500 ease-in-out ${activeIndex === index ? 'opacity-100 visible' : 'opacity-0 invisible'}`}
+                                    style={{ position: 'absolute', top: '270px', left: '30px', maxWidth: '500px' }}
+                                >
                                     <h1 className='text-base'>Our Case Study</h1>
                                     <h1 className='text-[40px]'>{caseStudy.title}</h1>
                                     <p className='text-[15px]'>{caseStudy.description}</p>
