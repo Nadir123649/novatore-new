@@ -11,7 +11,7 @@ import { ProductEngineeringData } from "@/constants/indesx";
 
 const ProductEngineering: NextPage = () => {
     return (
-        <Layout title="Novatore Sols - Product Engineering" description="Welcome to Novatore Sols, setting new standards in technology with unmatchable code.">
+        <Layout showContactForm={true} title="Novatore Sols - Product Engineering" description="Welcome to Novatore Sols, setting new standards in technology with unmatchable code.">
             <div className="overflow-x-hidden">
                 <HeroBanner bannerHeading="Crafting Tomorrow’s Innovations with Precision Product Engineering" pagetitle="Digital Services" needsMoreTitle="Get in Touch" previewImage="/images/product-banner.png" maxwidth="1000px" />
                 <ServicesNeeds needsTitle="Advanced " needsTitleBlue=" Product Engineering" NeedsImage="/images/product-image-right.png"

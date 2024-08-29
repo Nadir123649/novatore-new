@@ -11,7 +11,7 @@ import CaseStudiesSlider from "@/components/CaseStudiesSlider";
 
 const Gaming: NextPage = () => {
     return (
-        <Layout title="Novatore Sols - Gaming" description="Welcome to Novatore Sols, setting new standards in technology with unmatchable code.">
+        <Layout showContactForm={true} title="Novatore Sols - Gaming" description="Welcome to Novatore Sols, setting new standards in technology with unmatchable code.">
             <div className="overflow-x-hidden">
                 <HeroBanner bannerHeading="Novatore Solutions in Gaming" needsMoreTitle={true} previewImage="/images/gaming-banner.png" pagetitle="Gaming" maxwidth="800px" />
                 <ServicesNeeds needsTitle="Over " needsTitleBlue="10 Years" needsMoreTitle="of Expertise in Game Development" NeedsImage="/images/gaming-image-right.png"

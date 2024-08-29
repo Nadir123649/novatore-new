@@ -8,7 +8,7 @@ import CloudOps from "@/components/CloudOps";
 
 const CloudMigration: NextPage = () => {
     return (
-        <Layout title="Novatore Sols - Cloud Migration" description="Welcome to Novatore Sols, setting new standards in technology with unmatchable code.">
+        <Layout showContactForm={true} title="Novatore Sols - Cloud Migration" description="Welcome to Novatore Sols, setting new standards in technology with unmatchable code.">
             <div className="overflow-x-hidden">
                 <HeroBanner bannerHeading="Cloud Migration" pagetitle="Cloud" needsMoreTitle="Get in Touch" previewImage="/images/cloud-migration-banner.png" />
                 <ServicesNeeds needsTitle="Cloud Ops" needsTitleBlue="Services" NeedsImage="/images/cloud-migration-bg-right.png"

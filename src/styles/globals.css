@@ -225,6 +225,10 @@ button {
     padding: 0 !important;
 }
 
+.headline-section {
+    background-image: url("../../public/images/headline-background.png");
+    min-height: 400px !important;
+}
 
 .choose-us-section {
     background-image: url("../../public/images/choose-us-bg.png");

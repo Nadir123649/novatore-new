@@ -12,7 +12,7 @@ import { ProductServicesData } from "@/constants/indesx";
 
 const ItServices: NextPage = () => {
     return (
-        <Layout title="Novatore Sols - IT Services" description="Welcome to Novatore Sols, setting new standards in technology with unmatchable code.">
+        <Layout showContactForm={true} title="Novatore Sols - IT Services" description="Welcome to Novatore Sols, setting new standards in technology with unmatchable code.">
             <div className="overflow-x-hidden">
                 <HeroBanner bannerHeading="Novatore's IT Expertise At Your Service" pagetitle="IT Services" needsMoreTitle="Get in Touch" previewImage="/images/It-banner.png" maxwidth="780px" />
                 <ServicesNeeds needsTitle="Uplift Your Business with" needsTitleBlue=" Advanced" needsMoreTitle="IT Services" NeedsImage="/images/it-service-right.png"

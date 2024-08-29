@@ -9,7 +9,7 @@ import CloudOps from "@/components/CloudOps";
 
 const AnalyticsServices: NextPage = () => {
     return (
-        <Layout title="Novatore Sols - Analytics Services " description="Welcome to Novatore Sols, setting new standards in technology with unmatchable code.">
+        <Layout showContactForm={true} title="Novatore Sols - Analytics Services " description="Welcome to Novatore Sols, setting new standards in technology with unmatchable code.">
             <div className="overflow-x-hidden">
                 <HeroBanner bannerHeading="Unlocking the Power of Analytics for Smarter Decisions" pagetitle="Amazon Web Services" needsMoreTitle="Get in Touch" previewImage="/images/analytics-services-banner-bg.png " maxwidth="900px" />
                 <ServicesNeeds needsTitle="Analytics Services for " needsTitleBlue=" Software Businesses" NeedsImage="/images/analitical-image-right.png"

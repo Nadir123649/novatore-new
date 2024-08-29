@@ -8,7 +8,7 @@ import Layout from "@/components/Layout";
 
 const MobileAppDevelopment: NextPage = () => {
     return (
-        <Layout title="Novatore Sols - Mobile App Development" description="Welcome to Novatore Sols, setting new standards in technology with unmatchable code.">
+        <Layout showContactForm={true} title="Novatore Sols - Mobile App Development" description="Welcome to Novatore Sols, setting new standards in technology with unmatchable code.">
             <div className="overflow-x-hidden">
                 <HeroBanner bannerHeading="Maximizing Efficiency With Our Mobile App Development" pagetitle="Custom Software Development" needsMoreTitle="Get in Touch" previewImage="/images/mobile-banner.png" maxwidth="1100px" />
                 <ServicesNeeds needsTitleBlue="Introduction" NeedsImage="/images/mobile-introduction.png"

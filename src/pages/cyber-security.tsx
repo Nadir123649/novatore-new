@@ -12,7 +12,7 @@ import Layout from "@/components/Layout";
 const CyberSecurity: NextPage = () => {
 
     return (
-        <Layout title="Novatore Sols - Cyber Security" description="Welcome to Novatore Sols, setting new standards in technology with unmatchable code.">
+        <Layout showContactForm={true} title="Novatore Sols - Cyber Security" description="Welcome to Novatore Sols, setting new standards in technology with unmatchable code.">
             <div className="overflow-x-hidden">
                 <HeroBanner bannerHeading="Prevent, Detect, Respond: Total Cybersecurity" pagetitle="Cybersecurity" needsMoreTitle="Get in Touch" previewImage="/images/cyber-banner.png" />
                 <ServicesNeeds needsTitle="Ensuring Your" needsTitleBlue="Digital Safety" NeedsImage="/images/cyber-security-right.png"

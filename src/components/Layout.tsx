@@ -9,9 +9,10 @@ interface LayoutProps {
     children: ReactNode;
     title?: string;
     description?: string;
+    showContactForm?: any;
 }
 
-const Layout: React.FC<LayoutProps> = ({ children, title = 'Novatore Sols', description = 'Setting new standards in technology with unmatchable code.' }) => {
+const Layout: React.FC<LayoutProps> = ({ children, title = 'Novatore Sols', description = 'Setting new standards in technology with unmatchable code.', showContactForm }) => {
     return (
         <>
             <Head>
@@ -21,7 +22,7 @@ const Layout: React.FC<LayoutProps> = ({ children, title = 'Novatore Sols', desc
             </Head>
             <Navbar />
             <main>{children}</main>
-            <ContactForm />
+            {showContactForm && <ContactForm />}
             <Footer />
         </>
     );

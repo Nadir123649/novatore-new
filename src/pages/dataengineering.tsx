@@ -12,7 +12,7 @@ import Layout from "@/components/Layout";
 
 const DataEngineering: NextPage = () => {
     return (
-        <Layout title="Novatore Sols - Home" description="Welcome to Novatore Sols, setting new standards in technology with unmatchable code.">
+        <Layout showContactForm={true} title="Novatore Sols - Home" description="Welcome to Novatore Sols, setting new standards in technology with unmatchable code.">
             <div className="overflow-x-hidden">
                 <HeroBanner bannerHeading="Data Engineering" previewImage="/images/data-engenering.png" />
                 <ServicesNeeds needsTitle="Unlock the" needsTitleBlue="Power of Your Data" NeedsImage="/images/needs-image-three.png"

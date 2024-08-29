@@ -1,40 +1,32 @@
 import Image from 'next/image';
-import Link from 'next/link';
 import React from 'react';
-import { angulaartile, awstile, azuretile, fluttertile, googlecloudtile, jstile, mongodbtile, mysqltile, nodetile, phptile, postgresstile, pythontile, reacttile, swifttile, vuejstile } from "../utils/index";
-import { Container } from 'postcss';
-interface TechProps {
 
+
+interface TechStackProps {
     title: string;
-
+    images: string[];
 }
 
-const TechStack: React.FC<TechProps> = ({ title }) => {
+const TechStack: React.FC<TechStackProps> = ({ title, images }) => {
     return (
+        <section className=' py-10 md:py-20 '>
+            <div className="container">
+                <h1 className="text-center text-[#313232] text-[40px] font-bold capitalize not-italic leading-[55px] max-w-[590px] mx-auto mb-[40px]">
+                    {title}
+                </h1>
+                <div className="flex flex-wrap justify-center mb-[40px] ">
+                    {images.map((image, index) => (
 
-        <div className='container'>
-
-            <h1 className='text-center text-[#313232] text-[40px] font-bold capitalize not-italic leading-[55px] max-w-[590px] mx-auto mb-[40px]'>{title}</h1>
-            <div className='flex flex-wrap  justify-center mb-[40px] '>
-                <Image src={reacttile} alt="techstack" />
-                <Image src={angulaartile} alt="techstack" />
-                <Image src={vuejstile} alt="techstack" />
-                <Image src={nodetile} alt="techstack" />
-                <Image src={pythontile} alt="techstack" />
-                <Image src={jstile} alt="techstack" />
-                <Image src={fluttertile} alt="techstack" />
-                <Image src={swifttile} alt="techstack" />
-                <Image src={mysqltile} alt="techstack" />
-                <Image src={googlecloudtile} alt="techstack" />
-                <Image src={mongodbtile} alt="techstack" />
-                <Image src={postgresstile} alt="techstack" />
-                <Image src={awstile} alt="techstack" />
-                <Image src={azuretile} alt="techstack" />
-                <Image src={phptile} alt="techstack" />
+                        <Image key={index} src={image} alt={`techstack`} />
+                    ))}
+                </div>
             </div>
-        </div>
+        </section>
 
     );
 };
 
 export default TechStack;
+
+
+

@@ -8,7 +8,7 @@ import Layout from '@/components/Layout';
 const Details: NextPage = () => {
 
     return (
-        <Layout title="Novatore Sols - Details" description="Welcome to Novatore Sols, setting new standards in technology with unmatchable code.">
+        <Layout showContactForm={true} title="Novatore Sols - Details" description="Welcome to Novatore Sols, setting new standards in technology with unmatchable code.">
             <HeroBanner bannerHeading="How Generative AI can play its part in uplifting the entire data management lifecycle" previewImage="/images/careers-bg.png" />
             <BlogsContent />
             <RecentArticles />

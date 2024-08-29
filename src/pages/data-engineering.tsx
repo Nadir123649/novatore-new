@@ -9,7 +9,7 @@ import CloudOps from "@/components/CloudOps";
 
 const DataEngineering: NextPage = () => {
     return (
-        <Layout title="Novatore Sols - Data Engineering" description="Welcome to Novatore Sols, setting new standards in technology with unmatchable code.">
+        <Layout showContactForm={true} title="Novatore Sols - Data Engineering" description="Welcome to Novatore Sols, setting new standards in technology with unmatchable code.">
             <div className="overflow-x-hidden">
                 <HeroBanner bannerHeading="Comprehensive Data Engineering Tools" pagetitle="Data" needsMoreTitle="Get in Touch" previewImage="/images/data-banner-bg.png" maxwidth="800px" />
                 <ServicesNeeds needsTitle="Advanced " needsTitleBlue="Data Engineering " needsMoreTitle="Solutions" NeedsImage="/images/data-engineering-right.png"

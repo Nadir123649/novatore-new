@@ -9,7 +9,7 @@ import { AwsAutomationData } from "@/constants/indesx";
 
 const AWS: NextPage = () => {
     return (
-        <Layout title="Novatore Sols - AWS" description="Welcome to Novatore Sols, setting new standards in technology with unmatchable code.">
+        <Layout showContactForm={true} title="Novatore Sols - AWS" description="Welcome to Novatore Sols, setting new standards in technology with unmatchable code.">
             <div className="overflow-x-hidden">
                 <HeroBanner bannerHeading="AWS Innovation Hub: Transforming Ideas into Reality" pagetitle="Cloud" needsMoreTitle="Get in Touch" previewImage="/images/aws-banner-bg.png" maxwidth="1100px" />
                 <ServicesNeeds needsTitle="The Power of AWS with Our" needsTitleBlue="Expert Services" NeedsImage="/images/aws-image-right.png"

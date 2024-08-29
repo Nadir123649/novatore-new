@@ -10,7 +10,7 @@ import { processBusinessData, } from "@/constants/indesx";
 
 const BusinessProcessAutomation: NextPage = () => {
     return (
-        <Layout title="Novatore Sols - Business Process Automation" description="Welcome to Novatore Sols, setting new standards in technology with unmatchable code.">
+        <Layout showContactForm={true} title="Novatore Sols - Business Process Automation" description="Welcome to Novatore Sols, setting new standards in technology with unmatchable code.">
             <div className="overflow-x-hidden">
                 <HeroBanner bannerHeading="Cost-Effective Business Process Automation" pagetitle="Transformative Solutions" needsMoreTitle="Get in Touch" previewImage="/images/process-automation.png" maxwidth="900px" />
                 <ServicesNeeds needsTitle="Process Automation to" needsTitleBlue="Transform" needsMoreTitle="Your Business" NeedsImage="/images/automation-right.png"

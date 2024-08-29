@@ -12,7 +12,7 @@ import { ProductTransformationData } from "@/constants/indesx";
 
 const TransformativeSolutions: NextPage = () => {
     return (
-        <Layout title="Novatore Sols - Transformative Solutions" description="Welcome to Novatore Sols, setting new standards in technology with unmatchable code.">
+        <Layout showContactForm={true} title="Novatore Sols - Transformative Solutions" description="Welcome to Novatore Sols, setting new standards in technology with unmatchable code.">
             <div className="overflow-x-hidden">
                 <HeroBanner bannerHeading="The Transformative Solutions Your Business Needs" pagetitle="Transformative Solutions" needsMoreTitle="Get in Touch" previewImage="/images/transformation-image-banner.png" maxwidth="1100px" />
                 <ServicesNeeds needsTitle="Transformative" needsTitleBlue=" Solutions" needsMoreTitle="For Your Tech Business" NeedsImage="/images/transformative-solutions-right.png"

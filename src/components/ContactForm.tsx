@@ -93,12 +93,6 @@ const ContactForm = () => {
                 }));
                 setCountries(countryData);
 
-                // const defaultCountry = countryData.find((c: { name: string; }) => c.name === "United States");
-                if (countryData.length > 0) {
-                    setSelectedCountry(countryData[0]);
-                    setValue('country', countryData[0].name);
-                    setValue('phone', countryData[0].code);
-                }
             } catch (error) {
                 console.error('Error fetching country data:', error);
             }
@@ -110,12 +104,11 @@ const ContactForm = () => {
         resolver: zodResolver(schema),
     });
 
-
     const handleCountryChange = (selectedOption: any) => {
         const country = countries.find(c => c.name === selectedOption?.value);
         if (country) {
             setSelectedCountry(country);
-            setValue('phone', country.code); 
+            setValue('phone', country.code);
         }
     };
 
@@ -161,7 +154,7 @@ const ContactForm = () => {
 
     return (
         <section className={`${isVisible ? "fadeIn" : "opacity-0 "
-            } contact-form-section pb-10 md:pb-20 bg-center bg-no-repeat bg-cover `}>
+            } contact-form-section pb-10 md:py-20 bg-center bg-no-repeat bg-cover `}>
             <div id='contact-us-form' className='layer-form bg-center bg-no-repeat mx-5 bg-cover rounded-[16px] sm:pb-[140px] md:py-[60px]'>
                 <Container  >
                     <Row >

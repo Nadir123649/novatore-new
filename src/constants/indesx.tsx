@@ -1,4 +1,4 @@
-import { caseone, casetwo, casefour, casethree, AIOne, AITwo, AIThree, AIFour, AIFive, AISix, ComprehensiveIcon, StorageIcon, NetworkingIcon, AnalyticsIcon, CovaBg, dataautomation, AngelflowBg, CloudServiceicon, About, ComplianceAI, ApplicationCompliance, RedTeaming, webAppSecurity, SecurityAudits, NetworkSecurityTesting, GovernanceFramework, Dataprivacy, RiskManagement, Airbolt, ANGELFLOW, AngelLogo, Assistant, blogImageOne, blogImageTwo, Buisness, Career, Catalyst, ChooseFour, ChooseOne, ChooseThree, ChooseTwo, Cova, COVA, CovaLogo, Developer, Industries, Insights, London, Protium, Services, Upsure, DataImageOne, DataImageTwo, DataImageThree, DataImageFour, CloudOne, CloudTwo, CloudThree, CloudFour, AwsOne, AwsTwo, AwsThree, ImageOne, ImageTwo, ImageThree, CloudFive, CloudSix, DataImageFive, DataImageSix, CLOUD, Amazon, DATA, artificialIntelligence, Cybersecurity, DigitalService, AutomationOne, AutomationThree, AutomationFour, AutomationFive, AutomationSix, AutomationTwo, RemoteIT, ConsultingService, CloudService, HelpDesk, NetworkSecurity, SystemSupport, MigrationOne, MigrationTwo, MigrationThree, ProductFour, ProductThree, ProductTwo, ProductOne, ProductFive, ProductSix, ServicesSix, ServicesFive, ServicesFour, ServicesThree, ServicesTwo, ServicesOne, Vulnerability, CustomAnalyticsSix, CustomAnalyticsFive, CustomAnalyticsFour, CustomAnalyticsThree, CustomAnalyticsTwo, CustomAnalyticsOne, TransformThree, TransformTwo, TransformOne, TreeThree, TreeTwo, TreeOne, WebThree, WebTwo, WebOne, AutomationImageOne, AutomationImageTwo, AutomationImageThree, PresentOne, PresentTwo, PresentThree, PresentFour, PresentFive, PresentSix, ConsultingOne, ConsultingTwo, ConsultingThree, ConsultingFour, ConsultingFive, ConsultingSix, BlogBannerThree, BlogBannerTwo, BlogBannerOne, BlogBannerFour, CryptoOne, CryptoTwo, CryptoFive, CryptoFour, CryptoThree, CryptoSix, GamingOne, GamingTwo, GamingThree, HealthCareOne, HealthCareTwo, HealthCareThree, InsuranceOne, InsuranceTwo, InsuranceThree, RealEstateOne, RealEstateTwo, RealEstateThree, RealEstateFour, RealEstateFive, RealEstateSix, IconWeb4, IconWeb3, IconWeb2, IconWeb1 } from "@/utils";
+import { angulaartile, reacttile, vuejstile, nodetile, pythontile, jstile, fluttertile, swifttile, mysqltile, googlecloudtile, mongodbtile, postgresstile, awstile, azuretile, phptile, caseone, casetwo, casefour, casethree, AIOne, AITwo, AIThree, AIFour, AIFive, AISix, ComprehensiveIcon, StorageIcon, NetworkingIcon, AnalyticsIcon, CovaBg, dataautomation, AngelflowBg, CloudServiceicon, About, ComplianceAI, ApplicationCompliance, RedTeaming, webAppSecurity, SecurityAudits, NetworkSecurityTesting, GovernanceFramework, Dataprivacy, RiskManagement, Airbolt, ANGELFLOW, AngelLogo, Assistant, blogImageOne, blogImageTwo, Buisness, Career, Catalyst, ChooseFour, ChooseOne, ChooseThree, ChooseTwo, Cova, COVA, CovaLogo, Developer, Industries, Insights, London, Protium, Services, Upsure, DataImageOne, DataImageTwo, DataImageThree, DataImageFour, CloudOne, CloudTwo, CloudThree, CloudFour, AwsOne, AwsTwo, AwsThree, ImageOne, ImageTwo, ImageThree, CloudFive, CloudSix, DataImageFive, DataImageSix, CLOUD, Amazon, DATA, artificialIntelligence, Cybersecurity, DigitalService, AutomationOne, AutomationThree, AutomationFour, AutomationFive, AutomationSix, AutomationTwo, RemoteIT, ConsultingService, CloudService, HelpDesk, NetworkSecurity, SystemSupport, MigrationOne, MigrationTwo, MigrationThree, ProductFour, ProductThree, ProductTwo, ProductOne, ProductFive, ProductSix, ServicesSix, ServicesFive, ServicesFour, ServicesThree, ServicesTwo, ServicesOne, Vulnerability, CustomAnalyticsSix, CustomAnalyticsFive, CustomAnalyticsFour, CustomAnalyticsThree, CustomAnalyticsTwo, CustomAnalyticsOne, TransformThree, TransformTwo, TransformOne, TreeThree, TreeTwo, TreeOne, WebThree, WebTwo, WebOne, AutomationImageOne, AutomationImageTwo, AutomationImageThree, PresentOne, PresentTwo, PresentThree, PresentFour, PresentFive, PresentSix, ConsultingOne, ConsultingTwo, ConsultingThree, ConsultingFour, ConsultingFive, ConsultingSix, BlogBannerThree, BlogBannerTwo, BlogBannerOne, BlogBannerFour, CryptoOne, CryptoTwo, CryptoFive, CryptoFour, CryptoThree, CryptoSix, GamingOne, GamingTwo, GamingThree, HealthCareOne, HealthCareTwo, HealthCareThree, InsuranceOne, InsuranceTwo, InsuranceThree, RealEstateOne, RealEstateTwo, RealEstateThree, RealEstateFour, RealEstateFive, RealEstateSix, IconWeb4, IconWeb3, IconWeb2, IconWeb1, myndsteam, myndsduration, myndsindustry } from "@/utils";
 import { IoMdMail } from "react-icons/io";
 import { FaPhoneAlt } from "react-icons/fa";
 import { ImLocation } from "react-icons/im";
@@ -489,6 +489,12 @@ export const Enterprises = [
     { title: 300, percentage: "+", description: ' Successful project', icon: IconWeb2 },
     { title: 11, percentage: "+", description: ' Years in IT services', icon: IconWeb3 },
     { title: 40, percentage: "+", description: ' Team members', icon: IconWeb4 },
+];
+
+export const myndsHeadlines = [
+    { title: "4", description: ' Team Members', icon: myndsteam },
+    { title: "800+ hrs", description: ' Project Duration', icon: myndsduration },
+    { title: "Industry", description: ' Real Estate, Proptech', icon: myndsindustry },
 ];
 
 export const dataServices = [
@@ -2442,3 +2448,30 @@ export const caseStudiesslidedata = [
         backgroundimg: casefour,
     }
 ];
+
+export const myndschallengesData = [
+    {
+        title: 'Inefficient property management workflows:', description: 'Mynd needed to improve the efficiency of their property management operations to handle their growing portfolio.'
+    },
+    { title: 'Lack of scalable infrastructure:', description: 'The existing infrastructure couldnt scale effectively with the companys growth.' },
+    { title: 'Insufficient data insights for decision-making:', description: 'Mynd lacked the analytical tools to leverage data for strategic decisions.' },
+];
+export const myndsoutcomesData = [
+    {
+        title: 'Funding Secured:', description: 'Mynd was able to raise a total of $204.9M in funding over 8 rounds through this platform developed by our talented team.'
+    },
+    { title: 'Improved Efficiency:', description: 'Enhanced property management workflows and automation resulted in significant time savings.' },
+    { title: 'Scalability: ', description: 'The cloud-based platform supported rapid growth and geographic expansion.' },
+    { title: 'Data-Driven Decisions: ', description: 'Comprehensive analytics empowered Mynd with actionable insights, improving overall business performance.' }
+];
+
+
+export const retaildataImages = [
+    reacttile, angulaartile, vuejstile, nodetile, pythontile, jstile, fluttertile, swifttile, mysqltile, googlecloudtile, mongodbtile, postgresstile, awstile, azuretile, phptile
+]
+
+export const techStackImages = [
+    reacttile, angulaartile, vuejstile, nodetile, pythontile
+]
+
+

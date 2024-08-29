@@ -11,7 +11,7 @@ import { GovernanceDataPrivacy } from "@/constants/indesx";
 
 const GovernanceAndDataPrivacy: NextPage = () => {
     return (
-        <Layout title="Novatore Sols - Governance, Risk & Compliance, and Data Privacy" description="Welcome to Novatore Sols, setting new standards in technology with unmatchable code.">
+        <Layout showContactForm={true} title="Novatore Sols - Governance, Risk & Compliance, and Data Privacy" description="Welcome to Novatore Sols, setting new standards in technology with unmatchable code.">
             <div className="overflow-x-hidden">
                 <HeroBanner bannerHeading="Governance, Risk, Compliance & Data Privacy" pagetitle="Cybersecurity" needsMoreTitle="Get in Touch" previewImage="/images/governence-banner-bg.png" maxwidth="800px" />
                 <ServicesNeeds needsTitle="Welcome to Your " needsTitleBlue=" AI Assurance Partner" NeedsImage="/images/assurance-partner.png"

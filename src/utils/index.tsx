@@ -206,7 +206,9 @@ export { default as IconWeb2 } from "../../public/images/icon-web-1.svg"
 export { default as IconWeb3 } from "../../public/images/icon-web-3.svg"
 export { default as IconWeb4 } from "../../public/images/icon-web-4.svg"
 
-
+export { default as myndsteam } from "../../public/images/myndsteam.svg"
+export { default as myndsduration } from "../../public/images/myndsduration.svg"
+export { default as myndsindustry } from "../../public/images/myndsindustry.svg"
 
 
 

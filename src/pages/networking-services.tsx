@@ -9,7 +9,7 @@ import CloudOps from "@/components/CloudOps";
 
 const NetworkingServices: NextPage = () => {
     return (
-        <Layout title="Novatore Sols - Networking Services" description="Welcome to Novatore Sols, setting new standards in technology with unmatchable code.">
+        <Layout showContactForm={true} title="Novatore Sols - Networking Services" description="Welcome to Novatore Sols, setting new standards in technology with unmatchable code.">
             <div className="overflow-x-hidden">
                 <HeroBanner bannerHeading="Networking Redefined: Connecting Your Business to Success" pagetitle="Amazon Web Services" needsMoreTitle="Get in Touch" previewImage="/images/networking-banner.png" maxwidth="1000px" />
                 <ServicesNeeds needsTitle="Solutions for Your " needsTitleBlue=" IT Needs" NeedsImage="/images/networking-image-right.png"

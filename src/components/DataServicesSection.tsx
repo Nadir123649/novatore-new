@@ -15,9 +15,10 @@ interface DataServicesSectionProps {
         icon: string;
         listItems?: string[];
     }[];
+    textalign?: any;
 }
 
-const DataServicesSection: React.FC<DataServicesSectionProps> = ({ heading, headingBlue, data, needsMoreTitle, type, cardMinHeight }) => {
+const DataServicesSection: React.FC<DataServicesSectionProps> = ({ textalign, heading, headingBlue, data, needsMoreTitle, type, cardMinHeight }) => {
 
 
     const [isVisible, setIsVisible] = useState(false);
@@ -43,11 +44,12 @@ const DataServicesSection: React.FC<DataServicesSectionProps> = ({ heading, head
 
     return (
         <section id="dataservice-section" className={`${isVisible ? "fadeIn" : "opacity-0"} pb-20 pt-10`}>
-            <h2 className='text-[40px] font-bold not-italic leading-normal capitalize text-center mb-[60px] text-black'>
-                {heading} <span className='text-[#2776EA]'> {headingBlue}</span>
-                {needsMoreTitle ? <span> {needsMoreTitle}</span> : null}
-            </h2>
+
             <Container>
+                <h2 className='text-[40px] font-bold not-italic leading-normal capitalize  mb-[60px] text-black' style={{ textAlign: textalign }} >
+                    {heading} <span className='text-[#2776EA]'> {headingBlue}</span>
+                    {needsMoreTitle ? <span> {needsMoreTitle}</span> : null}
+                </h2>
                 <Row>
                     {
                         type === "single" ? (

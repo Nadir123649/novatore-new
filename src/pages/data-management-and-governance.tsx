@@ -11,7 +11,7 @@ import { ServicesDataLocal } from "@/constants/indesx";
 
 const DataManagementAndGovernance: NextPage = () => {
     return (
-        <Layout title="Novatore Sols - Data Management & Governance" description="Welcome to Novatore Sols, setting new standards in technology with unmatchable code.">
+        <Layout showContactForm={true} title="Novatore Sols - Data Management & Governance" description="Welcome to Novatore Sols, setting new standards in technology with unmatchable code.">
             <div className="overflow-x-hidden">
                 <HeroBanner bannerHeading="Your Partner in Data Management & Governance" pagetitle="Data" needsMoreTitle="Get in Touch" previewImage="/images/data-managment-banner.png" maxwidth="1000px" />
                 <ServicesNeeds needsTitle="Expert" needsTitleBlue=" Management & Governance" NeedsImage="/images/managment-right-image.png"

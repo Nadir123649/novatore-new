@@ -13,7 +13,7 @@ import Layout from '@/components/Layout';
 const About: NextPage = () => {
 
     return (
-        <Layout title="Novatore Sols - About" description="Welcome to Novatore Sols, setting new standards in technology with unmatchable code.">
+        <Layout showContactForm={true} title="Novatore Sols - About" description="Welcome to Novatore Sols, setting new standards in technology with unmatchable code.">
             <HeroBanner bannerHeading="About Us" previewImage="/images/about-hero-bg.png" />
             <AboutNovatore />
             <AboutServices />
