@@ -1,12 +1,7 @@
-import Enterprise from "@/components/Enterprise";
 import HeroBanner from "@/components/HeroBanner";
-import Innovation from "@/components/Innovation";
-import ServicesNeeds from "@/components/ServicesNeeds";
 import { NextPage } from "next";
-import CloudOps from "@/components/CloudOps";
 import Layout from "@/components/Layout";
 import TechStack from "@/components/tech-stack";
-import CaseStudiesSlider from "@/components/CaseStudiesSlider";
 
 const Angelflow: NextPage = () => {
     return (
