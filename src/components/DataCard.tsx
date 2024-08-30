@@ -27,6 +27,7 @@ const DataCard: React.FC<DataCardProps> = ({ title, description, icon, type, lis
             <div className={value ? value : "absolute top-[16px] right-[140px] mt-2 mr-3 text-blue-200"}>
                 <Image src={Drop} alt="close" layout="fixed" />
             </div>
+            
             {description && (
                 <p className="text-[#5D5D5D] text-[15px] leading-[24px] font-normal mb-0 mt-2">
                     {description}
