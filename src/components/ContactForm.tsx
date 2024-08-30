@@ -7,8 +7,8 @@ import { zodResolver } from '@hookform/resolvers/zod';
 import { useForm } from 'react-hook-form';
 import axios from 'axios';
 import Image from 'next/image';
-// import ReactFlagsSelect from "react-flags-select";
-// import PhoneInput from 'react-phone-input-2'
+import ReactFlagsSelect from "react-flags-select";
+import PhoneInput from 'react-phone-input-2'
 import 'react-phone-input-2/lib/style.css'
 import Select from 'react-select';
 
@@ -239,7 +239,7 @@ const ContactForm = () => {
                                     </Col> */}
 
 
-                                    {/* <Col lg={6} md={12} xs={12} className='h-[110px]'>
+                                    <Col lg={6} md={12} xs={12} className='h-[110px]'>
                                         <Form.Group className="flex flex-col gap-1">
                                             <Form.Label className="text-[#645555] text-[18px] font-medium not-italic">Phone Number</Form.Label>
 
@@ -272,7 +272,7 @@ const ContactForm = () => {
 
                                             {errors.contact && <p className="text-[#FF9494]">{errors.contact.message}</p>}
                                         </Form.Group>
-                                    </Col> */}
+                                    </Col>
 
 
 
