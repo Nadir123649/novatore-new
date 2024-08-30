@@ -16,7 +16,6 @@ interface IFormInputs {
     help: string;
     fullName: string;
     email: string;
-    // country: string;
     contact: string;
     message?: string;
     phone?: string;
@@ -42,8 +41,6 @@ const schema = z.object({
         .nonempty({ message: "Email is required." })
         .email({ message: "Please enter a valid email address." }),
 
-    country: z.string()
-        .nonempty({ message: "Please Select a country" }),
     contact: z.string()
         .regex(/^[\d\s\+\-\(\)]*$/, { message: "Phone number can only contain digits, spaces, '+', '-', '(', and ')'." })
         .max(14, { message: "Phone number cannot exceed 13 characters." })
@@ -219,7 +216,7 @@ const ContactForm = () => {
                                         </Form.Group>
                                     </Col>
 
-                                    {/* <Col lg={6} md={12} xs={12} className='h-[100px]'>
+                                    <Col lg={6} md={12} xs={12} className='h-[100px]'>
                                         <Form.Group className="flex flex-col gap-1">
                                             <Form.Label className="text-[#645555] text-[18px] font-medium not-italic relative">Country</Form.Label>
                                             <Select
@@ -239,7 +236,7 @@ const ContactForm = () => {
                                             )}
                                             {errors.country && <p className="text-[#FF9494]">{errors.country.message}</p>}
                                         </Form.Group>
-                                    </Col> */}
+                                    </Col>
 
 
                                     <Col lg={6} md={12} xs={12} className='h-[110px]'>

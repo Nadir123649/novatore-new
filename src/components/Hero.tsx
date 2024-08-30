@@ -50,6 +50,7 @@ const Hero: React.FC<activeprops> = ({ setActiveLink }) => {
                     Learn More
                   </button>
                 </Link>
+
               </div>
             </div>
           </div>
