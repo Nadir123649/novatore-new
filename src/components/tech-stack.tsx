@@ -3,8 +3,8 @@ import React from 'react';
 
 
 interface TechStackProps {
-    title: string;
-    images: string[];
+    title?: string;
+    images?: string[];
 }
 
 const TechStack: React.FC<TechStackProps> = ({ title, images = [] }) => {
