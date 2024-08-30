@@ -216,7 +216,7 @@ const ContactForm = () => {
                                         </Form.Group>
                                     </Col>
 
-                                    <Col lg={6} md={12} xs={12} className='h-[100px]'>
+                                    {/* <Col lg={6} md={12} xs={12} className='h-[100px]'>
                                         <Form.Group className="flex flex-col gap-1">
                                             <Form.Label className="text-[#645555] text-[18px] font-medium not-italic relative">Country</Form.Label>
                                             <Select
@@ -236,7 +236,7 @@ const ContactForm = () => {
                                             )}
                                             {errors.country && <p className="text-[#FF9494]">{errors.country.message}</p>}
                                         </Form.Group>
-                                    </Col>
+                                    </Col> */}
 
 
                                     {/* <Col lg={6} md={12} xs={12} className='h-[110px]'>
