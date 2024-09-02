@@ -6,7 +6,7 @@ import { useState, useEffect } from 'react';
 interface DataItem {
     title: string;
     description?: string;
-    icon: string;
+    icon?: string;
     listItems?: string[];
 }
 interface DataServicesSectionProps {
@@ -45,37 +45,44 @@ const DataServicesSection: React.FC<DataServicesSectionProps> = ({ textalign = "
 
     return (
         <section id="dataservice-section" className={`${isVisible ? "fadeIn" : "opacity-0"} pb-20 pt-10`}>
-
             <Container>
-                <h2 className='text-[40px] font-bold not-italic leading-normal capitalize  mb-[60px] text-black' style={{ textAlign: textalign }} >
-                    {heading} <span className='text-[#2776EA]'> {headingBlue}</span>
-                    {needsMoreTitle ? <span> {needsMoreTitle}</span> : null}
+                <h2
+                    className='text-[40px] font-bold not-italic leading-normal capitalize mb-[60px] text-black'
+                    style={{ textAlign: textalign }}
+                >
+                    {heading} <span className='text-[#2776EA]'>{headingBlue}</span>
+                    {needsMoreTitle && <span> {needsMoreTitle}</span>}
                 </h2>
                 <Row>
-                    {
-                        type === "single" ? (
-                            data.map((item, index) => (
-                                <Col lg={6} md={6} xs={12} key={index} className="mb-5">
-                                    <DataCard title={item.title} description={item.description} icon={item.icon} listItems={item.listItems}
-                                        type="relative bg-white shadow rounded-[16px] pt-[40px] pb-[10px] px-[24px]  max-w-2xl mx-auto overflow-hidden flex flex-col h-full hover:scale-105 transition ease-in duration-1.5"
-                                        value="absolute top-[16px] right-[400px] mt-2 mr-3 text-blue-200"
-                                        minHeight={cardMinHeight}
-                                    />
-                                </Col>
-                            ))
-                        ) : (
-                            data.map((item, index) => (
-                                <Col lg={4} md={6} xs={12} key={index} className="mb-5">
-                                    <DataCard title={item.title} description={item.description} icon={item.icon} listItems={item.listItems} minHeight={cardMinHeight} />
-                                </Col>
-                            ))
-                        )
-                    }
+                    {type === "single"
+                        ? data.map((item, index) => (
+                            <Col lg={6} md={6} xs={12} key={index} className="mb-5">
+                                <DataCard
+                                    title={item.title}
+                                    description={item.description}
+                                    icon={item.icon}
+                                    listItems={item.listItems}
+                                    type="relative bg-white shadow rounded-[16px] pt-[40px] pb-[10px] px-[24px] max-w-2xl mx-auto overflow-hidden flex flex-col h-full hover:scale-105 transition ease-in duration-1.5"
+                                    value="absolute top-[16px] right-[400px] mt-2 mr-3 text-blue-200"
+                                    minHeight={cardMinHeight}
+                                />
+                            </Col>
+                        ))
+                        : data.map((item, index) => (
+                            <Col lg={4} md={6} xs={12} key={index} className="mb-5">
+                                <DataCard
+                                    title={item.title}
+                                    description={item.description}
+                                    icon={item.icon}
+                                    listItems={item.listItems}
+                                    minHeight={cardMinHeight}
+                                />
+                            </Col>
+                        ))}
                 </Row>
             </Container>
         </section>
     );
 };
-
 
 export default DataServicesSection;
