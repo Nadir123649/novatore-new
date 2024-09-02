@@ -7,10 +7,12 @@ import { zodResolver } from '@hookform/resolvers/zod';
 import { useForm } from 'react-hook-form';
 import axios from 'axios';
 import Image from 'next/image';
-import ReactFlagsSelect from "react-flags-select";
-import PhoneInput from 'react-phone-input-2'
 import 'react-phone-input-2/lib/style.css'
 import Select from 'react-select';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+import Spinner from 'react-bootstrap/Spinner';
+
 
 interface IFormInputs {
     help: string;
@@ -20,6 +22,7 @@ interface IFormInputs {
     message?: string;
     phone?: string;
     subscribe?: boolean;
+    country?: string;
 
 
 }
@@ -27,6 +30,7 @@ interface Country {
     name: string;
     flag: string;
     code: string;
+    country?: string;
 }
 const schema = z.object({
 
@@ -40,7 +44,7 @@ const schema = z.object({
     email: z.string()
         .nonempty({ message: "Email is required." })
         .email({ message: "Please enter a valid email address." }),
-
+    country: z.string().nonempty({ message: "Country is required." }),
     contact: z.string()
         .regex(/^[\d\s\+\-\(\)]*$/, { message: "Phone number can only contain digits, spaces, '+', '-', '(', and ')'." })
         .max(14, { message: "Phone number cannot exceed 13 characters." })
@@ -55,10 +59,10 @@ const ContactForm = () => {
 
     const [isVisible, setIsVisible] = useState(false);
     const [hasAnimated, setHasAnimated] = useState(false);
-
     const [countries, setCountries] = useState<Country[]>([]);
     const [selectedCountry, setSelectedCountry] = useState<Country | null>(null);
     const [selected, setSelected] = useState("");
+    const [isLoading, setIsLoading] = useState(false);
 
 
     const handleScroll = () => {
@@ -81,6 +85,7 @@ const ContactForm = () => {
 
     useEffect(() => {
         const fetchCountries = async () => {
+
             try {
                 const response = await axios.get('https://restcountries.com/v3.1/all');
                 const countryData = response.data.map((country: any) => ({
@@ -97,31 +102,50 @@ const ContactForm = () => {
         fetchCountries();
     }, []);
 
-    const { register, handleSubmit, setValue, formState: { errors } } = useForm<IFormInputs>({
+    const { register, handleSubmit, clearErrors, setValue, formState: { errors } } = useForm<IFormInputs>({
         resolver: zodResolver(schema),
     });
+
+
 
     const handleCountryChange = (selectedOption: any) => {
         const country = countries.find(c => c.name === selectedOption?.value);
         if (country) {
             setSelectedCountry(country);
             setValue('phone', country.code);
+            setValue('country', country.name);
+            clearErrors('country');
         }
     };
 
     const onSubmit = async (data: IFormInputs) => {
         try {
+            setIsLoading(true);
+            toast.success("Submitting...");
+
             const response = await fetch("/api/email", {
                 method: "POST",
                 headers: { "Content-type": "application/json" },
                 cache: "no-cache",
                 body: JSON.stringify(data)
-            })
-            await response.json();
+            });
+
+            if (response.ok) {
+                toast.success("Submitted successfully!");
+            } else {
+                toast.error("Unable to submit.");
+            }
         } catch (err) {
-            console.log(err, 'error')
+            console.log(err, 'error');
+            toast.error("An error occurred. Unable to submit.");
+        } finally {
+            setIsLoading(false);
         }
     };
+
+
+
+
     const customStyles = {
         control: (provided: any) => ({
             ...provided,
@@ -216,7 +240,7 @@ const ContactForm = () => {
                                         </Form.Group>
                                     </Col>
 
-                                    {/* <Col lg={6} md={12} xs={12} className='h-[100px]'>
+                                    <Col lg={6} md={12} xs={12} className='h-[100px]'>
                                         <Form.Group className="flex flex-col gap-1">
                                             <Form.Label className="text-[#645555] text-[18px] font-medium not-italic relative">Country</Form.Label>
                                             <Select
@@ -234,9 +258,10 @@ const ContactForm = () => {
                                                 </div>
 
                                             )}
+
                                             {errors.country && <p className="text-[#FF9494]">{errors.country.message}</p>}
                                         </Form.Group>
-                                    </Col> */}
+                                    </Col>
 
 
                                     <Col lg={6} md={12} xs={12} className='h-[110px]'>
@@ -268,13 +293,9 @@ const ContactForm = () => {
                                                     }}
                                                 />
                                             </div>
-
-
                                             {errors.contact && <p className="text-[#FF9494]">{errors.contact.message}</p>}
                                         </Form.Group>
                                     </Col>
-
-
 
                                     <Col lg={12} md={12} xs={12}>
                                         <Form.Group className='flex flex-col gap-1'>
@@ -297,10 +318,22 @@ const ContactForm = () => {
                                         </Form.Group>
                                     </Col>
                                     <Col lg={12} md={12} xs={12} className='flex justify-end'>
-                                        <button className='btn-submit text-white text-[18px] font-normal not-italic bg-[#2776EA] rounded-[16px] py-[12px] md:py-[16px] px-[14px] md:px-[24px] max-w-[180px] w-full border border-solid border-[#B7B7B7]' type='submit'>
-                                            Submit
+                                        <button disabled={isLoading} className='btn-submit text-white text-[18px] font-normal not-italic bg-[#2776EA] rounded-[16px] py-[12px] md:py-[16px] px-[14px] md:px-[24px] max-w-[180px] w-full border border-solid border-[#B7B7B7]' type='submit'>
+                                            Submit {" "}
+                                            {isLoading && (
+                                                <Spinner
+                                                    as="span"
+                                                    animation="border"
+                                                    size="sm"
+                                                    role="status"
+                                                    aria-hidden="true"
+                                                />
+                                            )}
                                         </button>
+                                        <ToastContainer
+                                            bodyClassName="toastbody" />
                                     </Col>
+
                                 </Row>
                             </Form>
                         </Col>
