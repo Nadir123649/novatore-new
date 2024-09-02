@@ -7,10 +7,19 @@ interface HeroBannerProps {
     bannerHeading: string;
     needsMoreTitle?: any;
     pagetitle?: string;
-    maxwidth?: string
+    maxwidth?: string;
+    morebannerHeading?: any;
+    spangreentext?: any;
+    spanredtext?: any;
+    spanbluetext?: any;
+    beforespanredtext?: any;
+    beforeyellowtext?: any;
+    beforebluetext?: any;
+    beforegreentext?: any;
+    spanparrottext?: any;
 }
 
-const HeroBanner: React.FC<HeroBannerProps> = ({ previewImage, bannerHeading, needsMoreTitle, pagetitle, maxwidth }) => {
+const HeroBanner: React.FC<HeroBannerProps> = ({ previewImage, bannerHeading, needsMoreTitle, pagetitle, maxwidth, spangreentext, morebannerHeading, spanredtext, spanbluetext, beforespanredtext, beforeyellowtext, beforebluetext, beforegreentext, spanparrottext }) => {
 
     const [isVisible, setIsVisible] = useState(false);
 
@@ -41,7 +50,7 @@ const HeroBanner: React.FC<HeroBannerProps> = ({ previewImage, bannerHeading, ne
 
 
                     <p className='text-white text-[20px]'>{pagetitle}</p>
-                    <h2 className='text-[38px]  md:text-[56px] max-w-[872px] not-italic font-semibold text-white capitalize' style={{ maxWidth: maxwidth }}>{bannerHeading}</h2>
+                    <h2 className='text-[38px]  md:text-[56px] max-w-[872px] not-italic font-semibold text-white capitalize' style={{ maxWidth: maxwidth }}><span className="text-[#E95026]">{beforespanredtext}</span> <span className="text-[#F4CC30]">{beforeyellowtext}</span> <span className="text-[#2A6448]">{beforegreentext}</span> <span className="text-[#426CE8]">{beforebluetext}</span> {bannerHeading} <span className="text-[#50A95A]">{spanparrottext}</span> <span className="text-[#38B87D]">{spangreentext}</span><span className="text-[#E95026]">{spanredtext}</span> <span className="text-[#5D5FEF]">{spanbluetext}</span> {morebannerHeading} </h2>
 
                     {needsMoreTitle ?
                         <a href="#contact-us-form" className='learn-btn bg-none rounded-[16px] border-1 border-[#FFFFFF] hover:border-transparent  py-[14px] px-[24px] mt-[26px] transition-all duration-300 hover:bg-[#2776EA]  text-white'>

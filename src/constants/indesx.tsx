@@ -1,4 +1,4 @@
-import { angulaartile, reacttile, vuejstile, nodetile, pythontile, jstile, fluttertile, swifttile, mysqltile, googlecloudtile, mongodbtile, postgresstile, awstile, azuretile, phptile, caseone, casetwo, casefour, casethree, AIOne, AITwo, AIThree, AIFour, AIFive, AISix, ComprehensiveIcon, StorageIcon, NetworkingIcon, AnalyticsIcon, CovaBg, dataautomation, AngelflowBg, CloudServiceicon, About, ComplianceAI, ApplicationCompliance, RedTeaming, webAppSecurity, SecurityAudits, NetworkSecurityTesting, GovernanceFramework, Dataprivacy, RiskManagement, Airbolt, ANGELFLOW, AngelLogo, Assistant, blogImageOne, blogImageTwo, Buisness, Career, Catalyst, ChooseFour, ChooseOne, ChooseThree, ChooseTwo, Cova, COVA, CovaLogo, Developer, Industries, Insights, London, Protium, Services, Upsure, DataImageOne, DataImageTwo, DataImageThree, DataImageFour, CloudOne, CloudTwo, CloudThree, CloudFour, AwsOne, AwsTwo, AwsThree, ImageOne, ImageTwo, ImageThree, CloudFive, CloudSix, DataImageFive, DataImageSix, CLOUD, Amazon, DATA, artificialIntelligence, Cybersecurity, DigitalService, AutomationOne, AutomationThree, AutomationFour, AutomationFive, AutomationSix, AutomationTwo, RemoteIT, ConsultingService, CloudService, HelpDesk, NetworkSecurity, SystemSupport, MigrationOne, MigrationTwo, MigrationThree, ProductFour, ProductThree, ProductTwo, ProductOne, ProductFive, ProductSix, ServicesSix, ServicesFive, ServicesFour, ServicesThree, ServicesTwo, ServicesOne, Vulnerability, CustomAnalyticsSix, CustomAnalyticsFive, CustomAnalyticsFour, CustomAnalyticsThree, CustomAnalyticsTwo, CustomAnalyticsOne, TransformThree, TransformTwo, TransformOne, TreeThree, TreeTwo, TreeOne, WebThree, WebTwo, WebOne, AutomationImageOne, AutomationImageTwo, AutomationImageThree, PresentOne, PresentTwo, PresentThree, PresentFour, PresentFive, PresentSix, ConsultingOne, ConsultingTwo, ConsultingThree, ConsultingFour, ConsultingFive, ConsultingSix, BlogBannerThree, BlogBannerTwo, BlogBannerOne, BlogBannerFour, CryptoOne, CryptoTwo, CryptoFive, CryptoFour, CryptoThree, CryptoSix, GamingOne, GamingTwo, GamingThree, HealthCareOne, HealthCareTwo, HealthCareThree, InsuranceOne, InsuranceTwo, InsuranceThree, RealEstateOne, RealEstateTwo, RealEstateThree, RealEstateFour, RealEstateFive, RealEstateSix, IconWeb4, IconWeb3, IconWeb2, IconWeb1, myndsteam, myndsduration, myndsindustry } from "@/utils";
+import { googleanalyticstile, tstile, angulaartile, reacttile, vuejstile, nodetile, pythontile, jstile, fluttertile, swifttile, mysqltile, googlecloudtile, mongodbtile, postgresstile, awstile, azuretile, phptile, caseone, casetwo, casefour, casethree, AIOne, AITwo, AIThree, AIFour, AIFive, AISix, ComprehensiveIcon, StorageIcon, NetworkingIcon, AnalyticsIcon, CovaBg, dataautomation, AngelflowBg, CloudServiceicon, About, ComplianceAI, ApplicationCompliance, RedTeaming, webAppSecurity, SecurityAudits, NetworkSecurityTesting, GovernanceFramework, Dataprivacy, RiskManagement, Airbolt, ANGELFLOW, AngelLogo, Assistant, blogImageOne, blogImageTwo, Buisness, Career, Catalyst, ChooseFour, ChooseOne, ChooseThree, ChooseTwo, Cova, COVA, CovaLogo, Developer, Industries, Insights, London, Protium, Services, Upsure, DataImageOne, DataImageTwo, DataImageThree, DataImageFour, CloudOne, CloudTwo, CloudThree, CloudFour, AwsOne, AwsTwo, AwsThree, ImageOne, ImageTwo, ImageThree, CloudFive, CloudSix, DataImageFive, DataImageSix, CLOUD, Amazon, DATA, artificialIntelligence, Cybersecurity, DigitalService, AutomationOne, AutomationThree, AutomationFour, AutomationFive, AutomationSix, AutomationTwo, RemoteIT, ConsultingService, CloudService, HelpDesk, NetworkSecurity, SystemSupport, MigrationOne, MigrationTwo, MigrationThree, ProductFour, ProductThree, ProductTwo, ProductOne, ProductFive, ProductSix, ServicesSix, ServicesFive, ServicesFour, ServicesThree, ServicesTwo, ServicesOne, Vulnerability, CustomAnalyticsSix, CustomAnalyticsFive, CustomAnalyticsFour, CustomAnalyticsThree, CustomAnalyticsTwo, CustomAnalyticsOne, TransformThree, TransformTwo, TransformOne, TreeThree, TreeTwo, TreeOne, WebThree, WebTwo, WebOne, AutomationImageOne, AutomationImageTwo, AutomationImageThree, PresentOne, PresentTwo, PresentThree, PresentFour, PresentFive, PresentSix, ConsultingOne, ConsultingTwo, ConsultingThree, ConsultingFour, ConsultingFive, ConsultingSix, BlogBannerThree, BlogBannerTwo, BlogBannerOne, BlogBannerFour, CryptoOne, CryptoTwo, CryptoFive, CryptoFour, CryptoThree, CryptoSix, GamingOne, GamingTwo, GamingThree, HealthCareOne, HealthCareTwo, HealthCareThree, InsuranceOne, InsuranceTwo, InsuranceThree, RealEstateOne, RealEstateTwo, RealEstateThree, RealEstateFour, RealEstateFive, RealEstateSix, IconWeb4, IconWeb3, IconWeb2, IconWeb1, myndsteam, myndsduration, myndsindustry, jquerytile, webflowtile, tagmanagertile, nexttile, figmatile, dockertile, redistile, jenkinstile, djangotile, csstile, mjtile, javatile, bootstraptile, dojotile, railstile, wordpresstile, laraveltile, myndsiconOne, myndsiconTwo, myndsiconThree, catalysticonFour, covaiconOne, covaiconTwo, covaiconThree, ircciconOne, ircciconTwo, ircciconThree, angelflowiconOne, angelflowiconTwo, angelflowiconThree, huntersiconOne, huntersiconTwo, huntersiconThree, juggernauticonOne, juggernauticonTwo, juggernauticonThree, commiticonOne, commiticonTwo, commiticonThree, gifticonOne, gifticonTwo, gifticonThree, zeusxiconOne, zeusxiconTwo, zeusxiconThree, footeducationiconOne, footeducationiconTwo, footeducationiconThree, qatariconOne, qatariconTwo, qatariconThree, brokericonOne, brokericonTwo, brokericonThree } from "@/utils";
 import { IoMdMail } from "react-icons/io";
 import { FaPhoneAlt } from "react-icons/fa";
 import { ImLocation } from "react-icons/im";
@@ -497,6 +497,52 @@ export const myndsHeadlines = [
     { title: "Industry", description: ' Real Estate, Proptech', icon: myndsindustry },
 ];
 
+export const abimarHeadlinesData = [
+    { title: "6", description: ' Team Members', icon: myndsteam },
+    { title: "1000+ hrs", description: ' Project Duration', icon: myndsduration },
+    { title: "Industry", description: ' Real Estate, Proptech', icon: myndsindustry },
+]
+export const catalystHeadlines = [
+    { title: "2", description: ' Team Members', icon: myndsteam },
+    { title: "300+ hrs", description: ' Project Duration', icon: myndsduration },
+    { title: "Industry", description: ' Real Estate, Proptech', icon: myndsindustry },
+]
+export const souqofqatarHeadlines = [
+    { title: "6", description: ' Team Members', icon: myndsteam },
+    { title: "1000+ hrs", description: ' Project Duration', icon: myndsduration },
+    { title: "Industry", description: ' Real Estate, Proptech', icon: myndsindustry },
+]
+export const permitPlaceHeadlines = [
+    { title: "6", description: ' Team Members', icon: myndsteam },
+    { title: "1000+ hrs", description: ' Project Duration', icon: myndsduration },
+    { title: "Industry", description: ' Real Estate, Proptech', icon: myndsindustry },
+]
+export const covaAIHeadlines = [
+    { title: "3", description: ' Team Members', icon: myndsteam },
+    { title: "1000+ hrs", description: ' Project Duration', icon: myndsduration },
+    { title: "Industry", description: ' Real Estate, Proptech', icon: myndsindustry },
+]
+export const IRCCHeadlines = [
+    { title: "6", description: ' Team Members', icon: myndsteam },
+    { title: "1000+ hrs", description: ' Project Duration', icon: myndsduration },
+    { title: "Industry", description: ' Real Estate, Proptech', icon: myndsindustry },
+]
+export const angelflowHeadlines = [
+    { title: "6", description: ' Team Members', icon: myndsteam },
+    { title: "1000+ hrs", description: ' Project Duration', icon: myndsduration },
+    { title: "Industry", description: ' Real Estate, Proptech', icon: myndsindustry },
+]
+export const nftHuntersHeadlines = [
+    { title: "8", description: ' Team Members', icon: myndsteam },
+    { title: "1000+ hrs", description: ' Project Duration', icon: myndsduration },
+    { title: "Industry", description: ' Real Estate, Proptech', icon: myndsindustry },
+]
+export const commitGoodHeadlines = [
+    { title: "7", description: ' Team Members', icon: myndsteam },
+    { title: "1000+ hrs", description: ' Project Duration', icon: myndsduration },
+    { title: "Industry", description: ' Real Estate, Proptech', icon: myndsindustry },
+]
+
 export const dataServices = [
     {
         title: 'Data Engineering',
@@ -859,6 +905,268 @@ export const AiData = [
         icon: ImageThree,
     },
 ];
+export const myndscaseData = [
+    {
+        title: 'Custom Software Development:',
+        description: 'Novatore Solutions developed a tailored platform for Mynd, integrating property management functionalities, investor dashboards, maintenance tracking, and automated rent collection. This platform provided a seamless user experience and improved operational efficiency.',
+        icon: myndsiconOne,
+    },
+    {
+        title: 'Cloud Services:',
+        description: 'To ensure scalability and reliability, Novatore Solutions migrated Mynd’s operations to a robust cloud infrastructure. This transition allowed Mynd to handle increased user loads and provided secure, remote access to the platform.',
+        icon: myndsiconTwo,
+    },
+    {
+        title: 'Data Analytics Services:',
+        description: 'Novatore Solutions implemented advanced data analytics capabilities, enabling Mynd to gain valuable insights into property performance, tenant behaviors, and market trends. This data-driven approach facilitated better decision-making and strategic planning.',
+        icon: myndsiconThree,
+    },
+];
+export const catalystcaseData = [
+    {
+        title: 'Custom Software Development:',
+        description: 'Our team developed a comprehensive platform tailored to Catalyst’s needs. The platform integrates features for housing management, tenant communication, and financial oversight. ',
+        icon: myndsiconOne,
+    },
+    {
+        title: 'Cloud Services:',
+        description: 'We transitioned Catalyst’s operations to a scalable, secure cloud infrastructure.This transition enhanced data security, system accessibility, and the capacity to handle increased demands.',
+        icon: myndsiconTwo,
+    },
+    {
+        title: 'Data Analytics Services:',
+        description: 'Novatore implemented advanced data analytics tools to provide Catalyst with deep insights into their operations. The analytics solutions offered detailed reports on housing trends, tenant demographics, and financial performance.',
+        icon: myndsiconThree,
+    },
+    {
+        title: 'Internet of Things (IoT): ',
+        description: 'Novatore integrated IoT solutions into Catalyst’s property management system.These solutions enable real- time monitoring and maintenance of properties, supporting Catalyst’s asset- level sustainability programming.With IoT, Catalyst can track energy usage and receive instant alerts.. ',
+        icon: catalysticonFour,
+    },
+];
+export const covaAicaseData = [
+    {
+        title: 'AI-Powered Communication Hub:',
+        description: 'We developed a sophisticated AI module that automates the generation of welcome, insurance, and proposal emails. This feature not only saves time but also ensures that all communications are consistent and tailored to the recipients needs.',
+        icon: covaiconOne,
+    },
+    {
+        title: 'Streamlined Client Management:',
+        description: 'Our team designed a robust client management system within the portal. Brokers can now effortlessly manage their entire client base, with features that allow for easy tracking, updating, and organization of client data and policies.',
+        icon: covaiconTwo,
+    },
+    {
+        title: 'Enhanced User Experience:',
+        description: 'To address the frustrations related to the user interface, we crafted a sleek and intuitive design. The use of Figma allowed us to prototype and refine the interface, ensuring that the portal is user-friendly and accessible for all stakeholders.',
+        icon: covaiconThree,
+    },
+];
+
+export const IRCCcaseData = [
+    {
+        title: 'Automated Reconciliation System:',
+        description: 'We developed an automated system that streamlined the reconciliation process by validating and cross-matching data from various sources. This system significantly reduced errors and ensured timely financial settlements.',
+        icon: ircciconOne,
+    },
+    {
+        title: 'Data Management Platform:',
+        description: 'A robust data management platform was implemented to handle the ingestion, validation, and processing of data from retailers and LPs. This platform provided a centralized location for all data-related activities, ensuring consistency and accuracy.',
+        icon: ircciconTwo,
+    },
+    {
+        title: 'Advanced Analytics & Dashboards:',
+        description: 'We introduced advanced analytics and dashboards that gave retailers and LPs better visibility into their transactions. These tools allowed users to track their engagement metrics, optimize offers, and make data-driven decisions.',
+        icon: ircciconThree,
+    },
+];
+export const angelflowcaseData = [
+    {
+        title: 'Simplified Networking Interface:',
+        description: 'We developed an intuitive, user-friendly interface that facilitates effortless networking between start-ups and investors. This interface allows users to quickly find and connect with relevant opportunities.',
+        icon: angelflowiconOne,
+    },
+    {
+        title: 'Showcase Feature for Start-ups:',
+        description: 'A dedicated feature was introduced to allow start-ups to display their investors and past investments prominently. This feature enhanced their credibility, helping them to attract new investors more effectively.',
+        icon: angelflowiconTwo,
+    },
+    {
+        title: 'Enhanced User Engagement:',
+        description: 'We designed a visually appealing and highly functional user experience to ensure that users remained engaged with the platform. This helped in retaining existing users and attracting new ones.',
+        icon: angelflowiconThree,
+    },
+];
+export const nftHunterscaseData = [
+    {
+        title: 'Curated Content Delivery System:',
+        description: 'We developed a user-friendly interface that allows NFT Hunters to analyze and curate top NFT projects. The platform automatically delivers these curated lists to users email and Telegram, ensuring they receive only the most relevant and valuable information.',
+        icon: huntersiconOne,
+    },
+    {
+        title: 'Application Portal for NFT Projects:',
+        description: 'To help new projects gain visibility, we created a streamlined application portal. NFT projects can apply to be featured in the weekly emails, giving them a chance to reach a wider audience and attract potential investors.',
+        icon: huntersiconTwo,
+    },
+    {
+        title: 'Comprehensive NFT Marketing Services:',
+        description: 'Recognizing the need for effective marketing in the NFT space, we integrated a marketing services platform within NFT Hunters. This service helps NFT projects with promotion, community building, and overall market presence, providing them with the tools to succeed in a competitive environment.',
+        icon: huntersiconThree,
+    },
+];
+export const juggernautcaseData = [
+    {
+        title: 'Blockchain Integration for Secure Transactions:',
+        description: 'We integrated cutting-edge blockchain technology to secure all transactions on the Juggernaut DeFi platform. This ensured that users could confidently trade and auction NFTs, knowing that their assets were protected by advanced encryption and decentralized protocols.',
+        icon: juggernauticonOne,
+    },
+    {
+        title: 'Development of Advanced Trading and Auction Features:',
+        description: 'We built sophisticated trading and auction systems that allowed users to engage in complex transactions with ease. These features were designed to be intuitive for newcomers while offering the depth and flexibility required by seasoned traders.',
+        icon: juggernauticonTwo,
+    },
+    {
+        title: 'Mobile-Friendly User Interface:',
+        description: 'To cater to a global audience, we developed a responsive, mobile-friendly interface that provided a seamless user experience across all devices. This ensured that users could access the platform from anywhere, making it convenient and efficient to manage their NFT portfolios on the go.',
+        icon: juggernauticonThree,
+    },
+];
+export const commitcaseData = [
+    {
+        title: 'Blockchain-Powered Transparency:',
+        description: 'We developed a system where every donation is recorded on the Polygon blockchain, providing donors with real-time visibility into how their contributions are being utilized. This feature reassures donors that their funds are being used as intended and builds trust in the platform.',
+    },
+    {
+        title: 'Secure Cryptocurrency Donation Processing:',
+        description: 'The platform was equipped with secure integration for popular cryptocurrencies, enabling users to donate using their preferred digital currency. We implemented robust security protocols to protect these transactions, ensuring that all data is encrypted and safely stored.',
+        icon: commiticonTwo,
+    },
+    {
+        title: 'Comprehensive Donation Management Dashboard:',
+        description: 'We created a user-friendly dashboard that allows donors to track their contributions, view detailed reports, and manage their charitable activities with ease. The dashboard is designed to be intuitive, making it accessible to users of all technical backgrounds.',
+        icon: commiticonThree,
+    },
+];
+export const giftITcaseData = [
+    {
+        title: 'Secure Payment Gateway Integration:',
+        description: 'We integrated a robust payment processing system that ensures all transactions are secure and user data is protected. This was a critical component in building user trust and ensuring that the platform could handle a large volume of transactions safely.',
+        icon: gifticonOne,
+    },
+    {
+        title: 'Community Trust through Reviews and Ratings:',
+        description: 'To foster a trustworthy environment, we implemented a review and rating system where users could share their experiences and rate gifts they had purchased. This feature not only enhanced community trust but also provided valuable feedback for sellers to improve their offerings.',
+        icon: gifticonTwo,
+    },
+    {
+        title: 'Advanced Search and Filtering:',
+        description: 'We developed an intuitive search and filtering system that allows users to easily navigate through the platform’s offerings. With these tools, users can quickly find the perfect gift based on categories, price range, popularity, and other relevant criteria.',
+        icon: gifticonThree,
+    },
+];
+export const zeusxcaseData = [
+    {
+        title: 'Enhanced Security Features:',
+        description: 'We implemented advanced security measures including multi-factor authentication, secure payment gateways, and encryption to protect user data and transactions. These features were crucial in establishing trust with the platforms user base.',
+        icon: zeusxiconOne,
+    },
+    {
+        title: 'User Engagement Tools',
+        description: 'To keep users engaged, we introduced features such as a rating system for sellers, customizable profiles, and a rewards program for frequent users. These additions were designed to enhance user experience and encourage continued use of the platform.',
+        icon: zeusxiconTwo,
+    },
+    {
+        title: 'Scalable Infrastructure',
+        description: 'Our team developed a scalable backend architecture using cloud services and containerization. This ensured that the platform could handle an increasing number of users and transactions efficiently, without downtime or performance degradation.',
+        icon: zeusxiconThree,
+    },
+];
+export const footeducationcaseData = [
+    {
+        title: 'Enhancing Content Accuracy',
+        description: 'We collaborated closely with the client’s team of orthopedic surgeons to ensure that the information on the platform was precise and reliable. A rigorous review system was implemented to maintain the integrity of the medical content.',
+        icon: footeducationiconOne,
+    },
+    {
+        title: 'Improving User Accessibility',
+        description: 'Our team redesigned the website to make it more user-friendly, with an intuitive interface that simplifies navigation. We also developed an interactive tool to help users identify specific foot and ankle issues, making the platform more engaging and helpful.',
+        icon: footeducationiconTwo,
+    },
+    {
+        title: 'Implementing Multilingual Support',
+        description: 'To broaden the platform’s reach, we integrated multilingual support, enabling content to be easily translated into different languages. This feature was critical in making FootEducation a global resource for foot and ankle care.',
+        icon: footeducationiconThree,
+    },
+];
+export const upsurecaseData = [
+    {
+        title: 'Simplified Insurance Management Portal',
+        description: 'We developed a centralized portal that consolidates all insurance-related documents and contracts in one place. This streamlined approach significantly reduces the time and effort required to manage multiple policies, making it easier for businesses to stay organized and compliant.',
+        icon: myndsiconOne,
+    },
+    {
+        title: 'User-Friendly Interface',
+        description: 'To ensure ease of use, our team designed a clean, intuitive interface that simplifies navigation and helps users quickly find the information they need. The platform was built with busy business owners in mind, offering a straightforward experience that doesn’t require extensive training.',
+        icon: myndsiconTwo,
+    },
+    {
+        title: 'Automated Policy Management',
+        description: 'We implemented automated reminders and updates for policy renewals, allowing users to stay on top of their insurance obligations without manual tracking. This feature not only enhances the user experience but also reduces the risk of lapses in coverage.',
+        icon: myndsiconThree,
+    },
+];
+export const permitcaseData = [
+    {
+        title: 'Enhanced Document Collation and Management System',
+        description: 'We developed a comprehensive document management system that allowed Permit Place to efficiently organize, store, and retrieve project documents. ',
+        icon: myndsiconOne,
+    },
+    {
+        title: 'Automated Plan and Permit Submittal Process ',
+        description: 'Our team created an automated submittal process that streamlined the submission of plans and permits.',
+        icon: myndsiconTwo,
+    },
+    {
+        title: 'Accurate Fee Calculation Engine ',
+        description: 'We built a sophisticated fee calculation engine that ensured precise calculations of final fees based on regional requirements.',
+        icon: myndsiconThree,
+    },
+];
+export const qatarcaseData = [
+    {
+        title: 'Centralized Marketplace: ',
+        description: 'We developed a centralized platform where multiple retailers can list their products, allowing users to easily compare prices and features across different sellers. ',
+        icon: qatariconOne,
+    },
+    {
+        title: 'User-Centric Design:',
+        description: 'The platform was designed with a focus on usability, ensuring that consumers can effortlessly navigate through product categories and make comparisons.',
+        icon: qatariconTwo,
+    },
+    {
+        title: 'Scalable Infrastructure: ',
+        description: 'By utilizing AWS cloud services, we ensured that the platform could efficiently manage high traffic, providing a reliable and smooth shopping experience even during peak times.',
+        icon: qatariconThree,
+    },
+];
+export const abimarbrokerscaseData = [
+    {
+        title: 'Simplified Brokerage Structure: ',
+        description: 'We developed a platform that offers a straightforward and transparent brokerage model, focusing on clear, simple business terms that allow clients to maximize the value of their business. ',
+        icon: brokericonOne,
+    },
+    {
+        title: 'Ownership Opportunities: ',
+        description: 'The platform includes an option for users to gain ownership of their broking structure, a unique feature that sets Abimar Brokers apart from other platforms.',
+        icon: brokericonTwo,
+    },
+    {
+        title: 'Innovation-Focused Platform: ',
+        description: 'By removing the friction and politics associated with traditional brokerages, the platform supports innovation and provides a space where entrepreneurial clients and brokers can thrive.',
+        icon: brokericonThree,
+    },
+];
+
+
 export const AwsData = [
     {
         title: 'Storage Services',
@@ -2456,6 +2764,158 @@ export const myndschallengesData = [
     { title: 'Lack of scalable infrastructure:', description: 'The existing infrastructure couldnt scale effectively with the companys growth.' },
     { title: 'Insufficient data insights for decision-making:', description: 'Mynd lacked the analytical tools to leverage data for strategic decisions.' },
 ];
+
+export const catalystchallengesData = [
+    { title: 'Complex housing management processes: ', description: 'They needed a system to manage the intricacies of regulated rental housing.' },
+    { title: 'Need for scalable infrastructure:', description: 'To handle growth and operational demands.' },
+    { title: 'Lack of actionable data insights:', description: 'For strategic planning and decision-making.' },
+    { title: 'Requirement for enhanced property management through IoT:', description: 'To improve efficiency and tenant satisfaction.' },
+];
+export const covaaichallengesData = [
+    {
+        title: 'Complex Client Management:', description: 'Brokers needed a more efficient way to manage multiple clients and policies without getting bogged down by manual processes.'
+    },
+    {
+        title: 'Inefficient Communication', description: 'The client faced challenges in maintaining consistent and clear communication between brokers, customers, and underwriters.'
+    },
+    {
+        title: 'Proposal Generation', description: 'Manually generating insurance proposals was time-consuming and prone to errors, which affected the overall workflow.'
+    },
+];
+export const irccchallengesData = [
+    {
+        title: 'Complex Data Management', description: ''
+    },
+    {
+        title: 'Inconsistent Reconciliation Processes', description: ''
+    },
+    { title: 'Manual Data Validation', description: '' },
+    {
+        title: 'Limited Visibility into Transactions', description: ''
+    },
+];
+export const angelflowchallengesData = [
+    {
+        title: 'Complex Networking:', description: 'The client needed a solution to streamline the networking process between investors and start-ups, making it easier to connect.'
+    },
+    {
+        title: 'Visibility for Start-ups:', description: 'Start-ups struggled to showcase their past investments and investor partnerships, reducing their attractiveness to potential investors.'
+    },
+    {
+        title: 'User Engagement:', description: 'Ensuring consistent user engagement on the platform required an interface that was both appealing and functional.'
+    },
+];
+export const hunterschallengesData = [
+    {
+        title: 'Overwhelming Market Saturation:', description: 'The NFT market is saturated with projects, making it difficult for investors to distinguish valuable opportunities from the noise.'
+    },
+    {
+        title: 'Inefficient Information Delivery:', description: 'Traditional methods of receiving updates (e.g., social media) were inconsistent and often cluttered with irrelevant information.'
+    },
+    {
+        title: 'Visibility for New Projects:', description: 'New and smaller NFT projects struggled to gain exposure in a market dominated by well-known names.'
+    },
+    {
+        title: 'Lack of Credible Marketing Channels:', description: 'NFT projects needed a reliable platform to promote their offerings and build their communities.'
+    },
+];
+export const juggernautchallengesData = [
+    {
+        title: 'Security and Blockchain Integration:', description: 'Ensuring secure integration with blockchain technology to protect user assets and transactions.'
+    },
+    {
+        title: 'Advanced Trading and Auction Capabilities:', description: 'Developing sophisticated trading and auction features to cater to experienced and novice users alike.'
+    },
+    {
+        title: 'Global Accessibility:', description: 'Creating a mobile-friendly interface to ensure the platform is accessible to users worldwide, regardless of device.'
+    },
+];
+export const commitchallengesData = [
+    {
+        title: 'Transparency in Donations:', description: 'Ensuring that all donations are visible and traceable on the blockchain, providing full transparency to donors.'
+    },
+    {
+        title: 'Secure Cryptocurrency Integration:', description: 'Integrating popular cryptocurrencies into the platform while maintaining a high level of security for all transactions.'
+    },
+    {
+        title: 'User-Friendly Interface:', description: 'Developing an intuitive dashboard that allows users to easily manage and track their donations.'
+    },
+];
+export const giftitchallengesData = [
+    {
+        title: 'Secure Payment Processing:', description: 'Ensuring that all transactions on the platform are secure and user data is protected at all times.'
+    },
+    {
+        title: 'Trust and Community Building:', description: 'Integrating a review and rating system to build trust within the community and enhance the overall user experience.'
+    },
+    {
+        title: 'Efficient Search and Filter Options:', description: 'Developing advanced search and filter capabilities to help users quickly find the perfect gift among a wide range of options.'
+    },
+];
+export const zeusxchallengesData = [
+    {
+        title: 'Security Concerns:', description: 'The client needed a platform that ensured secure transactions to build trust among users.'
+    },
+    {
+        title: 'User Engagement: ', description: 'There was a need for features that would keep users engaged and encourage repeat transactions.'
+    },
+    {
+        title: 'Scalability Issues: ', description: 'The platform had to be scalable to handle a growing number of users and transactions without compromising performance.'
+    },
+];
+export const footeducationchallengesData = [
+    {
+        title: 'Content Accuracy: ', description: 'The client needed a platform that could deliver highly accurate and reliable medical information.'
+    },
+    {
+        title: 'User Accessibility:', description: 'There was a requirement for the platform to be easily navigable for users of all backgrounds, including patients and medical professionals.'
+    },
+    {
+        title: 'Multilingual Support: ', description: 'The platform needed to support multiple languages to cater to a global audience.'
+    },
+];
+export const upsurechallengesData = [
+    { title: 'Complex Insurance Management:', description: 'The client needed a solution to streamline the cumbersome process of managing multiple insurance policies.' },
+    { title: 'User Engagement:', description: 'Ensuring the platform was easy to use for busy entrepreneurs and business owners was a key requirement.' },
+    {
+        title: 'Automation Needs: ', description: 'The client required automated features to reduce the manual effort involved in managing insurance tasks.'
+    },
+];
+export const permitplacechallengesData = [
+    {
+        title: 'Complex Document Management: ', description: 'The client struggled with handling and organizing large volumes of documents for each project.'
+    },
+    {
+        title: 'Time-Consuming Plan Submittal:', description: 'Submitting plans and permits was a lengthy process that slowed down overall project timelines.'
+    },
+    {
+        title: 'Inaccurate Fee Calculations: ', description: 'Determining final fees accurately was a challenge due to varying requirements and regulations across different jurisdictions.'
+    },
+    {
+        title: 'Lack of Operational Cohesion: ', description: 'The client needed a more unified approach to manage various aspects of their operations seamlessly.'
+    },
+];
+export const souqofQatarchallengesData = [
+    {
+        title: 'Fragmented Marketplace:', description: 'The client needed a solution to bring together multiple retailers under one platform, providing users with easy access to product comparisons.'
+    },
+    { title: 'Lack of Transparency:', description: 'There was a need for clear and accurate information to help consumers make informed choices, something that was lacking in the market.' },
+    {
+        title: 'Scalability Issues', description: 'The client required a platform that could handle high traffic volumes, especially during peak shopping seasons.'
+    },
+];
+export const abimarbrokerschallengesData = [
+    {
+        title: 'Complex Brokerage Models:', description: ' The client needed a solution to simplify the traditionally complex brokerage models, making them more transparent and straightforward.'
+    },
+    {
+        title: 'Limited Ownership Opportunities:', description: 'There was a need for a platform that offered brokers and clients the chance to gain ownership, a rarity in the market.'
+    },
+    {
+        title: 'Stagnation in the Insurance Market: ', description: 'The existing market conditions were not conducive to innovation, creating a need for a platform that could facilitate change and support creative solutions.'
+    },
+];
+
 export const myndsoutcomesData = [
     {
         title: 'Funding Secured:', description: 'Mynd was able to raise a total of $204.9M in funding over 8 rounds through this platform developed by our talented team.'
@@ -2464,6 +2924,198 @@ export const myndsoutcomesData = [
     { title: 'Scalability: ', description: 'The cloud-based platform supported rapid growth and geographic expansion.' },
     { title: 'Data-Driven Decisions: ', description: 'Comprehensive analytics empowered Mynd with actionable insights, improving overall business performance.' }
 ];
+export const catalystoutcomesData = [
+    {
+        title: 'Operational Efficiency: ', description: 'Streamlined housing management and tenant communication processes.'
+    },
+    {
+        title: 'Scalability:', description: 'Cloud infrastructure supported Catalyst’s growth and operational demands.'
+    },
+    {
+        title: ' Data-Driven Insights:', description: 'Enhanced decision-making through comprehensive data analytics.'
+    },
+    { title: 'Improved Management: ', description: 'IoT solutions led to better property management and tenant experiences.' }
+];
+
+export const covaaioutcomesData = [
+    {
+        title: 'Operational Efficiency: ', description: 'The portal significantly reduced the time required to manage clients and generate proposals.'
+    },
+    {
+        title: 'Scalability:', description: 'The use of AWS ensured that the portal can easily scale as the client’s business grows.'
+    },
+    {
+        title: ' User Satisfaction', description: 'The new user interface led to higher satisfaction rates among brokers, customers, and underwriters.'
+    },
+    {
+        title: 'Improved Communication: ', description: 'Consistent and error-free communication across all parties involved.'
+    }
+];
+
+export const irccoutcomesData = [
+    {
+        title: 'Increased Accuracy in Reconciliation ', description: 'The new system reduced reconciliation errors by 85%, ensuring more accurate financial statements.'
+    },
+    {
+        title: 'Enhanced Data Processing Speed', description: 'Automation led to a 60% reduction in data processing time, allowing for quicker turnaround times in financial settlements.'
+    },
+    {
+        title: ' Improved User Engagement', description: 'The introduction of dashboards and analytics led to a 40% increase in user engagement, as retailers and LPs could now easily track and optimize their interactions.'
+    },
+    {
+        title: ' Scalable and Maintainable System', description: 'The modular design of the platform ensured that it could easily scale to accommodate future growth, with minimal maintenance required.'
+    }
+];
+export const angelflowoutcomesData = [
+    {
+        title: 'Increased Investor-Start-up Connections: ', description: 'The platform facilitated numerous successful connections between investors and start-ups.'
+    },
+    {
+        title: 'Improved Start-up Visibility:', description: 'Start-ups were able to attract more investors by showcasing their previous investments effectively.'
+    },
+    {
+        title: 'User Retention: ', description: 'The enhanced user interface led to higher user engagement and retention rates.'
+    },
+    {
+        title: ' Scalability', description: 'The platform was built to scale, accommodating a growing number of users and their needs.'
+    }
+];
+export const huntersoutcomesData = [
+    {
+        title: 'Increased User Engagement: ', description: 'The curated content and easy-to-use platform resulted in higher user engagement, with a growing subscriber base receiving weekly updates.'
+    },
+    {
+        title: 'Enhanced Project Visibility:', description: 'New and emerging NFT projects gained greater exposure through the platform’s application process and marketing services.'
+    },
+    {
+        title: 'Streamlined Information Flow: ', description: 'The delivery of curated lists via email and Telegram reduced information clutter, making it easier for users to access high-quality NFT opportunities.'
+    },
+    {
+        title: 'Improved Market Position: ', description: 'NFT Hunters established itself as a trusted source for NFT insights and a reliable marketing partner, strengthening its position in the NFT industry.'
+    }
+];
+export const juggernautoutcomesData = [
+    {
+        title: 'Enhanced Security:', description: 'The blockchain integration significantly improved the security of transactions, earning the trust of users and enhancing the platform’s reputation.'
+    },
+    {
+        title: 'Increased User Engagement:', description: 'The advanced trading and auction capabilities attracted a broader audience, including both novice and experienced users, driving higher engagement on the platform.'
+    },
+    {
+        title: 'Global Reach: ', description: 'The mobile-friendly interface expanded the platform’s accessibility, allowing users from around the world to participate in the NFT marketplace with ease.'
+    },
+    {
+        title: 'Competitive Market Position:', description: 'Juggernaut DeFi established itself as a key player in the DeFi and NFT industries, setting a new standard for what a comprehensive NFT platform should offer.'
+    }
+];
+export const commitoutcomesData = [
+    {
+        title: 'Increased Donor Trust:', description: 'The transparent blockchain integration significantly enhanced donor trust, as users could see exactly where their donations were going.'
+    },
+    {
+        title: 'Wider Cryptocurrency Adoption:', description: 'By supporting multiple cryptocurrencies, the platform attracted a broader audience, increasing the number of donations processed.'
+    },
+    {
+        title: 'Simplified Donation Management: ', description: 'The user-friendly dashboard made it easier for donors to manage their charitable activities, leading to higher user satisfaction and repeat donations.'
+    },
+    {
+        title: 'Stronger Market Position: ', description: 'Commit Good established itself as a leader in the charitable sector, setting a new standard for transparency and security in donation platforms.'
+    }
+];
+export const giftitoutcomesData = [
+    {
+        title: 'Enhanced User Trust and Security:', description: 'The secure payment processing system reassured users that their transactions were safe, leading to increased trust and higher conversion rates.'
+    },
+    {
+        title: 'Improved Community Engagement:', description: 'The reviews and ratings system fostered a sense of community and transparency, encouraging more users to participate and share their experiences.'
+    },
+    {
+        title: 'Streamlined Gift Selection Process:', description: 'The advanced search and filter options made it easier for users to find and purchase gifts, resulting in a more satisfying shopping experience and increased sales.'
+    },
+    {
+        title: 'Strong Market Presence: ', description: 'Gift It established itself as a leading online platform for gifting experiences in the UAE, attracting a growing number of users and sellers to its marketplace.'
+    }
+];
+export const zeusxoutcomesData = [
+    {
+        title: 'Increased User Trust:', description: 'The platform saw a significant increase in user registrations and transactions due to the robust security measures.'
+    },
+    {
+        title: 'Higher Engagement Rates:', description: 'The introduction of engagement tools resulted in higher user retention and repeat transactions.'
+    },
+    {
+        title: 'Scalability Achieved:  ', description: 'The platform efficiently managed a growing user base, maintaining performance and reliability.'
+    },
+    { title: 'Revenue Growth: ', description: 'The client experienced a notable increase in revenue from the platform due to the improved user experience and security features.' }
+];
+export const footeducationoutcomesData = [
+    {
+        title: 'Enhanced Credibility:', description: 'The platform became a trusted source for foot and ankle information, leading to increased user engagement and positive feedback.'
+    },
+    {
+        title: 'Improved User Experience: ', description: 'The redesigned interface and interactive tools resulted in higher user satisfaction and repeat visits.'
+    },
+    {
+        title: 'Global Reach: ', description: 'Multilingual support allowed the platform to serve a wider audience, significantly expanding its user base.'
+    },
+    {
+        title: 'Increased Traffic: ', description: 'The platform experienced a substantial increase in traffic due to its improved usability and the reliability of the content provided.'
+    }
+];
+
+export const upsureoutcomesData = [
+    {
+        title: ' Streamlined Processes:', description: 'The platform significantly reduced the time spent on insurance management, leading to greater operational efficiency for users.'
+    },
+    {
+        title: 'Improved User Adoption:', description: 'The intuitive design and user-friendly features resulted in high adoption rates among startups and small businesses.'
+    },
+    {
+        title: 'Enhanced Compliance:', description: 'Automated reminders ensured that businesses remained compliant with their insurance obligations, reducing the risk of uninsured periods.'
+    },
+    {
+        title: 'Business Growth Support:  ', description: 'By taking the hassle out of insurance management, Upsure allowed businesses to focus more on growth and less on administrative tasks.'
+    }
+];
+export const permitplaceoutcomesData = [
+    {
+        title: 'Increased Efficiency:  ', description: 'The new system reduced the time required for document collation and plan submittal by 40%.'
+    },
+    {
+        title: 'Enhanced Accuracy: ', description: 'The automated processes decreased errors in fee calculations and submissions by 50%.'
+    },
+    { title: 'Improved Client Satisfaction: ', description: 'Faster turnaround times and accurate fee estimates led to higher client approval and repeat business.' },
+    {
+        title: 'Streamlined Operations:  ', description: 'The unified platform brought together various aspects of the business, leading to smoother, more cohesive operations.'
+    }
+];
+export const souqofQataroutcomesData = [
+    {
+        title: ' Increased User Engagement:', description: 'The platform has seen a significant rise in user engagement due to its easy-to-use interface and comprehensive product listings.'
+    },
+    {
+        title: 'Higher Conversion Rates: ', description: 'Retailers on the platform have reported higher conversion rates as a result of better visibility and product comparison features.'
+    },
+    {
+        title: 'Expanded Market Reach: ', description: 'The client successfully extended their market reach, attracting both local and international retailers to the platform.'
+    },
+    {
+        title: 'Improved Consumer Trust: ', description: 'With transparent pricing and detailed product information, consumer trust in the platform has significantly increased.'
+    }
+];
+export const abimarbrokersoutcomesData = [
+    {
+        title: 'Increased Client Satisfaction:  ', description: 'The transparent and straightforward model has led to higher client satisfaction and trust.'
+    },
+    {
+        title: 'Enhanced Broker Autonomy:', description: 'Brokers on the platform now have greater autonomy, with the ability to gain ownership and control over their business.'
+    },
+    { title: 'Market Disruption: ', description: 'The platform has introduced a new way of doing business in the (re)insurance market, challenging traditional models.' },
+    {
+        title: 'Growth and Expansion: ', description: 'The client has seen significant growth and expansion, attracting new clients and brokers to the platform.'
+    }
+];
+
 
 
 export const retaildataImages = [
@@ -2471,7 +3123,43 @@ export const retaildataImages = [
 ]
 
 export const techStackImages = [
-    reacttile, angulaartile, vuejstile, nodetile, pythontile
+    tstile, nodetile, reacttile, angulaartile, googleanalyticstile
 ]
 
+export const catalysttechstackimages = [
+    reacttile, jquerytile, webflowtile, googleanalyticstile, tagmanagertile
+]
 
+export const covaaitechstackimages = [
+    nexttile, figmatile, nodetile, awstile
+]
+export const ircctechStackImages = [
+    pythontile, dockertile, reacttile, redistile, jenkinstile, djangotile, postgresstile
+]
+export const angelflowtechStackImages = [
+    csstile, mjtile, reacttile, figmatile, nodetile, javatile, postgresstile, tstile
+]
+export const juggernauttechStackImages = [
+    javatile, vuejstile, bootstraptile
+]
+export const committechStackImages = [
+    reacttile, dojotile, railstile
+]
+export const giftittechStackImages = [
+    reacttile
+]
+export const zeusxtechStackImages = [
+    reacttile, dockertile, djangotile, pythontile, awstile, postgresstile
+]
+export const footeducationtechStackImages = [
+    wordpresstile, bootstraptile, javatile, mysqltile, awstile, phptile
+]
+export const upsuretechStackImages = [
+    reacttile, dockertile, javatile, nodetile, awstile, postgresstile
+]
+export const permittechStackImages = [
+    reacttile, dockertile, mysqltile, laraveltile, awstile
+]
+export const qatarStackImages = [
+    reacttile, nodetile, mongodbtile, awstile
+]

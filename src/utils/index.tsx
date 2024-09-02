@@ -197,6 +197,27 @@ export { default as awstile } from "../../public/images/aws-tile.svg"
 export { default as azuretile } from "../../public/images/azure.svg"
 export { default as mysqltile } from "../../public/images/mysql.svg"
 export { default as phptile } from "../../public/images/php.svg"
+export { default as tstile } from "../../public/images/ts.svg"
+export { default as googleanalyticstile } from "../../public/images/googleanalyticstile.svg"
+export { default as tagmanagertile } from "../../public/images/tagmanagertile.svg"
+export { default as webflowtile } from "../../public/images/webflowtile.svg"
+export { default as jquerytile } from "../../public/images/jquerytile.svg"
+export { default as figmatile } from "../../public/images/figmatile.svg"
+export { default as nexttile } from "../../public/images/nexttile.svg"
+
+export { default as dockertile } from "../../public/images/dockertile.svg"
+export { default as redistile } from "../../public/images/redistile.svg"
+export { default as jenkinstile } from "../../public/images/jenkinstile.svg"
+export { default as djangotile } from "../../public/images/djangotile.svg"
+export { default as csstile } from "../../public/images/csstile.svg"
+export { default as mjtile } from "../../public/images/mjtile.svg"
+export { default as javatile } from "../../public/images/javatile.svg"
+export { default as bootstraptile } from "../../public/images/bootstraptile.svg"
+export { default as vuetile } from "../../public/images/vuetile.svg"
+export { default as dojotile } from "../../public/images/dojotile.svg"
+export { default as railstile } from "../../public/images/railstile.svg"
+export { default as wordpresstile } from "../../public/images/wordpress.svg"
+export { default as laraveltile } from "../../public/images/laraveltile.svg"
 export { default as caseone } from "../../public/images/case-one.png"
 export { default as casetwo } from "../../public/images/case-two.png"
 export { default as casethree } from "../../public/images/case-three.png"
@@ -205,26 +226,48 @@ export { default as IconWeb1 } from "../../public/images/icon-web-2.svg"
 export { default as IconWeb2 } from "../../public/images/icon-web-1.svg"
 export { default as IconWeb3 } from "../../public/images/icon-web-3.svg"
 export { default as IconWeb4 } from "../../public/images/icon-web-4.svg"
-
 export { default as myndsteam } from "../../public/images/myndsteam.svg"
 export { default as myndsduration } from "../../public/images/myndsduration.svg"
 export { default as myndsindustry } from "../../public/images/myndsindustry.svg"
+export { default as myndsiconOne } from "../../public/images/myndsiconOne.svg"
+export { default as myndsiconTwo } from "../../public/images/myndsiconTwo.svg"
+export { default as myndsiconThree } from "../../public/images/myndsiconThree.svg"
+export { default as catalysticonFour } from "../../public/images/catalysticonFour.svg"
+export { default as covaiconOne } from "../../public/images/covaiconOne.svg"
+export { default as covaiconTwo } from "../../public/images/covaiconTwo.svg"
+export { default as covaiconThree } from "../../public/images/covaiconThree.svg"
+export { default as ircciconOne } from "../../public/images/ircciconOne.svg"
+export { default as ircciconTwo } from "../../public/images/ircciconTwo.svg"
+export { default as ircciconThree } from "../../public/images/ircciconThree.svg"
+export { default as angelflowiconOne } from "../../public/images/angelflowiconOne.svg"
+export { default as angelflowiconTwo } from "../../public/images/angelflowiconTwo.svg"
+export { default as angelflowiconThree } from "../../public/images/angelflowiconThree.svg"
+export { default as huntersiconOne } from "../../public/images/huntersiconOne.svg"
+export { default as huntersiconTwo } from "../../public/images/huntersiconTwo.svg"
+export { default as huntersiconThree } from "../../public/images/huntersiconThree.svg"
+export { default as juggernauticonOne } from "../../public/images/juggernauticonOne.svg"
+export { default as juggernauticonTwo } from "../../public/images/juggernauticonTwo.svg"
+export { default as juggernauticonThree } from "../../public/images/juggernauticonThree.svg"
+export { default as commiticonOne } from "../../public/images/commiticonOne.svg"
+export { default as commiticonTwo } from "../../public/images/commiticonTwo.svg"
+export { default as commiticonThree } from "../../public/images/commiticonThree.svg"
+export { default as gifticonOne } from "../../public/images/gifticonOne.svg"
+export { default as gifticonTwo } from "../../public/images/gifticonTwo.svg"
+export { default as gifticonThree } from "../../public/images/gifticonThreee.svg"
+export { default as zeusxiconOne } from "../../public/images/zeusxiconOne.svg"
+export { default as zeusxiconTwo } from "../../public/images/zeusxiconTwo.svg"
+export { default as zeusxiconThree } from "../../public/images/zeusxiconThree.svg"
+export { default as footeducationiconOne } from "../../public/images/zeusxiconOne.svg"
+export { default as footeducationiconTwo } from "../../public/images/zeusxiconTwo.svg"
+export { default as footeducationiconThree } from "../../public/images/zeusxiconThree.svg"
 
+export { default as qatariconOne } from "../../public/images/qatariconOne.svg"
+export { default as qatariconTwo } from "../../public/images/qatariconTwo.svg"
+export { default as qatariconThree } from "../../public/images/qatariconThree.svg"
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+export { default as brokericonOne } from "../../public/images/brokericonOne.svg"
+export { default as brokericonTwo } from "../../public/images/brokericonTwo.svg"
+export { default as brokericonThree } from "../../public/images/brokericonThree.svg"
 
 
 

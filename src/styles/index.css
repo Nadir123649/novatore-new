@@ -326,6 +326,10 @@ body {
   left: -14px !important;
 }
 
+.toastbody {
+  z-index: 1111 !important;
+}
+
 /* Responsiveness */
 @media only screen and (max-width: 1400px) {
 
