@@ -3,24 +3,24 @@ import { Col, Container, Row } from 'react-bootstrap';
 import DataCard from './DataCard';
 import { useState, useEffect } from 'react';
 
+interface DataItem {
+    title: string;
+    description?: string;
+    icon: string;
+    listItems?: string[];
+}
 interface DataServicesSectionProps {
     heading: string;
     headingBlue?: string;
     needsMoreTitle?: string;
     cardMinHeight?: any;
     type?: any;
-    data: {
-        title: string;
-        description?: string;
-        icon: string;
-        listItems?: string[];
-    }[];
-    textalign?: any;
+    data?: DataItem[];
+    textalign?: "left" | "center" | "right";
 }
 
-const DataServicesSection: React.FC<DataServicesSectionProps> = ({ textalign, heading, headingBlue, data, needsMoreTitle, type, cardMinHeight }) => {
 
-
+const DataServicesSection: React.FC<DataServicesSectionProps> = ({ textalign = "left", heading, headingBlue, data = [], needsMoreTitle, type = "multiple", cardMinHeight }) => {
     const [isVisible, setIsVisible] = useState(false);
     const [hasAnimated, setHasAnimated] = useState(false);
 
@@ -41,6 +41,7 @@ const DataServicesSection: React.FC<DataServicesSectionProps> = ({ textalign, he
             window.removeEventListener("scroll", handleScroll);
         };
     }, [hasAnimated]);
+
 
     return (
         <section id="dataservice-section" className={`${isVisible ? "fadeIn" : "opacity-0"} pb-20 pt-10`}>
