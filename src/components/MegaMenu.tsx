@@ -51,9 +51,9 @@ const MegaMenu: React.FC<MegaMenuProps> = ({ activeMenu, activeLink }) => {
               <div key={listing.id} className="d-flex flex-col">
                 <a
                   onClick={() => handleNavigation(listing.link)}
-                  className={`pt-2 hover:text-[#0a58ca] cursor-default ${isLinkActive(listing.link) || listing.link === activeLink ? "text-[#FF0000]" : "text-[#2776EA]"}`}
+                  className={`pt-2  cursor-default ${isLinkActive(listing.link) || listing.link === activeLink ? "text-[#FF0000]" : "text-[#2776EA]"}`}
                 >
-                  <h1 className="font-semibold text-lg text-[18px] inline cursor-pointer">{listing.heading}</h1>
+                  <h1 className="font-semibold text-lg text-[18px] inline cursor-pointer hover:text-[#0a58ca]">{listing.heading}</h1>
                 </a>
 
                 <ul className="list-none px-0">
@@ -80,10 +80,10 @@ const MegaMenu: React.FC<MegaMenuProps> = ({ activeMenu, activeLink }) => {
               <div key={feature.id} className="d-flex flex-col">
                 <a
                   onClick={() => handleNavigation(feature.link)}
-                  className={`font-semibold text-lg pt-2 hover:text-[#0a58ca] cursor-default ${isLinkActive(feature.link) || feature.link === activeLink ? "text-[#FF0000]" : "text-[#2776EA]"}`}
+                  className={`font-semibold text-lg pt-2 cursor-default ${isLinkActive(feature.link) || feature.link === activeLink ? "text-[#FF0000]" : "text-[#2776EA]"}`}
                 >
                   {feature.heading ? (
-                    <h1 className="font-semibold text-lg  inline cursor-pointer">
+                    <h1 className="font-semibold text-lg  inline cursor-pointer hover:text-[#0a58ca] ">
                       {feature.heading}
                     </h1>
                   ) : (
@@ -116,9 +116,9 @@ const MegaMenu: React.FC<MegaMenuProps> = ({ activeMenu, activeLink }) => {
                 <div key={list.id} className="d-flex flex-col">
                   <a
                     onClick={() => handleNavigation(list.link)}
-                    className={`font-semibold text-lg pt-[9px] hover:text-[#0a58ca] cursor-default ${isLinkActive(list.link) || list.link === activeLink ? "text-[#FF0000]" : "text-[#2776EA]"}`}
+                    className={`font-semibold text-lg pt-[9px]  cursor-default ${isLinkActive(list.link) || list.link === activeLink ? "text-[#FF0000]" : "text-[#2776EA]"}`}
                   >
-                    <h1 className="font-semibold text-lg inline cursor-pointer ">{list.heading}</h1>
+                    <h1 className="font-semibold text-lg inline cursor-pointer hover:text-[#0a58ca] ">{list.heading}</h1>
 
                   </a>
                   <ul className="list-none px-0">

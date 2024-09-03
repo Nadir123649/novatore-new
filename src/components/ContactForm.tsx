@@ -123,6 +123,9 @@ const ContactForm = () => {
             setIsLoading(true);
             toast.success("Submitting...");
 
+            const fullPhoneNumber = `${selectedCountry?.code || ''}-${data.contact}`;
+            data.contact = fullPhoneNumber;
+
             const response = await fetch("/api/email", {
                 method: "POST",
                 headers: { "Content-type": "application/json" },
@@ -268,7 +271,7 @@ const ContactForm = () => {
                                         <Form.Group className="flex flex-col gap-1">
                                             <Form.Label className="text-[#645555] text-[18px] font-medium not-italic">Phone Number</Form.Label>
 
-                                            <div className="phone-container bg-white form-input rounded-[16px] border border-solid border-[#B7B7B7]   text-black p-[14px] text-[18px] not-italic font-normal"
+                                            <div className="phone-container bg-white form-input rounded-[16px] border border-solid border-[#B7B7B7]  text-black p-[14px] text-[18px] not-italic font-normal"
                                             >
                                                 <input
                                                     type="tel"

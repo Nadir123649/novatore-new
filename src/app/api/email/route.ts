@@ -7,7 +7,7 @@ export const POST = async (request: NextRequest) => {
     const mailOptions = {
       from: process.env.NEXT_PUBLIC_FROM_EMAIL || "info@novatoresols.com",
       to: process.env.NEXT_PUBLIC_TO_EMAIL || "info@novatoresols.com",
-      subject: 'New Contact Form Submission',
+      subject: "New Contact Form Submission",
       text: `Hi,
           You have received a new submission from the contact form. Here are the details:
 
@@ -17,11 +17,11 @@ export const POST = async (request: NextRequest) => {
           - Country: ${req.country}
           - Phone Number: ${req.phone}
           - Message: ${req.message}
-          - Subscribe for Updates: ${req.subscribe ? 'Yes' : 'No'}
+          - Subscribe for Updates: ${req.subscribe ? "Yes" : "No"}
 
           Thanks
-      `
-    }
+      `,
+    };
     await sendEmail(mailOptions);
     return NextResponse.json({ message: "Email successfuly sent" });
   } catch (err) {

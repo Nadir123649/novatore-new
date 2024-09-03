@@ -1032,9 +1032,9 @@ export const juggernautcaseData = [
 ];
 export const commitcaseData = [
     {
+        icon: commiticonOne,
         title: 'Blockchain-Powered Transparency:',
         description: 'We developed a system where every donation is recorded on the Polygon blockchain, providing donors with real-time visibility into how their contributions are being utilized. This feature reassures donors that their funds are being used as intended and builds trust in the platform.',
-        icon: commiticonOne,
     },
     {
         title: 'Secure Cryptocurrency Donation Processing:',
