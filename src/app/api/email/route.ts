@@ -5,9 +5,9 @@ export const POST = async (request: NextRequest) => {
   const req = await request.json();
   try {
     const mailOptions = {
-      from: process.env.NEXT_PUBLIC_FROM_EMAIL || "info@novatoresols.com",
-      to: process.env.NEXT_PUBLIC_TO_EMAIL || "info@novatoresols.com",
-      subject: "New Contact Form Submission",
+      from: process.env.NEXT_PUBLIC_FROM_EMAIL || "repotest910@gmail.com",
+      to: process.env.NEXT_PUBLIC_TO_EMAIL || "repotest910@gmail.com",
+      subject: 'New Contact Form Submission',
       text: `Hi,
           You have received a new submission from the contact form. Here are the details:
 

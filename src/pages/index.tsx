@@ -6,9 +6,20 @@ import Services from "@/components/Services";
 import TrendingNow from "@/components/TrendingNow";
 import WhyChooseUs from "@/components/WhyChooseUs";
 import { NextPage } from "next";
-import { useState } from "react";
+import { useEffect, useState } from "react";
+import { client } from "@/sanity/lib/client";
 
 const Home: NextPage = () => {
+  const getAllAuthors = async () => {
+    const res = await client.fetch("*[_type== 'author']");
+    console.log(res)
+    return res;
+  }
+
+  useEffect(() => {
+    getAllAuthors()
+  })
+
   const [activeLink, setActiveLink] = useState('');
   return (
     <>
