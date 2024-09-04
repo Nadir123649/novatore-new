@@ -15,6 +15,7 @@ interface LayoutProps {
 const Layout: React.FC<LayoutProps> = ({ children, title = 'Novatore Sols', description = 'Setting new standards in technology with unmatchable code.', showContactForm }) => {
     return (
         <>
+
             <Head>
                 <title>{title}</title>
                 <meta name="description" content={description} />

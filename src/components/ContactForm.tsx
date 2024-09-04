@@ -106,8 +106,6 @@ const ContactForm = () => {
         resolver: zodResolver(schema),
     });
 
-
-
     const handleCountryChange = (selectedOption: any) => {
         const country = countries.find(c => c.name === selectedOption?.value);
         if (country) {

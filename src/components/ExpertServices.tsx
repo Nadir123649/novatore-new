@@ -2,6 +2,7 @@ import { FC } from 'react';
 import Image from 'next/image';
 import { Col, Container, Row } from 'react-bootstrap';
 import { useState, useEffect } from 'react';
+import Link from 'next/link';
 interface ExpertServicesProps {
     needsTitle?: string;
     needsTitleBlue?: string;
@@ -10,6 +11,10 @@ interface ExpertServicesProps {
     needsMoreTitle?: string;
     needsMoreTitleblue?: string;
     spantitle?: string;
+    viewbutton?: any;
+    casestudyicon?: any;
+    viewlogo?: any;
+    link?: string;
 
 }
 
@@ -20,7 +25,11 @@ const ExpertServices: FC<ExpertServicesProps> = ({
     NeedsImage,
     needsMoreTitle,
     needsMoreTitleblue,
-    spantitle
+    spantitle,
+    viewbutton,
+    casestudyicon,
+    link = '#',
+    viewlogo,
 }) => {
 
     const [isVisible, setIsVisible] = useState(false);
@@ -45,7 +54,7 @@ const ExpertServices: FC<ExpertServicesProps> = ({
     }, [hasAnimated]);
 
     return (
-        <section className='needs-section py-[10px] md:py-20 bg-center bg-no-repeat bg-cover ' id='needs-section'>
+        <section className='needs-section py-[10px] md:py-20 bg-center bg-no-repeat bg-cover overflow-x-hidden' id='needs-section'>
             <Container>
                 <Row className='relative'>
                     <Col
@@ -69,6 +78,7 @@ const ExpertServices: FC<ExpertServicesProps> = ({
                     <Col lg={8} md={12} xs={12} className={`${isVisible ? "animate-slideLeft" : "opacity-0 translate-x-full"
                         } transition-transform duration-500 ease-out needs-description rounded-[16px]  bg-[#E2EEFF] min-h-[554px] items-center flex max-h-[554px] h-full shadow-sm `} >
                         <div className="needs-content max-w-[760px] pl-[160px] h-full flex flex-col justify-center">
+                            {viewbutton && <Image src={casestudyicon} alt="Needs Image" className="pb-3" width={105} height={25} />}
                             <h2 className='text-black text-[32px] md:text-[32px] capitalize font-semibold tracking-[0.8px] w-full mb-[24px] leading-tight'>
                                 {needsTitle} <span className='text-[#2776EA]'>{needsTitleBlue}</span> {spantitle} <span className='text-[#2776EA]'>{needsMoreTitleblue}</span>
                                 {needsMoreTitle ? <span> {needsMoreTitle}</span> : null}
@@ -76,6 +86,14 @@ const ExpertServices: FC<ExpertServicesProps> = ({
                             <p className='text-black text-base md:text-[18px] pb-0 mb-0 not-italic font-normal leading-6 md:leading-[30px]  text-left md:text-justify'>
                                 {needsDescription}
                             </p>
+                            {viewbutton &&
+                                <Link href={link}>
+                                    <button
+                                        className="mt-4 max-w-[160px] rounded-[16px] px-[24px] py-[16px]  text-[#2776EA] border-1 border-[#2776EA]  text-[18px] transition-all duration-300 ease-in-out hover:bg-blue-500 hover:text-white hover:border-transparent "
+                                    >
+                                        View  More
+                                    </button>
+                                </Link>}
                         </div>
                     </Col>
                 </Row>

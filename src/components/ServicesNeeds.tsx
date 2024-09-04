@@ -1,6 +1,8 @@
 import { FC, useState, useEffect } from 'react';
 import Image from 'next/image';
-import { Col, Container, Row } from 'react-bootstrap';
+import { Button, Col, Container, Row } from 'react-bootstrap';
+import { viewport } from 'next-sanity/studio';
+import Link from 'next/link';
 
 interface ServicesNeedsProps {
     needsTitle?: string;
@@ -8,6 +10,10 @@ interface ServicesNeedsProps {
     needsDescription: string;
     NeedsImage: string;
     needsMoreTitle?: string;
+    viewbutton?: any;
+    casestudyicon?: any;
+    viewlogo?: any;
+    link?: string;
 }
 
 const ServicesNeeds: FC<ServicesNeedsProps> = ({
@@ -15,7 +21,12 @@ const ServicesNeeds: FC<ServicesNeedsProps> = ({
     needsTitleBlue,
     needsDescription,
     NeedsImage,
-    needsMoreTitle
+    needsMoreTitle,
+    viewbutton,
+    casestudyicon,
+    link = '#',
+
+    viewlogo
 }) => {
 
     const [isVisible, setIsVisible] = useState(false);
@@ -42,7 +53,7 @@ const ServicesNeeds: FC<ServicesNeedsProps> = ({
 
 
     return (
-        <section id='servicesneed-section' className='needs-section py-[10px] md:py-20 bg-center bg-no-repeat bg-cover'>
+        <section id='servicesneed-section' className='needs-section py-[10px] md:py-20 bg-center bg-no-repeat bg-cover overflow-x-hidden' >
             <Container>
                 <Row className='relative'>
                     <Col
@@ -52,6 +63,7 @@ const ServicesNeeds: FC<ServicesNeedsProps> = ({
                         className={` ${isVisible ? "animate-slideRight" : "opacity-0 translate-x-full"} transition-transform duration-500 ease-out needs-banner bg-[#E2EEFF] min-h-[554px] flex items-center max-h-[554px] h-full rounded-[16px] shadow-sm`}
                     >
                         <div className="needs-content max-w-[700px] flex flex-col justify-center px-[44px]">
+                            {viewbutton && <Image src={casestudyicon} alt="Needs Image" className="pb-3" width={105} height={25} />}
                             <h2 className='text-black text-[32px] md:text-[32px] capitalize font-semibold tracking-[0.8px] w-full mb-[24px] leading-tight'>
                                 {needsTitle} <span className='text-[#2776EA]'>{needsTitleBlue}</span>
                                 {needsMoreTitle ? <span> {needsMoreTitle}</span> : null}
@@ -59,6 +71,15 @@ const ServicesNeeds: FC<ServicesNeedsProps> = ({
                             <p className='text-black text-base md:text-[18px] not-italic font-normal mb-0 leading-6 md:leading-[30px] text-left md:text-justify'>
                                 {needsDescription}
                             </p>
+                            {viewbutton &&
+                                <Link href={link}>
+                                    <button
+                                        className="mt-4 max-w-[160px] rounded-[16px] px-[24px] py-[16px]  text-[#2776EA] border-1 border-[#2776EA]  text-[18px] transition-all duration-300 ease-in-out hover:bg-blue-500 hover:text-white hover:border-transparent "
+                                    >
+                                        View  More
+                                    </button>
+                                </Link>}
+
                         </div>
                     </Col>
                     <Col

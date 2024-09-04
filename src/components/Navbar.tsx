@@ -75,7 +75,7 @@ const Navbar = () => {
     const currentScrollY = window.scrollY;
     if (currentScrollY > lastScrollY) {
       setIsHeaderVisible(false);
-      setActiveMenu(null); // Close the mega menu when scrolling down
+      setActiveMenu(null);
       setClickedMenu(null);
       setSearchMenuOpen(false);
     } else {
