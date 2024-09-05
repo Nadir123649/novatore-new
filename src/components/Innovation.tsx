@@ -58,7 +58,7 @@ const Innovation: React.FC<InnovationProps> = ({ className }) => {
   const [isVisible, setIsVisible] = useState(false);
   const [hasAnimated, setHasAnimated] = useState(false);
   const totalSlides = blogData.length;
-  const slidesToShow = 2.3;
+  const slidesToShow = 2.95;
 
   const settings = {
     dots: false,
