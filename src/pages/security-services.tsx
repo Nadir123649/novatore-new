@@ -9,7 +9,7 @@ import ExpertServices from "@/components/ExpertServices";
 
 const SecurityServices: NextPage = () => {
     return (
-        <Layout showContactForm={true} title="Novatore Sols - Security Services" description="Welcome to Novatore Sols, setting new standards in technology with unmatchable code.">
+        <Layout showContactForm={true} title="Novatore Solutions - Security Services" description="Welcome to Novatore Solutions, setting new standards in technology with unmatchable code.">
             <div className="overflow-x-hidden">
                 <HeroBanner bannerHeading="Protecting Your Digital Frontier: Comprehensive IT Security Services" pagetitle="Cybersecurity" needsMoreTitle="Get in Touch" previewImage="/images/securityservice-banner.png" maxwidth="1100px" />
                 <ServicesNeeds needsTitle="Explore Our " needsTitleBlue="Cybersecurity Solutions" needsMoreTitle="" NeedsImage="/images/cybeersecurity-solutions.png"

@@ -12,13 +12,14 @@ interface LayoutProps {
     showContactForm?: any;
 }
 
-const Layout: React.FC<LayoutProps> = ({ children, title = 'Novatore Sols', description = 'Setting new standards in technology with unmatchable code.', showContactForm }) => {
+const Layout: React.FC<LayoutProps> = ({ children, title = 'Novatore Solutions', description = 'Setting new standards in technology with unmatchable code.', showContactForm }) => {
     return (
         <>
 
             <Head>
                 <title>{title}</title>
                 <meta name="description" content={description} />
+                <meta name="keywords" content="Next.js, React, SEO, meta tags, keywords" />
                 <link rel="icon" href="/favicon.ico" />
             </Head>
             <Navbar />

@@ -9,7 +9,7 @@ import CaseStudiesSlider from "@/components/CaseStudiesSlider";
 
 const Entertainment: NextPage = () => {
     return (
-        <Layout showContactForm={true} title="Novatore Sols - Entertainment" description="Welcome to Novatore Sols, setting new standards in technology with unmatchable code.">
+        <Layout showContactForm={true} title="Novatore Solutions - Entertainment" description="Welcome to Novatore Solutions, setting new standards in technology with unmatchable code.">
             <div className="overflow-x-hidden">
                 <HeroBanner bannerHeading="Your Partner in Entertainment Innovation" needsMoreTitle={true} previewImage="/images/entertainment-banner.png" pagetitle="Entertainment" />
                 <ServicesNeeds needsTitleBlue="Advanced Solutions" needsMoreTitle=" to Meet Evolving Consumer Demands in Entertainment" NeedsImage="/images/entertainment-image-right.png"

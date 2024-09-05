@@ -260,25 +260,30 @@ export { default as zeusxiconThree } from "../../public/images/zeusxiconThree.sv
 export { default as footeducationiconOne } from "../../public/images/zeusxiconOne.svg"
 export { default as footeducationiconTwo } from "../../public/images/zeusxiconTwo.svg"
 export { default as footeducationiconThree } from "../../public/images/zeusxiconThree.svg"
-
 export { default as qatariconOne } from "../../public/images/qatariconOne.svg"
 export { default as qatariconTwo } from "../../public/images/qatariconTwo.svg"
 export { default as qatariconThree } from "../../public/images/qatariconThree.svg"
-
 export { default as brokericonOne } from "../../public/images/brokericonOne.svg"
 export { default as brokericonTwo } from "../../public/images/brokericonTwo.svg"
 export { default as brokericonThree } from "../../public/images/brokericonThree.svg"
-
-
-
-
-
-
-
-
-
-
-
+export { default as oneH2iconOne } from "../../public/images/oneH2iconOne.svg"
+export { default as oneH2iconTwo } from "../../public/images/oneH2iconTwo.svg"
+export { default as oneH2iconThree } from "../../public/images/oneH2iconThree.svg"
+export { default as alphaiconOne } from "../../public/images/alphaiconOne.svg"
+export { default as alphaiconTwo } from "../../public/images/alphaiconTwo.svg"
+export { default as alphaiconThree } from "../../public/images/alphaiconThree.svg"
+export { default as terrascopeiconOne } from "../../public/images/terrascopeiconOne.svg"
+export { default as terrascopeiconTwo } from "../../public/images/terrascopeiconTwo.svg"
+export { default as terrascopeiconThree } from "../../public/images/terrascopeiconThree.svg"
+export { default as airbolticonOne } from "../../public/images/airbolticonOne.svg"
+export { default as airbolticonTwo } from "../../public/images/airbolticonTwo.svg"
+export { default as airbolticonThree } from "../../public/images/airbolticonThree.svg"
+export { default as dwpiconOne } from "../../public/images/dwpiconOne.svg"
+export { default as dwpiconTwo } from "../../public/images/dwpiconTwo.svg"
+export { default as dwpiconThree } from "../../public/images/dwpiconThree.svg"
+export { default as ispyariconOne } from "../../public/images/ispyariconOne.svg"
+export { default as ispyariconTwo } from "../../public/images/ispyariconTwo.svg"
+export { default as ispyariconThree } from "../../public/images/ispyariconThree.svg"
 
 
 

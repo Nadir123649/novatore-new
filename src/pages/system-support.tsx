@@ -10,7 +10,7 @@ import ExpertServices from "@/components/ExpertServices";
 
 const SystemSupport: NextPage = () => {
     return (
-        <Layout showContactForm={true} title="Novatore Sols - System Support" description="Welcome to Novatore Sols, setting new standards in technology with unmatchable code.">
+        <Layout showContactForm={true} title="Novatore Solutions - System Support" description="Welcome to Novatore Solutions, setting new standards in technology with unmatchable code.">
             <div className="overflow-x-hidden">
                 <HeroBanner bannerHeading="Expert System Support to Ensure Seamless IT Performance" pagetitle="Transformative Solutions" needsMoreTitle="Get in Touch" previewImage="/images/system-support-banner.png" maxwidth="1100px" />
                 <ServicesNeeds needsTitle="IT Support Services for" needsTitleBlue="Software Businesses" NeedsImage="/images/software-business.png"

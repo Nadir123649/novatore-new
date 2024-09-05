@@ -18,7 +18,7 @@ import { covaaichallengesData, covaaioutcomesData, covaAIHeadlines } from "@/con
 
 const CovaAI: NextPage = () => {
     return (
-        <Layout showContactForm={false} title="Novatore Sols - Retail" description="Welcome to Novatore Sols, setting new standards in technology with unmatchable code.">
+        <Layout showContactForm={false} title="Novatore Solutions - Retail" description="Welcome to Novatore Solutions, setting new standards in technology with unmatchable code.">
             <div className="overflow-x-hidden">
                 <HeroBanner bannerHeading="The Vision and Execution Behind " spanbluetext="Cova AI’s" needsMoreTitle={true} previewImage="/images/covaherobanner.png" pagetitle="" maxwidth="1100px" />
                 <HeadlineBanner headlinesData={covaAIHeadlines} />

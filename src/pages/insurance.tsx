@@ -11,7 +11,7 @@ import CaseStudiesSlider from "@/components/CaseStudiesSlider";
 
 const Insurance: NextPage = () => {
     return (
-        <Layout showContactForm={true} title="Novatore Sols - Insurance" description="Welcome to Novatore Sols, setting new standards in technology with unmatchable code.">
+        <Layout showContactForm={true} title="Novatore Solutions - Insurance" description="Welcome to Novatore Solutions, setting new standards in technology with unmatchable code.">
             <div className="overflow-x-hidden">
                 <HeroBanner bannerHeading="Our Commitment in Insurance Technology" needsMoreTitle={true} previewImage="/images/insurance-banner.png" pagetitle="Insurance" maxwidth="800px" />
                 <ServicesNeeds needsTitle="Delivering Excellence in Insurance Technology for " needsTitleBlue="Over 12 Years" NeedsImage="/images/insurance-image-right.png"

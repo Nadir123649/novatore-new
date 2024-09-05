@@ -18,7 +18,7 @@ import { juggernautchallengesData, juggernautoutcomesData, angelflowHeadlines } 
 
 const JuggernautDeFi: NextPage = () => {
     return (
-        <Layout showContactForm={false} title="Novatore Sols - Retail" description="Welcome to Novatore Sols, setting new standards in technology with unmatchable code.">
+        <Layout showContactForm={false} title="Novatore Solutions - Retail" description="Welcome to Novatore Solutions, setting new standards in technology with unmatchable code.">
             <div className="overflow-x-hidden">
                 <HeroBanner beforeyellowtext="Juggernaut DeFi:" bannerHeading="Redefining the NFT Experience with a Comprehensive Blockchain Platform" needsMoreTitle={true} previewImage="/images/juggernautherobanner.png" pagetitle="" maxwidth="1100px" />
                 <HeadlineBanner headlinesData={angelflowHeadlines} />

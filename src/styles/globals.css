@@ -467,3 +467,72 @@ input:-webkit-autofill:active {
     outline: none !important;
 
 }
+
+.blog-card {
+    border-radius: 16px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    height: 500px;
+    position: relative;
+    transition: all 0.4s ease-in-out;
+    cursor: pointer;
+}
+
+.blog-image {
+    height: 300px;
+    overflow: hidden;
+    transition: height 0.4s ease-in-out;
+}
+
+.blog-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.4s ease-in-out;
+}
+
+.blog-card:hover .blog-image {
+    height: 200px;
+    transition: height 0.4s ease-in-out;
+}
+
+.blog-content {
+    padding: 16px;
+    position: absolute;
+    top: 290px;
+    transition: top 0.4s ease-in-out;
+}
+
+.blog-card:hover .blog-content {
+    top: 200px;
+    transition: top 0.4s ease-in-out;
+}
+
+.description {
+    font-size: 14px;
+    color: #1B232E;
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: opacity 0.4s ease-in-out, max-height 0.4s ease-in-out;
+}
+
+.blog-card:hover .description {
+    max-height: 80px;
+    opacity: 1;
+}
+
+.read-more {
+    font-size: 16px;
+    color: #2776EA;
+    text-decoration: underline;
+    margin-top: 20px;
+    position: absolute;
+    bottom: 16px;
+    left: 16px;
+    opacity: 0;
+    transition: opacity 0.4s ease-in-out;
+}
+.blog-card:hover .read-more {
+    opacity: 1;
+}

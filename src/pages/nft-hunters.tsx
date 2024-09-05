@@ -1,12 +1,7 @@
-import Enterprise from "@/components/Enterprise";
 import HeroBanner from "@/components/HeroBanner";
-import Innovation from "@/components/Innovation";
-import ServicesNeeds from "@/components/ServicesNeeds";
 import { NextPage } from "next";
-import CloudOps from "@/components/CloudOps";
 import Layout from "@/components/Layout";
 import TechStack from "@/components/tech-stack";
-import CaseStudiesSlider from "@/components/CaseStudiesSlider";
 import HeadlineBanner from "@/components/HeadlineBanner";
 import CaseBackground from "@/components/CaseBackground";
 import CaseChallanges from "@/components/CaseChallanges";
@@ -18,7 +13,7 @@ import { hunterschallengesData, huntersoutcomesData, nftHuntersHeadlines } from 
 
 const NFTHunters: NextPage = () => {
     return (
-        <Layout showContactForm={false} title="Novatore Sols - Retail" description="Welcome to Novatore Sols, setting new standards in technology with unmatchable code.">
+        <Layout showContactForm={false} title="Novatore Solutions - Retail" description="Welcome to Novatore Solutions, setting new standards in technology with unmatchable code.">
             <div className="overflow-x-hidden">
                 <HeroBanner beforeyellowtext="NFT Hunters:" bannerHeading="Elevating the NFT Market with Curated Weekly Insights and Marketing Solutions" needsMoreTitle={true} previewImage="/images/huntersherobanner.png" pagetitle="" maxwidth="1100px" />
                 <HeadlineBanner headlinesData={nftHuntersHeadlines} />
@@ -28,7 +23,6 @@ const NFTHunters: NextPage = () => {
                 <TechStack title="Tech Stacks" images={angelflowtechStackImages} />
                 <DataServicesSection heading="Solutions" data={nftHunterscaseData} textalign="left" />
                 <CaseOutcomes outcomesBanner={"/images/huntersoutcomesbanner.png"} outcomes={huntersoutcomesData} />
-
             </div>
         </Layout>
     );

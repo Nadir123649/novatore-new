@@ -17,7 +17,7 @@ import { catalysttechstackimages, catalystHeadlines } from "@/constants/indesx";
 import { catalystchallengesData, catalystoutcomesData } from "@/constants/indesx";
 const CatalystHousing: NextPage = () => {
     return (
-        <Layout showContactForm={true} title="Novatore Sols - Catalyst Housing" description="Welcome to Novatore Sols, setting new standards in technology with unmatchable code.">
+        <Layout showContactForm={true} title="Novatore Solutions - Catalyst Housing" description="Welcome to Novatore Solutions, setting new standards in technology with unmatchable code.">
             <div className="overflow-x-hidden">
                 <HeroBanner bannerHeading="Innovative Tech for Sustainable Housing:" spanredtext="Catalyst Housing’s " morebannerHeading="Success with Us" needsMoreTitle={true} previewImage="/images/catalystherobanner.png" pagetitle="" maxwidth="1100px" />
                 <HeadlineBanner headlinesData={catalystHeadlines} />

@@ -6,7 +6,7 @@ import Layout from '@/components/Layout';
 
 const Blogs: NextPage = () => {
     return (
-        <Layout showContactForm={true} title="Novatore Sols - Blogs" description="Welcome to Novatore Sols, setting new standards in technology with unmatchable code.">
+        <Layout showContactForm={true} title="Novatore Solutions - Blogs" description="Welcome to Novatore Solutions, setting new standards in technology with unmatchable code.">
             <HeroBanner bannerHeading="Blogs" previewImage="/images/careers-bg.png" />
             <BlogsContainer />
             <CanHelp />

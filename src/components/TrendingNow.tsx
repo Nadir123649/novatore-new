@@ -7,7 +7,8 @@ import { FaChevronRight } from "react-icons/fa";
 import { trendings } from '@/constants/indesx';
 import { useState, useEffect } from 'react';
 import { Col, Container } from 'react-bootstrap';
-import TrendingBlogsCards from './TrendingBlogsCards';
+import BlogsCard from './BlogsCard';
+import { client } from "@/sanity/lib/client";
 
 interface ArrowProps {
   onClick?: React.MouseEventHandler<HTMLDivElement>;
@@ -49,11 +50,13 @@ const PrevArrow: React.FC<ArrowProps> = ({ onClick, isDisabled }) => {
   );
 };
 
-
-
-
 const TrendingNow = () => {
   const [isVisible, setIsVisible] = useState(false);
+  const [blogdata, setBlogdata] = useState([]);
+  const [currentSlide, setCurrentSlide] = useState(0);
+  const [isLastSlideVisible, setIsLastSlideVisible] = useState(false);
+  const totalSlides = trendings.length;
+  const slidesToShow = 2.95;
 
   const handleScroll = () => {
     const element = document.getElementById("trending-slider-section");
@@ -63,18 +66,20 @@ const TrendingNow = () => {
     }
   };
 
+  const getBlogData = async () => {
+    const res = await client.fetch("*[_type== 'blogs']");
+    setBlogdata(res);
+  }
+
   useEffect(() => {
+    getBlogData()
     window.addEventListener("scroll", handleScroll);
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
 
-  const [currentSlide, setCurrentSlide] = useState(0);
-  const [isLastSlideVisible, setIsLastSlideVisible] = useState(false);
-
-  const totalSlides = trendings.length;
-  const slidesToShow = 2.9;
+  console.log(blogdata)
 
   const settings = {
     dots: false,
@@ -145,18 +150,14 @@ const TrendingNow = () => {
           <h2 className='text-[#FFFFFF] font-semibold text-[26px] md:text-4xl'>Trending Now</h2>
         </div>
         <Slider {...settings} className="trending-slider mt-10">
-          {trendings.map(trending => (
-            <Col key={trending.id} lg={12} md={6} xs={12} >
-              <TrendingBlogsCards
-                id={trending.id}
-                title={trending.title}
-                description={trending.description}
-                banner={trending.banner}
-                date={trending.date}
-                user={trending.user}
-                link={trending.link}
-              />
-            </Col>
+          {blogdata.map((blog: any) => (
+            <BlogsCard
+              key={blog._id}
+              id={blog._id}
+              image={blog.image}
+              subtitle={blog.sub_title}
+              title={blog.title}
+            />
           ))}
         </Slider>
       </Container>

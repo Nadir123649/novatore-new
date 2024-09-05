@@ -10,7 +10,7 @@ import ExpertServices from "@/components/ExpertServices";
 
 const AnalyticsImplementation: NextPage = () => {
     return (
-        <Layout showContactForm={true} title="Novatore Sols - Analytics & Platform Implementation" description="Welcome to Novatore Sols, setting new standards in technology with unmatchable code.">
+        <Layout showContactForm={true} title="Novatore Solutions - Analytics & Platform Implementation" description="Welcome to Novatore Solutions, setting new standards in technology with unmatchable code.">
             <div className="overflow-x-hidden">
                 <HeroBanner bannerHeading="Analytics & Platform Implementation" pagetitle="Data" needsMoreTitle="Get in Touch" previewImage="/images/analytics-banner-bg.png" maxwidth="900px" />
                 <ServicesNeeds needsTitle="Business Insights with " needsTitleBlue=" Advanced Analytics" NeedsImage="/images/analytics-bg-right.png"

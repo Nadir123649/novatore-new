@@ -9,7 +9,7 @@ import CloudOps from "@/components/CloudOps";
 
 const MachineLearning: NextPage = () => {
     return (
-        <Layout showContactForm={true} title="Novatore Sols - Machine Learning " description="Welcome to Novatore Sols, setting new standards in technology with unmatchable code.">
+        <Layout showContactForm={true} title="Novatore Solutions - Machine Learning " description="Welcome to Novatore Solutions, setting new standards in technology with unmatchable code.">
             <div className="overflow-x-hidden">
                 <HeroBanner bannerHeading="Unleash Your Potential With Our Machine Learning Tools" pagetitle="Artificial Intelligence" needsMoreTitle="Get in Touch" previewImage="/images/machine-learning-banner.png" maxwidth="1000px" />
                 <ServicesNeeds needsTitle="Discover Our " needsTitleBlue=" Machine Learning " needsMoreTitle="Solutions" NeedsImage="/images/machine-right-bg.png"

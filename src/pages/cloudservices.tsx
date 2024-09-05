@@ -12,7 +12,7 @@ import Layout from "@/components/Layout";
 
 const CloudServices: NextPage = () => {
     return (
-        <Layout showContactForm={true} title="Novatore Sols - Home" description="Welcome to Novatore Sols, setting new standards in technology with unmatchable code.">
+        <Layout showContactForm={true} title="Novatore Solutions - Home" description="Welcome to Novatore Solutions, setting new standards in technology with unmatchable code.">
             <div className="overflow-x-hidden">
                 <HeroBanner bannerHeading="Cloud Services" previewImage="/images/cloud-banner.png" />
                 <ServicesNeeds needsTitle="Discover the Power of" needsTitleBlue="Cloud Ops" NeedsImage="/images/needs-image-five.png"

@@ -9,7 +9,7 @@ import CloudOps from "@/components/CloudOps";
 
 const UiUxDesign: NextPage = () => {
     return (
-        <Layout showContactForm={true} title="Novatore Sols - UI/UX Design" description="Welcome to Novatore Sols, setting new standards in technology with unmatchable code.">
+        <Layout showContactForm={true} title="Novatore Solutions - UI/UX Design" description="Welcome to Novatore Solutions, setting new standards in technology with unmatchable code.">
             <div className="overflow-x-hidden">
                 <HeroBanner bannerHeading="Driving Excellence in UI/UX and Branding Services" pagetitle="Custom Software Development" needsMoreTitle="Get in Touch" previewImage="/images/ui-ux-banner.png" maxwidth="1100px" />
                 <ServicesNeeds needsTitle="Explore Our " needsTitleBlue="UI/UX Design Services" NeedsImage="/images/ux-image-right.png"

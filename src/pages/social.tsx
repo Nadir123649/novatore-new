@@ -12,7 +12,7 @@ import CaseStudiesSlider from "@/components/CaseStudiesSlider";
 
 const Social: NextPage = () => {
     return (
-        <Layout showContactForm={true} title="Novatore Sols - Social" description="Welcome to Novatore Sols, setting new standards in technology with unmatchable code.">
+        <Layout showContactForm={true} title="Novatore Solutions - Social" description="Welcome to Novatore Solutions, setting new standards in technology with unmatchable code.">
             <div className="overflow-x-hidden">
                 <HeroBanner bannerHeading="Transforming Social Experiences with Innovative Software " needsMoreTitle={true} previewImage="/images/social-banner.png" pagetitle="Social" maxwidth="1100px" />
                 <ServicesNeeds needsTitle=" " needsTitleBlue="Overview" needsMoreTitle="" NeedsImage="/images/social-card.png"

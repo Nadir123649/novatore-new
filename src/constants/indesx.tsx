@@ -1,4 +1,4 @@
-import { googleanalyticstile, tstile, angulaartile, reacttile, vuejstile, nodetile, pythontile, jstile, fluttertile, swifttile, mysqltile, googlecloudtile, mongodbtile, postgresstile, awstile, azuretile, phptile, caseone, casetwo, casefour, casethree, AIOne, AITwo, AIThree, AIFour, AIFive, AISix, ComprehensiveIcon, StorageIcon, NetworkingIcon, AnalyticsIcon, CovaBg, dataautomation, AngelflowBg, CloudServiceicon, About, ComplianceAI, ApplicationCompliance, RedTeaming, webAppSecurity, SecurityAudits, NetworkSecurityTesting, GovernanceFramework, Dataprivacy, RiskManagement, Airbolt, ANGELFLOW, AngelLogo, Assistant, blogImageOne, blogImageTwo, Buisness, Career, Catalyst, ChooseFour, ChooseOne, ChooseThree, ChooseTwo, Cova, COVA, CovaLogo, Developer, Industries, Insights, London, Protium, Services, Upsure, DataImageOne, DataImageTwo, DataImageThree, DataImageFour, CloudOne, CloudTwo, CloudThree, CloudFour, AwsOne, AwsTwo, AwsThree, ImageOne, ImageTwo, ImageThree, CloudFive, CloudSix, DataImageFive, DataImageSix, CLOUD, Amazon, DATA, artificialIntelligence, Cybersecurity, DigitalService, AutomationOne, AutomationThree, AutomationFour, AutomationFive, AutomationSix, AutomationTwo, RemoteIT, ConsultingService, CloudService, HelpDesk, NetworkSecurity, SystemSupport, MigrationOne, MigrationTwo, MigrationThree, ProductFour, ProductThree, ProductTwo, ProductOne, ProductFive, ProductSix, ServicesSix, ServicesFive, ServicesFour, ServicesThree, ServicesTwo, ServicesOne, Vulnerability, CustomAnalyticsSix, CustomAnalyticsFive, CustomAnalyticsFour, CustomAnalyticsThree, CustomAnalyticsTwo, CustomAnalyticsOne, TransformThree, TransformTwo, TransformOne, TreeThree, TreeTwo, TreeOne, WebThree, WebTwo, WebOne, AutomationImageOne, AutomationImageTwo, AutomationImageThree, PresentOne, PresentTwo, PresentThree, PresentFour, PresentFive, PresentSix, ConsultingOne, ConsultingTwo, ConsultingThree, ConsultingFour, ConsultingFive, ConsultingSix, BlogBannerThree, BlogBannerTwo, BlogBannerOne, BlogBannerFour, CryptoOne, CryptoTwo, CryptoFive, CryptoFour, CryptoThree, CryptoSix, GamingOne, GamingTwo, GamingThree, HealthCareOne, HealthCareTwo, HealthCareThree, InsuranceOne, InsuranceTwo, InsuranceThree, RealEstateOne, RealEstateTwo, RealEstateThree, RealEstateFour, RealEstateFive, RealEstateSix, IconWeb4, IconWeb3, IconWeb2, IconWeb1, myndsteam, myndsduration, myndsindustry, jquerytile, webflowtile, tagmanagertile, nexttile, figmatile, dockertile, redistile, jenkinstile, djangotile, csstile, mjtile, javatile, bootstraptile, dojotile, railstile, wordpresstile, laraveltile, myndsiconOne, myndsiconTwo, myndsiconThree, catalysticonFour, covaiconOne, covaiconTwo, covaiconThree, ircciconOne, ircciconTwo, ircciconThree, angelflowiconOne, angelflowiconTwo, angelflowiconThree, huntersiconOne, huntersiconTwo, huntersiconThree, juggernauticonOne, juggernauticonTwo, juggernauticonThree, commiticonOne, commiticonTwo, commiticonThree, gifticonOne, gifticonTwo, gifticonThree, zeusxiconOne, zeusxiconTwo, zeusxiconThree, footeducationiconOne, footeducationiconTwo, footeducationiconThree, qatariconOne, qatariconTwo, qatariconThree, brokericonOne, brokericonTwo, brokericonThree } from "@/utils";
+import { googleanalyticstile, tstile, angulaartile, reacttile, vuejstile, nodetile, pythontile, jstile, fluttertile, swifttile, mysqltile, googlecloudtile, mongodbtile, postgresstile, awstile, azuretile, phptile, caseone, casetwo, casefour, casethree, AIOne, AITwo, AIThree, AIFour, AIFive, AISix, ComprehensiveIcon, StorageIcon, NetworkingIcon, AnalyticsIcon, CovaBg, dataautomation, AngelflowBg, CloudServiceicon, About, ComplianceAI, ApplicationCompliance, RedTeaming, webAppSecurity, SecurityAudits, NetworkSecurityTesting, GovernanceFramework, Dataprivacy, RiskManagement, Airbolt, ANGELFLOW, AngelLogo, Assistant, blogImageOne, blogImageTwo, Buisness, Career, Catalyst, ChooseFour, ChooseOne, ChooseThree, ChooseTwo, Cova, COVA, CovaLogo, Developer, Industries, Insights, London, Protium, Services, Upsure, DataImageOne, DataImageTwo, DataImageThree, DataImageFour, CloudOne, CloudTwo, CloudThree, CloudFour, AwsOne, AwsTwo, AwsThree, ImageOne, ImageTwo, ImageThree, CloudFive, CloudSix, DataImageFive, DataImageSix, CLOUD, Amazon, DATA, artificialIntelligence, Cybersecurity, DigitalService, AutomationOne, AutomationThree, AutomationFour, AutomationFive, AutomationSix, AutomationTwo, RemoteIT, ConsultingService, CloudService, HelpDesk, NetworkSecurity, SystemSupport, MigrationOne, MigrationTwo, MigrationThree, ProductFour, ProductThree, ProductTwo, ProductOne, ProductFive, ProductSix, ServicesSix, ServicesFive, ServicesFour, ServicesThree, ServicesTwo, ServicesOne, Vulnerability, CustomAnalyticsSix, CustomAnalyticsFive, CustomAnalyticsFour, CustomAnalyticsThree, CustomAnalyticsTwo, CustomAnalyticsOne, TransformThree, TransformTwo, TransformOne, TreeThree, TreeTwo, TreeOne, WebThree, WebTwo, WebOne, AutomationImageOne, AutomationImageTwo, AutomationImageThree, PresentOne, PresentTwo, PresentThree, PresentFour, PresentFive, PresentSix, ConsultingOne, ConsultingTwo, ConsultingThree, ConsultingFour, ConsultingFive, ConsultingSix, BlogBannerThree, BlogBannerTwo, BlogBannerOne, BlogBannerFour, CryptoOne, CryptoTwo, CryptoFive, CryptoFour, CryptoThree, CryptoSix, GamingOne, GamingTwo, GamingThree, HealthCareOne, HealthCareTwo, HealthCareThree, InsuranceOne, InsuranceTwo, InsuranceThree, RealEstateOne, RealEstateTwo, RealEstateThree, RealEstateFour, RealEstateFive, RealEstateSix, IconWeb4, IconWeb3, IconWeb2, IconWeb1, myndsteam, myndsduration, myndsindustry, jquerytile, webflowtile, tagmanagertile, nexttile, figmatile, dockertile, redistile, jenkinstile, djangotile, csstile, mjtile, javatile, bootstraptile, dojotile, railstile, wordpresstile, laraveltile, myndsiconOne, myndsiconTwo, myndsiconThree, catalysticonFour, covaiconOne, covaiconTwo, covaiconThree, ircciconOne, ircciconTwo, ircciconThree, angelflowiconOne, angelflowiconTwo, angelflowiconThree, huntersiconOne, huntersiconTwo, huntersiconThree, juggernauticonOne, juggernauticonTwo, juggernauticonThree, commiticonOne, commiticonTwo, commiticonThree, gifticonOne, gifticonTwo, gifticonThree, zeusxiconOne, zeusxiconTwo, zeusxiconThree, footeducationiconOne, footeducationiconTwo, footeducationiconThree, qatariconOne, qatariconTwo, qatariconThree, brokericonOne, brokericonTwo, brokericonThree, vuetile, oneH2iconOne, oneH2iconTwo, oneH2iconThree, alphaiconOne, alphaiconTwo, alphaiconThree, terrascopeiconOne, terrascopeiconTwo, terrascopeiconThree, airbolticonOne, airbolticonTwo, airbolticonThree, dwpiconOne, dwpiconTwo, dwpiconThree, ispyariconOne, ispyariconTwo, ispyariconThree } from "@/utils";
 import { IoMdMail } from "react-icons/io";
 import { FaPhoneAlt } from "react-icons/fa";
 import { ImLocation } from "react-icons/im";
@@ -439,48 +439,42 @@ export const blogData = [
     {
         id: 1,
         image: blogImageOne,
-        category: "Blog",
-        tag: "Artificial Intelligence",
+        subtitle: "Artificial Intelligence",
         title: "How Generative AI Can Play Its Part In Uplifting The Entire Data Management Lifecycle.",
         link: "/blog-detail"
     },
     {
         id: 2,
         image: blogImageTwo,
-        category: "Blog",
-        tag: "Artificial Intelligence",
+        subtitle: "Artificial Intelligence",
         title: "How Generative AI Can Play Its Part In Uplifting The Entire Data Management Lifecycle.",
         link: "/blog-detail"
     },
     {
         id: 3,
         image: blogImageOne,
-        category: "Blog",
-        tag: "Artificial Intelligence",
+        subtitle: "Artificial Intelligence",
         title: "How Generative AI Can Play Its Part In Uplifting The Entire Data Management Lifecycle.",
         link: "/blog-detail"
     },
     {
         id: 4,
         image: blogImageTwo,
-        category: "Blog",
-        tag: "Artificial Intelligence",
+        subtitle: "Artificial Intelligence",
         title: "How Generative AI Can Play Its Part In Uplifting The Entire Data Management Lifecycle.",
         link: "/blog-detail"
     },
     {
         id: 5,
         image: blogImageOne,
-        category: "Blog",
-        tag: "Artificial Intelligence",
+        subtitle: "Artificial Intelligence",
         title: "How Generative AI Can Play Its Part In Uplifting The Entire Data Management Lifecycle.",
         link: "/blog-detail"
     },
     {
         id: 6,
         image: blogImageTwo,
-        category: "Blog",
-        tag: "Artificial Intelligence",
+        subtitle: "Artificial Intelligence",
         title: "How Generative AI Can Play Its Part In Uplifting The Entire Data Management Lifecycle.",
         link: "/blog-detail"
     },
@@ -544,6 +538,37 @@ export const commitGoodHeadlines = [
     { title: "1000+ hrs", description: ' Project Duration', icon: myndsduration },
     { title: "Industry", description: ' Real Estate, Proptech', icon: myndsindustry },
 ]
+export const oneH2Headlines = [
+    { title: "12", description: ' Team Members', icon: myndsteam },
+    { title: "18 months", description: ' Project Duration', icon: myndsduration },
+    { title: "Industry", description: 'Social', icon: myndsindustry },
+]
+export const alphaHeadlines = [
+    { title: "8", description: ' Team Members', icon: myndsteam },
+    { title: "9 months", description: ' Project Duration', icon: myndsduration },
+    { title: "Industry", description: ' Sports', icon: myndsindustry },
+]
+export const terrascopeHeadlines = [
+    { title: "10", description: ' Team Members', icon: myndsteam },
+    { title: "14 months", description: ' Project Duration', icon: myndsduration },
+    { title: "Industry", description: ' Real Estate', icon: myndsindustry },
+]
+export const airboltHeadlines = [
+    { title: "8", description: ' Team Members', icon: myndsteam },
+    { title: "6 months", description: 'Project Duration', icon: myndsduration },
+    { title: "Industry", description: 'Social', icon: myndsindustry },
+]
+export const dwpHeadlines = [
+    { title: "12", description: ' Team Members', icon: myndsteam },
+    { title: "9 months", description: ' Project Duration', icon: myndsduration },
+    { title: "Industry", description: ' Retail', icon: myndsindustry },
+]
+export const ispyarHeadlines = [
+    { title: "8", description: ' Team Members', icon: myndsteam },
+    { title: "7 months", description: ' Project Duration', icon: myndsduration },
+    { title: "Social", description: ' Retail', icon: myndsindustry },
+]
+
 
 export const dataServices = [
     {
@@ -1168,7 +1193,109 @@ export const abimarbrokerscaseData = [
         icon: brokericonThree,
     },
 ];
+export const oneH2caseData = [
+    {
+        title: 'Fleet Management System ',
+        description: 'We developed a comprehensive fleet management system that allowed OneH2 to monitor and manage its material handling fleets efficiently across various locations.',
+        icon: oneH2iconOne,
+    },
+    {
+        title: 'Supply Chain Coordination:',
+        description: 'To address the supply chain coordination issues, we built a platform that integrates all stages of the supply chain, from hydrogen production to delivery. ',
+        icon: oneH2iconTwo,
+    },
+    {
+        title: '24/7 Operations Dashboard  ',
+        description: 'We created a robust operations dashboard that enables OneH2 to monitor and manage its logistics operations around the clock. This dashboard provides real-time data on energy supply and demand.',
+        icon: oneH2iconThree,
+    },
+];
+export const alphacaseData = [
+    {
+        title: 'Real-Time Communication Interface ',
+        description: 'We designed a real-time communication interface that allows coaches to send instant, pre-configured messages to athletes wristbands.',
+        icon: alphaiconOne,
+    },
+    {
+        title: 'User-Friendly Mobile App',
+        description: 'To address usability concerns, we developed a mobile app that syncs with the wristbands, enabling easy setup and customization of messages.  ',
+        icon: alphaiconTwo,
+    },
+    {
+        title: 'Durable and Reliable System',
+        description: 'Given the demands of a sports environment, we engineered the wristbands and associated software to be durable and reliable. The system is designed to withstand extreme conditions.',
+        icon: alphaiconThree,
+    },
+];
+export const terrascopecaseData = [
+    {
+        title: 'AI-Powered Geospatial Analysis ',
+        description: 'We developed a sophisticated AI engine capable of analyzing satellite imagery to detect land features such as vegetation, water bodies, and infrastructure. ',
+        icon: terrascopeiconOne,
+    },
+    {
+        title: 'Property Management Interface ',
+        description: 'Our team designed an intuitive interface that simplifies the process of browsing and managing rural properties. The interface integrates seamlessly with the AI backend.  ',
+        icon: terrascopeiconTwo,
+    },
+    {
+        title: 'Automated Data Processing System ',
+        description: 'We implemented a system that automates the collection, processing, and analysis of large datasets. This system ensures that users receive up-to-date information.',
+        icon: terrascopeiconThree,
+    },
+];
+export const airboltcaseData = [
+    {
+        title: 'Enhanced Global Tracking System ',
+        description: 'We developed a robust GPS tracking system that provides real-time location data, ensuring users can monitor their belongings from anywhere in the world.',
+        icon: airbolticonOne,
+    },
+    {
+        title: 'Advanced Security Mechanisms ',
+        description: 'An advanced locking mechanism was implemented, which allows users to lock and unlock their belongings remotely through a mobile app, adding an extra layer of security. ',
+        icon: airbolticonTwo,
+    },
+    {
+        title: 'User-Centric Mobile Application',
+        description: 'A mobile application was created to offer a seamless user experience, featuring an intuitive interface that allows users to easily manage their devices.',
+        icon: airbolticonThree,
+    },
+];
+export const dwpcaseData = [
+    {
+        title: 'Enhancing Operational Workflow ',
+        description: 'We developed a streamlined software platform that integrated various processes across departments. This new system allowed Dawlance to automate repetitive tasks.',
+        icon: dwpiconOne,
+    },
+    {
+        title: 'Customer Interaction  ',
+        description: 'To address the need for better customer engagement, we built a user-friendly web and mobile application with advanced features. ',
+        icon: dwpiconTwo,
+    },
+    {
+        title: 'Optimizing Data Management',
+        description: 'We implemented a robust data management system that could handle large volumes of information securely and efficiently. This system provided Dawlance with quick access to critical data.',
+        icon: dwpiconThree,
+    },
+];
 
+export const ispyarcaseData = [
+    {
+        title: 'Vendor Management System  ',
+        description: 'We developed a vendor management system that allowed users to easily browse, compare, and book vendors for various wedding events. This system featured a filterable search function, detailed vendor profiles, and user reviews.',
+        icon: ispyariconOne,
+    },
+    {
+        title: 'Enhanced User Interface',
+        description: 'Our team focused on creating an intuitive and user-friendly interface that guided users through the wedding planning process.  ',
+        icon: ispyariconTwo,
+    },
+    {
+        title: 'Organized Information Hub',
+        description: 'To address the issue of information overload, we developed an organized content management system that categorized information by event type, cultural relevance, and user needs. ',
+        icon: ispyariconThree,
+    },
+];
 
 export const AwsData = [
     {
@@ -2918,7 +3045,91 @@ export const abimarbrokerschallengesData = [
         title: 'Stagnation in the Insurance Market: ', description: 'The existing market conditions were not conducive to innovation, creating a need for a platform that could facilitate change and support creative solutions.'
     },
 ];
+export const oneH2challengesData = [
+    {
+        title: 'Inefficient Fleet Management:', description: ' OneH2 needed an improved method to manage its material handling fleets across multiple locations.'
+    },
+    {
+        title: 'Supply Chain Coordination:', description: 'The company faced difficulties in synchronizing its long-haul supply chains with the constant energy demands of its clients.'
+    },
+    {
+        title: '24/7 Operational Demands: ', description: 'Handling continuous operations without disruptions in energy supply was a significant challenge.'
+    },
+    {
+        title: 'Zero-Emission Transportation:  ', description: 'Ensuring that the transportation process remained fully compliant with zero-emission standards.'
+    },
+];
+export const alphachallengesData = [
+    {
+        title: 'Ineffective On-Field Communication:', description: 'Coaches needed a more efficient way to communicate with athletes during the heat of the game.'
+    },
+    {
+        title: 'Real-Time Updates:', description: 'The ability to provide instant feedback and strategy adjustments was lacking in existing communication tools.'
+    },
+    {
+        title: 'Usability Concerns:  ', description: 'The solution had to be easy for athletes to use, without causing distractions during play.'
+    },
+    {
+        title: 'Durability and Reliability:  ', description: 'The tool needed to withstand rigorous sports environments without failing.'
+    },
+];
+export const terrascopechallengesData = [
+    {
+        title: 'Limited Accessibility to Rural Land Data:', description: 'Users lacked a comprehensive platform for accessing and evaluating rural properties.'
+    },
+    {
+        title: 'Complexity in Land Feature Analysis:', description: 'The need for accurate identification and analysis of land features using satellite imagery was crucial.'
+    },
+    {
+        title: 'User Engagement and Data Integration:  ', description: 'The platform had to maintain user engagement while integrating diverse data sources.'
+    },
+    {
+        title: 'Automation Needs: ', description: 'There was a demand for automating property valuation processes.'
+    },
+];
 
+export const airboltchallengesData = [
+    {
+        title: 'Lack of Reliable Tracking', description: 'The client needed a system to track their belongings globally without interruptions.'
+    },
+    {
+        title: 'Inadequate Security Features', description: 'Existing locks did not offer sufficient protection against unauthorized access.'
+    },
+    {
+        title: 'User Unfriendly Interface  ', description: 'Users found it difficult to manage and monitor their devices through the current platforms.'
+    },
+    {
+        title: 'Integration with Existing Ecosystems ', description: 'The client required a solution that could seamlessly integrate with existing apps and services.'
+    },
+];
+export const dwpchallengesData = [
+    {
+        title: 'Operational Efficiency', description: 'The client was struggling with outdated systems that were hindering workflow efficiency and overall productivity.'
+    },
+    {
+        title: 'Customer Engagement', description: 'Limited digital touchpoints and a lack of personalization were leading to suboptimal customer interactions.'
+    },
+    {
+        title: 'Data Management  ', description: 'The existing system was unable to handle the increasing volume of data, resulting in delays and errors.'
+    },
+    {
+        title: 'Scalability', description: 'The client required a solution that could grow with their business, accommodating future expansion without compromising on performance.'
+    },
+];
+export const ispyarchallengesData = [
+    {
+        title: 'Vendor Coordination:', description: 'Managing multiple vendors for different wedding events was complex and time-consuming.'
+    },
+    {
+        title: 'User Experience:', description: 'The existing platform lacked an intuitive user interface, leading to a frustrating experience for users.'
+    },
+    {
+        title: 'Information Overload: ', description: 'Users were overwhelmed by the amount of information available, making it difficult to find what they needed quickly.'
+    },
+    {
+        title: 'Scalability Concerns:', description: 'The client needed a platform that could grow with their expanding user base without compromising performance.'
+    },
+];
 export const myndsoutcomesData = [
     {
         title: 'Funding Secured:', description: 'Mynd was able to raise a total of $204.9M in funding over 8 rounds through this platform developed by our talented team.'
@@ -3118,7 +3329,80 @@ export const abimarbrokersoutcomesData = [
         title: 'Growth and Expansion: ', description: 'The client has seen significant growth and expansion, attracting new clients and brokers to the platform.'
     }
 ];
-
+export const oneH2soutcomesData = [
+    {
+        title: 'Improved Fleet Efficiency:   ', description: 'The new fleet management system led to a 20% reduction in operational downtime.'
+    },
+    {
+        title: 'Enhanced Supply Chain Coordination: ', description: 'The supply chain platform improved synchronization, resulting in on-time delivery rates increasing by 30%.'
+    },
+    { title: 'Continuous Operations:  ', description: 'The 24/7 dashboard enabled OneH2 to maintain uninterrupted energy supply to all clients, meeting their demands consistently.' },
+    {
+        title: 'Zero-Emission Compliance:  ', description: 'The solutions ensured that all transportation processes adhered to zero-emission standards, supporting OneH2’s commitment to sustainability.'
+    }
+];
+export const alphaoutcomesData = [
+    {
+        title: 'Enhanced Communication Efficiency:  ', description: 'The real-time interface significantly improved the speed and clarity of on-field communication between coaches and athletes.'
+    },
+    {
+        title: 'Instant Feedback Capabilities: ', description: 'Coaches were able to provide immediate strategic updates, leading to better in-game decision-making.'
+    },
+    { title: 'Increased Usability: ', description: 'The user-friendly app ensured that both coaches and athletes could use the system with minimal learning curve.' },
+    {
+        title: 'Reliable Performance: ', description: 'The systems durability ensured consistent performance, even in high-pressure sports environments.'
+    }
+];
+export const terrascopeoutcomesData = [
+    {
+        title: 'Expanded Access to Rural Properties: ', description: 'The platform now offers users comprehensive access to a wide range of rural properties, enhancing market reach.'
+    },
+    {
+        title: 'Efficient Land Analysis:', description: 'The AI-driven analysis reduced the time needed for land assessment by 50%.'
+    },
+    { title: 'Increased User Engagement: ', description: 'The user-friendly design led to a 40% increase in user retention and satisfaction.' },
+    {
+        title: 'Automated Valuation Processes: ', description: 'Automation reduced manual workload by 60%, allowing quicker decision-making for property investments.'
+    }
+];
+export const airboltoutcomesData = [
+    {
+        title: 'Improved Global Tracking Efficiency', description: 'The client experienced a significant increase in tracking reliability, with real-time data available across multiple regions.'
+    },
+    {
+        title: 'Enhanced Security for Personal Belongings', description: 'The new system provided a higher level of security, reducing the risk of theft and unauthorized access.'
+    },
+    { title: 'Positive User Feedback and Adoption ', description: 'Users found the new mobile interface intuitive and easy to navigate, leading to increased customer satisfaction.' },
+    {
+        title: 'Seamless Integration with Existing Ecosystems ', description: 'The solution was successfully integrated with popular apps, expanding the devices functionality and user base.'
+    }
+];
+export const dwpoutcomesData = [
+    {
+        title: 'Increased Productivity', description: 'Streamlined processes led to a 30% reduction in time spent on manual tasks.'
+    },
+    {
+        title: 'Enhanced Customer Satisfaction', description: 'Improved digital engagement tools resulted in a 20% increase in customer retention rates.'
+    },
+    { title: 'Data Accuracy', description: 'The new data management system reduced errors by 40%, allowing for more reliable decision-making.' },
+    {
+        title: 'Scalability', description: 'The platform’s architecture now supports future business growth, ensuring long-term efficiency and effectiveness.'
+    }
+];
+export const ispyaroutcomesData = [
+    {
+        title: 'Increased Vendor Bookings:', description: 'The new system led to a 25% increase in vendor bookings through the platform.'
+    },
+    {
+        title: 'Improved User Engagement:', description: 'The enhanced user experience resulted in a 30% boost in time spent on the site per user session.'
+    },
+    {
+        title: 'Better Information Accessibility: ', description: 'Users reported a 40% improvement in finding relevant information quickly and easily.'
+    },
+    {
+        title: 'Scalable Infrastructure: ', description: 'The platform’s architecture now supports a growing user base with minimal performance issues, preparing the client for future expansion.'
+    }
+];
 
 
 export const retaildataImages = [
@@ -3166,6 +3450,26 @@ export const permittechStackImages = [
 export const qatarStackImages = [
     reacttile, nodetile, mongodbtile, awstile
 ]
+export const oneH2StackImages = [
+    reacttile, nodetile
+]
+export const alphaallianceStackImages = [
+    reacttile
+]
+export const terrascopeStackImages = [
+    reacttile, pythontile
+]
+export const airboltStackImages = [
+    reacttile, vuetile, nodetile
+]
+export const dwpHomesStackImages = [
+    angulaartile, laraveltile, phptile
+]
+
+export const ispyartackImages = [
+    laraveltile, bootstraptile, jquerytile
+]
+
 
 export const caseStudiesData = [
     {
@@ -3223,42 +3527,42 @@ export const caseStudiesData = [
     },
     {
         category: 'Social',
-        component: <ExpertServices link="/" casestudyicon="/images/hydrogencaseicon.svg" needsTitle='One H2' needsDescription={'One H2 Created a comprehensive logistics system for hydrogen fuel transportation, improving fleet efficiency, supply chain coordination, and adherence to zero-emission standards.'} NeedsImage={'/images/hydrogencasestudy.png'} viewbutton={true} />
+        component: <ExpertServices link="/one-h2" casestudyicon="/images/hydrogencaseicon.svg" needsTitle='One H2' needsDescription={'One H2 Created a comprehensive logistics system for hydrogen fuel transportation, improving fleet efficiency, supply chain coordination, and adherence to zero-emission standards.'} NeedsImage={'/images/hydrogencasestudy.png'} viewbutton={true} />
     },
 
     {
         category: 'Insurance',
-        component: <ServicesNeeds link="/" casestudyicon="/images/alphacaseicon.svg" needsTitle='Alphas Alliance' needsDescription={'Alphas Alliance Developed a real-time communication tool for coaches and athletes, improving on-field communication and usability in sports environments.'} NeedsImage={'/images/alphacasestudy.png'} viewbutton={true} />
+        component: <ServicesNeeds link="/alpha-alliance" casestudyicon="/images/alphacaseicon.svg" needsTitle='Alphas Alliance' needsDescription={'Alphas Alliance Developed a real-time communication tool for coaches and athletes, improving on-field communication and usability in sports environments.'} NeedsImage={'/images/alphacasestudy.png'} viewbutton={true} />
     },
     {
         category: 'Social',
-        component: <ExpertServices link="/" casestudyicon="/images/terrascopecaseicon.svg" needsTitle='Terrascope' needsDescription={'Terrascope Built an AI-powered platform for rural property management, enhancing land analysis efficiency and user engagement through automated data processing.'} NeedsImage={'/images/terrascopecasestudy.png'} viewbutton={true} />
+        component: <ExpertServices link="/terrascope" casestudyicon="/images/terrascopecaseicon.svg" needsTitle='Terrascope' needsDescription={'Terrascope Built an AI-powered platform for rural property management, enhancing land analysis efficiency and user engagement through automated data processing.'} NeedsImage={'/images/terrascopecasestudy.png'} viewbutton={true} />
     },
 
     {
         category: 'Real Estate',
-        component: <ServicesNeeds link="/" casestudyicon="/images/airboltcaseicon.svg" needsTitle='AirBolt' needsDescription={'AirBolt Developed a GPS-enabled locking solution for personal belongings, improving global tracking, security, and user experience through a seamless mobile application.'} NeedsImage={'/images/airboltcasestudy.png'} viewbutton={true} />
+        component: <ServicesNeeds link="/airbolt" casestudyicon="/images/airboltcaseicon.svg" needsTitle='AirBolt' needsDescription={'AirBolt Developed a GPS-enabled locking solution for personal belongings, improving global tracking, security, and user experience through a seamless mobile application.'} NeedsImage={'/images/airboltcasestudy.png'} viewbutton={true} />
     },
     {
         category: 'Crypto',
-        component: <ExpertServices link="/" casestudyicon="/images/dwpcaseicon.svg" needsTitle='DWP Homes' needsDescription={'DWP Homes - Gree Pakistan Enhanced the digital infrastructure of a leading consumer electronics brand, improving operational efficiency, customer engagement, and data management.'} NeedsImage={'/images/dwpcasestudy.png'} viewbutton={true} />
+        component: <ExpertServices link="/dwp-homes" casestudyicon="/images/dwpcaseicon.svg" needsTitle='DWP Homes' needsDescription={'DWP Homes - Gree Pakistan Enhanced the digital infrastructure of a leading consumer electronics brand, improving operational efficiency, customer engagement, and data management.'} NeedsImage={'/images/dwpcasestudy.png'} viewbutton={true} />
     },
     {
         category: 'E-commerce',
-        component: <ServicesNeeds link="/" casestudyicon="/images/ispyarcaseicon.svg" needsTitle='Ispyar Wedding' needsDescription={'Ispyar Wedding Simplified wedding planning for South Asian multi-event celebrations, increasing vendor bookings and improving user engagement through a streamlined platform.'} NeedsImage={'/images/ispyarcasestudy.png'} viewbutton={true} />
+        component: <ServicesNeeds link="/ispyar-wedding" casestudyicon="/images/ispyarcaseicon.svg" needsTitle='Ispyar Wedding' needsDescription={'Ispyar Wedding Simplified wedding planning for South Asian multi-event celebrations, increasing vendor bookings and improving user engagement through a streamlined platform.'} NeedsImage={'/images/ispyarcasestudy.png'} viewbutton={true} />
     },
     {
         category: 'Retail',
-        component: <ExpertServices link="/" casestudyicon="/images/miltoncaseicon.svg" needsTitle='Milton & King ' needsDescription={'Milton & King Crafted a premier e-commerce experience for luxury wallpaper and fabric, improving user engagement, conversion rates, and scalability.'} NeedsImage={'/images/miltoncasestudy.png'} viewbutton={true} />
+        component: <ExpertServices link="/milton-&-king" casestudyicon="/images/miltoncaseicon.svg" needsTitle='Milton & King ' needsDescription={'Milton & King Crafted a premier e-commerce experience for luxury wallpaper and fabric, improving user engagement, conversion rates, and scalability.'} NeedsImage={'/images/miltoncasestudy.png'} viewbutton={true} />
     },
 
     {
         category: 'Health',
-        component: <ServicesNeeds link="/" casestudyicon="/images/washmencaseicon.svg" needsTitle='Washmen' needsDescription={'Washmen Enhanced a laundry and dry-cleaning service platform, improving order management, user engagement, and operational efficiency with scalable infrastructure.'} NeedsImage={'/images/washmencasestudy.png'} viewbutton={true} />
+        component: <ServicesNeeds link="/washmen" casestudyicon="/images/washmencaseicon.svg" needsTitle='Washmen' needsDescription={'Washmen Enhanced a laundry and dry-cleaning service platform, improving order management, user engagement, and operational efficiency with scalable infrastructure.'} NeedsImage={'/images/washmencasestudy.png'} viewbutton={true} />
     },
     {
         category: 'Sports',
-        component: <ExpertServices link="/" casestudyicon="/images/daficaseicon.svg" needsTitle='Dafi' needsDescription={'Dafi Built a secure and scalable NFT exchange platform, enhancing transaction efficiency, user engagement, and security in the cryptocurrency space.'} NeedsImage={'/images/daficasestudy.png'} viewbutton={true} />
+        component: <ExpertServices link="/dafi" casestudyicon="/images/daficaseicon.svg" needsTitle='Dafi' needsDescription={'Dafi Built a secure and scalable NFT exchange platform, enhancing transaction efficiency, user engagement, and security in the cryptocurrency space.'} NeedsImage={'/images/daficasestudy.png'} viewbutton={true} />
     },
 
 ];

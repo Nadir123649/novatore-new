@@ -23,7 +23,7 @@ const Home: NextPage = () => {
   const [activeLink, setActiveLink] = useState('');
   return (
     <>
-      <Layout showContactForm={true} title="Novatore Sols - Home" description="Welcome to Novatore Sols, setting new standards in technology with unmatchable code.">
+      <Layout showContactForm={true} title="Novatore Solutions - Home" description="Welcome to Novatore Solutions, setting new standards in technology with unmatchable code.">
         <Hero setActiveLink={setActiveLink} />
         <Services />
         <WhyChooseUs />

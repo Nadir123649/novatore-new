@@ -95,12 +95,20 @@ const ContactForm = () => {
                 }));
                 setCountries(countryData);
 
+                const pakistan = countryData.find((country: Country) => country.name === 'Pakistan');
+                if (pakistan) {
+                    setSelectedCountry(pakistan);
+                    setValue('country', pakistan.name);
+                    setValue('phone', pakistan.code);
+                }
             } catch (error) {
                 console.error('Error fetching country data:', error);
             }
         };
         fetchCountries();
     }, []);
+
+
 
     const { register, handleSubmit, clearErrors, setValue, formState: { errors } } = useForm<IFormInputs>({
         resolver: zodResolver(schema),
@@ -251,6 +259,7 @@ const ContactForm = () => {
                                                 styles={customStyles}
                                                 placeholder="Select a country"
                                                 className=' custom-select-country  '
+
                                             />
 
                                             {selectedCountry && (
@@ -332,7 +341,8 @@ const ContactForm = () => {
                                             )}
                                         </button>
                                         <ToastContainer
-                                            bodyClassName="toastbody" />
+                                            bodyClassName="toastbody"
+                                        />
                                     </Col>
 
                                 </Row>

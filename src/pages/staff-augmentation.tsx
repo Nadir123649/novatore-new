@@ -9,7 +9,7 @@ import CloudOps from "@/components/CloudOps";
 
 const StaffAugmentation: NextPage = () => {
     return (
-        <Layout showContactForm={true} title="Novatore Sols - Staff Augmentation" description="Welcome to Novatore Sols, setting new standards in technology with unmatchable code.">
+        <Layout showContactForm={true} title="Novatore Solutions - Staff Augmentation" description="Welcome to Novatore Solutions, setting new standards in technology with unmatchable code.">
             <div className="overflow-x-hidden">
                 <HeroBanner bannerHeading="Scale Your Team with Expert Staff Augmentation Solutions" pagetitle="IT Services" needsMoreTitle="Get in Touch" previewImage="/images/staff-banner-bg.png" maxwidth="1100px" />
                 <ServicesNeeds needsTitle="IT Staff " needsTitleBlue="Augmentation Services" NeedsImage="/images/digital-staff-right.png"

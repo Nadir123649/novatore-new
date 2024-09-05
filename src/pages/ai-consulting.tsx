@@ -9,7 +9,7 @@ import { ConsultingData } from "@/constants/indesx";
 
 const AiConsulting: NextPage = () => {
     return (
-        <Layout showContactForm={true} title="Novatore Sols -  Ai Consulting" description="Welcome to Novatore Sols, setting new standards in technology with unmatchable code.">
+        <Layout showContactForm={true} title="Novatore Solutions -  Ai Consulting" description="Welcome to Novatore Solutions, setting new standards in technology with unmatchable code.">
             <div className="overflow-x-hidden">
                 <HeroBanner bannerHeading="Transform Your Business with AI Consulting Services" pagetitle="Artificial Intelligence" needsMoreTitle="Get in Touch" previewImage="/images/consulting-banner-bg.png" maxwidth="800px" />
                 <ServicesNeeds needsTitleBlue="Introduction" NeedsImage="/images/consulting-image-right.png"

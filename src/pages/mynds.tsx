@@ -13,7 +13,7 @@ import HeadlineBanner from "@/components/HeadlineBanner";
 
 const Mynds: NextPage = () => {
     return (
-        <Layout showContactForm={true} title="Novatore Sols - Mynds" description="Welcome to Novatore Sols, setting new standards in technology with unmatchable code.">
+        <Layout showContactForm={true} title="Novatore Solutions - Mynds" description="Welcome to Novatore Solutions, setting new standards in technology with unmatchable code.">
             <div className="overflow-x-hidden">
                 <HeroBanner bannerHeading="Streamlining Property Management:" spangreentext="Mynd's" morebannerHeading=" Digital Transformation Journey with Us" needsMoreTitle={true} previewImage="/images/myndsherobanner.png" pagetitle="" maxwidth="1100px" />
                 <HeadlineBanner headlinesData={myndsHeadlines} />

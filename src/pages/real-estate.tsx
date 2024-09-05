@@ -11,7 +11,7 @@ import CaseStudiesSlider from "@/components/CaseStudiesSlider";
 
 const RealEstate: NextPage = () => {
     return (
-        <Layout showContactForm={true} title="Novatore Sols - Insurance" description="Welcome to Novatore Sols, setting new standards in technology with unmatchable code.">
+        <Layout showContactForm={true} title="Novatore Solutions - Insurance" description="Welcome to Novatore Solutions, setting new standards in technology with unmatchable code.">
             <div className="overflow-x-hidden">
                 <HeroBanner bannerHeading="Real Estate Software Solutions" needsMoreTitle={true} previewImage="/images/real-estate-banner.png" pagetitle="Real Estate" maxwidth="700px" />
                 <ServicesNeeds needsTitleBlue="Introduction" NeedsImage="/images/real-estate-image-right.png"

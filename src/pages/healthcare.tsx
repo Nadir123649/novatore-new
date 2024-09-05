@@ -11,7 +11,7 @@ import CaseStudiesSlider from "@/components/CaseStudiesSlider";
 
 const Healthcare: NextPage = () => {
     return (
-        <Layout showContactForm={true} title="Novatore Sols - Healthcare" description="Welcome to Novatore Sols, setting new standards in technology with unmatchable code.">
+        <Layout showContactForm={true} title="Novatore Solutions - Healthcare" description="Welcome to Novatore Solutions, setting new standards in technology with unmatchable code.">
             <div className="overflow-x-hidden">
                 <HeroBanner bannerHeading="Leading Websites and Mobile Apps in Healthcare" needsMoreTitle={true} previewImage="/images/healthcare-banner.png" pagetitle="Healthcare" />
                 <ServicesNeeds needsTitle="Driving " needsTitleBlue="Excellence" needsMoreTitle=" in Healthcare with Comprehensive Tech Solutions" NeedsImage="/images/health-care-image-right.png"

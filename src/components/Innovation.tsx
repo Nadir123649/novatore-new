@@ -6,8 +6,7 @@ import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 import BlogsCard from './BlogsCard';
 import { blogData } from '@/constants/indesx'; // Make sure this path is correct
 import { useState, useEffect } from 'react';
-
-
+import { client } from "@/sanity/lib/client";
 
 interface InnovationProps {
   className?: string;
@@ -52,12 +51,12 @@ const PrevArrow: React.FC<ArrowProps> = ({ onClick, isDisabled }) => {
   );
 };
 
-
-
 const Innovation: React.FC<InnovationProps> = ({ className }) => {
   const [currentSlide, setCurrentSlide] = useState(0);
-  const [isLastSlideVisible, setIsLastSlideVisible] = useState(false);
-
+  const [blogdata, setBlogdata] = useState([]);
+  const [isLastSlideVisible, setIsLastSlideVisible] = useState(false);  
+  const [isVisible, setIsVisible] = useState(false);
+  const [hasAnimated, setHasAnimated] = useState(false);
   const totalSlides = blogData.length;
   const slidesToShow = 2.3;
 
@@ -119,8 +118,10 @@ const Innovation: React.FC<InnovationProps> = ({ className }) => {
     ],
   };
 
-  const [isVisible, setIsVisible] = useState(false);
-  const [hasAnimated, setHasAnimated] = useState(false);
+  const getBlogData = async () => {
+    const res = await client.fetch("*[_type== 'blogs']");
+    setBlogdata(res);
+  }
 
   const handleScroll = () => {
     const element = document.getElementById("innovation-section");
@@ -134,6 +135,7 @@ const Innovation: React.FC<InnovationProps> = ({ className }) => {
   };
 
   useEffect(() => {
+    getBlogData()
     window.addEventListener("scroll", handleScroll);
     return () => {
       window.removeEventListener("scroll", handleScroll);
@@ -153,16 +155,13 @@ const Innovation: React.FC<InnovationProps> = ({ className }) => {
           </div>
         </div>
         <Slider {...settings} className="innovation-slider mt-10">
-          {blogData.map((blog) => (
+          {blogdata.map((blog: any) => (
             <BlogsCard
-              key={blog.id}
-              id={blog.id}
+              key={blog._id}
+              id={blog._id}
               image={blog.image}
-              category={blog.category}
-              tag={blog.tag}
+              subtitle={blog.sub_title}
               title={blog.title}
-              link={blog.link}
-              type="card"
             />
           ))}
         </Slider>

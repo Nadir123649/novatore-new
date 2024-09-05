@@ -8,7 +8,7 @@ import CloudOps from "@/components/CloudOps";
 
 const AzureAndGcp: NextPage = () => {
     return (
-        <Layout showContactForm={true} title="Novatore Sols - Azure & GCP" description="Welcome to Novatore Sols, setting new standards in technology with unmatchable code.">
+        <Layout showContactForm={true} title="Novatore Solutions - Azure & GCP" description="Welcome to Novatore Solutions, setting new standards in technology with unmatchable code.">
             <div className="overflow-x-hidden">
                 <HeroBanner bannerHeading="Azure & GCP: Powering the Future of Cloud Computing" pagetitle="Cloud" needsMoreTitle="Get in Touch" previewImage="/images/azure-banner-bg.png" maxwidth="900px" />
                 <ServicesNeeds needsTitle="Cloud Strategy with Microsoft Azure and GCP " needsTitleBlue="Services" NeedsImage="/images/azure-right-image.png"

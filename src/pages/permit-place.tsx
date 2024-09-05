@@ -18,7 +18,7 @@ import { permitplacechallengesData, permitplaceoutcomesData, permitPlaceHeadline
 
 const PermitPlace: NextPage = () => {
     return (
-        <Layout showContactForm={true} title="Novatore Sols - Retail" description="Welcome to Novatore Sols, setting new standards in technology with unmatchable code.">
+        <Layout showContactForm={true} title="Novatore Solutions - Retail" description="Welcome to Novatore Solutions, setting new standards in technology with unmatchable code.">
             <div className="overflow-x-hidden">
                 <HeroBanner spanparrottext="Permit Place’s " bannerHeading="Revolutionizing " morebannerHeading="Business Insurance Management for Australian Startups" needsMoreTitle={true} previewImage="/images/permitherobanner.png" pagetitle="" maxwidth="1100px" />
                 <HeadlineBanner headlinesData={permitPlaceHeadlines} />

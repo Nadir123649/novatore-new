@@ -11,7 +11,7 @@ import Layout from "@/components/Layout";
 
 const DigitalService: NextPage = () => {
     return (
-        <Layout showContactForm={true} title="Novatore Sols - Home" description="Welcome to Novatore Sols, setting new standards in technology with unmatchable code.">
+        <Layout showContactForm={true} title="Novatore Solutions - Home" description="Welcome to Novatore Solutions, setting new standards in technology with unmatchable code.">
             <div className="overflow-x-hidden">
                 <HeroBanner bannerHeading="Digital Services" previewImage="/images/digital-service.png" />
                 <ServicesNeeds needsTitle="Best-Suited" needsTitleBlue="Digital Services" needsMoreTitle="For Your Needs" NeedsImage="/images/needs-img-one.png"
