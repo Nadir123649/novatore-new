@@ -278,12 +278,12 @@ export { default as terrascopeiconThree } from "../../public/images/tera-image-t
 export { default as airbolticonOne } from "../../public/images/airbolt-icon-one.svg"
 export { default as airbolticonTwo } from "../../public/images/airbolt-icon-two.svg"
 export { default as airbolticonThree } from "../../public/images/airbolt-icon-three.svg"
-export { default as dwpiconOne } from "../../public/images/dwpiconOne.svg"
-export { default as dwpiconTwo } from "../../public/images/dwpiconTwo.svg"
-export { default as dwpiconThree } from "../../public/images/dwpiconThree.svg"
-export { default as ispyariconOne } from "../../public/images/ispyariconOne.svg"
-export { default as ispyariconTwo } from "../../public/images/ispyariconTwo.svg"
-export { default as ispyariconThree } from "../../public/images/ispyariconThree.svg"
+export { default as dwpiconOne } from "../../public/images/dwp-image-one.svg"
+export { default as dwpiconTwo } from "../../public/images/dwp-image-two.svg"
+export { default as dwpiconThree } from "../../public/images/dwp-image-three.svg"
+export { default as ispyariconOne } from "../../public/images/ispyar-image-one.svg"
+export { default as ispyariconTwo } from "../../public/images/ispyar-image-two.svg"
+export { default as ispyariconThree } from "../../public/images/ispyar-image-three.svg"
 
 
 
