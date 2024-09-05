@@ -1,10 +1,23 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { Col, Container, Row } from 'react-bootstrap';
 import BlogsFilter from './BlogsFilter';
 import BlogsCard from './BlogsCard';
-import { blogData } from '@/constants/indesx';
+import { client } from "@/sanity/lib/client";
+
 
 const BlogsContainer = () => {
+
+    const [blogdata, setBlogdata] = useState([]);
+
+    const getBlogData = async () => {
+        const res = await client.fetch("*[_type== 'blogs']");
+        setBlogdata(res);
+    }
+
+    useEffect(() => {
+        getBlogData()
+      }, []);
+    
     return (
         <section className='blogs-section py-20'>
             <Container>
@@ -14,17 +27,14 @@ const BlogsContainer = () => {
                 <BlogsFilter />
                 <div className='mt-[60px]'>
                     <Row className='gap-y-8'>
-                        {blogData.map(blog => (
-                            <Col key={blog.id} lg={6} md={6} xs={12}>
-                                <BlogsCard
-                                    id={blog.id}
-                                    image={blog.image}
-                                    category={blog.category}
-                                    tag={blog.tag}
-                                    title={blog.title}
-                                    link={blog.link}
-                                />
-                            </Col>
+                        {blogdata.map((blog: any) => (
+                            <BlogsCard
+                                key={blog._id}
+                                id={blog._id}
+                                image={blog.image}
+                                subtitle={blog.sub_title}
+                                title={blog.title}
+                            />
                         ))}
                     </Row>
                     <button className='text-white text-[18px] not-italic font-normal leading-normal py-[16px] px-[24px] rounded-[16px] max-w-[180px] mx-auto block mt-[60px] w-full bg-[#2776EA]'>
