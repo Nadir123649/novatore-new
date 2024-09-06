@@ -28,9 +28,8 @@ const About: NextPage = () => {
                 needsDescription=" Our mission at Novatore Solutions is to empower businesses to achieve their full potential through innovative technology solutions. We are dedicated to developing software and IT services that are not only effective but also scalable, secure, and sustainable." />
             <ExpertServices needsTitle="Our " needsTitleBlue=" Vision" NeedsImage="/images/ourvision-image-left.png"
                 needsDescription="Our vision is to be a global leader in the software industry, known for our unwavering commitment to quality, innovation, and customer satisfaction. We envision a future where Novatore Solutions is synonymous with technological advancement and business success. " />
-
             <Enterprise />
-
+            <ClientFeedback />
         </Layout>
 
     );

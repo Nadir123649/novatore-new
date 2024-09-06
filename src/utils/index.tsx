@@ -293,16 +293,14 @@ export { default as washmeniconThree } from "../../public/images/washmen-image-t
 export { default as miltoniconOne } from "../../public/images/milton-image-one.svg"
 export { default as miltoniconTwo } from "../../public/images/milton-image-two.svg"
 export { default as miltoniconThree } from "../../public/images/milton-image-three.svg"
-
-
-
-
-
-
-
-
-
-
+export { default as lindsayprofile } from "../../public/images/lindsayprofile.svg"
+export { default as kabirprofile } from "../../public/images/kabirprofile.svg"
+export { default as jasonprofile } from "../../public/images/jasonprofile.svg"
+export { default as alphaallianceclientlogo } from "../../public/images/alphaallianceclientlogo.svg"
+export { default as upsureclientlogo } from "../../public/images/upsureclientlogo.svg"
+export { default as rivalsclientlogo } from "../../public/images/rivalsclientlogo.svg"
+export { default as foodclientlogo } from "../../public/images/foodclientlogo.svg"
+export { default as airboltclientlogo } from "../../public/images/airboltclientlogo.svg"
 
 
 

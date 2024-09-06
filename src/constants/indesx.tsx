@@ -1,4 +1,4 @@
-import { googleanalyticstile, tstile, angulaartile, reacttile, vuejstile, nodetile, pythontile, jstile, fluttertile, swifttile, mysqltile, googlecloudtile, mongodbtile, postgresstile, awstile, azuretile, phptile, caseone, casetwo, casefour, casethree, AIOne, AITwo, AIThree, AIFour, AIFive, AISix, ComprehensiveIcon, StorageIcon, NetworkingIcon, AnalyticsIcon, CovaBg, dataautomation, AngelflowBg, CloudServiceicon, About, ComplianceAI, ApplicationCompliance, RedTeaming, webAppSecurity, SecurityAudits, NetworkSecurityTesting, GovernanceFramework, Dataprivacy, RiskManagement, Airbolt, ANGELFLOW, AngelLogo, Assistant, blogImageOne, blogImageTwo, Buisness, Career, Catalyst, ChooseFour, ChooseOne, ChooseThree, ChooseTwo, Cova, COVA, CovaLogo, Developer, Industries, Insights, London, Protium, Services, Upsure, DataImageOne, DataImageTwo, DataImageThree, DataImageFour, CloudOne, CloudTwo, CloudThree, CloudFour, AwsOne, AwsTwo, AwsThree, ImageOne, ImageTwo, ImageThree, CloudFive, CloudSix, DataImageFive, DataImageSix, CLOUD, Amazon, DATA, artificialIntelligence, Cybersecurity, DigitalService, AutomationOne, AutomationThree, AutomationFour, AutomationFive, AutomationSix, AutomationTwo, RemoteIT, ConsultingService, CloudService, HelpDesk, NetworkSecurity, SystemSupport, MigrationOne, MigrationTwo, MigrationThree, ProductFour, ProductThree, ProductTwo, ProductOne, ProductFive, ProductSix, ServicesSix, ServicesFive, ServicesFour, ServicesThree, ServicesTwo, ServicesOne, Vulnerability, CustomAnalyticsSix, CustomAnalyticsFive, CustomAnalyticsFour, CustomAnalyticsThree, CustomAnalyticsTwo, CustomAnalyticsOne, TransformThree, TransformTwo, TransformOne, TreeThree, TreeTwo, TreeOne, WebThree, WebTwo, WebOne, AutomationImageOne, AutomationImageTwo, AutomationImageThree, PresentOne, PresentTwo, PresentThree, PresentFour, PresentFive, PresentSix, ConsultingOne, ConsultingTwo, ConsultingThree, ConsultingFour, ConsultingFive, ConsultingSix, BlogBannerThree, BlogBannerTwo, BlogBannerOne, BlogBannerFour, CryptoOne, CryptoTwo, CryptoFive, CryptoFour, CryptoThree, CryptoSix, GamingOne, GamingTwo, GamingThree, HealthCareOne, HealthCareTwo, HealthCareThree, InsuranceOne, InsuranceTwo, InsuranceThree, RealEstateOne, RealEstateTwo, RealEstateThree, RealEstateFour, RealEstateFive, RealEstateSix, IconWeb4, IconWeb3, IconWeb2, IconWeb1, myndsteam, myndsduration, myndsindustry, jquerytile, webflowtile, tagmanagertile, nexttile, figmatile, dockertile, redistile, jenkinstile, djangotile, csstile, mjtile, javatile, bootstraptile, dojotile, railstile, wordpresstile, laraveltile, myndsiconOne, myndsiconTwo, myndsiconThree, catalysticonFour, covaiconOne, covaiconTwo, covaiconThree, ircciconOne, ircciconTwo, ircciconThree, angelflowiconOne, angelflowiconTwo, angelflowiconThree, huntersiconOne, huntersiconTwo, huntersiconThree, juggernauticonOne, juggernauticonTwo, juggernauticonThree, commiticonOne, commiticonTwo, commiticonThree, gifticonOne, gifticonTwo, gifticonThree, zeusxiconOne, zeusxiconTwo, zeusxiconThree, footeducationiconOne, footeducationiconTwo, footeducationiconThree, qatariconOne, qatariconTwo, qatariconThree, brokericonOne, brokericonTwo, brokericonThree, vuetile, oneH2iconOne, oneH2iconTwo, oneH2iconThree, alphaiconOne, alphaiconTwo, alphaiconThree, terrascopeiconOne, terrascopeiconTwo, terrascopeiconThree, airbolticonOne, airbolticonTwo, airbolticonThree, dwpiconOne, dwpiconTwo, dwpiconThree, ispyariconOne, ispyariconTwo, ispyariconThree, dafiiconOne, dafiiconTwo, dafiiconThree, washmeniconOne, washmeniconTwo, washmeniconThree } from "@/utils";
+import { googleanalyticstile, tstile, angulaartile, reacttile, vuejstile, nodetile, pythontile, jstile, fluttertile, swifttile, mysqltile, googlecloudtile, mongodbtile, postgresstile, awstile, azuretile, phptile, caseone, casetwo, casefour, casethree, AIOne, AITwo, AIThree, AIFour, AIFive, AISix, ComprehensiveIcon, StorageIcon, NetworkingIcon, AnalyticsIcon, CovaBg, dataautomation, AngelflowBg, CloudServiceicon, About, ComplianceAI, ApplicationCompliance, RedTeaming, webAppSecurity, SecurityAudits, NetworkSecurityTesting, GovernanceFramework, Dataprivacy, RiskManagement, Airbolt, ANGELFLOW, AngelLogo, Assistant, blogImageOne, blogImageTwo, Buisness, Career, Catalyst, ChooseFour, ChooseOne, ChooseThree, ChooseTwo, Cova, COVA, CovaLogo, Developer, Industries, Insights, London, Protium, Services, Upsure, DataImageOne, DataImageTwo, DataImageThree, DataImageFour, CloudOne, CloudTwo, CloudThree, CloudFour, AwsOne, AwsTwo, AwsThree, ImageOne, ImageTwo, ImageThree, CloudFive, CloudSix, DataImageFive, DataImageSix, CLOUD, Amazon, DATA, artificialIntelligence, Cybersecurity, DigitalService, AutomationOne, AutomationThree, AutomationFour, AutomationFive, AutomationSix, AutomationTwo, RemoteIT, ConsultingService, CloudService, HelpDesk, NetworkSecurity, SystemSupport, MigrationOne, MigrationTwo, MigrationThree, ProductFour, ProductThree, ProductTwo, ProductOne, ProductFive, ProductSix, ServicesSix, ServicesFive, ServicesFour, ServicesThree, ServicesTwo, ServicesOne, Vulnerability, CustomAnalyticsSix, CustomAnalyticsFive, CustomAnalyticsFour, CustomAnalyticsThree, CustomAnalyticsTwo, CustomAnalyticsOne, TransformThree, TransformTwo, TransformOne, TreeThree, TreeTwo, TreeOne, WebThree, WebTwo, WebOne, AutomationImageOne, AutomationImageTwo, AutomationImageThree, PresentOne, PresentTwo, PresentThree, PresentFour, PresentFive, PresentSix, ConsultingOne, ConsultingTwo, ConsultingThree, ConsultingFour, ConsultingFive, ConsultingSix, BlogBannerThree, BlogBannerTwo, BlogBannerOne, BlogBannerFour, CryptoOne, CryptoTwo, CryptoFive, CryptoFour, CryptoThree, CryptoSix, GamingOne, GamingTwo, GamingThree, HealthCareOne, HealthCareTwo, HealthCareThree, InsuranceOne, InsuranceTwo, InsuranceThree, RealEstateOne, RealEstateTwo, RealEstateThree, RealEstateFour, RealEstateFive, RealEstateSix, IconWeb4, IconWeb3, IconWeb2, IconWeb1, myndsteam, myndsduration, myndsindustry, jquerytile, webflowtile, tagmanagertile, nexttile, figmatile, dockertile, redistile, jenkinstile, djangotile, csstile, mjtile, javatile, bootstraptile, dojotile, railstile, wordpresstile, laraveltile, myndsiconOne, myndsiconTwo, myndsiconThree, catalysticonFour, covaiconOne, covaiconTwo, covaiconThree, ircciconOne, ircciconTwo, ircciconThree, angelflowiconOne, angelflowiconTwo, angelflowiconThree, huntersiconOne, huntersiconTwo, huntersiconThree, juggernauticonOne, juggernauticonTwo, juggernauticonThree, commiticonOne, commiticonTwo, commiticonThree, gifticonOne, gifticonTwo, gifticonThree, zeusxiconOne, zeusxiconTwo, zeusxiconThree, footeducationiconOne, footeducationiconTwo, footeducationiconThree, qatariconOne, qatariconTwo, qatariconThree, brokericonOne, brokericonTwo, brokericonThree, vuetile, oneH2iconOne, oneH2iconTwo, oneH2iconThree, alphaiconOne, alphaiconTwo, alphaiconThree, terrascopeiconOne, terrascopeiconTwo, terrascopeiconThree, airbolticonOne, airbolticonTwo, airbolticonThree, dwpiconOne, dwpiconTwo, dwpiconThree, ispyariconOne, ispyariconTwo, ispyariconThree, dafiiconOne, dafiiconTwo, dafiiconThree, washmeniconOne, washmeniconTwo, washmeniconThree, lindsayprofile, alphaallianceclientlogo, kabirprofile, airboltclientlogo, jasonprofile, foodclientlogo, upsureclientlogo, rivalsclientlogo } from "@/utils";
 import { IoMdMail } from "react-icons/io";
 import { FaPhoneAlt } from "react-icons/fa";
 import { ImLocation } from "react-icons/im";
@@ -3781,4 +3781,106 @@ export const caseStudiesData = [
 
 ];
 
+export const feedbacksdataforward = [
+    {
+        id: 1,
+        profile: lindsayprofile,
+        profilename: "Lindsay Mayer",
+        description: "They were very receptive to our feedback and always made sure we were happy with our project. They were also great with communication and being available when we had questions or needed help.",
+        position: "CEO - Alphas Alliance",
+        logo: alphaallianceclientlogo,
+    },
+    {
+        id: 2,
+        profile: kabirprofile,
+        profilename: "Kabir Sidhu",
+        description: "Flexibility, skill set and a huge variety of capability which is rarely found under one roof. Our requirements were unique and not many companies have the ability to under take such work.",
+        position: "CEO - AirBolt",
+        logo: airboltclientlogo,
+    },
+    {
+        id: 3,
+        profile: jasonprofile,
+        profilename: "Jason Ko",
+        description: "Their ability to work to deadlines and within budget, while producing quality code is truly impressive. Within 3 months we had a full solution, that was taking live data from devices in the field. It was a huge success.",
+        position: "CTO - OneH2, Inc.",
+        logo: airboltclientlogo,
+    },
+    {
+        id: 4,
+        profile: lindsayprofile,
+        profilename: "Kellie Worrell",
+        description: "Their responsiveness was excellent—every email had an answer by the next day. We worked together very well. The final product is fantastic and is exactly what we were looking for. I’m thrilled with the work they delivered. ",
+        position: "Food Safety Officer - Bottomley",
+        logo: foodclientlogo,
+    },
+    {
+        id: 5,
+        profile: kabirprofile,
+        profilename: "Andrew Birt",
+        description: "Their contributions were so substantial that they felt less like an outsourced agency and more like co-founders or an extension of our in-house team.",
+        position: "Founder - UpSure",
+        logo: upsureclientlogo,
+    },
+    {
+        id: 6,
+        profile: jasonprofile,
+        profilename: "Diego Ibarra",
+        description: "Novatore were very communicative and attentive to our needs. It was obvious they were invested in the success of our project and in building a long-term partnership.",
+        position: "VP - Rivals Creative",
+        logo: rivalsclientlogo,
+    },
 
+
+]
+export const feedbacksdatabackword = [
+    {
+        id: 1,
+        profile: lindsayprofile,
+        profilename: "Kellie Worrell",
+        description: "Their responsiveness was excellent—every email had an answer by the next day. We worked together very well. The final product is fantastic and is exactly what we were looking for. I’m thrilled with the work they delivered. ",
+        position: "Food Safety Officer - Bottomley",
+        logo: foodclientlogo,
+    },
+    {
+        id: 2,
+        profile: lindsayprofile,
+        profilename: "Andrew Birt",
+        description: "Their contributions were so substantial that they felt less like an outsourced agency and more like co-founders or an extension of our in-house team.",
+        position: "Founder - UpSure",
+        logo: rivalsclientlogo,
+    },
+    {
+        id: 3,
+        profile: kabirprofile,
+        profilename: "Diego Ibarra",
+        description: "Novatore were very communicative and attentive to our needs. It was obvious they were invested in the success of our project and in building a long-term partnership.",
+        position: "VP - Rivals Creative",
+        logo: rivalsclientlogo,
+    },
+    {
+        id: 4,
+        profile: lindsayprofile,
+        profilename: "Lindsay Mayer",
+        description: "They were very receptive to our feedback and always made sure we were happy with our project. They were also great with communication and being available when we had questions or needed help.",
+        position: "CEO - Alphas Alliance",
+        logo: alphaallianceclientlogo,
+    },
+    {
+        id: 5,
+        profile: kabirprofile,
+        profilename: "Kabir Sidhu",
+        description: "Flexibility, skill set and a huge variety of capability which is rarely found under one roof. Our requirements were unique and not many companies have the ability to under take such work.",
+        position: "CEO - AirBolt",
+        logo: airboltclientlogo,
+    },
+    {
+        id: 6,
+        profile: jasonprofile,
+        profilename: "Jason Ko",
+        description: "Their ability to work to deadlines and within budget, while producing quality code is truly impressive. Within 3 months we had a full solution, that was taking live data from devices in the field. It was a huge success.",
+        position: "CTO - OneH2, Inc.",
+        logo: airboltclientlogo,
+    },
+
+]
