@@ -210,7 +210,7 @@ export const slidesContent = [
     {
         title: 'Empower Your Business, Transform Digitally', description: 'Smart and Powerful Solutions to Kickstart Your Growth', link: "/transformative-solutions", className: 'hero-banner-screen z-50 max-w-4xl relative flex flex-col justify-center  min-h-[50vh] md:min-h-[100vh] items-start'
     },
-    { title: 'Move Beyond the Ordinary', description: 'It’s time to innovate, rethink, and excel', link: "/artificial-Intelligence" },
+    { title: 'Move Beyond the Ordinary', description: 'It’s time to Innovate, Rethink, and Excel', link: "/artificial-Intelligence" },
 ];
 
 export const companiesdata = [
