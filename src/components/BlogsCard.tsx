@@ -8,10 +8,17 @@ interface BlogsProps {
     id?: number;
     image: any;
     subtitle: string;
-    description? : string;
+    description?: string;
     title: string;
     type?: string;
 }
+const truncateText = (text: string, wordLimit: number) => {
+    const wordsArray = text.split(" ");
+    if (wordsArray.length > wordLimit) {
+        return wordsArray.slice(0, wordLimit).join(" ") + "...";
+    }
+    return text;
+};
 
 const BlogsCard: React.FC<BlogsProps> = ({ image, subtitle, title, type, description }) => {
     return (
@@ -27,9 +34,11 @@ const BlogsCard: React.FC<BlogsProps> = ({ image, subtitle, title, type, descrip
             </div>
             <div className="blog-content px-6 pb-4 pt-[2px]">
                 <h5 className="text-[#1B232E] text-[16px] font-normal not-italic leading-normal mt-1 ">{subtitle}</h5>
-                <h3 className="font-semibold text-[22px] leading-normal not-italic capitalize mb-2 text-black">{title}</h3>
-                <p className="max-h-0 group-hover:max-h-[200px]  transition-all duration-300 ease-in-out overflow-hidden text-[#1B232E]">
-                    {description}
+                <h3 className="font-semibold text-[22px] leading-normal not-italic capitalize mb-2 text-black">
+                    {truncateText(title, 11)}
+                </h3>
+                <p className="max-h-0 group-hover:max-h-[200px]  transition-all duration-300 ease-in-out overflow-hidden text-[#1B232E] ">
+                    {truncateText(description || '', 10)}
                 </p>
             </div>
             <Link href='/' className="text-[#2776EA] absolute bottom-[19px] left-[20px] underline text-[16px] flex flex-row items-center gap-2 not-italic font-normal leading-normal ">Read More <FaArrowRight size={16} className='text-[#2776EA]' /></Link>

@@ -45,7 +45,11 @@ const DataCard: React.FC<DataCardProps> = ({ viewbutton, title, description, ico
                     ))}
                 </ul>
             )}
-
+            {viewbutton && (
+                <Link href={viewbutton.Link} target='_blank'  className="text-[#2776EA] text-[16px] leading-[30px] font-normal  border-solid border-[#2776EA] rounded-[16px] cursor-pointer max-w-[120px] w-full h-[40px] flex justify-center items-center apply-btn mb-2">
+                    {viewbutton.title}
+                </Link>
+            )}
         </div>
     );
 };

@@ -20,7 +20,7 @@ const JobOpenings: NextPage = () => {
                 needsDescription="Explore our latest job openings and find your next opportunity at Novatore. We're looking for talented individuals who are ready to take on new challenges and contribute to projects. Whether you're a seasoned professional or just starting your career, we have a variety of roles across different departments that might be the perfect fit for you.  " />
             <DataServicesSection heading="Novatore" data={jobOpeningData} />
             <Enterprise />
-            <Innovation className="" />
+            <Innovation />
         </Layout>
     );
 };

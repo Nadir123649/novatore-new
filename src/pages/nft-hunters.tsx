@@ -17,12 +17,12 @@ const NFTHunters: NextPage = () => {
             <div className="overflow-x-hidden">
                 <HeroBanner beforeyellowtext="NFT Hunters:" bannerHeading="Elevating the NFT Market with Curated Weekly Insights and Marketing Solutions" needsMoreTitle={true} previewImage="/images/huntersherobanner.png" pagetitle="" maxwidth="1100px" />
                 <HeadlineBanner headlinesData={nftHuntersHeadlines} />
-                <CaseBackground cardLogo={"/images/.svg"} cardDescription="By cutting through the noise of countless daily launches, NFT Hunters empowers users to make informed decisions in the rapidly evolving NFT space."
+                <CaseBackground cardLogo={"/images/nftlogo.svg"} cardDescription="By cutting through the noise of countless daily launches, NFT Hunters empowers users to make informed decisions in the rapidly evolving NFT space."
                     backgroundDescription={"NFT Hunters was conceived to address the growing demand for reliable and curated information in the rapidly expanding NFT space. With countless NFT projects launching daily, it became increasingly challenging for investors and enthusiasts to identify high-potential opportunities. NFT Hunters sought to solve this problem by creating a platform that meticulously analyzes and curates the best NFT, DeFi, GameFi, and Web3 projects."} />
                 <CaseChallanges cardBanner={"/images/huntersbanner.png"} challenges={hunterschallengesData} />
                 <TechStack title="Tech Stacks" images={angelflowtechStackImages} />
                 <DataServicesSection heading="Solutions" data={nftHunterscaseData} textalign="left" />
-                <CaseOutcomes outcomesBanner={"/images/huntersoutcomesbanner.png"} outcomes={huntersoutcomesData} />
+                <CaseOutcomes outcomesBanner={"/images/nftoutcomesbanner.png"} outcomes={huntersoutcomesData} />
             </div>
         </Layout>
     );

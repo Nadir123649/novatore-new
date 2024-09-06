@@ -1,4 +1,4 @@
-import { googleanalyticstile, tstile, angulaartile, reacttile, vuejstile, nodetile, pythontile, jstile, fluttertile, swifttile, mysqltile, googlecloudtile, mongodbtile, postgresstile, awstile, azuretile, phptile, caseone, casetwo, casefour, casethree, AIOne, AITwo, AIThree, AIFour, AIFive, AISix, ComprehensiveIcon, StorageIcon, NetworkingIcon, AnalyticsIcon, CovaBg, dataautomation, AngelflowBg, CloudServiceicon, About, ComplianceAI, ApplicationCompliance, RedTeaming, webAppSecurity, SecurityAudits, NetworkSecurityTesting, GovernanceFramework, Dataprivacy, RiskManagement, Airbolt, ANGELFLOW, AngelLogo, Assistant, blogImageOne, blogImageTwo, Buisness, Career, Catalyst, ChooseFour, ChooseOne, ChooseThree, ChooseTwo, Cova, COVA, CovaLogo, Developer, Industries, Insights, London, Protium, Services, Upsure, DataImageOne, DataImageTwo, DataImageThree, DataImageFour, CloudOne, CloudTwo, CloudThree, CloudFour, AwsOne, AwsTwo, AwsThree, ImageOne, ImageTwo, ImageThree, CloudFive, CloudSix, DataImageFive, DataImageSix, CLOUD, Amazon, DATA, artificialIntelligence, Cybersecurity, DigitalService, AutomationOne, AutomationThree, AutomationFour, AutomationFive, AutomationSix, AutomationTwo, RemoteIT, ConsultingService, CloudService, HelpDesk, NetworkSecurity, SystemSupport, MigrationOne, MigrationTwo, MigrationThree, ProductFour, ProductThree, ProductTwo, ProductOne, ProductFive, ProductSix, ServicesSix, ServicesFive, ServicesFour, ServicesThree, ServicesTwo, ServicesOne, Vulnerability, CustomAnalyticsSix, CustomAnalyticsFive, CustomAnalyticsFour, CustomAnalyticsThree, CustomAnalyticsTwo, CustomAnalyticsOne, TransformThree, TransformTwo, TransformOne, TreeThree, TreeTwo, TreeOne, WebThree, WebTwo, WebOne, AutomationImageOne, AutomationImageTwo, AutomationImageThree, PresentOne, PresentTwo, PresentThree, PresentFour, PresentFive, PresentSix, ConsultingOne, ConsultingTwo, ConsultingThree, ConsultingFour, ConsultingFive, ConsultingSix, BlogBannerThree, BlogBannerTwo, BlogBannerOne, BlogBannerFour, CryptoOne, CryptoTwo, CryptoFive, CryptoFour, CryptoThree, CryptoSix, GamingOne, GamingTwo, GamingThree, HealthCareOne, HealthCareTwo, HealthCareThree, InsuranceOne, InsuranceTwo, InsuranceThree, RealEstateOne, RealEstateTwo, RealEstateThree, RealEstateFour, RealEstateFive, RealEstateSix, IconWeb4, IconWeb3, IconWeb2, IconWeb1, myndsteam, myndsduration, myndsindustry, jquerytile, webflowtile, tagmanagertile, nexttile, figmatile, dockertile, redistile, jenkinstile, djangotile, csstile, mjtile, javatile, bootstraptile, dojotile, railstile, wordpresstile, laraveltile, myndsiconOne, myndsiconTwo, myndsiconThree, catalysticonFour, covaiconOne, covaiconTwo, covaiconThree, ircciconOne, ircciconTwo, ircciconThree, angelflowiconOne, angelflowiconTwo, angelflowiconThree, huntersiconOne, huntersiconTwo, huntersiconThree, juggernauticonOne, juggernauticonTwo, juggernauticonThree, commiticonOne, commiticonTwo, commiticonThree, gifticonOne, gifticonTwo, gifticonThree, zeusxiconOne, zeusxiconTwo, zeusxiconThree, footeducationiconOne, footeducationiconTwo, footeducationiconThree, qatariconOne, qatariconTwo, qatariconThree, brokericonOne, brokericonTwo, brokericonThree, vuetile, oneH2iconOne, oneH2iconTwo, oneH2iconThree, alphaiconOne, alphaiconTwo, alphaiconThree, terrascopeiconOne, terrascopeiconTwo, terrascopeiconThree, airbolticonOne, airbolticonTwo, airbolticonThree, dwpiconOne, dwpiconTwo, dwpiconThree, ispyariconOne, ispyariconTwo, ispyariconThree, dafiiconOne, dafiiconTwo, dafiiconThree, washmeniconOne, washmeniconTwo, washmeniconThree, lindsayprofile, alphaallianceclientlogo, kabirprofile, airboltclientlogo, jasonprofile, foodclientlogo, upsureclientlogo, rivalsclientlogo } from "@/utils";
+import { googleanalyticstile, tstile, angulaartile, reacttile, vuejstile, nodetile, pythontile, jstile, fluttertile, swifttile, mysqltile, googlecloudtile, mongodbtile, postgresstile, awstile, azuretile, phptile, caseone, casetwo, casefour, casethree, AIOne, AITwo, AIThree, AIFour, AIFive, AISix, ComprehensiveIcon, StorageIcon, NetworkingIcon, AnalyticsIcon, CovaBg, dataautomation, AngelflowBg, CloudServiceicon, About, ComplianceAI, ApplicationCompliance, RedTeaming, webAppSecurity, SecurityAudits, NetworkSecurityTesting, GovernanceFramework, Dataprivacy, RiskManagement, Airbolt, ANGELFLOW, AngelLogo, Assistant, blogImageOne, blogImageTwo, Buisness, Career, Catalyst, ChooseFour, ChooseOne, ChooseThree, ChooseTwo, Cova, COVA, CovaLogo, Developer, Industries, Insights, London, Protium, Services, Upsure, DataImageOne, DataImageTwo, DataImageThree, DataImageFour, CloudOne, CloudTwo, CloudThree, CloudFour, AwsOne, AwsTwo, AwsThree, ImageOne, ImageTwo, ImageThree, CloudFive, CloudSix, DataImageFive, DataImageSix, CLOUD, Amazon, DATA, artificialIntelligence, Cybersecurity, DigitalService, AutomationOne, AutomationThree, AutomationFour, AutomationFive, AutomationSix, AutomationTwo, RemoteIT, ConsultingService, CloudService, HelpDesk, NetworkSecurity, SystemSupport, MigrationOne, MigrationTwo, MigrationThree, ProductFour, ProductThree, ProductTwo, ProductOne, ProductFive, ProductSix, ServicesSix, ServicesFive, ServicesFour, ServicesThree, ServicesTwo, ServicesOne, Vulnerability, CustomAnalyticsSix, CustomAnalyticsFive, CustomAnalyticsFour, CustomAnalyticsThree, CustomAnalyticsTwo, CustomAnalyticsOne, TransformThree, TransformTwo, TransformOne, TreeThree, TreeTwo, TreeOne, WebThree, WebTwo, WebOne, AutomationImageOne, AutomationImageTwo, AutomationImageThree, PresentOne, PresentTwo, PresentThree, PresentFour, PresentFive, PresentSix, ConsultingOne, ConsultingTwo, ConsultingThree, ConsultingFour, ConsultingFive, ConsultingSix, BlogBannerThree, BlogBannerTwo, BlogBannerOne, BlogBannerFour, CryptoOne, CryptoTwo, CryptoFive, CryptoFour, CryptoThree, CryptoSix, GamingOne, GamingTwo, GamingThree, HealthCareOne, HealthCareTwo, HealthCareThree, InsuranceOne, InsuranceTwo, InsuranceThree, RealEstateOne, RealEstateTwo, RealEstateThree, RealEstateFour, RealEstateFive, RealEstateSix, IconWeb4, IconWeb3, IconWeb2, IconWeb1, myndsteam, myndsduration, myndsindustry, jquerytile, webflowtile, tagmanagertile, nexttile, figmatile, dockertile, redistile, jenkinstile, djangotile, csstile, mjtile, javatile, bootstraptile, dojotile, railstile, wordpresstile, laraveltile, myndsiconOne, myndsiconTwo, myndsiconThree, catalysticonFour, covaiconOne, covaiconTwo, covaiconThree, ircciconOne, ircciconTwo, ircciconThree, angelflowiconOne, angelflowiconTwo, angelflowiconThree, huntersiconOne, huntersiconTwo, huntersiconThree, juggernauticonOne, juggernauticonTwo, juggernauticonThree, commiticonOne, commiticonTwo, commiticonThree, gifticonOne, gifticonTwo, gifticonThree, zeusxiconOne, zeusxiconTwo, zeusxiconThree, footeducationiconOne, footeducationiconTwo, footeducationiconThree, qatariconOne, qatariconTwo, qatariconThree, brokericonOne, brokericonTwo, brokericonThree, vuetile, oneH2iconOne, oneH2iconTwo, oneH2iconThree, alphaiconOne, alphaiconTwo, alphaiconThree, terrascopeiconOne, terrascopeiconTwo, terrascopeiconThree, airbolticonOne, airbolticonTwo, airbolticonThree, dwpiconOne, dwpiconTwo, dwpiconThree, ispyariconOne, ispyariconTwo, ispyariconThree, dafiiconOne, dafiiconTwo, dafiiconThree, washmeniconOne, washmeniconTwo, washmeniconThree, lindsayprofile, alphaallianceclientlogo, kabirprofile, airboltclientlogo, jasonprofile, foodclientlogo, upsureclientlogo, rivalsclientlogo, casenft, casejuggernaut, casecryptocurrency, casendafi, casedafi } from "@/utils";
 import { IoMdMail } from "react-icons/io";
 import { FaPhoneAlt } from "react-icons/fa";
 import { ImLocation } from "react-icons/im";
@@ -63,7 +63,7 @@ export const whyChooseLogo = [
     { img: ChooseTwo, alt: "ChooseTwo" },
     { img: ChooseThree, alt: "ChooseThree" },
     { img: ChooseFour, alt: "ChooseFour" },
-]   
+]
 
 export const contactDetails = [
     {
@@ -210,7 +210,7 @@ export const slidesContent = [
     {
         title: 'Empower Your Business, Transform Digitally', description: 'Smart and Powerful Solutions to Kickstart Your Growth', link: "/transformative-solutions", className: 'hero-banner-screen z-50 max-w-4xl relative flex flex-col justify-center  min-h-[50vh] md:min-h-[100vh] items-start'
     },
-    { title: 'Move Beyond the Ordinary', description: 'It’s time to innovate, rethink, and excel', link: "/artificial-Intelligence" },
+    { title: 'Move Beyond the Ordinary', description: 'It’s Time to Innovate, Rethink, and Excel', link: "/artificial-Intelligence" },
 ];
 
 export const companiesdata = [
@@ -358,7 +358,7 @@ export const listingstable: any = {
             link: "/careers",
             heading: "Careers",
             details: [
-                { text: "Job Openings", link: '/' },
+                { text: "Job Openings", link: '/job-openings' },
                 { text: "Life at Novatore", link: '/' },
                 { text: "Internship", link: '/' }
             ]
@@ -898,7 +898,11 @@ export const jobOpeningData = [
         listItems: [
             '5+ years of experience in software development',
             'A strong background in full-stack development',
-        ]
+        ],
+        viewbutton: {
+            title: 'Apply Now',
+            Link: 'https://docs.google.com/forms/d/e/1FAIpQLSeMJYgFcvqVzM5lVmiJq8f2xQ3xyALZ_pxexnTyVUZhRnW-Dw/viewform'
+        }
     },
     {
         title: 'UI/UX Designer',
@@ -906,39 +910,59 @@ export const jobOpeningData = [
         listItems: [
             '3+ years of experience in UI/UX design',
             'A solid portfolio showcasing your ability to create user-centered designs for web and mobile platforms.',
-        ]
+        ],
+        viewbutton: {
+            title: 'Apply Now',
+            Link: 'https://docs.google.com/forms/d/e/1FAIpQLSeMJYgFcvqVzM5lVmiJq8f2xQ3xyALZ_pxexnTyVUZhRnW-Dw/viewform'
+        }
     },
     {
         title: 'Product Manager',
         icon: ComprehensiveIcon,
         listItems: [
             '4+ years of experience in product management',
-            'A proven track record of successfully managing the entire product lifecycle from ideation to launch.',
-        ]
+            'A proven track record of successfully managing the entire product lifecycle.',
+        ],
+        viewbutton: {
+            title: 'Apply Now',
+            Link: 'https://docs.google.com/forms/d/e/1FAIpQLSeMJYgFcvqVzM5lVmiJq8f2xQ3xyALZ_pxexnTyVUZhRnW-Dw/viewform'
+        }
     },
     {
         title: 'DevOps Engineer',
         icon: AutomationImageOne,
         listItems: [
             '3+ years of experience in DevOps',
-            'Hands-on experience in managing CI/CD pipelines, cloud infrastructure (AWS, Azure, or GCP), and automation tools.',
-        ]
+            'Hands-on experience in managing CI/CD pipelines, cloud infrastructure.',
+        ],
+        viewbutton: {
+            title: 'Apply Now',
+            Link: 'https://docs.google.com/forms/d/e/1FAIpQLSeMJYgFcvqVzM5lVmiJq8f2xQ3xyALZ_pxexnTyVUZhRnW-Dw/viewform'
+        }
     },
     {
         title: 'Data Scientist',
         icon: AutomationImageTwo,
         listItems: [
             '2+ years of experience in data science',
-            'Expertise in statistical analysis, machine learning, and data visualization tools (e.g., Python, R, TensorFlow).',
-        ]
+            'Expertise in statistical analysis, machine learning.',
+        ],
+        viewbutton: {
+            title: 'Apply Now',
+            Link: 'https://docs.google.com/forms/d/e/1FAIpQLSeMJYgFcvqVzM5lVmiJq8f2xQ3xyALZ_pxexnTyVUZhRnW-Dw/viewform'
+        }
     },
     {
         title: 'QA Automation Engineer',
         icon: ComprehensiveIcon,
         listItems: [
-            '3+ years of experience in QA automation',
-            'Proficient in creating automated test scripts and frameworks using tools like Selenium, Cypress, or JUnit.',
-        ]
+            '3+ years of experience in QA ',
+            'Proficient in creating automated test scripts and frameworks.',
+        ],
+        viewbutton: {
+            title: 'Apply Now',
+            Link: 'https://docs.google.com/forms/d/e/1FAIpQLSeMJYgFcvqVzM5lVmiJq8f2xQ3xyALZ_pxexnTyVUZhRnW-Dw/viewform'
+        }
     },
 ];
 
@@ -2985,27 +3009,31 @@ export const data = [
 
 export const caseStudiesslidedata = [
     {
-        title: "A Customized Marketplace",
+        title: "NFT Hunters",
         description: "We developed a feature-rich NFT marketplace with a user-friendly interface and secure crypto wallet integration for NFT Hunterz.",
-        backgroundimg: caseone,
+        // backgroundimg: caseone,
+        backgroundimg: casenft,
         link: "/nft-hunters"
     },
     {
-        title: "Revolutionizing Transactions",
+        title: "Juggernaut DeFi",
         description: "Our team created an advanced NFT platform for Juggernaut DeFi, incorporating secure blockchain integration and global accessibility.",
-        backgroundimg: casetwo,
+        // backgroundimg: casetwo,
+        backgroundimg: casejuggernaut,
         link: "/juggernaut-defi"
     },
     {
-        title: "Enhancing Transparency",
+        title: "Cryptocurrency",
         description: "We built a secure blockchain-based platform for Commit Good, ensuring transparent cryptocurrency donations.",
-        backgroundimg: casethree,
+        // backgroundimg: casethree,
+        backgroundimg: casecryptocurrency,
         link: "/crypto-currency"
     },
     {
-        title: "Streamlining Crypto Portfolio Management",
+        title: "Dafi",
         description: "For Swap Folio, we delivered a comprehensive crypto portfolio management platform with real-time analytics.",
-        backgroundimg: casefour,
+        // backgroundimg: casefour,
+        backgroundimg: casedafi,
         link: "/dafi"
     }
 ];

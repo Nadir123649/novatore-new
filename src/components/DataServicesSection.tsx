@@ -2,12 +2,18 @@ import React from 'react';
 import { Col, Container, Row } from 'react-bootstrap';
 import DataCard from './DataCard';
 import { useState, useEffect } from 'react';
+
 interface DataItem {
     title: string;
     description?: string;
     icon?: string;
     listItems?: string[];
+    viewbutton?: {
+        title: string;
+        Link: string;
+    };
 }
+
 interface DataServicesSectionProps {
     heading: string;
     headingBlue?: string;
@@ -17,9 +23,11 @@ interface DataServicesSectionProps {
     data?: DataItem[];
     textalign?: "left" | "center" | "right";
 }
+
 const DataServicesSection: React.FC<DataServicesSectionProps> = ({ textalign = "left", heading, headingBlue, data = [], needsMoreTitle, type = "multiple", cardMinHeight }) => {
     const [isVisible, setIsVisible] = useState(false);
     const [hasAnimated, setHasAnimated] = useState(false);
+
     const handleScroll = () => {
         const element = document.getElementById("dataservice-section");
         if (element && !hasAnimated) {
@@ -30,12 +38,14 @@ const DataServicesSection: React.FC<DataServicesSectionProps> = ({ textalign = "
             }
         }
     };
+
     useEffect(() => {
         window.addEventListener("scroll", handleScroll);
         return () => {
             window.removeEventListener("scroll", handleScroll);
         };
     }, [hasAnimated]);
+
     return (
         <section id="dataservice-section" className={`${isVisible ? "fadeIn" : "opacity-0"} pb-20 pt-10`}>
             <Container>
@@ -58,6 +68,7 @@ const DataServicesSection: React.FC<DataServicesSectionProps> = ({ textalign = "
                                     type="relative bg-white shadow rounded-[16px] pt-[40px] pb-[10px] px-[24px] max-w-2xl mx-auto overflow-hidden flex flex-col h-full hover:scale-105 transition ease-in duration-1.5"
                                     value="absolute top-[16px] right-[400px] mt-2 mr-3 text-blue-200"
                                     minHeight={cardMinHeight}
+                                    viewbutton={item.viewbutton} 
                                 />
                             </Col>
                         ))
@@ -69,6 +80,7 @@ const DataServicesSection: React.FC<DataServicesSectionProps> = ({ textalign = "
                                     icon={item.icon}
                                     listItems={item.listItems}
                                     minHeight={cardMinHeight}
+                                    viewbutton={item.viewbutton}
                                 />
                             </Col>
                         ))}
@@ -77,4 +89,5 @@ const DataServicesSection: React.FC<DataServicesSectionProps> = ({ textalign = "
         </section>
     );
 };
+
 export default DataServicesSection;
