@@ -12,22 +12,22 @@ import CaseBackground from "@/components/CaseBackground";
 import CaseChallanges from "@/components/CaseChallanges";
 import CaseOutcomes from "@/components/CaseOutcomes";
 import DataServicesSection from "@/components/DataServicesSection";
-import { qatarcaseData } from "@/constants/indesx";
-import { qatarStackImages } from "@/constants/indesx";
-import { souqofQatarchallengesData, souqofQataroutcomesData, oneH2Headlines } from "@/constants/indesx";
+import { miltoncaseData, miltonoutcomesData } from "@/constants/indesx";
+import { miltonStackImages } from "@/constants/indesx";
+import { souqofQatarchallengesData, souqofQataroutcomesData, miltonHeadlines } from "@/constants/indesx";
 
 const MiltonAndKing: NextPage = () => {
     return (
         <Layout showContactForm={true} title="Novatore Solutions - Retail" description="Welcome to Novatore Solutions, setting new standards in technology with unmatchable code.">
             <div className="overflow-x-hidden">
-                <HeroBanner bannerHeading="The" spanskybluetext="OneH2" morebannerHeading="Project for Zero-Emissions Hydrogen Fuel Transportation" needsMoreTitle={true} previewImage="/images/oneh2herobanner.png" pagetitle="" maxwidth="1100px" />
-                <HeadlineBanner headlinesData={oneH2Headlines} />
-                <CaseBackground cardLogo={"/images/qatarlogo.svg"} cardDescription="By facilitating informed purchasing decisions, Souq of Qatar plays a crucial role in driving the adoption of e-commerce in the region, contributing to the overall growth of the digital economy."
-                    backgroundDescription={"Souq of Qatar is an e-commerce platform designed to serve as Qatar's first price comparison website. The client aimed to create a digital marketplace where users could compare products across various categories, ensuring they make well-informed purchasing decisions. The platform was intended to cater to the needs of both buyers and sellers in Qatar’s growing market."} />
+                <HeroBanner bannerHeading="Crafting a Premier E-Commerce Experience for Luxury Wallpaper and Fabric" needsMoreTitle={true} previewImage="/images/miltonherobanner.png" pagetitle="" maxwidth="1100px" />
+                <HeadlineBanner headlinesData={miltonHeadlines} />
+                <CaseBackground cardLogo={"/images/miltonlogo.svg"} cardDescription="Novatore Solutions collaborated with Milton & King to develop a sophisticated e-commerce platform that seamlessly integrates their luxurious product offerings with an intuitive user experience."
+                    backgroundDescription={"Milton & King, a leading brand in the luxury wallpaper and fabric industry, aimed to enhance its online presence to better serve its growing customer base. Known for their modern and artistic designs, Milton & King sought to create a more engaging and user-friendly e-commerce platform that could showcase their high-quality products while providing a seamless shopping experience."} />
                 <CaseChallanges cardBanner={"/images/souqofQatarbanner.png"} challenges={souqofQatarchallengesData} />
-                <TechStack title="Tech Stacks" images={qatarStackImages} />
-                <DataServicesSection heading="Solutions" data={qatarcaseData} textalign="left" />
-                <CaseOutcomes outcomesBanner={"/images/souqofQataroutcomesbanner.png"} outcomes={souqofQataroutcomesData} />
+                <TechStack title="Tech Stacks" images={miltonStackImages} />
+                <DataServicesSection heading="Solutions" data={miltoncaseData} textalign="left" />
+                <CaseOutcomes outcomesBanner={"/images/souqofQataroutcomesbanner.png"} outcomes={miltonoutcomesData} />
             </div>
         </Layout>
     );

@@ -86,7 +86,7 @@ const MegaMenu: React.FC<MegaMenuProps> = ({ activeMenu, activeLink }) => {
                       {feature.heading}
                     </h1>
                   ) : (
-                    <div className="pt-[22px]">&nbsp;</div>
+                    <div className="pt-[2px]">&nbsp;</div>
                   )}
                 </a>
                 <ul className="list-none px-0">

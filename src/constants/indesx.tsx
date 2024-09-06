@@ -1,4 +1,4 @@
-import { googleanalyticstile, tstile, angulaartile, reacttile, vuejstile, nodetile, pythontile, jstile, fluttertile, swifttile, mysqltile, googlecloudtile, mongodbtile, postgresstile, awstile, azuretile, phptile, caseone, casetwo, casefour, casethree, AIOne, AITwo, AIThree, AIFour, AIFive, AISix, ComprehensiveIcon, StorageIcon, NetworkingIcon, AnalyticsIcon, CovaBg, dataautomation, AngelflowBg, CloudServiceicon, About, ComplianceAI, ApplicationCompliance, RedTeaming, webAppSecurity, SecurityAudits, NetworkSecurityTesting, GovernanceFramework, Dataprivacy, RiskManagement, Airbolt, ANGELFLOW, AngelLogo, Assistant, blogImageOne, blogImageTwo, Buisness, Career, Catalyst, ChooseFour, ChooseOne, ChooseThree, ChooseTwo, Cova, COVA, CovaLogo, Developer, Industries, Insights, London, Protium, Services, Upsure, DataImageOne, DataImageTwo, DataImageThree, DataImageFour, CloudOne, CloudTwo, CloudThree, CloudFour, AwsOne, AwsTwo, AwsThree, ImageOne, ImageTwo, ImageThree, CloudFive, CloudSix, DataImageFive, DataImageSix, CLOUD, Amazon, DATA, artificialIntelligence, Cybersecurity, DigitalService, AutomationOne, AutomationThree, AutomationFour, AutomationFive, AutomationSix, AutomationTwo, RemoteIT, ConsultingService, CloudService, HelpDesk, NetworkSecurity, SystemSupport, MigrationOne, MigrationTwo, MigrationThree, ProductFour, ProductThree, ProductTwo, ProductOne, ProductFive, ProductSix, ServicesSix, ServicesFive, ServicesFour, ServicesThree, ServicesTwo, ServicesOne, Vulnerability, CustomAnalyticsSix, CustomAnalyticsFive, CustomAnalyticsFour, CustomAnalyticsThree, CustomAnalyticsTwo, CustomAnalyticsOne, TransformThree, TransformTwo, TransformOne, TreeThree, TreeTwo, TreeOne, WebThree, WebTwo, WebOne, AutomationImageOne, AutomationImageTwo, AutomationImageThree, PresentOne, PresentTwo, PresentThree, PresentFour, PresentFive, PresentSix, ConsultingOne, ConsultingTwo, ConsultingThree, ConsultingFour, ConsultingFive, ConsultingSix, BlogBannerThree, BlogBannerTwo, BlogBannerOne, BlogBannerFour, CryptoOne, CryptoTwo, CryptoFive, CryptoFour, CryptoThree, CryptoSix, GamingOne, GamingTwo, GamingThree, HealthCareOne, HealthCareTwo, HealthCareThree, InsuranceOne, InsuranceTwo, InsuranceThree, RealEstateOne, RealEstateTwo, RealEstateThree, RealEstateFour, RealEstateFive, RealEstateSix, IconWeb4, IconWeb3, IconWeb2, IconWeb1, myndsteam, myndsduration, myndsindustry, jquerytile, webflowtile, tagmanagertile, nexttile, figmatile, dockertile, redistile, jenkinstile, djangotile, csstile, mjtile, javatile, bootstraptile, dojotile, railstile, wordpresstile, laraveltile, myndsiconOne, myndsiconTwo, myndsiconThree, catalysticonFour, covaiconOne, covaiconTwo, covaiconThree, ircciconOne, ircciconTwo, ircciconThree, angelflowiconOne, angelflowiconTwo, angelflowiconThree, huntersiconOne, huntersiconTwo, huntersiconThree, juggernauticonOne, juggernauticonTwo, juggernauticonThree, commiticonOne, commiticonTwo, commiticonThree, gifticonOne, gifticonTwo, gifticonThree, zeusxiconOne, zeusxiconTwo, zeusxiconThree, footeducationiconOne, footeducationiconTwo, footeducationiconThree, qatariconOne, qatariconTwo, qatariconThree, brokericonOne, brokericonTwo, brokericonThree, vuetile, oneH2iconOne, oneH2iconTwo, oneH2iconThree, alphaiconOne, alphaiconTwo, alphaiconThree, terrascopeiconOne, terrascopeiconTwo, terrascopeiconThree, airbolticonOne, airbolticonTwo, airbolticonThree, dwpiconOne, dwpiconTwo, dwpiconThree, ispyariconOne, ispyariconTwo, ispyariconThree } from "@/utils";
+import { googleanalyticstile, tstile, angulaartile, reacttile, vuejstile, nodetile, pythontile, jstile, fluttertile, swifttile, mysqltile, googlecloudtile, mongodbtile, postgresstile, awstile, azuretile, phptile, caseone, casetwo, casefour, casethree, AIOne, AITwo, AIThree, AIFour, AIFive, AISix, ComprehensiveIcon, StorageIcon, NetworkingIcon, AnalyticsIcon, CovaBg, dataautomation, AngelflowBg, CloudServiceicon, About, ComplianceAI, ApplicationCompliance, RedTeaming, webAppSecurity, SecurityAudits, NetworkSecurityTesting, GovernanceFramework, Dataprivacy, RiskManagement, Airbolt, ANGELFLOW, AngelLogo, Assistant, blogImageOne, blogImageTwo, Buisness, Career, Catalyst, ChooseFour, ChooseOne, ChooseThree, ChooseTwo, Cova, COVA, CovaLogo, Developer, Industries, Insights, London, Protium, Services, Upsure, DataImageOne, DataImageTwo, DataImageThree, DataImageFour, CloudOne, CloudTwo, CloudThree, CloudFour, AwsOne, AwsTwo, AwsThree, ImageOne, ImageTwo, ImageThree, CloudFive, CloudSix, DataImageFive, DataImageSix, CLOUD, Amazon, DATA, artificialIntelligence, Cybersecurity, DigitalService, AutomationOne, AutomationThree, AutomationFour, AutomationFive, AutomationSix, AutomationTwo, RemoteIT, ConsultingService, CloudService, HelpDesk, NetworkSecurity, SystemSupport, MigrationOne, MigrationTwo, MigrationThree, ProductFour, ProductThree, ProductTwo, ProductOne, ProductFive, ProductSix, ServicesSix, ServicesFive, ServicesFour, ServicesThree, ServicesTwo, ServicesOne, Vulnerability, CustomAnalyticsSix, CustomAnalyticsFive, CustomAnalyticsFour, CustomAnalyticsThree, CustomAnalyticsTwo, CustomAnalyticsOne, TransformThree, TransformTwo, TransformOne, TreeThree, TreeTwo, TreeOne, WebThree, WebTwo, WebOne, AutomationImageOne, AutomationImageTwo, AutomationImageThree, PresentOne, PresentTwo, PresentThree, PresentFour, PresentFive, PresentSix, ConsultingOne, ConsultingTwo, ConsultingThree, ConsultingFour, ConsultingFive, ConsultingSix, BlogBannerThree, BlogBannerTwo, BlogBannerOne, BlogBannerFour, CryptoOne, CryptoTwo, CryptoFive, CryptoFour, CryptoThree, CryptoSix, GamingOne, GamingTwo, GamingThree, HealthCareOne, HealthCareTwo, HealthCareThree, InsuranceOne, InsuranceTwo, InsuranceThree, RealEstateOne, RealEstateTwo, RealEstateThree, RealEstateFour, RealEstateFive, RealEstateSix, IconWeb4, IconWeb3, IconWeb2, IconWeb1, myndsteam, myndsduration, myndsindustry, jquerytile, webflowtile, tagmanagertile, nexttile, figmatile, dockertile, redistile, jenkinstile, djangotile, csstile, mjtile, javatile, bootstraptile, dojotile, railstile, wordpresstile, laraveltile, myndsiconOne, myndsiconTwo, myndsiconThree, catalysticonFour, covaiconOne, covaiconTwo, covaiconThree, ircciconOne, ircciconTwo, ircciconThree, angelflowiconOne, angelflowiconTwo, angelflowiconThree, huntersiconOne, huntersiconTwo, huntersiconThree, juggernauticonOne, juggernauticonTwo, juggernauticonThree, commiticonOne, commiticonTwo, commiticonThree, gifticonOne, gifticonTwo, gifticonThree, zeusxiconOne, zeusxiconTwo, zeusxiconThree, footeducationiconOne, footeducationiconTwo, footeducationiconThree, qatariconOne, qatariconTwo, qatariconThree, brokericonOne, brokericonTwo, brokericonThree, vuetile, oneH2iconOne, oneH2iconTwo, oneH2iconThree, alphaiconOne, alphaiconTwo, alphaiconThree, terrascopeiconOne, terrascopeiconTwo, terrascopeiconThree, airbolticonOne, airbolticonTwo, airbolticonThree, dwpiconOne, dwpiconTwo, dwpiconThree, ispyariconOne, ispyariconTwo, ispyariconThree, dafiiconOne, dafiiconTwo, dafiiconThree, washmeniconOne, washmeniconTwo, washmeniconThree } from "@/utils";
 import { IoMdMail } from "react-icons/io";
 import { FaPhoneAlt } from "react-icons/fa";
 import { ImLocation } from "react-icons/im";
@@ -375,7 +375,7 @@ export const listingstable: any = {
                 { text: "Gaming", link: '/gaming' },
                 { text: "Healthcare", link: '/healthcare' },
                 { text: "Insurance", link: '/insurance' },
-                { text: "Real Estate", link: '/real-estate' }, { text: "Retail", link: '/retail' }, { text: "Social", link: '/social' }, { text: "Education", link: '/' }, { text: "Sports", link: '/' }
+                // { text: "Real Estate", link: '/real-estate' }, { text: "Retail", link: '/retail' }, { text: "Social", link: '/social' }, { text: "Education", link: '/' }, { text: "Sports", link: '/' }
 
             ]
         }
@@ -392,7 +392,7 @@ export const featurestable: any = {
         { id: "News & Events ", link: "/", heading: "News & Events", details: [{ text: "Company News", link: '/' }, { text: "Industry Events", link: '/' }, { text: "Press Releases", link: '/' }] },
 
     ],
-    // industries: [{ id: "Industries", link: "/", heading: "", details: [{ text: "Real Estate", link: '/' }, { text: "Retail", link: '/' }, { text: "Social", link: '/' }, { text: "Education", link: '/' }, { text: "Sports", link: '/' }] }]
+    industries: [{ id: "Industries", link: "/", heading: "", details: [{ text: "Real Estate", link: '/' }, { text: "Retail", link: '/' }, { text: "Social", link: '/' }, { text: "Education", link: '/' }, { text: "Sports", link: '/' }] }]
 
 };
 
@@ -529,6 +529,23 @@ export const ispyarHeadlines = [
     { title: "7 months", description: ' Project Duration', icon: myndsduration },
     { title: "Social", description: ' Retail', icon: myndsindustry },
 ]
+export const miltonHeadlines = [
+    { title: "10", description: ' Team Members', icon: myndsteam },
+    { title: "6 months", description: ' Project Duration', icon: myndsduration },
+    { title: "Retail", description: ' Retail', icon: myndsindustry },
+]
+export const washmenHeadlines = [
+    { title: "9", description: ' Team Members', icon: myndsteam },
+    { title: "5 months", description: ' Project Duration', icon: myndsduration },
+    { title: "Retail", description: ' Retail', icon: myndsindustry },
+]
+export const dafiHeadlines = [
+    { title: "11", description: ' Team Members', icon: myndsteam },
+    { title: "8 months", description: ' Project Duration', icon: myndsduration },
+    { title: "Cryptocurrency", description: ' Retail', icon: myndsindustry },
+]
+
+
 
 
 export const dataServices = [
@@ -874,6 +891,56 @@ export const WebAutomationData = [
         icon: ComprehensiveIcon,
     },
 ];
+export const jobOpeningData = [
+    {
+        title: 'Senior Software Engineer',
+        icon: AutomationImageOne,
+        listItems: [
+            '5+ years of experience in software development',
+            'A strong background in full-stack development',
+        ]
+    },
+    {
+        title: 'UI/UX Designer',
+        icon: AutomationImageTwo,
+        listItems: [
+            '3+ years of experience in UI/UX design',
+            'A solid portfolio showcasing your ability to create user-centered designs for web and mobile platforms.',
+        ]
+    },
+    {
+        title: 'Product Manager',
+        icon: ComprehensiveIcon,
+        listItems: [
+            '4+ years of experience in product management',
+            'A proven track record of successfully managing the entire product lifecycle from ideation to launch.',
+        ]
+    },
+    {
+        title: 'DevOps Engineer',
+        icon: AutomationImageOne,
+        listItems: [
+            '3+ years of experience in DevOps',
+            'Hands-on experience in managing CI/CD pipelines, cloud infrastructure (AWS, Azure, or GCP), and automation tools.',
+        ]
+    },
+    {
+        title: 'Data Scientist',
+        icon: AutomationImageTwo,
+        listItems: [
+            '2+ years of experience in data science',
+            'Expertise in statistical analysis, machine learning, and data visualization tools (e.g., Python, R, TensorFlow).',
+        ]
+    },
+    {
+        title: 'QA Automation Engineer',
+        icon: ComprehensiveIcon,
+        listItems: [
+            '3+ years of experience in QA automation',
+            'Proficient in creating automated test scripts and frameworks using tools like Selenium, Cypress, or JUnit.',
+        ]
+    },
+];
 
 
 export const AiData = [
@@ -1137,6 +1204,59 @@ export const qatarcaseData = [
         icon: qatariconThree,
     },
 ];
+
+export const miltoncaseData = [
+    {
+        title: 'User Interface and Navigation  ',
+        description: 'We completely overhauled the user interface, delivering a fresh and modern look that prioritizes both functionality and aesthetics. Our goal was to create a more intuitive and visually appealing experience. ',
+        icon: qatariconOne,
+    },
+    {
+        title: 'Product Management System ',
+        description: 'To tackle the challenge of managing a complex product catalog, we developed a custom product management system that allowed Milton & King to efficiently organize and display their wide range of designs and fabrics.',
+        icon: qatariconTwo,
+    },
+    {
+        title: 'Streamlined Checkout Process ',
+        description: 'We revamped the checkout process to make it quicker and more user-friendly, integrating multiple payment gateways to provide customers with more options. Additionally, we upgraded the platform’s infrastructure.',
+        icon: qatariconThree,
+    },
+];
+export const washmencaseData = [
+    {
+        title: 'Streamlined Order Management',
+        description: 'We designed a comprehensive order management system that allowed Washmen to track and manage orders efficiently across all service categories. This new system integrated with their existing logistics. ',
+        icon: washmeniconOne,
+    },
+    {
+        title: 'User-Centric Mobile Interfaces  ',
+        description: 'Our team designed and developed a highly intuitive user interface for both the mobile app and the website, enhancing the overall user experience. Customers can now place orders and schedule convenient pickup times.',
+        icon: washmeniconTwo,
+    },
+    {
+        title: 'Scalable Infrastructure  ',
+        description: 'To ensure that the platform could handle increasing demand, we implemented a scalable cloud-based infrastructure. This included load balancing and optimized database management.',
+        icon: washmeniconThree,
+    },
+];
+export const daficaseData = [
+    {
+        title: 'Advanced Security Protocols ',
+        description: 'We prioritized security by integrating state-of-the-art encryption and smart contract auditing processes to protect user assets and data. This involved deploying multi-signature wallets and ensuring that every aspect was safe. ',
+        icon: dafiiconOne,
+    },
+    {
+        title: 'An Intuitive User Interface ',
+        description: 'Our team developed a user-friendly interface that simplified the process of buying, selling, and trading NFTs. We incorporated easy-to-use features, such as drag-and-drop NFT minting, one-click purchases, and real-time market data.',
+        icon: dafiiconTwo,
+    },
+    {
+        title: 'Building a Scalable Infrastructure   ',
+        description: 'To address the client’s need for scalability, we implemented a cloud-based infrastructure that could easily handle surges in traffic and trading volume. We optimized the platform’s backend with load balancing.',
+        icon: dafiiconThree,
+    },
+];
+
 export const abimarbrokerscaseData = [
     {
         title: 'Simplified Brokerage Structure: ',
@@ -2678,6 +2798,44 @@ export const servicesoffer = {
             keyfeatures: [{ paragraph: "" }]
         },
     ],
+    careers: [
+        {
+            id: "careers",
+            title: "Senior Software Engineer",
+            description: "Novatore is the kind of place where you feel supported in every aspect of your career. The collaborative environment has not only helped me grow as a developer but also as a leader. The flexibility in working arrangements allows me to maintain a healthy work-life balance, which is incredibly important to me.",
+            details: "From flexible work arrangements to comprehensive benefits and ongoing development opportunities, Novatore is a place where you can grow both personally and professionally while making a real impact.",
+            keyheading: "",
+            keyfeatures: [{ paragraph: "" }]
+        },
+        {
+            id: "2",
+            title: "UI/UX Designer",
+            description: " What I love most about Novatore is the culture of creativity and openness. There’s always room to share new ideas, and you’re encouraged to think outside the box. The team-building activities and professional development opportunities have really made me feel like I’m part of a community, not just a company.",
+            keyheading: "",
+            keyfeatures: [{ paragraph: "" }]
+        },
+        {
+            id: "3",
+            title: "Product Manager",
+            description: "At Novatore, I’ve found a workplace that genuinely cares about its employees. The focus on work-life balance, combined with the inclusive and supportive culture, makes it a place where you can truly thrive. The opportunities for growth and learning are endless, and the collaborative spirit here is unmatched.",
+            keyheading: "",
+            keyfeatures: [{ paragraph: "" }]
+        },
+        {
+            id: "4",
+            title: "DevOps & SecOps",
+            description: "Working at Novatore has been an incredible experience. The supportive environment and focus on professional development have allowed me to advance my career while maintaining a balanced lifestyle. The flexibility and benefits offered here make it a great place to work, and the team feels more like a family than just coworkers.",
+            keyheading: "",
+            keyfeatures: [{ paragraph: "" }]
+        },
+        {
+            id: "5",
+            title: "QA Automation Engineer",
+            description: "Novatore is a company that really values its employees. The inclusive culture and emphasis on creativity make it a fantastic place to work. I appreciate the flexibility and the opportunities for professional development, which have helped me grow both personally and professionally.",
+            keyheading: "",
+            keyfeatures: [{ paragraph: "" }]
+        },
+    ],
     insurance: [
         {
             id: "insurance",
@@ -3091,6 +3249,49 @@ export const ispyarchallengesData = [
         title: 'Scalability Concerns:', description: 'The client needed a platform that could grow with their expanding user base without compromising performance.'
     },
 ];
+export const miltonchallengesData = [
+    {
+        title: 'Limited User Experience', description: ' complex and time-consuming.'
+    },
+    {
+        title: 'Complex Product Catalog', description: 'Managing and displaying an extensive catalog of designs and fabrics was challenging, leading to a cluttered user interface.'
+    },
+    {
+        title: 'Low Conversion Rates ', description: 'The client was experiencing lower-than-expected conversion rates, largely due to a complicated checkout process and limited payment options.'
+    },
+    {
+        title: 'Scalability Issues', description: 'The existing platform was not equipped to handle an increasing number of visitors, resulting in slower load times and occasional crashes.'
+    },
+];
+export const washmenchallengesData = [
+    {
+        title: 'Complex Order Management', description: 'The client struggled with efficiently managing and tracking a high volume of orders across various services.'
+    },
+    {
+        title: 'User Experience Issues', description: 'The previous platform had an outdated interface that made it difficult for customers to place orders and track them easily.'
+    },
+    {
+        title: 'Operational Bottlenecks ', description: 'Inefficiencies in the backend systems were causing delays in processing orders, leading to customer dissatisfaction.'
+    },
+    {
+        title: 'Scalability Limitations', description: 'The existing platform was not equipped to handle the growing number of users and services, leading to performance issues during peak times.'
+    },
+];
+export const dafichallengesData = [
+    {
+        title: 'Security Concerns:', description: 'Ensuring the safety of transactions and protecting user data were top priorities for the client.'
+    },
+    {
+        title: 'User Accessibility:', description: 'The existing platform was not intuitive for users, particularly for those new to cryptocurrency and NFTs.'
+    },
+    {
+        title: 'Scalability Issues: ', description: 'The platform needed to handle a growing user base and increased trading volume without compromising on performance.'
+    },
+    {
+        title: 'Complex Transaction Processes: ', description: 'The client required a streamlined process for buying, selling, and trading tokens and NFTs to enhance user experience.'
+    },
+];
+
 export const myndsoutcomesData = [
     {
         title: 'Funding Secured:', description: 'Mynd was able to raise a total of $204.9M in funding over 8 rounds through this platform developed by our talented team.'
@@ -3364,6 +3565,48 @@ export const ispyaroutcomesData = [
         title: 'Scalable Infrastructure: ', description: 'The platform’s architecture now supports a growing user base with minimal performance issues, preparing the client for future expansion.'
     }
 ];
+export const miltonoutcomesData = [
+    {
+        title: 'Improved User Engagement', description: 'The new design and enhanced navigation led to a 35% increase in time spent on the site per user session.'
+    },
+    {
+        title: 'Higher Conversion Rates', description: 'The streamlined checkout process and improved payment options resulted in a 25% increase in conversion rates.'
+    },
+    {
+        title: 'Efficient Product Management', description: 'The optimized product management system reduced the time spent on catalog updates by 40%, allowing for faster rollouts of new designs.'
+    },
+    {
+        title: 'Scalable Infrastructure ', description: 'The upgraded platform now supports a 50% increase in web traffic without performance issues, preparing the client for future growth.'
+    }
+];
+export const washmenoutcomesData = [
+    {
+        title: 'Improved Order Processing', description: 'The streamlined order management system led to a 30% reduction in processing time, resulting in faster service delivery.'
+    },
+    {
+        title: 'Enhanced User Engagement', description: 'The new user interface increased customer engagement, with a 20% rise in repeat orders.'
+    },
+    {
+        title: 'Operational Efficiency ', description: 'Backend optimizations reduced operational costs by 15%, allowing for better allocation of resources.'
+    },
+    {
+        title: 'Scalable Growth ', description: 'The platform’s upgraded infrastructure now supports a 40% increase in user traffic, ensuring reliability during peak periods.'
+    }
+];
+export const dafioutcomesData = [
+    {
+        title: 'Enhanced Security', description: 'The implementation of advanced security measures led to a 40% reduction in fraudulent activities and unauthorized access attempts.'
+    },
+    {
+        title: 'Increased User Engagement', description: 'The redesigned user interface contributed to a 25% increase in user registrations and a 30% rise in active daily users.'
+    },
+    {
+        title: 'Improved Transaction Efficiency ', description: 'The streamlined transaction process reduced the average time for buying and selling NFTs by 35%, enhancing user satisfaction.'
+    },
+    {
+        title: 'Scalable Growth ', description: 'The platform now supports a 50% increase in trading volume, ensuring reliable performance even during high-demand periods.'
+    }
+];
 
 
 export const retaildataImages = [
@@ -3431,6 +3674,16 @@ export const ispyartackImages = [
     laraveltile, bootstraptile, jquerytile
 ]
 
+export const miltonStackImages = [
+    mysqltile, wordpresstile
+]
+export const washmenStackImages = [
+    fluttertile, reacttile
+]
+
+export const dafiStackImages = [
+    javatile, phptile
+]
 
 export const caseStudiesData = [
     {
@@ -3527,3 +3780,5 @@ export const caseStudiesData = [
     },
 
 ];
+
+

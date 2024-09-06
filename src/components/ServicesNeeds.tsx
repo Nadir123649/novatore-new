@@ -8,6 +8,7 @@ interface ServicesNeedsProps {
     needsTitle?: string;
     needsTitleBlue?: string;
     needsDescription: string;
+    needsmoreDescription?: string;
     NeedsImage: string;
     needsMoreTitle?: string;
     viewbutton?: any;
@@ -24,6 +25,7 @@ const ServicesNeeds: FC<ServicesNeedsProps> = ({
     needsMoreTitle,
     viewbutton,
     casestudyicon,
+    needsmoreDescription,
     link = '#',
 
     viewlogo
@@ -70,6 +72,9 @@ const ServicesNeeds: FC<ServicesNeedsProps> = ({
                             </h2>
                             <p className='text-black text-base md:text-[18px] not-italic font-normal mb-0 leading-6 md:leading-[30px] text-left md:text-justify'>
                                 {needsDescription}
+                            </p>
+                            <p className='text-black text-base md:text-[18px] not-italic font-normal mb-0 leading-6 md:leading-[30px] text-left md:text-justify'>
+                                {needsmoreDescription}
                             </p>
                             {viewbutton &&
                                 <Link href={link}>

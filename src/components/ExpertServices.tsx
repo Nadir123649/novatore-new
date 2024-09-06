@@ -7,6 +7,7 @@ interface ExpertServicesProps {
     needsTitle?: string;
     needsTitleBlue?: string;
     needsDescription: string;
+    needsmoreDescription?: string;
     NeedsImage: string;
     needsMoreTitle?: string;
     needsMoreTitleblue?: string;
@@ -28,6 +29,7 @@ const ExpertServices: FC<ExpertServicesProps> = ({
     spantitle,
     viewbutton,
     casestudyicon,
+    needsmoreDescription,
     link = '#',
     viewlogo,
 }) => {
@@ -85,6 +87,9 @@ const ExpertServices: FC<ExpertServicesProps> = ({
                             </h2>
                             <p className='text-black text-base md:text-[18px] pb-0 mb-0 not-italic font-normal leading-6 md:leading-[30px]  text-left md:text-justify'>
                                 {needsDescription}
+                            </p>
+                            <p className='text-black text-base md:text-[18px] pb-0 mb-0 not-italic font-normal leading-6 md:leading-[30px]  text-left md:text-justify'>
+                                {needsmoreDescription}
                             </p>
                             {viewbutton &&
                                 <Link href={link}>

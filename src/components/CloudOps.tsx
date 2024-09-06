@@ -56,6 +56,7 @@ const CloudOps: FC<CloudOpsProps> = ({
       networkingservices,
       analyticsservices,
       webappdevelopment,
+      Careers
     } = servicesoffer;
 
     if (pathname.includes("digital-service")) {
@@ -122,6 +123,8 @@ const CloudOps: FC<CloudOpsProps> = ({
       return realestate;
     } else if (pathname.includes("social")) {
       return social;
+    } else if (pathname.includes("careers")) {
+      return social;
     }
     return [];
   };
@@ -130,7 +133,7 @@ const CloudOps: FC<CloudOpsProps> = ({
 
   const duplicatedDetails = [
     ...detailsForCurrentRoute,
-    ...detailsForCurrentRoute.slice(0, 2 ),
+    ...detailsForCurrentRoute.slice(0, 2),
   ];
 
   useEffect(() => {

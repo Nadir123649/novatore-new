@@ -1,6 +1,7 @@
 import React from 'react';
 import Image from 'next/image';
 import { Bordered, Drop } from '@/utils';
+import Link from 'next/link';
 
 interface DataCardProps {
     title: string;
@@ -11,9 +12,10 @@ interface DataCardProps {
     value?: any;
     className?: string;
     minHeight?: string;
+    viewbutton?: any;
 }
 
-const DataCard: React.FC<DataCardProps> = ({ title, description, icon, type, listItems, value, className, minHeight }) => {
+const DataCard: React.FC<DataCardProps> = ({ viewbutton, title, description, icon, type, listItems, value, className, minHeight }) => {
     return (
         <div className={type ? type : "relative bg-white shadow rounded-[16px] pt-[40px] pb-[10px] px-[24px] border-1 border-solid border-[#A8CAFC] max-w-sm mx-auto overflow-hidden flex flex-col h-full hover:scale-105 transition ease-in duration-1.5"}
             style={{ minHeight: minHeight || "295px" }}>
@@ -43,6 +45,7 @@ const DataCard: React.FC<DataCardProps> = ({ title, description, icon, type, lis
                     ))}
                 </ul>
             )}
+
         </div>
     );
 };
