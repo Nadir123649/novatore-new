@@ -24,10 +24,10 @@ const Dafi: NextPage = () => {
                 <HeadlineBanner headlinesData={oneH2Headlines} />
                 <CaseBackground cardLogo={"/images/dafilogo.svg"} cardDescription="We collaborated with Dafi.io to develop a robust and secure platform that seamlessly manages NFT and cryptocurrency transactions, ensuring a smooth user experience for both seasoned traders and newcomers alike."
                     backgroundDescription={"Dafi.io is designed to facilitate the buying and selling of NFTs (Non-Fungible Tokens) and various cryptocurrencies. As the NFT market grew rapidly, Dafi.io sought to establish itself as a leader in the space by offering a secure, user-friendly platform that could handle the complexities of NFT transactions.  "} />
-                <CaseChallanges cardBanner={"/images/souqofQatarbanner.png"} challenges={dafichallengesData} />
+                <CaseChallanges cardBanner={"/images/dafibanner.png"} challenges={dafichallengesData} />
                 <TechStack title="Tech Stacks" images={dafiStackImages} />
                 <DataServicesSection heading="Solutions" data={daficaseData} textalign="left" />
-                <CaseOutcomes outcomesBanner={"/images/souqofQataroutcomesbanner.png"} outcomes={dafioutcomesData} />
+                <CaseOutcomes outcomesBanner={"/images/dafioutcomesbanner.png"} outcomes={dafioutcomesData} />
             </div>
         </Layout>
     );

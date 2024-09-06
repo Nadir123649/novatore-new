@@ -333,7 +333,7 @@ body {
 
 /* client feedback carousel here  */
 
-/* @keyframes scroll {
+@keyframes scroll {
   0% {
     transform: translateX(-50%);
   }
@@ -341,7 +341,7 @@ body {
   100% {
     transform: translateX(0);
   }
-} */
+}
 
 .slider-feedback {
   overflow: hidden;
@@ -350,7 +350,6 @@ body {
 }
 
 .feedback-slide-track {
-  /* background-color:#fefefe!important; */
   display: flex;
   width: calc(250px * 12);
   animation: scroll 20s linear infinite;
@@ -363,12 +362,13 @@ body {
   width: 410px !important;
 }
 
-/* .feeedback-slide {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 20px !important;
-  } */
+.feeedback-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px !important;
+  width: 410px !important;
+}
 
 /* Responsiveness */
 @media only screen and (max-width: 1400px) {

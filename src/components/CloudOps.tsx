@@ -56,7 +56,7 @@ const CloudOps: FC<CloudOpsProps> = ({
       networkingservices,
       analyticsservices,
       webappdevelopment,
-      Careers
+      careers
     } = servicesoffer;
 
     if (pathname.includes("digital-service")) {

@@ -284,7 +284,15 @@ export { default as dwpiconThree } from "../../public/images/dwp-image-three.svg
 export { default as ispyariconOne } from "../../public/images/ispyar-image-one.svg"
 export { default as ispyariconTwo } from "../../public/images/ispyar-image-two.svg"
 export { default as ispyariconThree } from "../../public/images/ispyar-image-three.svg"
-
+export { default as dafiiconOne } from "../../public/images/dafi-image-one.svg"
+export { default as dafiiconTwo } from "../../public/images/dafi-image-two.svg"
+export { default as dafiiconThree } from "../../public/images/dafi-image-three.svg"
+export { default as washmeniconOne } from "../../public/images/washmen-image-one.svg"
+export { default as washmeniconTwo } from "../../public/images/washmen-image-two.svg"
+export { default as washmeniconThree } from "../../public/images/washmen-image-three.svg"
+export { default as miltoniconOne } from "../../public/images/milton-image-one.svg"
+export { default as miltoniconTwo } from "../../public/images/milton-image-two.svg"
+export { default as miltoniconThree } from "../../public/images/milton-image-three.svg"
 
 
 

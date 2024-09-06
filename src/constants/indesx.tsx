@@ -63,7 +63,7 @@ export const whyChooseLogo = [
     { img: ChooseTwo, alt: "ChooseTwo" },
     { img: ChooseThree, alt: "ChooseThree" },
     { img: ChooseFour, alt: "ChooseFour" },
-]
+]   
 
 export const contactDetails = [
     {

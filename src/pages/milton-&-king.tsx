@@ -24,10 +24,10 @@ const MiltonAndKing: NextPage = () => {
                 <HeadlineBanner headlinesData={miltonHeadlines} />
                 <CaseBackground cardLogo={"/images/miltonlogo.svg"} cardDescription="Novatore Solutions collaborated with Milton & King to develop a sophisticated e-commerce platform that seamlessly integrates their luxurious product offerings with an intuitive user experience."
                     backgroundDescription={"Milton & King, a leading brand in the luxury wallpaper and fabric industry, aimed to enhance its online presence to better serve its growing customer base. Known for their modern and artistic designs, Milton & King sought to create a more engaging and user-friendly e-commerce platform that could showcase their high-quality products while providing a seamless shopping experience."} />
-                <CaseChallanges cardBanner={"/images/souqofQatarbanner.png"} challenges={souqofQatarchallengesData} />
+                <CaseChallanges cardBanner={"/images/miltonbanner.png"} challenges={souqofQatarchallengesData} />
                 <TechStack title="Tech Stacks" images={miltonStackImages} />
                 <DataServicesSection heading="Solutions" data={miltoncaseData} textalign="left" />
-                <CaseOutcomes outcomesBanner={"/images/souqofQataroutcomesbanner.png"} outcomes={miltonoutcomesData} />
+                <CaseOutcomes outcomesBanner={"/images/miltonoutcomesbanner.png"} outcomes={miltonoutcomesData} />
             </div>
         </Layout>
     );

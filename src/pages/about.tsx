@@ -18,12 +18,6 @@ import ClientFeedback from '@/components/ClientFeedback';
 const About: NextPage = () => {
 
     return (
-        // <Layout showContactForm={true} title="Novatore Solutions - About" description="Welcome to Novatore Solutions, setting new standards in technology with unmatchable code.">
-        //     <HeroBanner bannerHeading="About Us" previewImage="/images/about-hero-bg.png" />
-        //     <AboutNovatore />
-        //     <AboutServices />
-        //     <OurMilestones />
-        // </Layout>
         <Layout showContactForm={true} title="Novatore Solutions - Careers" description="Welcome to Novatore Solutions, setting new standards in technology with unmatchable code.">
             <HeroBanner bannerHeading="A Legacy of Trust and Technology" needsMoreTitle={true} previewImage="/images/aboutus-herobanner.png" pagetitle="About Us" maxwidth="800px" />
             <ServicesNeeds needsTitle='Discover Exciting' needsTitleBlue="Career Opportunities " needsMoreTitle=' at Novatore' NeedsImage="/images/about-image-right.png"
@@ -34,7 +28,6 @@ const About: NextPage = () => {
                 needsDescription=" Our mission at Novatore Solutions is to empower businesses to achieve their full potential through innovative technology solutions. We are dedicated to developing software and IT services that are not only effective but also scalable, secure, and sustainable." />
             <ExpertServices needsTitle="Our " needsTitleBlue=" Vision" NeedsImage="/images/ourvision-image-left.png"
                 needsDescription="Our vision is to be a global leader in the software industry, known for our unwavering commitment to quality, innovation, and customer satisfaction. We envision a future where Novatore Solutions is synonymous with technological advancement and business success. " />
-
 
             <Enterprise />
 

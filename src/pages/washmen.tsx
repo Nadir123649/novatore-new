@@ -24,10 +24,10 @@ const Washmen: NextPage = () => {
                 <HeadlineBanner headlinesData={oneH2Headlines} />
                 <CaseBackground cardLogo={"/images/washmenlogo.svg"} cardDescription="Our tailored solution enabled Washmen to efficiently manage their business complexities while providing a user-friendly interface for their customers."
                     backgroundDescription={"Washmen, a leading online service provider specializing in professional laundry and dry-cleaning services, sought to upgrade its digital platform to better serve its customers. Offering a wide range of services, including garment care, home care, and bag care, Washmen needed a sophisticated platform that could handle the complexities of its business operations."} />
-                <CaseChallanges cardBanner={"/images/souqofQatarbanner.png"} challenges={washmenchallengesData} />
+                <CaseChallanges cardBanner={"/images/washmenbanner.png"} challenges={washmenchallengesData} />
                 <TechStack title="Tech Stacks" images={washmenStackImages} />
                 <DataServicesSection heading="Solutions" data={washmencaseData} textalign="left" />
-                <CaseOutcomes outcomesBanner={"/images/souqofQataroutcomesbanner.png"} outcomes={washmenoutcomesData} />
+                <CaseOutcomes outcomesBanner={"/images/washmenoutcomesbanner.png"} outcomes={washmenoutcomesData} />
             </div>
         </Layout>
     );
