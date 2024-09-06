@@ -33,7 +33,7 @@ const CaseStudiesSlider: React.FC<StudySliderProps> = ({ heading, blueheading })
                                     <h1 className='text-base'>Our Case Study</h1>
                                     <h1 className='text-[40px]'>{caseStudy.title}</h1>
                                     <p className='text-[15px]'>{caseStudy.description}</p>
-                                    <a className='learn-btn bg-none rounded-[16px] border-1 border-[#FFFFFF] hover:border-transparent py-[14px] px-[24px] mt-[26px] transition-all duration-300 hover:bg-[#2776EA] text-white'>
+                                    <a href={caseStudy.link} className='learn-btn bg-none rounded-[16px] border-1 border-[#FFFFFF] hover:border-transparent py-[14px] px-[24px] mt-[26px] transition-all duration-300 hover:bg-[#2776EA] text-white'>
                                         Read More
                                     </a>
                                 </div>

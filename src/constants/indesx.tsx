@@ -210,7 +210,7 @@ export const slidesContent = [
     {
         title: 'Empower Your Business, Transform Digitally', description: 'Smart and Powerful Solutions to Kickstart Your Growth', link: "/transformative-solutions", className: 'hero-banner-screen z-50 max-w-4xl relative flex flex-col justify-center  min-h-[50vh] md:min-h-[100vh] items-start'
     },
-    { title: 'Move Beyond the Ordinary', description: 'It’s time to Innovate, Rethink, and Excel', link: "/artificial-Intelligence" },
+    { title: 'Move Beyond the Ordinary', description: 'It’s time to innovate, rethink, and excel', link: "/artificial-Intelligence" },
 ];
 
 export const companiesdata = [
@@ -325,7 +325,7 @@ export const listingstable: any = {
             details: [
                 { text: "Latest Trends", link: '/' },
                 { text: "Expert Opinions", link: '/' },
-                { text: "Case Studies", link: '/' }
+                { text: "Case Studies", link: '/case-studies' }
             ]
         },
         {
@@ -2988,21 +2988,25 @@ export const caseStudiesslidedata = [
         title: "A Customized Marketplace",
         description: "We developed a feature-rich NFT marketplace with a user-friendly interface and secure crypto wallet integration for NFT Hunterz.",
         backgroundimg: caseone,
+        link: "/nft-hunters"
     },
     {
         title: "Revolutionizing Transactions",
         description: "Our team created an advanced NFT platform for Juggernaut DeFi, incorporating secure blockchain integration and global accessibility.",
         backgroundimg: casetwo,
+        link: "/juggernaut-defi"
     },
     {
         title: "Enhancing Transparency",
         description: "We built a secure blockchain-based platform for Commit Good, ensuring transparent cryptocurrency donations.",
         backgroundimg: casethree,
+        link: "/crypto-currency"
     },
     {
         title: "Streamlining Crypto Portfolio Management",
         description: "For Swap Folio, we delivered a comprehensive crypto portfolio management platform with real-time analytics.",
         backgroundimg: casefour,
+        link: "/dafi"
     }
 ];
 
@@ -3687,32 +3691,32 @@ export const dafiStackImages = [
 
 export const caseStudiesData = [
     {
-        category: 'Real Estate',
+        category: 'Retail',
         component: <ServicesNeeds link="/angelflow" casestudyicon="/images/angelflowcaseicon.svg" needsTitle='Angelflow' needsDescription={'Angel Flow Created a platform that connects start-ups with investors, improving networking efficiency and start-up visibility, leading to increased connections and user retention.'} NeedsImage={'/images/angelflowcasestudy.png'} viewbutton={true} />
     },
     {
-        category: 'E-commerce',
+        category: 'Insurance',
         component: <ExpertServices link="/cova-ai" casestudyicon="/images/covacaseicon.svg" needsTitle='COVA AI' needsDescription={'COVA AI Developed an AI-powered insurance portal that streamlined client management, communication, and proposal generation, significantly improving efficiency and user satisfaction.'} NeedsImage={'/images/covacasestudy.png'} viewbutton={true} />
     },
     {
-        category: 'Crypto',
+        category: 'Retail',
         component: <ServicesNeeds link="/ircc" casestudyicon="/images/ircccaseicon.svg" needsTitle='IRCC' needsDescription={'IRCC Implemented an automated reconciliation system for B2B operations, reducing errors by 85% and enhancing data processing speed by 60%.'} NeedsImage={'/images/ircccasestudy.png'} viewbutton={true} />
     },
     {
-        category: 'sports',
+        category: 'Crypto',
         component: <ExpertServices link="/nft-hunters" casestudyicon="/images/nftcaseicon.svg" needsTitle='NFT Hunterz' needsDescription={'NFT Hunterz Built a platform delivering curated NFT insights and marketing solutions, boosting user engagement and enhancing the visibility of emerging NFT projects.'} NeedsImage={'/images/nftcasestudy.png'} viewbutton={true} />
     },
     {
-        category: 'Health',
+        category: 'Crypto',
         component: <ServicesNeeds link="/juggernaut-defi" casestudyicon="/images/jgncaseicon.svg" needsTitle='Juggernaut DeFi' needsDescription={'Juggernaut DeFi Developed a secure and scalable NFT platform with advanced trading features, improving global accessibility and user engagement in the DeFi space.'} NeedsImage={'/images/jgncasestudy.png'} viewbutton={true} />
     },
 
     {
-        category: 'Retail',
+        category: 'Crypto',
         component: <ExpertServices link="/commit-good" casestudyicon="/images/commitcaseicon.svg" needsTitle='Commit Good' needsDescription={'Commit Good Revolutionized charitable donations through blockchain technology, enhancing transparency and security, leading to increased donor trust and wider cryptocurrency adoption.'} NeedsImage={'/images/commitcasestudy.png'} viewbutton={true} />
     },
     {
-        category: 'Insurance',
+        category: 'Social',
         component: <ServicesNeeds link="/gift-it" casestudyicon="/images/giftitcaseicon.svg" needsTitle='Gift It' needsDescription={'Gift It Created a secure online marketplace for unique gifting experiences in the UAE, improving user trust and streamlining the gift selection process.'} NeedsImage={'/images/giftitcasestudy.png'} viewbutton={true} />
     },
     {
@@ -3720,19 +3724,19 @@ export const caseStudiesData = [
         component: <ExpertServices link="/zeusx" casestudyicon="/images/zeusxcaseicon.svg" needsTitle='Zeus X' needsDescription={'Zeus X Developed a global marketplace for digital goods in the gaming industry, enhancing security features and user engagement, leading to revenue growth.'} NeedsImage={'/images/zeusxcasestudy.png'} viewbutton={true} />
     },
     {
-        category: 'Insurance',
+        category: 'Health',
         component: <ServicesNeeds link="/foot-education" casestudyicon="/images/educationcaseicon.svg" needsTitle='Foot Education' needsDescription={'Foot Education Enhanced a platform dedicated to foot and ankle care, improving content accuracy, user accessibility, and global reach through multilingual support.'} NeedsImage={'/images/educationcasestudy.png'} viewbutton={true} />
     },
     {
-        category: 'Social',
+        category: 'Insurance',
         component: <ExpertServices link="/upsure" casestudyicon="/images/upsurecaseicon.svg" needsTitle='UpSure' needsDescription={'UpSure Simplified business insurance management for Australian startups, automating policy renewals and improving user adoption through a streamlined interface.'} NeedsImage={'/images/upsurecasestudy.png'} viewbutton={true} />
     },
     {
-        category: 'Insurance',
+        category: 'Real Estate',
         component: <ServicesNeeds link="/permit-place" casestudyicon="/images/permitcaseicon.svg" needsTitle='Permit Place' needsDescription={'Permit Place Revolutionized real estate operations with advanced document management and automated fee calculations, leading to improved efficiency and client satisfaction.'} NeedsImage={'/images/permitcasestudy.png'} viewbutton={true} />
     },
     {
-        category: 'Social',
+        category: 'E-commerce',
         component: <ExpertServices link="/souq-of-qatar" casestudyicon="/images/souqcaseicon.svg" needsTitle='Souq of Qatar' needsDescription={'Souq of Qatar Built Qatars first price comparison platform, increasing user engagement and conversion rates while expanding market reach.'} NeedsImage={'/images/souqcasestudy.png'} viewbutton={true} />
     },
     {
@@ -3745,24 +3749,24 @@ export const caseStudiesData = [
     },
 
     {
-        category: 'Insurance',
+        category: 'Sports',
         component: <ServicesNeeds link="/alpha-alliance" casestudyicon="/images/alphacaseicon.svg" needsTitle='Alphas Alliance' needsDescription={'Alphas Alliance Developed a real-time communication tool for coaches and athletes, improving on-field communication and usability in sports environments.'} NeedsImage={'/images/alphacasestudy.png'} viewbutton={true} />
     },
     {
-        category: 'Social',
+        category: 'Real Estate',
         component: <ExpertServices link="/terrascope" casestudyicon="/images/terrascopecaseicon.svg" needsTitle='Terrascope' needsDescription={'Terrascope Built an AI-powered platform for rural property management, enhancing land analysis efficiency and user engagement through automated data processing.'} NeedsImage={'/images/terrascopecasestudy.png'} viewbutton={true} />
     },
 
     {
-        category: 'Real Estate',
+        category: 'Social',
         component: <ServicesNeeds link="/airbolt" casestudyicon="/images/airboltcaseicon.svg" needsTitle='AirBolt' needsDescription={'AirBolt Developed a GPS-enabled locking solution for personal belongings, improving global tracking, security, and user experience through a seamless mobile application.'} NeedsImage={'/images/airboltcasestudy.png'} viewbutton={true} />
     },
     {
-        category: 'Crypto',
+        category: 'Retail',
         component: <ExpertServices link="/dwp-homes" casestudyicon="/images/dwpcaseicon.svg" needsTitle='DWP Homes' needsDescription={'DWP Homes - Gree Pakistan Enhanced the digital infrastructure of a leading consumer electronics brand, improving operational efficiency, customer engagement, and data management.'} NeedsImage={'/images/dwpcasestudy.png'} viewbutton={true} />
     },
     {
-        category: 'E-commerce',
+        category: 'Retail',
         component: <ServicesNeeds link="/ispyar-wedding" casestudyicon="/images/ispyarcaseicon.svg" needsTitle='Ispyar Wedding' needsDescription={'Ispyar Wedding Simplified wedding planning for South Asian multi-event celebrations, increasing vendor bookings and improving user engagement through a streamlined platform.'} NeedsImage={'/images/ispyarcasestudy.png'} viewbutton={true} />
     },
     {
@@ -3771,11 +3775,11 @@ export const caseStudiesData = [
     },
 
     {
-        category: 'Health',
+        category: 'Retail',
         component: <ServicesNeeds link="/washmen" casestudyicon="/images/washmencaseicon.svg" needsTitle='Washmen' needsDescription={'Washmen Enhanced a laundry and dry-cleaning service platform, improving order management, user engagement, and operational efficiency with scalable infrastructure.'} NeedsImage={'/images/washmencasestudy.png'} viewbutton={true} />
     },
     {
-        category: 'Sports',
+        category: 'Retail',
         component: <ExpertServices link="/dafi" casestudyicon="/images/daficaseicon.svg" needsTitle='Dafi' needsDescription={'Dafi Built a secure and scalable NFT exchange platform, enhancing transaction efficiency, user engagement, and security in the cryptocurrency space.'} NeedsImage={'/images/daficasestudy.png'} viewbutton={true} />
     },
 
