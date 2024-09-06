@@ -3012,7 +3012,7 @@ export const caseStudiesslidedata = [
         title: "NFT Hunters",
         description: "We developed a feature-rich NFT marketplace with a user-friendly interface and secure crypto wallet integration for NFT Hunterz.",
         // backgroundimg: caseone,
-        backgroundimg: casenft,
+        backgroundimg: casenOne,
         link: "/nft-hunters"
     },
     {
