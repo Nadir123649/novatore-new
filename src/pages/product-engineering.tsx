@@ -11,7 +11,7 @@ import { ProductEngineeringData } from "@/constants/indesx";
 
 const ProductEngineering: NextPage = () => {
     return (
-        <Layout showContactForm={true} title="Novatore Solutions - Product Engineering" description="Welcome to Novatore Solutions, setting new standards in technology with unmatchable code.">
+        <Layout showContactForm={true} title="Novatore Solutions" keywords="Advanced product engineering, Software product engineering (SPE) services, Comprehensive software lifecycle, Industry best practices in software development, Customized software solutions, Latest technologies in software (AI, IoT, blockchain), Long-term success and maintainability in software, Proven product engineering process, User Acceptance Testing (UAT), Scalable support for software updates"  description="Welcome to Novatore Solutions, setting new standards in technology with unmatchable code.">
             <div className="overflow-x-hidden">
                 <HeroBanner bannerHeading="Crafting Tomorrow’s Innovations with Precision Product Engineering" pagetitle="Digital Services" needsMoreTitle="Get in Touch" previewImage="/images/product-banner.png" maxwidth="1000px" />
                 <ServicesNeeds needsTitle="Advanced " needsTitleBlue=" Product Engineering" NeedsImage="/images/product-image-right.png"

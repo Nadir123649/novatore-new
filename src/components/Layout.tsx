@@ -10,16 +10,17 @@ interface LayoutProps {
     title?: string;
     description?: string;
     showContactForm?: any;
+    keywords? : any; 
 }
 
-const Layout: React.FC<LayoutProps> = ({ children, title = 'Novatore Solutions', description = 'Setting new standards in technology with unmatchable code.', showContactForm }) => {
+const Layout: React.FC<LayoutProps> = ({ children, title = 'Novatore Solutions', description = 'Setting new standards in technology with unmatchable code.', showContactForm, keywords }) => {
     return (
         <>
 
             <Head>
                 <title>{title}</title>
                 <meta name="description" content={description} />
-                <meta name="keywords" content="Next.js, React, SEO, meta tags, keywords" />
+                <meta name="keywords" content={keywords} />
                 <link rel="icon" href="/favicon.ico" />
             </Head>
             <Navbar />

@@ -10,7 +10,7 @@ import { WebAutomationData } from "@/constants/indesx";
 
 const WebApp: NextPage = () => {
     return (
-        <Layout showContactForm={true} title="Novatore Solutions - Web Application Development" description="Welcome to Novatore Solutions, setting new standards in technology with unmatchable code.">
+        <Layout showContactForm={true} title="Novatore Solutions - Web Application Development" description="Welcome to Novatore Solutions, setting new standards in technology with unmatchable code." keywords="Web Application Development, Best web development tools, Web development services, Web app frameworks, Front-end web development, Back-end web development, Full-stack web development, Web app performance optimization, Web app security best practices, Progressive web apps">
             <div className="overflow-x-hidden">
                 <HeroBanner bannerHeading="Advanced Web App Development Solutions" pagetitle="Custom Software Development" needsMoreTitle="Get in Touch" previewImage="/images/web-app-banner.png" maxwidth="1100px" />
                 <ServicesNeeds needsTitleBlue="Introduction" NeedsImage="/images/web-app-dev-right.png"
