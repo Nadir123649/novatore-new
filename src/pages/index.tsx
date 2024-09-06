@@ -8,6 +8,7 @@ import WhyChooseUs from "@/components/WhyChooseUs";
 import { NextPage } from "next";
 import { useEffect, useState } from "react";
 import { client } from "@/sanity/lib/client";
+import CaseStudiesSlider from "@/components/CaseStudiesSlider";
 
 const Home: NextPage = () => {
   const getAllAuthors = async () => {
@@ -27,7 +28,8 @@ const Home: NextPage = () => {
         <Hero setActiveLink={setActiveLink} />
         <Services />
         <WhyChooseUs />
-        <CaseStudies />
+        <CaseStudiesSlider heading="Case" blueheading="Studies" />
+        {/* <CaseStudies /> */}
         <ClientLogos />
         <TrendingNow />
       </Layout>

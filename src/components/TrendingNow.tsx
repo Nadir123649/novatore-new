@@ -4,9 +4,8 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { FaChevronLeft } from "react-icons/fa";
 import { FaChevronRight } from "react-icons/fa";
-import { trendings } from '@/constants/indesx';
 import { useState, useEffect } from 'react';
-import { Col, Container } from 'react-bootstrap';
+import {  Container } from 'react-bootstrap';
 import BlogsCard from './BlogsCard';
 import { client } from "@/sanity/lib/client";
 
@@ -55,7 +54,7 @@ const TrendingNow = () => {
   const [blogdata, setBlogdata] = useState([]);
   const [currentSlide, setCurrentSlide] = useState(0);
   const [isLastSlideVisible, setIsLastSlideVisible] = useState(false);
-  const totalSlides = trendings.length;
+  const totalSlides = blogdata.length;
   const slidesToShow = 2.95;
 
   const handleScroll = () => {
@@ -70,16 +69,6 @@ const TrendingNow = () => {
     const res = await client.fetch("*[_type== 'blogs']");
     setBlogdata(res);
   }
-
-  useEffect(() => {
-    getBlogData()
-    window.addEventListener("scroll", handleScroll);
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
-
-  console.log(blogdata)
 
   const settings = {
     dots: false,
@@ -140,6 +129,14 @@ const TrendingNow = () => {
     ],
   };
 
+  useEffect(() => {
+    getBlogData()
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
 
 
   return (
@@ -156,6 +153,7 @@ const TrendingNow = () => {
               id={blog._id}
               image={blog.image}
               subtitle={blog.sub_title}
+              description={blog.description}
               title={blog.title}
             />
           ))}

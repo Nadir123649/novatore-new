@@ -16,8 +16,8 @@ const BlogsContainer = () => {
 
     useEffect(() => {
         getBlogData()
-      }, []);
-    
+    }, []);
+
     return (
         <section className='blogs-section py-20'>
             <Container>
@@ -26,16 +26,21 @@ const BlogsContainer = () => {
                 </h1>
                 <BlogsFilter />
                 <div className='mt-[60px]'>
-                    <Row className='gap-y-8'>
-                        {blogdata.map((blog: any) => (
-                            <BlogsCard
-                                key={blog._id}
-                                id={blog._id}
-                                image={blog.image}
-                                subtitle={blog.sub_title}
-                                title={blog.title}
-                            />
-                        ))}
+                    <Row className='gap-y-8 flex-row'>
+                        <Col lg={6} md={6} xs={12}>
+                            {blogdata.map((blog: any) => (
+                                <BlogsCard
+                                    key={blog._id}
+                                    id={blog._id}
+                                    image={blog.image}
+                                    subtitle={blog.sub_title}
+                                    title={blog.title}
+                                    description={blog.description}
+                                    type="card"
+                                />
+                            ))}
+                        </Col>
+
                     </Row>
                     <button className='text-white text-[18px] not-italic font-normal leading-normal py-[16px] px-[24px] rounded-[16px] max-w-[180px] mx-auto block mt-[60px] w-full bg-[#2776EA]'>
                         Load More

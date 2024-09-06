@@ -4,7 +4,6 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 import BlogsCard from './BlogsCard';
-import { blogData } from '@/constants/indesx'; // Make sure this path is correct
 import { useState, useEffect } from 'react';
 import { client } from "@/sanity/lib/client";
 
@@ -54,10 +53,10 @@ const PrevArrow: React.FC<ArrowProps> = ({ onClick, isDisabled }) => {
 const Innovation: React.FC<InnovationProps> = ({ className }) => {
   const [currentSlide, setCurrentSlide] = useState(0);
   const [blogdata, setBlogdata] = useState([]);
-  const [isLastSlideVisible, setIsLastSlideVisible] = useState(false);  
+  const [isLastSlideVisible, setIsLastSlideVisible] = useState(false);
   const [isVisible, setIsVisible] = useState(false);
   const [hasAnimated, setHasAnimated] = useState(false);
-  const totalSlides = blogData.length;
+  const totalSlides = blogdata.length;
   const slidesToShow = 2.95;
 
   const settings = {
@@ -110,6 +109,7 @@ const Innovation: React.FC<InnovationProps> = ({ className }) => {
       {
         breakpoint: 480,
         settings: {
+          infinite: false,
           slidesToShow: 1,
           slidesToScroll: 1,
           centerMode: false,
@@ -117,6 +117,7 @@ const Innovation: React.FC<InnovationProps> = ({ className }) => {
       },
     ],
   };
+
 
   const getBlogData = async () => {
     const res = await client.fetch("*[_type== 'blogs']");
@@ -154,13 +155,14 @@ const Innovation: React.FC<InnovationProps> = ({ className }) => {
             <h2 className='font-bold text-[26px] md:text-[40px]'>Innovations In <span className="text-[#2776EA]">Digital Enterprise</span></h2>
           </div>
         </div>
-        <Slider {...settings} className="innovation-slider mt-10">
+        <Slider {...settings} className="trending-slider mt-10">
           {blogdata.map((blog: any) => (
             <BlogsCard
               key={blog._id}
               id={blog._id}
               image={blog.image}
               subtitle={blog.sub_title}
+              description={blog.description}
               title={blog.title}
             />
           ))}

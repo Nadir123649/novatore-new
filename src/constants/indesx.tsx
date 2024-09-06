@@ -182,45 +182,6 @@ export const milestones = [
         icon: '/images/milestone-icon3.svg',
     }
 ];
-export const trendings = [
-    {
-        id: 1,
-        title: 'Virtual Assistants And How Customer Service',
-        banner: BlogBannerOne,
-        date: 'JANUARY 12, 2022',
-        user: 'By JOHN DOE',
-        description: 'Explore how virtual assistants are transforming customer service',
-        link: '/blog/virtual-assistants'
-    },
-    {
-        id: 2,
-        title: 'PropTech. Is This the Future of Real Estate?',
-        banner: BlogBannerTwo,
-        date: 'MARCH 12, 2025',
-        user: 'By RIDA',
-        description: 'Dive into the world of PropTech and discover how technology is reshaping the real estate industry.',
-        link: '/blog/proptech-future'
-    },
-    {
-        id: 3,
-        title: '10 Ways to Achieve Your Business Goal',
-        banner: BlogBannerThree,
-        date: 'APRIL 19, 2024',
-        user: 'By JESSICA',
-        description: 'Duis aute irure dolor lipsum simply free text the local markets',
-        link: '/blog/business-goals'
-    },
-    {
-        id: 4,
-        title: 'Artificial Intelligence',
-        banner: BlogBannerFour,
-        date: 'JANUARY 13, 2022',
-        user: 'By RIDA',
-        description: 'Innovative AI Solutions, Generative Models, And Machine Learning.',
-        link: '/blog/artificial-intelligence'
-    }
-];
-
 
 export const sortOptions = [
     { value: 'date', label: 'Date' },
