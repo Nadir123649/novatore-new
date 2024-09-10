@@ -18,7 +18,7 @@ import { zeusxchallengesData, zeusxoutcomesData, nftHuntersHeadlines } from "@/c
 
 const ZeusX: NextPage = () => {
     return (
-        <Layout showContactForm={true} title="Novatore Solutions - Retail" description="Welcome to Novatore Solutions, setting new standards in technology with unmatchable code.">
+        <Layout showContactForm={true} title="Novatore Solutions - ZeusX" description="Welcome to Novatore Solutions, setting new standards in technology with unmatchable code.">
             <div className="overflow-x-hidden">
                 <HeroBanner beforeyellowtext="ZeusX:" bannerHeading=" Revolutionizing the Digital Goods Marketplace for Gamers" needsMoreTitle={true} previewImage="/images/zeusxherobanner.png" pagetitle="" maxwidth="1100px" />
                 <HeadlineBanner headlinesData={nftHuntersHeadlines} />

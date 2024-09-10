@@ -18,7 +18,7 @@ import { souqofQatarchallengesData, souqofQataroutcomesData, oneH2Headlines } fr
 
 const OneH2: NextPage = () => {
     return (
-        <Layout showContactForm={true} title="Novatore Solutions - Retail" description="Welcome to Novatore Solutions, setting new standards in technology with unmatchable code.">
+        <Layout showContactForm={true} title="Novatore Solutions - OneH2" description="Welcome to Novatore Solutions, setting new standards in technology with unmatchable code.">
             <div className="overflow-x-hidden">
                 <HeroBanner bannerHeading="The" spanskybluetext="OneH2" morebannerHeading="Project for Zero-Emissions Hydrogen Fuel Transportation" needsMoreTitle={true} previewImage="/images/oneh2herobanner.png" pagetitle="" maxwidth="1100px" />
                 <HeadlineBanner headlinesData={oneH2Headlines} />

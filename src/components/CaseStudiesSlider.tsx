@@ -21,16 +21,16 @@ const CaseStudiesSlider: React.FC<StudySliderProps> = ({ heading, blueheading })
                         {caseStudiesslidedata.map((caseStudy, index) => (
                             <div
                                 key={index}
-                                className={`slider-case-item text-white group cursor-pointer ${activeIndex === index ? 'active' : ''}`}
+                                className={`slider-case-item text-white group cursor-pointer ${activeIndex === index ? 'active ' : ''}`}
                                 style={{ backgroundImage: `url(${caseStudy.backgroundimg.src})` }}
                                 onMouseEnter={() => setActiveIndex(index)}
                                 onMouseLeave={() => setActiveIndex(0)}
                             >
                                 <div
-                                    className={`transition-opacity duration-0 ease-in-out ${activeIndex === index ? 'opacity-100 ' : 'opacity-0 '}`}
+                                    className={`transition-opacity duration-0 ease-in-out ${activeIndex === index ? 'block' : 'hidden'}`}
                                     style={{ position: 'absolute', top: '270px', left: '30px', maxWidth: '520px' }}
                                 >
-                                    <h1 className='text-base'>Our Case Study</h1>
+                                    <h1 className='text-base'>{caseStudy.industry}</h1>
                                     <h1 className='text-[40px]'>{caseStudy.title}</h1>
                                     <p className='text-[15px]'>{caseStudy.description}</p>
                                     <a href={caseStudy.link} className='learn-btn bg-none rounded-[16px] border-1 border-[#FFFFFF] hover:border-transparent py-[14px] px-[24px] mt-[26px] transition-all duration-300 hover:bg-[#2776EA] text-white'>

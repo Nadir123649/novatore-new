@@ -18,7 +18,7 @@ import { souqofQatarchallengesData, souqofQataroutcomesData, oneH2Headlines } fr
 
 const Dafi: NextPage = () => {
     return (
-        <Layout showContactForm={true} title="Novatore Solutions - Retail" description="Welcome to Novatore Solutions, setting new standards in technology with unmatchable code.">
+        <Layout showContactForm={true} title="Novatore Solutions - Dafi" description="Welcome to Novatore Solutions, setting new standards in technology with unmatchable code.">
             <div className="overflow-x-hidden">
                 <HeroBanner bannerHeading="Building a Secure and Scalable NFT Exchange for the Crypto Community" needsMoreTitle={true} previewImage="/images/dafiherobanner.png" pagetitle="" maxwidth="1100px" />
                 <HeadlineBanner headlinesData={oneH2Headlines} />

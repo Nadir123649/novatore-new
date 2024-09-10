@@ -16,7 +16,7 @@ import Layout from "@/components/Layout";
 
 const ArtificialIntelligence: NextPage = () => {
     return (
-        <Layout showContactForm={true} title="Novatore Solutionss - Home" description="Welcome to Novatore Solutions, setting new standards in technology with unmatchable code.">
+        <Layout showContactForm={true} title="Novatore Solutionss - Artificial Intelligence" description="Welcome to Novatore Solutions, setting new standards in technology with unmatchable code.">
             <div className="overflow-x-hidden">
                 <HeroBanner bannerHeading="Artificial Intelligence" previewImage="/images/artifical-banner.png" />
                 <ServicesNeeds needsTitle="The Real Power of " needsTitleBlue="Artificial Intelligence" NeedsImage="/images/needs-image-seven.png"

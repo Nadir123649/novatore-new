@@ -8,7 +8,7 @@ import CloudOps from "@/components/CloudOps";
 
 const AzureAndGcp: NextPage = () => {
     return (
-        <Layout showContactForm={true} title="Novatore Solutions" description="Welcome to Novatore Solutions, setting new standards in technology with unmatchable code." keywords="What is Microsoft Azure, Azure best practices, Azure services list, Benefits of Azure, Azure architecture, What is Google Cloud Platform, GCP best practices, GCP services list, Benefits of GCP, GCP architecture">
+        <Layout showContactForm={true} title="Novatore Solutions - Azure & GCP" description="Welcome to Novatore Solutions, setting new standards in technology with unmatchable code." keywords="What is Microsoft Azure, Azure best practices, Azure services list, Benefits of Azure, Azure architecture, What is Google Cloud Platform, GCP best practices, GCP services list, Benefits of GCP, GCP architecture">
             <div className="overflow-x-hidden">
                 <HeroBanner bannerHeading="Azure & GCP: Powering the Future of Cloud Computing" pagetitle="Cloud" needsMoreTitle="Get in Touch" previewImage="/images/azure-banner-bg.png" maxwidth="900px" />
                 <ServicesNeeds needsTitle="Cloud Strategy with Microsoft Azure and GCP " needsTitleBlue="Services" NeedsImage="/images/azure-right-image.png"
@@ -19,7 +19,7 @@ const AzureAndGcp: NextPage = () => {
                 <Enterprise />
                 <Innovation />
             </div>
-        </Layout> 
+        </Layout>
     );
 };
 

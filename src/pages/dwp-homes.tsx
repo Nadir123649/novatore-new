@@ -18,7 +18,7 @@ import { souqofQatarchallengesData, souqofQataroutcomesData, oneH2Headlines } fr
 
 const DWPHomes: NextPage = () => {
     return (
-        <Layout showContactForm={true} title="Novatore Solutions - Retail" description="Welcome to Novatore Solutions, setting new standards in technology with unmatchable code.">
+        <Layout showContactForm={true} title="Novatore Solutions - DWP Homes" description="Welcome to Novatore Solutions, setting new standards in technology with unmatchable code.">
             <div className="overflow-x-hidden">
                 <HeroBanner spanskybluetext="DWP" morebannerHeading="Group's Strategic Partnership with Dawlance" needsMoreTitle={true} previewImage="/images/dwpherobanner.png" pagetitle="" maxwidth="1100px" />
                 <HeadlineBanner headlinesData={dwpHeadlines} />

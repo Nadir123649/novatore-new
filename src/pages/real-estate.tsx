@@ -11,7 +11,7 @@ import CaseStudiesSlider from "@/components/CaseStudiesSlider";
 
 const RealEstate: NextPage = () => {
     return (
-        <Layout showContactForm={true} title="Novatore Solutions - Insurance" description="Welcome to Novatore Solutions, setting new standards in technology with unmatchable code.">
+        <Layout showContactForm={true} title="Novatore Solutions - Real Estate" description="Welcome to Novatore Solutions, setting new standards in technology with unmatchable code." keywords={"Real Estate Software Solutions, Property Management Systems, Real Estate Portal Development, Custom Real Estate Software, Mobile App Development for Real Estate, AI in Real Estate, Machine Learning in Real Estate, Client Relationship Management Tools, Property Listings Mobile App, Real Estate Market Analysis"}>
             <div className="overflow-x-hidden">
                 <HeroBanner bannerHeading="Real Estate Software Solutions" needsMoreTitle={true} previewImage="/images/real-estate-banner.png" pagetitle="Real Estate" maxwidth="700px" />
                 <ServicesNeeds needsTitleBlue="Introduction" NeedsImage="/images/real-estate-image-right.png"

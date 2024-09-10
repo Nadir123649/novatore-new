@@ -17,7 +17,7 @@ import { oneH2Headlines } from "@/constants/indesx";
 
 const AirBolt: NextPage = () => {
     return (
-        <Layout showContactForm={true} title="Novatore Solutions - Retail" description="Welcome to Novatore Solutions, setting new standards in technology with unmatchable code.">
+        <Layout showContactForm={true} title="Novatore Solutions - Airbolt" description="Welcome to Novatore Solutions, setting new standards in technology with unmatchable code.">
             <div className="overflow-x-hidden">
                 <HeroBanner bannerHeading="Innovative GPS-Enabled Lock Solutions: The " airboltgreentext="AirBolt" morebannerHeading="Project Case Study" needsMoreTitle={true} previewImage="/images/airboltherobanner.png" pagetitle="" maxwidth="1100px" />
                 <HeadlineBanner headlinesData={airboltHeadlines} />

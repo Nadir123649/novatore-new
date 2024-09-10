@@ -18,7 +18,7 @@ import { abimarbrokerschallengesData, abimarbrokersoutcomesData } from "@/consta
 
 const AbimarBrokers: NextPage = () => {
     return (
-        <Layout showContactForm={true} title="Novatore Solutions - Retail" description="Welcome to Novatore Solutions, setting new standards in technology with unmatchable code.">
+        <Layout showContactForm={true} title="Novatore Solutions - Abimar Brokers" description="Welcome to Novatore Solutions, setting new standards in technology with unmatchable code.">
             <div className="overflow-x-hidden">
                 <HeroBanner bannerHeading="Developing a Transparent and Ownership-Driven Platform for Abimar Brokers" needsMoreTitle={true} previewImage="/images/brokersherobanner.png" pagetitle="" maxwidth="1100px" />
                 <HeadlineBanner headlinesData={abimarHeadlinesData} />

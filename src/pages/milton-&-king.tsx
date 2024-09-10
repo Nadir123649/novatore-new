@@ -18,7 +18,7 @@ import { souqofQatarchallengesData, souqofQataroutcomesData, miltonHeadlines } f
 
 const MiltonAndKing: NextPage = () => {
     return (
-        <Layout showContactForm={true} title="Novatore Solutions - Retail" description="Welcome to Novatore Solutions, setting new standards in technology with unmatchable code.">
+        <Layout showContactForm={true} title="Novatore Solutions - Milton & King" description="Welcome to Novatore Solutions, setting new standards in technology with unmatchable code.">
             <div className="overflow-x-hidden">
                 <HeroBanner bannerHeading="Crafting a Premier E-Commerce Experience for Luxury Wallpaper and Fabric" needsMoreTitle={true} previewImage="/images/miltonherobanner.png" pagetitle="" maxwidth="1100px" />
                 <HeadlineBanner headlinesData={miltonHeadlines} />

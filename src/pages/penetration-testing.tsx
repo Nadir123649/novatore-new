@@ -10,7 +10,7 @@ import { PenetrationTestingData } from "@/constants/indesx";
 
 const PenetrationTesting: NextPage = () => {
     return (
-        <Layout showContactForm={true} title="Novatore Solutions" description="Welcome to Novatore Solutions, setting new standards in technology with unmatchable code." keywords="Vulnerability Assessment, Network Security, Ethical Hacking, Web Application Security, Security Audits, Information Security, Red Teaming, Cybersecurity, Exploit Development, Compliance Testing" >
+        <Layout showContactForm={true} title="Novatore Solutions - Penetration Testing" description="Welcome to Novatore Solutions, setting new standards in technology with unmatchable code." keywords="Vulnerability Assessment, Network Security, Ethical Hacking, Web Application Security, Security Audits, Information Security, Red Teaming, Cybersecurity, Exploit Development, Compliance Testing" >
             <div className="overflow-x-hidden">
                 <HeroBanner bannerHeading="Expert Penetration Testing for Robust Security" pagetitle="Cybersecurity" needsMoreTitle="Get in Touch" previewImage="/images/penetration-testing-banner.png" maxwidth="800px" />
                 <ServicesNeeds needsTitle="Expert " needsTitleBlue="Penetration Testing" NeedsImage="/images/penetration-testing.png"

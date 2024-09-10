@@ -37,7 +37,6 @@ const Hero: React.FC<activeprops> = ({ setActiveLink }) => {
       <Slider {...settings} className='hero-slider'>
 
         {slidesContent.map((data, index) => (
-          console.log("Current Index:", index),
           <div className="hero-screen relative w-full h-[50vh] md:h-[100vh] " key={index}>
             <div className="container ">
               <div className={data.className ? data.className : "hero-banner-screen z-50 max-w-3xl relative flex flex-col justify-center  min-h-[50vh] md:min-h-[100vh] items-start"}>
@@ -50,7 +49,6 @@ const Hero: React.FC<activeprops> = ({ setActiveLink }) => {
                     Learn More
                   </button>
                 </Link>
-
               </div>
             </div>
           </div>

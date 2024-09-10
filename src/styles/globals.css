@@ -203,6 +203,14 @@ button {
     background-image: url("/public/images/services-bg.png");
 }
 
+.form-check-input:checked[type=checkbox] {
+    cursor: pointer !important;
+}
+
+.form-check-input[type=checkbox] {
+    cursor: pointer !important;
+}
+
 .videoBackground {
     position: absolute;
     top: 0;

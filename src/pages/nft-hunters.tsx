@@ -13,7 +13,7 @@ import { hunterschallengesData, huntersoutcomesData, nftHuntersHeadlines } from 
 
 const NFTHunters: NextPage = () => {
     return (
-        <Layout showContactForm={false} title="Novatore Solutions - Retail" description="Welcome to Novatore Solutions, setting new standards in technology with unmatchable code.">
+        <Layout showContactForm={false} title="Novatore Solutions - NFT Hunters" description="Welcome to Novatore Solutions, setting new standards in technology with unmatchable code.">
             <div className="overflow-x-hidden">
                 <HeroBanner beforeyellowtext="NFT Hunters:" bannerHeading="Elevating the NFT Market with Curated Weekly Insights and Marketing Solutions" needsMoreTitle={true} previewImage="/images/huntersherobanner.png" pagetitle="" maxwidth="1100px" />
                 <HeadlineBanner headlinesData={nftHuntersHeadlines} />

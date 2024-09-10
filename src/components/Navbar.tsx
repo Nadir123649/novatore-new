@@ -7,6 +7,8 @@ import { IoCloseOutline } from "react-icons/io5";
 import { MdKeyboardArrowRight, MdKeyboardArrowLeft } from "react-icons/md";
 import { RiMenu3Fill } from "react-icons/ri";
 import { Novatorewhite, NovatoreIcon, NovatoreText } from "@/utils";
+import { useRouter } from "next/router";
+import { featurestable, listingstable, servicesnavtable, } from "@/constants/indesx";
 
 const Navbar = () => {
   const [activeMenu, setActiveMenu] = useState<string | null>(null);
@@ -21,6 +23,7 @@ const Navbar = () => {
   const menuRef = useRef<HTMLDivElement | null>(null);
   const searchRefDesktop = useRef<HTMLButtonElement | null>(null);
   const searchRefMobile = useRef<HTMLButtonElement | null>(null);
+  const router = useRouter();
 
   const handleMouseEnter = (menu: string) => {
     setActiveMenu(menu.toLowerCase());
@@ -114,6 +117,65 @@ const Navbar = () => {
   }, [handleClickOutside, handleScroll]);
 
   const [isHovered, setIsHovered] = useState(false);
+
+
+
+
+  // const isActive = (menu: string, path: string) => {
+  //   if (path === '/') {
+  //     return menu === 'Home';
+  //   }
+  //   const lowerCaseMenu = menu.toLowerCase();
+  //   const listing = listingstable[lowerCaseMenu] || [];
+  //   const features = featurestable[lowerCaseMenu] || [];
+  //   const securities = servicesnavtable[lowerCaseMenu] || [];
+  //   return (
+  //     listing.some((item: any) =>
+  //       item.link === path ||
+  //       item.details.some((detail: any) => detail.link === path)
+  //     ) ||
+  //     features.some((item: any) =>
+  //       item.link === path ||
+  //       item.details.some((detail: any) => detail.link === path)
+  //     ) ||
+  //     securities.some((item: any) =>
+  //       item.link === path ||
+  //       item.details.some((detail: any) => detail.link === path)
+  //     )
+  //   );
+  // };
+  const isActive = (menu: string, path: string) => {
+    if (path === '/') {
+      return menu === 'Home';
+    }
+
+    const lowerCaseMenu = menu.toLowerCase();
+    const listing = listingstable[lowerCaseMenu] || [];
+    const features = featurestable[lowerCaseMenu] || [];
+    const services = servicesnavtable.find((item: any) => item.heading.toLowerCase().trim() === lowerCaseMenu);
+
+    return (
+      // Check listings
+      listing.some((item: any) =>
+        item.link === path ||
+        item.details.some((detail: any) => detail.link === path)
+      ) ||
+      // Check features
+      features.some((item: any) =>
+        item.link === path ||
+        item.details.some((detail: any) => detail.link === path)
+      ) ||
+      // Check servicesnavtable (top-level and nested items)
+      (services && (
+        services.link === path ||
+        services.items.some((item: any) => item.link === path)
+      ))
+    );
+  };
+
+
+
+
   return (
     <nav
       className={`navigation-menu-container fixed inset-x-0 top-0 z-50 h-[80px] w-full flex items-center transition-transform duration-300
@@ -136,7 +198,7 @@ const Navbar = () => {
                 } hidden pl-2`}
             />
           </Link>
-          <ul className="nav-menu mb-0 pl-0 hidden md:flex flex-row ml-8 gap-4 ease-in-out  ">
+          {/* <ul className="nav-menu mb-0 pl-0 hidden md:flex flex-row ml-8 gap-4 ease-in-out  ">
             {["Services", "Industries", "Insights", "About", "Careers"].map(
               (menu, index) => (
                 <li
@@ -157,6 +219,29 @@ const Navbar = () => {
                 </li>
               )
             )}
+          </ul> */}
+          <ul className="nav-menu mb-0 pl-0 hidden md:flex flex-row ml-8 gap-4 ease-in-out">
+            {[
+              { name: "Services", path: "/" },
+              { name: "Industries", path: "/" },
+              { name: "Insights", path: "/" },
+              { name: "About", path: "/" },
+              { name: "Careers", path: "/" },
+            ].map((menu, index) => (
+              <li
+                key={index}
+                className={`nav-item text-lg font-normal w-90px ${isActive(menu.name, router.pathname)
+                  ? "text-[#2776ea] font-bold"
+                  : "text-[#FFF] font-normal"
+                  } hover:text-[#2776EA] hover:font-normal`}
+                onClick={() => handleClick(menu.name)}
+                onMouseEnter={() => handleMouseEnter(menu.name)}
+              >
+                <Link href={menu.path} className="nav-link text-[#fff]">
+                  {menu.name}
+                </Link>
+              </li>
+            ))}
           </ul>
         </div>
         <div className="flex items-center gap-4">

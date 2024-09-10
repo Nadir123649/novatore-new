@@ -18,7 +18,7 @@ import { souqofQatarchallengesData, souqofQataroutcomesData, oneH2Headlines } fr
 
 const IspyarWedding: NextPage = () => {
     return (
-        <Layout showContactForm={true} title="Novatore Solutions - Retail" description="Welcome to Novatore Solutions, setting new standards in technology with unmatchable code.">
+        <Layout showContactForm={true} title="Novatore Solutions - Ispyar Wedding" description="Welcome to Novatore Solutions, setting new standards in technology with unmatchable code.">
             <div className="overflow-x-hidden">
                 <HeroBanner beforegreentext="Revolutionizing Wedding" morebannerHeading="Planning for South Asian Multi-Event Celebrations" needsMoreTitle={true} previewImage="/images/ispyarherobanner.png" pagetitle="" maxwidth="1100px" />
                 <HeadlineBanner headlinesData={ispyarHeadlines} />

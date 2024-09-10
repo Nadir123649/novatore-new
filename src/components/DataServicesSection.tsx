@@ -2,7 +2,7 @@ import React from 'react';
 import { Col, Container, Row } from 'react-bootstrap';
 import DataCard from './DataCard';
 import { useState, useEffect } from 'react';
-
+import Link from 'next/link';
 interface DataItem {
     title: string;
     description?: string;
@@ -12,10 +12,12 @@ interface DataItem {
         title: string;
         Link: string;
     };
+    viewallbutton?: any;
 }
 
 interface DataServicesSectionProps {
     heading: string;
+    viewallbutton?: any;
     headingBlue?: string;
     needsMoreTitle?: string;
     cardMinHeight?: any;
@@ -24,7 +26,7 @@ interface DataServicesSectionProps {
     textalign?: "left" | "center" | "right";
 }
 
-const DataServicesSection: React.FC<DataServicesSectionProps> = ({ textalign = "left", heading, headingBlue, data = [], needsMoreTitle, type = "multiple", cardMinHeight }) => {
+const DataServicesSection: React.FC<DataServicesSectionProps> = ({ textalign = "left", heading, viewallbutton, headingBlue, data = [], needsMoreTitle, type = "multiple", cardMinHeight }) => {
     const [isVisible, setIsVisible] = useState(false);
     const [hasAnimated, setHasAnimated] = useState(false);
 
@@ -68,7 +70,7 @@ const DataServicesSection: React.FC<DataServicesSectionProps> = ({ textalign = "
                                     type="relative bg-white shadow rounded-[16px] pt-[40px] pb-[10px] px-[24px] max-w-2xl mx-auto overflow-hidden flex flex-col h-full hover:scale-105 transition ease-in duration-1.5"
                                     value="absolute top-[16px] right-[400px] mt-2 mr-3 text-blue-200"
                                     minHeight={cardMinHeight}
-                                    viewbutton={item.viewbutton} 
+                                    viewbutton={item.viewbutton}
                                 />
                             </Col>
                         ))
@@ -84,6 +86,11 @@ const DataServicesSection: React.FC<DataServicesSectionProps> = ({ textalign = "
                                 />
                             </Col>
                         ))}
+                    {viewallbutton && (
+                        <Link style={{ width: "130px" }} href="/" target='_blank' className="p-3 text-[#fff] mx-auto ease-in-out duration-300 bg-[#2776ea] hover:bg-transparent hover:text-[#2776ea] text-[16px] leading-[30px] font-normal  border-1 border-transparent hover:border-[#2776EA] rounded-[16px] cursor-pointer  flex justify-center items-center  mb-2">
+                            View All
+                        </Link>
+                    )}
                 </Row>
             </Container>
         </section>

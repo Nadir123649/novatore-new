@@ -18,7 +18,7 @@ import { souqofQatarchallengesData, souqofQataroutcomesData, oneH2Headlines } fr
 
 const AlphaAlliance: NextPage = () => {
     return (
-        <Layout showContactForm={true} title="Novatore Solutions - Retail" description="Welcome to Novatore Solutions, setting new standards in technology with unmatchable code.">
+        <Layout showContactForm={true} title="Novatore Solutions - Alpha Alliance" description="Welcome to Novatore Solutions, setting new standards in technology with unmatchable code.">
             <div className="overflow-x-hidden">
                 <HeroBanner bannerHeading="The" spangreenishtext="Alpha Alliance" morebannerHeading="Signs Wristband Toolkit for Coaches and Athletes" needsMoreTitle={true} previewImage="/images/alphaallianceherobanner.png" pagetitle="" maxwidth="1100px" />
                 <HeadlineBanner headlinesData={alphaHeadlines} />

@@ -124,7 +124,7 @@ const CloudOps: FC<CloudOpsProps> = ({
     } else if (pathname.includes("social")) {
       return social;
     } else if (pathname.includes("careers")) {
-      return social;
+      return careers;
     }
     return [];
   };

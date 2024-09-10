@@ -11,7 +11,7 @@ import CaseStudiesSlider from "@/components/CaseStudiesSlider";
 
 const Gaming: NextPage = () => {
     return (
-        <Layout showContactForm={true} title="Novatore Solutions - Gaming" description="Welcome to Novatore Solutions, setting new standards in technology with unmatchable code.">
+        <Layout showContactForm={true} title="Novatore Solutions - Gaming" description="Welcome to Novatore Solutions, setting new standards in technology with unmatchable code." keywords={"Game Development, Gaming Technology Solutions, E-commerce Platform for Gaming Assets, Multiplayer Game Development, Virtual Reality (VR) Gaming, Augmented Reality (AR) Gaming, AI in Gaming, Unity Game Development, Unreal Engine Game Development"}>
             <div className="overflow-x-hidden">
                 <HeroBanner bannerHeading="Novatore Solutions in Gaming" needsMoreTitle={true} previewImage="/images/gaming-banner.png" pagetitle="Gaming" maxwidth="800px" />
                 <ServicesNeeds needsTitle="Over " needsTitleBlue="10 Years" needsMoreTitle="of Expertise in Game Development" NeedsImage="/images/gaming-image-right.png"

@@ -13,7 +13,6 @@ import CaseStudiesSlider from "@/components/CaseStudiesSlider";
 const Home: NextPage = () => {
   const getAllAuthors = async () => {
     const res = await client.fetch("*[_type== 'author']");
-    console.log(res)
     return res;
   }
 

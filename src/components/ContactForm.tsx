@@ -55,8 +55,6 @@ const schema = z.object({
 
 
 const ContactForm = () => {
-
-
     const [isVisible, setIsVisible] = useState(false);
     const [hasAnimated, setHasAnimated] = useState(false);
     const [countries, setCountries] = useState<Country[]>([]);
@@ -64,6 +62,9 @@ const ContactForm = () => {
     const [selected, setSelected] = useState("");
     const [isLoading, setIsLoading] = useState(false);
 
+    const { register, handleSubmit, clearErrors, setValue, formState: { errors } } = useForm<IFormInputs>({
+        resolver: zodResolver(schema),
+    });
 
     const handleScroll = () => {
         const element = document.getElementById("contact-us-form");
@@ -73,6 +74,71 @@ const ContactForm = () => {
                 setIsVisible(true);
                 setHasAnimated(true);
             }
+        }
+    };
+
+    const handleCountryChange = (selectedOption: any) => {
+        const country = countries.find(c => c.name === selectedOption?.value);
+        if (country) {
+            setSelectedCountry(country);
+            setValue('phone', country.code);
+            setValue('country', country.name);
+            clearErrors('country');
+        }
+    };
+
+    const customStyles = {
+        control: (provided: any) => ({
+            ...provided,
+            width: '400px',
+            borderRadius: '16px',
+            borderColor: '#B7B7B7',
+            padding: '14px',
+        }),
+        option: (provided: any) => ({
+            ...provided,
+            fontSize: '18px',
+        }),
+    };
+
+    const handlePhoneChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+        const value = e.target.value;
+        if (selectedCountry) {
+            if (value.startsWith(selectedCountry.code)) {
+                setValue('phone', value);
+            } else {
+                setValue('phone', selectedCountry.code);
+            }
+        } else {
+            setValue('phone', value);
+        }
+    };
+
+    const onSubmit = async (data: IFormInputs) => {
+        try {
+            setIsLoading(true);
+            toast.success("Submitting...");
+
+            const fullPhoneNumber = `${selectedCountry?.code || ''}-${data.contact}`;
+            data.contact = fullPhoneNumber;
+
+            const response = await fetch("/api/email", {
+                method: "POST",
+                headers: { "Content-type": "application/json" },
+                cache: "no-cache",
+                body: JSON.stringify(data)
+            });
+
+            if (response.ok) {
+                toast.success("Submitted successfully!");
+            } else {
+                toast.error("Unable to submit.");
+            }
+        } catch (err) {
+            console.log(err, 'error');
+            toast.error("An error occurred. Unable to submit.");
+        } finally {
+            setIsLoading(false);
         }
     };
 
@@ -108,80 +174,6 @@ const ContactForm = () => {
         fetchCountries();
     }, []);
 
-
-
-    const { register, handleSubmit, clearErrors, setValue, formState: { errors } } = useForm<IFormInputs>({
-        resolver: zodResolver(schema),
-    });
-
-    const handleCountryChange = (selectedOption: any) => {
-        const country = countries.find(c => c.name === selectedOption?.value);
-        if (country) {
-            setSelectedCountry(country);
-            setValue('phone', country.code);
-            setValue('country', country.name);
-            clearErrors('country');
-        }
-    };
-
-    const onSubmit = async (data: IFormInputs) => {
-        try {
-            setIsLoading(true);
-            toast.success("Submitting...");
-
-            const fullPhoneNumber = `${selectedCountry?.code || ''}-${data.contact}`;
-            data.contact = fullPhoneNumber;
-
-            const response = await fetch("/api/email", {
-                method: "POST",
-                headers: { "Content-type": "application/json" },
-                cache: "no-cache",
-                body: JSON.stringify(data)
-            });
-
-            if (response.ok) {
-                toast.success("Submitted successfully!");
-            } else {
-                toast.error("Unable to submit.");
-            }
-        } catch (err) {
-            console.log(err, 'error');
-            toast.error("An error occurred. Unable to submit.");
-        } finally {
-            setIsLoading(false);
-        }
-    };
-
-
-
-
-    const customStyles = {
-        control: (provided: any) => ({
-            ...provided,
-            width: '400px',
-            borderRadius: '16px',
-            borderColor: '#B7B7B7',
-            padding: '14px',
-        }),
-        option: (provided: any) => ({
-            ...provided,
-            fontSize: '18px',
-        }),
-    };
-    const handlePhoneChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-        const value = e.target.value;
-        if (selectedCountry) {
-            if (value.startsWith(selectedCountry.code)) {
-                setValue('phone', value);
-            } else {
-                setValue('phone', selectedCountry.code);
-            }
-        } else {
-            setValue('phone', value);
-        }
-    };
-
-
     return (
         <section className={`${isVisible ? "fadeIn" : "opacity-0 "
             } contact-form-section pb-10 md:py-20 bg-center bg-no-repeat bg-cover `}>
@@ -200,7 +192,20 @@ const ContactForm = () => {
                                     {contactDetails.map((data, index) => (
                                         <div key={index} className='contact-details-item flex gap-3 items-center text-[#2776EA]'>
                                             {data.icon}
-                                            <span className='text-[18px] text-[#2A2A2A] max-w-[315px] font-normal'>{data.text}</span>
+                                            {data.link ? (
+                                                <a
+                                                    href={data.link}
+                                                    className='text-[18px] text-[#2A2A2A] max-w-[315px] font-normal'
+                                                    target="_blank"
+                                                    rel="noopener noreferrer"
+                                                >
+                                                    {data.text}
+                                                </a>
+                                            ) : (
+                                                <span className='text-[18px] text-[#2A2A2A] max-w-[315px] font-normal'>
+                                                    {data.text}
+                                                </span>
+                                            )}
                                         </div>
                                     ))}
                                 </div>
@@ -317,16 +322,23 @@ const ContactForm = () => {
                                                 placeholder='Message'></textarea>
                                         </Form.Group>
                                     </Col>
+
                                     <Col lg={12} md={12} xs={12}>
-                                        <Form.Group controlId="subscribe" className='flex flex-col gap-1'>
+                                        <Form.Group controlId="subscribe" className='flex  gap-3 items-center'>
                                             <Form.Check
                                                 type="checkbox"
                                                 {...register('subscribe')}
-                                                label="Check here to subscribe for updates."
-                                                className="my-2 text-[#645555] text-[18px] font-medium not-italic custom-checkbox"
+                                                className="my-2 text-[#645555] text-[18px] font-medium not-italic custom-checkbox "
                                             />
+                                            <label
+                                                className="mt-2 text-[#645555] text-[18px] font-medium not-italic "
+                                                onClick={(e) => e.preventDefault()}
+                                            >
+                                                Check here to subscribe for updates.
+                                            </label>
                                         </Form.Group>
                                     </Col>
+
                                     <Col lg={12} md={12} xs={12} className='flex justify-end'>
                                         <button disabled={isLoading} className='btn-submit text-white text-[18px] font-normal not-italic bg-[#2776EA] rounded-[16px] py-[12px] md:py-[16px] px-[14px] md:px-[24px] max-w-[180px] w-full border border-solid border-[#B7B7B7]' type='submit'>
                                             Submit {" "}

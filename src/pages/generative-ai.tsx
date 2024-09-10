@@ -10,7 +10,7 @@ import CloudOps from "@/components/CloudOps";
 
 const GenerativeAi: NextPage = () => {
     return (
-        <Layout showContactForm={true} title="Novatore Solutions" description="Welcome to Novatore Solutions, setting new standards in technology with unmatchable code." keywords="Generative AI, Text-to-Image AI, Multimodal AI, AI Governance, Generative Design, AI Music Generation, Synthetic Data, Speech Synthesis AI, Conversational AI, AI-Generated Content">
+        <Layout showContactForm={true} title="Novatore Solutions - Generative AI" description="Welcome to Novatore Solutions, setting new standards in technology with unmatchable code." keywords="Generative AI, Text-to-Image AI, Multimodal AI, AI Governance, Generative Design, AI Music Generation, Synthetic Data, Speech Synthesis AI, Conversational AI, AI-Generated Content">
             <div className="overflow-x-hidden">
                 <HeroBanner bannerHeading="Generative AI: Revolutionizing Art, Design, and Content Creation" pagetitle="Artificial Intelligence" needsMoreTitle="Get in Touch" previewImage="/images/generative-banner-bg.png" maxwidth="1100px" />
                 <ServicesNeeds needsTitle="Explore Our " needsTitleBlue="Generative AI" needsMoreTitle="Solutions" NeedsImage="/images/generative-right-image.png"

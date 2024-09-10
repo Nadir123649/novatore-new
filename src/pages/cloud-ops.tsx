@@ -9,7 +9,7 @@ import ExpertServices from "@/components/ExpertServices";
 
 const CloudOpsPage: NextPage = () => {
     return (
-        <Layout showContactForm={true} title="Novatore Solutions" description="Welcome to Novatore Solutions, setting new standards in technology with unmatchable code." keywords="What is CloudOps, CloudOps best practices, Benefits of CloudOps, CloudOps vs DevOps, CloudOps tools and technologies, CloudOps services, CloudOps consulting, CloudOps implementation, CloudOps solutions, CloudOps managed services">
+        <Layout showContactForm={true} title="Novatore Solutions - CloudOps" description="Welcome to Novatore Solutions, setting new standards in technology with unmatchable code." keywords="What is CloudOps, CloudOps best practices, Benefits of CloudOps, CloudOps vs DevOps, CloudOps tools and technologies, CloudOps services, CloudOps consulting, CloudOps implementation, CloudOps solutions, CloudOps managed services">
             <div className="overflow-x-hidden">
                 <HeroBanner bannerHeading="Achieve Operational Excellence with Professional CloudOps" pagetitle="Cloud" needsMoreTitle="Get in Touch" previewImage="/images/cloud-ops-banner.png" maxwidth="1000px" />
                 <ServicesNeeds needsTitle=" Exceptional Software Performance with" needsTitleBlue="CloudOps" NeedsImage="/images/cloud-image-right.png"

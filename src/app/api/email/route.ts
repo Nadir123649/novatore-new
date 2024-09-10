@@ -15,7 +15,7 @@ export const POST = async (request: NextRequest) => {
           - Name: ${req.fullName}
           - Email: ${req.email}
           - Country: ${req.country}
-          - Phone Number: ${req.phone}
+          - Phone Number: ${req.contact}
           - Message: ${req.message}
           - Subscribe for Updates: ${req.subscribe ? "Yes" : "No"}
 

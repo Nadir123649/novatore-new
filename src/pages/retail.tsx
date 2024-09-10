@@ -11,7 +11,7 @@ import { retaildataImages } from "@/constants/indesx";
 
 const Retail: NextPage = () => {
     return (
-        <Layout showContactForm={true} title="Novatore Solutions - Retail" description="Welcome to Novatore Solutions, setting new standards in technology with unmatchable code.">
+        <Layout showContactForm={true} title="Novatore Solutions - Retail" description="Welcome to Novatore Solutions, setting new standards in technology with unmatchable code." keywords={"Retail Software Solutions, E-commerce Platforms, Omnichannel Retail Solutions, Customer Relationship Management (CRM) Systems, Mobile App Development for Retail, Data-Driven Retail Insights, Retail Analytics, Customer Engagement Solutions, Retail Cloud Services, Order Management Systems"}>
             <div className="overflow-x-hidden">
                 <HeroBanner bannerHeading="Empowering Retail and Consumer Goods with Innovative Technology " needsMoreTitle={true} previewImage="/images/retail-banner.png" pagetitle="Retail" maxwidth="1100px" />
                 <ServicesNeeds needsTitleBlue="Overview" NeedsImage="/images/retail-overview.png"

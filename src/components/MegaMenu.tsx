@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import { featurestable, listingstable, menuitems, data } from "@/constants/indesx";
+import { featurestable, listingstable, menuitems, servicesnavtable } from "@/constants/indesx";
 import Link from "next/link";
 import { Container } from "react-bootstrap";
 import { useRouter } from 'next/router';
@@ -31,7 +31,7 @@ const MegaMenu: React.FC<MegaMenuProps> = ({ activeMenu, activeLink }) => {
     return router.pathname === url;
   };
   const filteredMenuItems = menuitems.filter(
-    (data) => data.title.toLowerCase() === activeMenu.toLowerCase()
+    (servicesnavtable) => servicesnavtable.title.toLowerCase() === activeMenu.toLowerCase()
   );
   const filteredListings = listingstable[activeMenu] || [];
   const filteredFeatures = featurestable[activeMenu] || [];
@@ -111,7 +111,7 @@ const MegaMenu: React.FC<MegaMenuProps> = ({ activeMenu, activeLink }) => {
           {/* section third  */}
           {isThirdSectionHidden ? (
             <div className="pl-4 sm:my-0 md:my-3 col-span-12 md:col-span-4 ">
-              {data.map((list) => (
+              {servicesnavtable.map((list: { id: React.Key | null | undefined; link: string; heading: string | number | bigint | boolean | React.ReactElement<any, string | React.JSXElementConstructor<any>> | Iterable<React.ReactNode> | React.ReactPortal | Promise<React.AwaitedReactNode> | Iterable<React.ReactNode> | null | undefined; items: any[]; }) => (
                 <div key={list.id} className="d-flex flex-col">
                   <a
                     onClick={() => handleNavigation(list.link)}

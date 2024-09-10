@@ -11,7 +11,7 @@ import CaseStudiesSlider from "@/components/CaseStudiesSlider";
 
 const Cryptocurrency: NextPage = () => {
     return (
-        <Layout showContactForm={true} title="Novatore Solutions - Cryptocurrency" description="Welcome to Novatore Solutions, setting new standards in technology with unmatchable code.">
+        <Layout showContactForm={true} title="Novatore Solutions - Cryptocurrency" description="Welcome to Novatore Solutions, setting new standards in technology with unmatchable code." keywords={"Cryptocurrency, Blockchain Technology, NFT Marketplace Development, DeFi Applications, Crypto Wallet Development, Crypto Trading Platforms, Ethereum Blockchain, Blockchain Integration, Crypto Portfolio Management, Digital Currency Market"}>
             <div className="overflow-x-hidden">
                 <HeroBanner bannerHeading="Expertise in Cryptocurrency and Blockchain Technology" needsMoreTitle={true} previewImage="/images/crypto-banner.png" pagetitle="Cryptocurrency" />
                 <ServicesNeeds needsTitle="A " needsTitleBlue="Decade of Success" needsMoreTitle="in Delivering Crypto Projects" NeedsImage="/images/crypto-image-right.png"

@@ -18,7 +18,7 @@ import { commitchallengesData, commitoutcomesData, commitGoodHeadlines } from "@
 
 const CommitGood: NextPage = () => {
     return (
-        <Layout showContactForm={true} title="Novatore Solutions - Retail" description="Welcome to Novatore Solutions, setting new standards in technology with unmatchable code.">
+        <Layout showContactForm={true} title="Novatore Solutions - Commit Good" description="Welcome to Novatore Solutions, setting new standards in technology with unmatchable code.">
             <div className="overflow-x-hidden">
                 <HeroBanner beforebluetext="Commit Good:" bannerHeading=" Revolutionizing Charitable Donations with Blockchain Technology" needsMoreTitle={true} previewImage="/images/commitherobanner.png" pagetitle="" maxwidth="1100px" />
                 <HeadlineBanner headlinesData={commitGoodHeadlines} />

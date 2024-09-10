@@ -21,7 +21,7 @@ const CaseStudies: NextPage = () => {
         : caseStudiesData.filter(caseStudy => caseStudy.category === activeFilter);
 
     return (
-        <Layout showContactForm={true} title="Novatore Solutions - About" description="Welcome to Novatore Solutions, setting new standards in technology with unmatchable code.">
+        <Layout showContactForm={true} title="Novatore Solutions - Case Studies" description="Welcome to Novatore Solutions, setting new standards in technology with unmatchable code.">
             <HeroBanner bannerHeading="Case Studies" previewImage="/images/casestudiesbanner.png" />
 
 

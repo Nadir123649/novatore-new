@@ -18,7 +18,7 @@ import { souqofQatarchallengesData, souqofQataroutcomesData, souqofqatarHeadline
 
 const SouqOfQatar: NextPage = () => {
     return (
-        <Layout showContactForm={true} title="Novatore Solutions - Retail" description="Welcome to Novatore Solutions, setting new standards in technology with unmatchable code.">
+        <Layout showContactForm={true} title="Novatore Solutions - Souq of Qatar" description="Welcome to Novatore Solutions, setting new standards in technology with unmatchable code.">
             <div className="overflow-x-hidden">
                 <HeroBanner bannerHeading="Building Qatar's First Price Comparison Platform" spanredtext=" - Souq of Qatar" needsMoreTitle={true} previewImage="/images/qatarherobanner.png" pagetitle="" maxwidth="1100px" />
                 <HeadlineBanner headlinesData={souqofqatarHeadlines} />

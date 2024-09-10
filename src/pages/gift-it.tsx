@@ -18,7 +18,7 @@ import { giftitchallengesData, giftitoutcomesData, angelflowHeadlines } from "@/
 
 const GiftIT: NextPage = () => {
     return (
-        <Layout showContactForm={true} title="Novatore Solutions - Retail" description="Welcome to Novatore Solutions, setting new standards in technology with unmatchable code.">
+        <Layout showContactForm={true} title="Novatore Solutions -  Gift It" description="Welcome to Novatore Solutions, setting new standards in technology with unmatchable code.">
             <div className="overflow-x-hidden">
                 <HeroBanner beforespanredtext="Gift It:" bannerHeading="Creating a Seamless Marketplace for Unique Gifting Experiences in the UAE" needsMoreTitle={true} previewImage="/images/giftherobanner.png" pagetitle="" maxwidth="1100px" />
                 <HeadlineBanner headlinesData={angelflowHeadlines} />

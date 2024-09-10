@@ -18,7 +18,7 @@ import { souqofQatarchallengesData, souqofQataroutcomesData, oneH2Headlines } fr
 
 const Terrascope: NextPage = () => {
     return (
-        <Layout showContactForm={true} title="Novatore Solutions - Retail" description="Welcome to Novatore Solutions, setting new standards in technology with unmatchable code.">
+        <Layout showContactForm={true} title="Novatore Solutions - Terrascope" description="Welcome to Novatore Solutions, setting new standards in technology with unmatchable code.">
             <div className="overflow-x-hidden">
                 <HeroBanner bannerHeading="The" spanparrottext="terrascope" morebannerHeading="Project for Rural Property Management" needsMoreTitle={true} previewImage="/images/terrascopeherobanner.png" pagetitle="" maxwidth="1100px" />
                 <HeadlineBanner headlinesData={terrascopeHeadlines} />

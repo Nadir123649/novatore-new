@@ -18,7 +18,7 @@ import { souqofQatarchallengesData, souqofQataroutcomesData, oneH2Headlines } fr
 
 const Washmen: NextPage = () => {
     return (
-        <Layout showContactForm={true} title="Novatore Solutions - Retail" description="Welcome to Novatore Solutions, setting new standards in technology with unmatchable code.">
+        <Layout showContactForm={true} title="Novatore Solutions - Washmen" description="Welcome to Novatore Solutions, setting new standards in technology with unmatchable code.">
             <div className="overflow-x-hidden">
                 <HeroBanner bannerHeading="Enhancing" spanpurpletext="Efficiency and User Experience" morebannerHeading="for a Premier Laundry & Dry-Cleaning Service" needsMoreTitle={true} previewImage="/images/washmenherobanner.png" pagetitle="" maxwidth="1100px" />
                 <HeadlineBanner headlinesData={oneH2Headlines} />

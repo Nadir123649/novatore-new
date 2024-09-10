@@ -1,4 +1,36 @@
-import { googleanalyticstile, tstile, angulaartile, reacttile, vuejstile, nodetile, pythontile, jstile, fluttertile, swifttile, mysqltile, googlecloudtile, mongodbtile, postgresstile, awstile, azuretile, phptile, caseone, casetwo, casefour, casethree, AIOne, AITwo, AIThree, AIFour, AIFive, AISix, ComprehensiveIcon, StorageIcon, NetworkingIcon, AnalyticsIcon, CovaBg, dataautomation, AngelflowBg, CloudServiceicon, About, ComplianceAI, ApplicationCompliance, RedTeaming, webAppSecurity, SecurityAudits, NetworkSecurityTesting, GovernanceFramework, Dataprivacy, RiskManagement, Airbolt, ANGELFLOW, AngelLogo, Assistant, blogImageOne, blogImageTwo, Buisness, Career, Catalyst, ChooseFour, ChooseOne, ChooseThree, ChooseTwo, Cova, COVA, CovaLogo, Developer, Industries, Insights, London, Protium, Services, Upsure, DataImageOne, DataImageTwo, DataImageThree, DataImageFour, CloudOne, CloudTwo, CloudThree, CloudFour, AwsOne, AwsTwo, AwsThree, ImageOne, ImageTwo, ImageThree, CloudFive, CloudSix, DataImageFive, DataImageSix, CLOUD, Amazon, DATA, artificialIntelligence, Cybersecurity, DigitalService, AutomationOne, AutomationThree, AutomationFour, AutomationFive, AutomationSix, AutomationTwo, RemoteIT, ConsultingService, CloudService, HelpDesk, NetworkSecurity, SystemSupport, MigrationOne, MigrationTwo, MigrationThree, ProductFour, ProductThree, ProductTwo, ProductOne, ProductFive, ProductSix, ServicesSix, ServicesFive, ServicesFour, ServicesThree, ServicesTwo, ServicesOne, Vulnerability, CustomAnalyticsSix, CustomAnalyticsFive, CustomAnalyticsFour, CustomAnalyticsThree, CustomAnalyticsTwo, CustomAnalyticsOne, TransformThree, TransformTwo, TransformOne, TreeThree, TreeTwo, TreeOne, WebThree, WebTwo, WebOne, AutomationImageOne, AutomationImageTwo, AutomationImageThree, PresentOne, PresentTwo, PresentThree, PresentFour, PresentFive, PresentSix, ConsultingOne, ConsultingTwo, ConsultingThree, ConsultingFour, ConsultingFive, ConsultingSix, BlogBannerThree, BlogBannerTwo, BlogBannerOne, BlogBannerFour, CryptoOne, CryptoTwo, CryptoFive, CryptoFour, CryptoThree, CryptoSix, GamingOne, GamingTwo, GamingThree, HealthCareOne, HealthCareTwo, HealthCareThree, InsuranceOne, InsuranceTwo, InsuranceThree, RealEstateOne, RealEstateTwo, RealEstateThree, RealEstateFour, RealEstateFive, RealEstateSix, IconWeb4, IconWeb3, IconWeb2, IconWeb1, myndsteam, myndsduration, myndsindustry, jquerytile, webflowtile, tagmanagertile, nexttile, figmatile, dockertile, redistile, jenkinstile, djangotile, csstile, mjtile, javatile, bootstraptile, dojotile, railstile, wordpresstile, laraveltile, myndsiconOne, myndsiconTwo, myndsiconThree, catalysticonFour, covaiconOne, covaiconTwo, covaiconThree, ircciconOne, ircciconTwo, ircciconThree, angelflowiconOne, angelflowiconTwo, angelflowiconThree, huntersiconOne, huntersiconTwo, huntersiconThree, juggernauticonOne, juggernauticonTwo, juggernauticonThree, commiticonOne, commiticonTwo, commiticonThree, gifticonOne, gifticonTwo, gifticonThree, zeusxiconOne, zeusxiconTwo, zeusxiconThree, footeducationiconOne, footeducationiconTwo, footeducationiconThree, qatariconOne, qatariconTwo, qatariconThree, brokericonOne, brokericonTwo, brokericonThree, vuetile, oneH2iconOne, oneH2iconTwo, oneH2iconThree, alphaiconOne, alphaiconTwo, alphaiconThree, terrascopeiconOne, terrascopeiconTwo, terrascopeiconThree, airbolticonOne, airbolticonTwo, airbolticonThree, dwpiconOne, dwpiconTwo, dwpiconThree, ispyariconOne, ispyariconTwo, ispyariconThree, dafiiconOne, dafiiconTwo, dafiiconThree, washmeniconOne, washmeniconTwo, washmeniconThree, lindsayprofile, alphaallianceclientlogo, kabirprofile, airboltclientlogo, jasonprofile, foodclientlogo, upsureclientlogo, rivalsclientlogo, casenOne, casejuggernaut, casecryptocurrency, casedafi } from "@/utils";
+import {
+    googleanalyticstile, tstile, angulaartile, reacttile, vuejstile, nodetile,
+    pythontile, jstile, fluttertile, swifttile, mysqltile, googlecloudtile,
+    mongodbtile, postgresstile, awstile, azuretile, phptile, ComprehensiveIcon,
+    StorageIcon, NetworkingIcon, AnalyticsIcon, CovaBg, dataautomation, AngelflowBg,
+    CloudServiceicon, About, ComplianceAI, ApplicationCompliance, RedTeaming,
+    webAppSecurity, SecurityAudits, NetworkSecurityTesting, GovernanceFramework, Dataprivacy,
+    RiskManagement, Airbolt, ANGELFLOW, AngelLogo, Assistant, blogImageOne, blogImageTwo,
+    Buisness, Career, Catalyst, ChooseFour, ChooseOne, ChooseThree, ChooseTwo, Cova, COVA, CovaLogo,
+    Developer, Industries, Insights, London, Protium, Services, Upsure, DataImageOne, DataImageTwo,
+    DataImageFour, CloudOne, CloudTwo, CloudThree, CloudFour, ImageOne, ImageTwo,
+    ImageThree, CloudFive, CloudSix, DataImageFive, DataImageSix, RemoteIT, ConsultingService, CloudService,
+    HelpDesk, NetworkSecurity, SystemSupport, MigrationOne,
+    MigrationTwo, MigrationThree, ProductFour, ProductThree, ProductTwo, ProductOne, ProductFive, ProductSix,
+    ServicesSix, ServicesFive, ServicesFour, ServicesThree, ServicesTwo, ServicesOne, Vulnerability, CustomAnalyticsSix,
+    CustomAnalyticsFive, CustomAnalyticsFour, CustomAnalyticsThree, CustomAnalyticsTwo, CustomAnalyticsOne, TransformThree,
+    TransformTwo, TransformOne, TreeThree, TreeTwo, TreeOne, WebThree, WebTwo, WebOne, AutomationImageOne, AutomationImageTwo,
+    AutomationImageThree, PresentOne, PresentTwo, PresentThree, PresentFour, PresentFive, PresentSix, ConsultingOne, ConsultingTwo,
+    ConsultingThree, ConsultingFour, ConsultingFive, ConsultingSix,
+    CryptoOne, CryptoTwo, CryptoFive, CryptoFour, CryptoThree, CryptoSix, GamingOne, GamingTwo, GamingThree, HealthCareOne,
+    HealthCareTwo, HealthCareThree, InsuranceOne, InsuranceTwo, InsuranceThree, RealEstateOne, RealEstateTwo, RealEstateThree,
+    RealEstateFour, RealEstateFive, RealEstateSix, IconWeb4, IconWeb3, IconWeb2, IconWeb1, myndsteam, myndsduration, myndsindustry,
+    jquerytile, webflowtile, tagmanagertile, nexttile, figmatile, dockertile, redistile, jenkinstile, djangotile, csstile, mjtile,
+    javatile, bootstraptile, dojotile, railstile, wordpresstile, laraveltile, myndsiconOne, myndsiconTwo, myndsiconThree, catalysticonFour,
+    covaiconOne, covaiconTwo, covaiconThree, ircciconOne, ircciconTwo, ircciconThree, angelflowiconOne, angelflowiconTwo, angelflowiconThree,
+    huntersiconOne, huntersiconTwo, huntersiconThree, juggernauticonOne, juggernauticonTwo, juggernauticonThree, commiticonOne, commiticonTwo,
+    commiticonThree, gifticonOne, gifticonTwo, gifticonThree, zeusxiconOne, zeusxiconTwo, zeusxiconThree, footeducationiconOne, footeducationiconTwo,
+    footeducationiconThree, qatariconOne, qatariconTwo, qatariconThree, brokericonOne, brokericonTwo, brokericonThree, vuetile, oneH2iconOne,
+    oneH2iconTwo, oneH2iconThree, alphaiconOne, alphaiconTwo, alphaiconThree, terrascopeiconOne, terrascopeiconTwo, terrascopeiconThree,
+    airbolticonOne, airbolticonTwo, airbolticonThree, dwpiconOne, dwpiconTwo, dwpiconThree, ispyariconOne, ispyariconTwo, ispyariconThree,
+    dafiiconOne, dafiiconTwo, dafiiconThree, washmeniconOne, washmeniconTwo, washmeniconThree, lindsayprofile, alphaallianceclientlogo, kabirprofile,
+    airboltclientlogo, jasonprofile, foodclientlogo, upsureclientlogo, rivalsclientlogo, casenft, casejuggernaut, casecryptocurrency, casedafi
+} from "@/utils";
 import { IoMdMail } from "react-icons/io";
 import { FaPhoneAlt } from "react-icons/fa";
 import { ImLocation } from "react-icons/im";
@@ -69,14 +101,17 @@ export const contactDetails = [
     {
         icon: <IoMdMail size={22} />,
         text: 'info@novatoresols.com',
+        link: 'mailto:info@novatoresols.com',
     },
     {
         icon: <FaPhoneAlt size={22} />,
-        text: '+12183001965',
+        text: ' +1 (206) 738-2549 ',
+        link: 'tel:+12067382549',
     },
     {
         icon: <ImLocation size={22} />,
         text: 'US Office: 8 The Green STE B Dover, DE 19901',
+        link: '',
     },
 ];
 export const whyChooseUs = [
@@ -283,6 +318,28 @@ export const studies = [
         description: 'Created an AI-powered insurance web portal using Next.js, Node.js, and AWS, enhancing interactions among brokers, customers, and underwriters.'
     }
 ];
+export const servicesnavtable: any = [
+    {
+        id: 1,
+        heading: 'Cyber Security ',
+        link: "/cyber-security",
+        items: [{ text: "Governance, Risk & Compliance, Data Privacy", link: '/governance-and-dataprivacy' }, { text: "Security Services", link: '/security-services' }, { text: "Penetration Testing", link: '/penetration-testing' },],
+    },
+
+    {
+        id: 2,
+        heading: 'Artificial Intelligence',
+        link: "/artificial-Intelligence",
+        items: [{ text: "AI Consulting", link: '/ai-consulting' }, { text: "Generative AI", link: '/generative-ai' }, { text: "Machine Learning", link: '/machine-learning' },],
+    },
+    {
+        id: 3,
+        heading: 'Cloud',
+        link: "/cloud-services",
+        items: [{ text: "CloudOps", link: '/cloud-ops' }, { text: "AWS", link: '/aws' }, { text: "Azure & GCP", link: '/azure-and-gcp' }, { text: "Cloud Migration", link: '/cloud-migration' },],
+    },
+
+];
 
 export const listingstable: any = {
     services: [
@@ -391,8 +448,9 @@ export const featurestable: any = {
     insights: [
         { id: "News & Events ", link: "/", heading: "News & Events", details: [{ text: "Company News", link: '/' }, { text: "Industry Events", link: '/' }, { text: "Press Releases", link: '/' }] },
 
-    ],    
+    ],
     industries: [{ id: "Industries", link: "/", heading: "", details: [{ text: "Real Estate", link: '/real-estate' }, { text: "Retail", link: '/retail' }, { text: "Social", link: '/social' }, { text: "Education", link: '/' }, { text: "Sports", link: '/' }] }]
+
 };
 
 export const blogData = [
@@ -748,7 +806,7 @@ export const GamingData = [
         ]
     },
     {
-        title: 'E-commerce Platform Solutions',
+        title: 'E-commerce Solutions',
         icon: GamingTwo,
         listItems: [
             'Online marketplaces for gaming assets and services. ',
@@ -756,7 +814,7 @@ export const GamingData = [
         ]
     },
     {
-        title: 'Virtual and Augmented Reality Solutions',
+        title: 'VR/AR Solutions',
         icon: GamingThree,
         listItems: [
             'Immersive gaming experiences using VR and AR technologies.',
@@ -775,7 +833,7 @@ export const HealthCareData = [
         ]
     },
     {
-        title: 'Patient Management Systems',
+        title: 'Management Systems',
         icon: HealthCareTwo,
         listItems: [
             'EHR and EMR Development ',
@@ -794,7 +852,7 @@ export const HealthCareData = [
 ];
 export const InsuranceData = [
     {
-        title: 'Policy Management Systems',
+        title: 'Policy Management',
         icon: InsuranceOne,
         listItems: [
             'Automated Policy Handling',
@@ -802,7 +860,7 @@ export const InsuranceData = [
         ]
     },
     {
-        title: 'AI and Analytics Platforms',
+        title: 'AI & Analytics Platforms',
         icon: InsuranceTwo,
         listItems: [
             'Predictive Analytics for Risk Management',
@@ -810,7 +868,7 @@ export const InsuranceData = [
         ]
     },
     {
-        title: 'Customer Engagement Solutions',
+        title: 'Customer Engagement',
         icon: InsuranceThree,
         listItems: [
             'Digital Insurance Portals',
@@ -821,37 +879,61 @@ export const InsuranceData = [
 ];
 export const RealEstateData = [
     {
-        title: 'Custom Real Estate Software Development',
-        description: 'We create bespoke software solutions designed to meet the unique requirements of real estate businesses, from pro ',
+        title: 'Real Estate Software ',
+        // description: 'We create bespoke software solutions designed to meet the unique requirements of real estate businesses, from pro ',
         icon: RealEstateOne,
+        listItems: [
+            'Bespoke real estate software',
+            'Tailored business solutions',
+        ]
     },
     {
-        title: 'Property Management Systems',
-        description: 'Our property management solutions help real estate firms manage their portfolios efficiently, with features like tenant tracking, lease management, and maintenance scheduling.',
+        title: 'Property Management ',
+        // description: 'Our property management solutions help real estate firms manage their portfolios efficiently, with features like tenant tracking, lease management, and maintenance scheduling.',
         icon: RealEstateTwo,
+        listItems: [
+            'Efficient portfolio management',
+            'Tenant, lease, maintenance tracking',
+        ]
     },
     {
-        title: 'Real Estate Portal Development',
-        description: 'We build feature-rich real estate portals that facilitate seamless property search and transactions, equipped with advanced search filters, listing management, and user-friendly interfaces.',
+        title: 'Real Estate Portals',
+        // description: 'We build feature-rich real estate portals that facilitate seamless property search and transactions, equipped with advanced search filters, listing management, and user-friendly interfaces.',
         icon: RealEstateThree,
+        listItems: [
+            'Feature-rich real estate portals',
+            'Seamless property search & transactions',
+        ]
     },
 
     {
         title: 'Mobile App Development',
-        description: 'Our mobile applications provide on-the-go access to property listings, market trends, and client interactions, enhancing the experience for both agents and clients.',
+        // description: 'Our mobile applications provide on-the-go access to property listings, market trends, and client interactions, enhancing the experience for both agents and clients.',
         icon: RealEstateFour,
+        listItems: [
+            'On-the-go property access',
+            'Enhanced client interactions',
+        ]
     },
 
     {
-        title: 'AI and Machine Learning Integration',
-        description: 'We integrate AI and machine learning technologies to offer intelligent property recommendations, market analysis, and personalized user experiences. ',
+        title: 'AI & Machine Learning',
+        // description: 'We integrate AI and machine learning technologies to offer intelligent property recommendations, market analysis, and personalized user experiences. ',
         icon: RealEstateFive,
+        listItems: [
+            'AI-driven property recommendations',
+            'Personalized market analysis',
+        ]
     },
 
     {
-        title: 'Customer Engagement Solutions',
-        description: 'We offer tailored CRM systems, personalized communication tools, and AI-driven insights that help real estate professionals build stronger relationships with their clients.',
+        title: 'Customer Engagement ',
+        // description: 'We offer tailored CRM systems, personalized communication tools, and AI-driven insights that help real estate professionals build stronger relationships with their clients.',
         icon: RealEstateSix,
+        listItems: [
+            'Tailored CRM systems',
+            'AI-driven client insights',
+        ]
     },
 
 ];
@@ -907,8 +989,8 @@ export const jobOpeningData = [
         title: 'UI/UX Designer',
         icon: AutomationImageTwo,
         listItems: [
-            '3+ years of experience in UI/UX design',
-            'A solid portfolio showcasing your ability to create user-centered designs for web and mobile platforms.',
+            '3+ years of hands-on experience in UI/UX design',
+            'A solid portfolio for web and mobile platforms.',
         ],
         viewbutton: {
             title: 'Apply Now',
@@ -920,7 +1002,7 @@ export const jobOpeningData = [
         icon: ComprehensiveIcon,
         listItems: [
             '4+ years of experience in product management',
-            'A proven track record of successfully managing the entire product lifecycle.',
+            'Experience in managing product life cycle.',
         ],
         viewbutton: {
             title: 'Apply Now',
@@ -932,7 +1014,7 @@ export const jobOpeningData = [
         icon: AutomationImageOne,
         listItems: [
             '3+ years of experience in DevOps',
-            'Hands-on experience in managing CI/CD pipelines, cloud infrastructure.',
+            'Experience in CI/CD pipelines.',
         ],
         viewbutton: {
             title: 'Apply Now',
@@ -944,7 +1026,7 @@ export const jobOpeningData = [
         icon: AutomationImageTwo,
         listItems: [
             '2+ years of experience in data science',
-            'Expertise in statistical analysis, machine learning.',
+            'Expertise in statistical analysis.',
         ],
         viewbutton: {
             title: 'Apply Now',
@@ -956,7 +1038,7 @@ export const jobOpeningData = [
         icon: ComprehensiveIcon,
         listItems: [
             '3+ years of experience in QA ',
-            'Proficient in creating automated test scripts and frameworks.',
+            'Proficient in creating automated test.',
         ],
         viewbutton: {
             title: 'Apply Now',
@@ -2981,28 +3063,7 @@ export const servicesoffer = {
     ],
 }
 
-export const data = [
-    {
-        id: 1,
-        heading: 'Cyber Security ',
-        link: "/cyber-security",
-        items: [{ text: "Governance, Risk & Compliance, Data Privacy", link: '/governance-and-dataprivacy' }, { text: "Security Services", link: '/security-services' }, { text: "Penetration Testing", link: '/penetration-testing' },],
-    },
 
-    {
-        id: 2,
-        heading: 'Artificial Intelligence',
-        link: "/artificial-Intelligence",
-        items: [{ text: "AI Consulting", link: '/ai-consulting' }, { text: "Generative AI", link: '/generative-ai' }, { text: "Machine Learning", link: '/machine-learning' },],
-    },
-    {
-        id: 3,
-        heading: 'Cloud',
-        link: "/cloud-services",
-        items: [{ text: "CloudOps", link: '/cloud-ops' }, { text: "AWS", link: '/aws' }, { text: "Azure & GCP", link: '/azure-and-gcp' }, { text: "Cloud Migration", link: '/cloud-migration' },],
-    },
-
-];
 
 
 
@@ -3010,28 +3071,28 @@ export const caseStudiesslidedata = [
     {
         title: "NFT Hunters",
         description: "We developed a feature-rich NFT marketplace with a user-friendly interface and secure crypto wallet integration for NFT Hunterz.",
-        // backgroundimg: caseone,
-        backgroundimg: casenOne,
+        industry: "Real Estate",
+        backgroundimg: casenft,
         link: "/nft-hunters"
     },
     {
         title: "Juggernaut DeFi",
         description: "Our team created an advanced NFT platform for Juggernaut DeFi, incorporating secure blockchain integration and global accessibility.",
-        // backgroundimg: casetwo,
+        industry: "Real Estate",
         backgroundimg: casejuggernaut,
         link: "/juggernaut-defi"
     },
     {
         title: "Cryptocurrency",
         description: "We built a secure blockchain-based platform for Commit Good, ensuring transparent cryptocurrency donations.",
-        // backgroundimg: casethree,
+        industry: "Cryptocurrency",
         backgroundimg: casecryptocurrency,
         link: "/crypto-currency"
     },
     {
         title: "Dafi",
         description: "For Swap Folio, we delivered a comprehensive crypto portfolio management platform with real-time analytics.",
-        // backgroundimg: casefour,
+        industry: "Social",
         backgroundimg: casedafi,
         link: "/dafi"
     }
@@ -3915,3 +3976,82 @@ export const feedbacksdatabackword = [
     },
 
 ]
+
+
+export const contents = [
+    {
+        id: "innovation",
+        title: 'Why You Should Care About 2024’s Tech Innovations',
+        description: ' Keeping up with emerging technologies is not just for tech enthusiasts, it’s essential for businesses and individuals looking for new opportunities.This year, the focus spans across connectivity advancements, AI enhancements, and sustainable innovations.By exploring these trends, you can better prepare for the future and make informed decisions that drive success and sustainability.',
+
+    },
+    {
+        id: "generativeAi",
+        title: '1: Generative AI',
+        description: 'Generative AI is revolutionizing content creation, capable of producing text, images, and even music. Tools like ChatGPT and DALL-E showcase its potential, making it a critical area for businesses aiming to enhance automation and personalization. The global AI market is expected to reach $181.8 billion by 2030, with a compound annual growth rate (CAGR) of 37.3%​.',
+
+    },
+    {
+        id: "cybersecurity",
+        title: '2: Cybersecurity',
+        description: 'As cyber threats grow, advanced cybersecurity measures are needed. Technologies focusing on threat detection, response, and prevention are becoming indispensable, ensuring data protection and system integrity. A study revealed that 93% of executives emphasize the importance of innovating with purpose to stay ahead of threats​.',
+
+    },
+    {
+        id: "techSolutions",
+        title: ' 3: Sustainable Tech Solutions',
+        description: 'Sustainable technologies, including electric vehicles and renewable energy solutions, are gaining traction. These innovations not only help combat climate change but also drive economic growth in green industries. For example, the clean technology sector is expanding rapidly, emphasizing the development of energy-efficient solutions and sustainable practices​.',
+
+    },
+    {
+        id: "Devops",
+        title: '4: Cloud Computing & DevOps',
+        description: 'Cloud computing and DevOps practices streamline business operations by enhancing flexibility and scalability. These technologies enable efficient resource management and rapid deployment of applications. The cloud computing market is projected to grow at a CAGR of 17.5% by 2025​.',
+
+    },
+    {
+        id: "dataScience",
+        title: ' 5: Data Science & Analytics',
+        description: 'Data science and analytics turn vast amounts of data into actionable insights. This technology is vital for decision-making processes in various sectors, including healthcare, finance, and marketing. Companies investing in big data and analytics are expected to see significant competitive advantages​.',
+
+    },
+    {
+        id: "humancomputer",
+        title: ' 6: Human-Computer Interaction (HCI)',
+        description: 'Advancements in HCI are enhancing the way humans interact with machines. Technologies that improve user interfaces and experiences are important for developing intuitive and accessible digital platforms. This field includes developments in voice recognition, gesture control, and virtual assistants​.',
+
+    },
+    {
+        id: "blockchain",
+        title: '7: Blockchain',
+        description: 'Blockchain extends beyond cryptocurrencies, offering secure and transparent solutions for supply chain management, healthcare, and more. Its potential to revolutionize data integrity and transaction processes is immense. Blockchain technologies are being integrated into various business models to enhance security and transparency​.',
+
+    },
+    {
+        id: "fullStack",
+        title: ' 8: Full Stack Development',
+        description: 'Full stack developers are in high demand as businesses seek comprehensive solutions for web applications. Mastering both front-end and back-end technologies opens numerous opportunities in the tech industry. The demand for skilled full stack developers continues to rise, driven by the need for dynamic and responsive web solutions​.',
+
+    },
+    {
+        id: "VR",
+        title: ' 9: Virtual Reality (VR) and Augmented Reality (AR)',
+        description: 'VR and AR are transforming industries by providing immersive experiences. These technologies are particularly impactful in gaming, education, and remote work, enhancing engagement and productivity. The AR and VR market is expected to grow significantly, driven by advancements in hardware and software​.',
+    },
+    {
+        id: "robotics",
+        title: '10: Robotic Process Automation (RPA)',
+        description: 'RPA automates repetitive tasks, improving efficiency and accuracy in business processes. This technology is becoming essential for organizations looking to optimize operations and reduce costs. RPA is expected to see widespread adoption across various sectors, streamlining workflows and increasing productivity​.',
+    },
+    {
+        id: "internallinks",
+        title: 'Internal Links',
+        description: ['Discover our AI Solutions', 'Explore Our Sustainability Initiatives', 'Join Our Tech Innovation Community'],
+    },
+    {
+        id: "conclusion",
+        title: 'Conclusion',
+        description: 'Staying aware of 2024 tech trends is vital for uncovering new opportunities and ensuring your business remains competitive. By understanding and adopting these innovative technologies, you can drive growth, enhance efficiency, and contribute to a sustainable future. Keep an eye on these trends to stay ahead in the rapidly evolving tech landscape!',
+    },
+
+];

@@ -18,7 +18,7 @@ import { irccchallengesData, irccoutcomesData, IRCCHeadlines } from "@/constants
 
 const IRCC: NextPage = () => {
     return (
-        <Layout showContactForm={true} title="Novatore Solutions - Retail" description="Welcome to Novatore Solutions, setting new standards in technology with unmatchable code.">
+        <Layout showContactForm={true} title="Novatore Solutions - IRCC" description="Welcome to Novatore Solutions, setting new standards in technology with unmatchable code.">
             <div className="overflow-x-hidden">
                 <HeroBanner bannerHeading="Streamlining B2B Operations for IRCC - A Comprehensive Data Reconciliation Solution" needsMoreTitle={true} previewImage="/images/irccherobanner.png" pagetitle="" maxwidth="1100px" />
                 <HeadlineBanner headlinesData={IRCCHeadlines} />
