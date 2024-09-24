@@ -20,14 +20,14 @@ const Gleesim: NextPage = () => {
     return (
         <Layout showContactForm={true} title="Angelflow: Empowering Start-ups and Investors with Connectivity" description="Welcome to Novatore Solutions, setting new standards in technology with unmatchable code.">
             <div className="overflow-x-hidden">
-                <HeroBanner beforespanredtext="Angelflow:" bannerHeading=" Empowering Start-ups and Investors with Seamless Connectivity" needsMoreTitle={true} previewImage="/images/angelflowherobanner.png" pagetitle="" maxwidth="1100px" />
+                <HeroBanner bannerHeading=" Simplifying" spanparrotgreentext={"Global Connectivity"} morebannerHeading={"With A User-Friendly ESIM Platform"} needsMoreTitle={true} previewImage="/images/gleesimherobanner.png" pagetitle="" maxwidth="900px" />
                 <HeadlineBanner headlinesData={gleesimHeadlines} />
-                <CaseBackground cardLogo={"/images/angelflowlogo.svg"} cardDescription="By empowering start-ups to tap into a vast network of investors, Angelflow enhances their credibility and opens doors to new opportunities for funding and development."
-                    backgroundDescription={"Angelflow aimed to create a powerful platform that bridges the gap between start-ups and investors, enabling meaningful connections that drive mutual success. The client envisioned a space where investors could effortlessly discover and support promising start-ups, while the start-ups could leverage their investor networks to boost their credibility and attract further investment."} />
-                <CaseChallanges cardBanner={"/images/angelflowbanner.png"} challenges={gleesimchallengesData} />
+                <CaseBackground cardLogo={"/images/gleesimlogo.svg"} cardDescription="Gleesim recognized the growing demand for flexible and affordable internet connectivity among travelers. With the rise of remote work, digital nomadism, and international travel, traditional SIM cards often proved cumbersome and expensive."
+                    backgroundDescription={"Gleesim approached us with a vision: to revolutionize the way travelers connect to the internet worldwide. Their existing system was cumbersome and lacked a user-friendly interface, hindering their ability to capture a larger share of the travel tech market."} />
+                <CaseChallanges cardBanner={"/images/gleesimbanner.png"} challenges={gleesimchallengesData} />
                 <TechStack title="Tech Stacks" images={gleesimtechStackImages} />
                 <DataServicesSection heading="Solutions" data={gleesimcaseData} textalign="left" />
-                <CaseOutcomes outcomesBanner={"/images/angelflowoutcomesbanner.png"} outcomes={gleesimoutcomesData} />
+                <CaseOutcomes outcomesBanner={"/images/gleesimoutcomesbanner.png"} outcomes={gleesimoutcomesData} />
             </div>
         </Layout>
     );

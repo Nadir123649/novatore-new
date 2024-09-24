@@ -14,65 +14,6 @@ import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import Spinner from 'react-bootstrap/Spinner';
 
-interface IFormInputs {
-
-    name: string;
-
-
-}
-
-const JobFormSchema = z.object({
-    name: z
-        .string()
-        .min(1, { message: "Name is required" })
-        .max(50, { message: "Name must be less than 50 characters" }),
-    city: z
-        .string()
-        .min(1, { message: "City is required" })
-        .max(50, { message: "City must be less than 50 characters" }),
-    email: z
-        .string()
-        .email({ message: "Invalid email address" })
-        .min(1, { message: "Email is required" }),
-    phoneNumber: z
-        .string()
-        .min(1, { message: "Phone number is required" })
-        .regex(/^[0-9]+$/, { message: "Phone number must be numeric" })
-        .max(13, { message: "Phone number must not exceed 13 characters" }),
-    aboutYourself: z
-        .string()
-        .optional(),
-    linkedIn: z
-        .string()
-        .url({ message: "Invalid LinkedIn profile link" })
-        .optional(),
-    position: z
-        .string()
-        .min(1, { message: "Position is required" }),
-    educationalBackground: z
-        .string()
-        .min(1, { message: "Educational background is required" }),
-    otherEducationalBackground: z
-        .string()
-        .optional(),
-    workExperience: z
-        .string()
-        .min(1, { message: "Work experience details are required" }),
-    currentCompany: z
-        .string()
-        .min(1, { message: "Current company name is required" }),
-    currentSalary: z
-        .string()
-        .min(1, { message: "Current salary is required" }),
-    expectedSalary: z
-        .string()
-        .min(1, { message: "Expected salary is required" }),
-    joiningNotice: z
-        .string()
-        .min(1, { message: "Joining notice is required" }),
-    resume: z
-        .any()
-});
 
 
 const JobForm = () => {
@@ -122,13 +63,13 @@ const JobForm = () => {
                                 <Form.Group className='flex flex-col gap-1'>
                                     <Form.Label className='text-[#33384B]  font-semibold  '> Name</Form.Label>
                                     <input
-                                        {...register('name')}
+
                                         type="text"
                                         className=' bg-[#F5F9FE] form-input rounded-[16px] border border-solid border-[#B7B7B7]   text-[#33384B] p-[14px] text-[18px] not-italic font-normal'
                                         placeholder="Your Name"
                                         maxLength={50}
                                     />
-                                    {errors.name && <p className='text-[#FF9494]'>{errors.name.message}</p>}
+
                                 </Form.Group>
                             </Col>
                             <Col lg={6} md={12} xs={12}>

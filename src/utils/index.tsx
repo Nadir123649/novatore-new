@@ -239,9 +239,15 @@ export { default as covaiconThree } from "../../public/images/covaiconThree.svg"
 export { default as ircciconOne } from "../../public/images/ircciconOne.svg"
 export { default as ircciconTwo } from "../../public/images/ircciconTwo.svg"
 export { default as ircciconThree } from "../../public/images/ircciconThree.svg"
+
 export { default as angelflowiconOne } from "../../public/images/angelflowiconOne.svg"
 export { default as angelflowiconTwo } from "../../public/images/angelflowiconTwo.svg"
 export { default as angelflowiconThree } from "../../public/images/angelflowiconThree.svg"
+
+export { default as gleesimiconOne } from "../../public/images/gleesimiconOne.svg"
+export { default as gleesimiconTwo } from "../../public/images/gleesimiconTwo.svg"
+export { default as gleesimiconThree } from "../../public/images/gleesimiconThree.svg"
+
 export { default as huntersiconOne } from "../../public/images/huntersiconOne.svg"
 export { default as huntersiconTwo } from "../../public/images/huntersiconTwo.svg"
 export { default as huntersiconThree } from "../../public/images/huntersiconThree.svg"
@@ -301,10 +307,8 @@ export { default as upsureclientlogo } from "../../public/images/upsureclientlog
 export { default as rivalsclientlogo } from "../../public/images/rivalsclientlogo.svg"
 export { default as foodclientlogo } from "../../public/images/foodclientlogo.svg"
 export { default as airboltclientlogo } from "../../public/images/airboltclientlogo.svg"
-
 export { default as caseircc } from "../../public/images/irccherobanner.png"
 export { default as casecova } from "../../public/images/covaherobanner.png"
 export { default as caseangelflow } from "../../public/images/angelflowherobanner.png"
-export { default as casedafi } from "../../public/images/dafiherobanner.png"
-
+export { default as casegleesim } from "../../public/images/gleesimherobanner.png"
 export { default as addfile } from "../../public/images/addfile.svg"

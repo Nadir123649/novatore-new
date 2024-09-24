@@ -29,10 +29,14 @@ import {
     oneH2iconTwo, oneH2iconThree, alphaiconOne, alphaiconTwo, alphaiconThree, terrascopeiconOne, terrascopeiconTwo, terrascopeiconThree,
     airbolticonOne, airbolticonTwo, airbolticonThree, dwpiconOne, dwpiconTwo, dwpiconThree, ispyariconOne, ispyariconTwo, ispyariconThree,
     dafiiconOne, dafiiconTwo, dafiiconThree, washmeniconOne, washmeniconTwo, washmeniconThree, lindsayprofile, alphaallianceclientlogo, kabirprofile,
-    airboltclientlogo, jasonprofile, foodclientlogo, upsureclientlogo, rivalsclientlogo, casedafi,
+    airboltclientlogo, jasonprofile, foodclientlogo, upsureclientlogo, rivalsclientlogo,
     caseangelflow,
     casecova,
-    caseircc
+    caseircc,
+    gleesimiconOne,
+    gleesimiconTwo,
+    gleesimiconThree,
+    casegleesim
 } from "@/utils";
 import { IoMdMail } from "react-icons/io";
 import { FaPhoneAlt } from "react-icons/fa";
@@ -1188,17 +1192,17 @@ export const gleesimcaseData = [
     {
         title: 'Intuitive Website Redesign',
         description: 'We completely revamped the Gleesim website, prioritizing a user-centric design including clean visuals, clear calls to action, and a smooth interface.',
-        icon: angelflowiconOne,
+        icon: gleesimiconOne,
     },
     {
         title: 'Advanced eSIM Management',
         description: 'We developed a robust backend system allowing users to seamlessly manage their eSIMs, track data usage, and easily top up when needed.',
-        icon: angelflowiconTwo,
+        icon: gleesimiconTwo,
     },
     {
         title: 'Cutting-Edge Mobile App',
         description: 'We built a sleek and user-friendly mobile app, empowering users to browse eSIM options, complete purchases, and activate their eSIMs directly from their smartphones.',
-        icon: angelflowiconThree,
+        icon: gleesimiconThree,
     },
 ];
 export const nftHunterscaseData = [
@@ -3128,19 +3132,19 @@ export const caseStudiesslidedata = [
         link: "/cova-ai"
     },
     {
-        title: "Gleesim",
-        description: "We designed and  developed the website for Gleesim, ensuring a seamless and intuitive experience for visitors seeking to purchase eSIMs.",
-        industry: "Cryptocurrency",
-        backgroundimg: casedafi,
-        link: "/crypto-currency"
-    },
-    {
         title: "IRCC",
         description: "The IRCC project was initiated to address the complex B2B interactions between license providers (LPs) and retailers.The project was structured around six key pillars.",
         industry: "Real Estate",
         backgroundimg: caseircc,
         link: "/ircc"
-    }
+    },
+    {
+        title: "Gleesim",
+        description: "We designed and  developed the website for Gleesim, ensuring a seamless and intuitive experience for visitors seeking to purchase eSIMs.",
+        industry: "Social",
+        backgroundimg: casegleesim,
+        link: "/gleesim"
+    },
 ];
 
 export const myndschallengesData = [
@@ -3793,7 +3797,7 @@ export const angelflowtechStackImages = [
     csstile, mjtile, reacttile, figmatile, nodetile, javatile, postgresstile, tstile
 ]
 export const gleesimtechStackImages = [
-    csstile, mjtile, reacttile, figmatile, nodetile, javatile, postgresstile, tstile
+    javatile, phptile
 ]
 export const juggernauttechStackImages = [
     javatile, vuejstile, bootstraptile
@@ -3943,6 +3947,20 @@ export const caseStudiesData = [
         category: 'Retail',
         component: <ExpertServices link="/dafi" casestudyicon="/images/daficaseicon.svg" needsTitle='Dafi' needsDescription={'Dafi Built a secure and scalable NFT exchange platform, enhancing transaction efficiency, user engagement, and security in the cryptocurrency space.'} NeedsImage={'/images/daficasestudy.png'} viewbutton={true} />
     },
+
+    {
+        category: 'Real Estate',
+        component: <ServicesNeeds link="/mynds" casestudyicon="/images/myndscaseicon.svg" needsTitle='Mynd' needsDescription={'Mynd is a leading tech-enabled property management and real estate investment company operating in over 25 US markets. They required a comprehensive digital solution to streamline their Real Estate Management processes and enhance investor experiences.'} NeedsImage={'/images/myndscasestudy.png'} viewbutton={true} />
+    },
+    {
+        category: 'Real Estate',
+        component: <ExpertServices link="/catalyst-housing" casestudyicon="/images/catalystcaseicon.svg" needsTitle='Catalyst' needsDescription={'Catalyst Housing relentlessly pursue scalable housing solutions and work on three pillars in a Pop Tech ECO System designed to maximize Transparency, Efficiency, and Impact to secure most affordable Housing needs.'} NeedsImage={'/images/catalystcasestudy.png'} viewbutton={true} />
+    },
+    {
+        category: 'Social',
+        component: <ServicesNeeds link="/gleesim" casestudyicon="/images/gleesimcaseicon.svg" needsTitle='Gleesim' needsDescription={'Gleesim approached us with a vision: to revolutionize the way travelers connect to the internet worldwide. Their existing system was cumbersome and lacked a user-friendly interface, hindering their ability to capture a larger share of the travel tech market.'} NeedsImage={'/images/gleesimcasestudy.png'} viewbutton={true} />
+    },
+
 
 ];
 

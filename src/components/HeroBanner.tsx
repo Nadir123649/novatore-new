@@ -21,9 +21,10 @@ interface HeroBannerProps {
     spangreenishtext?: any;
     airboltgreentext?: any;
     spanpurpletext?: any;
+    spanparrotgreentext?: any;
 }
 
-const HeroBanner: React.FC<HeroBannerProps> = ({ spanpurpletext, spangreenishtext, spanskybluetext, previewImage, bannerHeading, needsMoreTitle, pagetitle, maxwidth, spangreentext, morebannerHeading, spanredtext, spanbluetext, beforespanredtext, beforeyellowtext, beforebluetext, beforegreentext, spanparrottext, airboltgreentext }) => {
+const HeroBanner: React.FC<HeroBannerProps> = ({ spanparrotgreentext, spanpurpletext, spangreenishtext, spanskybluetext, previewImage, bannerHeading, needsMoreTitle, pagetitle, maxwidth, spangreentext, morebannerHeading, spanredtext, spanbluetext, beforespanredtext, beforeyellowtext, beforebluetext, beforegreentext, spanparrottext, airboltgreentext }) => {
 
     const [isVisible, setIsVisible] = useState(false);
 
@@ -54,7 +55,7 @@ const HeroBanner: React.FC<HeroBannerProps> = ({ spanpurpletext, spangreenishtex
 
 
                     <p className='text-white text-[20px]'>{pagetitle}</p>
-                    <h2 className='hero-title text-[30px]  md:text-[56px] max-w-[872px] not-italic font-semibold text-white capitalize ' style={{ maxWidth: maxwidth }}><span className="text-[#E95026]">{beforespanredtext}</span> <span className="text-[#F4CC30]">{beforeyellowtext}</span> <span className="text-[#2A6448]">{beforegreentext}</span> <span className="text-[#426CE8]">{beforebluetext}</span> {bannerHeading} <span className="text-[#5FB3E4]">{spanskybluetext}</span>  <span className="text-[#939EFF]">{spanpurpletext}</span> <span className="text-[#50A95A]">{spanparrottext}</span> <span className="text-[#01B3A2]">{airboltgreentext}</span> < span className="text-[#8BDEDD]">{spangreenishtext}</span>  <span className="text-[#38B87D]">{spangreentext}</span><span className="text-[#E95026]">{spanredtext}</span> <span className="text-[#5D5FEF]">{spanbluetext}</span> {morebannerHeading} </h2>
+                    <h2 className='hero-title text-[30px]  md:text-[56px] max-w-[872px] not-italic font-semibold text-white capitalize ' style={{ maxWidth: maxwidth }}><span className="text-[#E95026]">{beforespanredtext}</span> <span className="text-[#F4CC30]">{beforeyellowtext}</span> <span className="text-[#2A6448]">{beforegreentext}</span> <span className="text-[#426CE8]">{beforebluetext}</span> {bannerHeading} <span className="text-[#5FB3E4]">{spanskybluetext}</span>  <span className="text-[#939EFF]">{spanpurpletext}</span> <span className="text-[#50A95A]">{spanparrottext}</span>  <span className="text-[#00E783]">{spanparrotgreentext}</span><span className="text-[#01B3A2]">{airboltgreentext}</span> < span className="text-[#8BDEDD]">{spangreenishtext}</span>  <span className="text-[#38B87D]">{spangreentext}</span><span className="text-[#E95026]">{spanredtext}</span> <span className="text-[#5D5FEF]">{spanbluetext}</span> {morebannerHeading} </h2>
 
                     {needsMoreTitle ?
                         <a href="#contact-us-form" className='learn-btn bg-none rounded-[16px] border-1 border-[#FFFFFF] hover:border-transparent  py-[14px] px-[24px] mt-[26px] transition-all duration-300 hover:bg-[#2776EA]  text-white'>

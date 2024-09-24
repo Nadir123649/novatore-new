@@ -41,10 +41,9 @@ const Footer = () => {
                 </ul>
               </div>
             </Col>
-            <Col lg={3} md={6} xs={12} className=' md:border-l border-[#FFFFFF14] '>
+            <Col lg={3} md={6} xs={12} className=' md:border-l border-[#FFFFFF14]'>
               <div className="footer-links md:pl-6">
                 <Link href="/transformative-solutions"><h3 className="text-[#FFF] text-[18px] not-italic mb-4 font-normal">Transformative Solutions</h3></Link>
-
                 <ul className='footer-links-list list-none p-0 m-0 flex flex-col gap-[13px]'>
                   {realEstate.map((data, index) => (
                     <li key={index} >
