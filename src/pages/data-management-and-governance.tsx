@@ -11,7 +11,7 @@ import { ServicesDataLocal } from "@/constants/indesx";
 
 const DataManagementAndGovernance: NextPage = () => {
     return (
-        <Layout showContactForm={true} title="Novatore Solutions - Data Management & Governance" description="Welcome to Novatore Solutions, setting new standards in technology with unmatchable code." keywords="What is data management, Data management best practices, Data governance framework, Importance of data governance, Data management strategies, Data governance principles, Data management lifecycle, Data governance vs data management, Data management tools, Data governance policies">
+        <Layout showContactForm={true} title="Novatore Solutions: Your Partner in Data Management & Governance" description="By implementing industry-leading best practices and a robust governance framework, we ensure that your data remains secure and readily accessible at all times." keywords="What is data management, Data management best practices, Data governance framework, Importance of data governance, Data management strategies, Data governance principles, Data management lifecycle, Data governance vs data management, Data management tools, Data governance policies">
             <div className="overflow-x-hidden">
                 <HeroBanner bannerHeading="Your Partner in Data Management & Governance" pagetitle="Data" needsMoreTitle="Get in Touch" previewImage="/images/data-managment-banner.png" maxwidth="1000px" />
                 <ServicesNeeds needsTitle="Expert" needsTitleBlue=" Management & Governance" NeedsImage="/images/managment-right-image.png"

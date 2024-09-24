@@ -12,7 +12,7 @@ import Layout from "@/components/Layout";
 
 const AWS: NextPage = () => {
     return (
-        <Layout showContactForm={true} title="Novatore Solutions - Amazon Web Services" description="Welcome to Novatore Solutions, setting new standards in technology with unmatchable code.">
+        <Layout showContactForm={true} title="Expert Amazon Web Services (AWS) Solutions Novatore Solutions" description="Explore Novatore Solutions' expertise in Amazon Web Services (AWS) for robust cloud infrastructure and management. Optimize your cloud strategy today!">
             <div className="overflow-x-hidden">
                 <HeroBanner bannerHeading="Flexible Network Architecture With Our AWS" pagetitle="Amazon Web Services" needsMoreTitle="Get in Touch" previewImage="/images/aws-banner.png" maxwidth="800px" />
                 <ServicesNeeds needsTitle="Transforming Businesses With " needsTitleBlue="AWS" NeedsImage="/images/amazon-right.png"

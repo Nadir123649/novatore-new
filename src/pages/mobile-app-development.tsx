@@ -8,7 +8,7 @@ import Layout from "@/components/Layout";
 
 const MobileAppDevelopment: NextPage = () => {
     return (
-        <Layout showContactForm={true} title="Novatore Solutions - Mobile App Development" description="Welcome to Novatore Solutions, setting new standards in technology with unmatchable code."  keywords="Best mobile app development companies, Mobile app development services, Mobile app development cost, Hire mobile app developer, Mobile app development agency, Mobile app development company, Mobile app development outsourcing, Mobile app development services USA, Mobile app development platform, Best mobile app development tools" >
+        <Layout showContactForm={true} title="Discover Efficiency With Novatore Solutions' Mobile App Development" description="We offer expert mobile app development services for Android and iOS platforms. Now, you can explore seamless functionality and robust performance with our solutions." keywords="Best mobile app development companies, Mobile app development services, Mobile app development cost, Hire mobile app developer, Mobile app development agency, Mobile app development company, Mobile app development outsourcing, Mobile app development services USA, Mobile app development platform, Best mobile app development tools" >
             <div className="overflow-x-hidden">
                 <HeroBanner bannerHeading="Maximizing Efficiency With Our Mobile App Development" pagetitle="Custom Software Development" needsMoreTitle="Get in Touch" previewImage="/images/mobile-banner.png" maxwidth="1100px" />
                 <ServicesNeeds needsTitleBlue="Introduction" NeedsImage="/images/mobile-introduction.png"

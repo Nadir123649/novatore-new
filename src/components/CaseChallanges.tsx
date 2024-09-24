@@ -32,7 +32,7 @@ const CaseChallanges: FC<CaseChallangesProps> = ({
                         className=' flex  justify-center'
                     >
                         <div className=''>
-                            <h1 className='text-[#1B232E] text-[32px] font-semibold' >Challenges</h1>
+                            <h1 className='text-[#1B232E] text-[32px] font-semibold pt-[10px] md:pt-[0px]' >Challenges</h1>
                             <Image src={cardBanner} alt="cardLogo" width={543} height={409} />
 
                         </div>

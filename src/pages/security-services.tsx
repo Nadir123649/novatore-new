@@ -9,7 +9,7 @@ import ExpertServices from "@/components/ExpertServices";
 
 const SecurityServices: NextPage = () => {
     return (
-        <Layout showContactForm={true} title="Novatore Solutions - Security Services" description="Welcome to Novatore Solutions, setting new standards in technology with unmatchable code." keywords="Cybersecurity Solutions, Network Security Services, Managed IT Security, Data Protection Services, Endpoint Security, Cloud Security Services, IT Security Consulting, Security Information and Event Management (SIEM), Threat Detection and Response, Identity and Access Management (IAM)" >
+        <Layout showContactForm={true} title="Protecting Your Digital Frontier: IT Security Services" description="Explore our comprehensive suite of IT security services, designed to safeguard your digital assets against the ever-evolving landscape of cyber threats." keywords="Cybersecurity Solutions, Network Security Services, Managed IT Security, Data Protection Services, Endpoint Security, Cloud Security Services, IT Security Consulting, Security Information and Event Management (SIEM), Threat Detection and Response, Identity and Access Management (IAM)" >
             <div className="overflow-x-hidden">
                 <HeroBanner bannerHeading="Protecting Your Digital Frontier: Comprehensive IT Security Services" pagetitle="Cybersecurity" needsMoreTitle="Get in Touch" previewImage="/images/securityservice-banner.png" maxwidth="1100px" />
                 <ServicesNeeds needsTitle="Explore Our " needsTitleBlue="Cybersecurity Solutions" needsMoreTitle="" NeedsImage="/images/cybeersecurity-solutions.png"

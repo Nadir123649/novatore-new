@@ -9,7 +9,7 @@ import Layout from "@/components/Layout";
 
 const TestingAndQa: NextPage = () => {
     return (
-        <Layout showContactForm={true} title="Novatore Solutions - Testing and QA" description="Welcome to Novatore Solutions, setting new standards in technology with unmatchable code.">
+        <Layout showContactForm={true} title="Testing & QA Services to Ensure Reliability | Novatore Solutions" description="Ensure top-notch quality with Novatore Solutions' testing and QA services. Our processes guarantee reliable, high-performance software. Learn more!">
             <div className="overflow-x-hidden">
                 <HeroBanner bannerHeading="Reliable QA Services to Elevate Your Software Quality" pagetitle="Transformative Solutions" needsMoreTitle="Get in Touch" previewImage="/images/testing-banner.png" maxwidth="1000px" />
                 <ServicesNeeds needsTitle="Excellent and Reliable " needsTitleBlue=" Software Testing Services" NeedsImage="/images/testing-bg.png"

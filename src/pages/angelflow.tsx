@@ -18,7 +18,7 @@ import { angelflowchallengesData, angelflowoutcomesData, angelflowHeadlines } fr
 
 const Angelflow: NextPage = () => {
     return (
-        <Layout showContactForm={true} title="Novatore Solutions - Angelflow" description="Welcome to Novatore Solutions, setting new standards in technology with unmatchable code.">
+        <Layout showContactForm={true} title="Angelflow: Empowering Start-ups and Investors with Connectivity" description="Welcome to Novatore Solutions, setting new standards in technology with unmatchable code.">
             <div className="overflow-x-hidden">
                 <HeroBanner beforespanredtext="Angelflow:" bannerHeading=" Empowering Start-ups and Investors with Seamless Connectivity" needsMoreTitle={true} previewImage="/images/angelflowherobanner.png" pagetitle="" maxwidth="1100px" />
                 <HeadlineBanner headlinesData={angelflowHeadlines} />

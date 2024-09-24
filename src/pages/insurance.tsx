@@ -11,7 +11,7 @@ import CaseStudiesSlider from "@/components/CaseStudiesSlider";
 
 const Insurance: NextPage = () => {
     return (
-        <Layout showContactForm={true} title="Novatore Solutions - Insurance" description="Welcome to Novatore Solutions, setting new standards in technology with unmatchable code." keywords={"Insurance Technology Solutions, Policy Management Systems, Claims Processing Solutions, AI in Insurance, Predictive Analytics for Risk Management, Customer Engagement Solutions, Digital Insurance Portals, Chatbots in Insurance, AI-driven Analytics Platforms, Insurance Software Services"}>
+        <Layout showContactForm={true} title="Novatore Solutions’ Commitment in Insurance Technology" description="Our experience of more than 12 years in the insurance industry has positioned us as leaders in providing innovative insurance technology solutions. Learn more!" keywords={"Insurance Technology Solutions, Policy Management Systems, Claims Processing Solutions, AI in Insurance, Predictive Analytics for Risk Management, Customer Engagement Solutions, Digital Insurance Portals, Chatbots in Insurance, AI-driven Analytics Platforms, Insurance Software Services"}>
             <div className="overflow-x-hidden">
                 <HeroBanner bannerHeading="Our Commitment in Insurance Technology" needsMoreTitle={true} previewImage="/images/insurance-banner.png" pagetitle="Insurance" maxwidth="800px" />
                 <ServicesNeeds needsTitle="Delivering Excellence in Insurance Technology for " needsTitleBlue="Over 12 Years" NeedsImage="/images/insurance-image-right.png"

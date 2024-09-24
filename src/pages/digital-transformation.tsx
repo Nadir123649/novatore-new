@@ -10,7 +10,7 @@ import CloudOps from "@/components/CloudOps";
 
 const DigitalTransformation: NextPage = () => {
     return (
-        <Layout showContactForm={true} title="Novatore Solutions - Digital Transformation" description="Welcome to Novatore Solutions, setting new standards in technology with unmatchable code.">
+        <Layout showContactForm={true} title="Digital Transformation Services | Novatore Solutions" description="Novatore Solutions delivers tailored tech solutions for growth, agility, and innovation in a rapidly evolving landscape. We will uplift your business with digital transformation.">
             <div className="overflow-x-hidden">
                 <HeroBanner bannerHeading="Empowering Your Journey With Our Digital Transformation" pagetitle="IT Services" needsMoreTitle="Get in Touch" previewImage="/images/digital-transformation-banner.png" maxwidth="1000px" />
                 <ServicesNeeds needsTitle="Empower Your Business with" needsTitleBlue="Expert Solutions" NeedsImage="/images/transformation-righht.png"

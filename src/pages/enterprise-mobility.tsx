@@ -9,7 +9,7 @@ import CloudOps from "@/components/CloudOps";
 
 const EnterpriseMobility: NextPage = () => {
     return (
-        <Layout showContactForm={true} title="Novatore Solutions - Enterprise Mobility" description="Welcome to Novatore Solutions, setting new standards in technology with unmatchable code.">
+        <Layout showContactForm={true} title="Novatore's Enterprise Mobility Solutions For You" description="Unlock the power of enterprise mobility with Novatore Solutions. Empower your workforce with seamless mobile solutions that boost productivity and drive innovation.">
             <div className="overflow-x-hidden">
                 <HeroBanner bannerHeading="Seamless Enterprise Mobility Solutions For You" pagetitle="Services" needsMoreTitle="Get in Touch" previewImage="/images/enterprize-banner.png" />
                 <ServicesNeeds needsTitle="Discover Our " needsTitleBlue="Enterprise Mobility" needsMoreTitle="Solutions" NeedsImage="/images/mobility-right.png"

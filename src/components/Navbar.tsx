@@ -56,6 +56,7 @@ const Navbar = () => {
     setMobileMegaMenuOpen(null);
   };
 
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   const handleClickOutside = (event: MouseEvent) => {
     const target = event.target as Node | null;
     if (
@@ -116,34 +117,33 @@ const Navbar = () => {
     };
   }, [handleClickOutside, handleScroll]);
 
+
+  // for  protecting background scrolling
+  useEffect(() => {
+    const isAnyMenuOpen =
+      mobileMenuOpen ||
+      mobileMegaMenuOpen !== null ||
+      searchMenuOpen ||
+      mobileSearchOpen ||
+      activeMenu !== null ||
+      clickedMenu !== null;
+    if (isAnyMenuOpen) {
+      document.body.style.overflow = 'hidden';
+      document.body.style.background = 'rgba(255, 255, 255, 1)';
+    } else {
+      document.body.style.overflow = 'auto';
+      document.body.style.background = '';
+    }
+    return () => {
+      document.body.style.overflow = 'auto';
+      document.body.style.background = '';
+    };
+  }, [mobileMenuOpen, mobileMegaMenuOpen, searchMenuOpen, mobileSearchOpen, activeMenu, clickedMenu]);
+
+
+
   const [isHovered, setIsHovered] = useState(false);
 
-
-
-
-  // const isActive = (menu: string, path: string) => {
-  //   if (path === '/') {
-  //     return menu === 'Home';
-  //   }
-  //   const lowerCaseMenu = menu.toLowerCase();
-  //   const listing = listingstable[lowerCaseMenu] || [];
-  //   const features = featurestable[lowerCaseMenu] || [];
-  //   const securities = servicesnavtable[lowerCaseMenu] || [];
-  //   return (
-  //     listing.some((item: any) =>
-  //       item.link === path ||
-  //       item.details.some((detail: any) => detail.link === path)
-  //     ) ||
-  //     features.some((item: any) =>
-  //       item.link === path ||
-  //       item.details.some((detail: any) => detail.link === path)
-  //     ) ||
-  //     securities.some((item: any) =>
-  //       item.link === path ||
-  //       item.details.some((detail: any) => detail.link === path)
-  //     )
-  //   );
-  // };
   const isActive = (menu: string, path: string) => {
     if (path === '/') {
       return menu === 'Home';
@@ -152,27 +152,23 @@ const Navbar = () => {
     const lowerCaseMenu = menu.toLowerCase();
     const listing = listingstable[lowerCaseMenu] || [];
     const features = featurestable[lowerCaseMenu] || [];
-    const services = servicesnavtable.find((item: any) => item.heading.toLowerCase().trim() === lowerCaseMenu);
+    const services = servicesnavtable[lowerCaseMenu] || [];
 
     return (
-      // Check listings
-      listing.some((item: any) =>
+      listing?.some((item: any) =>
         item.link === path ||
-        item.details.some((detail: any) => detail.link === path)
+        item.details?.some((detail: any) => detail.link === path)
       ) ||
-      // Check features
-      features.some((item: any) =>
+      features?.some((item: any) =>
         item.link === path ||
-        item.details.some((detail: any) => detail.link === path)
+        item.details?.some((detail: any) => detail.link === path)
       ) ||
-      // Check servicesnavtable (top-level and nested items)
-      (services && (
-        services.link === path ||
-        services.items.some((item: any) => item.link === path)
-      ))
+      services?.some((item: any) =>
+        item.link === path ||
+        item.items?.some((detail: any) => detail.link === path)
+      )
     );
   };
-
 
 
 
@@ -220,7 +216,7 @@ const Navbar = () => {
               )
             )}
           </ul> */}
-          <ul className="nav-menu mb-0 pl-0 hidden md:flex flex-row ml-8 gap-4 ease-in-out">
+          <ul className="nav-menu mb-0 pl-0 hidden lg:flex flex-row ml-8 gap-4 ease-in-out desktop-nav">
             {[
               { name: "Services", path: "/" },
               { name: "Industries", path: "/" },
@@ -244,14 +240,15 @@ const Navbar = () => {
             ))}
           </ul>
         </div>
-        <div className="flex items-center gap-4">
+        {/* Mobile menu code  */}
+        <div className="flex items-center gap-4 ">
           <button
-            className="block md:hidden text-white focus:outline-none text-[30px] "
+            className="block lg:hidden text-white focus:outline-none text-[30px] mobile-nav "
             onClick={handleMobileMenuToggle}
           >
             <RiMenu3Fill />
           </button>
-          <ul className="search-menu mb-0 pl-0 hidden md:flex flex-row gap-4 items-center">
+          <ul className="search-menu mb-0 pl-0 hidden lg:flex flex-row gap-4 items-center">
             <li>
               <button
                 className="search-main rounded-2xl transition-all ease-in-out duration-300 bg-[#2776ea] hover:bg-transperent py-[13px] px-[13px] hover:bg-transparent border-[1px] border-[transparent] hover:border-[#fff]"
@@ -276,13 +273,13 @@ const Navbar = () => {
       </div>
       <div
         ref={menuRef}
-        className={`absolute top-[85px] left-[0] right-0 container  mega-menu-container p-0  ${activeMenu ? "active" : ""
+        className={`absolute top-[85px] left-[0] right-0 container  mega-menu-container  p-0  ${activeMenu ? "active" : ""
           }`}
       >
         {activeMenu && <MegaMenu activeMenu={activeMenu} />}
       </div>
       <button
-        className={`search-menu-container ${searchMenuOpen ? "active" : ""
+        className={`search-menu-container  ${searchMenuOpen ? "active" : ""
           } md:flex hidden`}
         ref={searchRefDesktop}
       >
@@ -290,10 +287,10 @@ const Navbar = () => {
       </button>
       <div
         className={`mobile-menu-overlay fixed list-none inset-0 bg-black bg-opacity-80 z-40 transition-transform duration-300 transform ${mobileMenuOpen ? "translate-x-0" : "translate-x-full"
-          } md:hidden`}
+          } lg:hidden`}
       >
         {mobileMegaMenuOpen ? (
-          <div className="mobile-mega-menu fixed inset-0 bg-white z-50 overflow-y-auto">
+          <div className="mobile-mega-menu fixed inset-0 bg-white z-50 overflow-y-auto pb-[20px]">
             <div className="flex items-center justify-between px-4 py-6">
               <button
                 onClick={handleMegaMenuBackClick}
@@ -325,7 +322,8 @@ const Navbar = () => {
                 <IoCloseOutline />
               </button>
             </div>
-            <div className="px-4 py-32 flex flex-col gap-4 h-full items-center">
+            {/* Mobile menu content 1st page  */}
+            <div className="px-4 py-32 flex flex-col md:gap-4  gap-3 h-full items-center ">
               {["Services", "Industries", "Insights", "About", "Careers"].map(
                 (menu, index) => (
                   <li
@@ -361,14 +359,17 @@ const Navbar = () => {
                 </button>
               </li>
               <li className="w-full">
-                <button className="w-full bg-[#2776EA] py-[12px] rounded-2xl text-lg font-normal text-[#fff] hover:bg-transparent border-[1px] border-[transparent] hover:border-[#fff]">
+                <a href="#contact-us-form"
+                  onClick={() => { setMobileMenuOpen(false); }}
+                  className="w-full flex justify-center bg-[#2776EA] py-[12px] rounded-2xl text-lg font-normal text-[#fff] hover:bg-transparent border-[1px] border-[transparent] hover:border-[#fff]">
                   Schedule a Call
-                </button>
+                </a>
               </li>
             </div>
           </>
         )}
       </div>
+      {/* mobile search menu container */}
       <div
         className={`mobile-search-menu fixed inset-0 bg-white z-50 transition-transform duration-300 transform ${mobileSearchOpen ? "translate-x-0" : "translate-x-full"
           }`}
@@ -387,7 +388,7 @@ const Navbar = () => {
             <IoCloseOutline />
           </button>
         </div>
-        <div className="p-0">
+        <div className="p-0 ">
           <SearchMenu mobileView={true} />
         </div>
       </div>

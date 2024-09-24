@@ -9,7 +9,7 @@ import CloudOps from "@/components/CloudOps";
 
 const DataEngineering: NextPage = () => {
     return (
-        <Layout showContactForm={true} title="Novatore Solutions - Data Engineering" description="Welcome to Novatore Solutions, setting new standards in technology with unmatchable code." keywords="What is data engineering, Benefits of cloud migration, Data engineering services, Data architecture design, Data analytics and visualization, Data management best practices, Data security importance, Data integration methods, Data quality enhancement, DataOps benefits">
+        <Layout showContactForm={true} title="Comprehensive Data Engineering Tools From Novatore Solutions" description="Our dedicated team of experts leverages industry-leading tools, and best practices to ensure your data is not only accurate but also optimized for performance. " keywords="What is data engineering, Benefits of cloud migration, Data engineering services, Data architecture design, Data analytics and visualization, Data management best practices, Data security importance, Data integration methods, Data quality enhancement, DataOps benefits">
             <div className="overflow-x-hidden">
                 <HeroBanner bannerHeading="Comprehensive Data Engineering Tools" pagetitle="Data" needsMoreTitle="Get in Touch" previewImage="/images/data-banner-bg.png" maxwidth="800px" />
                 <ServicesNeeds needsTitle="Advanced " needsTitleBlue="Data Engineering " needsMoreTitle="Solutions" NeedsImage="/images/data-engineering-right.png"

@@ -49,10 +49,10 @@ const DataServicesSection: React.FC<DataServicesSectionProps> = ({ textalign = "
     }, [hasAnimated]);
 
     return (
-        <section id="dataservice-section" className={`${isVisible ? "fadeIn" : "opacity-0"} pb-20 pt-10`}>
+        <section id="dataservice-section" className={`${isVisible ? "fadeIn" : "opacity-0"} pb-0 md:pb-20  pt-3 md:pt-10`}>
             <Container>
                 <h2
-                    className='text-[40px] font-bold not-italic leading-normal capitalize mb-[60px] text-black'
+                    className='text-2xl md:text-[40px] font-bold not-italic leading-normal capitalize mb-[20px] md:mb-[60px] text-black'
                     style={{ textAlign: textalign }}
                 >
                     {heading} <span className='text-[#2776EA]'>{headingBlue}</span>
@@ -61,7 +61,7 @@ const DataServicesSection: React.FC<DataServicesSectionProps> = ({ textalign = "
                 <Row>
                     {type === "single"
                         ? data.map((item, index) => (
-                            <Col lg={6} md={6} xs={12} key={index} className="mb-5">
+                            <Col lg={6} md={6} xs={12} key={index} className="mb-3 md:mb-5">
                                 <DataCard
                                     title={item.title}
                                     description={item.description}
@@ -75,7 +75,7 @@ const DataServicesSection: React.FC<DataServicesSectionProps> = ({ textalign = "
                             </Col>
                         ))
                         : data.map((item, index) => (
-                            <Col lg={4} md={6} xs={12} key={index} className="mb-5">
+                            <Col lg={4} md={6} xs={12} key={index} className="mb-3 md:mb-5">
                                 <DataCard
                                     title={item.title}
                                     description={item.description}

@@ -301,7 +301,10 @@ export { default as upsureclientlogo } from "../../public/images/upsureclientlog
 export { default as rivalsclientlogo } from "../../public/images/rivalsclientlogo.svg"
 export { default as foodclientlogo } from "../../public/images/foodclientlogo.svg"
 export { default as airboltclientlogo } from "../../public/images/airboltclientlogo.svg"
-export { default as casenft } from "../../public/images/huntersherobanner.png"
-export { default as casejuggernaut } from "../../public/images/juggernautherobanner.png"
-export { default as casecryptocurrency } from "../../public/images/crypto-banner.png"
+
+export { default as caseircc } from "../../public/images/irccherobanner.png"
+export { default as casecova } from "../../public/images/covaherobanner.png"
+export { default as caseangelflow } from "../../public/images/angelflowherobanner.png"
 export { default as casedafi } from "../../public/images/dafiherobanner.png"
+
+export { default as addfile } from "../../public/images/addfile.svg"

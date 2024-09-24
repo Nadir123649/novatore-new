@@ -20,7 +20,7 @@ const CaseBackground: FC<CaseBackgroundProps> = ({
     return (
         <section id='' className=' py-[10px] md:pt-2  md:pb-28'>
             <Container>
-                <Row className=''>
+                <Row className='gap-y-8'>
                     <Col
                         lg={6}
                         md={12}
@@ -29,7 +29,7 @@ const CaseBackground: FC<CaseBackgroundProps> = ({
                     >
                         <div className='bg-[#E4F4FF] max-w-[500px] min-h-[280px] rounded-lg p-8 flex justify-center flex-col items-center  text-center'>
                             <Image src={cardLogo} alt="cardLogo" width={166} height={62} />
-                            <p className='text-[#5D5D5D] leading-5 pt-[15px]'>{cardDescription}</p>
+                            <p className='text-[#5D5D5D] leading-5 pt-[15px] '>{cardDescription}</p>
                         </div>
                     </Col>
                     <Col
@@ -40,7 +40,7 @@ const CaseBackground: FC<CaseBackgroundProps> = ({
                     >
                         <div className='flex flex-col justify-center '>
                             <h1 className='text-[#1B232E] text-[32px] font-semibold' >Background</h1>
-                            <p className='text-[#5D5D5D] text-[18px] leading-8 pt-[10px]'>{backgroundDescription}</p>
+                            <p className='text-[#5D5D5D] text-[18px] leading-8 pt-[10px] text-justify md:text-left'>{backgroundDescription}</p>
                         </div>
                     </Col>
                 </Row>

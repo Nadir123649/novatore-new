@@ -33,7 +33,7 @@ const SearchMenu = ({ mobileView = false }) => {
         </div>
 
         <div
-          className={`${mobileView ? "flex flex-col gap-4" : "grid grid-cols-12 gap-4 px-28 pb-4"
+          className={`${mobileView ? "flex flex-col gap-2 md:gap-4" : "grid grid-cols-12 gap-4 px-28 pb-4"
             }`}
         >
           {searchitems.map((feature, index) => (

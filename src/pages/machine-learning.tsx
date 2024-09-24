@@ -9,7 +9,8 @@ import CloudOps from "@/components/CloudOps";
 
 const MachineLearning: NextPage = () => {
     return (
-        <Layout showContactForm={true} title="Novatore Solutions - Machine Learning" description="Welcome to Novatore Solutions, setting new standards in technology with unmatchable code." keywords="Reinforcement Learning, Quantum Machine Learning (Quantum ML), Deep Learning, Explainable AI (XAI), Edge Computing, Autonomous Driving, Computer Vision, Generative Adversarial Networks (GANs), Natural Language Processing (NLP), Predictive Analytics" >
+        <Layout showContactForm={true} title="Unleash Your Potential With Our Machine Learning Tools" description="In the rapidly evolving world of technology, Novatore Solutions’ advanced Machine Learning services stand at the forefront, offering solutions for all industries.
+" keywords="Reinforcement Learning, Quantum Machine Learning (Quantum ML), Deep Learning, Explainable AI (XAI), Edge Computing, Autonomous Driving, Computer Vision, Generative Adversarial Networks (GANs), Natural Language Processing (NLP), Predictive Analytics" >
             <div className="overflow-x-hidden">
                 <HeroBanner bannerHeading="Unleash Your Potential With Our Machine Learning Tools" pagetitle="Artificial Intelligence" needsMoreTitle="Get in Touch" previewImage="/images/machine-learning-banner.png" maxwidth="1000px" />
                 <ServicesNeeds needsTitle="Discover Our " needsTitleBlue=" Machine Learning " needsMoreTitle="Solutions" NeedsImage="/images/machine-right-bg.png"

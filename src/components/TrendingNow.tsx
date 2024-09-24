@@ -5,7 +5,7 @@ import "slick-carousel/slick/slick-theme.css";
 import { FaChevronLeft } from "react-icons/fa";
 import { FaChevronRight } from "react-icons/fa";
 import { useState, useEffect } from 'react';
-import {  Container } from 'react-bootstrap';
+import { Container } from 'react-bootstrap';
 import BlogsCard from './BlogsCard';
 import { client } from "@/sanity/lib/client";
 
@@ -114,15 +114,15 @@ const TrendingNow = () => {
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
-          centerMode: false,
+          centerMode: true,
         },
       },
       {
         breakpoint: 480,
         settings: {
-          infinite: false,
-          slidesToShow: 1,
-          slidesToScroll: 1,
+          infinite: true,
+          slidesToShow: 0.5,
+          slidesToScroll: 0.5,
           centerMode: false,
         },
       },
@@ -146,7 +146,7 @@ const TrendingNow = () => {
         <div className='flex justify-between items-center mb-4 pr-[140px] mobile-carousel'>
           <h2 className='text-[#FFFFFF] font-semibold text-[26px] md:text-4xl'>Trending Now</h2>
         </div>
-        <Slider {...settings} className="trending-slider mt-10">
+        <Slider {...settings} className="trending-slider mt-3 md:mt-10">
           {blogdata.map((blog: any) => (
             <BlogsCard
               key={blog._id}

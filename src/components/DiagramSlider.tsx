@@ -39,7 +39,7 @@ const DiagramSlider: React.FC<DiagramSectionProps> = ({ heading, headingBlue, im
         <section id="diagram-section" className={`${isVisible ? "fadeIn" : "opacity-0 "
             } `} >
             {(heading || headingBlue) && (
-                <h2 className='text-[40px] font-bold not-italic leading-normal capitalize text-center mb-[60px] text-black max-w-[1100px] mx-auto w-full'>
+                <h2 className='text-2xl md:text-[40px] font-bold not-italic leading-normal capitalize text-center mb-[20px] md:mb-[60px] text-black max-w-[1100px] mx-auto w-full'>
                     {heading} <span className='text-[#2776EA]'>{headingBlue}</span>
                     {needsMoreTitle ? <span> {needsMoreTitle}</span> : null}
                 </h2>
@@ -47,7 +47,7 @@ const DiagramSlider: React.FC<DiagramSectionProps> = ({ heading, headingBlue, im
             <Container>
                 <Row>
                     <Col lg={12} >
-                        <Image src={image} alt="logo" className='mx-auto block mb-[100px] mt-[30px]' />
+                        <Image src={image} alt="logo" className='mx-auto block mb-[20px] md:mb-[100px] mt-[10px] md:mt-[30px]' />
                     </Col>
                 </Row>
             </Container>

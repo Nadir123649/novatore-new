@@ -10,7 +10,7 @@ interface LayoutProps {
     title?: string;
     description?: string;
     showContactForm?: any;
-    keywords? : any; 
+    keywords?: any;
 }
 
 const Layout: React.FC<LayoutProps> = ({ children, title = 'Novatore Solutions', description = 'Setting new standards in technology with unmatchable code.', showContactForm, keywords }) => {

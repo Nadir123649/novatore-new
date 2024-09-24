@@ -40,10 +40,10 @@ const Hero: React.FC<activeprops> = ({ setActiveLink }) => {
           <div className="hero-screen relative w-full h-[50vh] md:h-[100vh] " key={index}>
             <div className="container ">
               <div className={data.className ? data.className : "hero-banner-screen z-50 max-w-3xl relative flex flex-col justify-center  min-h-[50vh] md:min-h-[100vh] items-start"}>
-                <h1 className="not-italic font-bold uppercase text-[28px] md:text-[72px] text-white mb-0 ">
+                <h1 className="not-italic font-bold uppercase text-[22px] md:text-[72px] text-white mb-0 mt-4 lg:mt-0 ">
                   {data.title}
                 </h1>
-                <p className='text-lg my-4 text-white'>{data.description}</p>
+                <p className='text-lg my-3 lg:my-4 text-white'>{data.description}</p>
                 <Link href={data.link}>
                   <button onClick={() => setActiveLink && setActiveLink(data.link)} className='learn-btn bg-none rounded-[16px] border-1 border-[#FFFFFF] hover:border-transparent  py-[12px] px-[24px] transition-all duration-300 hover:bg-[#2776EA]  text-white'>
                     Learn More

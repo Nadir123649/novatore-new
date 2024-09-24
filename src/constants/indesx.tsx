@@ -29,7 +29,10 @@ import {
     oneH2iconTwo, oneH2iconThree, alphaiconOne, alphaiconTwo, alphaiconThree, terrascopeiconOne, terrascopeiconTwo, terrascopeiconThree,
     airbolticonOne, airbolticonTwo, airbolticonThree, dwpiconOne, dwpiconTwo, dwpiconThree, ispyariconOne, ispyariconTwo, ispyariconThree,
     dafiiconOne, dafiiconTwo, dafiiconThree, washmeniconOne, washmeniconTwo, washmeniconThree, lindsayprofile, alphaallianceclientlogo, kabirprofile,
-    airboltclientlogo, jasonprofile, foodclientlogo, upsureclientlogo, rivalsclientlogo, casenft, casejuggernaut, casecryptocurrency, casedafi
+    airboltclientlogo, jasonprofile, foodclientlogo, upsureclientlogo, rivalsclientlogo, casedafi,
+    caseangelflow,
+    casecova,
+    caseircc
 } from "@/utils";
 import { IoMdMail } from "react-icons/io";
 import { FaPhoneAlt } from "react-icons/fa";
@@ -50,7 +53,7 @@ export const services = [
         title: 'Digital Services',
         description: 'From consulting to product engineering, we provide the best digital solutions.',
         backgroundimg: "/images/digital-services-new.png",
-        link: "/digital-service"
+        link: "/digital-services"
     },
     {
         id: 2,
@@ -91,10 +94,10 @@ export const services = [
 
 
 export const whyChooseLogo = [
-    { img: ChooseOne, alt: "ChooseOne" },
-    { img: ChooseTwo, alt: "ChooseTwo" },
-    { img: ChooseThree, alt: "ChooseThree" },
-    { img: ChooseFour, alt: "ChooseFour" },
+    { img: ChooseOne, alt: "ChooseOne", link: "https://reputedfirms.com/novatoresolutions" },
+    { img: ChooseTwo, alt: "ChooseTwo", link: "https://selectedfirms.co/agency/novatore-solutions" },
+    { img: ChooseThree, alt: "ChooseThree", link: "https://www.goodfirms.co/company/novatore-solutions" },
+    { img: ChooseFour, alt: "ChooseFour", link: "https://clutch.co/profile/novatore-solutions" },
 ]
 
 export const contactDetails = [
@@ -141,14 +144,14 @@ export const itServices = [
 ]
 
 export const realEstate = [
-    { link: '/', title: 'Crypto' },
-    { link: '/', title: 'Entertainment' },
-    { link: '/', title: 'Gaming' },
-    { link: '/', title: 'Healthcare' },
-    { link: '/', title: 'Insurance' },
-    { link: '/', title: 'Real Estate' },
-    { link: '/', title: 'Retail' },
-    { link: '/', title: 'Social' },
+    { link: '/crypto-currency', title: 'Crypto' },
+    { link: '/entertainment', title: 'Entertainment' },
+    { link: '/gaming', title: 'Gaming' },
+    { link: '/healthcare', title: 'Healthcare' },
+    { link: '/insurance', title: 'Insurance' },
+    { link: '/real-estate', title: 'Real Estate' },
+    { link: '/retail', title: 'Retail' },
+    { link: '/social', title: 'Social' },
     { link: '/', title: 'Sports' },
     { link: '/', title: 'Education' },
 ]
@@ -158,10 +161,10 @@ export const whitepapers = [
     { link: '/', title: 'Technical Guides' }
 ]
 export const insightsData = [
-    { link: '/', title: 'Blog' },
+    { link: '/blogs', title: 'Blog' },
     { link: '/', title: 'Latest Trends ' },
     { link: '/', title: 'Expert Opinions' },
-    { link: '/', title: 'Case Studies' }
+    { link: '/case-studies', title: 'Case Studies' }
 ]
 export const aboutData = [
     { link: '/', title: 'Our Story' },
@@ -175,7 +178,7 @@ export const eventsData = [
     { link: '/', title: 'Press Releases' },
 ]
 export const careersData = [
-    { link: '/', title: 'Job Openings' },
+    { link: '/job-openings', title: 'Job Openings' },
     { link: '/', title: 'Life at Novatore' },
     { link: '/', title: 'Internships' },
 ]
@@ -185,7 +188,7 @@ export const siteMapData = [
     { link: '/', title: 'Press Kit' },
     { link: '/', title: 'Privacy Policy' },
     { link: '/', title: 'Copyright ' },
-    { link: '/', title: '© NovatoreSols2024' },
+    { link: '/', title: '© Novatore Solutions 2024' },
     { link: '/', title: 'All Rights Reserved.' },
 ]
 export const aboutServicesData = [
@@ -318,28 +321,43 @@ export const studies = [
         description: 'Created an AI-powered insurance web portal using Next.js, Node.js, and AWS, enhancing interactions among brokers, customers, and underwriters.'
     }
 ];
-export const servicesnavtable: any = [
-    {
-        id: 1,
-        heading: 'Cyber Security ',
-        link: "/cyber-security",
-        items: [{ text: "Governance, Risk & Compliance, Data Privacy", link: '/governance-and-dataprivacy' }, { text: "Security Services", link: '/security-services' }, { text: "Penetration Testing", link: '/penetration-testing' },],
-    },
 
-    {
-        id: 2,
-        heading: 'Artificial Intelligence',
-        link: "/artificial-Intelligence",
-        items: [{ text: "AI Consulting", link: '/ai-consulting' }, { text: "Generative AI", link: '/generative-ai' }, { text: "Machine Learning", link: '/machine-learning' },],
-    },
-    {
-        id: 3,
-        heading: 'Cloud',
-        link: "/cloud-services",
-        items: [{ text: "CloudOps", link: '/cloud-ops' }, { text: "AWS", link: '/aws' }, { text: "Azure & GCP", link: '/azure-and-gcp' }, { text: "Cloud Migration", link: '/cloud-migration' },],
-    },
 
-];
+export const servicesnavtable: any = {
+    services: [
+        {
+            id: 1,
+            heading: 'Cyber Security',
+            link: "/cyber-security",
+            items: [
+                { text: "Governance, Risk & Compliance, Data Privacy", link: '/governance-and-dataprivacy' },
+                { text: "Security Services", link: '/security-services' },
+                { text: "Penetration Testing", link: '/penetration-testing' },
+            ],
+        },
+        {
+            id: 2,
+            heading: 'Artificial Intelligence',
+            link: "/artificial-Intelligence",
+            items: [
+                { text: "AI Consulting", link: '/ai-consulting' },
+                { text: "Generative AI", link: '/generative-ai' },
+                { text: "Machine Learning", link: '/machine-learning' },
+            ],
+        },
+        {
+            id: 3,
+            heading: 'Cloud',
+            link: "/cloud-services",
+            items: [
+                { text: "CloudOps", link: '/cloud-ops' },
+                { text: "AWS", link: '/aws' },
+                { text: "Azure & GCP", link: '/azure-and-gcp' },
+                { text: "Cloud Migration", link: '/cloud-migration' },
+            ],
+        }
+    ]
+};
 
 export const listingstable: any = {
     services: [
@@ -365,7 +383,7 @@ export const listingstable: any = {
         },
         {
             id: "digital services",
-            link: '/digital-service',
+            link: '/digital-services',
             heading: "Digital Services",
             details: [
                 { text: "Digital Consulting & Strategy", link: '/digital-strategy' },
@@ -379,22 +397,13 @@ export const listingstable: any = {
             id: "Blogs",
             link: "/blogs",
             heading: "Blogs",
+
             details: [
-                { text: "Latest Trends", link: '/' },
-                { text: "Expert Opinions", link: '/' },
-                { text: "Case Studies", link: '/case-studies' }
+                { text: "", link: '/' },
+
             ]
         },
-        {
-            id: "Whitepapers",
-            link: "/",
-            heading: "Whitepapers",
-            details: [
-                { text: "Industry Reports", link: '/' },
-                { text: "Research Studies", link: '/' },
-                { text: "Technical Guides", link: '/' }
-            ]
-        }
+
     ],
     about: [
         {
@@ -402,10 +411,10 @@ export const listingstable: any = {
             link: "/about",
             heading: "About Us",
             details: [
-                { text: "Our Story", link: '/' },
-                { text: "Company History", link: '/' },
-                { text: "Mission and Vision", link: '/' },
-                { text: "Partners and Alliances", link: '/' }
+                { text: "Our Story", link: '/about#our-story' },
+                { text: "Company History", link: '/about#company-history' },
+                { text: "Mission and Vision", link: '/about#our-mission' },
+                { text: "Partners and Alliances", link: '/about#our-clients' }
             ]
         }
     ],
@@ -437,6 +446,8 @@ export const listingstable: any = {
             ]
         }
     ]
+
+
 };
 
 export const featurestable: any = {
@@ -445,9 +456,21 @@ export const featurestable: any = {
         { id: "Amazon Web Services", link: "/amazon-web-services", heading: "Amazon Web Services", details: [{ text: "Storage services", link: '/storage-services' }, { text: "Networking services", link: '/networking-services' }, { text: "Analytics services", link: '/analytics-services' }] },
         { id: "Data", heading: "Data", link: "/data", details: [{ text: "Data Engineering", link: '/data-engineering' }, { text: "Data Management & Governance", link: '/data-management-and-governance' }, { text: "Analytics & Platform Implementation", link: '/analytics-and-platform-implementation' }] }
     ],
-    insights: [
-        { id: "News & Events ", link: "/", heading: "News & Events", details: [{ text: "Company News", link: '/' }, { text: "Industry Events", link: '/' }, { text: "Press Releases", link: '/' }] },
 
+    insights: [
+        {
+            id: "News & Events ", link: "/case-studies", heading: "Case Studies",
+            details: [
+                { text: "Real-Estate", link: '/case-studies?category=Real-Estate' },
+                { text: "E-commerce", link: '/case-studies?category=E-commerce' },
+                { text: "Crypto", link: '/case-studies?category=Crypto' },
+                { text: "Sports", link: '/case-studies?category=Sports' },
+                { text: "Health", link: '/case-studies?category=Health' },
+                { text: "Retail", link: '/case-studies?category=Retail' },
+                { text: "Insurance", link: '/case-studies?category=Insurance' },
+                { text: "Social", link: '/case-studies?category=Social' }
+            ]
+        },
     ],
     industries: [{ id: "Industries", link: "/", heading: "", details: [{ text: "Real Estate", link: '/real-estate' }, { text: "Retail", link: '/retail' }, { text: "Social", link: '/social' }, { text: "Education", link: '/' }, { text: "Sports", link: '/' }] }]
 
@@ -545,6 +568,11 @@ export const angelflowHeadlines = [
     { title: "6", description: ' Team Members', icon: myndsteam },
     { title: "1000+ hrs", description: ' Project Duration', icon: myndsduration },
     { title: "Industry", description: ' Real Estate, Proptech', icon: myndsindustry },
+]
+export const gleesimHeadlines = [
+    { title: "5", description: ' Team Members', icon: myndsteam },
+    { title: "12 weeks", description: ' Project Duration', icon: myndsduration },
+    { title: "Industry", description: ' Social', icon: myndsindustry },
 ]
 export const nftHuntersHeadlines = [
     { title: "8", description: ' Team Members', icon: myndsteam },
@@ -1153,6 +1181,23 @@ export const angelflowcaseData = [
     {
         title: 'Enhanced User Engagement:',
         description: 'We designed a visually appealing and highly functional user experience to ensure that users remained engaged with the platform. This helped in retaining existing users and attracting new ones.',
+        icon: angelflowiconThree,
+    },
+];
+export const gleesimcaseData = [
+    {
+        title: 'Intuitive Website Redesign',
+        description: 'We completely revamped the Gleesim website, prioritizing a user-centric design including clean visuals, clear calls to action, and a smooth interface.',
+        icon: angelflowiconOne,
+    },
+    {
+        title: 'Advanced eSIM Management',
+        description: 'We developed a robust backend system allowing users to seamlessly manage their eSIMs, track data usage, and easily top up when needed.',
+        icon: angelflowiconTwo,
+    },
+    {
+        title: 'Cutting-Edge Mobile App',
+        description: 'We built a sleek and user-friendly mobile app, empowering users to browse eSIM options, complete purchases, and activate their eSIMs directly from their smartphones.',
         icon: angelflowiconThree,
     },
 ];
@@ -3069,32 +3114,32 @@ export const servicesoffer = {
 
 export const caseStudiesslidedata = [
     {
-        title: "NFT Hunters",
-        description: "We developed a feature-rich NFT marketplace with a user-friendly interface and secure crypto wallet integration for NFT Hunterz.",
+        title: "Angelflow",
+        description: "We built a platform that connects investors with start-ups, enabling efficient networking and investment opportunities. This dynamic ecosystem facilitates meaningful connections, mutual growth, and success.",
         industry: "Real Estate",
-        backgroundimg: casenft,
-        link: "/nft-hunters"
+        backgroundimg: caseangelflow,
+        link: "/angelflow"
     },
     {
-        title: "Juggernaut DeFi",
-        description: "Our team created an advanced NFT platform for Juggernaut DeFi, incorporating secure blockchain integration and global accessibility.",
+        title: "Cova",
+        description: "The goal behind the Cova AI project was to create a platform that would not only streamline the process but also enhance the overall user experience.",
         industry: "Real Estate",
-        backgroundimg: casejuggernaut,
-        link: "/juggernaut-defi"
+        backgroundimg: casecova,
+        link: "/cova-ai"
     },
     {
-        title: "Cryptocurrency",
-        description: "We built a secure blockchain-based platform for Commit Good, ensuring transparent cryptocurrency donations.",
+        title: "Gleesim",
+        description: "We designed and  developed the website for Gleesim, ensuring a seamless and intuitive experience for visitors seeking to purchase eSIMs.",
         industry: "Cryptocurrency",
-        backgroundimg: casecryptocurrency,
+        backgroundimg: casedafi,
         link: "/crypto-currency"
     },
     {
-        title: "Dafi",
-        description: "For Swap Folio, we delivered a comprehensive crypto portfolio management platform with real-time analytics.",
-        industry: "Social",
-        backgroundimg: casedafi,
-        link: "/dafi"
+        title: "IRCC",
+        description: "The IRCC project was initiated to address the complex B2B interactions between license providers (LPs) and retailers.The project was structured around six key pillars.",
+        industry: "Real Estate",
+        backgroundimg: caseircc,
+        link: "/ircc"
     }
 ];
 
@@ -3144,6 +3189,17 @@ export const angelflowchallengesData = [
     },
     {
         title: 'User Engagement:', description: 'Ensuring consistent user engagement on the platform required an interface that was both appealing and functional.'
+    },
+];
+export const gleesimchallengesData = [
+    {
+        title: 'Confusing Interface', description: 'The existing platform was difficult to navigate, frustrating potential customers who wanted to quickly purchase eSIMs.'
+    },
+    {
+        title: 'Limited Functionality', description: 'Users lacked the ability to manage their eSIMs after purchase, creating an inconvenience for repeat customers.'
+    },
+    {
+        title: 'Mobile Inefficiency', description: 'No mobile app existed, forcing users to rely on the desktop platform, limiting access on the go.'
     },
 ];
 export const hunterschallengesData = [
@@ -3448,6 +3504,20 @@ export const angelflowoutcomesData = [
         title: ' Scalability', description: 'The platform was built to scale, accommodating a growing number of users and their needs.'
     }
 ];
+export const gleesimoutcomesData = [
+    {
+        title: 'Streamlined User Experience ', description: 'Gleesim now boasts a user-friendly platform, significantly increasing customer satisfaction and purchase conversion rates.'
+    },
+    {
+        title: 'Enhanced Customer Retention', description: 'The ability to manage eSIMs fosters customer loyalty, encouraging repeat business from satisfied travelers.'
+    },
+    {
+        title: 'Global Reach & Convenience ', description: 'The mobile app allows users to connect anytime, anywhere, making Gleesim a go-to solution for globetrotters worldwide'
+    },
+    {
+        title: ' Market Expansion Potential', description: 'The new platform positions Gleesim at the forefront of the eSIM market, ready to capture a wider audience and future growth.'
+    }
+];
 export const huntersoutcomesData = [
     {
         title: 'Increased User Engagement: ', description: 'The curated content and easy-to-use platform resulted in higher user engagement, with a growing subscriber base receiving weekly updates.'
@@ -3720,6 +3790,9 @@ export const ircctechStackImages = [
     pythontile, dockertile, reacttile, redistile, jenkinstile, djangotile, postgresstile
 ]
 export const angelflowtechStackImages = [
+    csstile, mjtile, reacttile, figmatile, nodetile, javatile, postgresstile, tstile
+]
+export const gleesimtechStackImages = [
     csstile, mjtile, reacttile, figmatile, nodetile, javatile, postgresstile, tstile
 ]
 export const juggernauttechStackImages = [
@@ -4052,6 +4125,100 @@ export const contents = [
         id: "conclusion",
         title: 'Conclusion',
         description: 'Staying aware of 2024 tech trends is vital for uncovering new opportunities and ensuring your business remains competitive. By understanding and adopting these innovative technologies, you can drive growth, enhance efficiency, and contribute to a sustainable future. Keep an eye on these trends to stay ahead in the rapidly evolving tech landscape!',
+    },
+
+];
+
+export const accordionData = [
+    {
+        id: 1,
+        title: 'Content Writer',
+        content: 'Content writing is an art, an expression of creativity to mold your words in such a way that it hits right where the reader thinks from. We are looking for a content writer that tickles the reader’s mind with expressive language and eloquent word choice. Your primary focus will be coming up with taglines, blogs, web content, and other requirements that the company has according to the client’s demand.  The familiarity with catchy social media language will be an added bonus.',
+        responsibilities: [
+            'Write clear, creative content for websites, blogs, and social media.',
+            'Collaborate with the team to create engaging copy.',
+            'Research and develop content on trending topics.'
+        ],
+        requirements: [
+            'Proven experience in content writing.',
+            'Excellent grasp of the English language.',
+            'Familiarity with SEO and web content best practices.'
+        ]
+    },
+    {
+        id: 2,
+        title: 'Front End Developer',
+        content: 'Content writing is an art, an expression of creativity to mold your words in such a way that it hits right where the reader thinks from. We are looking for a content writer that tickles the reader’s mind with expressive language and eloquent word choice. Your primary focus will be coming up with taglines, blogs, web content, and other requirements that the company has according to the client’s demand.  The familiarity with catchy social media language will be an added bonus.',
+        responsibilities: [
+            'Write clear, creative content for websites, blogs, and social media.',
+            'Collaborate with the team to create engaging copy.',
+            'Research and develop content on trending topics.'
+        ],
+        requirements: [
+            'Proven experience in content writing.',
+            'Excellent grasp of the English language.',
+            'Familiarity with SEO and web content best practices.'
+        ]
+    },
+    {
+        id: 3,
+        title: 'Business Development Executive',
+        content: 'Content writing is an art, an expression of creativity to mold your words in such a way that it hits right where the reader thinks from. We are looking for a content writer that tickles the reader’s mind with expressive language and eloquent word choice. Your primary focus will be coming up with taglines, blogs, web content, and other requirements that the company has according to the client’s demand.  The familiarity with catchy social media language will be an added bonus.',
+        responsibilities: [
+            'Write clear, creative content for websites, blogs, and social media.',
+            'Collaborate with the team to create engaging copy.',
+            'Research and develop content on trending topics.'
+        ],
+        requirements: [
+            'Proven experience in content writing.',
+            'Excellent grasp of the English language.',
+            'Familiarity with SEO and web content best practices.'
+        ]
+    },
+    {
+        id: 4,
+        title: 'Graphic Designer',
+        content: 'Content writing is an art, an expression of creativity to mold your words in such a way that it hits right where the reader thinks from. We are looking for a content writer that tickles the reader’s mind with expressive language and eloquent word choice. Your primary focus will be coming up with taglines, blogs, web content, and other requirements that the company has according to the client’s demand.  The familiarity with catchy social media language will be an added bonus.',
+        responsibilities: [
+            'Write clear, creative content for websites, blogs, and social media.',
+            'Collaborate with the team to create engaging copy.',
+            'Research and develop content on trending topics.'
+        ],
+        requirements: [
+            'Proven experience in content writing.',
+            'Excellent grasp of the English language.',
+            'Familiarity with SEO and web content best practices.'
+        ]
+    },
+    {
+        id: 5,
+        title: 'Back End Developer',
+        content: 'Content writing is an art, an expression of creativity to mold your words in such a way that it hits right where the reader thinks from. We are looking for a content writer that tickles the reader’s mind with expressive language and eloquent word choice. Your primary focus will be coming up with taglines, blogs, web content, and other requirements that the company has according to the client’s demand.  The familiarity with catchy social media language will be an added bonus.',
+        responsibilities: [
+            'Write clear, creative content for websites, blogs, and social media.',
+            'Collaborate with the team to create engaging copy.',
+            'Research and develop content on trending topics.'
+        ],
+        requirements: [
+            'Proven experience in content writing.',
+            'Excellent grasp of the English language.',
+            'Familiarity with SEO and web content best practices.'
+        ]
+    },
+    {
+        id: 6,
+        title: 'Application Developer',
+        content: 'Content writing is an art, an expression of creativity to mold your words in such a way that it hits right where the reader thinks from. We are looking for a content writer that tickles the reader’s mind with expressive language and eloquent word choice. Your primary focus will be coming up with taglines, blogs, web content, and other requirements that the company has according to the client’s demand.  The familiarity with catchy social media language will be an added bonus.',
+        responsibilities: [
+            'Write clear, creative content for websites, blogs, and social media.',
+            'Collaborate with the team to create engaging copy.',
+            'Research and develop content on trending topics.'
+        ],
+        requirements: [
+            'Proven experience in content writing.',
+            'Excellent grasp of the English language.',
+            'Familiarity with SEO and web content best practices.'
+        ]
     },
 
 ];

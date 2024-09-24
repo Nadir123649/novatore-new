@@ -12,7 +12,7 @@ import Layout from "@/components/Layout";
 
 const ArtificialIntelligence: NextPage = () => {
     return (
-        <Layout showContactForm={true} title="Novatore Solutions - Artificial Intelligence" description="Welcome to Novatore Solutions, setting new standards in technology with unmatchable code.">
+        <Layout showContactForm={true} title="Modern Artificial Intelligence Solutions From Novatore Solutions" description="Transform your business with our AI-driven solutions. From automation to predictive analytics, harness the power of artificial intelligence to optimize and innovate. ">
             <div className="overflow-x-hidden">
                 <HeroBanner bannerHeading="Access Our High-Quality AI Services" pagetitle="Artificial Intelligence" needsMoreTitle="Get in Touch" previewImage="/images/artifical-banner.png" maxwidth="1100px" />
                 <ServicesNeeds needsTitle="The Real Power of " needsTitleBlue="Artificial Intelligence" NeedsImage="/images/ai-right.png"

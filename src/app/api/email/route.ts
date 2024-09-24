@@ -5,8 +5,8 @@ export const POST = async (request: NextRequest) => {
   const req = await request.json();
   try {
     const mailOptions = {
-      from: process.env.NEXT_PUBLIC_FROM_EMAIL || "repotest910@gmail.com",
-      to: process.env.NEXT_PUBLIC_TO_EMAIL || "repotest910@gmail.com",
+      from: process.env.NEXT_PUBLIC_FROM_EMAIL || '',
+      to: process.env.NEXT_PUBLIC_TO_EMAIL || '',
       subject: 'New Contact Form Submission',
       text: `Hi,
           You have received a new submission from the contact form. Here are the details:
@@ -22,6 +22,7 @@ export const POST = async (request: NextRequest) => {
           Thanks
       `,
     };
+    console.log(mailOptions, 'before send check params')
     await sendEmail(mailOptions);
     return NextResponse.json({ message: "Email successfuly sent" });
   } catch (err) {

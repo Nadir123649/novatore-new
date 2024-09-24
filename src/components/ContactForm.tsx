@@ -8,7 +8,6 @@ import { useForm } from 'react-hook-form';
 import axios from 'axios';
 import Image from 'next/image';
 import 'react-phone-input-2/lib/style.css'
-import Select from 'react-select';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import Spinner from 'react-bootstrap/Spinner';
@@ -23,7 +22,6 @@ interface IFormInputs {
     phone?: string;
     subscribe?: boolean;
     country?: string;
-
 
 }
 interface Country {
@@ -61,8 +59,7 @@ const ContactForm = () => {
     const [selectedCountry, setSelectedCountry] = useState<Country | null>(null);
     const [selected, setSelected] = useState("");
     const [isLoading, setIsLoading] = useState(false);
-
-    const { register, handleSubmit, clearErrors, setValue, formState: { errors } } = useForm<IFormInputs>({
+    const { register, handleSubmit, clearErrors, setValue, formState: { errors }, reset } = useForm<IFormInputs>({
         resolver: zodResolver(schema),
     });
 
@@ -77,28 +74,12 @@ const ContactForm = () => {
         }
     };
 
-    const handleCountryChange = (selectedOption: any) => {
-        const country = countries.find(c => c.name === selectedOption?.value);
+    const handleCountryChange = (countryName: string) => {
+        const country = countries.find(c => c.name === countryName);
         if (country) {
             setSelectedCountry(country);
-            setValue('phone', country.code);
             setValue('country', country.name);
-            clearErrors('country');
         }
-    };
-
-    const customStyles = {
-        control: (provided: any) => ({
-            ...provided,
-            width: '400px',
-            borderRadius: '16px',
-            borderColor: '#B7B7B7',
-            padding: '14px',
-        }),
-        option: (provided: any) => ({
-            ...provided,
-            fontSize: '18px',
-        }),
     };
 
     const handlePhoneChange = (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -131,6 +112,7 @@ const ContactForm = () => {
 
             if (response.ok) {
                 toast.success("Submitted successfully!");
+                reset();
             } else {
                 toast.error("Unable to submit.");
             }
@@ -149,60 +131,76 @@ const ContactForm = () => {
         };
     }, [hasAnimated]);
 
+
     useEffect(() => {
         const fetchCountries = async () => {
-
             try {
                 const response = await axios.get('https://restcountries.com/v3.1/all');
-                const countryData = response.data.map((country: any) => ({
-                    name: country.name.common,
-                    flag: country.flags.svg,
-                    code: country.idd.root + (country.idd.suffixes ? country.idd.suffixes[0] : ''),
-                }));
-                setCountries(countryData);
+                console.log('API Response:', response.data);
+                const countryData = response.data.map((country: any) => {
+                    let code = '';
+                    if (country.idd) {
+                        code = country.idd.root || '';
+                        if (country.idd.suffixes && country.idd.suffixes.length > 0) {
+                            code += country.idd.suffixes[0];
+                        }
+                    }
 
-                const pakistan = countryData.find((country: Country) => country.name === 'Pakistan');
-                if (pakistan) {
-                    setSelectedCountry(pakistan);
-                    setValue('country', pakistan.name);
-                    setValue('phone', pakistan.code);
+                    return {
+                        name: country.name.common,
+                        flag: country.flags.svg,
+                        code: code,
+                    };
+                }).sort((a: any, b: any) => a.name.localeCompare(b.name));
+
+                const unitedStates = countryData.find((country: any) => country.name === 'United States');
+                if (unitedStates) {
+                    unitedStates.code = '+1';
+                    setSelectedCountry(unitedStates);
+                    setCountries(countryData);
+                    setValue('country', unitedStates.name);
+                    setValue('phone', unitedStates.code);
+                } else {
+
+                    console.error('United States not found in fetched country data.');
                 }
             } catch (error) {
                 console.error('Error fetching country data:', error);
             }
         };
+
         fetchCountries();
     }, []);
+
 
     return (
         <section className={`${isVisible ? "fadeIn" : "opacity-0 "
             } contact-form-section pb-10 md:py-20 bg-center bg-no-repeat bg-cover `}>
             <div id='contact-us-form' className='layer-form bg-center bg-no-repeat mx-5 bg-cover rounded-[16px] sm:pb-[140px] md:py-[60px]'>
-                <Container  >
+                <Container >
                     <Row >
                         <Col lg={4} md={12} xs={12}>
-                            <div className="contact-form-content mt-[30px]">
-                                <h1 className='text-[#2D2D2D] font-bold not-italic mb-4 max-w-full md:max-w-[290px] '>Let’s reach new <span className='text-[#2776EA]'>heights</span>!</h1>
-                                <p className='text-[#4C4C4C] not-italic text-[24px] font-normal max-w-full md:max-w-[274px] '>
+                            <div className="contact-form-content mt-[20px] md:mt-[30px]">
+                                <h1 className='text-[#2D2D2D] font-bold not-italic mb-2 md:mb-4 max-w-full md:max-w-[290px] '>Let’s reach new <span className='text-[#2776EA]'>heights</span>!</h1>
+                                <p className='text-[#4C4C4C] not-italic text-[18px] md:text-[24px] font-normal max-w-full md:max-w-[274px] '>
                                     Book a call today and see
                                     where we can take you.
                                 </p>
-
-                                <div className='contact-details flex flex-col gap-4 mt-[30px] md:mt-[90px]'>
+                                <div className='contact-details flex flex-col px-[10px] md:px-[0px] gap-4 mt-[30px] md:mt-[90px]'>
                                     {contactDetails.map((data, index) => (
                                         <div key={index} className='contact-details-item flex gap-3 items-center text-[#2776EA]'>
                                             {data.icon}
                                             {data.link ? (
                                                 <a
                                                     href={data.link}
-                                                    className='text-[18px] text-[#2A2A2A] max-w-[315px] font-normal'
+                                                    className='text-[16px] md:text-[18px] text-[#2A2A2A] max-w-[315px] font-normal'
                                                     target="_blank"
                                                     rel="noopener noreferrer"
                                                 >
                                                     {data.text}
                                                 </a>
                                             ) : (
-                                                <span className='text-[18px] text-[#2A2A2A] max-w-[315px] font-normal'>
+                                                <span className='text-[16px] md:text-[18px] text-[#2A2A2A] max-w-[315px] font-normal'>
                                                     {data.text}
                                                 </span>
                                             )}
@@ -212,29 +210,29 @@ const ContactForm = () => {
                             </div>
                         </Col>
                         <Col lg={8} md={12} xs={12}>
-                            <Form className='contact-form sm:pt-10 md:pt-0' onSubmit={handleSubmit(onSubmit)}>
+                            <Form className='contact-form sm:pt-10 md:pt-0 ' onSubmit={handleSubmit(onSubmit)}>
                                 <Row className='gap-y-4'>
                                     <Col lg={12} md={12} xs={12}>
                                         <Form.Group className='flex flex-col gap-1'>
-                                            <Form.Label className='text-[#645555] text-[18px] font-medium not-italic'>
+                                            <Form.Label className='text-[#645555] text-[16px] md:text-[18px] font-medium not-italic'>
                                                 How We Can Help You?
                                             </Form.Label>
                                             <input
                                                 type="text"
                                                 {...register('help')}
-                                                className='form-input rounded-[16px] border border-solid border-[#B7B7B7] bg-white  text-black p-[14px] text-[18px] not-italic font-normal'
-                                                placeholder="Web Development"
+                                                className='form-input rounded-[16px] border border-solid border-[#B7B7B7] bg-white  text-black p-[14px] text-[16px] md:text-[18px] not-italic font-normal'
+                                                placeholder="How can we help?"
                                             />
                                             {errors.help && <p className='text-[#FF9494]'>{errors.help.message}</p>}
                                         </Form.Group>
                                     </Col>
                                     <Col lg={6} md={12} xs={12}>
                                         <Form.Group className='flex flex-col gap-1'>
-                                            <Form.Label className='text-[#645555] text-[18px] font-medium not-italic'>Full Name</Form.Label>
+                                            <Form.Label className='text-[#645555] text-[16px] md:text-[18px] font-medium not-italic'>Full Name</Form.Label>
                                             <input
                                                 type="text"
                                                 {...register('fullName')}
-                                                className='form-input rounded-[16px] border border-solid border-[#B7B7B7] bg-white  text-black p-[14px] text-[18px] not-italic font-normal'
+                                                className='form-input rounded-[16px] border border-solid border-[#B7B7B7] bg-white text-black p-[14px] text-[16px] md:text-[18px] not-italic font-normal'
                                                 placeholder="Alexa David"
                                                 maxLength={50}
                                             />
@@ -243,48 +241,52 @@ const ContactForm = () => {
                                     </Col>
                                     <Col lg={6} md={12} xs={12}>
                                         <Form.Group className='flex flex-col gap-1'>
-                                            <Form.Label className='text-[#645555] text-[18px] font-medium not-italic'>Email Address</Form.Label>
+                                            <Form.Label className='text-[#645555] text-[16px] md:text-[18px] font-medium not-italic'>Email Address</Form.Label>
                                             <input
                                                 type="text"
                                                 {...register('email')}
-                                                className='form-input rounded-[16px] border border-solid bg-white  text-black border-[#B7B7B7] p-[14px] text-[18px] not-italic font-normal'
+                                                className='form-input rounded-[16px] border border-solid bg-white  text-black border-[#B7B7B7] p-[14px] text-[16px] md:text-[18px] not-italic font-normal'
                                                 placeholder="Alexadavid@email.com"
                                             />
                                             {errors.email && <p className='text-[#FF9494]'>{errors.email.message}</p>}
                                         </Form.Group>
                                     </Col>
-
-                                    <Col lg={6} md={12} xs={12} className='h-[100px]'>
-                                        <Form.Group className="flex flex-col gap-1">
-                                            <Form.Label className="text-[#645555] text-[18px] font-medium not-italic relative">Country</Form.Label>
-                                            <Select
-                                                options={countries.map(country => ({ value: country.name, label: country.name }))}
+                                    <Col lg={6} md={12} xs={12}>
+                                        <Form.Group className='new-custom-select  flex flex-col gap-1'>
+                                            <Form.Label htmlFor="countries" className=' text-[#645555] text-[16px] md:text-[18px] font-medium not-italic'>Country</Form.Label>
+                                            <select
                                                 {...register('country')}
-                                                onChange={handleCountryChange}
-                                                styles={customStyles}
-                                                placeholder="Select a country"
-                                                className=' custom-select-country  '
-
-                                            />
+                                                id="countries"
+                                                className="form-input country-team pl-[50px] rounded-[16px] border border-solid bg-white text-black border-[#B7B7B7] p-[14px] text-[16px] md:text-[18px] not-italic font-normal w-full box-border"
+                                                onChange={(e) => handleCountryChange(e.target.value)}
+                                            >
+                                                <option value="" disabled>Choose a country</option>
+                                                {countries && countries.map((country) => (
+                                                    <option key={country.name} value={country.name} >
+                                                        {country.name}
+                                                    </option>
+                                                ))}
+                                            </select>
 
                                             {selectedCountry && (
-                                                <div className=" mt-2 flex items-center gap-2 w-[34px] h-[30px] border-r border-[#A3A3A3] relative  bottom-[54px] left-[10px] ">
-                                                    <Image src={selectedCountry.flag} alt="flag" width={28} height={28} className='h-[20px] w-[30px] bg-[#ff0000]' style={{ width: "30px", height: "20px" }} />
+                                                <div className="mt-2 flex items-center gap-2 w-[34px] h-[30px] border-r border-[#A3A3A3] relative bottom-[54px] left-[10px]">
+                                                    <Image
+                                                        src={selectedCountry.flag}
+                                                        alt="flag"
+                                                        width={28}
+                                                        height={28}
+                                                        className='h-[20px] w-[30px]'
+                                                        style={{ width: "30px", height: "20px" }}
+                                                    />
                                                 </div>
-
                                             )}
-
                                             {errors.country && <p className="text-[#FF9494]">{errors.country.message}</p>}
                                         </Form.Group>
                                     </Col>
-
-
-                                    <Col lg={6} md={12} xs={12} className='h-[110px]'>
+                                    <Col lg={6} md={12} xs={12} >
                                         <Form.Group className="flex flex-col gap-1">
-                                            <Form.Label className="text-[#645555] text-[18px] font-medium not-italic">Phone Number</Form.Label>
-
-                                            <div className="phone-container bg-white form-input rounded-[16px] border border-solid border-[#B7B7B7]  text-black p-[14px] text-[18px] not-italic font-normal"
-                                            >
+                                            <Form.Label className="text-[#645555] text-[16px] md:text-[18px] font-medium not-italic">Phone Number</Form.Label>
+                                            <div className="phone-container bg-white form-input rounded-[16px] border border-solid border-[#B7B7B7]  text-black p-[14px] text-[16px] md:text-[18px] not-italic font-normal">
                                                 <input
                                                     type="tel"
                                                     id="countryCode"
@@ -300,7 +302,6 @@ const ContactForm = () => {
                                                     className="phone-number-style"
                                                     maxLength={14}
                                                     onKeyPress={(e) => {
-
                                                         const allowedKeys = /^[0-9\+\-\(\)\s]*$/;
                                                         if (!allowedKeys.test(e.key)) {
                                                             e.preventDefault();
@@ -311,36 +312,33 @@ const ContactForm = () => {
                                             {errors.contact && <p className="text-[#FF9494]">{errors.contact.message}</p>}
                                         </Form.Group>
                                     </Col>
-
                                     <Col lg={12} md={12} xs={12}>
                                         <Form.Group className='flex flex-col gap-1'>
-                                            <Form.Label className='form-input text-[#645555] text-[18px] font-medium not-italic'>Message</Form.Label>
+                                            <Form.Label className='form-input text-[#645555] text-[16px] md:text-[18px] font-medium not-italic'>Message</Form.Label>
                                             <textarea
                                                 id=""
                                                 {...register('message')}
-                                                className='form-input rounded-[16px] border border-solid border-[#B7B7B7] bg-white  text-black p-[14px] min-h-[140px] text-[18px] not-italic font-normal '
+                                                className='form-input rounded-[16px] border border-solid border-[#B7B7B7] bg-white  text-black p-[14px] min-h-[140px] text-[16px] md:text-[18px] not-italic font-normal '
                                                 placeholder='Message'></textarea>
                                         </Form.Group>
                                     </Col>
-
                                     <Col lg={12} md={12} xs={12}>
                                         <Form.Group controlId="subscribe" className='flex  gap-3 items-center'>
                                             <Form.Check
                                                 type="checkbox"
                                                 {...register('subscribe')}
-                                                className="my-2 text-[#645555] text-[18px] font-medium not-italic custom-checkbox "
+                                                className="my-2 text-[#645555] text-[16px] md:text-[18px] font-medium not-italic custom-checkbox "
                                             />
                                             <label
-                                                className="mt-2 text-[#645555] text-[18px] font-medium not-italic "
+                                                className="mt-2 text-[#645555] text-[16px] md:text-[18px] font-medium not-italic "
                                                 onClick={(e) => e.preventDefault()}
                                             >
                                                 Check here to subscribe for updates.
                                             </label>
                                         </Form.Group>
                                     </Col>
-
                                     <Col lg={12} md={12} xs={12} className='flex justify-end'>
-                                        <button disabled={isLoading} className='btn-submit text-white text-[18px] font-normal not-italic bg-[#2776EA] rounded-[16px] py-[12px] md:py-[16px] px-[14px] md:px-[24px] max-w-[180px] w-full border border-solid border-[#B7B7B7]' type='submit'>
+                                        <button disabled={isLoading} className='btn-submit text-white text-[16px] md:text-[18px] font-normal not-italic bg-[#2776EA] rounded-[16px] py-[13px] md:py-[16px] px-[10px] md:px-[24px] max-w-[150px] md:max-w-[180px] w-full border border-solid border-[#B7B7B7]' type='submit'>
                                             Submit {" "}
                                             {isLoading && (
                                                 <Spinner
@@ -356,7 +354,6 @@ const ContactForm = () => {
                                             bodyClassName="toastbody"
                                         />
                                     </Col>
-
                                 </Row>
                             </Form>
                         </Col>

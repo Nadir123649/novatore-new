@@ -52,7 +52,6 @@ const PrevArrow: React.FC<ArrowProps> = ({ onClick, isDisabled }) => {
 const Services = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
   const [isLastSlideVisible, setIsLastSlideVisible] = useState(false);
-
   const totalSlides = services.length;
   const slidesToShow = 3.3;
 
@@ -118,17 +117,17 @@ const Services = () => {
   return (
     <section
       id="service-slider-section"
-      className="services-section py-20 bg-center bg-no-repeat bg-cover"
+      className="services-section md:py-20 bg-center bg-no-repeat bg-cover"
     >
       <Container>
-        <div className="flex flex-col md:flex-row justify-between items-start md:items-center mb-4 mobile-carousel">
-          <h2 className="text-gray-900 font-semibold text-[26px] md:text-4xl">
+        <div className="flex flex-col md:flex-row  justify-center md:justify-between items-center md:items-center mb-2 md:mb-4 mobile-carousel">
+          <h2 className="text-gray-900 font-semibold text-center md:text-left text-[26px] md:text-4xl pb-0 md:pb-4">
             What Can We Do For You?
           </h2>
         </div>
         <Slider {...settings} className="services-slider">
           {services.map((service) => (
-            <Col key={service.id} lg={6} md={6} xs={12} className="py-4">
+            <Col key={service.id} lg={6} md={6} xs={12} className=" pt-3 pb-0 md:pt-4 md:pb-4">
               <ServicesCard
                 id={service.id}
                 title={service.title}

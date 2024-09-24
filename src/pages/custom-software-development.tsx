@@ -12,7 +12,7 @@ import { ProductWebData } from "@/constants/indesx";
 
 const CustomSoftwareDevelopment: NextPage = () => {
     return (
-        <Layout showContactForm={true} title="Novatore Solutions - Custom Software Development" description="Welcome to Novatore Solutions, setting new standards in technology with unmatchable code.">
+        <Layout showContactForm={true} title="Custom Software Development Experts at Novatore Solutions" description="Experience the difference with Novatore Solutions' custom software development services. We deliver innovative, reliable, and results-driven solutions.">
             <div className="overflow-x-hidden">
                 <HeroBanner bannerHeading="Explore Our Expertise in Custom Software Development" pagetitle="Custom Software Development" needsMoreTitle="Get in Touch" previewImage="/images/custom-software-banner.png" maxwidth="1100px" />
                 <ServicesNeeds needsTitleBlue="Software Development" needsMoreTitle="for Modern Businesses" NeedsImage="/images/custom-development-image.png"
@@ -29,3 +29,5 @@ const CustomSoftwareDevelopment: NextPage = () => {
 };
 
 export default CustomSoftwareDevelopment;
+
+

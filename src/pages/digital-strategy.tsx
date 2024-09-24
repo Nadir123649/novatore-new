@@ -9,7 +9,7 @@ import Layout from "@/components/Layout";
 
 const DigitalStrategy: NextPage = () => {
     return (
-        <Layout showContactForm={true} title="Novatore Solutions - Digital Consulting & Strategy" keywords="Digital strategy, Digital consultation, Digital innovation, Personalized digital consulting, Digital transformation" description="Welcome to Novatore Solutions, setting new standards in technology with unmatchable code." >
+        <Layout showContactForm={true} title="Digital Consulting & Strategy Services | Novatore Solutions" description="Unlock business potential with Novatore Solutions' expert digital consulting and strategy services. We build solutions for digital innovation. Contact us now!" keywords="Digital strategy, Digital consultation, Digital innovation, Personalized digital consulting, Digital transformation" >
             <div className="overflow-x-hidden">
                 <HeroBanner bannerHeading="Optimized Digital Strategy & Consultation" pagetitle="Digital Services" needsMoreTitle="Get in Touch" previewImage="/images/digitalstrategy-banner.png" maxwidth="700px" />
                 <ServicesNeeds needsTitle="Turning Your Vision Into" needsTitleBlue="Reality" needsMoreTitle="" NeedsImage="/images/strategy-right.png"

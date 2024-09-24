@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://novatoresols.com
+
+# Sitemaps
+Sitemap: https://novatoresols.com/sitemap.xml

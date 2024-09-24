@@ -59,7 +59,7 @@ const CloudOps: FC<CloudOpsProps> = ({
       careers
     } = servicesoffer;
 
-    if (pathname.includes("digital-service")) {
+    if (pathname.includes("digital-services")) {
       return digitalservice;
     } else if (pathname.includes("cyber-security")) {
       return cybersecurity;
@@ -193,7 +193,7 @@ const CloudOps: FC<CloudOpsProps> = ({
             </h2>
             <Row>
               <Col lg={12} md={12} xs={12}>
-                <div className="grid grid-cols-12 gap-4 py-[20px]">
+                <div className="grid grid-cols-12 gap-4 py-[20px] cloudops-grid">
                   {/* Left Column */}
                   <div className="col-span-12 md:col-span-4">
                     <div className="cloudops-card text-white bg-[#2776EA] rounded-2xl p-4 min-h-auto md:min-h-auto h-full  sticky top-0">
@@ -219,7 +219,7 @@ const CloudOps: FC<CloudOpsProps> = ({
                       className="overflow-y-scroll parallax-section relative h-[440px] md:min-h-auto"
                       ref={ulRef}
                     >
-                      <ul className="pr-[40px] flex flex-col gap-4">
+                      <ul className="pr-[40px] flex flex-col gap-10 lg:gap-4">
                         {duplicatedDetails.map((data, index) => (
                           <li
                             key={index}

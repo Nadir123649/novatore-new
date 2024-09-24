@@ -20,11 +20,11 @@ const HeadlineBanner: React.FC<HeadlineBannerProps> = ({ headlinesData }) => {
                     <Col lg={12} md={12} xs={12}>
                         <Row>
                             <Col lg={12} md={12} xs={12}>
-                                <div className="grid grid-cols-12 gap-4">
+                                <div className="grid grid-cols-12 gap-4 headline-main">
                                     {headlinesData.map((data, index) => (
                                         <div
                                             key={index}
-                                            className={`col-span-4 gap-4 justify-center flex items-center`}
+                                            className={`col-span-4 gap-4 justify-center flex items-center headline-data `}
                                         >
                                             <Image
                                                 src={data.icon}
@@ -52,3 +52,8 @@ const HeadlineBanner: React.FC<HeadlineBannerProps> = ({ headlinesData }) => {
 };
 
 export default HeadlineBanner;
+
+
+
+
+

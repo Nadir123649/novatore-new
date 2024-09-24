@@ -9,7 +9,7 @@ import CloudOps from "@/components/CloudOps";
 
 const StorageServices: NextPage = () => {
     return (
-        <Layout showContactForm={true} title="Novatore Solutions - Storage Services" description="Welcome to Novatore Solutions, setting new standards in technology with unmatchable code.">
+        <Layout showContactForm={true} title="Storage Services for Uninterrupted Business Growth" description="Novatore Solutions offers secure, scalable storage services for efficient data management. Safeguard your business data with our reliable storage solutions. ">
             <div className="overflow-x-hidden">
                 <HeroBanner bannerHeading="Storage Services for Uninterrupted Business Growth" pagetitle="Amazon Web Services" needsMoreTitle="Get in Touch" previewImage="/images/storage-banner.png" maxwidth="900px" />
                 <ServicesNeeds needsTitle="Unlock the Power of " needsTitleBlue="Data Management" NeedsImage="/images/storage-image-right.png"

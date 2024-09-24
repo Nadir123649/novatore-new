@@ -15,25 +15,26 @@ const Footer = () => {
           <Row className='footer-list'>
             <Col lg={3} md={6} xs={12} >
               <div className="footer-links">
-                <h3 className="text-[#FFF] text-[18px] not-italic mb-4 font-normal">Custom Software Development</h3>
+                <Link href="/custom-software-development"> <h3 className="text-[#FFF] text-[18px] not-italic mb-4 font-normal">Custom Software Development</h3></Link>
                 <ul className='footer-links-list list-none p-0 m-0 flex flex-col  md:gap-[13px]'>
                   {customSoftware.map((data, index) => (
                     <li key={index}>
-                      <a
+                      <span
                         onClick={() => handleNavigation(data.link)}
                         className='text-[#B5B5B5] text-[16px] font-normal not-italic transition-colors duration-300 hover:text-[#2776EA]'
                       >
                         {data.title}
-                      </a>
+                      </span>
                     </li>
                   ))
                   }
                 </ul>
-                <h3 className="text-[#FFF] text-[18px] not-italic mb-4 mt-4 font-normal">IT Services</h3>
+                <Link href='/it-services'><h3 className="text-[#FFF] text-[18px] not-italic mb-4 mt-4 font-normal">IT Services</h3></Link>
+
                 <ul className='footer-links-list list-none p-0 m-0 flex flex-col gap-[13px]'>
                   {itServices.map((data, index) => (
                     <li key={index} >
-                      <a onClick={() => handleNavigation(data.link)} className='text-[#B5B5B5] text-[16px] font-normal not-italic transition-colors duration-300 hover:text-[#2776EA]'>{data.title}</a>
+                      <span onClick={() => handleNavigation(data.link)} className='text-[#B5B5B5] text-[16px] font-normal not-italic transition-colors duration-300 hover:text-[#2776EA]'>{data.title}</span>
                     </li>
                   ))
                   }
@@ -42,24 +43,25 @@ const Footer = () => {
             </Col>
             <Col lg={3} md={6} xs={12} className=' md:border-l border-[#FFFFFF14] '>
               <div className="footer-links md:pl-6">
-                <h3 className="text-[#FFF] text-[18px] not-italic mb-4 font-normal">Transformative Solutions</h3>
+                <Link href="/transformative-solutions"><h3 className="text-[#FFF] text-[18px] not-italic mb-4 font-normal">Transformative Solutions</h3></Link>
+
                 <ul className='footer-links-list list-none p-0 m-0 flex flex-col gap-[13px]'>
                   {realEstate.map((data, index) => (
                     <li key={index} >
-                      <a onClick={() => handleNavigation(data.link)} className='text-[#B5B5B5] text-[16px] font-normal not-italic transition-colors duration-300 hover:text-[#2776EA]'>{data.title}</a>
+                      <span onClick={() => handleNavigation(data.link)} className='text-[#B5B5B5] text-[16px] font-normal not-italic transition-colors duration-300 hover:text-[#2776EA]'>{data.title}</span>
                     </li>
                   ))
                   }
                 </ul>
               </div>
             </Col>
-            <Col lg={2} md={6} xs={12} className='md:border-l   border-[#FFFFFF14] '>
+            <Col lg={2} md={6} xs={12} className='md:border-l  border-[#FFFFFF14] '>
               <div className="footer-links md:pl-6    ">
-                <h3 className="text-[#FFF] text-[18px] not-italic mb-4 font-normal">Whitepapers</h3>
+                <Link href="/"> <h3 className="text-[#FFF] text-[18px] not-italic mb-4 font-normal">Whitepapers</h3></Link>
                 <ul className='footer-links-list list-none p-0 m-0 flex flex-col gap-[13px]'>
                   {whitepapers.map((data, index) => (
                     <li key={index} >
-                      <a onClick={() => handleNavigation(data.link)} className='text-[#B5B5B5] text-[16px] font-normal not-italic transition-colors duration-300 hover:text-[#2776EA]'>{data.title}</a>
+                      <span onClick={() => handleNavigation(data.link)} className='text-[#B5B5B5] text-[16px] font-normal not-italic transition-colors duration-300 hover:text-[#2776EA]'>{data.title}</span>
                     </li>
                   ))
                   }
@@ -68,7 +70,7 @@ const Footer = () => {
                 <ul className='footer-links-list list-none p-0 m-0 flex flex-col gap-[13px]'>
                   {insightsData.map((data, index) => (
                     <li key={index} >
-                      <a onClick={() => handleNavigation(data.link)} className='text-[#B5B5B5] text-[16px] font-normal not-italic transition-colors duration-300 hover:text-[#2776EA]'>{data.title}</a>
+                      <span onClick={() => handleNavigation(data.link)} className='text-[#B5B5B5] text-[16px] font-normal not-italic transition-colors duration-300 hover:text-[#2776EA]'>{data.title}</span>
                     </li>
                   ))
                   }
@@ -77,20 +79,22 @@ const Footer = () => {
             </Col>
             <Col lg={2} md={6} xs={12} className='md:border-l   border-[#FFFFFF14] '>
               <div className="footer-links md:pl-6">
-                <h3 className="text-[#FFF] text-[18px] not-italic mb-4 font-normal">News & Events</h3>
+                <Link href="/"><h3 className="text-[#FFF] text-[18px] not-italic mb-4 font-normal">News & Events</h3></Link>
+
                 <ul className='footer-links-list list-none p-0 m-0 flex flex-col gap-[13px]'>
                   {eventsData.map((data, index) => (
                     <li key={index} >
-                      <a onClick={() => handleNavigation(data.link)} className='text-[#B5B5B5] text-[16px] font-normal not-italic transition-colors duration-300 hover:text-[#2776EA]'>{data.title}</a>
+                      <span onClick={() => handleNavigation(data.link)} className='text-[#B5B5B5] text-[16px] font-normal not-italic transition-colors duration-300 hover:text-[#2776EA]'>{data.title}</span>
                     </li>
                   ))
                   }
                 </ul>
-                <h3 className="text-[#FFF] text-[18px] not-italic mb-4 font-normal mt-5">About</h3>
+                <Link href="/about"><h3 className="text-[#FFF] text-[18px] not-italic mb-4 font-normal mt-5">About</h3></Link>
+
                 <ul className='footer-links-list list-none p-0 m-0 flex flex-col gap-[13px]'>
                   {aboutData.map((data, index) => (
                     <li key={index} >
-                      <a onClick={() => handleNavigation(data.link)} className='text-[#B5B5B5] text-[16px] font-normal not-italic transition-colors duration-300 hover:text-[#2776EA]' >{data.title}</a>
+                      <span onClick={() => handleNavigation(data.link)} className='text-[#B5B5B5] text-[16px] font-normal not-italic transition-colors duration-300 hover:text-[#2776EA]' >{data.title}</span>
                     </li>
                   ))
                   }
@@ -99,11 +103,12 @@ const Footer = () => {
             </Col>
             <Col lg={2} md={6} xs={12} className='md:border-l  border-[#FFFFFF14] '>
               <div className="footer-links md:pl-6">
-                <h3 className="text-[#FFF] text-[18px] not-italic mb-4 font-normal">Careers</h3>
+                <Link href="/careers">  <h3 className="text-[#FFF] text-[18px] not-italic mb-4 font-normal">Careers</h3></Link>
+
                 <ul className='footer-links-list list-none p-0 m-0 flex flex-col gap-[13px]'>
                   {careersData.map((data, index) => (
                     <li key={index} >
-                      <a onClick={() => handleNavigation(data.link)} className='text-[#B5B5B5] text-[16px] font-normal not-italic transition-colors duration-300 hover:text-[#2776EA]'>{data.title}</a>
+                      <span onClick={() => handleNavigation(data.link)} className='text-[#B5B5B5] text-[16px] font-normal not-italic transition-colors duration-300 hover:text-[#2776EA]'>{data.title}</span>
                     </li>
                   ))
                   }
@@ -131,7 +136,7 @@ const Footer = () => {
             <ul className='footer-links-list list-none p-0 m-0 flex flex-col  md:flex-row justify-between gap-[13px]'>
               {siteMapData.map((data, index) => (
                 <li key={index} >
-                  <a onClick={() => handleNavigation(data.link)} className='text-[#B5B5B5] text-[16px] font-normal not-italic transition-colors duration-300 hover:text-[#2776EA] hover:underline'>{data.title}</a>
+                  <span onClick={() => handleNavigation(data.link)} className='text-[#B5B5B5] text-[16px] font-normal not-italic transition-colors duration-300 hover:text-[#2776EA] hover:underline'>{data.title}</span>
                 </li>
               ))
               }
